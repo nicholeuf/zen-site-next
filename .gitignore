@@ -2,8 +2,11 @@
 
 # dependencies
 /node_modules
+/.yarn
 /.pnp
 .pnp.js
+.pnp.cjs
+.pnp.loader.mjs
 .yarn/install-state.gz
 
 # testing
@@ -33,4 +36,3 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
