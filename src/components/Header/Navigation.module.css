@@ -1,0 +1,22 @@
+.ul {
+  list-style: none;
+  display: flex;
+}
+
+.li {
+  width: 75px;
+  transition: transform 0.25s ease;
+}
+
+.li:hover {
+  transform: scale(1.2);
+}
+
+.linkActive {
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+.link:hover,
+.linkActive:hover {
+  text-decoration: none;
+}
