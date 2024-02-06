@@ -1,6 +1,6 @@
 import Image, { ImageProps } from "next/image";
 
-interface SimpleIconProps extends ImageProps {
+interface SimpleIconProps extends Omit<ImageProps, "src"> {
   slug: string;
 }
 
