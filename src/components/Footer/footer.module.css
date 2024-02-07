@@ -25,6 +25,10 @@
   margin: var(--spacing-md) 0 var(--spacing-xs) 0;
 }
 
+.heart {
+  color: var(--primary-color);
+}
+
 .copyright {
   font-size: 12px;
 }

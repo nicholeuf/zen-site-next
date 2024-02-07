@@ -38,7 +38,9 @@ const Footer: React.FC = () => {
           );
         })}
       </ul>
-      <p className={styles.tagline}>Made with &#9829; by Nichole Frey </p>
+      <p className={styles.tagline}>
+        Made with <span className={styles.heart}>&#9829;</span> by Nichole Frey{" "}
+      </p>
       <p className={styles.copyright}>
         &#169; Copyright {new Date().getFullYear()} -{" "}
         <strong>All Rights Reserved</strong>-{" "}
