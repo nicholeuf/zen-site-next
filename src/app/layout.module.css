@@ -1,0 +1,15 @@
+@value desktop from './styles/breakpoints.css';
+
+/* tablet and up */
+/* @media screen and (min-width: 550px) {
+  main {
+    
+  }
+} */
+
+/* desktop and up */
+@media only screen and desktop {
+  .main {
+    max-width: var(--standard-max-width);
+  }
+}

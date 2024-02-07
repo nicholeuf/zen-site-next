@@ -9,12 +9,17 @@
   },
   "dependencies": {
     "next": "^14.0.3",
+    "postcss": "^8.4.34",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-nesting": "^12.0.2",
+    "postcss-preset-env": "^9.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/eslint": "^8",
     "@types/node": "^20.10.4",
+    "@types/postcss-flexbugs-fixes": "^5",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8.55.0",

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Inter, Sacramento } from "next/font/google";
 import Header from "components/Header";
 import Footer from "components/Footer";
+
 import "./globals.css";
+import styles from "./layout.module.css";
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts#using-multiple-fonts
 const inter = Inter({
@@ -56,7 +58,7 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        <main>{children}</main>
+        <main className={styles.main}>{children}</main>
         <Footer />
       </body>
     </html>
