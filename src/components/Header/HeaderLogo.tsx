@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import styles from "./HeaderLogo.module.css";
 
-// TODO: Consider making "nf" a pseudo elememnt and
+// TODO: Consider making "nf" a pseudo element and
 // insert my name as a visually hidden element for screen readers only
 
 const HeaderLogo: React.FC = () => {
