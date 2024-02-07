@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Credits",
+  title: "Contact",
 };
 
-export default function Credits() {
+export const Contact = () => {
   return (
     <section>
-      <h1>Credits</h1>
+      <h1>Contact</h1>
       <ul>
         <li>
           <a target="_blank" href="https://icons8.com/icon/24556/lotus">
@@ -31,4 +31,6 @@ export default function Credits() {
       </ul>
     </section>
   );
-}
+};
+
+export default Contact;

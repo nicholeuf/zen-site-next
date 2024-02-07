@@ -15,8 +15,8 @@ const links = [
     name: "About",
   },
   {
-    href: "/",
-    name: "Home",
+    href: "/contact",
+    name: "Contact",
   },
 ];
 
