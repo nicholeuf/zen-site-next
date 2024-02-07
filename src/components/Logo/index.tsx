@@ -1,10 +1,12 @@
-import "./styles.module.css";
+import styles from "./logo.module.css";
 
-export default function Logo() {
+const Logo = () => {
   return (
-    <div className="logo">
-      <p className="title">Nichole Frey</p>
-      <p className="subtitle">Full-Stack Developer</p>
+    <div className={styles.logo}>
+      <p className={styles.title}>Nichole Frey</p>
+      <p className={styles.subtitle}>Full-Stack Developer</p>
     </div>
   );
-}
+};
+
+export default Logo;
