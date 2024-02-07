@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
 
-// import styles from "./page.module.css";
+import Logo from "components/Logo";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Full-Stack Web Developer",
 };
 
+// Should this be a grid?
+// text logo
+// photo text
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>Welcome!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-        suscipit mollitia modi, ea, necessitatibus tempore deserunt, minima
-        similique quidem ex architecto itaque quia numquam maiores sapiente
-        doloremque odio. Doloribus, expedita?
-      </p>
+    <div className={styles.wrapper}>
+      <Logo />
     </div>
   );
 };
