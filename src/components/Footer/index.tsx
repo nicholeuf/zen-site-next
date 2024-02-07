@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           return (
             <li key={slug}>
               <a target="_blank" href={href}>
-                <SimpleIcon slug={slug} alt={alt} />
+                <SimpleIcon slug={slug} alt={alt} color="eee5e9ff" />
               </a>
             </li>
           );
