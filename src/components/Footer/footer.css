@@ -1,6 +1,5 @@
 .footer {
   background-color: var(--dark-color);
-  opacity: 0.85;
   color: var(--light-color);
   width: 100%;
   height: var(--footer-height);
