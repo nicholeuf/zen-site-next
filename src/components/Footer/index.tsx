@@ -1,5 +1,5 @@
 import SimpleIcon from "components/SimpleIcon";
-import "./footer.css";
+import styles from "./footer.module.css";
 
 const links = [
   {
@@ -26,8 +26,8 @@ const links = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
-      <ul className="links">
+    <footer className={styles.footer}>
+      <ul className={styles.links}>
         {links.map(({ href, slug, alt }) => {
           return (
             <li key={slug}>
@@ -38,17 +38,13 @@ const Footer: React.FC = () => {
           );
         })}
       </ul>
-      <p className="tagline">
-        Made with &#9829; by Nichole Frey{" "}
-        <span className="source">
-          <a target="_blank" href="https://github.com/nicholeuf/zen-site-next">
-            [view source code]
-          </a>
-        </span>{" "}
-      </p>
-      <p className="copyright">
+      <p className={styles.tagline}>Made with &#9829; by Nichole Frey </p>
+      <p className={styles.copyright}>
         &#169; Copyright {new Date().getFullYear()} -{" "}
-        <strong>All Rights Reserved</strong>
+        <strong>All Rights Reserved</strong>-{" "}
+        <a target="_blank" href="https://github.com/nicholeuf/zen-site-next">
+          [view source code]
+        </a>
       </p>
     </footer>
   );

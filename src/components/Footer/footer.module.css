@@ -10,7 +10,7 @@
   padding: var(--spacing-md);
 }
 
-.footer .links {
+.links {
   width: 100%;
   max-width: 500px;
   display: flex;
@@ -19,26 +19,12 @@
   list-style: none;
 }
 
-.footer .tagline {
+.tagline {
   font-family: var(--font-sacramento);
   font-size: 26px;
   margin: var(--spacing-md) 0 var(--spacing-xs) 0;
 }
 
-.footer .tagline .source {
-  display: block;
-  text-align: center;
-  font-family: var(--body-font);
-  font-size: 0.9rem;
-}
-
-.footer .copyright {
+.copyright {
   font-size: 12px;
-}
-
-@media only screen and (min-width: 550px) {
-  .footer .tagline .source {
-    display: inline-block;
-    text-align: center;
-  }
 }
