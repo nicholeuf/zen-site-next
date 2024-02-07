@@ -6,7 +6,10 @@ interface IconProps {
   darkModeColor?: string;
 }
 
-type SimpleIconProps = IconProps & Omit<ImageProps, "src">;
+type SimpleIconProps = IconProps &
+  Omit<ImageProps, "src" | "alt"> & {
+    alt?: string;
+  };
 
 const DEFAULT_SIZE = 24;
 
