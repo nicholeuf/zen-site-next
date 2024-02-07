@@ -1,0 +1,9 @@
+.header {
+  height: var(--header-height);
+  border: var(--spacing-sm) solid var(--dark-color);
+  color: var(--dark-color);
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

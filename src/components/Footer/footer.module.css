@@ -1,0 +1,30 @@
+.footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  width: 100%;
+  height: var(--footer-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+}
+
+.links {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.tagline {
+  font-family: var(--font-sacramento);
+  font-size: 26px;
+  margin: var(--spacing-md) 0 var(--spacing-xs) 0;
+}
+
+.copyright {
+  font-size: 12px;
+}
