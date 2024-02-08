@@ -16,7 +16,7 @@ describe("The SimpleIcon component", () => {
     expect(testImage.height).toBe(24);
   });
 
-  test("src contains color, width & height are respected", () => {
+  test("src contains color, width & height when provided", () => {
     render(<SimpleIcon slug="google" color="4285F4" width="16" height="16" />);
     const testImage = document.querySelector("img") as HTMLImageElement;
     expect(testImage.src).toMatch(
@@ -26,7 +26,7 @@ describe("The SimpleIcon component", () => {
     expect(testImage.height).toBe(16);
   });
 
-  test("src contains color, width & height are respected", () => {
+  test("src contains color and darkModeColor when provided", () => {
     render(<SimpleIcon slug="apple" color="black" darkModeColor="white" />);
     const testImage = document.querySelector("img") as HTMLImageElement;
     expect(testImage.src).toMatch(

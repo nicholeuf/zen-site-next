@@ -1,11 +1,12 @@
 @value desktop from './styles/breakpoints.css';
 
-/* tablet and up */
-/* @media screen and (min-width: 550px) {
-  main {
-    
-  }
-} */
+.main {
+  width: 100%;
+  margin: auto;
+  padding: 0 var(--spacing-lg);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+}
 
 /* desktop and up */
 @media only screen and desktop {
