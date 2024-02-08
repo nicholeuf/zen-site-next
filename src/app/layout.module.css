@@ -1,4 +1,4 @@
-@value desktop from './styles/breakpoints.css';
+@value desktop from 'app/styles/breakpoints.css';
 
 .main {
   width: 100%;

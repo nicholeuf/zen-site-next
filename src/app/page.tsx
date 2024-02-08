@@ -14,7 +14,15 @@ export const metadata: Metadata = {
 const HomePage = () => {
   return (
     <div className={styles.wrapper}>
-      <Logo />
+      <div id={styles.photo} className={styles.placeholder}>
+        <p>photo</p>
+      </div>
+      <div id={styles.logo} className={styles.block}>
+        <Logo />
+      </div>
+      <div id={styles.copy} className={styles.placeholder}>
+        <p>copy</p>
+      </div>
     </div>
   );
 };
