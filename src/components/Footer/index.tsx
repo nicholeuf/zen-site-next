@@ -38,10 +38,8 @@ const Footer: React.FC = () => {
           by Nichole Frey
         </Typography>
         <Typography sx={{ fontSize: '12px' }}>
-          &#169; Copyright {new Date().getFullYear()} -{' '}
-          <strong>All Rights Reserved</strong>
-        </Typography>
-        <Link
+          Copyright &#169; {new Date().getFullYear()} -{' '}
+          <strong>All Rights Reserved</strong> - <Link
             target='_blank'
             rel='noopener'
             href='https://github.com/nicholeuf/zen-site-next'
@@ -56,6 +54,7 @@ const Footer: React.FC = () => {
           >
             [view source code]
           </Link>
+        </Typography>
         </Box>
     </Box>
   );
