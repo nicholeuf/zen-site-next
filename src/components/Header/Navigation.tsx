@@ -11,7 +11,11 @@ const { work, about, contact } = routes;
 
 const links = [work, about, contact];
 
-const Navigation: React.FC = () => {
+interface NavigationProps {
+  color: string;
+}
+
+const Navigation: React.FC<NavigationProps> = ({ color }) => {
   const pathname = usePathname();
   return (
     <nav>
@@ -23,6 +27,11 @@ const Navigation: React.FC = () => {
       >
         {links.map(({ href, name }) => {
           const isActive = pathname === href;
+
+          const borderBottom = isActive
+          ? `${constants.spacing.xs} solid ${constants.colors.guava}`
+          : '';
+
           return (
             <ListItem
               key={href}
@@ -38,12 +47,14 @@ const Navigation: React.FC = () => {
                 component={NextLink}
                 sx={{
                   boxSizing: 'border-box',
-                  // letterSpacing: '3.25px',
+                  letterSpacing: '2.75px',
                   height: '100%',
                   textDecoration: 'none',
-                  borderBottom: isActive
-                    ? `${constants.spacing.xs} solid ${constants.colors.guava}`
-                    : '',
+                  color,
+                  borderBottom,
+                  '&:hover': {
+                    color: constants.colors.guava
+                  },
                 }}
               >
                 {name}

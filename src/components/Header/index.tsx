@@ -24,7 +24,7 @@ const Header = () => {
       }}
     >
       <HeaderLogo width={constants.header.height} color={color} />
-      <Navigation />
+      <Navigation color={color} />
     </AppBar>
   );
 };
