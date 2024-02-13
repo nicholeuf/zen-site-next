@@ -13,9 +13,10 @@ const links = [work, about, contact];
 
 interface NavigationProps {
   color: string;
+  activeColor: string;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ color }) => {
+const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
   const pathname = usePathname();
   return (
     <nav>
@@ -29,7 +30,7 @@ const Navigation: React.FC<NavigationProps> = ({ color }) => {
           const isActive = pathname === href;
 
           const borderBottom = isActive
-          ? `${constants.spacing.xs} solid ${constants.colors.guava}`
+          ? `${constants.spacing.xs} solid ${activeColor}`
           : '';
 
           return (
@@ -53,7 +54,7 @@ const Navigation: React.FC<NavigationProps> = ({ color }) => {
                   color,
                   borderBottom,
                   '&:hover': {
-                    color: constants.colors.guava
+                    color: activeColor
                   },
                 }}
               >

@@ -7,6 +7,7 @@ import { constants } from '@/app/styles/theme';
 
 const Header = () => {
   const color = constants.colors.carob;
+  const activeColor = constants.colors.guava;
   return (
     <AppBar
       position='fixed'
@@ -27,8 +28,9 @@ const Header = () => {
         // width === height of header to make logo a box
         width={constants.header.height} 
         color={color} 
+        activeColor={activeColor}
       />
-      <Navigation color={color} />
+      <Navigation color={color} activeColor={activeColor} />
     </AppBar>
   );
 };

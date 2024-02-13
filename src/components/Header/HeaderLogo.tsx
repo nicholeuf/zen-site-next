@@ -7,9 +7,10 @@ import { constants } from '@/app/styles/theme';
 interface HeaderLogoProps {
   width: string;
   color: string;
+  activeColor: string;
 }
 
-const HeaderLogo: React.FC<HeaderLogoProps> = ({ width, color }) => {
+const HeaderLogo: React.FC<HeaderLogoProps> = ({ width, color, activeColor }) => {
   return (
     <Box
       sx={{
@@ -32,7 +33,7 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({ width, color }) => {
           textDecoration: 'none',
           color,
           '&:hover': {
-            color: 'primary.main',
+            color: activeColor,
           },
         }}
         component={NextLink}
