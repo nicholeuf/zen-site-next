@@ -1,23 +1,23 @@
-import type { Metadata } from "next";
-
-// import styles from "./page.module.css";
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Full-Stack Web Developer",
+  title: "Nichole Frey's Portfolio",
 };
 
-const HomePage = () => {
+const Home: React.FC = () => {
   return (
-    <div>
-      <h1>Welcome!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-        suscipit mollitia modi, ea, necessitatibus tempore deserunt, minima
-        similique quidem ex architecto itaque quia numquam maiores sapiente
-        doloremque odio. Doloribus, expedita?
-      </p>
-    </div>
+    <Box>
+      <Typography variant='h1'>Welcome</Typography>
+      <Typography>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum tempore
+        a praesentium perferendis doloremque, veniam minus quis laborum, numquam
+        blanditiis sunt ex consectetur asperiores assumenda nisi laboriosam et
+        tempora quos.
+      </Typography>
+    </Box>
   );
 };
 
-export default HomePage;
+export default Home;

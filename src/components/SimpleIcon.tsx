@@ -1,4 +1,4 @@
-import Image, { ImageProps } from "next/image";
+import Image, { ImageProps } from 'next/image';
 
 interface IconProps {
   slug: string;
@@ -7,7 +7,7 @@ interface IconProps {
 }
 
 type SimpleIconProps = IconProps &
-  Omit<ImageProps, "src" | "alt"> & {
+  Omit<ImageProps, 'src' | 'alt'> & {
     alt?: string;
   };
 
@@ -16,7 +16,7 @@ const DEFAULT_SIZE = 24;
 const SimpleIcon: React.FC<SimpleIconProps> = ({
   height = DEFAULT_SIZE,
   width = DEFAULT_SIZE,
-  alt = "",
+  alt = '',
   slug,
   color,
   darkModeColor,

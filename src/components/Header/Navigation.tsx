@@ -1,44 +1,69 @@
-"use client";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import { usePathname } from 'next/navigation';
+import Link from '@mui/material/Link';
+import NextLink from 'next/link';
 
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { constants } from '@/app/styles/theme';
+import routes from '@/app/lib/routes';
 
-import styles from "./Navigation.module.css";
+const { work, about, contact } = routes;
 
-const links = [
-  {
-    href: "/experience",
-    name: "Work",
-  },
-  {
-    href: "/about",
-    name: "About",
-  },
-  {
-    href: "/contact",
-    name: "Contact",
-  },
-];
+const links = [work, about, contact];
 
-const Navigation = () => {
+interface NavigationProps {
+  color: string;
+  activeColor: string;
+}
+
+const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
   const pathname = usePathname();
-
   return (
     <nav>
-      <ul className={styles.ul}>
+      <List
+        sx={{
+          listStyle: 'none',
+          display: 'flex',
+        }}
+      >
         {links.map(({ href, name }) => {
+          const isActive = pathname === href;
+
+          const borderBottom = isActive
+          ? `${constants.spacing.xs} solid ${activeColor}`
+          : '';
+
           return (
-            <li key={href} className={styles.li}>
+            <ListItem
+              key={href}
+              sx={{
+                transition: 'transform 0.25s ease',
+                '&:hover': {
+                  transform: 'scale(1.2)',
+                },
+              }}
+            >
               <Link
                 href={href}
-                className={pathname === href ? styles.linkActive : styles.link}
+                component={NextLink}
+                sx={{
+                  boxSizing: 'border-box',
+                  letterSpacing: '2.75px',
+                  height: '100%',
+                  textDecoration: 'none',
+                  color,
+                  borderBottom,
+                  '&:hover': {
+                    color: activeColor
+                  },
+                }}
               >
                 {name}
               </Link>
-            </li>
+            </ListItem>
           );
         })}
-      </ul>
+      </List>
     </nav>
   );
 };

@@ -1,24 +1,10 @@
-import type { Metadata } from "next";
-import { Inter, Sacramento } from "next/font/google";
-import Header from "components/Header";
-import Footer from "components/Footer";
 
-import "./globals.css";
-import styles from "./layout.module.css";
+import { Metadata } from "next";
 
-// https://nextjs.org/docs/app/building-your-application/optimizing/fonts#using-multiple-fonts
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const sacramento = Sacramento({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-sacramento",
-  display: "swap",
-});
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import MainContainer from '@/components/MainContainer';
+import GlobalStyles from "@/app/styles/GlobalStyles";
 
 export const metadata: Metadata = {
   title: {
@@ -43,24 +29,22 @@ export const metadata: Metadata = {
   publisher: "Nichole Frey",
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface RootLayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
-    <html lang="en" className={[inter.variable, sacramento.variable].join(" ")}>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang='en'>
       <body>
-        <Header />
-        <main className={styles.main}>{children}</main>
-        <Footer />
+        <GlobalStyles>
+          <Header />
+          <MainContainer>{children}</MainContainer>
+          <Footer />
+        </GlobalStyles>
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
