@@ -1,8 +1,13 @@
-import * as React from 'react';
+
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { Metadata } from "next";
 
-const Work = () => {
+export const metadata: Metadata = {
+  title: "Work",
+};
+
+const Work: React.FC = () => {
   return (
     <Box>
       <Typography variant='h1'>Work</Typography>
