@@ -45,11 +45,9 @@ const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      // red
       main: constants.colors.guava,
     },
     secondary: {
-      // black
       main: constants.colors.carob,
     },
     background: {
