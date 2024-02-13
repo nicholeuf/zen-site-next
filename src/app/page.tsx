@@ -1,23 +1,19 @@
-import type { Metadata } from "next";
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
-// import styles from "./page.module.css";
-
-export const metadata: Metadata = {
-  title: "Full-Stack Web Developer",
-};
-
-const HomePage = () => {
+const Home = () => {
   return (
-    <div>
-      <h1>Welcome!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-        suscipit mollitia modi, ea, necessitatibus tempore deserunt, minima
-        similique quidem ex architecto itaque quia numquam maiores sapiente
-        doloremque odio. Doloribus, expedita?
-      </p>
-    </div>
+    <Box>
+      <Typography variant='h1'>Welcome</Typography>
+      <Typography>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum tempore
+        a praesentium perferendis doloremque, veniam minus quis laborum, numquam
+        blanditiis sunt ex consectetur asperiores assumenda nisi laboriosam et
+        tempora quos.
+      </Typography>
+    </Box>
   );
 };
 
-export default HomePage;
+export default Home;

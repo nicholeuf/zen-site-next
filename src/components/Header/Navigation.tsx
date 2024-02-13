@@ -1,44 +1,57 @@
-"use client";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import { usePathname } from 'next/navigation';
+import Link from '@mui/material/Link';
+import NextLink from 'next/link';
 
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { constants } from '@/app/styles/theme';
+import routes from '@/app/lib/routes';
 
-import styles from "./Navigation.module.css";
+const { work, about, contact } = routes;
 
-const links = [
-  {
-    href: "/experience",
-    name: "Work",
-  },
-  {
-    href: "/about",
-    name: "About",
-  },
-  {
-    href: "/contact",
-    name: "Contact",
-  },
-];
+const links = [work, about, contact];
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   const pathname = usePathname();
-
   return (
     <nav>
-      <ul className={styles.ul}>
+      <List
+        sx={{
+          listStyle: 'none',
+          display: 'flex',
+        }}
+      >
         {links.map(({ href, name }) => {
+          const isActive = pathname === href;
           return (
-            <li key={href} className={styles.li}>
+            <ListItem
+              key={href}
+              sx={{
+                transition: 'transform 0.25s ease',
+                '&:hover': {
+                  transform: 'scale(1.2)',
+                },
+              }}
+            >
               <Link
                 href={href}
-                className={pathname === href ? styles.linkActive : styles.link}
+                component={NextLink}
+                sx={{
+                  boxSizing: 'border-box',
+                  // letterSpacing: '3.25px',
+                  height: '100%',
+                  textDecoration: 'none',
+                  borderBottom: isActive
+                    ? `${constants.spacing.xs} solid ${constants.colors.guava}`
+                    : '',
+                }}
               >
                 {name}
               </Link>
-            </li>
+            </ListItem>
           );
         })}
-      </ul>
+      </List>
     </nav>
   );
 };

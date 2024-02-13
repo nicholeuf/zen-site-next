@@ -1,25 +1,18 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Contact",
-};
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 const Contact = () => {
   return (
-    <section>
-      <h1>Contact</h1>
-      <ul>
-        <li>
-          <a target="_blank" href="https://icons8.com/icon/24556/lotus">
-            Lotus
-          </a>{" "}
-          icon by{" "}
-          <a target="_blank" href="https://icons8.com">
-            Icons8
-          </a>
-        </li>
-      </ul>
-    </section>
+    <Box>
+      <Typography variant='h1'>Contact</Typography>
+      <Typography>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum tempore
+        a praesentium perferendis doloremque, veniam minus quis laborum, numquam
+        blanditiis sunt ex consectetur asperiores assumenda nisi laboriosam et
+        tempora quos.
+      </Typography>
+    </Box>
   );
 };
 

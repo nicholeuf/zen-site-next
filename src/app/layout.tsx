@@ -1,66 +1,33 @@
-import type { Metadata } from "next";
-import { Inter, Sacramento } from "next/font/google";
-import Header from "components/Header";
-import Footer from "components/Footer";
+import * as React from 'react';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
-import "./globals.css";
-import styles from "./layout.module.css";
+import theme from '@/app/styles/theme';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import MainContainer from '@/components/MainContainer';
 
-// https://nextjs.org/docs/app/building-your-application/optimizing/fonts#using-multiple-fonts
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const sacramento = Sacramento({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-sacramento",
-  display: "swap",
-});
-
-export const metadata: Metadata = {
-  title: {
-    template: "%s | Nichole Frey",
-    default: "Nichole Frey", // a default is required when creating a template
-  },
-  description: "Full-Stack Web Developer located in Central Florida",
-
-  generator: "Next.js",
-  applicationName: "Nichole Frey's Portfolio",
-  // referrer: 'origin-when-cross-origin',
-  keywords: [
-    "Full-Stack",
-    "Web Developer",
-    "Next.js",
-    "React",
-    "JavaScript",
-    "TypeScript",
-  ],
-  // authors: [{ name: 'Seb' }, { name: 'Josh', url: 'https://nextjs.org' }],
-  creator: "Nichole Frey",
-  publisher: "Nichole Frey",
-};
-
-export default function RootLayout({
-  children,
-}: {
+interface RootLayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
-    <html lang="en" className={[inter.variable, sacramento.variable].join(" ")}>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang='en'>
       <body>
-        <Header />
-        <main className={styles.main}>{children}</main>
-        <Footer />
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+          <ThemeProvider theme={theme}>
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline />
+            <Header />
+            <MainContainer>{children}</MainContainer>
+            <Footer />
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

@@ -1,17 +1,45 @@
-import Link from "next/link";
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import NextLink from 'next/link';
 
-import styles from "./HeaderLogo.module.css";
+import { constants } from '@/app/styles/theme';
 
-// TODO: Consider making "nf" a pseudo element and
-// insert my name as a visually hidden element for screen readers only
+interface HeaderLogoProps {
+  width: string;
+  color: string;
+}
 
-const HeaderLogo: React.FC = () => {
+const HeaderLogo: React.FC<HeaderLogoProps> = ({ width, color }) => {
   return (
-    <div className={styles.logo}>
-      <Link href="/" className={styles.link}>
+    <Box
+      sx={{
+        typography: 'sacramento',
+        fontSize: '30px',
+        height: '100%',
+        width,
+        borderRight: `${constants.spacing.sm} solid ${color}`,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        '&:hover': {
+          cursor: 'pointer',
+        },
+      }}
+    >
+      <Link
+        href='/'
+        sx={{
+          textDecoration: 'none',
+          color,
+          '&:hover': {
+            color: 'primary.main',
+          },
+        }}
+        component={NextLink}
+      >
         nf
       </Link>
-    </div>
+    </Box>
   );
 };
 

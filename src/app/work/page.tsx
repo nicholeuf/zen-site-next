@@ -2,10 +2,10 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-const About = () => {
+const Work = () => {
   return (
     <Box>
-      <Typography variant='h1'>About</Typography>
+      <Typography variant='h1'>Work</Typography>
       <Typography>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum tempore
         a praesentium perferendis doloremque, veniam minus quis laborum, numquam
@@ -16,4 +16,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Work;

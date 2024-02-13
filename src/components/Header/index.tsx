@@ -1,13 +1,31 @@
-import HeaderLogo from "./HeaderLogo";
-import Navigation from "./Navigation";
-import styles from "./index.module.css";
+'use client';
+import AppBar from '@mui/material/AppBar';
 
-export const Header = () => {
+import HeaderLogo from './HeaderLogo';
+import Navigation from './Navigation';
+import { constants } from '@/app/styles/theme';
+
+const Header = () => {
+  const color = constants.colors.carob;
   return (
-    <header className={styles.header}>
-      <HeaderLogo />
+    <AppBar
+      position='fixed'
+      sx={{
+        backgroundColor: 'background.default',
+        border: `${constants.spacing.sm} solid ${color}`,
+        minHeight: constants.header.height,
+        height: constants.header.height,
+        fontWeight: 700,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        boxShadow: 'none'
+      }}
+    >
+      <HeaderLogo width={constants.header.height} color={color} />
       <Navigation />
-    </header>
+    </AppBar>
   );
 };
 
