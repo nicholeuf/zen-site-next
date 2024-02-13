@@ -23,7 +23,11 @@ const Header = () => {
         boxShadow: 'none'
       }}
     >
-      <HeaderLogo width={constants.header.height} color={color} />
+      <HeaderLogo 
+        // width === height of header to make logo a box
+        width={constants.header.height} 
+        color={color} 
+      />
       <Navigation color={color} />
     </AppBar>
   );
