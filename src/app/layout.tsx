@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MainContainer from '@/components/MainContainer';
-import GlobalStyles from "./GlobalStyles";
+import GlobalStyles from "@/app/styles/GlobalStyles";
 
 export const metadata: Metadata = {
   title: {
