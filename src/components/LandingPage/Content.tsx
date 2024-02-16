@@ -44,7 +44,7 @@ const Content = () => {
       </Box>
       <Box sx={{ gridArea: 'heading' }}>
         <Typography variant="h1" gutterBottom>
-          Hi, I'm Nichole
+          Hi, I&apos;m Nichole
         </Typography>
         <Typography variant="h4" component="h2" gutterBottom>
           Full-Stack Developer
