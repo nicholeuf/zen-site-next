@@ -6,11 +6,12 @@ import Link from '@mui/material/Link';
 
 import Links from './Links';
 import { constants } from '@/app/styles/theme';
+import ExternalLink from '@/components/ExternalLink';
 
 const Footer: React.FC = () => {
   return (
     <Box
-      component='footer'
+      component="footer"
       sx={{
         backgroundColor: constants.colors.carob,
         color: constants.colors.cream,
@@ -23,14 +24,16 @@ const Footer: React.FC = () => {
       }}
     >
       <Links />
-      <Box sx={{
-        textAlign: 'center'
-      }}>
-        <Typography variant='sacramento' component='p'>
+      <Box
+        sx={{
+          textAlign: 'center',
+        }}
+      >
+        <Typography variant="sacramento" component="p">
           Made with{' '}
           <Typography
             display={'inline'}
-            component='span'
+            component="span"
             sx={{ color: constants.colors.guava }}
           >
             &#9829;
@@ -39,10 +42,9 @@ const Footer: React.FC = () => {
         </Typography>
         <Typography sx={{ fontSize: '12px' }}>
           Copyright &#169; {new Date().getFullYear()} -{' '}
-          <strong>All Rights Reserved</strong> - <Link
-            target='_blank'
-            rel='noopener'
-            href='https://github.com/nicholeuf/zen-site-next'
+          <strong>All Rights Reserved</strong> -{' '}
+          <ExternalLink
+            href="https://github.com/nicholeuf/zen-site-next"
             sx={{
               color: constants.colors.cream,
               textDecoration: 'none',
@@ -53,9 +55,9 @@ const Footer: React.FC = () => {
             }}
           >
             [view source code]
-          </Link>
+          </ExternalLink>
         </Typography>
-        </Box>
+      </Box>
     </Box>
   );
 };

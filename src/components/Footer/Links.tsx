@@ -1,9 +1,9 @@
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import Link from '@mui/material/Link';
 
 import SimpleIcon from '@/components/SimpleIcon';
 import { constants } from '@/app/styles/theme';
+import ExternalLink from '@/components/ExternalLink';
 
 const links = [
   {
@@ -49,20 +49,18 @@ const Links: React.FC = () => {
                 },
               }}
             >
-              <Link
+              <ExternalLink
                 href={href}
                 sx={{
                   textDecoration: 'none',
                 }}
-                target='_blank'
-                rel='noopener'
               >
                 <SimpleIcon
                   slug={slug}
                   alt={alt}
                   color={constants.colors.cream.replace('#', '')}
                 />
-              </Link>
+              </ExternalLink>
             </ListItem>
           );
         })}
