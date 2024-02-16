@@ -39,21 +39,44 @@ const Content = () => {
           zoom="0.5"
           src="zensite/nf-profile-c-hibiscus"
           radius="20"
-          alt=""
+          alt="Photo of website author"
+          style={{
+            border: '1px solid white',
+            borderRadius: '20px',
+          }}
         />
       </Box>
       <Box sx={{ gridArea: 'heading' }}>
         <Typography variant="h1" gutterBottom>
           Hi, I&apos;m Nichole
         </Typography>
-        <Typography variant="h4" component="h2" gutterBottom>
-          Full-Stack Developer
+        <Typography
+          variant="h4"
+          component="h2"
+          gutterBottom
+          sx={{
+            fontWeight: 500,
+          }}
+        >
+          Full-Stack Web Developer
         </Typography>
       </Box>
       <Box sx={{ gridArea: 'body' }}>
-        <Typography>
-          I turn ideas into reality using modern Javascript. I can work up and
-          down the stack, but my sweet spot is on the Front-End.
+        <Typography
+          variant="body1"
+          sx={{
+            fontSize: {
+              xs: '1.25rem',
+              sm: '1.5rem',
+            },
+            color: 'grey.800',
+          }}
+          maxWidth="md"
+        >
+          Based in Orlando, Florida, my passion lies in crafting seamless,
+          intuitive experiences that delight customers. I&apos;ve mentored
+          junior developers, acted as a Lead Front-End developer, and
+          collaborated within dynamic, agile teams.
         </Typography>
       </Box>
     </Box>

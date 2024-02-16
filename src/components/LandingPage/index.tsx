@@ -15,12 +15,13 @@ const LandingPage: React.FC = () => {
   // Generate responsive url to use as a background image
   // Otherwise a width is required
   const url = getCldImageUrl({
-    // getCldImageUrl uses the same API as CldImage.
+    // getCldImageUrl uses the same API as CldImage and sizes
     // They're both wrappers around @cloudinary-util/url-loader which provide a simpler way to generate images and Cloudinary URLs.
     // https://next.cloudinary.dev/getcldimageurl/basic-usage#basic-usage
     // @ts-ignore
     sizes: '100vw',
-    src: 'zensite/cleo-stracuzza-avA-YuEe2ZA-unsplash_tzotoy',
+    opacity: '30',
+    src: 'zensite/scott-webb-5mIcH3q7tIk-unsplash',
   });
   return (
     <Box
@@ -29,7 +30,7 @@ const LandingPage: React.FC = () => {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         pl: 3,
         position: 'relative',
       }}
@@ -38,13 +39,13 @@ const LandingPage: React.FC = () => {
         sx={{
           height: '100%',
           width: '100%',
-          background: `url(${url}) no-repeat center`,
+          background: `url(${url}) no-repeat`,
+          backgroundPosition: '50% 25%',
           backgroundSize: 'cover',
           position: 'absolute',
           bottom: 0,
           right: 0,
           zIndex: -1,
-          opacity: 0.3,
         }}
       ></Box>
       <Content />
