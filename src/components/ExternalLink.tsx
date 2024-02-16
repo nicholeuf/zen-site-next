@@ -4,9 +4,14 @@ interface ExternalLinkProps extends LinkProps {
   children: React.ReactNode;
 }
 
-const ExternalLink: React.FC<ExternalLinkProps> = ({ children, ...props }) => {
+const ExternalLink: React.FC<ExternalLinkProps> = ({
+  children,
+  target = '_blank',
+  rel = 'noopener',
+  ...props
+}) => {
   return (
-    <Link {...props} target="_blank" rel="noopener">
+    <Link {...props} target={target} rel={rel}>
       {children}
     </Link>
   );
