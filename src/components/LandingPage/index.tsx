@@ -15,6 +15,10 @@ const LandingPage: React.FC = () => {
   // Generate responsive url to use as a background image
   // Otherwise a width is required
   const url = getCldImageUrl({
+    // getCldImageUrl uses the same API as CldImage.
+    // They're both wrappers around @cloudinary-util/url-loader which provide a simpler way to generate images and Cloudinary URLs.
+    // https://next.cloudinary.dev/getcldimageurl/basic-usage#basic-usage
+    // @ts-ignore
     sizes: '100vw',
     src: 'zensite/cleo-stracuzza-avA-YuEe2ZA-unsplash_tzotoy',
   });
