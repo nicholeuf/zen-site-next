@@ -10,7 +10,11 @@ interface HeaderLogoProps {
   activeColor: string;
 }
 
-const HeaderLogo: React.FC<HeaderLogoProps> = ({ width, color, activeColor }) => {
+const HeaderLogo: React.FC<HeaderLogoProps> = ({
+  width,
+  color,
+  activeColor,
+}) => {
   return (
     <Box
       sx={{
@@ -28,7 +32,7 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({ width, color, activeColor }) =>
       }}
     >
       <Link
-        href='/'
+        href="/"
         sx={{
           textDecoration: 'none',
           color,

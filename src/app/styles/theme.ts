@@ -67,9 +67,9 @@ const theme = createTheme({
       styleOverrides: {
         body: {
           overflowX: 'hidden',
-          maxWidth: '100vw'
-        }
-      }
+          maxWidth: '100vw',
+        },
+      },
     },
   },
 });

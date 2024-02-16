@@ -30,8 +30,8 @@ const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
           const isActive = pathname === href;
 
           const borderBottom = isActive
-          ? `${constants.spacing.xs} solid ${activeColor}`
-          : '';
+            ? `${constants.spacing.xs} solid ${activeColor}`
+            : '';
 
           return (
             <ListItem
@@ -53,8 +53,9 @@ const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
                   textDecoration: 'none',
                   color,
                   borderBottom,
+                  transition: 'color 0.25s ease',
                   '&:hover': {
-                    color: activeColor
+                    color: activeColor,
                   },
                 }}
               >

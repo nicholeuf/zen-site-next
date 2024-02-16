@@ -1,5 +1,5 @@
-import "@mui/material/styles"
-import "@mui/material/Typography"
+import '@mui/material/styles';
+import '@mui/material/Typography';
 
 // https://mui.com/material-ui/customization/typography/#adding-amp-disabling-variants
 declare module '@mui/material/styles' {

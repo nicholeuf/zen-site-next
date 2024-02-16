@@ -10,7 +10,7 @@ const Header = () => {
   const activeColor = constants.colors.guava;
   return (
     <AppBar
-      position='fixed'
+      position="fixed"
       sx={{
         backgroundColor: 'background.default',
         border: `${constants.spacing.sm} solid ${color}`,
@@ -21,13 +21,13 @@ const Header = () => {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        boxShadow: 'none'
+        boxShadow: 'none',
       }}
     >
-      <HeaderLogo 
+      <HeaderLogo
         // width === height of header to make logo a box
-        width={constants.header.height} 
-        color={color} 
+        width={constants.header.height}
+        color={color}
         activeColor={activeColor}
       />
       <Navigation color={color} activeColor={activeColor} />

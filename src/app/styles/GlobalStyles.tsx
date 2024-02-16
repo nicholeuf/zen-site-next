@@ -18,6 +18,6 @@ const GlobalStyles: React.FC<GlobalStylesProps> = ({ children }) => {
       </ThemeProvider>
     </AppRouterCacheProvider>
   );
-}
+};
 
 export default GlobalStyles;
