@@ -29,9 +29,7 @@ const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
         {links.map(({ href, name }) => {
           const isActive = pathname === href;
 
-          const borderBottom = isActive
-            ? `${constants.spacing.xs} solid ${activeColor}`
-            : '';
+          const borderBottom = isActive ? `${constants.spacing.xs} solid` : '';
 
           return (
             <ListItem
@@ -53,6 +51,7 @@ const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
                   textDecoration: 'none',
                   color,
                   borderBottom,
+                  borderBottomColor: isActive && activeColor,
                   transition: 'color 0.25s ease',
                   '&:hover': {
                     color: activeColor,

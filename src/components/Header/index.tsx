@@ -6,14 +6,15 @@ import Navigation from './Navigation';
 import { constants } from '@/app/styles/theme';
 
 const Header = () => {
-  const color = constants.colors.carob;
-  const activeColor = constants.colors.guava;
+  const color = 'secondary.main';
+  const activeColor = 'primary.light';
   return (
     <AppBar
       position="fixed"
       sx={{
         backgroundColor: 'background.default',
-        border: `${constants.spacing.sm} solid ${color}`,
+        border: `${constants.spacing.sm} solid`,
+        borderColor: color,
         minHeight: constants.header.height,
         height: constants.header.height,
         fontWeight: 700,
