@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Home Page component has expected snapshot 1`] = `
+[
+  <header
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1cyct54-MuiPaper-root-MuiAppBar-root"
+    data-testid="header"
+  >
+    <div
+      className="MuiBox-root css-1isvkdv"
+    >
+      <a
+        className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-xy1pft-MuiTypography-root-MuiLink-root"
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        nf
+      </a>
+    </div>
+    <nav>
+      <ul
+        className="MuiList-root MuiList-padding css-1usf0v9-MuiList-root"
+      >
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ep4232-MuiTypography-root-MuiLink-root"
+            href="/work"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Work
+          </a>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ep4232-MuiTypography-root-MuiLink-root"
+            href="/about"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            About
+          </a>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ep4232-MuiTypography-root-MuiLink-root"
+            href="/contact"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>,
+  <main
+    className="MuiContainer-root MuiContainer-maxWidthLg css-or30eo-MuiContainer-root"
+  >
+    <div
+      className="MuiBox-root css-1rc5v91"
+      data-testid="landing"
+    >
+      <div
+        className="MuiBox-root css-hks7cf"
+        data-testid="landing-background-image"
+      />
+      <div
+        className="MuiBox-root css-14alikl"
+      >
+        <div
+          className="MuiBox-root css-1betyjw"
+        >
+          <img
+            alt="Photo of website author"
+            data-nimg="1"
+            data-testid="landing-profile-image"
+            decoding="async"
+            height={200}
+            loading="lazy"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0"
+            srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 2x"
+            style={
+              {
+                "border": "1px solid white",
+                "borderRadius": "20px",
+                "color": "transparent",
+              }
+            }
+            width={200}
+          />
+        </div>
+        <div
+          className="MuiBox-root css-11n6avn"
+        >
+          <h1
+            className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom css-pdit6e-MuiTypography-root"
+          >
+            Hi, I'm Nichole
+          </h1>
+          <h2
+            className="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1g22ntw-MuiTypography-root"
+          >
+            Full-Stack Developer
+          </h2>
+        </div>
+        <div
+          className="MuiBox-root css-d3gumq"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 css-lt3owt-MuiTypography-root"
+          >
+            Based in Orlando, Florida, my passion lies in crafting seamless, intuitive, well-built experiences for the customer. I've mentored junior developers, acted as a Lead Front-End developer, and collaborated within dynamic, agile teams.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>,
+  <footer
+    className="MuiBox-root css-v8wxw1"
+    data-testid="footer"
+  >
+    <nav>
+      <ul
+        className="MuiList-root MuiList-padding css-1usf0v9-MuiList-root"
+      >
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
+            href="https://www.linkedin.com/in/nicholeuf"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener"
+            target="_blank"
+          >
+            <img
+              alt="LinkedIn External Link"
+              data-nimg="1"
+              decoding="async"
+              height={24}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=48&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=48&q=75 2x"
+              style={
+                {
+                  "color": "transparent",
+                }
+              }
+              width={24}
+            />
+          </a>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
+            href="https://github.com/nicholeuf"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener"
+            target="_blank"
+          >
+            <img
+              alt="Github External Link"
+              data-nimg="1"
+              decoding="async"
+              height={24}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=48&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=48&q=75 2x"
+              style={
+                {
+                  "color": "transparent",
+                }
+              }
+              width={24}
+            />
+          </a>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
+            href="https://www.npmjs.com/~nicholeuf"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener"
+            target="_blank"
+          >
+            <img
+              alt="NPM External Link"
+              data-nimg="1"
+              decoding="async"
+              height={24}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fnpm%2FE8EAE3&w=48&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fnpm%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fnpm%2FE8EAE3&w=48&q=75 2x"
+              style={
+                {
+                  "color": "transparent",
+                }
+              }
+              width={24}
+            />
+          </a>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
+            href="https://codepen.io/nicholeuf-the-vuer"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener"
+            target="_blank"
+          >
+            <img
+              alt="Codepen External Link"
+              data-nimg="1"
+              decoding="async"
+              height={24}
+              loading="lazy"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fcodepen%2FE8EAE3&w=48&q=75"
+              srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fcodepen%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fcodepen%2FE8EAE3&w=48&q=75 2x"
+              style={
+                {
+                  "color": "transparent",
+                }
+              }
+              width={24}
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      className="MuiBox-root css-xi606m"
+    >
+      <p
+        className="MuiTypography-root MuiTypography-sacramento css-1twztfu-MuiTypography-root"
+      >
+        Made with
+         
+        <span
+          className="MuiTypography-root MuiTypography-body1 css-p225gv-MuiTypography-root"
+        >
+          ♥
+        </span>
+         
+        by Nichole Frey
+      </p>
+      <p
+        className="MuiTypography-root MuiTypography-body1 css-1hcpzgk-MuiTypography-root"
+      >
+        Copyright © 
+        2024
+         -
+         
+        <strong>
+          All Rights Reserved
+        </strong>
+         -
+         
+        <a
+          className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-kedlxa-MuiTypography-root-MuiLink-root"
+          href="https://github.com/nicholeuf/zen-site-next"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          rel="noopener"
+          target="_blank"
+        >
+          [view source code]
+        </a>
+      </p>
+    </div>
+  </footer>,
+]
+`;
