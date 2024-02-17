@@ -1,11 +1,7 @@
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import { usePathname } from 'next/navigation';
-import Link from '@mui/material/Link';
-import NextLink from 'next/link';
-
-import { constants } from '@/app/styles/theme';
 import routes from '@/app/lib/routes';
+import NavigationItem from './NavigationItem';
 
 const { work, about, contact } = routes;
 
@@ -29,39 +25,15 @@ const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
         {links.map(({ href, name }) => {
           const isActive = pathname === href;
 
-          const borderBottom = isActive ? `${constants.spacing.xs} solid` : '';
-
           return (
-            <ListItem
-              key={href}
-              sx={{
-                transition: 'transform 0.25s ease',
-                '&:hover': {
-                  transform: 'scale(1.2)',
-                },
-              }}
-            >
-              <Link
-                href={href}
-                component={NextLink}
-                sx={{
-                  boxSizing: 'border-box',
-                  letterSpacing: '2.75px',
-                  height: '100%',
-                  textDecoration: 'none',
-                  color,
-                  borderBottom,
-                  borderBottomColor: isActive ? activeColor : '',
-                  transition: 'color 0.25s ease',
-                  '&:hover': {
-                    color: activeColor,
-                    textDecoration: 'none',
-                  },
-                }}
-              >
-                {name}
-              </Link>
-            </ListItem>
+            <NavigationItem
+              key={name}
+              isActive={isActive}
+              href={href}
+              name={name}
+              color={color}
+              activeColor={activeColor}
+            />
           );
         })}
       </List>
