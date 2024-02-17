@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import '@mui/material/styles';
 import '@mui/material/Typography';
 

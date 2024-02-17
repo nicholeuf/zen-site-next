@@ -1,9 +1,9 @@
-import { Metadata } from 'next';
+/* istanbul ignore file */
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import MainContainer from '@/components/MainContainer';
-import GlobalStyles from '@/app/styles/GlobalStyles';
+import { Metadata } from 'next';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
+
+import AppLayout from '@/components/AppLayout';
 
 export const metadata: Metadata = {
   title: {
@@ -38,11 +38,9 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <GlobalStyles>
-          <Header />
-          <MainContainer>{children}</MainContainer>
-          <Footer />
-        </GlobalStyles>
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+          <AppLayout>{children}</AppLayout>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
