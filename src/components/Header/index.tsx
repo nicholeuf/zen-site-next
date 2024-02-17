@@ -10,6 +10,7 @@ const Header = () => {
   const activeColor = 'primary.light';
   return (
     <AppBar
+      data-testid="header"
       position="fixed"
       sx={{
         backgroundColor: 'background.default',
