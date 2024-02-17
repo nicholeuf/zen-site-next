@@ -1,3 +1,10 @@
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+
 ![github actions](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml/badge.svg)
 [![codecov](https://codecov.io/gh/nicholeuf/zen-site-next/graph/badge.svg?token=DVTFETZP3V)](https://codecov.io/gh/nicholeuf/zen-site-next)
 

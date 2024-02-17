@@ -1,15 +1,15 @@
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "About",
+  title: 'About',
 };
 
 const About: React.FC = () => {
   return (
     <Box>
-      <Typography variant='h1'>About</Typography>
+      <Typography variant="h1">About</Typography>
       <Typography>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum tempore
         a praesentium perferendis doloremque, veniam minus quis laborum, numquam

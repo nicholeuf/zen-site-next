@@ -10,7 +10,11 @@ interface HeaderLogoProps {
   activeColor: string;
 }
 
-const HeaderLogo: React.FC<HeaderLogoProps> = ({ width, color, activeColor }) => {
+const HeaderLogo: React.FC<HeaderLogoProps> = ({
+  width,
+  color,
+  activeColor,
+}) => {
   return (
     <Box
       sx={{
@@ -18,7 +22,8 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({ width, color, activeColor }) =>
         fontSize: '30px',
         height: '100%',
         width,
-        borderRight: `${constants.spacing.sm} solid ${color}`,
+        borderRight: `${constants.spacing.sm} solid`,
+        borderRightColor: color,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -28,12 +33,12 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({ width, color, activeColor }) =>
       }}
     >
       <Link
-        href='/'
+        href="/"
         sx={{
-          textDecoration: 'none',
           color,
           '&:hover': {
             color: activeColor,
+            textDecoration: 'none',
           },
         }}
         component={NextLink}

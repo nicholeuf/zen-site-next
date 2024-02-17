@@ -1,12 +1,12 @@
 /*
  * @jest-environment jsdom
  */
-import { render } from '@testing-library/react';
+import { render } from 'test-utils';
 import SimpleIcon from './SimpleIcon';
 
 describe('The SimpleIcon component', () => {
   test('alt, width, and height contain correct default value', () => {
-    render(<SimpleIcon slug='github' />);
+    render(<SimpleIcon slug="github" />);
     const testImage = document.querySelector('img') as HTMLImageElement;
     expect(testImage.alt).toBe('');
     expect(testImage.src).toMatch(
@@ -17,7 +17,7 @@ describe('The SimpleIcon component', () => {
   });
 
   test('src contains color, width & height when provided', () => {
-    render(<SimpleIcon slug='google' color='4285F4' width='16' height='16' />);
+    render(<SimpleIcon slug="google" color="4285F4" width="16" height="16" />);
     const testImage = document.querySelector('img') as HTMLImageElement;
     expect(testImage.src).toMatch(
       /^(.*)url=https(.*)cdn.simpleicons.org(.*)google(.*)4285F4(.*)$/
@@ -27,7 +27,7 @@ describe('The SimpleIcon component', () => {
   });
 
   test('src contains color and darkModeColor when provided', () => {
-    render(<SimpleIcon slug='apple' color='black' darkModeColor='white' />);
+    render(<SimpleIcon slug="apple" color="black" darkModeColor="white" />);
     const testImage = document.querySelector('img') as HTMLImageElement;
     expect(testImage.src).toMatch(
       /^(.*)url=https(.*)cdn.simpleicons.org(.*)apple(.*)black(.*)white(.*)$/

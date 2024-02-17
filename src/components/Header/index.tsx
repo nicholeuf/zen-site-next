@@ -6,14 +6,16 @@ import Navigation from './Navigation';
 import { constants } from '@/app/styles/theme';
 
 const Header = () => {
-  const color = constants.colors.carob;
-  const activeColor = constants.colors.guava;
+  const color = 'secondary.main';
+  const activeColor = 'primary.light';
   return (
     <AppBar
-      position='fixed'
+      data-testid="header"
+      position="fixed"
       sx={{
         backgroundColor: 'background.default',
-        border: `${constants.spacing.sm} solid ${color}`,
+        border: `${constants.spacing.sm} solid`,
+        borderColor: color,
         minHeight: constants.header.height,
         height: constants.header.height,
         fontWeight: 700,
@@ -21,13 +23,13 @@ const Header = () => {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        boxShadow: 'none'
+        boxShadow: 'none',
       }}
     >
-      <HeaderLogo 
+      <HeaderLogo
         // width === height of header to make logo a box
-        width={constants.header.height} 
-        color={color} 
+        width={constants.header.height}
+        color={color}
         activeColor={activeColor}
       />
       <Navigation color={color} activeColor={activeColor} />
