@@ -33,6 +33,7 @@ const Content = () => {
         }}
       >
         <CldImage
+          data-testid="landing-profile-image"
           width="200"
           height="200"
           crop="thumb"

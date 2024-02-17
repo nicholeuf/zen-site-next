@@ -27,6 +27,7 @@ const LandingPage: React.FC = () => {
   });
   return (
     <Box
+      data-testid="landing"
       sx={{
         minHeight: getMainHeight(),
         display: 'flex',
@@ -38,6 +39,7 @@ const LandingPage: React.FC = () => {
       }}
     >
       <Box
+        data-testid="landing-background-image"
         sx={{
           height: '100%',
           width: '100%',
