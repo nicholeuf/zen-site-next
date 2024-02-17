@@ -11,6 +11,7 @@ import ExternalLink from '@/components/ExternalLink';
 const Footer: React.FC = () => {
   return (
     <Box
+      data-testid="footer"
       component="footer"
       sx={{
         backgroundColor: constants.colors.carob,
