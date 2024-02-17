@@ -37,11 +37,11 @@ const Contact: React.FC = () => {
           </ListItem>
           <ListItem>
             Landing page background photo by&nbsp;
-            <ExternalLink href="https://unsplash.com/@cleostra?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-              cleo stracuzza
+            <ExternalLink href="https://unsplash.com/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Scott Webb
             </ExternalLink>
             &nbsp;on&nbsp;
-            <ExternalLink href="https://unsplash.com/photos/green-leaves-on-white-background-avA-YuEe2ZA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+            <ExternalLink href="https://unsplash.com/photos/rubber-plant-5mIcH3q7tIk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
               Unsplash
             </ExternalLink>
           </ListItem>
