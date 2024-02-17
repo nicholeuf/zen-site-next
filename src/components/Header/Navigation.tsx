@@ -55,6 +55,7 @@ const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
                   transition: 'color 0.25s ease',
                   '&:hover': {
                     color: activeColor,
+                    textDecoration: 'none',
                   },
                 }}
               >

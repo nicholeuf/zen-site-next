@@ -23,7 +23,6 @@ const LandingPage: React.FC = () => {
     opacity: '30',
     src: 'zensite/scott-webb-5mIcH3q7tIk-unsplash',
     aspectRatio: '2:3',
-    crop: 'auto',
     quality: '5',
   });
   return (

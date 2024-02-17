@@ -2,17 +2,17 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { CldImage } from 'next-cloudinary';
 
-const Content = () => {
-  const smallGridTemplateAreas = `
-    "photo"
-    "heading"
-    "body"
-  `;
-  const largeGridTemplateAreas = `
-    "photo heading heading heading"
-    "body body body body"
-  `;
+const smallGridTemplateAreas = `
+"photo"
+"heading"
+"body"
+`;
+const largeGridTemplateAreas = `
+"photo heading heading heading"
+"body body body body"
+`;
 
+const Content = () => {
   return (
     <Box
       sx={{
@@ -58,7 +58,7 @@ const Content = () => {
             fontWeight: 500,
           }}
         >
-          Full-Stack Web Developer
+          Full-Stack Developer
         </Typography>
       </Box>
       <Box sx={{ gridArea: 'body' }}>
@@ -74,7 +74,7 @@ const Content = () => {
           maxWidth="md"
         >
           Based in Orlando, Florida, my passion lies in crafting seamless,
-          intuitive experiences that delight customers. I&apos;ve mentored
+          intuitive, well-built experiences for the customer. I&apos;ve mentored
           junior developers, acted as a Lead Front-End developer, and
           collaborated within dynamic, agile teams.
         </Typography>

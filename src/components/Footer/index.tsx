@@ -47,11 +47,7 @@ const Footer: React.FC = () => {
             href="https://github.com/nicholeuf/zen-site-next"
             sx={{
               color: constants.colors.cream,
-              textDecoration: 'none',
               fontSize: '12px',
-              '&:hover': {
-                textDecoration: 'underline',
-              },
             }}
           >
             [view source code]

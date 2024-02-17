@@ -35,10 +35,10 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
       <Link
         href="/"
         sx={{
-          textDecoration: 'none',
           color,
           '&:hover': {
             color: activeColor,
+            textDecoration: 'none',
           },
         }}
         component={NextLink}
