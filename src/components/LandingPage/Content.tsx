@@ -16,6 +16,7 @@ const Content = () => {
   return (
     <Box
       sx={{
+        my: 3,
         display: 'grid',
         gap: 2,
         gridTemplateAreas: {
