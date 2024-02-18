@@ -5,6 +5,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { getCldOgImageUrl } from 'next-cloudinary';
 
 import AppLayout from '@/components/AppLayout';
+import getBaseUrl from './lib/getBaseUrl';
 
 export const metadata: Metadata = {
   title: {
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
   creator: 'Nichole Frey',
   publisher: 'Nichole Frey',
   openGraph: {
+    url: getBaseUrl(),
     images: [
       {
         width: 1200,
