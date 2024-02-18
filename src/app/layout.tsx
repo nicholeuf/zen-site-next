@@ -2,6 +2,7 @@
 
 import { Metadata } from 'next';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
+import { getCldOgImageUrl } from 'next-cloudinary';
 
 import AppLayout from '@/components/AppLayout';
 
@@ -11,7 +12,8 @@ export const metadata: Metadata = {
     // a default is required when creating a template
     default: 'Nichole Frey',
   },
-  description: 'Full-Stack Web Developer located in Central Florida',
+  description:
+    'Portfolio website for Nichole Frey, a Full-Stack Developer based in Orlando, FL',
 
   generator: 'Next.js',
   applicationName: 'Nichole Frey | Full-Stack Developer',
@@ -28,6 +30,18 @@ export const metadata: Metadata = {
   authors: [{ name: 'Nichole Frey' }],
   creator: 'Nichole Frey',
   publisher: 'Nichole Frey',
+  openGraph: {
+    images: [
+      {
+        width: 1200,
+        height: 627,
+        url: getCldOgImageUrl({
+          src: 'zensite/og-image',
+          crop: 'scale',
+        }),
+      },
+    ],
+  },
 };
 
 interface RootLayoutProps {
