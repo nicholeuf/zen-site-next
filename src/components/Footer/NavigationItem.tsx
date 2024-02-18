@@ -22,6 +22,14 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
     <ListItem
       key={href}
       sx={{
+        m: {
+          xs: 1,
+          sm: 3,
+        },
+        p: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         transition: 'transform 0.25s ease',
         '&:hover': {
           transform: 'scale(1.2)',
@@ -32,6 +40,11 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         href={href}
         sx={{
           textDecoration: 'none',
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
         aria-label={ariaLabel}
       >
