@@ -16,14 +16,13 @@ describe('The Footer component', () => {
     const nav = screen.getByTestId('footer-nav') as HTMLDivElement;
     expect(nav).toBeVisible();
 
-    const copy = screen.getByTestId('footer-copy') as HTMLDivElement;
-    expect(copy).toBeVisible();
-    expect(copy).toHaveStyleRule('text-align', 'center');
-
     const madeWithLoveCopy = screen.getByText(/Made with/i);
     expect(madeWithLoveCopy).toBeVisible();
 
     const copyRightCopy = screen.getByText(/Copyright/i);
     expect(copyRightCopy).toBeVisible();
+
+    const sourceCopy = screen.getByText(/View Source Code/i);
+    expect(sourceCopy).toBeVisible();
   });
 });

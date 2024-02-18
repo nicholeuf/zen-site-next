@@ -306,7 +306,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 60px;
-  min-height: calc(100vh - 60px - 160px);
+  min-height: calc(100vh - 60px - 175px);
   padding: 0!important;
   max-width: 100%!important;
 }
@@ -325,7 +325,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 .emotion-1 {
-  min-height: calc(100vh - 60px - 160px);
+  min-height: calc(100vh - 60px - 175px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -558,25 +558,67 @@ exports[`The Home Page has expected snapshot 1`] = `
   .emotion-0 {
   background-color: #373833;
   color: #E8EAE3;
-  height: 160px;
+  height: 175px;
+  padding: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
 }
 
 .emotion-1 {
+  max-width: 600px;
+  display: grid;
+  gap: 4px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width:0px) {
+  .emotion-1 {
+    grid-template-areas: "links" "madeby" "copyright" "source";
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    grid-template-areas: "links madeby" "links copyright" "links source";
+  }
+}
+
+.emotion-2 {
+  grid-area: links;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-3 {
+  width: 25%;
+  height: 100%;
+}
+
+.emotion-4 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -588,9 +630,36 @@ exports[`The Home Page has expected snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
 }
 
-.emotion-2 {
+@media (min-width:0px) {
+  .emotion-4 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.emotion-5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -613,34 +682,59 @@ exports[`The Home Page has expected snapshot 1`] = `
   padding-bottom: 8px;
   padding-left: 16px;
   padding-right: 16px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: -webkit-transform 0.25s ease;
   transition: transform 0.25s ease;
 }
 
-.emotion-2.Mui-focusVisible {
+.emotion-5.Mui-focusVisible {
   background-color: rgba(0, 0, 0, 0.12);
 }
 
-.emotion-2.Mui-selected {
+.emotion-5.Mui-selected {
   background-color: rgba(250, 39, 66, 0.08);
 }
 
-.emotion-2.Mui-selected.Mui-focusVisible {
+.emotion-5.Mui-selected.Mui-focusVisible {
   background-color: rgba(250, 39, 66, 0.2);
 }
 
-.emotion-2.Mui-disabled {
+.emotion-5.Mui-disabled {
   opacity: 0.38;
 }
 
-.emotion-2:hover {
+@media (min-width:0px) {
+  .emotion-5 {
+    margin: 8px;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-5 {
+    margin: 24px;
+  }
+}
+
+.emotion-5:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.emotion-3 {
+.emotion-6 {
   margin: 0;
   font: inherit;
   color: #FA2742;
@@ -648,24 +742,80 @@ exports[`The Home Page has expected snapshot 1`] = `
   text-decoration: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.emotion-3:hover {
+.emotion-6:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-10 {
-  text-align: center;
+.emotion-9 {
+  grid-area: madeby;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.emotion-11 {
+@media (min-width:0px) {
+  .emotion-9 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-9 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.emotion-10 {
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
 }
 
-.emotion-12 {
+@media (min-width:0px) {
+  .emotion-10 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-10 {
+    font-size: 34px;
+  }
+}
+
+.emotion-11 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -675,26 +825,103 @@ exports[`The Home Page has expected snapshot 1`] = `
   color: #FA2742;
 }
 
+.emotion-12 {
+  grid-area: copyright;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:0px) {
+  .emotion-12 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-12 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+  }
+}
+
 .emotion-13 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2.66;
+  text-transform: uppercase;
+  text-transform: none;
 }
 
 .emotion-14 {
+  grid-area: source;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:0px) {
+  .emotion-14 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-14 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.emotion-15 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 2.66;
+  text-transform: uppercase;
+}
+
+.emotion-16 {
   margin: 0;
   font: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #E8EAE3;
-  font-size: 12px;
 }
 
-.emotion-14:hover {
+.emotion-16:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -703,184 +930,138 @@ exports[`The Home Page has expected snapshot 1`] = `
     className="MuiBox-root emotion-0"
     data-testid="footer"
   >
-    <nav
-      aria-label="External Social Links"
-      data-testid="footer-nav"
-    >
-      <ul
-        className="MuiList-root MuiList-padding emotion-1"
-      >
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-2"
-          disabled={false}
-        >
-          <a
-            aria-label="LinkedIn (opens in new window)"
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
-            href="https://www.linkedin.com/in/nicholeuf"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            rel="noopener"
-            target="_blank"
-          >
-            <img
-              alt="LinkedIn External Link"
-              data-nimg="1"
-              decoding="async"
-              height={24}
-              loading="lazy"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=48&q=75"
-              srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=48&q=75 2x"
-              style={
-                {
-                  "color": "transparent",
-                }
-              }
-              width={24}
-            />
-          </a>
-        </li>
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-2"
-          disabled={false}
-        >
-          <a
-            aria-label="GitHub (opens in new window)"
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
-            href="https://github.com/nicholeuf"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            rel="noopener"
-            target="_blank"
-          >
-            <img
-              alt="Github External Link"
-              data-nimg="1"
-              decoding="async"
-              height={24}
-              loading="lazy"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=48&q=75"
-              srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=48&q=75 2x"
-              style={
-                {
-                  "color": "transparent",
-                }
-              }
-              width={24}
-            />
-          </a>
-        </li>
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-2"
-          disabled={false}
-        >
-          <a
-            aria-label="NPM (opens in new window)"
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
-            href="https://www.npmjs.com/~nicholeuf"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            rel="noopener"
-            target="_blank"
-          >
-            <img
-              alt="NPM External Link"
-              data-nimg="1"
-              decoding="async"
-              height={24}
-              loading="lazy"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fnpm%2FE8EAE3&w=48&q=75"
-              srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fnpm%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fnpm%2FE8EAE3&w=48&q=75 2x"
-              style={
-                {
-                  "color": "transparent",
-                }
-              }
-              width={24}
-            />
-          </a>
-        </li>
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-2"
-          disabled={false}
-        >
-          <a
-            aria-label="CodePen (opens in new window)"
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
-            href="https://codepen.io/nicholeuf-the-vuer"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            rel="noopener"
-            target="_blank"
-          >
-            <img
-              alt="Codepen External Link"
-              data-nimg="1"
-              decoding="async"
-              height={24}
-              loading="lazy"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fcodepen%2FE8EAE3&w=48&q=75"
-              srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fcodepen%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fcodepen%2FE8EAE3&w=48&q=75 2x"
-              style={
-                {
-                  "color": "transparent",
-                }
-              }
-              width={24}
-            />
-          </a>
-        </li>
-      </ul>
-    </nav>
     <div
-      className="MuiBox-root emotion-10"
-      data-testid="footer-copy"
+      className="MuiBox-root emotion-1"
     >
-      <p
-        className="MuiTypography-root MuiTypography-sacramento emotion-11"
+      <div
+        className="MuiBox-root emotion-2"
       >
-        Made with
-         
-        <span
-          className="MuiTypography-root MuiTypography-body1 emotion-12"
+        <nav
+          aria-label="External Social Links"
+          className="MuiBox-root emotion-3"
+          data-testid="footer-nav"
         >
-          ♥
-        </span>
-         
-        by Nichole Frey
-      </p>
-      <p
-        className="MuiTypography-root MuiTypography-body1 emotion-13"
+          <ul
+            className="MuiList-root MuiList-padding emotion-4"
+          >
+            <li
+              className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+              disabled={false}
+            >
+              <a
+                aria-label="LinkedIn (opens in new window)"
+                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+                href="https://www.linkedin.com/in/nicholeuf"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                rel="noopener"
+                target="_blank"
+              >
+                <img
+                  alt="LinkedIn External Link"
+                  data-nimg="1"
+                  decoding="async"
+                  height={24}
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=48&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=48&q=75 2x"
+                  style={
+                    {
+                      "color": "transparent",
+                    }
+                  }
+                  width={24}
+                />
+              </a>
+            </li>
+            <li
+              className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+              disabled={false}
+            >
+              <a
+                aria-label="GitHub (opens in new window)"
+                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+                href="https://github.com/nicholeuf"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                rel="noopener"
+                target="_blank"
+              >
+                <img
+                  alt="Github External Link"
+                  data-nimg="1"
+                  decoding="async"
+                  height={24}
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=48&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=48&q=75 2x"
+                  style={
+                    {
+                      "color": "transparent",
+                    }
+                  }
+                  width={24}
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        className="MuiBox-root emotion-9"
       >
-        Copyright © 
-        2024
-         -
-         
-        <strong>
-          All Rights Reserved
-        </strong>
-         -
-         
-        <a
-          aria-label="View Source Code"
-          className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-14"
-          href="https://github.com/nicholeuf/zen-site-next"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          rel="noopener"
-          target="_blank"
+        <p
+          className="MuiTypography-root MuiTypography-sacramento emotion-10"
         >
-          [view source code]
-        </a>
-      </p>
+          Made with
+           
+          <span
+            className="MuiTypography-root MuiTypography-body1 emotion-11"
+          >
+            ♥
+          </span>
+           
+          by Nichole Frey
+        </p>
+      </div>
+      <div
+        className="MuiBox-root emotion-12"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-overline emotion-13"
+        >
+          Copyright © 
+          2024
+           -
+           
+          <strong>
+            All Rights Reserved
+          </strong>
+        </p>
+      </div>
+      <div
+        className="MuiBox-root emotion-14"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-overline emotion-15"
+        >
+          <a
+            aria-label="View Source Code"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-16"
+            href="https://github.com/nicholeuf/zen-site-next"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener"
+            target="_blank"
+          >
+            [view source code]
+          </a>
+        </p>
+      </div>
     </div>
   </footer>,
 ]

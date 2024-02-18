@@ -21,7 +21,7 @@ export const constants = {
     height: '60px',
   },
   footer: {
-    height: '160px',
+    height: '175px',
   },
   colors: {
     guava: '#FA2742',

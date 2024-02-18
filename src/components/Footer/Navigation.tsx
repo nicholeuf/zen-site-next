@@ -1,4 +1,5 @@
 import List from '@mui/material/List';
+import Box from '@mui/material/Box';
 
 import { constants } from '@/app/styles/theme';
 import NavigationItem from './NavigationItem';
@@ -19,35 +20,40 @@ const links = [
     href: 'https://github.com/nicholeuf',
     ariaLabel: 'GitHub (opens in new window)',
   },
-  {
-    slug: 'npm',
-    alt: 'NPM External Link',
-    href: 'https://www.npmjs.com/~nicholeuf',
-    ariaLabel: 'NPM (opens in new window)',
-  },
-  {
-    slug: 'codepen',
-    alt: 'Codepen External Link',
-    href: 'https://codepen.io/nicholeuf-the-vuer',
-    ariaLabel: 'CodePen (opens in new window)',
-  },
 ];
 
-const Links: React.FC = () => {
+const Navigation: React.FC = () => {
   return (
-    <nav data-testid="footer-nav" aria-label="External Social Links">
+    <Box
+      component="nav"
+      data-testid="footer-nav"
+      aria-label="External Social Links"
+      sx={{
+        width: '25%',
+        height: '100%',
+      }}
+    >
       <List
         sx={{
           listStyle: 'none',
           display: 'flex',
+          flexDirection: {
+            xs: 'row',
+            sm: 'column',
+          },
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: '100%',
+          height: '100%',
+          p: 0,
         }}
       >
         {links.map((item) => (
           <NavigationItem key={item.slug} {...item} color={color} />
         ))}
       </List>
-    </nav>
+    </Box>
   );
 };
 
-export default Links;
+export default Navigation;

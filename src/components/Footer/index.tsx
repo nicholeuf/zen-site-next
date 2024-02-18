@@ -3,9 +3,21 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-import Links from './Links';
+import Navigation from './Navigation';
 import { constants } from '@/app/styles/theme';
 import ExternalLink from '@/components/ExternalLink';
+
+const smallGridTemplateAreas = `
+"links"
+"madeby"
+"copyright"
+"source"
+`;
+const largeGridTemplateAreas = `
+"links madeby"
+"links copyright"
+"links source"
+`;
 
 interface FooterProps {
   height?: string;
@@ -23,45 +35,122 @@ const Footer: React.FC<FooterProps> = ({
         backgroundColor: 'secondary.main',
         color,
         height,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        alignItems: 'center',
         padding: theme.spacing(2),
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
       })}
     >
-      <Links />
       <Box
-        data-testid="footer-copy"
+        maxWidth="sm"
         sx={{
+          display: 'grid',
+          gap: 0.5,
           textAlign: 'center',
+          height: '100%',
+          width: '100%',
+          gridTemplateAreas: {
+            xs: smallGridTemplateAreas,
+            sm: largeGridTemplateAreas,
+          },
         }}
       >
-        <Typography variant="sacramento" component="p">
-          Made with{' '}
+        <Box
+          sx={{
+            gridArea: 'links',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <Navigation />
+        </Box>
+        <Box
+          sx={{
+            gridArea: 'madeby',
+            display: 'flex',
+            justifyContent: {
+              xs: 'center',
+              sm: 'flex-end',
+            },
+            alignItems: {
+              xs: 'center',
+              sm: 'flex-end',
+            },
+          }}
+        >
           <Typography
-            display={'inline'}
-            component="span"
-            sx={{ color: 'primary.main' }}
-          >
-            &#9829;
-          </Typography>{' '}
-          by Nichole Frey
-        </Typography>
-        <Typography sx={{ fontSize: '12px' }}>
-          Copyright &#169; {new Date().getFullYear()} -{' '}
-          <strong>All Rights Reserved</strong> -{' '}
-          <ExternalLink
-            href="https://github.com/nicholeuf/zen-site-next"
+            variant="sacramento"
+            component="p"
             sx={{
-              color,
-              fontSize: '12px',
+              fontSize: {
+                xs: '24px',
+                sm: '34px',
+              },
             }}
-            aria-label="View Source Code"
           >
-            [view source code]
-          </ExternalLink>
-        </Typography>
+            Made with{' '}
+            <Typography
+              display={'inline'}
+              component="span"
+              sx={{ color: 'primary.main' }}
+            >
+              &#9829;
+            </Typography>{' '}
+            by Nichole Frey
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            gridArea: 'copyright',
+            display: 'flex',
+            justifyContent: {
+              xs: 'center',
+              sm: 'flex-end',
+            },
+            alignItems: {
+              xs: 'center',
+              sm: 'flex-end',
+            },
+          }}
+        >
+          <Typography
+            variant="overline"
+            component="p"
+            sx={{ textTransform: 'none' }}
+          >
+            Copyright &#169; {new Date().getFullYear()} -{' '}
+            <strong>All Rights Reserved</strong>
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            gridArea: 'source',
+            display: 'flex',
+            justifyContent: {
+              xs: 'center',
+              sm: 'flex-end',
+            },
+            alignItems: {
+              xs: 'center',
+              sm: 'flex-end',
+            },
+          }}
+        >
+          <Typography variant="overline" component="p">
+            <ExternalLink
+              href="https://github.com/nicholeuf/zen-site-next"
+              sx={{
+                color,
+              }}
+              aria-label="View Source Code"
+            >
+              [view source code]
+            </ExternalLink>
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
