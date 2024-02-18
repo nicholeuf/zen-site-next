@@ -8,15 +8,15 @@ import { constants } from '@/app/styles/theme';
 import ExternalLink from '@/components/ExternalLink';
 
 const smallGridTemplateAreas = `
-"links"
+"nav"
 "madeby"
 "copyright"
 "source"
 `;
 const largeGridTemplateAreas = `
-"links madeby"
-"links copyright"
-"links source"
+"nav madeby"
+"nav copyright"
+"nav source"
 `;
 
 interface FooterProps {
@@ -57,9 +57,12 @@ const Footer: React.FC<FooterProps> = ({
       >
         <Box
           sx={{
-            gridArea: 'links',
+            gridArea: 'nav',
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: {
+              xs: 'center',
+              sm: 'flex-start',
+            },
             alignItems: 'center',
             width: '100%',
             height: '100%',
