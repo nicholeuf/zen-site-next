@@ -3,6 +3,7 @@
 import { Metadata } from 'next';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { getCldOgImageUrl } from 'next-cloudinary';
+import { Analytics } from '@vercel/analytics/react';
 
 import AppLayout from '@/components/AppLayout';
 import getBaseUrl from '@/app/lib/getBaseUrl';
@@ -57,6 +58,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <AppLayout>{children}</AppLayout>
         </AppRouterCacheProvider>
+        <Analytics />
       </body>
     </html>
   );
