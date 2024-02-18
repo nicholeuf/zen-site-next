@@ -15,7 +15,7 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
   const pathname = usePathname();
   return (
-    <nav data-testid="header-nav">
+    <nav data-testid="header-nav" aria-label="Site Navigation Links">
       <List
         sx={{
           listStyle: 'none',

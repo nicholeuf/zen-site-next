@@ -7,15 +7,22 @@ import Links from './Links';
 import { constants } from '@/app/styles/theme';
 import ExternalLink from '@/components/ExternalLink';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  height: string;
+}
+
+const Footer: React.FC<FooterProps> = ({
+  height = constants.footer.height,
+}) => {
+  const color = 'background.default';
   return (
     <Box
       data-testid="footer"
       component="footer"
       sx={(theme) => ({
-        backgroundColor: constants.colors.carob,
-        color: constants.colors.cream,
-        height: constants.footer.height,
+        backgroundColor: 'secondary.main',
+        color,
+        height,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -25,6 +32,7 @@ const Footer: React.FC = () => {
     >
       <Links />
       <Box
+        data-testid="footer-copy"
         sx={{
           textAlign: 'center',
         }}
@@ -46,9 +54,10 @@ const Footer: React.FC = () => {
           <ExternalLink
             href="https://github.com/nicholeuf/zen-site-next"
             sx={{
-              color: constants.colors.cream,
+              color,
               fontSize: '12px',
             }}
+            aria-label="View Source Code"
           >
             [view source code]
           </ExternalLink>
