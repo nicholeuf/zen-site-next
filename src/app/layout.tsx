@@ -5,7 +5,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { getCldOgImageUrl } from 'next-cloudinary';
 
 import AppLayout from '@/components/AppLayout';
-import getBaseUrl from './lib/getBaseUrl';
+import getBaseUrl from '@/app/lib/getBaseUrl';
 
 export const metadata: Metadata = {
   title: {
