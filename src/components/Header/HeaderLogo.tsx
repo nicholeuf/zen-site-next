@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
+import VisuallyHidden from '../VisuallyHidden';
 
 interface HeaderLogoProps {
   width: string;
@@ -39,11 +40,13 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
             color: activeColor,
             textDecoration: 'none',
           },
+          '&::before': {
+            content: '"nf"',
+          },
         }}
         component={NextLink}
-        aria-label="Home"
       >
-        nf
+        <VisuallyHidden>Home</VisuallyHidden>
       </Link>
     </Box>
   );
