@@ -29,6 +29,7 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
           cursor: 'pointer',
         },
       })}
+      data-testid="header-logo"
     >
       <Link
         href="/"
