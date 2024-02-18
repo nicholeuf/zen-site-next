@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { getCldOgImageUrl } from 'next-cloudinary';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import AppLayout from '@/components/AppLayout';
 import getBaseUrl from '@/app/lib/getBaseUrl';
@@ -59,6 +60,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
           <AppLayout>{children}</AppLayout>
         </AppRouterCacheProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
