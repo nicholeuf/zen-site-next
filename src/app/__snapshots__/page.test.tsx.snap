@@ -213,7 +213,9 @@ exports[`The Home Page has expected snapshot 1`] = `
         nf
       </a>
     </div>
-    <nav>
+    <nav
+      data-testid="header-nav"
+    >
       <ul
         className="MuiList-root MuiList-padding emotion-3"
       >
