@@ -5,30 +5,38 @@ import HeaderLogo from './HeaderLogo';
 import Navigation from './Navigation';
 import { constants } from '@/app/styles/theme';
 
-const Header = () => {
-  const color = 'secondary.main';
-  const activeColor = 'primary.light';
+interface HeaderProps {
+  color?: string;
+  activeColor?: string;
+  height?: string;
+}
+
+const Header: React.FC<HeaderProps> = ({
+  color = 'secondary.main',
+  activeColor = 'primary.light',
+  height = constants.header.height,
+}) => {
   return (
     <AppBar
       data-testid="header"
       position="fixed"
-      sx={{
+      sx={(theme) => ({
         backgroundColor: 'background.default',
-        border: `${constants.spacing.sm} solid`,
+        border: `${theme.spacing(1)} solid`,
         borderColor: color,
-        minHeight: constants.header.height,
-        height: constants.header.height,
+        minHeight: height,
+        height,
         fontWeight: 700,
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
         boxShadow: 'none',
-      }}
+      })}
     >
       <HeaderLogo
         // width === height of header to make logo a box
-        width={constants.header.height}
+        width={height}
         color={color}
         activeColor={activeColor}
       />

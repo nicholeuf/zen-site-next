@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
-import renderer, { ReactTestRenderer } from 'react-test-renderer';
+import renderer from 'react-test-renderer';
 
 import AppLayout from '@/components/AppLayout';
 import GlobalStyles from '@/app/styles/GlobalStyles';

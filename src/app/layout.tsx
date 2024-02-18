@@ -10,6 +10,7 @@ import AppLayout from '@/components/AppLayout';
 import getBaseUrl from '@/app/lib/getBaseUrl';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getBaseUrl()),
   title: {
     template: '%s | Nichole Frey',
     // a default is required when creating a template
