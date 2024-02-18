@@ -2,8 +2,6 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
 
-import { constants } from '@/app/styles/theme';
-
 interface HeaderLogoProps {
   width: string;
   color: string;
@@ -17,12 +15,12 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
 }) => {
   return (
     <Box
-      sx={{
+      sx={(theme) => ({
         typography: 'sacramento',
         fontSize: '30px',
         height: '100%',
         width,
-        borderRight: `${constants.spacing.sm} solid`,
+        borderRight: `${theme.spacing(1)} solid`,
         borderRightColor: color,
         display: 'flex',
         justifyContent: 'center',
@@ -30,7 +28,7 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
         '&:hover': {
           cursor: 'pointer',
         },
-      }}
+      })}
     >
       <Link
         href="/"
@@ -42,6 +40,7 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
           },
         }}
         component={NextLink}
+        aria-label="Home"
       >
         nf
       </Link>

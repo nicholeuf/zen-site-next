@@ -2,7 +2,6 @@
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 
 import Links from './Links';
 import { constants } from '@/app/styles/theme';
@@ -13,7 +12,7 @@ const Footer: React.FC = () => {
     <Box
       data-testid="footer"
       component="footer"
-      sx={{
+      sx={(theme) => ({
         backgroundColor: constants.colors.carob,
         color: constants.colors.cream,
         height: constants.footer.height,
@@ -21,8 +20,8 @@ const Footer: React.FC = () => {
         flexDirection: 'column',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: constants.spacing.md,
-      }}
+        padding: theme.spacing(2),
+      })}
     >
       <Links />
       <Box
@@ -35,7 +34,7 @@ const Footer: React.FC = () => {
           <Typography
             display={'inline'}
             component="span"
-            sx={{ color: constants.colors.guava }}
+            sx={{ color: 'primary.main' }}
           >
             &#9829;
           </Typography>{' '}

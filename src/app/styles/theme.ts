@@ -23,13 +23,6 @@ export const constants = {
   footer: {
     height: '160px',
   },
-  spacing: {
-    xs: '4px',
-    sm: '8px',
-    md: '16px',
-    lg: '32px',
-    xl: '64px',
-  },
   colors: {
     guava: '#FA2742',
     carob: '#373833',
@@ -42,6 +35,7 @@ export const constants = {
 // dark: will be calculated from palette.primary.main,
 // contrastText: will be calculated to contrast with palette.primary.main
 const theme = createTheme({
+  spacing: 8,
   palette: {
     mode: 'light',
     primary: {

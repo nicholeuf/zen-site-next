@@ -10,6 +10,7 @@ exports[`The Home Page has expected snapshot 1`] = `
       className="MuiBox-root css-1isvkdv"
     >
       <a
+        aria-label="Home"
         className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-xy1pft-MuiTypography-root-MuiLink-root"
         href="/"
         onBlur={[Function]}
@@ -153,6 +154,7 @@ exports[`The Home Page has expected snapshot 1`] = `
           disabled={false}
         >
           <a
+            aria-label="LinkedIn"
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
             href="https://www.linkedin.com/in/nicholeuf"
             onBlur={[Function]}
@@ -184,6 +186,7 @@ exports[`The Home Page has expected snapshot 1`] = `
           disabled={false}
         >
           <a
+            aria-label="GitHub"
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
             href="https://github.com/nicholeuf"
             onBlur={[Function]}
@@ -215,6 +218,7 @@ exports[`The Home Page has expected snapshot 1`] = `
           disabled={false}
         >
           <a
+            aria-label="NPM"
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
             href="https://www.npmjs.com/~nicholeuf"
             onBlur={[Function]}
@@ -246,6 +250,7 @@ exports[`The Home Page has expected snapshot 1`] = `
           disabled={false}
         >
           <a
+            aria-label="CodePen"
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
             href="https://codepen.io/nicholeuf-the-vuer"
             onBlur={[Function]}

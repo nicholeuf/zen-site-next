@@ -12,9 +12,9 @@ const Header = () => {
     <AppBar
       data-testid="header"
       position="fixed"
-      sx={{
+      sx={(theme) => ({
         backgroundColor: 'background.default',
-        border: `${constants.spacing.sm} solid`,
+        border: `${theme.spacing(1)} solid`,
         borderColor: color,
         minHeight: constants.header.height,
         height: constants.header.height,
@@ -24,7 +24,7 @@ const Header = () => {
         justifyContent: 'space-between',
         alignItems: 'center',
         boxShadow: 'none',
-      }}
+      })}
     >
       <HeaderLogo
         // width === height of header to make logo a box

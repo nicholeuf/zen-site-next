@@ -4,28 +4,33 @@ import ListItem from '@mui/material/ListItem';
 import SimpleIcon from '@/components/SimpleIcon';
 import { constants } from '@/app/styles/theme';
 import ExternalLink from '@/components/ExternalLink';
+import NavigationItem from './NavigationItem';
 
 const links = [
   {
     slug: 'linkedin',
     alt: 'LinkedIn External Link',
     href: 'https://www.linkedin.com/in/nicholeuf',
+    ariaLabel: 'LinkedIn',
   },
   {
     slug: 'github',
     alt: 'Github External Link',
     href: 'https://github.com/nicholeuf',
+    ariaLabel: 'GitHub',
   },
 
   {
     slug: 'npm',
     alt: 'NPM External Link',
     href: 'https://www.npmjs.com/~nicholeuf',
+    ariaLabel: 'NPM',
   },
   {
     slug: 'codepen',
     alt: 'Codepen External Link',
     href: 'https://codepen.io/nicholeuf-the-vuer',
+    ariaLabel: 'CodePen',
   },
 ];
 
@@ -38,32 +43,9 @@ const Links: React.FC = () => {
           display: 'flex',
         }}
       >
-        {links.map(({ href, alt, slug }) => {
-          return (
-            <ListItem
-              key={href}
-              sx={{
-                transition: 'transform 0.25s ease',
-                '&:hover': {
-                  transform: 'scale(1.2)',
-                },
-              }}
-            >
-              <ExternalLink
-                href={href}
-                sx={{
-                  textDecoration: 'none',
-                }}
-              >
-                <SimpleIcon
-                  slug={slug}
-                  alt={alt}
-                  color={constants.colors.cream.replace('#', '')}
-                />
-              </ExternalLink>
-            </ListItem>
-          );
-        })}
+        {links.map((item) => (
+          <NavigationItem key={item.slug} {...item} />
+        ))}
       </List>
     </nav>
   );
