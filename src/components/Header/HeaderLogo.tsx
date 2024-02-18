@@ -1,8 +1,7 @@
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
-
-import { constants } from '@/app/styles/theme';
+import VisuallyHidden from '../VisuallyHidden';
 
 interface HeaderLogoProps {
   width: string;
@@ -17,12 +16,12 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
 }) => {
   return (
     <Box
-      sx={{
+      sx={(theme) => ({
         typography: 'sacramento',
         fontSize: '30px',
         height: '100%',
         width,
-        borderRight: `${constants.spacing.sm} solid`,
+        borderRight: `${theme.spacing(1)} solid`,
         borderRightColor: color,
         display: 'flex',
         justifyContent: 'center',
@@ -30,20 +29,26 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
         '&:hover': {
           cursor: 'pointer',
         },
-      }}
+      })}
+      data-testid="header-logo"
     >
       <Link
         href="/"
         sx={{
           color,
+          width: '100%',
+          textAlign: 'center',
           '&:hover': {
             color: activeColor,
             textDecoration: 'none',
           },
+          '&::before': {
+            content: '"nf"',
+          },
         }}
         component={NextLink}
       >
-        nf
+        <VisuallyHidden>Home</VisuallyHidden>
       </Link>
     </Box>
   );

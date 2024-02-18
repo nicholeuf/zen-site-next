@@ -533,6 +533,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/css-prettifier@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "@emotion/css-prettifier@npm:1.1.3"
+  dependencies:
+    "@emotion/memoize": "npm:^0.8.1"
+    stylis: "npm:4.2.0"
+  checksum: 10c0/9ce3d7e5851054a24ca68cca4f6973de47d64567d03b6be730aa83f1cf9ae15e4da8c4611e68620e7b972f7a9fb7c36099fdf7e26b78589eb64f094fce46ce1b
+  languageName: node
+  linkType: hard
+
 "@emotion/hash@npm:^0.9.1":
   version: 0.9.1
   resolution: "@emotion/hash@npm:0.9.1"
@@ -546,6 +556,27 @@ __metadata:
   dependencies:
     "@emotion/memoize": "npm:^0.8.1"
   checksum: 10c0/7c2aabdf0ca9986ca25abc9dae711348308cf18d418d64ffa4c8ffd2114806c47f2e06ba8ee769f38ec67d65bd59ec73f34d94023e81baa1c43510ac86ccd5e6
+  languageName: node
+  linkType: hard
+
+"@emotion/jest@npm:^11.11.0":
+  version: 11.11.0
+  resolution: "@emotion/jest@npm:11.11.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.18.3"
+    "@emotion/css-prettifier": "npm:^1.1.3"
+    chalk: "npm:^4.1.0"
+    specificity: "npm:^0.4.1"
+    stylis: "npm:4.2.0"
+  peerDependencies:
+    "@types/jest": ^26.0.14 || ^27.0.0 || ^28.0.0 || ^29.0.0
+    enzyme-to-json: ^3.2.1
+  peerDependenciesMeta:
+    "@types/jest":
+      optional: true
+    enzyme-to-json:
+      optional: true
+  checksum: 10c0/919def636000234c4af8447a6cdf7f9675146bb020074fd06cf3c6eb42c365e727354ae79b2a7cdccb472d38da8ed8d6fd57f4235cab2e1b7605a2c6672a0fc5
   languageName: node
   linkType: hard
 
@@ -1444,7 +1475,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^9.0.0":
+"@testing-library/dom@npm:^9.0.0, @testing-library/dom@npm:^9.3.4":
   version: 9.3.4
   resolution: "@testing-library/dom@npm:9.3.4"
   dependencies:
@@ -1504,6 +1535,15 @@ __metadata:
     react: ^18.0.0
     react-dom: ^18.0.0
   checksum: 10c0/83b35cf8bf5640f1b63b32223ebc75799dc1a8e034d819120b26838fba0b0ab10bdbe6ad07dd8ae8287365f2b0c52dc9892a6fa11bb24d3e63ad97dfb7f2f296
+  languageName: node
+  linkType: hard
+
+"@testing-library/user-event@npm:^14.5.2":
+  version: 14.5.2
+  resolution: "@testing-library/user-event@npm:14.5.2"
+  peerDependencies:
+    "@testing-library/dom": ">=7.21.4"
+  checksum: 10c0/68a0c2aa28a3c8e6eb05cafee29705438d7d8a9427423ce5064d44f19c29e89b5636de46dd2f28620fb10abba75c67130185bbc3aa23ac1163a227a5f36641e1
   languageName: node
   linkType: hard
 
@@ -6752,6 +6792,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"specificity@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "specificity@npm:0.4.1"
+  bin:
+    specificity: ./bin/specificity
+  checksum: 10c0/5da85a05052b55e344cb0f5bce5d07cbabbbe8945da176a481589db5a13e9fbcfa879ceb075cf564b94e680fae0a2ab14ea55cc87496b86a6d5122545946d7c2
+  languageName: node
+  linkType: hard
+
 "sprintf-js@npm:~1.0.2":
   version: 1.0.3
   resolution: "sprintf-js@npm:1.0.3"
@@ -7634,12 +7683,15 @@ __metadata:
   resolution: "zen-site-next@workspace:."
   dependencies:
     "@emotion/cache": "npm:^11.11.0"
+    "@emotion/jest": "npm:^11.11.0"
     "@emotion/react": "npm:^11.11.3"
     "@emotion/styled": "npm:^11.11.0"
     "@mui/material": "npm:^5.15.9"
     "@mui/material-nextjs": "npm:^5.15.9"
+    "@testing-library/dom": "npm:^9.3.4"
     "@testing-library/jest-dom": "npm:^6.4.2"
     "@testing-library/react": "npm:^14.2.1"
+    "@testing-library/user-event": "npm:^14.5.2"
     "@types/eslint": "npm:^8"
     "@types/jest": "npm:^29.5.12"
     "@types/node": "npm:^20.10.4"

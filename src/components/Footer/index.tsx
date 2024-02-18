@@ -2,30 +2,37 @@
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 
 import Links from './Links';
 import { constants } from '@/app/styles/theme';
 import ExternalLink from '@/components/ExternalLink';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  height?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({
+  height = constants.footer.height,
+}) => {
+  const color = 'background.default';
   return (
     <Box
       data-testid="footer"
       component="footer"
-      sx={{
-        backgroundColor: constants.colors.carob,
-        color: constants.colors.cream,
-        height: constants.footer.height,
+      sx={(theme) => ({
+        backgroundColor: 'secondary.main',
+        color,
+        height,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: constants.spacing.md,
-      }}
+        padding: theme.spacing(2),
+      })}
     >
       <Links />
       <Box
+        data-testid="footer-copy"
         sx={{
           textAlign: 'center',
         }}
@@ -35,7 +42,7 @@ const Footer: React.FC = () => {
           <Typography
             display={'inline'}
             component="span"
-            sx={{ color: constants.colors.guava }}
+            sx={{ color: 'primary.main' }}
           >
             &#9829;
           </Typography>{' '}
@@ -47,9 +54,10 @@ const Footer: React.FC = () => {
           <ExternalLink
             href="https://github.com/nicholeuf/zen-site-next"
             sx={{
-              color: constants.colors.cream,
+              color,
               fontSize: '12px',
             }}
+            aria-label="View Source Code"
           >
             [view source code]
           </ExternalLink>

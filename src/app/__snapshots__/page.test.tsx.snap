@@ -1,16 +1,229 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Home Page component has expected snapshot 1`] = `
+exports[`The Home Page has expected snapshot 1`] = `
 [
-  <header
-    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1cyct54-MuiPaper-root-MuiAppBar-root"
+  .emotion-0 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: auto;
+  right: 0;
+  background-color: #FA2742;
+  color: #fff;
+  background-color: #E8EAE3;
+  border: 8px solid;
+  border-color: #373833;
+  min-height: 60px;
+  height: 60px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: none;
+}
+
+@media print {
+  .emotion-0 {
+    position: absolute;
+  }
+}
+
+.emotion-1 {
+  font-family: fontFamily;
+  font-size: 30px;
+  height: 100%;
+  width: 60px;
+  border-right: 8px solid;
+  border-right-color: #373833;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1:hover {
+  cursor: pointer;
+}
+
+.emotion-2 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #373833;
+  width: 100%;
+  text-align: center;
+}
+
+.emotion-2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:hover {
+  color: rgb(251, 82, 103);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2::before {
+  content: "nf";
+}
+
+.emotion-3 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0px solid;
+}
+
+.emotion-4 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+
+.emotion-5.Mui-focusVisible {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.emotion-5.Mui-selected {
+  background-color: rgba(250, 39, 66, 0.08);
+}
+
+.emotion-5.Mui-selected.Mui-focusVisible {
+  background-color: rgba(250, 39, 66, 0.2);
+}
+
+.emotion-5.Mui-disabled {
+  opacity: 0.38;
+}
+
+.emotion-5:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.emotion-6 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #373833;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+.emotion-6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:600px) {
+  .emotion-6 {
+    letter-spacing: 2.75px;
+  }
+}
+
+.emotion-6:hover {
+  color: rgb(251, 82, 103);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<header
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-0"
     data-testid="header"
   >
     <div
-      className="MuiBox-root css-1isvkdv"
+      className="MuiBox-root emotion-1"
+      data-testid="header-logo"
     >
       <a
-        className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-xy1pft-MuiTypography-root-MuiLink-root"
+        className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
         href="/"
         onBlur={[Function]}
         onClick={[Function]}
@@ -18,19 +231,27 @@ exports[`The Home Page component has expected snapshot 1`] = `
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
-        nf
+        <span
+          className="MuiBox-root emotion-3"
+          data-testid="visually-hidden"
+        >
+          Home
+        </span>
       </a>
     </div>
-    <nav>
+    <nav
+      aria-label="Site Navigation Links"
+      data-testid="header-nav"
+    >
       <ul
-        className="MuiList-root MuiList-padding css-1usf0v9-MuiList-root"
+        className="MuiList-root MuiList-padding emotion-4"
       >
         <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ep4232-MuiTypography-root-MuiLink-root"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
             href="/work"
             onBlur={[Function]}
             onClick={[Function]}
@@ -42,11 +263,11 @@ exports[`The Home Page component has expected snapshot 1`] = `
           </a>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ep4232-MuiTypography-root-MuiLink-root"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
             href="/about"
             onBlur={[Function]}
             onClick={[Function]}
@@ -58,11 +279,11 @@ exports[`The Home Page component has expected snapshot 1`] = `
           </a>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ep4232-MuiTypography-root-MuiLink-root"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
             href="/contact"
             onBlur={[Function]}
             onClick={[Function]}
@@ -76,22 +297,216 @@ exports[`The Home Page component has expected snapshot 1`] = `
       </ul>
     </nav>
   </header>,
-  <main
-    className="MuiContainer-root MuiContainer-maxWidthLg css-or30eo-MuiContainer-root"
+  .emotion-0 {
+  width: 100%;
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 60px;
+  min-height: calc(100vh - 60px - 160px);
+  padding: 0!important;
+  max-width: 100%!important;
+}
+
+@media (min-width:600px) {
+  .emotion-0 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-0 {
+    max-width: 1200px;
+  }
+}
+
+.emotion-1 {
+  min-height: calc(100vh - 60px - 160px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 24px;
+  position: relative;
+}
+
+.emotion-2 {
+  height: 100%;
+  width: 100%;
+  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_30/f_auto/q_5/v1/zensite/scott-webb-5mIcH3q7tIk-unsplash?_a=BAVAfVBy0) no-repeat;
+  -webkit-background-position: 50% 25%;
+  background-position: 50% 25%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.emotion-3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width:0px) {
+  .emotion-3 {
+    grid-template-areas: "photo" "heading" "body";
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-3 {
+    grid-template-areas: "photo heading heading heading" "body body body body";
+  }
+}
+
+.emotion-4 {
+  grid-area: photo;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 {
+  grid-area: heading;
+}
+
+.emotion-6 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 1.167;
+  margin-bottom: 0.35em;
+}
+
+@media (min-width:600px) {
+  .emotion-6 {
+    font-size: 4.7129rem;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-6 {
+    font-size: 5.3556rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-6 {
+    font-size: 5.9983rem;
+  }
+}
+
+@media (min-width:0px) {
+  .emotion-6 {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-6 {
+    font-size: 3.5rem;
+  }
+}
+
+.emotion-7 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 1.5625rem;
+  line-height: 1.235;
+  margin-bottom: 0.35em;
+  font-weight: 500;
+}
+
+@media (min-width:600px) {
+  .emotion-7 {
+    font-size: 1.8219rem;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-7 {
+    font-size: 2.0243rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-7 {
+    font-size: 2.0243rem;
+  }
+}
+
+.emotion-8 {
+  grid-area: body;
+}
+
+.emotion-9 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 900px;
+  color: #424242;
+}
+
+@media (min-width:0px) {
+  .emotion-9 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-9 {
+    font-size: 1.5rem;
+  }
+}
+
+<main
+    className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
   >
     <div
-      className="MuiBox-root css-1rc5v91"
+      className="MuiBox-root emotion-1"
       data-testid="landing"
     >
       <div
-        className="MuiBox-root css-hks7cf"
+        className="MuiBox-root emotion-2"
         data-testid="landing-background-image"
       />
       <div
-        className="MuiBox-root css-r50eut"
+        className="MuiBox-root emotion-3"
       >
         <div
-          className="MuiBox-root css-1betyjw"
+          className="MuiBox-root emotion-4"
         >
           <img
             alt="Photo of website author"
@@ -115,24 +530,24 @@ exports[`The Home Page component has expected snapshot 1`] = `
           />
         </div>
         <div
-          className="MuiBox-root css-11n6avn"
+          className="MuiBox-root emotion-5"
         >
           <h1
-            className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom css-pdit6e-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-6"
           >
             Hi, I'm Nichole
           </h1>
           <h2
-            className="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1g22ntw-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom emotion-7"
           >
             Full-Stack Developer
           </h2>
         </div>
         <div
-          className="MuiBox-root css-d3gumq"
+          className="MuiBox-root emotion-8"
         >
           <p
-            className="MuiTypography-root MuiTypography-body1 css-lt3owt-MuiTypography-root"
+            className="MuiTypography-root MuiTypography-body1 emotion-9"
           >
             Based in Orlando, Florida, my passion lies in crafting seamless, intuitive, well-built experiences for the customer. I've mentored junior developers, acted as a Lead Front-End developer, and collaborated within dynamic, agile teams.
           </p>
@@ -140,20 +555,168 @@ exports[`The Home Page component has expected snapshot 1`] = `
       </div>
     </div>
   </main>,
-  <footer
-    className="MuiBox-root css-v8wxw1"
+  .emotion-0 {
+  background-color: #373833;
+  color: #E8EAE3;
+  height: 160px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.emotion-1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+
+.emotion-2.Mui-focusVisible {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.emotion-2.Mui-selected {
+  background-color: rgba(250, 39, 66, 0.08);
+}
+
+.emotion-2.Mui-selected.Mui-focusVisible {
+  background-color: rgba(250, 39, 66, 0.2);
+}
+
+.emotion-2.Mui-disabled {
+  opacity: 0.38;
+}
+
+.emotion-2:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.emotion-3 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-10 {
+  text-align: center;
+}
+
+.emotion-11 {
+  margin: 0;
+  font-family: fontFamily;
+  font-size: 26px;
+}
+
+.emotion-12 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: inline;
+  color: #FA2742;
+}
+
+.emotion-13 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.emotion-14 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #E8EAE3;
+  font-size: 12px;
+}
+
+.emotion-14:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<footer
+    className="MuiBox-root emotion-0"
     data-testid="footer"
   >
-    <nav>
+    <nav
+      aria-label="External Social Links"
+      data-testid="footer-nav"
+    >
       <ul
-        className="MuiList-root MuiList-padding css-1usf0v9-MuiList-root"
+        className="MuiList-root MuiList-padding emotion-1"
       >
         <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-2"
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
+            aria-label="LinkedIn (opens in new window)"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
             href="https://www.linkedin.com/in/nicholeuf"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -180,11 +743,12 @@ exports[`The Home Page component has expected snapshot 1`] = `
           </a>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-2"
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
+            aria-label="GitHub (opens in new window)"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
             href="https://github.com/nicholeuf"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -211,11 +775,12 @@ exports[`The Home Page component has expected snapshot 1`] = `
           </a>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-2"
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
+            aria-label="NPM (opens in new window)"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
             href="https://www.npmjs.com/~nicholeuf"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -242,11 +807,12 @@ exports[`The Home Page component has expected snapshot 1`] = `
           </a>
         </li>
         <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1ru7lot-MuiListItem-root"
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-2"
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kdypla-MuiTypography-root-MuiLink-root"
+            aria-label="CodePen (opens in new window)"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
             href="https://codepen.io/nicholeuf-the-vuer"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -275,15 +841,16 @@ exports[`The Home Page component has expected snapshot 1`] = `
       </ul>
     </nav>
     <div
-      className="MuiBox-root css-xi606m"
+      className="MuiBox-root emotion-10"
+      data-testid="footer-copy"
     >
       <p
-        className="MuiTypography-root MuiTypography-sacramento css-1twztfu-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-sacramento emotion-11"
       >
         Made with
          
         <span
-          className="MuiTypography-root MuiTypography-body1 css-p225gv-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 emotion-12"
         >
           ♥
         </span>
@@ -291,7 +858,7 @@ exports[`The Home Page component has expected snapshot 1`] = `
         by Nichole Frey
       </p>
       <p
-        className="MuiTypography-root MuiTypography-body1 css-1hcpzgk-MuiTypography-root"
+        className="MuiTypography-root MuiTypography-body1 emotion-13"
       >
         Copyright © 
         2024
@@ -303,7 +870,8 @@ exports[`The Home Page component has expected snapshot 1`] = `
          -
          
         <a
-          className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-kedlxa-MuiTypography-root-MuiLink-root"
+          aria-label="View Source Code"
+          className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-14"
           href="https://github.com/nicholeuf/zen-site-next"
           onBlur={[Function]}
           onFocus={[Function]}
