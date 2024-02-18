@@ -36,6 +36,8 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
         href="/"
         sx={{
           color,
+          width: '100%',
+          textAlign: 'center',
           '&:hover': {
             color: activeColor,
             textDecoration: 'none',

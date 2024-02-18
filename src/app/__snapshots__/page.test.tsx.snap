@@ -88,6 +88,8 @@ exports[`The Home Page has expected snapshot 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #373833;
+  width: 100%;
+  text-align: center;
 }
 
 .emotion-2:hover {
