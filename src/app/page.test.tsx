@@ -1,10 +1,10 @@
 /*
  * @jest-environment jsdom
  */
-import { render, screen, renderSnapshotWithLayout } from 'test-utils';
+import { renderWithLayout, screen, renderSnapshotWithLayout } from 'test-utils';
 import HomePage from './page';
 
-describe('The Home Page component', () => {
+describe('The Home Page', () => {
   test('has expected snapshot', () => {
     const component = renderSnapshotWithLayout(<HomePage />);
     const tree = component.toJSON();
@@ -12,10 +12,12 @@ describe('The Home Page component', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('contains the visible landing page ', () => {
-    render(<HomePage />);
-
-    const landingComponent = screen.getByTestId('landing');
-    expect(landingComponent).toBeVisible();
-  });
+  test.each([['header'], ['landing'], ['footer']])(
+    'contains the visible testid %i',
+    (testid) => {
+      renderWithLayout(<HomePage />);
+      const component = screen.getByTestId(testid);
+      expect(component).toBeVisible();
+    }
+  );
 });
