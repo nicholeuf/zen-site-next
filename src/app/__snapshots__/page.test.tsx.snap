@@ -88,7 +88,7 @@ exports[`The Home Page component has expected snapshot 1`] = `
         data-testid="landing-background-image"
       />
       <div
-        className="MuiBox-root css-14alikl"
+        className="MuiBox-root css-r50eut"
       >
         <div
           className="MuiBox-root css-1betyjw"
