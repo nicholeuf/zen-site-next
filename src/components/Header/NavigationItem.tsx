@@ -32,7 +32,9 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         component={NextLink}
         sx={(theme) => ({
           boxSizing: 'border-box',
-          letterSpacing: '2.75px',
+          letterSpacing: {
+            sm: '2.75px',
+          },
           height: '100%',
           textDecoration: 'none',
           color,

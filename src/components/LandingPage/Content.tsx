@@ -49,7 +49,16 @@ const Content = () => {
         />
       </Box>
       <Box sx={{ gridArea: 'heading' }}>
-        <Typography variant="h1" gutterBottom>
+        <Typography
+          variant="h1"
+          gutterBottom
+          sx={(theme) => ({
+            fontSize: {
+              xs: '2.75rem',
+              sm: theme.typography.h1.fontSize,
+            },
+          })}
+        >
           Hi, I&apos;m Nichole
         </Typography>
         <Typography

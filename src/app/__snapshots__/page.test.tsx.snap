@@ -189,7 +189,6 @@ exports[`The Home Page has expected snapshot 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
-  letter-spacing: 2.75px;
   height: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -201,6 +200,12 @@ exports[`The Home Page has expected snapshot 1`] = `
 .emotion-6:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+@media (min-width:600px) {
+  .emotion-6 {
+    letter-spacing: 2.75px;
+  }
 }
 
 .emotion-6:hover {
@@ -417,6 +422,18 @@ exports[`The Home Page has expected snapshot 1`] = `
 @media (min-width:1200px) {
   .emotion-6 {
     font-size: 5.9983rem;
+  }
+}
+
+@media (min-width:0px) {
+  .emotion-6 {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-6 {
+    font-size: 3.5rem;
   }
 }
 
