@@ -1,7 +1,6 @@
 import ListItem from '@mui/material/ListItem';
 
 import SimpleIcon from '@/components/SimpleIcon';
-import { constants } from '@/app/styles/theme';
 import ExternalLink from '@/components/ExternalLink';
 
 interface NavigationItemProps {
@@ -9,6 +8,7 @@ interface NavigationItemProps {
   alt: string;
   slug: string;
   ariaLabel?: string;
+  color: string;
 }
 
 const NavigationItem: React.FC<NavigationItemProps> = ({
@@ -16,6 +16,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
   alt,
   slug,
   ariaLabel,
+  color,
 }) => {
   return (
     <ListItem
@@ -34,11 +35,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         }}
         aria-label={ariaLabel}
       >
-        <SimpleIcon
-          slug={slug}
-          alt={alt}
-          color={constants.colors.cream.replace('#', '')}
-        />
+        <SimpleIcon slug={slug} alt={alt} color={color} />
       </ExternalLink>
     </ListItem>
   );
