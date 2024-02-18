@@ -13,10 +13,14 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
-          cache: "yarn"
+          node-version: '18.x'
+          cache: 'yarn'
       - run: yarn install --immutable
-      - run: yarn test
+      - name: Run Tests
+        env:
+          NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: ${{ secrets.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+        run: yarn test
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4
         with:
