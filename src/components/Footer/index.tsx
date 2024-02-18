@@ -8,7 +8,7 @@ import { constants } from '@/app/styles/theme';
 import ExternalLink from '@/components/ExternalLink';
 
 interface FooterProps {
-  height: string;
+  height?: string;
 }
 
 const Footer: React.FC<FooterProps> = ({
