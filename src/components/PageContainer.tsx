@@ -10,7 +10,13 @@ const PageContainer: React.FC<PageContainerProps> = ({
   ...props
 }) => {
   return (
-    <Container {...props} maxWidth={maxWidth}>
+    <Container
+      {...props}
+      sx={{
+        py: 2,
+      }}
+      maxWidth={maxWidth}
+    >
       {children}
     </Container>
   );
