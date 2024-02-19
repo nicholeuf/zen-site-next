@@ -14,7 +14,6 @@ const getTabId: GetIdType = (index) => `work-tab-${index}`;
 const getTabPanelId: GetIdType = (index) => `work-tabpanel-${index}`;
 
 type TabsOnChange = (event: SyntheticEvent, value: any) => void;
-type TabOnKeyDown = (event: KeyboardEvent<HTMLDivElement>) => void;
 
 interface WorkTabsProps {
   items: WorkItemType[];
@@ -27,7 +26,7 @@ const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
     setValue(newValue);
   };
 
-  const handleKeyDown: TabOnKeyDown = (ev) => {
+  const handleKeyDown: KeyboardEventHandler<HTMLDivElement> = (ev) => {
     // Handle tab event for accessibility
     if ('Tab' === ev.code && value < items.length - 1) {
       setValue(value + 1);
