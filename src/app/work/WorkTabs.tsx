@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, SyntheticEvent, KeyboardEventHandler } from 'react';
+import { useState, SyntheticEvent } from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -26,13 +26,6 @@ const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
     setValue(newValue);
   };
 
-  const handleKeyDown: KeyboardEventHandler<HTMLDivElement> = (ev) => {
-    // Handle tab event for accessibility
-    if ('Tab' === ev.code && value < items.length - 1) {
-      setValue(value + 1);
-    }
-  };
-
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -43,6 +36,8 @@ const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
           variant="scrollable"
           scrollButtons
           allowScrollButtonsMobile
+          // https://mui.com/base-ui/react-tabs/#keyboard-navigation
+          selectionFollowsFocus
         >
           {items.map((item, index) => {
             return (
@@ -51,7 +46,6 @@ const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
                 label={item.company}
                 id={getTabId(index)}
                 aria-controls={getTabPanelId(index)}
-                onKeyDown={handleKeyDown}
               />
             );
           })}
