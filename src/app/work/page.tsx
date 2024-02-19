@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const Work: React.FC = () => {
   return (
-    <PageContainer>
+    <PageContainer data-testid="work-page">
       <Typography variant="h1">Work</Typography>
       <Typography variant="body2">
         After graduating with a BS in Computer Engineering from the University

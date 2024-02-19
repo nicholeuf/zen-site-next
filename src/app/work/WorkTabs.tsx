@@ -66,6 +66,7 @@ const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
             hidden={!isActive}
             id={getTabPanelId(index)}
             aria-labelledby={getTabId(index)}
+            data-testid={item.id}
           />
         );
       })}
