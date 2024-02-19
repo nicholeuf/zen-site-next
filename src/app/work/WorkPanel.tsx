@@ -9,22 +9,21 @@ import ChipList from './ChipList';
 import ChipListItem from './ChipListItem';
 
 interface WorkPanelProps extends BoxProps {
-  isActive: boolean;
   item: WorkItemType;
 }
 
-const WorkPanel: React.FC<WorkPanelProps> = ({ isActive, item, ...props }) => {
+const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
   return (
     <Box {...props} role="tabpanel">
-      {isActive && (
-        <Box sx={{ p: 3 }}>
-          <Typography variant="h5" component="h2">
-            {item.company}
-          </Typography>
-          <Typography variant="overline">
-            {item.startDate} - {item.endDate}
-          </Typography>
-          <Typography variant="subtitle2">{item.location}</Typography>
+      <Box sx={{ p: 3 }}>
+        <Typography variant="h5" component="h2">
+          {item.company} | {item.title}
+        </Typography>
+        <Typography variant="overline">
+          {item.startDate} - {item.endDate}
+        </Typography>
+        <Typography variant="subtitle2">{item.location}</Typography>
+        {!!item.experience.length && (
           <List data-testid="experience-list">
             {item.experience.map((experience, index) => {
               return (
@@ -39,11 +38,13 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ isActive, item, ...props }) => {
                     },
                   })}
                 >
-                  {experience}
+                  <Typography variant="body2">{experience}</Typography>
                 </ListItem>
               );
             })}
           </List>
+        )}
+        {!!item.skills.length && (
           <ChipList>
             {item.skills.map((skill) => {
               return (
@@ -53,6 +54,8 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ isActive, item, ...props }) => {
               );
             })}
           </ChipList>
+        )}
+        {!!item.tools.length && (
           <ChipList>
             {item.tools.map((tool) => {
               return (
@@ -67,8 +70,8 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ isActive, item, ...props }) => {
               );
             })}
           </ChipList>
-        </Box>
-      )}
+        )}
+      </Box>
     </Box>
   );
 };

@@ -5,6 +5,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
 import ExternalLink from '@/components/ExternalLink';
+import PageContainer from '@/components/PageContainer';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 
 const Contact: React.FC = () => {
   return (
-    <Box>
+    <PageContainer>
       <Box component="section">
         <Typography variant="h1">Contact</Typography>
         <Typography>
@@ -47,7 +48,7 @@ const Contact: React.FC = () => {
           </ListItem>
         </List>
       </Box>
-    </Box>
+    </PageContainer>
   );
 };
 
