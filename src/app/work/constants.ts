@@ -34,7 +34,7 @@ export const items: WorkItemType[] = [
     endDate: 'Dec 2022',
     experience: [
       'Founding member of a highly collaborative, cross-functional team where we facilitated a unique shopping experience, intended to solve food waste.',
-      "Participated in the transition of our user base from the legacy site to the new platform after adapting the Door to Door Organics code to Imperfect's business model.",
+      "Contributed to the transition of our user base from the legacy site to the new platform after adapting the Door to Door Organics code to Imperfect's business model.",
       'Highly involved in architecture decisions and many technology improvements, including transition to Typescript.',
       'Regularly involved in early exploration of new features with our design and project management team members.',
       'Responsible for the engineering side of our Stripe and Auth0 integrations, as well as collecting our site analytics using Segment and collaborating with merchandising and marketing efforts that relied on this data.',
