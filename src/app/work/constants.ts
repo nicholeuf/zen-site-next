@@ -74,7 +74,7 @@ export const items: WorkItemType[] = [
   {
     id: 'dtdo',
     company: 'Door to Door Organics',
-    title: 'Lead Frontend Developer',
+    title: 'Lead Front-End Developer',
     location: 'Louisville, CO & Remote',
     startDate: 'Mar 2014',
     endDate: 'Nov 2017',
