@@ -35,7 +35,7 @@ export const items: WorkItemType[] = [
     experience: [
       'Founding member of a highly collaborative, cross-functional team where we facilitated a unique shopping experience, intended to solve food waste.',
       "Contributed to the transition of our user base from the legacy site to the new platform after adapting the Door to Door Organics code to Imperfect's business model.",
-      'Highly involved in architecture decisions and many technology improvements, including transition to Typescript.',
+      'Highly involved in architecture decisions and many technology improvements.',
       'Regularly involved in early exploration of new features with our design and project management team members.',
       'Responsible for the engineering side of our Stripe and Auth0 integrations, as well as collecting our site analytics using Segment and collaborating with merchandising and marketing efforts that relied on this data.',
       'Mentored junior and mid-level developers as we expanded our team.',
@@ -44,6 +44,7 @@ export const items: WorkItemType[] = [
       'Node',
       'TypeScript',
       'React',
+      'React Router',
       'Redux',
       'Sagas',
       'Webpack',
