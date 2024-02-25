@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Navigation from './Navigation';
 import { constants } from '@/app/styles/theme';
 import ExternalLink from '@/components/ExternalLink';
+import CreditsModal from '@/components/CreditsModal';
 
 const smallGridTemplateAreas = `
 "nav"
@@ -31,15 +32,15 @@ const Footer: React.FC<FooterProps> = ({
     <Box
       data-testid="footer"
       component="footer"
-      sx={(theme) => ({
+      sx={{
         backgroundColor: 'secondary.main',
         color,
         height,
-        padding: theme.spacing(2),
+        padding: 2,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-      })}
+      }}
     >
       <Box
         maxWidth="sm"
@@ -142,7 +143,7 @@ const Footer: React.FC<FooterProps> = ({
             },
           }}
         >
-          <Typography variant="overline" component="p">
+          <Typography variant="overline" component="p" sx={{ display: 'flex' }}>
             <ExternalLink
               href="https://github.com/nicholeuf/zen-site-next"
               sx={{
@@ -150,8 +151,10 @@ const Footer: React.FC<FooterProps> = ({
               }}
               aria-label="View Source Code"
             >
-              [view source code]
+              view source code
             </ExternalLink>
+            &nbsp;|&nbsp;
+            <CreditsModal />
           </Typography>
         </Box>
       </Box>

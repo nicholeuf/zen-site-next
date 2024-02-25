@@ -2,11 +2,11 @@ import Box, { BoxProps } from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 
 import { WorkItemType } from './constants';
 import ChipList from './ChipList';
 import ChipListItem from './ChipListItem';
+import DashListItem from '@/components/DashListItem';
 
 interface WorkPanelProps extends BoxProps {
   item: WorkItemType;
@@ -27,19 +27,9 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
           <List data-testid="experience-list">
             {item.experience.map((experience, index) => {
               return (
-                <ListItem
-                  key={index}
-                  data-testid="experience-list-item"
-                  sx={(theme) => ({
-                    '&::before': {
-                      content: '"-"',
-                      pr: theme.spacing(0.5),
-                      alignSelf: 'flex-start',
-                    },
-                  })}
-                >
+                <DashListItem key={index} data-testid="experience-list-item">
                   <Typography variant="body2">{experience}</Typography>
-                </ListItem>
+                </DashListItem>
               );
             })}
           </List>
