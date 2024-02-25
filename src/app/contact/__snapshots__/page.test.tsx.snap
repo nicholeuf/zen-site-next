@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Home Page has expected snapshot 1`] = `
+exports[`The Contact Page has expected snapshot 1`] = `
 [
   .emotion-0 {
   background-color: #fff;
@@ -325,80 +325,31 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 .emotion-1 {
-  min-height: calc(100vh - 60px - 175px);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-left: 24px;
-  position: relative;
-}
-
-.emotion-2 {
-  height: 100%;
   width: 100%;
-  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_30/f_auto/q_5/v1/zensite/scott-webb-5mIcH3q7tIk-unsplash?_a=BAVAfVBy0) no-repeat;
-  -webkit-background-position: 50% 25%;
-  background-position: 50% 25%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.emotion-3 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  display: grid;
-  gap: 16px;
-}
-
-@media (min-width:0px) {
-  .emotion-3 {
-    grid-template-areas: "photo" "heading" "body";
-  }
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media (min-width:600px) {
-  .emotion-3 {
-    grid-template-areas: "photo heading heading heading" "body body body body";
+  .emotion-1 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
-.emotion-4 {
-  grid-area: photo;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+@media (min-width:1200px) {
+  .emotion-1 {
+    max-width: 1200px;
+  }
 }
 
-.emotion-5 {
-  grid-area: heading;
-}
-
-.emotion-6 {
+.emotion-3 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -408,151 +359,77 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-6 {
+  .emotion-3 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-6 {
+  .emotion-3 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-6 {
+  .emotion-3 {
     font-size: 5.9983rem;
   }
 }
 
-@media (min-width:0px) {
-  .emotion-6 {
-    font-size: 2.75rem;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-6 {
-    font-size: 3.5rem;
-  }
-}
-
-.emotion-7 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 1.5625rem;
-  line-height: 1.235;
-  margin-bottom: 0.35em;
-  font-weight: 500;
-}
-
-@media (min-width:600px) {
-  .emotion-7 {
-    font-size: 1.8219rem;
-  }
-}
-
-@media (min-width:900px) {
-  .emotion-7 {
-    font-size: 2.0243rem;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-7 {
-    font-size: 2.0243rem;
-  }
-}
-
-.emotion-8 {
-  grid-area: body;
-}
-
-.emotion-9 {
+.emotion-4 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
-  max-width: 900px;
-  color: #424242;
 }
 
-@media (min-width:0px) {
-  .emotion-9 {
-    font-size: 1.25rem;
-  }
+.emotion-5 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-@media (min-width:600px) {
-  .emotion-9 {
-    font-size: 1.5rem;
-  }
+.emotion-5:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 <main
     className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
   >
     <div
-      className="MuiBox-root emotion-1"
-      data-testid="landing"
+      className="MuiContainer-root MuiContainer-maxWidthLg emotion-1"
+      data-testid="contact-page"
     >
-      <div
+      <section
         className="MuiBox-root emotion-2"
-        data-testid="landing-background-image"
-      />
-      <div
-        className="MuiBox-root emotion-3"
       >
-        <div
-          className="MuiBox-root emotion-4"
+        <h1
+          className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-3"
         >
-          <img
-            alt="Photo of website author"
-            data-nimg="1"
-            data-testid="landing-profile-image"
-            decoding="async"
-            height={200}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0"
-            srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 2x"
-            style={
-              {
-                "border": "1px solid white",
-                "borderRadius": "20px",
-                "color": "transparent",
-              }
-            }
-            width={200}
-          />
-        </div>
-        <div
-          className="MuiBox-root emotion-5"
+          Contact
+        </h1>
+        <p
+          className="MuiTypography-root MuiTypography-body1 emotion-4"
         >
-          <h1
-            className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-6"
+          Please connect with me on
+           
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-5"
+            href="https://www.linkedin.com/in/nicholeuf"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener"
+            target="_blank"
           >
-            Hi, I'm Nichole
-          </h1>
-          <h2
-            className="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom emotion-7"
-          >
-            Full-Stack Developer
-          </h2>
-        </div>
-        <div
-          className="MuiBox-root emotion-8"
-        >
-          <p
-            className="MuiTypography-root MuiTypography-body1 emotion-9"
-          >
-            Based in Orlando, Florida, my passion lies in crafting seamless, intuitive, well-built experiences for the customer. I've mentored junior developers, acted as a Lead Front-End developer, and collaborated within dynamic, agile teams.
-          </p>
-        </div>
-      </div>
+            LinkedIn
+          </a>
+          . I look forward to hearing from you!
+        </p>
+      </section>
     </div>
   </main>,
   .emotion-0 {
