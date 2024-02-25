@@ -79,10 +79,15 @@ export const items: WorkItemType[] = [
     startDate: 'Mar 2014',
     endDate: 'Nov 2017',
     experience: [
-      'Led the architecture and deployment of the website.',
-      'Contributed to the transition of our user base from our legacy monolithic site to the new micro-services based platform.',
-      'Contributed to the development and deployment of our React Native iOS App.',
-      'Promoted to Lead on the Front-End team prior to the merger with Relay Foods where I enabled the adoption of React components from within a legacy Java website.',
+      `During my three and a half years with the company, I worked my way up from a Sr. Java Developer to the Lead
+      of the Front-End team.  In 2016 we merged with Relay Foods, and I transitioned to a Full-Stack Developer on a remote-first team,
+      where I continued to work in a lead role on our Front-End stack.`,
+      `I started at the company with a background in Enterprise Java, but fell in love with JavaScript and React at this job.  In addition,
+      I worked on several of our Node Micro-Services, Internal Tools, and contributed to the transition of our user base to the new platform.`,
+      `I introduced sagas for achieving complex user interactions and reselect for performant access to our
+      redux architecture.  We used JWT for authentication and our stack was hosted on Amazon Web Services (AWS) ElasticBeanstalk (EB) and CircleCI was used for build automation and deployment.`,
+      `Our team used slack and screenhero for paired programming and collaboration.  We were a fast-paced team
+      with a focus on iterative development.`,
     ],
     skills: [
       'Node',
