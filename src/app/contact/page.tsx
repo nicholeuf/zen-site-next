@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const Contact: React.FC = () => {
   return (
-    <PageContainer>
+    <PageContainer data-testid="contact-page">
       <Box component="section">
         <Typography variant="h1" gutterBottom>
           Contact
