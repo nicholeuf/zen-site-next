@@ -1,6 +1,5 @@
 import ListItem from '@mui/material/ListItem';
-import Link from '@mui/material/Link';
-import NextLink from 'next/link';
+import NextLink from '@/components/NextLink';
 
 interface NavigationItemProps {
   isActive: boolean;
@@ -27,9 +26,8 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         },
       }}
     >
-      <Link
+      <NextLink
         href={href}
-        component={NextLink}
         sx={(theme) => ({
           boxSizing: 'border-box',
           letterSpacing: {
@@ -48,7 +46,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         })}
       >
         {name}
-      </Link>
+      </NextLink>
     </ListItem>
   );
 };

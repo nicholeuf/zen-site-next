@@ -12,7 +12,9 @@ export const metadata: Metadata = {
 const Work: React.FC = () => {
   return (
     <PageContainer data-testid="work-page">
-      <Typography variant="h1">Work</Typography>
+      <Typography variant="h1" gutterBottom>
+        Work
+      </Typography>
       <Typography variant="body2">
         After graduating with a degree in Computer Engineering from the
         University of Florida in 2003, I worked in the defense industry for 7
