@@ -13,7 +13,9 @@ const Contact: React.FC = () => {
   return (
     <PageContainer>
       <Box component="section">
-        <Typography variant="h1">Contact</Typography>
+        <Typography variant="h1" gutterBottom>
+          Contact
+        </Typography>
         <Typography>
           Please connect with me on{' '}
           <ExternalLink href="https://www.linkedin.com/in/nicholeuf">

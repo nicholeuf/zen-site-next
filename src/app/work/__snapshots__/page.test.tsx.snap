@@ -355,6 +355,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   font-weight: 300;
   font-size: 3.5rem;
   line-height: 1.167;
+  margin-bottom: 0.35em;
 }
 
 @media (min-width:600px) {
@@ -1024,7 +1025,7 @@ exports[`The Work Page has expected snapshot 1`] = `
       data-testid="work-page"
     >
       <h1
-        className="MuiTypography-root MuiTypography-h1 emotion-2"
+        className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-2"
       >
         Work
       </h1>

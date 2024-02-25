@@ -20,22 +20,26 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
       </Typography>
       <List>
         <DashListItem>
-          Favicon and open graph image: &nbsp;
-          <ExternalLink href="https://icons8.com/icon/35926/lotus">
-            Lotus
-          </ExternalLink>
-          &nbsp;icon by&nbsp;
-          <ExternalLink href="https://icons8.com">Icons8</ExternalLink>
+          <Typography>
+            Favicon and open graph image: &nbsp;
+            <ExternalLink href="https://icons8.com/icon/35926/lotus">
+              Lotus
+            </ExternalLink>
+            &nbsp;icon by&nbsp;
+            <ExternalLink href="https://icons8.com">Icons8</ExternalLink>
+          </Typography>
         </DashListItem>
         <DashListItem>
-          Home page background: Photo by&nbsp;
-          <ExternalLink href="https://unsplash.com/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-            Scott Webb
-          </ExternalLink>
-          &nbsp;on&nbsp;
-          <ExternalLink href="https://unsplash.com/photos/rubber-plant-5mIcH3q7tIk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-            Unsplash
-          </ExternalLink>
+          <Typography>
+            Home page background: Photo by&nbsp;
+            <ExternalLink href="https://unsplash.com/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Scott Webb
+            </ExternalLink>
+            &nbsp;on&nbsp;
+            <ExternalLink href="https://unsplash.com/photos/rubber-plant-5mIcH3q7tIk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Unsplash
+            </ExternalLink>
+          </Typography>
         </DashListItem>
       </List>
     </>

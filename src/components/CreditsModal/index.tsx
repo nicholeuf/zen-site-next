@@ -35,8 +35,7 @@ const CreditsModal = () => {
         aria-describedby={descriptionId}
       >
         <Box
-          maxWidth="md"
-          sx={{
+          sx={(theme) => ({
             position: 'absolute',
             top: '50%',
             left: '50%',
@@ -45,7 +44,11 @@ const CreditsModal = () => {
             border: '2px solid #000',
             boxShadow: 24,
             p: 4,
-          }}
+            width: {
+              xs: '90vw',
+              sm: theme.breakpoints.values.sm,
+            },
+          })}
         >
           <Box
             sx={{
