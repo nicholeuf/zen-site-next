@@ -1032,7 +1032,7 @@ exports[`The Work Page has expected snapshot 1`] = `
       <p
         className="MuiTypography-root MuiTypography-body2 emotion-3"
       >
-        After graduating with a degree in Computer Engineering from the University of Florida in 2003, I worked in the defense industry for 7 years. Subsequently, I transitioned to working for niche food delivery service companies, where I honed my skills as a Full-Stack Developer. Throughout my career progression, I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
+        After graduating in 2003 with a degree in Computer Engineering from the University of Florida, I worked in the defense industry for 7 years. I then transitioned to working for niche food delivery service companies, where I honed my skills as a Full-Stack Developer. Throughout my career progression, I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
       </p>
       <div
         className="MuiBox-root emotion-4"
@@ -1256,7 +1256,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   className="MuiTypography-root MuiTypography-body2 emotion-3"
                 >
-                  Current site is a React application, built on NextJS, and deployed to Vercel. Code is fully-tested and automated via Github Actions.
+                  Current site is built with React, NextJS, and MaterialUI, and deployed to Vercel. Code is fully-tested and automated via Github Actions.
                 </p>
               </li>
               <li
@@ -1450,6 +1450,23 @@ exports[`The Work Page has expected snapshot 1`] = `
                   </span>
                 </div>
               </li>
+              <li
+                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
+                data-testid="chip-list-item"
+                disabled={false}
+              >
+                <div
+                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                >
+                  <span
+                    className="MuiChip-label MuiChip-labelSmall emotion-50"
+                  >
+                    Sentry.io
+                  </span>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -1495,7 +1512,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   className="MuiTypography-root MuiTypography-body2 emotion-3"
                 >
-                  Founding member of a highly collaborative, cross-functional team where we facilitated a unique shopping experience, intended to solve food waste.
+                  Founding member of a collaborative, cross-functional team where we facilitated a unique shopping experience, intended to solve food waste.
                 </p>
               </li>
               <li
@@ -1517,7 +1534,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   className="MuiTypography-root MuiTypography-body2 emotion-3"
                 >
-                  Highly involved in architecture decisions and many technology improvements.
+                  Involved in architecture decisions and technology improvements.
                 </p>
               </li>
               <li
@@ -1528,7 +1545,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   className="MuiTypography-root MuiTypography-body2 emotion-3"
                 >
-                  Regularly involved in early exploration of new features with our design and project management team members.
+                  Involved in early exploration of new features with our design and project management team members.
                 </p>
               </li>
               <li
@@ -1831,7 +1848,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                   <span
                     className="MuiChip-label MuiChip-labelSmall emotion-50"
                   >
-                    Segment
+                    Segment.io
                   </span>
                 </div>
               </li>
@@ -2050,7 +2067,9 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   className="MuiTypography-root MuiTypography-body2 emotion-3"
                 >
-                  Led the architecture and deployment of the website.
+                  During my three and a half years with the company, I worked my way up from a Sr. Java Developer to the Lead
+      of the Front-End team.  In 2016 we merged with Relay Foods, and I transitioned to a Full-Stack Developer on a remote-first team,
+      where I continued to work in a lead role on our Front-End stack.
                 </p>
               </li>
               <li
@@ -2061,7 +2080,8 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   className="MuiTypography-root MuiTypography-body2 emotion-3"
                 >
-                  Contributed to the transition of our user base from our legacy monolithic site to the new micro-services based platform.
+                  I started at the company with a background in Enterprise Java, but fell in love with JavaScript and React at this job.  In addition,
+      I worked on several of our Node Micro-Services, Internal Tools, and contributed to the transition of our user base to the new platform.
                 </p>
               </li>
               <li
@@ -2072,7 +2092,8 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   className="MuiTypography-root MuiTypography-body2 emotion-3"
                 >
-                  Contributed to the development and deployment of our React Native iOS App.
+                  I introduced sagas for achieving complex user interactions and reselect for performant access to our
+      redux architecture.  We used JWT for authentication and our stack was hosted on Amazon Web Services (AWS) ElasticBeanstalk (EB) and CircleCI was used for build automation and deployment.
                 </p>
               </li>
               <li
@@ -2083,7 +2104,8 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   className="MuiTypography-root MuiTypography-body2 emotion-3"
                 >
-                  Promoted to Lead on the Front-End team prior to the merger with Relay Foods where I enabled the adoption of React components from within a legacy Java website.
+                  Our team used slack and screenhero for paired programming and collaboration.  We were a fast-paced team
+      with a focus on iterative development.
                 </p>
               </li>
             </ul>
@@ -2297,6 +2319,23 @@ exports[`The Work Page has expected snapshot 1`] = `
                     className="MuiChip-label MuiChip-labelSmall emotion-50"
                   >
                     Stripe
+                  </span>
+                </div>
+              </li>
+              <li
+                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
+                data-testid="chip-list-item"
+                disabled={false}
+              >
+                <div
+                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                >
+                  <span
+                    className="MuiChip-label MuiChip-labelSmall emotion-50"
+                  >
+                    Segment.io
                   </span>
                 </div>
               </li>
