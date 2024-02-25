@@ -16,13 +16,13 @@ const Work: React.FC = () => {
         Work
       </Typography>
       <Typography variant="body2">
-        After graduating with a degree in Computer Engineering from the
-        University of Florida in 2003, I worked in the defense industry for 7
-        years. Subsequently, I transitioned to working for niche food delivery
-        service companies, where I honed my skills as a Full-Stack Developer.
-        Throughout my career progression, I have assumed roles such as Technical
-        Lead, providing mentorship to colleagues, and collaborating within
-        agile, cross-functional teams.
+        After graduating in 2003 with a degree in Computer Engineering from the
+        University of Florida, I worked in the defense industry for 7 years. I
+        then transitioned to working for niche food delivery service companies,
+        where I honed my skills as a Full-Stack Developer. Throughout my career
+        progression, I have assumed roles such as Technical Lead, providing
+        mentorship to colleagues, and collaborating within agile,
+        cross-functional teams.
       </Typography>
       <WorkTabs items={items} />
     </PageContainer>
