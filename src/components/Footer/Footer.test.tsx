@@ -1,7 +1,7 @@
 /*
  * @jest-environment jsdom
  */
-import { render, screen } from 'test-utils';
+import { render, screen, fireEvent } from 'test-utils';
 import Footer from './index';
 
 describe('The Footer component', () => {
@@ -24,5 +24,28 @@ describe('The Footer component', () => {
 
     const sourceCopy = screen.getByText(/View Source Code/i);
     expect(sourceCopy).toBeVisible();
+  });
+
+  test('interacts with credits modal as expected', () => {
+    render(<Footer />);
+
+    const viewCreditsButton = screen.getByRole('button', {
+      name: /view credits/i,
+    });
+
+    fireEvent.click(viewCreditsButton);
+    const modal = screen.getByTestId('credits-modal');
+    expect(modal).toBeVisible();
+
+    const heading = screen.getByRole('heading', { level: 3 });
+    expect(heading).toBeVisible();
+    expect(heading).toHaveTextContent('Credits');
+
+    const closeButton = screen.getByRole('button', {
+      name: /close/i,
+    });
+
+    fireEvent.click(closeButton);
+    expect(modal).not.toBeVisible();
   });
 });

@@ -33,6 +33,7 @@ const CreditsModal = () => {
         onClose={handleClose}
         aria-labelledby={titleId}
         aria-describedby={descriptionId}
+        data-testid="credits-modal"
       >
         <Box
           sx={(theme) => ({
