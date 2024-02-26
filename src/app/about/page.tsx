@@ -15,20 +15,22 @@ const About: React.FC = () => {
         About
       </Typography>
       <Typography gutterBottom>
-        I live in Orlando with my family. I&apos;m a native Floridian, but we
-        lived in Colorado and Georgia for a time before moving back. I loved
-        Colorado so much, I still consider it my second home.
+        I live in Orlando with my family. I&apos;m a native Floridian and
+        graduate of the University of Florida <i>(Go Gators!)</i>. Prior to our
+        return to the sunshine state, we experienced life in both Georgia and
+        Colorado. Colorado was a remarkable experience, and it left an indelible
+        mark on my heart.
       </Typography>
       <Typography gutterBottom>
-        I&apos;ve been practicing yoga since 2014. Beyond the physical benefits,
-        I love how it connects me back into the physical body and is a form of
-        moving meditation. Lately I&apos;ve been working on my inversions. It
-        took me a while to get the courage to go upside down, but I&apos;m glad
-        I took the leap.
+        Since 2014, I&apos;ve been practicing yoga. Beyond the physical
+        benefits, I love how it connects me back into the physical body and
+        serves as a form of moving meditation. Lately I&apos;ve been working on
+        my inversions. It took me some time to gather the courage to embrace
+        being upside down, but I&apos;m grateful I took that leap.
       </Typography>
       <Typography gutterBottom>
-        I also enjoy cooking, collecting houseplants, and spending time in
-        nature.
+        Beyond the mat, I enjoy cooking, nurturing my collection of houseplants,
+        and spending time in nature.
       </Typography>
       <Photos />
     </PageContainer>

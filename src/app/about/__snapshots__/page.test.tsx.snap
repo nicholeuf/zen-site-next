@@ -486,17 +486,21 @@ exports[`The About Page has expected snapshot 1`] = `
       <p
         className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom emotion-3"
       >
-        I live in Orlando with my family. I'm a native Floridian, but we lived in Colorado and Georgia for a time before moving back. I loved Colorado so much, I still consider it my second home.
+        I live in Orlando with my family. I'm a native Floridian and graduate of the University of Florida 
+        <i>
+          (Go Gators!)
+        </i>
+        . Prior to our return to the sunshine state, we experienced life in both Georgia and Colorado. Colorado was a remarkable experience, and it left an indelible mark on my heart.
       </p>
       <p
         className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom emotion-3"
       >
-        I've been practicing yoga since 2014. Beyond the physical benefits, I love how it connects me back into the physical body and is a form of moving meditation. Lately I've been working on my inversions. It took me a while to get the courage to go upside down, but I'm glad I took the leap.
+        Since 2014, I've been practicing yoga. Beyond the physical benefits, I love how it connects me back into the physical body and serves as a form of moving meditation. Lately I've been working on my inversions. It took me some time to gather the courage to embrace being upside down, but I'm grateful I took that leap.
       </p>
       <p
         className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom emotion-3"
       >
-        I also enjoy cooking, collecting houseplants, and spending time in nature.
+        Beyond the mat, I enjoy cooking, nurturing my collection of houseplants, and spending time in nature.
       </p>
       <ul
         className="MuiImageList-root MuiImageList-standard emotion-6"
