@@ -60,12 +60,11 @@ export const createMatchMedia = (width: unknown) => {
   });
 };
 
-export const resetMatchMedia = () => {
-  window.matchMedia = createMatchMedia(window.innerWidth);
+export const resetMatchMedia = (width = window.innerWidth) => {
+  window.matchMedia = createMatchMedia(width);
 };
 
 // https://mui.com/material-ui/customization/breakpoints/#default-breakpoints
-
 export const XS_DEVICE = 400;
 export const SM_DEVICE = 768;
 export const MD_DEVICE = 1000;

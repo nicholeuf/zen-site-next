@@ -45,12 +45,17 @@ describe('The About Page', () => {
 
       const photoGrid = screen.queryByTestId('about-photos-3-column-layout');
       expect(photoGrid).toBeVisible();
+
+      const napaliPhoto = screen.getByRole('img', {
+        name: 'Na Pali Coast Tour in Kauai, HI (2019)',
+      });
+      expect(napaliPhoto).toBeVisible();
     });
   });
 
   describe('User with XS Device', () => {
     beforeAll(() => {
-      window.matchMedia = createMatchMedia(XS_DEVICE);
+      resetMatchMedia(XS_DEVICE);
     });
 
     test('has a 1-column layout', () => {
@@ -62,12 +67,17 @@ describe('The About Page', () => {
 
       const photoGrid = screen.queryByTestId('about-photos-1-column-layout');
       expect(photoGrid).toBeVisible();
+
+      const napaliPhoto = screen.getByRole('img', {
+        name: 'Na Pali Coast Tour in Kauai, HI (2019)',
+      });
+      expect(napaliPhoto).toBeVisible();
     });
   });
 
   describe('User with SM Device', () => {
     beforeAll(() => {
-      window.matchMedia = createMatchMedia(SM_DEVICE);
+      resetMatchMedia(SM_DEVICE);
     });
 
     test('has a 2-column layout', () => {
@@ -79,6 +89,11 @@ describe('The About Page', () => {
 
       const photoGrid = screen.queryByTestId('about-photos-2-column-layout');
       expect(photoGrid).toBeVisible();
+
+      const napaliPhoto = screen.getByRole('img', {
+        name: 'Na Pali Coast Tour in Kauai, HI (2019)',
+      });
+      expect(napaliPhoto).toBeVisible();
     });
   });
 });
