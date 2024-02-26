@@ -1,4 +1,5 @@
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import { Metadata } from 'next';
 
 import PageContainer from '@/components/PageContainer';
@@ -32,7 +33,13 @@ const About: React.FC = () => {
         Beyond the mat, I enjoy cooking, nurturing my collection of houseplants,
         and spending time in nature.
       </Typography>
-      <Photos />
+      <Box
+        sx={{
+          mt: 3,
+        }}
+      >
+        <Photos />
+      </Box>
     </PageContainer>
   );
 };
