@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const About: React.FC = () => {
   return (
-    <PageContainer>
+    <PageContainer data-testid="about-page">
       <Typography variant="h1" gutterBottom>
         About
       </Typography>
