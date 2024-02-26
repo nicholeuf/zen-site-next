@@ -7,7 +7,6 @@ import {
   screen,
   renderSnapshotWithLayout,
   resetMatchMedia,
-  createMatchMedia,
   XS_DEVICE,
   SM_DEVICE,
 } from 'test-utils';
