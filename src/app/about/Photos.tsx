@@ -67,42 +67,44 @@ const Photos = () => {
     return 1;
   };
 
+  const cols = getCols();
+
   return (
-    <Box>
-      <ImageList
-        sx={{ width: '100%', height: '100%' }}
-        cols={getCols()}
-        rowHeight="auto"
-      >
-        {itemData.map((item) => (
-          <ImageListItem
-            key={item.src}
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Box>
-              <CldImage
-                src={item.src}
-                width={300}
-                height={300}
-                crop="thumb"
-                zoom="0.1"
-                gravity="faces"
-                alt=""
-              />
-              <ImageListItemBar
-                title={item.title}
-                subtitle={item.location}
-                position="below"
-              />
-            </Box>
-          </ImageListItem>
-        ))}
-      </ImageList>
-    </Box>
+    <ImageList
+      sx={{ width: '100%', height: '100%' }}
+      cols={cols}
+      rowHeight="auto"
+      data-testid={`about-photos-${cols}-column-layout`}
+    >
+      {itemData.map((item) => (
+        <ImageListItem
+          key={item.src}
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Box>
+            <CldImage
+              src={item.src}
+              width={300}
+              height={300}
+              crop="thumb"
+              zoom="0.1"
+              gravity="faces"
+              radius="20"
+              alt={`${item.title} in ${item.location}`}
+            />
+            <ImageListItemBar
+              title={item.title}
+              subtitle={item.location}
+              position="below"
+            />
+          </Box>
+        </ImageListItem>
+      ))}
+    </ImageList>
   );
 };
 

@@ -6,11 +6,19 @@ import {
   renderWithLayout,
   screen,
   renderSnapshotWithLayout,
+  resetMatchMedia,
+  createMatchMedia,
+  XS_DEVICE,
+  SM_DEVICE,
 } from 'test-utils';
 
 import AboutPage from './page';
 
 describe('The About Page', () => {
+  beforeAll(() => {
+    resetMatchMedia();
+  });
+
   test('has expected snapshot', () => {
     const component = renderSnapshotWithLayout(<AboutPage />);
     const tree = component.toJSON();
@@ -19,7 +27,7 @@ describe('The About Page', () => {
   });
 
   test.each([['header'], ['about-page'], ['footer']])(
-    'contains the visible testid %i',
+    'contains the visible testid %p',
     (testid) => {
       renderWithLayout(<AboutPage />);
       const component = screen.getByTestId(testid);
@@ -27,11 +35,50 @@ describe('The About Page', () => {
     }
   );
 
-  test('works as expected', () => {
-    render(<AboutPage />);
+  describe('User on Desktop', () => {
+    test('has a 3-column layout', () => {
+      render(<AboutPage />);
 
-    const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toBeVisible();
-    expect(heading).toHaveTextContent('About');
+      const heading = screen.getByRole('heading', { level: 1 });
+      expect(heading).toBeVisible();
+      expect(heading).toHaveTextContent('About');
+
+      const photoGrid = screen.queryByTestId('about-photos-3-column-layout');
+      expect(photoGrid).toBeVisible();
+    });
+  });
+
+  describe('User with XS Device', () => {
+    beforeAll(() => {
+      window.matchMedia = createMatchMedia(XS_DEVICE);
+    });
+
+    test('has a 1-column layout', () => {
+      render(<AboutPage />);
+
+      const heading = screen.getByRole('heading', { level: 1 });
+      expect(heading).toBeVisible();
+      expect(heading).toHaveTextContent('About');
+
+      const photoGrid = screen.queryByTestId('about-photos-1-column-layout');
+      expect(photoGrid).toBeVisible();
+    });
+  });
+
+  describe('User with SM Device', () => {
+    beforeAll(() => {
+      window.matchMedia = createMatchMedia(SM_DEVICE);
+    });
+
+    test('has a 2-column layout', () => {
+      render(<AboutPage />);
+
+      const heading = screen.getByRole('heading', { level: 1 });
+      expect(heading).toBeVisible();
+      expect(heading).toHaveTextContent('About');
+
+      const photoGrid = screen.queryByTestId('about-photos-2-column-layout');
+      expect(photoGrid).toBeVisible();
+    });
   });
 });
