@@ -20,8 +20,8 @@ const About: React.FC = () => {
         Colorado so much, I still consider it my second home.
       </Typography>
       <Typography gutterBottom>
-        I've been practicing yoga since 2014. Beyond the physical benefits, I
-        love how it connects me back into the physical body and is a form of
+        I&apos;ve been practicing yoga since 2014. Beyond the physical benefits,
+        I love how it connects me back into the physical body and is a form of
         moving meditation. Lately I&apos;ve been working on my inversions. It
         took me a while to get the courage to go upside down, but I&apos;m glad
         I took the leap.
