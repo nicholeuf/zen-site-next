@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
 import renderer from 'react-test-renderer';
+import mediaQuery from 'css-mediaquery';
 
 import AppLayout from '@/components/AppLayout';
 import GlobalStyles from '@/app/styles/GlobalStyles';
@@ -42,3 +43,31 @@ export {
   customSnapshotRender as renderSnapshot,
   customSnapshotRenderWithLayout as renderSnapshotWithLayout,
 };
+
+// https://mui.com/material-ui/react-use-media-query/#testing
+export const createMatchMedia = (width: unknown) => {
+  return (query: string): MediaQueryList => ({
+    matches: mediaQuery.match(query, {
+      width,
+    }),
+    media: query,
+    addListener: () => {},
+    removeListener: () => {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    onchange: () => {},
+    dispatchEvent: () => true,
+  });
+};
+
+export const resetMatchMedia = () => {
+  window.matchMedia = createMatchMedia(window.innerWidth);
+};
+
+// https://mui.com/material-ui/customization/breakpoints/#default-breakpoints
+
+export const XS_DEVICE = 400;
+export const SM_DEVICE = 768;
+export const MD_DEVICE = 1000;
+export const LG_DEVICE = 1280;
+export const XL_DEVICE = 1600;
