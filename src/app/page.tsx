@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import LandingPage from '@/components/LandingPage';
 
 export const metadata: Metadata = {
-  title: "Nichole Frey's Portfolio",
+  title: 'The Coding Yogi | Nichole Frey',
 };
 
 const Home: React.FC = () => {

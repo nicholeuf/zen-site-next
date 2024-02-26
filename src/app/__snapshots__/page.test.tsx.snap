@@ -466,10 +466,17 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 .emotion-8 {
-  grid-area: body;
+  margin: 0;
+  font-family: fontFamily;
+  font-size: 26px;
+  font-size: 30px;
 }
 
 .emotion-9 {
+  grid-area: body;
+}
+
+.emotion-10 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -480,13 +487,13 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-9 {
+  .emotion-10 {
     font-size: 1.25rem;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-9 {
+  .emotion-10 {
     font-size: 1.5rem;
   }
 }
@@ -540,16 +547,21 @@ exports[`The Home Page has expected snapshot 1`] = `
           <h2
             className="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom emotion-7"
           >
-            Full-Stack Developer
+            Full-Stack Developer 
+            <span
+              className="MuiTypography-root MuiTypography-sacramento emotion-8"
+            >
+              and yogi!
+            </span>
           </h2>
         </div>
         <div
-          className="MuiBox-root emotion-8"
+          className="MuiBox-root emotion-9"
         >
           <p
-            className="MuiTypography-root MuiTypography-body1 emotion-9"
+            className="MuiTypography-root MuiTypography-body1 emotion-10"
           >
-            Based in Orlando, Florida, my passion lies in crafting seamless, intuitive, well-built experiences for the customer. I've mentored junior developers, acted as a Lead Front-End developer, and collaborated within dynamic, agile teams.
+            Based in Orlando, Florida, my passion lies in crafting intuitive, well-built experiences for the customer. I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
           </p>
         </div>
       </div>
