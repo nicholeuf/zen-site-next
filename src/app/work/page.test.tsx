@@ -26,7 +26,7 @@ describe('The Work Page', () => {
   });
 
   test.each([['header'], ['work-page'], ['footer']])(
-    'contains the visible testid %i',
+    'contains the visible testid %p',
     (testid) => {
       renderWithLayout(<WorkPage />);
       const component = screen.getByTestId(testid);

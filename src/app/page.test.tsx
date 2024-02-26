@@ -13,7 +13,7 @@ describe('The Home Page', () => {
   });
 
   test.each([['header'], ['landing'], ['footer']])(
-    'contains the visible testid %i',
+    'contains the visible testid %p',
     (testid) => {
       renderWithLayout(<HomePage />);
       const component = screen.getByTestId(testid);
