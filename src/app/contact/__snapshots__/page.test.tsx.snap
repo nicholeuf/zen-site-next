@@ -378,10 +378,10 @@ exports[`The Contact Page has expected snapshot 1`] = `
 
 .emotion-4 {
   margin: 0;
+  font-size: 0.9rem;
   font-family: fontFamily;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.43;
 }
 
 .emotion-5 {
@@ -413,10 +413,9 @@ exports[`The Contact Page has expected snapshot 1`] = `
           Contact
         </h1>
         <p
-          className="MuiTypography-root MuiTypography-body1 emotion-4"
+          className="MuiTypography-root MuiTypography-body2 emotion-4"
         >
-          Please connect with me on
-           
+          Please connect with me on 
           <a
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-5"
             href="https://www.linkedin.com/in/nicholeuf"
