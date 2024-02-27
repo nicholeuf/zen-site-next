@@ -16,8 +16,8 @@ const Contact: React.FC = () => {
         <Typography variant="h1" gutterBottom>
           Contact
         </Typography>
-        <Typography>
-          Please connect with me on{' '}
+        <Typography variant="body2">
+          Please connect with me on&nbsp;
           <ExternalLink href="https://www.linkedin.com/in/nicholeuf">
             LinkedIn
           </ExternalLink>

@@ -31,6 +31,7 @@ export const constants = {
   },
 };
 
+// Default theme https://mui.com/material-ui/customization/default-them
 // light: will be calculated from palette.primary.main,
 // dark: will be calculated from palette.primary.main,
 // contrastText: will be calculated to contrast with palette.primary.main
@@ -51,9 +52,14 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: inter.style.fontFamily,
+    fontSize: 14,
     sacramento: {
       fontFamily: sacramento.style.fontFamily,
       fontSize: '26px',
+    },
+    body2: {
+      // default is 0.875rem
+      fontSize: '0.9rem',
     },
   },
   components: {
