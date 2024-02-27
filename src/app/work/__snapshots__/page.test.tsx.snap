@@ -378,9 +378,9 @@ exports[`The Work Page has expected snapshot 1`] = `
 
 .emotion-3 {
   margin: 0;
+  font-size: 0.9rem;
   font-family: fontFamily;
   font-weight: 400;
-  font-size: 0.875rem;
   line-height: 1.43;
 }
 
