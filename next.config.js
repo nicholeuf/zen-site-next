@@ -18,13 +18,13 @@ const nextConfig = {
 
 module.exports = nextConfig;
 
-// Injected content via Sentry wizard below
-
-const { withSentryConfig } = require('@sentry/nextjs');
-
 // https://vercel.com/docs/projects/environment-variables/system-environment-variables#system-environment-variables
 // Initialize sentry when deployed to vercel only
 if (!!process.env.VERCEL_ENV) {
+  // Injected content via Sentry wizard below
+
+  const { withSentryConfig } = require('@sentry/nextjs');
+
   module.exports = withSentryConfig(
     module.exports,
     {
