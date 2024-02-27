@@ -13,9 +13,9 @@ export interface WorkItemType {
 export const items: WorkItemType[] = [
   {
     id: 'portfolio-site',
-    company: 'Portfolio Site',
+    company: 'The Coding Yogi',
     title: 'Owner, Developer',
-    location: 'Orlando, FL',
+    location: 'Remote',
     startDate: 'Nov 2017',
     endDate: 'Present',
     experience: [
@@ -53,10 +53,12 @@ export const items: WorkItemType[] = [
       'SQL',
       'Microservices',
       'Technical Writing',
+      'A/B Testing',
     ],
     tools: [
       'Auth0',
       'Stripe',
+      'Split.io',
       'Algolia',
       'Segment.io',
       'Prismic',
