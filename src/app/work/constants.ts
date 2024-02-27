@@ -62,6 +62,7 @@ export const items: WorkItemType[] = [
       'Algolia',
       'Segment.io',
       'Prismic',
+      'Snowflake',
       'CircleCI',
       'Cloudinary',
       'Storybook',
