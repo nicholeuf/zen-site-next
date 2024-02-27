@@ -68,10 +68,12 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
         </AppRouterCacheProvider>
         <Analytics />
         <SpeedInsights />
-        <script
-          src="https://embed.small.chat/T06KQEC9PRRC06L3A025MX.js"
-          async
-        ></script>
+        {process.env.NEXT_PUBLIC_SMALLCHAT_ENABLED?.match(/true/i) && (
+          <script
+            src="https://embed.small.chat/T06KQEC9PRRC06L3A025MX.js"
+            async
+          ></script>
+        )}
       </body>
     </html>
   );
