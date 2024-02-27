@@ -332,7 +332,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 .emotion-2 {
   height: 100%;
   width: 100%;
-  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_20/f_auto/q_5/v1/zensite/faria-anzum-ONK9IlKizS4-unsplash?_a=BAVAfVBy0) no-repeat;
+  background: url(https://res.cloudinary.com/nicholeuf/image/upload/,z_0.1/o_20/f_auto/q_5/v1/zensite/faria-anzum-ONK9IlKizS4-unsplash?_a=BAVAfVBy0) no-repeat;
   -webkit-background-position: 50% 80%;
   background-position: 50% 80%;
   -webkit-background-size: cover;

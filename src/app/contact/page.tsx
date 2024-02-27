@@ -22,6 +22,7 @@ const Contact: React.FC = () => {
         src: 'zensite/faria-anzum-ONK9IlKizS4-unsplash',
         aspectRatio: '2:3',
         quality: '5',
+        zoom: '0.1',
       }}
       backgroundPosition="50% 80%"
     >
