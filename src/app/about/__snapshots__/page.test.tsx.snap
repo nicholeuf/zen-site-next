@@ -504,7 +504,7 @@ exports[`The About Page has expected snapshot 1`] = `
       <p
         className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom emotion-3"
       >
-        Beyond the mat, I enjoy cooking, nurturing my collection of houseplants, and spending time in nature.
+        Beyond the mat, I enjoy cooking, caring for my houseplants, and spending time in nature.
       </p>
       <div
         className="MuiBox-root emotion-6"

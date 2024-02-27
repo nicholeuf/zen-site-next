@@ -30,8 +30,8 @@ const About: React.FC = () => {
         being upside down, but I&apos;m grateful I took that leap.
       </Typography>
       <Typography gutterBottom>
-        Beyond the mat, I enjoy cooking, nurturing my collection of houseplants,
-        and spending time in nature.
+        Beyond the mat, I enjoy cooking, caring for my houseplants, and spending
+        time in nature.
       </Typography>
       <Box
         sx={{
