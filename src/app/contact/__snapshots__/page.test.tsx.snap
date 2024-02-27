@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Contact Page has expected snapshot 1`] = `
+exports[`The Contact Page has expected snapshot when chat enabled 1`] = `
 [
   .emotion-0 {
   background-color: #fff;
@@ -1056,6 +1056,1085 @@ exports[`The Contact Page has expected snapshot 1`] = `
             type="button"
           >
             View Credits
+          </button>
+        </p>
+      </div>
+    </div>
+  </footer>,
+]
+`;
+
+exports[`The Contact Page has expected snapshot when chat is not enabled 1`] = `
+[
+  .emotion-0 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: auto;
+  right: 0;
+  background-color: #FA2742;
+  color: #fff;
+  background-color: #E8EAE3;
+  border: 8px solid;
+  border-color: #373833;
+  min-height: 60px;
+  height: 60px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: none;
+}
+
+@media print {
+  .emotion-0 {
+    position: absolute;
+  }
+}
+
+.emotion-1 {
+  font-family: fontFamily;
+  font-size: 30px;
+  height: 100%;
+  width: 60px;
+  border-right: 8px solid;
+  border-right-color: #373833;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1:hover {
+  cursor: pointer;
+}
+
+.emotion-2 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #373833;
+  width: 100%;
+  text-align: center;
+}
+
+.emotion-2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:hover {
+  color: rgb(251, 82, 103);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2::before {
+  content: "nf";
+}
+
+.emotion-3 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0px solid;
+}
+
+.emotion-4 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+
+.emotion-5.Mui-focusVisible {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.emotion-5.Mui-selected {
+  background-color: rgba(250, 39, 66, 0.08);
+}
+
+.emotion-5.Mui-selected.Mui-focusVisible {
+  background-color: rgba(250, 39, 66, 0.2);
+}
+
+.emotion-5.Mui-disabled {
+  opacity: 0.38;
+}
+
+.emotion-5:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.emotion-6 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #373833;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+.emotion-6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:600px) {
+  .emotion-6 {
+    letter-spacing: 2.75px;
+  }
+}
+
+.emotion-6:hover {
+  color: rgb(251, 82, 103);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<header
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-0"
+    data-testid="header"
+  >
+    <div
+      className="MuiBox-root emotion-1"
+      data-testid="header-logo"
+    >
+      <a
+        className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        <span
+          className="MuiBox-root emotion-3"
+          data-testid="visually-hidden"
+        >
+          Home
+        </span>
+      </a>
+    </div>
+    <nav
+      aria-label="Site Navigation Links"
+      data-testid="header-nav"
+    >
+      <ul
+        className="MuiList-root MuiList-padding emotion-4"
+      >
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            href="/work"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Work
+          </a>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            href="/about"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            About
+          </a>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            href="/contact"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>,
+  .emotion-0 {
+  width: 100%;
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 60px;
+  min-height: calc(100vh - 60px - 175px);
+  padding: 0!important;
+  max-width: 100%!important;
+}
+
+@media (min-width:600px) {
+  .emotion-0 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-0 {
+    max-width: 1200px;
+  }
+}
+
+.emotion-1 {
+  width: 100%;
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-1 {
+    max-width: 1200px;
+  }
+}
+
+.emotion-3 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 1.167;
+  margin-bottom: 0.35em;
+}
+
+@media (min-width:600px) {
+  .emotion-3 {
+    font-size: 4.7129rem;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-3 {
+    font-size: 5.3556rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-3 {
+    font-size: 5.9983rem;
+  }
+}
+
+.emotion-4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: fontFamily;
+  font-weight: 400;
+  line-height: 1.43;
+}
+
+.emotion-5 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-5:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<main
+    className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
+  >
+    <div
+      className="MuiContainer-root MuiContainer-maxWidthLg emotion-1"
+      data-testid="contact-page"
+    >
+      <section
+        className="MuiBox-root emotion-2"
+      >
+        <h1
+          className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-3"
+        >
+          Contact
+        </h1>
+        <p
+          className="MuiTypography-root MuiTypography-body2 emotion-4"
+        >
+          Please connect with me on 
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-5"
+            href="https://www.linkedin.com/in/nicholeuf"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          . I look forward to hearing from you!
+        </p>
+      </section>
+    </div>
+  </main>,
+  .emotion-0 {
+  background-color: #373833;
+  color: #E8EAE3;
+  height: 175px;
+  padding: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 {
+  max-width: 600px;
+  display: grid;
+  gap: 4px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width:0px) {
+  .emotion-1 {
+    grid-template-areas: "nav" "madeby" "copyright" "source";
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    grid-template-areas: "nav madeby" "nav copyright" "nav source";
+  }
+}
+
+.emotion-2 {
+  grid-area: nav;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width:0px) {
+  .emotion-2 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-2 {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.emotion-3 {
+  width: 25%;
+  height: 100%;
+}
+
+.emotion-4 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+@media (min-width:0px) {
+  .emotion-4 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+
+.emotion-5.Mui-focusVisible {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.emotion-5.Mui-selected {
+  background-color: rgba(250, 39, 66, 0.08);
+}
+
+.emotion-5.Mui-selected.Mui-focusVisible {
+  background-color: rgba(250, 39, 66, 0.2);
+}
+
+.emotion-5.Mui-disabled {
+  opacity: 0.38;
+}
+
+@media (min-width:0px) {
+  .emotion-5 {
+    margin: 8px;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-5 {
+    margin: 24px;
+  }
+}
+
+.emotion-5:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.emotion-6 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-9 {
+  grid-area: madeby;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:0px) {
+  .emotion-9 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-9 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.emotion-10 {
+  margin: 0;
+  font-family: fontFamily;
+  font-size: 26px;
+}
+
+@media (min-width:0px) {
+  .emotion-10 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-10 {
+    font-size: 34px;
+  }
+}
+
+.emotion-11 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: inline;
+  color: #FA2742;
+}
+
+.emotion-12 {
+  grid-area: copyright;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:0px) {
+  .emotion-12 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-12 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.emotion-13 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 2.66;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+.emotion-14 {
+  grid-area: source;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:0px) {
+  .emotion-14 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-14 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.emotion-15 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 2.66;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-16 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #E8EAE3;
+}
+
+.emotion-16:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: fontFamily;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 4px 5px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #FA2742;
+  color: inherit;
+  font-size: inherit;
+  padding: 0px;
+}
+
+.emotion-17::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-17.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-17 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-17:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(250, 39, 66, 0.04);
+}
+
+@media (hover: none) {
+  .emotion-17:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-17.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.emotion-18 {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+<footer
+    className="MuiBox-root emotion-0"
+    data-testid="footer"
+  >
+    <div
+      className="MuiBox-root emotion-1"
+    >
+      <div
+        className="MuiBox-root emotion-2"
+      >
+        <nav
+          aria-label="External Social Links"
+          className="MuiBox-root emotion-3"
+          data-testid="footer-nav"
+        >
+          <ul
+            className="MuiList-root MuiList-padding emotion-4"
+          >
+            <li
+              className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+              disabled={false}
+            >
+              <a
+                aria-label="LinkedIn (opens in new window)"
+                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+                href="https://www.linkedin.com/in/nicholeuf"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                rel="noopener"
+                target="_blank"
+              >
+                <img
+                  alt="LinkedIn External Link"
+                  data-nimg="1"
+                  decoding="async"
+                  height={24}
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=48&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Flinkedin%2FE8EAE3&w=48&q=75 2x"
+                  style={
+                    {
+                      "color": "transparent",
+                    }
+                  }
+                  width={24}
+                />
+              </a>
+            </li>
+            <li
+              className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+              disabled={false}
+            >
+              <a
+                aria-label="GitHub (opens in new window)"
+                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+                href="https://github.com/nicholeuf"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                rel="noopener"
+                target="_blank"
+              >
+                <img
+                  alt="Github External Link"
+                  data-nimg="1"
+                  decoding="async"
+                  height={24}
+                  loading="lazy"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=48&q=75"
+                  srcSet="/_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=32&q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.simpleicons.org%2Fgithub%2FE8EAE3&w=48&q=75 2x"
+                  style={
+                    {
+                      "color": "transparent",
+                    }
+                  }
+                  width={24}
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        className="MuiBox-root emotion-9"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-sacramento emotion-10"
+        >
+          Made with
+           
+          <span
+            className="MuiTypography-root MuiTypography-body1 emotion-11"
+          >
+            ♥
+          </span>
+           
+          by Nichole Frey
+        </p>
+      </div>
+      <div
+        className="MuiBox-root emotion-12"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-overline emotion-13"
+        >
+          Copyright © 
+          2024
+           -
+           
+          <strong>
+            All Rights Reserved
+          </strong>
+        </p>
+      </div>
+      <div
+        className="MuiBox-root emotion-14"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-overline emotion-15"
+        >
+          <a
+            aria-label="View Source Code"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-16"
+            href="https://github.com/nicholeuf/zen-site-next"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            rel="noopener"
+            target="_blank"
+          >
+            view source code
+          </a>
+           | 
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall emotion-17"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            View Credits
+            <span
+              className="MuiTouchRipple-root emotion-18"
+            />
           </button>
         </p>
       </div>

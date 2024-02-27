@@ -9,13 +9,16 @@ export const metadata: Metadata = {
   title: 'Contact',
 };
 
-const Contact: React.FC = () => {
-  return (
-    <PageContainer data-testid="contact-page">
-      <Box component="section">
-        <Typography variant="h1" gutterBottom>
-          Contact
-        </Typography>
+interface ContactProps {
+  chatEnabled?: boolean;
+}
+
+const Contact: React.FC<ContactProps> = ({
+  chatEnabled = process.env.NEXT_PUBLIC_SMALLCHAT_ENABLED?.match(/true/i),
+}) => {
+  const getCopy = () => {
+    if (chatEnabled) {
+      return (
         <Typography variant="body2">
           Please connect with me on&nbsp;
           <ExternalLink href="https://www.linkedin.com/in/nicholeuf">
@@ -23,6 +26,27 @@ const Contact: React.FC = () => {
           </ExternalLink>
           &nbsp;or send a message in chat. I look forward to hearing from you!
         </Typography>
+      );
+    }
+
+    return (
+      <Typography variant="body2">
+        Please connect with me on&nbsp;
+        <ExternalLink href="https://www.linkedin.com/in/nicholeuf">
+          LinkedIn
+        </ExternalLink>
+        . I look forward to hearing from you!
+      </Typography>
+    );
+  };
+
+  return (
+    <PageContainer data-testid="contact-page">
+      <Box component="section">
+        <Typography variant="h1" gutterBottom>
+          Contact
+        </Typography>
+        {getCopy()}
       </Box>
     </PageContainer>
   );
