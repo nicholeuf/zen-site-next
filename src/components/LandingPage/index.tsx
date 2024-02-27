@@ -1,59 +1,35 @@
 'use client';
 
 import { Metadata } from 'next';
-import Box from '@mui/material/Box';
-import { getCldImageUrl } from 'next-cloudinary';
 
 import Content from './Content';
-import { getMainHeight } from '@/app/styles/styleUtils';
+import BackgroundImage from '@/components/BackgroundImage';
 
 export const metadata: Metadata = {
   title: "Nichole Frey's Portfolio",
 };
 
 const LandingPage: React.FC = () => {
-  // Generate responsive url to use as a background image
-  // Otherwise a width is required
-  const url = getCldImageUrl({
-    // getCldImageUrl uses the same API as CldImage and sizes
-    // They're both wrappers around @cloudinary-util/url-loader which provide a simpler way to generate images and Cloudinary URLs.
-    // https://next.cloudinary.dev/getcldimageurl/basic-usage#basic-usage
-    // @ts-ignore
-    sizes: '100vw',
-    opacity: '30',
-    src: 'zensite/scott-webb-5mIcH3q7tIk-unsplash',
-    aspectRatio: '2:3',
-    quality: '5',
-  });
   return (
-    <Box
-      data-testid="landing"
-      sx={{
-        minHeight: getMainHeight(),
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        pl: 3,
-        position: 'relative',
+    <BackgroundImage
+      wrapperTestId="landing"
+      imageTestId="landing-background-image"
+      cldImageProps={{
+        // getCldImageUrl uses the same API as CldImage and sizes
+        // They're both wrappers around @cloudinary-util/url-loader which provide a simpler way to generate images and Cloudinary URLs.
+        // https://next.cloudinary.dev/getcldimageurl/basic-usage#basic-usage
+        // @ts-ignore
+        sizes: '100vw',
+        opacity: '20',
+        src: 'zensite/andrei-slobtsov-Med3Kuxz97c-unsplash',
+        aspectRatio: '2:3',
+        quality: '5',
       }}
+      backgroundPosition="50% 25%"
+      centerContent
     >
-      <Box
-        data-testid="landing-background-image"
-        sx={{
-          height: '100%',
-          width: '100%',
-          background: `url(${url}) no-repeat`,
-          backgroundPosition: '50% 25%',
-          backgroundSize: 'cover',
-          position: 'absolute',
-          bottom: 0,
-          right: 0,
-          zIndex: -1,
-        }}
-      ></Box>
       <Content />
-    </Box>
+    </BackgroundImage>
   );
 };
 

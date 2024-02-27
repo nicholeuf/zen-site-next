@@ -1,10 +1,10 @@
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { Metadata } from 'next';
 
 import PageContainer from '@/components/PageContainer';
 import ExternalLink from '@/components/ExternalLink';
 import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
+import BackgroundImage from '@/components/BackgroundImage';
 
 interface ContactPageProps {
   chatEnabled?: boolean;
@@ -39,12 +39,10 @@ const ContactPage: React.FC<ContactPageProps> = ({
 
   return (
     <PageContainer data-testid="contact-page">
-      <Box component="section">
-        <Typography variant="h1" gutterBottom>
-          Contact
-        </Typography>
-        {getCopy()}
-      </Box>
+      <Typography variant="h1" gutterBottom>
+        Contact
+      </Typography>
+      {getCopy()}
     </PageContainer>
   );
 };

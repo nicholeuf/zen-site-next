@@ -26,7 +26,7 @@ exports[`The Contact Page Component has expected snapshot when chat enabled 1`] 
   }
 }
 
-.emotion-2 {
+.emotion-1 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -36,24 +36,24 @@ exports[`The Contact Page Component has expected snapshot when chat enabled 1`] 
 }
 
 @media (min-width:600px) {
-  .emotion-2 {
+  .emotion-1 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-2 {
+  .emotion-1 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-2 {
+  .emotion-1 {
     font-size: 5.9983rem;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   margin: 0;
   font-size: 0.9rem;
   font-family: fontFamily;
@@ -61,7 +61,7 @@ exports[`The Contact Page Component has expected snapshot when chat enabled 1`] 
   line-height: 1.43;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font: inherit;
   color: #FA2742;
@@ -69,7 +69,7 @@ exports[`The Contact Page Component has expected snapshot when chat enabled 1`] 
   text-decoration: none;
 }
 
-.emotion-4:hover {
+.emotion-3:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -78,31 +78,27 @@ exports[`The Contact Page Component has expected snapshot when chat enabled 1`] 
   className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
   data-testid="contact-page"
 >
-  <section
-    className="MuiBox-root emotion-1"
+  <h1
+    className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-1"
   >
-    <h1
-      className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-2"
+    Contact
+  </h1>
+  <p
+    className="MuiTypography-root MuiTypography-body2 emotion-2"
+  >
+    Please connect with me on 
+    <a
+      className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
+      href="https://www.linkedin.com/in/nicholeuf"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      rel="noopener"
+      target="_blank"
     >
-      Contact
-    </h1>
-    <p
-      className="MuiTypography-root MuiTypography-body2 emotion-3"
-    >
-      Please connect with me on 
-      <a
-        className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-4"
-        href="https://www.linkedin.com/in/nicholeuf"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        rel="noopener"
-        target="_blank"
-      >
-        LinkedIn
-      </a>
-       or send a message in chat. I look forward to hearing from you!
-    </p>
-  </section>
+      LinkedIn
+    </a>
+     or send a message in chat. I look forward to hearing from you!
+  </p>
 </div>
 `;
 
@@ -132,7 +128,7 @@ exports[`The Contact Page Component has expected snapshot when chat is not enabl
   }
 }
 
-.emotion-2 {
+.emotion-1 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -142,24 +138,24 @@ exports[`The Contact Page Component has expected snapshot when chat is not enabl
 }
 
 @media (min-width:600px) {
-  .emotion-2 {
+  .emotion-1 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-2 {
+  .emotion-1 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-2 {
+  .emotion-1 {
     font-size: 5.9983rem;
   }
 }
 
-.emotion-3 {
+.emotion-2 {
   margin: 0;
   font-size: 0.9rem;
   font-family: fontFamily;
@@ -167,7 +163,7 @@ exports[`The Contact Page Component has expected snapshot when chat is not enabl
   line-height: 1.43;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font: inherit;
   color: #FA2742;
@@ -175,7 +171,7 @@ exports[`The Contact Page Component has expected snapshot when chat is not enabl
   text-decoration: none;
 }
 
-.emotion-4:hover {
+.emotion-3:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -184,30 +180,26 @@ exports[`The Contact Page Component has expected snapshot when chat is not enabl
   className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
   data-testid="contact-page"
 >
-  <section
-    className="MuiBox-root emotion-1"
+  <h1
+    className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-1"
   >
-    <h1
-      className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-2"
+    Contact
+  </h1>
+  <p
+    className="MuiTypography-root MuiTypography-body2 emotion-2"
+  >
+    Please connect with me on 
+    <a
+      className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
+      href="https://www.linkedin.com/in/nicholeuf"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      rel="noopener"
+      target="_blank"
     >
-      Contact
-    </h1>
-    <p
-      className="MuiTypography-root MuiTypography-body2 emotion-3"
-    >
-      Please connect with me on 
-      <a
-        className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-4"
-        href="https://www.linkedin.com/in/nicholeuf"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        rel="noopener"
-        target="_blank"
-      >
-        LinkedIn
-      </a>
-      . I look forward to hearing from you!
-    </p>
-  </section>
+      LinkedIn
+    </a>
+    . I look forward to hearing from you!
+  </p>
 </div>
 `;
