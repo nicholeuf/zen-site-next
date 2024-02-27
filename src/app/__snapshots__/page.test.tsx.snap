@@ -348,7 +348,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 .emotion-2 {
   height: 100%;
   width: 100%;
-  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_30/f_auto/q_5/v1/zensite/scott-webb-5mIcH3q7tIk-unsplash?_a=BAVAfVBy0) no-repeat;
+  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0) no-repeat;
   -webkit-background-position: 50% 25%;
   background-position: 50% 25%;
   -webkit-background-size: cover;

@@ -32,11 +32,11 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
         <DashListItem>
           <Typography>
             Home page background: Photo by&nbsp;
-            <ExternalLink href="https://unsplash.com/@scottwebb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-              Scott Webb
+            <ExternalLink href="https://unsplash.com/@andreislobtsov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Andrei Slobtsov
             </ExternalLink>
-            &nbsp;on&nbsp;
-            <ExternalLink href="https://unsplash.com/photos/rubber-plant-5mIcH3q7tIk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+            &nbsp; on&nbsp;
+            <ExternalLink href="https://unsplash.com/photos/green-leaves-painting-Med3Kuxz97c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
               Unsplash
             </ExternalLink>
           </Typography>
