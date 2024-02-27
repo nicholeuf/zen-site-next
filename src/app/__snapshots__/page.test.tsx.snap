@@ -325,7 +325,6 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 .emotion-1 {
-  min-height: calc(100vh - 60px - 175px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -341,7 +340,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: 24px;
+  min-height: calc(100vh - 60px - 175px);
   position: relative;
 }
 
@@ -362,6 +361,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 .emotion-3 {
   margin-top: 24px;
   margin-bottom: 24px;
+  padding-left: 24px;
   display: grid;
   gap: 16px;
 }

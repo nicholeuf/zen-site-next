@@ -25,6 +25,8 @@ const LandingPage: React.FC = () => {
         aspectRatio: '2:3',
         quality: '5',
       }}
+      backgroundPosition="50% 25%"
+      centerContent
     >
       <Content />
     </BackgroundImage>

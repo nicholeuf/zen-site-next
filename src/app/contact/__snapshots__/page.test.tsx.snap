@@ -325,6 +325,25 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 .emotion-1 {
+  min-height: calc(100vh - 60px - 175px);
+  position: relative;
+}
+
+.emotion-2 {
+  height: 100%;
+  width: 100%;
+  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_20/f_auto/q_5/v1/zensite/faria-anzum-ONK9IlKizS4-unsplash?_a=BAVAfVBy0) no-repeat;
+  -webkit-background-position: 50% 80%;
+  background-position: 50% 80%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.emotion-3 {
   width: 100%;
   margin-left: auto;
   box-sizing: border-box;
@@ -337,19 +356,19 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-1 {
+  .emotion-3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-1 {
+  .emotion-3 {
     max-width: 1200px;
   }
 }
 
-.emotion-3 {
+.emotion-4 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -359,24 +378,24 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-3 {
+  .emotion-4 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-3 {
+  .emotion-4 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-3 {
+  .emotion-4 {
     font-size: 5.9983rem;
   }
 }
 
-.emotion-4 {
+.emotion-5 {
   margin: 0;
   font-size: 0.9rem;
   font-family: fontFamily;
@@ -384,7 +403,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   line-height: 1.43;
 }
 
-.emotion-5 {
+.emotion-6 {
   margin: 0;
   font: inherit;
   color: #FA2742;
@@ -392,7 +411,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   text-decoration: none;
 }
 
-.emotion-5:hover {
+.emotion-6:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -401,23 +420,28 @@ exports[`The Contact Page has expected snapshot 1`] = `
     className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
   >
     <div
-      className="MuiContainer-root MuiContainer-maxWidthLg emotion-1"
-      data-testid="contact-page"
+      className="MuiBox-root emotion-1"
+      data-testid="contact-background-wrapper"
     >
-      <section
+      <div
         className="MuiBox-root emotion-2"
+        data-testid="contact-background-image"
+      />
+      <div
+        className="MuiContainer-root MuiContainer-maxWidthLg emotion-3"
+        data-testid="contact-page"
       >
         <h1
-          className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-3"
+          className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-4"
         >
           Contact
         </h1>
         <p
-          className="MuiTypography-root MuiTypography-body2 emotion-4"
+          className="MuiTypography-root MuiTypography-body2 emotion-5"
         >
           Please connect with me on 
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-5"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
             href="https://www.linkedin.com/in/nicholeuf"
             onBlur={[Function]}
             onFocus={[Function]}
@@ -428,7 +452,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
           </a>
           . I look forward to hearing from you!
         </p>
-      </section>
+      </div>
     </div>
   </main>,
   .emotion-0 {
