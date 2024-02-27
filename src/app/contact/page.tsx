@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
           <ExternalLink href="https://www.linkedin.com/in/nicholeuf">
             LinkedIn
           </ExternalLink>
-          . I look forward to hearing from you!
+          &nbsp;or send a message in chat. I look forward to hearing from you!
         </Typography>
       </Box>
     </PageContainer>

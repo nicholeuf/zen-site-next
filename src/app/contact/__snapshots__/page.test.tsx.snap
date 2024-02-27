@@ -426,7 +426,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
           >
             LinkedIn
           </a>
-          . I look forward to hearing from you!
+           or send a message in chat. I look forward to hearing from you!
         </p>
       </section>
     </div>
