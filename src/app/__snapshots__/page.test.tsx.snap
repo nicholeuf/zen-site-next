@@ -469,7 +469,18 @@ exports[`The Home Page has expected snapshot 1`] = `
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
-  font-size: 30px;
+}
+
+@media (min-width:0px) {
+  .emotion-8 {
+    font-size: 34px;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-8 {
+    font-size: 38px;
+  }
 }
 
 .emotion-9 {

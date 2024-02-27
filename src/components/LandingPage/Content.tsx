@@ -70,7 +70,15 @@ const Content = () => {
           }}
         >
           Full-Stack Developer&nbsp;
-          <Typography variant="sacramento" sx={{ fontSize: '30px' }}>
+          <Typography
+            variant="sacramento"
+            sx={{
+              fontSize: {
+                xs: '34px',
+                sm: '38px',
+              },
+            }}
+          >
             and yogi!
           </Typography>
         </Typography>
