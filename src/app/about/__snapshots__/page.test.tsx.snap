@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Home Page has expected snapshot 1`] = `
+exports[`The About Page has expected snapshot 1`] = `
 [
   .emotion-0 {
   background-color: #fff;
@@ -325,80 +325,31 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 .emotion-1 {
-  min-height: calc(100vh - 60px - 175px);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-left: 24px;
-  position: relative;
-}
-
-.emotion-2 {
-  height: 100%;
   width: 100%;
-  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_30/f_auto/q_5/v1/zensite/scott-webb-5mIcH3q7tIk-unsplash?_a=BAVAfVBy0) no-repeat;
-  -webkit-background-position: 50% 25%;
-  background-position: 50% 25%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.emotion-3 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  display: grid;
-  gap: 16px;
-}
-
-@media (min-width:0px) {
-  .emotion-3 {
-    grid-template-areas: "photo" "heading" "body";
-  }
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  display: block;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media (min-width:600px) {
-  .emotion-3 {
-    grid-template-areas: "photo heading heading heading" "body body body body";
+  .emotion-1 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
-.emotion-4 {
-  grid-area: photo;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+@media (min-width:1200px) {
+  .emotion-1 {
+    max-width: 1200px;
+  }
 }
 
-.emotion-5 {
-  grid-area: heading;
-}
-
-.emotion-6 {
+.emotion-2 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -408,173 +359,583 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-6 {
+  .emotion-2 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-6 {
+  .emotion-2 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-6 {
+  .emotion-2 {
     font-size: 5.9983rem;
   }
 }
 
-@media (min-width:0px) {
-  .emotion-6 {
-    font-size: 2.75rem;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-6 {
-    font-size: 3.5rem;
-  }
-}
-
-.emotion-7 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 1.5625rem;
-  line-height: 1.235;
-  margin-bottom: 0.35em;
-  font-weight: 500;
-}
-
-@media (min-width:600px) {
-  .emotion-7 {
-    font-size: 1.8219rem;
-  }
-}
-
-@media (min-width:900px) {
-  .emotion-7 {
-    font-size: 2.0243rem;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-7 {
-    font-size: 2.0243rem;
-  }
-}
-
-.emotion-8 {
-  margin: 0;
-  font-family: fontFamily;
-  font-size: 26px;
-}
-
-@media (min-width:0px) {
-  .emotion-8 {
-    font-size: 34px;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-8 {
-    font-size: 38px;
-  }
-}
-
-.emotion-9 {
-  grid-area: body;
-}
-
-.emotion-10 {
+.emotion-3 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
-  max-width: 900px;
-  color: #424242;
+  margin-bottom: 0.35em;
 }
 
-@media (min-width:0px) {
-  .emotion-10 {
-    font-size: 1.25rem;
-  }
+.emotion-6 {
+  margin-top: 24px;
 }
 
-@media (min-width:600px) {
-  .emotion-10 {
-    font-size: 1.5rem;
-  }
+.emotion-7 {
+  display: grid;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-8 .MuiImageListItem-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-10 {
+  position: relative;
+  left: 0;
+  right: 0;
+  background: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  font-family: fontFamily;
+}
+
+.emotion-11 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 6px 0 12px;
+  color: inherit;
+  overflow: hidden;
+}
+
+.emotion-12 {
+  font-size: 1rem;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.emotion-13 {
+  font-size: 0.75rem;
+  line-height: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 <main
     className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
   >
     <div
-      className="MuiBox-root emotion-1"
-      data-testid="landing"
+      className="MuiContainer-root MuiContainer-maxWidthLg emotion-1"
+      data-testid="about-page"
     >
-      <div
-        className="MuiBox-root emotion-2"
-        data-testid="landing-background-image"
-      />
-      <div
-        className="MuiBox-root emotion-3"
+      <h1
+        className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-2"
       >
-        <div
-          className="MuiBox-root emotion-4"
+        About
+      </h1>
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom emotion-3"
+      >
+        I live in Orlando with my family. I'm a native Floridian and graduate of the University of Florida 
+        <i>
+          (Go Gators!)
+        </i>
+        . Prior to our return to the sunshine state, we experienced life in both Georgia and Colorado. Colorado was a remarkable experience, and it left an indelible mark on my heart.
+      </p>
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom emotion-3"
+      >
+        Since 2014, I've been practicing yoga. Beyond the physical benefits, I love how it connects me back into the physical body and serves as a form of moving meditation. Lately I've been working on my inversions. It took me some time to gather the courage to embrace being upside down, but I'm grateful I took that leap.
+      </p>
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom emotion-3"
+      >
+        Beyond the mat, I enjoy cooking, caring for my houseplants, and spending time in nature.
+      </p>
+      <div
+        className="MuiBox-root emotion-6"
+      >
+        <ul
+          className="MuiImageList-root MuiImageList-standard emotion-7"
+          data-testid="about-photos-3-column-layout"
+          style={
+            {
+              "gap": 4,
+              "gridTemplateColumns": "repeat(3, 1fr)",
+            }
+          }
         >
-          <img
-            alt="Photo of website author"
-            data-nimg="1"
-            data-testid="landing-profile-image"
-            decoding="async"
-            height={200}
-            loading="lazy"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0"
-            srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 2x"
+          <li
+            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
             style={
               {
-                "border": "1px solid white",
-                "borderRadius": "20px",
-                "color": "transparent",
+                "breakInside": undefined,
+                "gridColumnEnd": "span 1",
+                "gridRowEnd": "span 1",
+                "height": "auto",
+                "marginBottom": undefined,
               }
             }
-            width={200}
-          />
-        </div>
-        <div
-          className="MuiBox-root emotion-5"
-        >
-          <h1
-            className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-6"
           >
-            Hi, I'm Nichole
-          </h1>
-          <h2
-            className="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom emotion-7"
-          >
-            Full-Stack Developer 
-            <span
-              className="MuiTypography-root MuiTypography-sacramento emotion-8"
+            <div
+              className="MuiBox-root emotion-9"
             >
-              and yogi!
-            </span>
-          </h2>
-        </div>
-        <div
-          className="MuiBox-root emotion-9"
-        >
-          <p
-            className="MuiTypography-root MuiTypography-body1 emotion-10"
+              <img
+                alt="Luau Kalamaku in Kauai, HI (2019)"
+                data-nimg="1"
+                decoding="async"
+                height={300}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={300}
+              />
+              <div
+                className="MuiImageListItemBar-root MuiImageListItemBar-positionBelow emotion-10"
+              >
+                <div
+                  className="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-11"
+                >
+                  <div
+                    className="MuiImageListItemBar-title emotion-12"
+                  >
+                    Luau Kalamaku
+                  </div>
+                  <div
+                    className="MuiImageListItemBar-subtitle emotion-13"
+                  >
+                    Kauai, HI (2019)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
+            style={
+              {
+                "breakInside": undefined,
+                "gridColumnEnd": "span 1",
+                "gridRowEnd": "span 1",
+                "height": "auto",
+                "marginBottom": undefined,
+              }
+            }
           >
-            Based in Orlando, Florida, my passion lies in crafting intuitive, well-built experiences for the customer. I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
-          </p>
-        </div>
+            <div
+              className="MuiBox-root emotion-9"
+            >
+              <img
+                alt="Na Pali Coast Tour in Kauai, HI (2019)"
+                data-nimg="1"
+                decoding="async"
+                height={300}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={300}
+              />
+              <div
+                className="MuiImageListItemBar-root MuiImageListItemBar-positionBelow emotion-10"
+              >
+                <div
+                  className="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-11"
+                >
+                  <div
+                    className="MuiImageListItemBar-title emotion-12"
+                  >
+                    Na Pali Coast Tour
+                  </div>
+                  <div
+                    className="MuiImageListItemBar-subtitle emotion-13"
+                  >
+                    Kauai, HI (2019)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
+            style={
+              {
+                "breakInside": undefined,
+                "gridColumnEnd": "span 1",
+                "gridRowEnd": "span 1",
+                "height": "auto",
+                "marginBottom": undefined,
+              }
+            }
+          >
+            <div
+              className="MuiBox-root emotion-9"
+            >
+              <img
+                alt="Visiting Sea Turtles in Maui, HI (2019)"
+                data-nimg="1"
+                decoding="async"
+                height={300}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={300}
+              />
+              <div
+                className="MuiImageListItemBar-root MuiImageListItemBar-positionBelow emotion-10"
+              >
+                <div
+                  className="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-11"
+                >
+                  <div
+                    className="MuiImageListItemBar-title emotion-12"
+                  >
+                    Visiting Sea Turtles
+                  </div>
+                  <div
+                    className="MuiImageListItemBar-subtitle emotion-13"
+                  >
+                    Maui, HI (2019)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
+            style={
+              {
+                "breakInside": undefined,
+                "gridColumnEnd": "span 1",
+                "gridRowEnd": "span 1",
+                "height": "auto",
+                "marginBottom": undefined,
+              }
+            }
+          >
+            <div
+              className="MuiBox-root emotion-9"
+            >
+              <img
+                alt="Epcot Food & Wine Festival in Orlando, FL (2019)"
+                data-nimg="1"
+                decoding="async"
+                height={300}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={300}
+              />
+              <div
+                className="MuiImageListItemBar-root MuiImageListItemBar-positionBelow emotion-10"
+              >
+                <div
+                  className="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-11"
+                >
+                  <div
+                    className="MuiImageListItemBar-title emotion-12"
+                  >
+                    Epcot Food & Wine Festival
+                  </div>
+                  <div
+                    className="MuiImageListItemBar-subtitle emotion-13"
+                  >
+                    Orlando, FL (2019)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
+            style={
+              {
+                "breakInside": undefined,
+                "gridColumnEnd": "span 1",
+                "gridRowEnd": "span 1",
+                "height": "auto",
+                "marginBottom": undefined,
+              }
+            }
+          >
+            <div
+              className="MuiBox-root emotion-9"
+            >
+              <img
+                alt="Disney in Orlando, FL (2018)"
+                data-nimg="1"
+                decoding="async"
+                height={300}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={300}
+              />
+              <div
+                className="MuiImageListItemBar-root MuiImageListItemBar-positionBelow emotion-10"
+              >
+                <div
+                  className="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-11"
+                >
+                  <div
+                    className="MuiImageListItemBar-title emotion-12"
+                  >
+                    Disney
+                  </div>
+                  <div
+                    className="MuiImageListItemBar-subtitle emotion-13"
+                  >
+                    Orlando, FL (2018)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
+            style={
+              {
+                "breakInside": undefined,
+                "gridColumnEnd": "span 1",
+                "gridRowEnd": "span 1",
+                "height": "auto",
+                "marginBottom": undefined,
+              }
+            }
+          >
+            <div
+              className="MuiBox-root emotion-9"
+            >
+              <img
+                alt="Sledding in Superior, CO (2015)"
+                data-nimg="1"
+                decoding="async"
+                height={300}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={300}
+              />
+              <div
+                className="MuiImageListItemBar-root MuiImageListItemBar-positionBelow emotion-10"
+              >
+                <div
+                  className="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-11"
+                >
+                  <div
+                    className="MuiImageListItemBar-title emotion-12"
+                  >
+                    Sledding
+                  </div>
+                  <div
+                    className="MuiImageListItemBar-subtitle emotion-13"
+                  >
+                    Superior, CO (2015)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
+            style={
+              {
+                "breakInside": undefined,
+                "gridColumnEnd": "span 1",
+                "gridRowEnd": "span 1",
+                "height": "auto",
+                "marginBottom": undefined,
+              }
+            }
+          >
+            <div
+              className="MuiBox-root emotion-9"
+            >
+              <img
+                alt="Fall in the Mountains in Telluride, CO (2014)"
+                data-nimg="1"
+                decoding="async"
+                height={300}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={300}
+              />
+              <div
+                className="MuiImageListItemBar-root MuiImageListItemBar-positionBelow emotion-10"
+              >
+                <div
+                  className="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-11"
+                >
+                  <div
+                    className="MuiImageListItemBar-title emotion-12"
+                  >
+                    Fall in the Mountains
+                  </div>
+                  <div
+                    className="MuiImageListItemBar-subtitle emotion-13"
+                  >
+                    Telluride, CO (2014)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
+            style={
+              {
+                "breakInside": undefined,
+                "gridColumnEnd": "span 1",
+                "gridRowEnd": "span 1",
+                "height": "auto",
+                "marginBottom": undefined,
+              }
+            }
+          >
+            <div
+              className="MuiBox-root emotion-9"
+            >
+              <img
+                alt="Hiking in Boulder, CO (2014)"
+                data-nimg="1"
+                decoding="async"
+                height={300}
+                loading="lazy"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 2x"
+                style={
+                  {
+                    "color": "transparent",
+                  }
+                }
+                width={300}
+              />
+              <div
+                className="MuiImageListItemBar-root MuiImageListItemBar-positionBelow emotion-10"
+              >
+                <div
+                  className="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-11"
+                >
+                  <div
+                    className="MuiImageListItemBar-title emotion-12"
+                  >
+                    Hiking
+                  </div>
+                  <div
+                    className="MuiImageListItemBar-subtitle emotion-13"
+                  >
+                    Boulder, CO (2014)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </main>,

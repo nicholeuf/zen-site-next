@@ -69,7 +69,18 @@ const Content = () => {
             fontWeight: 500,
           }}
         >
-          Full-Stack Developer
+          Full-Stack Developer&nbsp;
+          <Typography
+            variant="sacramento"
+            sx={{
+              fontSize: {
+                xs: '34px',
+                sm: '38px',
+              },
+            }}
+          >
+            and yogi!
+          </Typography>
         </Typography>
       </Box>
       <Box sx={{ gridArea: 'body' }}>
@@ -84,10 +95,10 @@ const Content = () => {
           }}
           maxWidth="md"
         >
-          Based in Orlando, Florida, my passion lies in crafting seamless,
-          intuitive, well-built experiences for the customer. I&apos;ve mentored
-          junior developers, acted as a Lead Front-End developer, and
-          collaborated within dynamic, agile teams.
+          Based in Orlando, Florida, my passion lies in crafting intuitive,
+          well-built experiences for the customer. I have assumed roles such as
+          Technical Lead, providing mentorship to colleagues, and collaborating
+          within agile, cross-functional teams.
         </Typography>
       </Box>
     </Box>

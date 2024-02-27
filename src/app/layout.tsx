@@ -56,6 +56,12 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content={process.env.NEXT_PUBLIC_GOOGLE_AUTHENTICATION}
+        />
+      </head>
       <body>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <AppLayout>{children}</AppLayout>

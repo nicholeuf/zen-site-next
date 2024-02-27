@@ -20,7 +20,7 @@ describe('The Contact Page', () => {
   });
 
   test.each([['header'], ['contact-page'], ['footer']])(
-    'contains the visible testid %i',
+    'contains the visible testid %p',
     (testid) => {
       renderWithLayout(<ContactPage />);
       const component = screen.getByTestId(testid);
