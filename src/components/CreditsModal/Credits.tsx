@@ -41,6 +41,18 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
             </ExternalLink>
           </Typography>
         </DashListItem>
+        <DashListItem>
+          <Typography>
+            Contact page background: Photo by&nbsp;
+            <ExternalLink href="https://unsplash.com/@farianzum?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Faria Anzum
+            </ExternalLink>
+            &nbsp; on&nbsp;
+            <ExternalLink href="https://unsplash.com/photos/green-succulent-on-white-and-pink-pot-ONK9IlKizS4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+              Unsplash
+            </ExternalLink>
+          </Typography>
+        </DashListItem>
       </List>
     </>
   );
