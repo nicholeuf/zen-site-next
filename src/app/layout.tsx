@@ -8,6 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import AppLayout from '@/components/AppLayout';
 import getBaseUrl from '@/app/lib/getBaseUrl';
+import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getBaseUrl()),
@@ -68,7 +69,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
         </AppRouterCacheProvider>
         <Analytics />
         <SpeedInsights />
-        {process.env.NEXT_PUBLIC_SMALLCHAT_ENABLED?.match(/true/i) && (
+        {SMALLCHAT_ENABLED && (
           <script
             src="https://embed.small.chat/T06KQEC9PRRC06L3A025MX.js"
             async

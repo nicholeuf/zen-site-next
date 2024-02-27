@@ -12,17 +12,8 @@ import {
 import ContactPage from './page';
 
 describe('The Contact Page', () => {
-  test('has expected snapshot when chat enabled', () => {
-    const component = renderSnapshotWithLayout(<ContactPage chatEnabled />);
-    const tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
-  test('has expected snapshot when chat is not enabled', () => {
-    const component = renderSnapshotWithLayout(
-      <ContactPage chatEnabled={false} />
-    );
+  test('has expected snapshot', () => {
+    const component = renderSnapshotWithLayout(<ContactPage />);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
