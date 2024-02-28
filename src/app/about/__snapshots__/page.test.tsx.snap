@@ -490,11 +490,12 @@ exports[`The About Page has expected snapshot 1`] = `
       <p
         className="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom emotion-3"
       >
-        I live in Orlando with my family. I'm a native Floridian and graduate of the University of Florida 
+        I'm a native Floridian and graduate of the University of Florida
+         
         <i>
           (Go Gators!)
         </i>
-        . Prior to our return to the sunshine state, we experienced life in both Georgia and Colorado. Colorado was a remarkable experience that left a mark on my heart.
+        , now living in Orlando. Prior to our return to the sunshine state, we experienced life in both Georgia and Colorado. Colorado was a remarkable experience that left a mark on my heart.
       </p>
       <p
         className="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom emotion-3"
