@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 
 import HeaderLogo from './HeaderLogo';
 import Navigation from './Navigation';
-import { constants } from '@/app/styles/theme';
+import constants from '@/app/styles/constants';
 
 interface HeaderProps {
   color?: string;

@@ -12,12 +12,12 @@ interface Props {
 
 // Include header, main, and footer in rendered content
 const MockLayout: React.FC<Props> = ({ children }) => {
-  return <AppLayout>{children}</AppLayout>;
+  return <AppLayout deviceType="desktop">{children}</AppLayout>;
 };
 
 // Include just mui theme global styles
 const MockStyles: React.FC<Props> = ({ children }) => {
-  return <GlobalStyles>{children}</GlobalStyles>;
+  return <GlobalStyles deviceType="desktop">{children}</GlobalStyles>;
 };
 
 const customRender = (
