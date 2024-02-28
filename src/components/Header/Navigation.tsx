@@ -1,11 +1,7 @@
 import List from '@mui/material/List';
 import { usePathname } from 'next/navigation';
-import routes from '@/app/lib/routes';
 import NavigationItem from './NavigationItem';
-
-const { work, about, contact } = routes;
-
-const links = [work, about, contact];
+import { navigationItems } from './constants';
 
 interface NavigationProps {
   color: string;
@@ -22,7 +18,7 @@ const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
           display: 'flex',
         }}
       >
-        {links.map(({ href, name }) => {
+        {navigationItems.map(({ href, name }) => {
           const isActive = pathname === href;
 
           return (

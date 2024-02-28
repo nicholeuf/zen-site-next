@@ -1,47 +1,37 @@
 import ListItem from '@mui/material/ListItem';
 import NextLink from '@/components/NextLink';
 
-interface NavigationItemProps {
+interface MobileNavigationItemProps {
   isActive: boolean;
   color: string;
   activeColor: string;
   href: string;
   name: string;
+  onClick: () => void;
 }
 
-const NavigationItem: React.FC<NavigationItemProps> = ({
+const MobileNavigationItem: React.FC<MobileNavigationItemProps> = ({
   isActive,
   color,
   activeColor,
+  onClick,
   href,
   name,
 }) => {
   return (
-    <ListItem
-      key={href}
-      sx={{
-        transition: 'transform 0.25s ease',
-        '&:hover': {
-          transform: 'scale(1.2)',
-        },
-      }}
-    >
+    <ListItem key={href}>
       <NextLink
         href={href}
         sx={(theme) => ({
-          boxSizing: 'border-box',
-          letterSpacing: '1.25px',
-          height: '100%',
-          textDecoration: 'none',
           color,
           borderBottom: isActive ? `${theme.spacing(0.5)} solid` : '',
           borderBottomColor: isActive ? activeColor : '',
-          transition: 'color 0.25s ease',
           '&:hover': {
-            color: activeColor,
             textDecoration: 'none',
           },
         })}
+        onClick={onClick}
+        variant="h3"
       >
         {name}
       </NextLink>
@@ -49,4 +39,4 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
   );
 };
 
-export default NavigationItem;
+export default MobileNavigationItem;
