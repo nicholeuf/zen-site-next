@@ -2,7 +2,6 @@
  * @jest-environment jsdom
  */
 import { renderSnapshot } from 'test-utils';
-// import userEvent from '@testing-library/user-event';
 
 import ContactPage from './ContactPage';
 

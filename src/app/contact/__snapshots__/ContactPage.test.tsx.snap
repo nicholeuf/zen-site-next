@@ -67,6 +67,7 @@ exports[`The Contact Page Component has expected snapshot when chat enabled 1`] 
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .emotion-3:hover {
@@ -97,7 +98,8 @@ exports[`The Contact Page Component has expected snapshot when chat enabled 1`] 
     >
       LinkedIn
     </a>
-     or send a message in chat. I look forward to hearing from you!
+     or send a message in chat
+    . I look forward to hearing from you!
   </p>
 </div>
 `;
@@ -169,6 +171,7 @@ exports[`The Contact Page Component has expected snapshot when chat is not enabl
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .emotion-3:hover {
