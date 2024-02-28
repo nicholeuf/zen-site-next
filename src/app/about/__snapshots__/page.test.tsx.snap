@@ -494,7 +494,7 @@ exports[`The About Page has expected snapshot 1`] = `
         <i>
           (Go Gators!)
         </i>
-        . Prior to our return to the sunshine state, we experienced life in both Georgia and Colorado. Colorado was a remarkable experience, and it left an indelible mark on my heart.
+        . Prior to our return to the sunshine state, we experienced life in both Georgia and Colorado. Colorado was a remarkable experience that left a mark on my heart.
       </p>
       <p
         className="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom emotion-3"
