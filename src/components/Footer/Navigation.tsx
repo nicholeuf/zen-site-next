@@ -1,7 +1,7 @@
 import List from '@mui/material/List';
 import Box from '@mui/material/Box';
 
-import { constants } from '@/app/styles/theme';
+import constants from '@/app/styles/constants';
 import NavigationItem from './NavigationItem';
 
 // SimpleIcon expects a color hex without the hash

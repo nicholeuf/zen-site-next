@@ -2,7 +2,7 @@
 
 import Container from '@mui/material/Container';
 
-import { constants } from '@/app/styles/theme';
+import constants from '@/app/styles/constants';
 import { getMainHeight } from '@/app/styles/styleUtils';
 
 interface MainContainerProps {
