@@ -16,11 +16,10 @@ const About: React.FC = () => {
         About
       </Typography>
       <Typography gutterBottom variant="body2">
-        I live in Orlando with my family. I&apos;m a native Floridian and
-        graduate of the University of Florida <i>(Go Gators!)</i>. Prior to our
-        return to the sunshine state, we experienced life in both Georgia and
-        Colorado. Colorado was a remarkable experience, and it left an indelible
-        mark on my heart.
+        I&apos;m a native Floridian and graduate of the University of Florida{' '}
+        <i>(Go Gators!)</i>, now living in Orlando. Prior to our return to the
+        sunshine state, we experienced life in both Georgia and Colorado.
+        Colorado was a remarkable experience that left a mark on my heart.
       </Typography>
       <Typography gutterBottom variant="body2">
         Since 2014, I&apos;ve been practicing yoga. Beyond the physical
