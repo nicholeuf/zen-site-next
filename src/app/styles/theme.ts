@@ -5,6 +5,7 @@ import mediaQuery from 'css-mediaquery';
 
 import constants from './constants';
 import DeviceType from '@/types/DeviceType';
+import getWidthByDeviceType from './getWidthByDeviceType';
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts#using-multiple-fonts
 export const inter = Inter({
@@ -21,19 +22,9 @@ export const sacramento = Sacramento({
 });
 
 const ssrMatchMedia = (deviceType: DeviceType) => (query: string) => {
-  const getWidthByDeviceType = () => {
-    switch (deviceType) {
-      case 'mobile':
-        return '0px';
-      case 'tablet':
-        return '768px';
-      default:
-        return '1024px';
-    }
-  };
   return {
     matches: mediaQuery.match(query, {
-      width: getWidthByDeviceType(),
+      width: getWidthByDeviceType(deviceType),
     }),
   };
 };
