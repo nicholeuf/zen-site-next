@@ -5,10 +5,13 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { getCldOgImageUrl } from 'next-cloudinary';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { headers } from 'next/headers';
+import parser from 'ua-parser-js';
 
 import AppLayout from '@/components/AppLayout';
 import getBaseUrl from '@/app/lib/getBaseUrl';
 import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
+import DeviceType from '@/types/DeviceType';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getBaseUrl()),
@@ -55,6 +58,13 @@ interface RootLayoutProps {
 }
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
+  // Parse deviceType from user agent header on server
+  const headersList = headers();
+  const userAgent = headersList.get('user-agent');
+  const deviceType: DeviceType = userAgent
+    ? ((parser(userAgent.toString()).device.type || 'desktop') as DeviceType)
+    : 'desktop';
+
   return (
     <html lang="en">
       <head>
@@ -64,8 +74,8 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
         />
       </head>
       <body>
-        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <AppLayout>{children}</AppLayout>
+        <AppRouterCacheProvider options={{ key: 'mui' }}>
+          <AppLayout deviceType={deviceType}>{children}</AppLayout>
         </AppRouterCacheProvider>
         <Analytics />
         <SpeedInsights />
