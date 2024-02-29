@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({
         activeColor={activeColor}
       />
       {isMobile ? (
-        <MobileNavigation color={color} activeColor={activeColor} />
+        <MobileNavigation activeColor={activeColor} />
       ) : (
         <Navigation color={color} activeColor={activeColor} />
       )}

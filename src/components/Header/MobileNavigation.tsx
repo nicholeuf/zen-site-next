@@ -26,14 +26,10 @@ const Transition = forwardRef(function Transition(
 });
 
 interface MobileNavigationProps {
-  color: string;
   activeColor: string;
 }
 
-const MobileNavigation: React.FC<MobileNavigationProps> = ({
-  color,
-  activeColor,
-}) => {
+const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -56,6 +52,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({
         <MenuIcon color="secondary" fontSize="large" />
       </IconButton>
       <Dialog
+        data-testid="mobile-navigation-dialog"
         fullScreen
         open={open}
         onClose={handleClose}
