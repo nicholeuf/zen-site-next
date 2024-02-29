@@ -3,7 +3,6 @@ import NextLink from '@/components/NextLink';
 
 interface MobileNavigationItemProps {
   isActive: boolean;
-  color: string;
   activeColor: string;
   href: string;
   name: string;
@@ -12,26 +11,30 @@ interface MobileNavigationItemProps {
 
 const MobileNavigationItem: React.FC<MobileNavigationItemProps> = ({
   isActive,
-  color,
   activeColor,
   onClick,
   href,
   name,
 }) => {
   return (
-    <ListItem key={href}>
+    <ListItem
+      key={href}
+      sx={{
+        my: 2,
+      }}
+    >
       <NextLink
         href={href}
+        onClick={onClick}
+        variant="h3"
         sx={(theme) => ({
-          color,
+          color: theme.palette.background.default,
           borderBottom: isActive ? `${theme.spacing(0.5)} solid` : '',
           borderBottomColor: isActive ? activeColor : '',
           '&:hover': {
             textDecoration: 'none',
           },
         })}
-        onClick={onClick}
-        variant="h3"
       >
         {name}
       </NextLink>

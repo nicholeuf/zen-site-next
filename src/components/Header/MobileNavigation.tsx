@@ -1,18 +1,20 @@
 import React, { useState, forwardRef, Fragment } from 'react';
+import Typography from '@mui/material/Typography';
 import Dialog from '@mui/material/Dialog';
 import List from '@mui/material/List';
-import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
+import { CldImage } from 'next-cloudinary';
 import { usePathname } from 'next/navigation';
 
 import MobileNavigationItem from './MobileNavigationItem';
-
 import { mobileNavigationItems } from './constants';
+import constants from '@/app/styles/constants';
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & {
@@ -20,7 +22,7 @@ const Transition = forwardRef(function Transition(
   },
   ref: React.Ref<unknown>
 ) {
-  return <Slide direction="up" ref={ref} {...props} />;
+  return <Slide direction="left" ref={ref} {...props} />;
 });
 
 interface MobileNavigationProps {
@@ -51,29 +53,54 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({
         onClick={handleClickOpen}
         aria-label="open"
       >
-        <MenuIcon color="secondary" />
+        <MenuIcon color="secondary" fontSize="large" />
       </IconButton>
       <Dialog
         fullScreen
         open={open}
         onClose={handleClose}
         TransitionComponent={Transition}
-        sx={(theme) => ({
+        sx={{
           '& .MuiDialog-paper': {
-            backgroundColor: theme.palette.background.default,
+            backgroundColor: 'secondary.main',
           },
-        })}
+        }}
       >
-        <AppBar
-          color="secondary"
+        <Box
           sx={{
+            height: '100%',
+            width: '100%',
             position: 'relative',
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'flex-end',
           }}
         >
-          <Toolbar>
+          <Toolbar
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              height: constants.header.height,
+              color: 'background.default',
+              px: 1,
+            }}
+          >
+            <Box
+              sx={{
+                width: constants.header.height,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <Typography
+                variant="sacramento"
+                sx={{
+                  fontSize: '30px',
+                  fontWeight: 'bold',
+                }}
+              >
+                nf
+              </Typography>
+            </Box>
             <IconButton
               edge="start"
               color="inherit"
@@ -81,30 +108,60 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({
               onClick={handleClose}
               aria-label="close"
             >
-              <CloseIcon />
+              <CloseIcon fontSize="large" />
             </IconButton>
           </Toolbar>
-        </AppBar>
-        <List
-          sx={{
-            m: 1,
-          }}
-        >
-          {mobileNavigationItems.map(({ href, name }) => {
-            const isActive = pathname === href;
-            return (
-              <MobileNavigationItem
-                key={name}
-                href={href}
-                name={name}
-                isActive={isActive}
-                color={color}
-                activeColor={activeColor}
-                onClick={handleClose}
-              />
-            );
-          })}
-        </List>
+          <List
+            sx={{
+              mt: '10vh',
+              ml: '20vw',
+            }}
+          >
+            {mobileNavigationItems.map(({ href, name }) => {
+              const isActive = pathname === href;
+              return (
+                <MobileNavigationItem
+                  key={name}
+                  href={href}
+                  name={name}
+                  isActive={isActive}
+                  activeColor={activeColor}
+                  onClick={handleClose}
+                />
+              );
+            })}
+          </List>
+          <Box
+            sx={{
+              position: 'absolute',
+              bottom: 0,
+              right: 0,
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <CldImage
+              src="zensite/icons8-lotus"
+              width={40}
+              height={40}
+              crop="fill"
+              alt=""
+            />
+            <Typography
+              color="background.default"
+              variant="h5"
+              component="p"
+              sx={{
+                mr: 3,
+                ml: 1,
+                my: 3,
+              }}
+            >
+              thecodingyogi.me
+            </Typography>
+          </Box>
+        </Box>
       </Dialog>
     </Fragment>
   );
