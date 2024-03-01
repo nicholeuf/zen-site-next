@@ -13,17 +13,18 @@ const RouterTransition: React.FC<RouterTransitionProps> = ({ children }) => {
   const variants = {
     out: {
       opacity: 0,
-      y: 10,
+      y: 40,
       transition: {
-        duration: 0.15,
+        duration: 0.25,
       },
     },
     in: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.15,
-        // delay: 0.15,
+        type: 'spring',
+        duration: 0.25,
+        delay: 0.5,
       },
     },
   };
@@ -34,7 +35,7 @@ const RouterTransition: React.FC<RouterTransitionProps> = ({ children }) => {
         overflow: 'hidden',
       }}
     >
-      <AnimatePresence>
+      <AnimatePresence initial={false} mode="wait">
         <motion.div
           key={pathname}
           variants={variants}

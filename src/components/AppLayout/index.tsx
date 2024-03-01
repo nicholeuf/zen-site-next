@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import MainContainer from '@/components/MainContainer';
 import GlobalStyles from '@/app/styles/GlobalStyles';
 import DeviceType from '@/types/DeviceType';
+import RouterTransition from '../RouterTransition';
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -13,7 +14,10 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children, deviceType }) => {
   return (
     <GlobalStyles deviceType={deviceType}>
       <Header />
-      <MainContainer>{children}</MainContainer>
+
+      <RouterTransition>
+        <MainContainer>{children}</MainContainer>
+      </RouterTransition>
       <Footer />
     </GlobalStyles>
   );
