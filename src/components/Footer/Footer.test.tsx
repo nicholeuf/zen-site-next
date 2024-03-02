@@ -1,7 +1,7 @@
 /*
  * @jest-environment jsdom
  */
-import { render, screen, fireEvent } from 'test-utils';
+import { render, screen, fireEvent, waitFor } from 'test-utils';
 import Footer from './index';
 
 describe('The Footer component', () => {
@@ -28,7 +28,7 @@ describe('The Footer component', () => {
     expect(sourceCopy).toBeVisible();
   });
 
-  test('interacts with credits modal as expected', () => {
+  test('interacts with credits modal as expected', async () => {
     render(<Footer />);
 
     const viewCreditsButton = screen.getByRole('button', {
@@ -36,16 +36,17 @@ describe('The Footer component', () => {
     });
 
     fireEvent.click(viewCreditsButton);
+    const closeButton = screen.getByRole('button', {
+      name: /close/i,
+    });
+    await waitFor(() => expect(closeButton).toHaveFocus());
+
     const modal = screen.getByTestId('credits-modal');
     expect(modal).toBeVisible();
 
     const heading = screen.getByRole('heading', { level: 3 });
     expect(heading).toBeVisible();
     expect(heading).toHaveTextContent('Credits');
-
-    const closeButton = screen.getByRole('button', {
-      name: /close/i,
-    });
 
     fireEvent.click(closeButton);
     expect(modal).not.toBeVisible();
