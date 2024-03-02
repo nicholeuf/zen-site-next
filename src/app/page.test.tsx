@@ -7,13 +7,16 @@ import {
   renderSnapshotWithLayout,
   resetMatchMedia,
   XS_DEVICE,
-  fireEvent,
+  MD_DEVICE,
   waitFor,
-  act,
 } from 'test-utils';
 import userEvent from '@testing-library/user-event';
 
 const mockUsePathname = jest.fn();
+
+// Navigation accessibility resource
+// http://web-accessibility.carnegiemuseums.org/code/navigation/
+// https://www.erwinhofman.com/blog/build-web-accessible-hamburger-dropdown-menus/
 
 jest.mock('next/navigation', () => ({
   usePathname() {
@@ -44,6 +47,41 @@ describe('The Home Page', () => {
     }
   );
 
+  describe('User with MD Device', () => {
+    beforeAll(() => {
+      resetMatchMedia(MD_DEVICE);
+    });
+
+    test('can interact with navigation', async () => {
+      // mock usePathname to return the home page route
+      mockUsePathname.mockImplementation(() => '/');
+
+      renderWithLayout(<HomePage />);
+
+      // The home link in the top left corner
+      expect(
+        screen.getAllByRole('link', {
+          name: 'Home',
+        })[0]
+      ).toBeVisible();
+
+      expect(
+        screen.getByRole('navigation', {
+          name: 'Main Navigation',
+        })
+      ).toBeVisible();
+
+      const workLink = screen.getByRole('link', {
+        name: 'Work',
+      });
+      expect(workLink).not.toHaveAttribute('aria-current', 'page');
+      const homeLink = screen.getAllByRole('link', {
+        name: 'Home',
+      })[1];
+      expect(homeLink).toHaveAttribute('aria-current', 'page');
+    });
+  });
+
   describe('User with XS Device', () => {
     beforeAll(() => {
       resetMatchMedia(XS_DEVICE);
@@ -53,36 +91,50 @@ describe('The Home Page', () => {
       // mock usePathname to return the home page route
       mockUsePathname.mockImplementation(() => '/');
 
-      act(() => {
-        renderWithLayout(<HomePage />);
-      });
+      renderWithLayout(<HomePage />);
 
       const user = userEvent.setup();
       const getDialog = () => screen.queryByTestId('mobile-navigation-dialog');
 
-      // Dialog is not initially present in documnet
+      // Dialog is not initially present in document
       expect(getDialog()).not.toBeInTheDocument();
 
+      const openButton = screen.getByRole('button', {
+        name: 'Mobile Navigation Trigger',
+      });
+      await waitFor(() => expect(openButton).toHaveFocus());
+      expect(openButton).toHaveAttribute('aria-expanded', 'false');
+
       // Clicking the open button opens the dialog
-      await user.click(
-        screen.getByRole('button', {
-          name: 'open',
-        })
-      );
+      await user.click(openButton);
       expect(getDialog()).toBeVisible();
+      expect(openButton).toHaveAttribute('aria-expanded', 'true');
+
+      const closeButton = screen.getByRole('button', {
+        name: 'Close Mobile Navigation',
+      });
+      await waitFor(() => expect(closeButton).toHaveFocus());
+
       expect(
-        screen.getByRole('link', {
-          name: 'Work',
+        screen.getByRole('navigation', {
+          name: 'Main Navigation',
         })
       ).toBeVisible();
 
+      const workLink = screen.getByRole('link', {
+        name: 'Work',
+      });
+      expect(workLink).not.toHaveAttribute('aria-current', 'page');
+      const homeLink = screen.getByRole('link', {
+        name: 'Home',
+      });
+      expect(homeLink).toHaveAttribute('aria-current', 'page');
+
       // Clicking the close button closes the dialog
-      await user.click(
-        screen.getByRole('button', {
-          name: 'close',
-        })
-      );
+      await user.click(closeButton);
       await waitFor(() => expect(getDialog()).not.toBeInTheDocument());
+      expect(openButton).toHaveFocus();
+      expect(openButton).toHaveAttribute('aria-expanded', 'false');
     });
   });
 });

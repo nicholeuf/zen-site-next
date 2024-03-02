@@ -28,6 +28,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
     >
       <NextLink
         href={href}
+        aria-current={isActive ? 'page' : undefined}
         sx={(theme) => ({
           boxSizing: 'border-box',
           letterSpacing: '1.25px',

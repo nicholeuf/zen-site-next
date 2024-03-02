@@ -235,7 +235,7 @@ exports[`The Work Page has expected snapshot 1`] = `
       </a>
     </div>
     <nav
-      aria-label="Site Navigation Links"
+      aria-label="Main Navigation"
       data-testid="header-nav"
     >
       <ul
@@ -287,6 +287,22 @@ exports[`The Work Page has expected snapshot 1`] = `
             onTouchStart={[Function]}
           >
             Contact
+          </a>
+        </li>
+        <li
+          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          disabled={false}
+        >
+          <a
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            href="/"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Home
           </a>
         </li>
       </ul>
