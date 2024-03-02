@@ -72,6 +72,15 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
           name="google-site-verification"
           content={process.env.NEXT_PUBLIC_GOOGLE_AUTHENTICATION}
         />
+        {(process.env.NODE_ENV === 'development' ||
+          process.env.VERCEL_ENV === 'preview') && (
+          // eslint-disable-next-line @next/next/no-sync-scripts
+          <script
+            data-project-id="T86sC1LMCwAHgHYlQ4lEOy9jKn8djK4LpTfdwgv5"
+            data-is-production-environment="false"
+            src="https://snippet.meticulous.ai/v1/meticulous.js"
+          />
+        )}
       </head>
       <body>
         <AppRouterCacheProvider options={{ key: 'mui' }}>
