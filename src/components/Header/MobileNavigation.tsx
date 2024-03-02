@@ -1,6 +1,14 @@
-import React, { useState, forwardRef, Fragment } from 'react';
+import React, {
+  useState,
+  forwardRef,
+  Fragment,
+  useRef,
+  useEffect,
+} from 'react';
 import Typography from '@mui/material/Typography';
 import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+import DialogContent from '@mui/material/DialogContent';
 import List from '@mui/material/List';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -15,6 +23,7 @@ import { usePathname } from 'next/navigation';
 import MobileNavigationItem from './MobileNavigationItem';
 import { mobileNavigationItems } from './constants';
 import constants from '@/app/styles/constants';
+import VisuallyHidden from '../VisuallyHidden';
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & {
@@ -32,6 +41,8 @@ interface MobileNavigationProps {
 const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const openButtonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -41,18 +52,48 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
     setOpen(false);
   };
 
+  useEffect(() => {
+    // closeButtonRef is not available without a timeout
+    const timeout = setTimeout(() => {
+      // When the dialog opens, focus on the close button
+      if (open && closeButtonRef.current) {
+        closeButtonRef.current.focus();
+
+        // When the dialog closes, focus on the open button
+      } else if (!open && openButtonRef.current) {
+        openButtonRef.current.focus();
+      }
+    }, 100);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [open]);
+
   return (
     <Fragment>
-      <IconButton
-        edge="start"
-        color="inherit"
-        onClick={handleClickOpen}
-        aria-label="open"
+      <Box
+        component="section"
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
       >
-        <MenuIcon color="secondary" fontSize="large" />
-      </IconButton>
+        <IconButton
+          edge="start"
+          color="inherit"
+          onClick={handleClickOpen}
+          aria-label="Mobile Navigation Trigger"
+          aria-expanded={open}
+          ref={openButtonRef}
+        >
+          <MenuIcon color="secondary" fontSize="large" />
+        </IconButton>
+      </Box>
       <Dialog
         data-testid="mobile-navigation-dialog"
+        aria-labelledby="mobile-navigation-dialog-title"
         fullScreen
         open={open}
         onClose={handleClose}
@@ -71,6 +112,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
           }}
         >
           <Toolbar
+            component="section"
             sx={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -101,33 +143,43 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
             <IconButton
               edge="start"
               color="inherit"
-              autoFocus
               onClick={handleClose}
-              aria-label="close"
+              aria-label="Close Mobile Navigation"
+              ref={closeButtonRef}
             >
               <CloseIcon fontSize="large" />
             </IconButton>
           </Toolbar>
-          <List
-            sx={{
-              mt: '10vh',
-              ml: '20vw',
-            }}
-          >
-            {mobileNavigationItems.map(({ href, name }) => {
-              const isActive = pathname === href;
-              return (
-                <MobileNavigationItem
-                  key={name}
-                  href={href}
-                  name={name}
-                  isActive={isActive}
-                  activeColor={activeColor}
-                  onClick={handleClose}
-                />
-              );
-            })}
-          </List>
+          <DialogContent>
+            <VisuallyHidden
+              id="mobile-navigation-dialog-title"
+              component={DialogTitle}
+            >
+              Main Navigation Dialog
+            </VisuallyHidden>
+            <nav aria-label="Main Navigation" role="navigation">
+              <List
+                sx={{
+                  mt: '10vh',
+                  ml: '20vw',
+                }}
+              >
+                {mobileNavigationItems.map(({ href, name }) => {
+                  const isActive = pathname === href;
+                  return (
+                    <MobileNavigationItem
+                      key={name}
+                      href={href}
+                      name={name}
+                      isActive={isActive}
+                      activeColor={activeColor}
+                      onClick={handleClose}
+                    />
+                  );
+                })}
+              </List>
+            </nav>
+          </DialogContent>
           <Box
             sx={{
               position: 'absolute',

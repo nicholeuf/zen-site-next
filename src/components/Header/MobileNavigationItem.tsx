@@ -27,6 +27,7 @@ const MobileNavigationItem: React.FC<MobileNavigationItemProps> = ({
         href={href}
         onClick={onClick}
         variant="h3"
+        aria-current={isActive ? 'page' : undefined}
         sx={(theme) => ({
           color: theme.palette.background.default,
           borderBottom: isActive ? `${theme.spacing(0.5)} solid` : '',

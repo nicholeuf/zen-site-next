@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
@@ -11,9 +11,24 @@ const CreditsModal = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   const titleId = 'credits-modal-title';
   const descriptionId = 'credits-modal-description';
+
+  useEffect(() => {
+    // closeButtonRef is not available without a timeout
+    const timeout = setTimeout(() => {
+      // When the modcal opens, focus on the close button
+      if (open && closeButtonRef.current) {
+        closeButtonRef.current.focus();
+      }
+    }, 100);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [open]);
 
   return (
     <>
@@ -61,6 +76,7 @@ const CreditsModal = () => {
               size="large"
               sx={{ position: 'absolute', top: 0, right: 0, p: 0 }}
               onClick={handleClose}
+              ref={closeButtonRef}
             >
               <CloseOutlinedIcon fontSize="inherit" />
             </IconButton>
