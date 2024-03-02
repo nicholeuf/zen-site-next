@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
     <Box
       component="nav"
       data-testid="footer-nav"
-      aria-label="External Social Links"
+      aria-label="External Navigation"
       sx={{
         width: '25%',
         height: '100%',

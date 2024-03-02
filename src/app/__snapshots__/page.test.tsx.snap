@@ -1070,7 +1070,7 @@ exports[`The Home Page has expected snapshot 1`] = `
         className="MuiBox-root emotion-2"
       >
         <nav
-          aria-label="External Social Links"
+          aria-label="External Navigation"
           className="MuiBox-root emotion-3"
           data-testid="footer-nav"
         >

@@ -13,7 +13,9 @@ describe('The Footer component', () => {
     expect(footer).toHaveStyleRule('color', '#E8EAE3');
     expect(footer).toHaveStyleRule('background-color', '#373833');
 
-    const nav = screen.getByTestId('footer-nav') as HTMLDivElement;
+    const nav = screen.getByRole('navigation', {
+      name: 'External Navigation',
+    }) as HTMLDivElement;
     expect(nav).toBeVisible();
 
     const madeWithLoveCopy = screen.getByText(/Made with/i);
