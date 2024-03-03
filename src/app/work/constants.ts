@@ -23,7 +23,15 @@ export const items: WorkItemType[] = [
       'Original site was built with React and Bulma, bundled with Webpack, and deployed to AWS via CircleCI.',
     ],
     skills: ['MaterialUI', 'Typescript', 'React', 'NextJS', 'Emotion', 'Jest'],
-    tools: ['Vercel', 'Cloudinary', 'Codecov', 'Github Actions', 'Sentry.io'],
+    tools: [
+      'Vercel',
+      'Cloudinary',
+      'Codecov',
+      'Github Actions',
+      'Sentry.io',
+      'Meticulous.ai',
+      'Small.chat',
+    ],
   },
   {
     id: 'imperfect-foods',
