@@ -21,7 +21,7 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
       <List>
         <DashListItem>
           <Typography>
-            Favicon and open graph image: &nbsp;
+            Favicon and open graph asset:&nbsp;
             <ExternalLink href="https://icons8.com/icon/35926/lotus">
               Lotus
             </ExternalLink>
@@ -31,11 +31,11 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
         </DashListItem>
         <DashListItem>
           <Typography>
-            Home page background: Photo by&nbsp;
+            Home page asset: Photo by&nbsp;
             <ExternalLink href="https://unsplash.com/@andreislobtsov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
               Andrei Slobtsov
             </ExternalLink>
-            &nbsp; on&nbsp;
+            &nbsp;on&nbsp;
             <ExternalLink href="https://unsplash.com/photos/green-leaves-painting-Med3Kuxz97c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
               Unsplash
             </ExternalLink>
@@ -43,26 +43,25 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
         </DashListItem>
         <DashListItem>
           <Typography>
-            Contact page background: Photo by&nbsp;
-            <ExternalLink href="https://unsplash.com/@farianzum?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-              Faria Anzum
+            Contact page asset:&nbsp;
+            <ExternalLink href="https://icons8.com/illustrations/illustration/shine-stephania-plant-in-plant-pot">
+              Stephania Plant in Plant Pot
             </ExternalLink>
-            &nbsp; on&nbsp;
-            <ExternalLink href="https://unsplash.com/photos/green-succulent-on-white-and-pink-pot-ONK9IlKizS4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-              Unsplash
+            &nbsp;illustration by&nbsp;
+            <ExternalLink href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">
+              Icons8
             </ExternalLink>
           </Typography>
         </DashListItem>
-
         <DashListItem>
           <Typography>
-            Not found page image: Illustration by&nbsp;
-            <ExternalLink href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">
-              Icons 8
+            Not found page asset:&nbsp;
+            <ExternalLink href="https://icons8.com/illustrations/illustration/dizzy-plant-chlorophytum">
+              Dizzy Plant Chlorophytum
             </ExternalLink>
-            &nbsp; from&nbsp;
-            <ExternalLink href="https://icons8.com/illustrations">
-              Ouch!
+            &nbsp;illustration by&nbsp;
+            <ExternalLink href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">
+              Icons8
             </ExternalLink>
           </Typography>
         </DashListItem>
