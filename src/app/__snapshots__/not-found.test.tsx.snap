@@ -452,6 +452,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         <img
           alt=""
           data-nimg="1"
+          data-testid="plant-image-factor-1"
           decoding="async"
           height={464}
           loading="lazy"
@@ -477,6 +478,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         </h1>
         <p
           className="MuiTypography-root MuiTypography-body1 emotion-5"
+          data-testid="not-found-copy"
         >
           Could not find the page 
           <strong>
