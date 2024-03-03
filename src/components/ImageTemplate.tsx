@@ -23,7 +23,6 @@ const ImageTemplate: React.FC<ImageTemplateProps> = ({
       sx={{
         ...props.sx,
         display: 'flex',
-        justifyContent: 'center',
         alignItems: 'center',
         minHeight: getMainHeight(),
         position: 'relative',
