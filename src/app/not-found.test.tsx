@@ -7,6 +7,7 @@ import {
   renderSnapshotWithLayout,
   resetMatchMedia,
   XS_DEVICE,
+  SM_DEVICE,
 } from 'test-utils';
 
 const mockUsePathname = jest.fn();
@@ -38,21 +39,12 @@ describe('The Not Found (404) Page', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test.each([['header'], ['not-found-page'], ['footer']])(
-    'contains the visible testid %p',
-    (testid) => {
-      renderWithLayout(<NotFound />);
-      const component = screen.getByTestId(testid);
-      expect(component).toBeVisible();
-    }
-  );
-
   describe('User with XS Device', () => {
     beforeAll(() => {
       resetMatchMedia(XS_DEVICE);
     });
 
-    test('has expected content', () => {
+    test('has expected content and factors image by 3', () => {
       // mock usePathname to return a 404 page
       mockUsePathname.mockImplementation(() => '/figs');
 
@@ -62,9 +54,34 @@ describe('The Not Found (404) Page', () => {
         'Not Found'
       );
 
-      expect(screen.getByText(/Could not find the page/i)).toHaveTextContent(
-        /\/figs/
+      expect(screen.getByTestId('not-found-copy')).toHaveTextContent(
+        'Could not find the page /figs. Would you like to go to the Home Page?'
       );
+
+      expect(screen.getByTestId('plant-image-factor-3')).toBeVisible();
+    });
+  });
+
+  describe('User with SM Device', () => {
+    beforeAll(() => {
+      resetMatchMedia(SM_DEVICE);
+    });
+
+    test('has expected content and factors image by 2', () => {
+      // mock usePathname to return a 404 page
+      mockUsePathname.mockImplementation(() => '/figs');
+
+      renderWithLayout(<NotFound />);
+
+      expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
+        'Not Found'
+      );
+
+      expect(screen.getByTestId('not-found-copy')).toHaveTextContent(
+        'Could not find the page /figs. Would you like to go to the Home Page?'
+      );
+
+      expect(screen.getByTestId('plant-image-factor-2')).toBeVisible();
     });
   });
 });
