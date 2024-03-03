@@ -43,20 +43,22 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
         </DashListItem>
         <DashListItem>
           <Typography>
-            Contact page background: Photo by&nbsp;
-            <ExternalLink href="https://unsplash.com/@farianzum?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-              Faria Anzum
+            Contact page asset: <strong>Stephania plant in plant pot</strong>
+            &nbsp;Illustration by&nbsp;
+            <ExternalLink href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">
+              Icons 8
             </ExternalLink>
-            &nbsp; on&nbsp;
-            <ExternalLink href="https://unsplash.com/photos/green-succulent-on-white-and-pink-pot-ONK9IlKizS4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-              Unsplash
+            &nbsp; from&nbsp;
+            <ExternalLink href="https://icons8.com/illustrations">
+              Ouch!
             </ExternalLink>
           </Typography>
         </DashListItem>
 
         <DashListItem>
           <Typography>
-            Not found page image: Illustration by&nbsp;
+            Not found page asset: <strong>Dizzy plant chlorophytum</strong>
+            &nbsp;Illustration by&nbsp;
             <ExternalLink href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">
               Icons 8
             </ExternalLink>

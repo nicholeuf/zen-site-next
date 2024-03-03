@@ -44,21 +44,21 @@ describe('The Not Found (404) Page', () => {
       resetMatchMedia(XS_DEVICE);
     });
 
-    test('has expected content and factors image by 3', () => {
+    test('has expected content and factors image by 2', () => {
       // mock usePathname to return a 404 page
       mockUsePathname.mockImplementation(() => '/figs');
 
       renderWithLayout(<NotFound />);
 
       expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-        'Not Found'
+        'Sorry'
       );
 
       expect(screen.getByTestId('not-found-copy')).toHaveTextContent(
-        'Could not find the page /figs. Would you like to go to the Home Page?'
+        'The page /figs could not be found. Would you like to go to the Home Page?'
       );
 
-      expect(screen.getByTestId('plant-image-factor-3')).toBeVisible();
+      expect(screen.getByTestId('plant-image-factor-2')).toBeVisible();
     });
   });
 
@@ -67,21 +67,21 @@ describe('The Not Found (404) Page', () => {
       resetMatchMedia(SM_DEVICE);
     });
 
-    test('has expected content and factors image by 2', () => {
+    test('has expected content and factors image by 1', () => {
       // mock usePathname to return a 404 page
       mockUsePathname.mockImplementation(() => '/figs');
 
       renderWithLayout(<NotFound />);
 
       expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-        'Not Found'
+        'Sorry'
       );
 
       expect(screen.getByTestId('not-found-copy')).toHaveTextContent(
-        'Could not find the page /figs. Would you like to go to the Home Page?'
+        'The page /figs could not be found. Would you like to go to the Home Page?'
       );
 
-      expect(screen.getByTestId('plant-image-factor-2')).toBeVisible();
+      expect(screen.getByTestId('plant-image-factor-1')).toBeVisible();
     });
   });
 });

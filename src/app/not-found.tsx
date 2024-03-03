@@ -7,20 +7,17 @@ import { useTheme } from '@mui/material/styles';
 import ImageTemplate from '@/components/ImageTemplate';
 import NextLink from '@/components/NextLink';
 
-const WIDTH = 368;
-const HEIGHT = 464;
+const WIDTH = 367;
+const HEIGHT = 261;
 
 const NotFound = () => {
   const pathname = usePathname();
 
   const theme = useTheme();
-  const isFactor3 = useMediaQuery(theme.breakpoints.down(401));
-  const isFactor2 = useMediaQuery(theme.breakpoints.down(769));
+  const isFactor2 = useMediaQuery(theme.breakpoints.down(600));
 
   const getFactor = (): number => {
-    if (isFactor3) {
-      return 3;
-    } else if (isFactor2) {
+    if (isFactor2) {
       return 2;
     }
 
@@ -36,18 +33,18 @@ const NotFound = () => {
       imageProps={{
         width: Math.ceil(WIDTH / factor),
         height: Math.ceil(HEIGHT / factor),
-        src: 'zensite/surr-home-plant-5',
+        src: 'zensite/dizzy-plant-chlorophytum',
         crop: 'fill',
         opacity: '40',
         alt: '',
       }}
     >
       <Typography variant="h1" gutterBottom>
-        Not Found
+        Sorry
       </Typography>
       <Typography data-testid="not-found-copy">
-        Could not find the page <strong>{pathname}</strong>. Would you like to
-        go to the&nbsp;
+        The page <strong>{pathname}</strong> could not be found. Would you like
+        to go to the&nbsp;
         <NextLink href="/">Home Page</NextLink>?
       </Typography>
     </ImageTemplate>
