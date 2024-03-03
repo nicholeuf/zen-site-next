@@ -1,5 +1,6 @@
 /* 
-  https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/ 
+  Use feature queries to define a viewport-height variable on root
+  Inspiration:
   https://codepen.io/AleksandrHovhannisyan/pen/poVXpYz
 */
 
