@@ -6,8 +6,8 @@ import { CldImage } from 'next-cloudinary';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 
-import NextLink from '@/components/NextLink';
 import ImageTemplate from '@/components/ImageTemplate';
+import NextLink from '@/components/NextLink';
 
 const NotFound = () => {
   const pathname = usePathname();
@@ -15,12 +15,11 @@ const NotFound = () => {
   const theme = useTheme();
   const isMdSize = useMediaQuery(theme.breakpoints.down('md'));
 
-  console.log(isMdSize);
-
   const width = isMdSize ? 184 : 368;
   const height = isMdSize ? 232 : 464;
   return (
     <ImageTemplate
+      data-testid="not-found-page"
       imageProps={{
         width,
         height,

@@ -4,10 +4,10 @@ import Box from '@mui/material/Box';
 import { CldImage, CldImageProps } from 'next-cloudinary';
 
 import NextLink from '@/components/NextLink';
-import PageContainer from '@/components/PageContainer';
+import PageContainer, { PageContainerProps } from '@/components/PageContainer';
 import { getMainHeight } from '@/app/styles/styleUtils';
 
-interface ImageTemplateProps {
+interface ImageTemplateProps extends PageContainerProps {
   imageProps: CldImageProps;
   children: React.ReactNode;
 }
@@ -15,10 +15,13 @@ interface ImageTemplateProps {
 const ImageTemplate: React.FC<ImageTemplateProps> = ({
   imageProps,
   children,
+  ...props
 }) => {
   return (
     <PageContainer
+      {...props}
       sx={{
+        ...props.sx,
         height: getMainHeight(),
         position: 'relative',
       }}
