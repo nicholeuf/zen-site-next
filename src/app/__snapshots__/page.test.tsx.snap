@@ -358,7 +358,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 .emotion-2 {
   height: 100%;
   width: 100%;
-  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVCcWBy0) no-repeat;
+  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0) no-repeat;
   -webkit-background-position: 50% 25%;
   background-position: 50% 25%;
   -webkit-background-size: cover;
@@ -546,8 +546,8 @@ exports[`The Home Page has expected snapshot 1`] = `
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVCcWBy0"
-            srcSet="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_256,h_256,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVCcWBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVCcWBy0 2x"
+            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0"
+            srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 2x"
             style={
               {
                 "border": "1px solid white",

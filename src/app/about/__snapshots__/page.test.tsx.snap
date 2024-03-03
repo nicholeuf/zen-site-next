@@ -554,8 +554,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVCcWBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVCcWBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVCcWBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 2x"
                 style={
                   {
                     "color": "transparent",
@@ -606,8 +606,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVCcWBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVCcWBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVCcWBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 2x"
                 style={
                   {
                     "color": "transparent",
@@ -658,8 +658,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVCcWBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVCcWBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVCcWBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 2x"
                 style={
                   {
                     "color": "transparent",
@@ -710,8 +710,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVCcWBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVCcWBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVCcWBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 2x"
                 style={
                   {
                     "color": "transparent",
@@ -762,8 +762,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVCcWBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVCcWBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVCcWBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 2x"
                 style={
                   {
                     "color": "transparent",
@@ -814,8 +814,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVCcWBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVCcWBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVCcWBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 2x"
                 style={
                   {
                     "color": "transparent",
@@ -866,8 +866,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVCcWBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVCcWBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVCcWBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 2x"
                 style={
                   {
                     "color": "transparent",
@@ -918,8 +918,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVCcWBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVCcWBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/r_20/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVCcWBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 2x"
                 style={
                   {
                     "color": "transparent",
