@@ -13,6 +13,8 @@ import getBaseUrl from '@/app/lib/getBaseUrl';
 import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
 import DeviceType from '@/types/DeviceType';
 
+import '@/app/styles/mobileFix.css';
+
 export const metadata: Metadata = {
   metadataBase: new URL(getBaseUrl()),
   title: {

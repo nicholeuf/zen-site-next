@@ -1,0 +1,16 @@
+/* 
+  Use feature queries to define a viewport-height variable on root
+  Inspiration:
+  https://codepen.io/AleksandrHovhannisyan/pen/poVXpYz
+*/
+
+@supports (height: 100dvh) {
+  :root {
+    --viewport-height: 100dvh;
+  }
+}
+@supports not (height: 100dvh) {
+  :root {
+    --viewport-height: 100vh;
+  }
+}
