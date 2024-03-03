@@ -53,6 +53,19 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
             </ExternalLink>
           </Typography>
         </DashListItem>
+
+        <DashListItem>
+          <Typography>
+            Not found page image: Illustration by&nbsp;
+            <ExternalLink href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">
+              Icons 8
+            </ExternalLink>
+            &nbsp; from&nbsp;
+            <ExternalLink href="https://icons8.com/illustrations">
+              Ouch!
+            </ExternalLink>
+          </Typography>
+        </DashListItem>
       </List>
     </>
   );
