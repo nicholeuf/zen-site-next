@@ -336,25 +336,6 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 .emotion-1 {
-  min-height: calc(100vh - 60px - 175px);
-  position: relative;
-}
-
-.emotion-2 {
-  height: 100%;
-  width: 100%;
-  background: url(https://res.cloudinary.com/nicholeuf/image/upload/,z_0.1/o_20/f_auto/q_5/v1/zensite/faria-anzum-ONK9IlKizS4-unsplash?_a=BAVAfVBy0) no-repeat;
-  -webkit-background-position: 50% 80%;
-  background-position: 50% 80%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.emotion-3 {
   width: 100%;
   margin-left: auto;
   box-sizing: border-box;
@@ -362,20 +343,51 @@ exports[`The Contact Page has expected snapshot 1`] = `
   display: block;
   padding-left: 16px;
   padding-right: 16px;
+  height: calc(100vh - 60px - 175px);
+  position: relative;
+  overflow: hidden;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 @media (min-width:600px) {
-  .emotion-3 {
+  .emotion-1 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-3 {
+  .emotion-1 {
     max-width: 1200px;
+  }
+}
+
+.emotion-2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+}
+
+.emotion-3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+@media (min-width:900px) {
+  .emotion-3 {
+    margin-left: 80px;
   }
 }
 
@@ -432,16 +444,33 @@ exports[`The Contact Page has expected snapshot 1`] = `
     className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
   >
     <div
-      className="MuiBox-root emotion-1"
-      data-testid="contact-background-wrapper"
+      className="MuiContainer-root MuiContainer-maxWidthLg emotion-1"
+      data-testid="contact-page"
     >
       <div
         className="MuiBox-root emotion-2"
-        data-testid="contact-background-image"
-      />
+      >
+        <img
+          alt=""
+          data-nimg="1"
+          data-testid="plant-image-factor-1"
+          decoding="async"
+          height={644}
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_368,h_644,g_auto/o_30/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAfVBy0"
+          srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_368,h_644,g_auto/o_30/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_368,h_644,g_auto/o_30/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAfVBy0 2x"
+          style={
+            {
+              "color": "transparent",
+            }
+          }
+          width={368}
+        />
+      </div>
       <div
-        className="MuiContainer-root MuiContainer-maxWidthLg emotion-3"
-        data-testid="contact-page"
+        className="MuiBox-root emotion-3"
       >
         <h1
           className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-4"
@@ -450,6 +479,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
         </h1>
         <p
           className="MuiTypography-root MuiTypography-body2 emotion-5"
+          data-testid="contact-copy"
         >
           Please connect with me on 
           <a

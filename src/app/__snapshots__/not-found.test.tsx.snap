@@ -345,6 +345,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   padding-right: 16px;
   height: calc(100vh - 60px - 175px);
   position: relative;
+  overflow: hidden;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -366,6 +367,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   position: absolute;
   top: 10px;
   right: 10px;
+  overflow: hidden;
 }
 
 .emotion-3 {

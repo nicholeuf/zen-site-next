@@ -1,16 +1,35 @@
+'use client';
 import Typography from '@mui/material/Typography';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
-import PageContainer from '@/components/PageContainer';
 import ExternalLink from '@/components/ExternalLink';
-import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
+import ImageTemplate from '@/components/ImageTemplate';
 
 interface ContactPageProps {
-  chatEnabled?: boolean;
+  chatEnabled: boolean;
 }
 
-const ContactPage: React.FC<ContactPageProps> = ({
-  chatEnabled = SMALLCHAT_ENABLED,
-}) => {
+const WIDTH = 368;
+const HEIGHT = 644;
+
+const ContactPage: React.FC<ContactPageProps> = ({ chatEnabled }) => {
+  const theme = useTheme();
+  const isFactor3 = useMediaQuery(theme.breakpoints.down(401));
+  const isFactor2 = useMediaQuery(theme.breakpoints.down(769));
+
+  const getFactor = (): number => {
+    if (isFactor3) {
+      return 3;
+    } else if (isFactor2) {
+      return 2;
+    }
+
+    return 1;
+  };
+
+  const factor = getFactor();
+
   const getCopy = () => {
     const LinkedInContent = (
       <ExternalLink
@@ -24,7 +43,7 @@ const ContactPage: React.FC<ContactPageProps> = ({
     );
 
     return (
-      <Typography variant="body2">
+      <Typography variant="body2" data-testid="contact-copy">
         Please connect with me on&nbsp;{LinkedInContent}
         {chatEnabled && ' or send a message in chat'}. I look forward to hearing
         from you!
@@ -33,12 +52,23 @@ const ContactPage: React.FC<ContactPageProps> = ({
   };
 
   return (
-    <PageContainer data-testid="contact-page">
+    <ImageTemplate
+      data-testid="contact-page"
+      imageTestId={`plant-image-factor-${factor}`}
+      imageProps={{
+        width: Math.ceil(WIDTH / factor),
+        height: Math.ceil(HEIGHT / factor),
+        src: 'zensite/shine-stephania-plant-in-plant-pot',
+        crop: 'fill',
+        opacity: '30',
+        alt: '',
+      }}
+    >
       <Typography variant="h1" gutterBottom>
         Contact
       </Typography>
       {getCopy()}
-    </PageContainer>
+    </ImageTemplate>
   );
 };
 

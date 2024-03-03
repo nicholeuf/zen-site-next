@@ -1,8 +1,6 @@
 'use client';
 import Typography from '@mui/material/Typography';
 import { usePathname } from 'next/navigation';
-import Box from '@mui/material/Box';
-import { CldImage } from 'next-cloudinary';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 

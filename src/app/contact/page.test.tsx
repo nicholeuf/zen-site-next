@@ -2,16 +2,21 @@
  * @jest-environment jsdom
  */
 import {
-  render,
   renderWithLayout,
   screen,
   renderSnapshotWithLayout,
+  resetMatchMedia,
+  XS_DEVICE,
+  SM_DEVICE,
 } from 'test-utils';
-// import userEvent from '@testing-library/user-event';
 
 import ContactPage from './page';
 
 describe('The Contact Page', () => {
+  beforeAll(() => {
+    resetMatchMedia();
+  });
+
   test('has expected snapshot', () => {
     const component = renderSnapshotWithLayout(<ContactPage />);
     const tree = component.toJSON();
@@ -19,20 +24,25 @@ describe('The Contact Page', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test.each([['header'], ['contact-page'], ['footer']])(
-    'contains the visible testid %p',
-    (testid) => {
+  describe('User with XS Device', () => {
+    beforeAll(() => {
+      resetMatchMedia(XS_DEVICE);
+    });
+
+    test('factors image by 3', () => {
       renderWithLayout(<ContactPage />);
-      const component = screen.getByTestId(testid);
-      expect(component).toBeVisible();
-    }
-  );
+      expect(screen.getByTestId('plant-image-factor-3')).toBeVisible();
+    });
+  });
 
-  test('works as expected', () => {
-    render(<ContactPage />);
+  describe('User with SM Device', () => {
+    beforeAll(() => {
+      resetMatchMedia(SM_DEVICE);
+    });
 
-    const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toBeVisible();
-    expect(heading).toHaveTextContent('Contact');
+    test('factors image by 2', () => {
+      renderWithLayout(<ContactPage />);
+      expect(screen.getByTestId('plant-image-factor-2')).toBeVisible();
+    });
   });
 });

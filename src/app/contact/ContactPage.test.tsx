@@ -1,22 +1,30 @@
 /*
  * @jest-environment jsdom
  */
-import { renderSnapshot } from 'test-utils';
+import { render, screen } from 'test-utils';
 
 import ContactPage from './ContactPage';
 
 describe('The Contact Page Component', () => {
-  test('has expected snapshot when chat enabled', () => {
-    const component = renderSnapshot(<ContactPage chatEnabled />);
-    const tree = component.toJSON();
+  test('has expected content when chat enabled', () => {
+    render(<ContactPage chatEnabled />);
 
-    expect(tree).toMatchSnapshot();
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
+      'Contact'
+    );
+    expect(screen.getByTestId('contact-copy')).toHaveTextContent(
+      'Please connect with me on LinkedIn or send a message in chat. I look forward to hearing from you!'
+    );
   });
 
-  test('has expected snapshot when chat is not enabled', () => {
-    const component = renderSnapshot(<ContactPage chatEnabled={false} />);
-    const tree = component.toJSON();
+  test('has expected content when chat is not enabled', () => {
+    render(<ContactPage chatEnabled={false} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
+      'Contact'
+    );
+    expect(screen.getByTestId('contact-copy')).toHaveTextContent(
+      'Please connect with me on LinkedIn. I look forward to hearing from you!'
+    );
   });
 });
