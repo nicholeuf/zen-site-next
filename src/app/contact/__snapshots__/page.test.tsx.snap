@@ -317,7 +317,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 60px;
-  min-height: calc(100vh - 60px - 175px);
+  min-height: calc(var(--viewport-height) - 60px - 175px);
   padding: 0!important;
   max-width: 100%!important;
 }
@@ -351,7 +351,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: calc(100vh - 60px - 175px);
+  min-height: calc(var(--viewport-height) - 60px - 175px);
   position: relative;
   overflow: hidden;
   padding-top: 16px;

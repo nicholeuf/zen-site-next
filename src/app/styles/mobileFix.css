@@ -1,7 +1,15 @@
-/* https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/ */
+/* 
+  https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/ 
+  https://codepen.io/AleksandrHovhannisyan/pen/poVXpYz
+*/
 
-body {
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+@supports (height: 100dvh) {
+  :root {
+    --viewport-height: 100dvh;
+  }
+}
+@supports not (height: 100dvh) {
+  :root {
+    --viewport-height: 100vh;
+  }
 }

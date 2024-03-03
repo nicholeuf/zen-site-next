@@ -72,7 +72,11 @@ const theme = (deviceType: DeviceType) => {
           body: {
             overflowX: 'hidden',
             maxWidth: '100vw',
+            // height: '100%',
           },
+          // html: {
+          //   height: '100%',
+          // },
         },
       },
       MuiLink: {
