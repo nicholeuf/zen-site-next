@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Not Found (404) Page has expected snapshot 1`] = `
+exports[`The Loading Page has expected snapshot 1`] = `
 [
   .emotion-0 {
   background-color: #fff;
@@ -308,7 +308,40 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
       </ul>
     </nav>
   </header>,
-  .emotion-0 {
+  @keyframes animation-0 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    stroke-dasharray: 1px,200px;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 100px,200px;
+    stroke-dashoffset: -15px;
+  }
+
+  100% {
+    stroke-dasharray: 100px,200px;
+    stroke-dashoffset: -125px;
+  }
+}
+
+.emotion-0 {
   width: 100%;
   margin-left: auto;
   box-sizing: border-box;
@@ -336,174 +369,71 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 .emotion-1 {
-  width: 100%;
-  margin-left: auto;
-  box-sizing: border-box;
-  margin-right: auto;
-  display: block;
-  padding-left: 16px;
-  padding-right: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   min-height: calc(var(--viewport-height) - 60px - 175px);
-  position: relative;
-  overflow: hidden;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-@media (min-width:600px) {
-  .emotion-1 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-1 {
-    max-width: 1200px;
-  }
-}
-
-.emotion-2 {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  overflow: hidden;
-}
-
-.emotion-3 {
-  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-@media (min-width:900px) {
-  .emotion-3 {
-    margin-left: 80px;
-  }
+.emotion-2 {
+  display: inline-block;
+  color: #FA2742;
+  -webkit-animation: animation-0 1.4s linear infinite;
+  animation: animation-0 1.4s linear infinite;
+}
+
+.emotion-3 {
+  display: block;
 }
 
 .emotion-4 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 300;
-  font-size: 3.5rem;
-  line-height: 1.167;
-  margin-bottom: 0.35em;
-}
-
-@media (min-width:600px) {
-  .emotion-4 {
-    font-size: 4.7129rem;
-  }
-}
-
-@media (min-width:900px) {
-  .emotion-4 {
-    font-size: 5.3556rem;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-4 {
-    font-size: 5.9983rem;
-  }
-}
-
-.emotion-5 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.emotion-6 {
-  margin: 0;
-  font: inherit;
-  color: #FA2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-6:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  stroke: currentColor;
+  stroke-dasharray: 80px,200px;
+  stroke-dashoffset: 0;
+  -webkit-animation: animation-1 1.4s ease-in-out infinite;
+  animation: animation-1 1.4s ease-in-out infinite;
 }
 
 <main
     className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
   >
     <div
-      className="MuiContainer-root MuiContainer-maxWidthLg emotion-1"
-      data-testid="not-found-page"
+      className="MuiBox-root emotion-1"
     >
-      <div
-        className="MuiBox-root emotion-2"
-      >
-        <img
-          alt=""
-          data-nimg="1"
-          data-testid="plant-image-factor-1"
-          decoding="async"
-          height={261}
-          loading="lazy"
-          onError={[Function]}
-          onLoad={[Function]}
-          src="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_367,h_261,g_auto/o_40/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAfVBy0"
-          srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_367,h_261,g_auto/o_40/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_367,h_261,g_auto/o_40/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAfVBy0 2x"
-          style={
-            {
-              "color": "transparent",
-            }
+      <span
+        className="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary emotion-2"
+        role="progressbar"
+        style={
+          {
+            "height": 40,
+            "width": 40,
           }
-          width={367}
-        />
-      </div>
-      <div
-        className="MuiBox-root emotion-3"
+        }
       >
-        <h1
-          className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-4"
+        <svg
+          className="MuiCircularProgress-svg emotion-3"
+          viewBox="22 22 44 44"
         >
-          Sorry
-        </h1>
-        <p
-          className="MuiTypography-root MuiTypography-body1 emotion-5"
-          data-testid="not-found-copy"
-        >
-          The page 
-          <strong>
-            /figs
-          </strong>
-           could not be found. Would you like to go to the 
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
-            href="/"
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            Home Page
-          </a>
-          ?
-        </p>
-      </div>
+          <circle
+            className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate emotion-4"
+            cx={44}
+            cy={44}
+            fill="none"
+            r={20.2}
+            strokeWidth={3.6}
+            style={{}}
+          />
+        </svg>
+      </span>
     </div>
   </main>,
   .emotion-0 {

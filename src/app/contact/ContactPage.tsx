@@ -1,7 +1,7 @@
 'use client';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import { Theme } from '@mui/material/styles';
 
 import ExternalLink from '@/components/ExternalLink';
 import ImageTemplate from '@/components/ImageTemplate';
@@ -14,9 +14,12 @@ const WIDTH = 368;
 const HEIGHT = 644;
 
 const ContactPage: React.FC<ContactPageProps> = ({ chatEnabled }) => {
-  const theme = useTheme();
-  const isFactor3 = useMediaQuery(theme.breakpoints.down(401));
-  const isFactor2 = useMediaQuery(theme.breakpoints.down(769));
+  const isFactor3 = useMediaQuery<Theme>((theme) =>
+    theme.breakpoints.down(401)
+  );
+  const isFactor2 = useMediaQuery<Theme>((theme) =>
+    theme.breakpoints.down(769)
+  );
 
   const getFactor = (): number => {
     if (isFactor3) {

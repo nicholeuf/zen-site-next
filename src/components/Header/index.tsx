@@ -1,7 +1,7 @@
 'use client';
 import AppBar from '@mui/material/AppBar';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import { Theme } from '@mui/material/styles';
 
 import HeaderLogo from './HeaderLogo';
 import Navigation from './Navigation';
@@ -19,8 +19,9 @@ const Header: React.FC<HeaderProps> = ({
   activeColor = 'primary.light',
   height = constants.header.height,
 }) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery<Theme>((theme) =>
+    theme.breakpoints.down('sm')
+  );
 
   return (
     <AppBar
