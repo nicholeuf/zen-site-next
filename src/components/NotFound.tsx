@@ -3,9 +3,9 @@ import Typography from '@mui/material/Typography';
 import { usePathname } from 'next/navigation';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Theme } from '@mui/material/styles';
-import Link from '@mui/material/Link';
 
 import ImageTemplate from '@/components/ImageTemplate';
+import NextLink from './NextLink';
 
 const WIDTH = 367;
 const HEIGHT = 261;
@@ -47,7 +47,7 @@ const NotFound = () => {
       <Typography data-testid="not-found-copy">
         The page <strong>{pathname}</strong> could not be found. Would you like
         to go to the&nbsp;
-        <Link href="/">Home Page</Link>?
+        <NextLink href="/">Home Page</NextLink>?
       </Typography>
     </ImageTemplate>
   );

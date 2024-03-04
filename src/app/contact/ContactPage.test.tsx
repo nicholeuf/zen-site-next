@@ -5,7 +5,19 @@ import { render, screen } from 'test-utils';
 
 import ContactPage from './ContactPage';
 
+const mockUsePathname = jest.fn();
+
+jest.mock('next/navigation', () => ({
+  usePathname() {
+    return mockUsePathname();
+  },
+}));
+
 describe('The Contact Page Component', () => {
+  beforeAll(() => {
+    mockUsePathname.mockImplementation(() => '/contact');
+  });
+
   test('has expected content when chat enabled', () => {
     render(<ContactPage chatEnabled />);
 

@@ -221,10 +221,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
         href="/"
         onBlur={[Function]}
-        onClick={[Function]}
         onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
       >
         <span
           className="MuiBox-root emotion-3"
@@ -249,10 +246,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
             href="/work"
             onBlur={[Function]}
-            onClick={[Function]}
             onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
           >
             Work
           </a>
@@ -265,10 +259,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
             href="/about"
             onBlur={[Function]}
-            onClick={[Function]}
             onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
           >
             About
           </a>
@@ -281,10 +272,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
             href="/contact"
             onBlur={[Function]}
-            onClick={[Function]}
             onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
           >
             Contact
           </a>
@@ -297,10 +285,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
             href="/"
             onBlur={[Function]}
-            onClick={[Function]}
             onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
           >
             Home
           </a>
