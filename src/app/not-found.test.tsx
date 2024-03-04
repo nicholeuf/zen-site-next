@@ -12,10 +12,6 @@ import {
 
 const mockUsePathname = jest.fn();
 
-// Navigation accessibility resource
-// http://web-accessibility.carnegiemuseums.org/code/navigation/
-// https://www.erwinhofman.com/blog/build-web-accessible-hamburger-dropdown-menus/
-
 jest.mock('next/navigation', () => ({
   usePathname() {
     return mockUsePathname();

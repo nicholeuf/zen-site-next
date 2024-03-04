@@ -1,5 +1,7 @@
 import NotFoundComponent from '@/components/NotFound';
 
-export default function NotFound() {
+const NotFound = () => {
   return <NotFoundComponent />;
-}
+};
+
+export default NotFound;
