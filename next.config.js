@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   productionBrowserSourceMaps: true,
+  trailingSlash: false,
   images: {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
