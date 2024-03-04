@@ -1,14 +1,14 @@
 'use client';
 
 import Box from '@mui/material/Box';
-import { getCldImageUrl, GetCldImageUrlOptions } from 'next-cloudinary';
+import { CldImage, CldImageProps } from 'next-cloudinary';
 
 import { getMainHeight } from '@/app/styles/styleUtils';
-import React from 'react';
+
+// https://next.cloudinary.dev/cldimage/examples#fill-parent
 
 interface BackgroundImageProps {
-  cldImageProps: GetCldImageUrlOptions;
-  backgroundPosition?: string;
+  imageProps: CldImageProps;
   wrapperTestId: string;
   imageTestId: string;
   centerContent: boolean;
@@ -16,8 +16,7 @@ interface BackgroundImageProps {
 }
 
 const BackgroundImage: React.FC<BackgroundImageProps> = ({
-  cldImageProps,
-  backgroundPosition,
+  imageProps,
   wrapperTestId,
   imageTestId,
   centerContent,
@@ -38,20 +37,17 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
         position: 'relative',
       }}
     >
-      <Box
+      <CldImage
         data-testid={imageTestId}
-        sx={{
-          height: '100%',
-          width: '100%',
-          background: `url(${getCldImageUrl(cldImageProps)}) no-repeat`,
-          backgroundPosition,
-          backgroundSize: 'cover',
-          position: 'absolute',
-          bottom: 0,
-          right: 0,
+        sizes="100vw"
+        fill
+        {...imageProps}
+        style={{
+          ...imageProps.style,
+          objectFit: 'cover',
           zIndex: -1,
         }}
-      ></Box>
+      />
       {children}
     </Box>
   );

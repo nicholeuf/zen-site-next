@@ -14,18 +14,15 @@ const LandingPage: React.FC = () => {
     <BackgroundImage
       wrapperTestId="landing"
       imageTestId="landing-background-image"
-      cldImageProps={{
-        // getCldImageUrl uses the same API as CldImage and sizes
-        // They're both wrappers around @cloudinary-util/url-loader which provide a simpler way to generate images and Cloudinary URLs.
-        // https://next.cloudinary.dev/getcldimageurl/basic-usage#basic-usage
-        // @ts-ignore
-        sizes: '100vw',
+      imageProps={{
         opacity: '20',
         src: 'zensite/andrei-slobtsov-Med3Kuxz97c-unsplash',
-        aspectRatio: '2:3',
         quality: '5',
+        alt: '',
+        style: {
+          objectPosition: '50% 25%',
+        },
       }}
-      backgroundPosition="50% 25%"
       centerContent
     >
       <Content />

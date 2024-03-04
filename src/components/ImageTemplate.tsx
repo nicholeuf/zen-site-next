@@ -35,6 +35,7 @@ const ImageTemplate: React.FC<ImageTemplateProps> = ({
           top: '10px',
           right: '10px',
           overflow: 'hidden',
+          zIndex: -1,
         }}
       >
         <CldImage {...imageProps} data-testid={imageTestId} />

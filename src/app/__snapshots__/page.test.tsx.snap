@@ -386,20 +386,6 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 .emotion-2 {
-  height: 100%;
-  width: 100%;
-  background: url(https://res.cloudinary.com/nicholeuf/image/upload/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0) no-repeat;
-  -webkit-background-position: 50% 25%;
-  background-position: 50% 25%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.emotion-3 {
   margin-top: 24px;
   margin-bottom: 24px;
   padding-left: 24px;
@@ -408,18 +394,18 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-3 {
+  .emotion-2 {
     grid-template-areas: "photo" "heading" "body";
   }
 }
 
 @media (min-width:600px) {
-  .emotion-3 {
+  .emotion-2 {
     grid-template-areas: "photo heading heading heading" "body body body body";
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   grid-area: photo;
   display: -webkit-box;
   display: -webkit-flex;
@@ -435,11 +421,11 @@ exports[`The Home Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-5 {
+.emotion-4 {
   grid-area: heading;
 }
 
-.emotion-6 {
+.emotion-5 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -449,36 +435,36 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-6 {
+  .emotion-5 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-6 {
+  .emotion-5 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-6 {
+  .emotion-5 {
     font-size: 5.9983rem;
   }
 }
 
 @media (min-width:0px) {
-  .emotion-6 {
+  .emotion-5 {
     font-size: 2.75rem;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-6 {
+  .emotion-5 {
     font-size: 3.5rem;
   }
 }
 
-.emotion-7 {
+.emotion-6 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -489,46 +475,46 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-7 {
+  .emotion-6 {
     font-size: 1.8219rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-7 {
+  .emotion-6 {
     font-size: 2.0243rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-7 {
+  .emotion-6 {
     font-size: 2.0243rem;
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
 }
 
 @media (min-width:0px) {
-  .emotion-8 {
+  .emotion-7 {
     font-size: 34px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-8 {
+  .emotion-7 {
     font-size: 38px;
   }
 }
 
-.emotion-9 {
+.emotion-8 {
   grid-area: body;
 }
 
-.emotion-10 {
+.emotion-9 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -539,13 +525,13 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-10 {
+  .emotion-9 {
     font-size: 1.25rem;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-10 {
+  .emotion-9 {
     font-size: 1.5rem;
   }
 }
@@ -557,15 +543,38 @@ exports[`The Home Page has expected snapshot 1`] = `
       className="MuiBox-root emotion-1"
       data-testid="landing"
     >
-      <div
-        className="MuiBox-root emotion-2"
+      <img
+        alt=""
+        data-nimg="fill"
         data-testid="landing-background-image"
+        decoding="async"
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        sizes="100vw"
+        src="https://res.cloudinary.com/nicholeuf/image/upload/c_limit,w_3840/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0"
+        srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_limit,w_640/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0 640w, https://res.cloudinary.com/nicholeuf/image/upload/c_limit,w_750/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0 750w, https://res.cloudinary.com/nicholeuf/image/upload/c_limit,w_828/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0 828w, https://res.cloudinary.com/nicholeuf/image/upload/c_limit,w_1080/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0 1080w, https://res.cloudinary.com/nicholeuf/image/upload/c_limit,w_1200/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0 1200w, https://res.cloudinary.com/nicholeuf/image/upload/c_limit,w_1920/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0 1920w, https://res.cloudinary.com/nicholeuf/image/upload/c_limit,w_2048/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0 2048w, https://res.cloudinary.com/nicholeuf/image/upload/c_limit,w_3840/o_20/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAfVBy0 3840w"
+        style={
+          {
+            "bottom": 0,
+            "color": "transparent",
+            "height": "100%",
+            "left": 0,
+            "objectFit": "cover",
+            "objectPosition": "50% 25%",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+            "zIndex": -1,
+          }
+        }
       />
       <div
-        className="MuiBox-root emotion-3"
+        className="MuiBox-root emotion-2"
       >
         <div
-          className="MuiBox-root emotion-4"
+          className="MuiBox-root emotion-3"
         >
           <img
             alt="Photo of website author"
@@ -589,29 +598,29 @@ exports[`The Home Page has expected snapshot 1`] = `
           />
         </div>
         <div
-          className="MuiBox-root emotion-5"
+          className="MuiBox-root emotion-4"
         >
           <h1
-            className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-6"
+            className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-5"
           >
             Hi, I'm Nichole
           </h1>
           <h2
-            className="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom emotion-7"
+            className="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom emotion-6"
           >
             Full-Stack Developer 
             <span
-              className="MuiTypography-root MuiTypography-sacramento emotion-8"
+              className="MuiTypography-root MuiTypography-sacramento emotion-7"
             >
               and yogi!
             </span>
           </h2>
         </div>
         <div
-          className="MuiBox-root emotion-9"
+          className="MuiBox-root emotion-8"
         >
           <p
-            className="MuiTypography-root MuiTypography-body1 emotion-10"
+            className="MuiTypography-root MuiTypography-body1 emotion-9"
           >
             Based in Orlando, Florida, my passion lies in crafting intuitive, well-built experiences for the customer. I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
           </p>
