@@ -38,7 +38,6 @@ const NotFound = () => {
         crop: 'fill',
         opacity: '40',
         alt: '',
-        priority: false,
       }}
     >
       <Typography variant="h1" gutterBottom>

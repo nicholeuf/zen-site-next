@@ -29,17 +29,18 @@ const ImageTemplate: React.FC<ImageTemplateProps> = ({
         overflow: 'hidden',
       }}
     >
-      <Box
-        sx={{
+      <CldImage
+        {...imageProps}
+        data-testid={imageTestId}
+        style={{
+          ...imageProps.style,
           position: 'absolute',
           top: '10px',
           right: '10px',
           overflow: 'hidden',
           zIndex: -1,
         }}
-      >
-        <CldImage {...imageProps} data-testid={imageTestId} />
-      </Box>
+      />
       <Box
         sx={{
           height: '100%',
