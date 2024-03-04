@@ -19,6 +19,9 @@ const LandingPage: React.FC = () => {
         src: 'zensite/andrei-slobtsov-Med3Kuxz97c-unsplash',
         quality: '5',
         alt: '',
+        style: {
+          objectPosition: '50% 25%',
+        },
       }}
       centerContent
     >
