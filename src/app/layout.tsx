@@ -14,7 +14,6 @@ import getDeviceType from './ssrMediaQueries/getDeviceType';
 import '@/app/styles/mobileFix.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(getBaseUrl()),
   title: {
     template: '%s | Nichole Frey',
     // a default is required when creating a template
