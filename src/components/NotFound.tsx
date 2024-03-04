@@ -2,11 +2,10 @@
 import Typography from '@mui/material/Typography';
 import { usePathname } from 'next/navigation';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import { Theme } from '@mui/material/styles';
 import Link from '@mui/material/Link';
 
 import ImageTemplate from '@/components/ImageTemplate';
-import NextLink from './NextLink';
 
 const WIDTH = 367;
 const HEIGHT = 261;
@@ -14,8 +13,9 @@ const HEIGHT = 261;
 const NotFound = () => {
   const pathname = usePathname();
 
-  const theme = useTheme();
-  const isFactor2 = useMediaQuery(theme.breakpoints.down(600));
+  const isFactor2 = useMediaQuery<Theme>((theme) =>
+    theme.breakpoints.down(600)
+  );
 
   const getFactor = (): number => {
     if (isFactor2) {
