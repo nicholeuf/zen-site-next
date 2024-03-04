@@ -357,14 +357,6 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 .emotion-2 {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.emotion-3 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -380,12 +372,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:900px) {
-  .emotion-3 {
+  .emotion-2 {
     margin-left: 80px;
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -395,24 +387,24 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-4 {
+  .emotion-3 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-4 {
+  .emotion-3 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-4 {
+  .emotion-3 {
     font-size: 5.9983rem;
   }
 }
 
-.emotion-5 {
+.emotion-4 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -420,7 +412,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   line-height: 1.5;
 }
 
-.emotion-6 {
+.emotion-5 {
   margin: 0;
   font: inherit;
   color: #FA2742;
@@ -428,7 +420,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   text-decoration: none;
 }
 
-.emotion-6:hover {
+.emotion-5:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -440,38 +432,39 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
       className="MuiContainer-root MuiContainer-maxWidthLg emotion-1"
       data-testid="not-found-page"
     >
+      <img
+        alt=""
+        data-nimg="1"
+        data-testid="plant-image-factor-1"
+        decoding="async"
+        height={261}
+        loading="lazy"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_367,h_261,g_auto/o_40/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAfVBy0"
+        srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_367,h_261,g_auto/o_40/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_367,h_261,g_auto/o_40/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAfVBy0 2x"
+        style={
+          {
+            "color": "transparent",
+            "overflow": "hidden",
+            "position": "absolute",
+            "right": "10px",
+            "top": "10px",
+            "zIndex": -1,
+          }
+        }
+        width={367}
+      />
       <div
         className="MuiBox-root emotion-2"
       >
-        <img
-          alt=""
-          data-nimg="1"
-          data-testid="plant-image-factor-1"
-          decoding="async"
-          height={261}
-          loading="lazy"
-          onError={[Function]}
-          onLoad={[Function]}
-          src="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_367,h_261,g_auto/o_40/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAfVBy0"
-          srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_367,h_261,g_auto/o_40/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_367,h_261,g_auto/o_40/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAfVBy0 2x"
-          style={
-            {
-              "color": "transparent",
-            }
-          }
-          width={367}
-        />
-      </div>
-      <div
-        className="MuiBox-root emotion-3"
-      >
         <h1
-          className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-4"
+          className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-3"
         >
           Sorry
         </h1>
         <p
-          className="MuiTypography-root MuiTypography-body1 emotion-5"
+          className="MuiTypography-root MuiTypography-body1 emotion-4"
           data-testid="not-found-copy"
         >
           The page 
@@ -480,7 +473,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
           </strong>
            could not be found. Would you like to go to the 
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-5"
             href="/"
             onBlur={[Function]}
             onFocus={[Function]}
