@@ -194,6 +194,8 @@ exports[`The Work Page has expected snapshot 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #373833;
+  border-bottom: 4px solid;
+  border-bottom-color: rgb(251, 82, 103);
   -webkit-transition: color 0.25s ease;
   transition: color 0.25s ease;
 }
@@ -204,6 +206,33 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 .emotion-6:hover {
+  color: rgb(251, 82, 103);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-8 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  letter-spacing: 1.25px;
+  height: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #373833;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+.emotion-8:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-8:hover {
   color: rgb(251, 82, 103);
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -246,6 +275,7 @@ exports[`The Work Page has expected snapshot 1`] = `
           disabled={false}
         >
           <a
+            aria-current="page"
             className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
             href="/work"
             onBlur={[Function]}
@@ -262,7 +292,7 @@ exports[`The Work Page has expected snapshot 1`] = `
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
             href="/about"
             onBlur={[Function]}
             onClick={[Function]}
@@ -278,7 +308,7 @@ exports[`The Work Page has expected snapshot 1`] = `
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
             href="/contact"
             onBlur={[Function]}
             onClick={[Function]}
@@ -294,7 +324,7 @@ exports[`The Work Page has expected snapshot 1`] = `
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
             href="/"
             onBlur={[Function]}
             onClick={[Function]}

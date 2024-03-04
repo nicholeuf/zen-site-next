@@ -209,6 +209,35 @@ exports[`The Loading Page has expected snapshot 1`] = `
   text-decoration: none;
 }
 
+.emotion-10 {
+  margin: 0;
+  font: inherit;
+  color: #FA2742;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  letter-spacing: 1.25px;
+  height: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #373833;
+  border-bottom: 4px solid;
+  border-bottom-color: rgb(251, 82, 103);
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+
+.emotion-10:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-10:hover {
+  color: rgb(251, 82, 103);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <header
     className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-0"
     data-testid="header"
@@ -278,7 +307,8 @@ exports[`The Loading Page has expected snapshot 1`] = `
           disabled={false}
         >
           <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            aria-current="page"
+            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-10"
             href="/contact"
             onBlur={[Function]}
             onClick={[Function]}

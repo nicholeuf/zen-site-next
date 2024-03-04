@@ -11,6 +11,14 @@ import {
 
 import WorkPage from './page';
 
+const mockUsePathname = jest.fn();
+
+jest.mock('next/navigation', () => ({
+  usePathname() {
+    return mockUsePathname();
+  },
+}));
+
 // Test TODO
 // Work header nav element is underlined
 // h1 is correct
@@ -18,6 +26,10 @@ import WorkPage from './page';
 // keyboard events work
 
 describe('The Work Page', () => {
+  beforeAll(() => {
+    mockUsePathname.mockImplementation(() => '/work');
+  });
+
   test('has expected snapshot', () => {
     const component = renderSnapshotWithLayout(<WorkPage />);
     const tree = component.toJSON();

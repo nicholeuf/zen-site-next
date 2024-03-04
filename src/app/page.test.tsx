@@ -14,10 +14,6 @@ import userEvent from '@testing-library/user-event';
 
 const mockUsePathname = jest.fn();
 
-// Navigation accessibility resource
-// http://web-accessibility.carnegiemuseums.org/code/navigation/
-// https://www.erwinhofman.com/blog/build-web-accessible-hamburger-dropdown-menus/
-
 jest.mock('next/navigation', () => ({
   usePathname() {
     return mockUsePathname();
@@ -28,6 +24,7 @@ import HomePage from './page';
 
 describe('The Home Page', () => {
   beforeAll(() => {
+    mockUsePathname.mockImplementation(() => '/');
     resetMatchMedia();
   });
 
@@ -54,7 +51,6 @@ describe('The Home Page', () => {
 
     test('can interact with navigation', async () => {
       // mock usePathname to return the home page route
-      mockUsePathname.mockImplementation(() => '/');
 
       renderWithLayout(<HomePage />);
 
@@ -88,9 +84,6 @@ describe('The Home Page', () => {
     });
 
     test('can interact with mobile navigation', async () => {
-      // mock usePathname to return the home page route
-      mockUsePathname.mockImplementation(() => '/');
-
       renderWithLayout(<HomePage />);
 
       const user = userEvent.setup();

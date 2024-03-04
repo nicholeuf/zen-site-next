@@ -10,11 +10,20 @@ import {
   XS_DEVICE,
   SM_DEVICE,
 } from 'test-utils';
-
 import AboutPage from './page';
+
+const mockUsePathname = jest.fn();
+
+jest.mock('next/navigation', () => ({
+  usePathname() {
+    return mockUsePathname();
+  },
+}));
 
 describe('The About Page', () => {
   beforeAll(() => {
+    mockUsePathname.mockImplementation(() => '/about');
+
     resetMatchMedia();
   });
 

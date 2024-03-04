@@ -21,4 +21,6 @@ const routes = {
   },
 };
 
+export const URLS = Object.values(routes).map((route) => route.href);
+
 export default routes;

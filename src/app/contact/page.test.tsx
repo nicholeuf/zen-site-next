@@ -12,8 +12,17 @@ import {
 
 import ContactPage from './page';
 
+const mockUsePathname = jest.fn();
+
+jest.mock('next/navigation', () => ({
+  usePathname() {
+    return mockUsePathname();
+  },
+}));
+
 describe('The Contact Page', () => {
   beforeAll(() => {
+    mockUsePathname.mockImplementation(() => '/contact');
     resetMatchMedia();
   });
 
