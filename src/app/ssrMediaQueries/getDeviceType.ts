@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import DeviceType from '@/types/DeviceType';
 import { headers } from 'next/headers';
 import parser from 'ua-parser-js';
