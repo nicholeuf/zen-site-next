@@ -6,7 +6,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { CldImage } from 'next-cloudinary';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import { Theme } from '@mui/material/styles';
 
 const itemData = [
   {
@@ -52,9 +52,8 @@ const itemData = [
 ];
 
 const Photos = () => {
-  const theme = useTheme();
-  const isSmSize = useMediaQuery(theme.breakpoints.up('sm'));
-  const isMdSize = useMediaQuery(theme.breakpoints.up('md'));
+  const isSmSize = useMediaQuery<Theme>((theme) => theme.breakpoints.up('sm'));
+  const isMdSize = useMediaQuery<Theme>((theme) => theme.breakpoints.up('md'));
 
   const getCols = () => {
     if (isMdSize) {
