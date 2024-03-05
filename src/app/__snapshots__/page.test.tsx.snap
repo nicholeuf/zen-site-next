@@ -579,16 +579,19 @@ exports[`The Home Page has expected snapshot 1`] = `
           <img
             alt="Photo of website author"
             data-nimg="1"
-            data-testid="landing-profile-image"
             decoding="async"
             height={200}
             loading="lazy"
             onError={[Function]}
             onLoad={[Function]}
-            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0"
-            srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/r_20/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 2x"
+            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0"
+            srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_200,h_200,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAfVBy0 2x"
             style={
               {
+                "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blurred-image'/%3E%3C/svg%3E")",
+                "backgroundPosition": "50% 50%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "cover",
                 "border": "1px solid white",
                 "borderRadius": "20px",
                 "color": "transparent",

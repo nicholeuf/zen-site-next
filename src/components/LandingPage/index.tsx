@@ -1,15 +1,12 @@
-'use client';
-
-import { Metadata } from 'next';
-
-import Content from './Content';
 import BackgroundImage from '@/components/BackgroundImage';
+import { ProfileImageProps } from './ProfileImage';
+import Content from './Content';
 
-export const metadata: Metadata = {
-  title: "Nichole Frey's Portfolio",
-};
+export interface LandingPageProps {
+  profileImageProps: ProfileImageProps;
+}
 
-const LandingPage: React.FC = () => {
+const LandingPage: React.FC<LandingPageProps> = ({ profileImageProps }) => {
   return (
     <BackgroundImage
       wrapperTestId="landing"
@@ -25,7 +22,7 @@ const LandingPage: React.FC = () => {
       }}
       centerContent
     >
-      <Content />
+      <Content profileImageProps={profileImageProps} />
     </BackgroundImage>
   );
 };

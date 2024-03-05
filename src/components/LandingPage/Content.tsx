@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { CldImage } from 'next-cloudinary';
+
+import ProfileImage, { ProfileImageProps } from './ProfileImage';
+import Heading from './Heading';
 
 const smallGridTemplateAreas = `
 "photo"
@@ -12,7 +14,11 @@ const largeGridTemplateAreas = `
 "body body body body"
 `;
 
-const Content = () => {
+interface ContentProps {
+  profileImageProps: ProfileImageProps;
+}
+
+const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
   return (
     <Box
       sx={{
@@ -34,34 +40,10 @@ const Content = () => {
           alignItems: 'center',
         }}
       >
-        <CldImage
-          data-testid="landing-profile-image"
-          width="200"
-          height="200"
-          crop="thumb"
-          zoom="0.5"
-          src="zensite/nf-profile-c-hibiscus"
-          radius="20"
-          alt="Photo of website author"
-          style={{
-            border: '1px solid white',
-            borderRadius: '20px',
-          }}
-        />
+        <ProfileImage {...profileImageProps} />
       </Box>
       <Box sx={{ gridArea: 'heading' }}>
-        <Typography
-          variant="h1"
-          gutterBottom
-          sx={(theme) => ({
-            fontSize: {
-              xs: '2.75rem',
-              sm: theme.typography.h1.fontSize,
-            },
-          })}
-        >
-          Hi, I&apos;m Nichole
-        </Typography>
+        <Heading>Hi, I&apos;m Nichole</Heading>
         <Typography
           variant="h4"
           component="h2"
