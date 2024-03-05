@@ -16,6 +16,11 @@ const MobileNavigationItem: React.FC<MobileNavigationItemProps> = ({
   href,
   name,
 }) => {
+  const activeStyle = {
+    borderBottom: '4px solid',
+    borderBottomColor: activeColor,
+  };
+
   return (
     <ListItem
       key={href}
@@ -28,14 +33,14 @@ const MobileNavigationItem: React.FC<MobileNavigationItemProps> = ({
         onClick={onClick}
         variant="h3"
         aria-current={isActive ? 'page' : undefined}
-        sx={(theme) => ({
-          color: theme.palette.background.default,
-          borderBottom: isActive ? `${theme.spacing(0.5)} solid` : '',
-          borderBottomColor: isActive ? activeColor : '',
+        sx={{
+          ...(isActive && activeStyle),
+          color: 'background.default',
+
           '&:hover': {
             textDecoration: 'none',
           },
-        })}
+        }}
       >
         {name}
       </NextLink>

@@ -16,6 +16,11 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
   href,
   name,
 }) => {
+  const activeStyle = {
+    borderBottom: '4px solid',
+    borderBottomColor: activeColor,
+  };
+
   return (
     <ListItem
       key={href}
@@ -29,20 +34,19 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
       <NextLink
         href={href}
         aria-current={isActive ? 'page' : undefined}
-        sx={(theme) => ({
+        sx={{
+          ...(isActive && activeStyle),
           boxSizing: 'border-box',
           letterSpacing: '1.25px',
           height: '100%',
           textDecoration: 'none',
           color,
-          borderBottom: isActive ? `${theme.spacing(0.5)} solid` : '',
-          borderBottomColor: isActive ? activeColor : '',
           transition: 'color 0.25s ease',
           '&:hover': {
             color: activeColor,
             textDecoration: 'none',
           },
-        })}
+        }}
       >
         {name}
       </NextLink>

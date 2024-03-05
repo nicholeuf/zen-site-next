@@ -15,12 +15,12 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
 }) => {
   return (
     <Box
-      sx={(theme) => ({
+      sx={{
         typography: 'sacramento',
         fontSize: '30px',
         height: '100%',
         width,
-        borderRight: `${theme.spacing(1)} solid`,
+        borderRight: '8px solid',
         borderRightColor: color,
         display: 'flex',
         justifyContent: 'center',
@@ -28,7 +28,7 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
         '&:hover': {
           cursor: 'pointer',
         },
-      })}
+      }}
       data-testid="header-logo"
     >
       <NextLink
