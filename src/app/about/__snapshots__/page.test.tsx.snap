@@ -445,14 +445,6 @@ exports[`The About Page has expected snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -461,17 +453,6 @@ exports[`The About Page has expected snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.emotion-8 .MuiImageListItem-img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  display: block;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .emotion-10 {
@@ -561,17 +542,8 @@ exports[`The About Page has expected snapshot 1`] = `
             }
           }
         >
-          <li
-            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
-            style={
-              {
-                "breakInside": undefined,
-                "gridColumnEnd": "span 1",
-                "gridRowEnd": "span 1",
-                "height": "auto",
-                "marginBottom": undefined,
-              }
-            }
+          <div
+            className="MuiBox-root emotion-8"
           >
             <div
               className="MuiBox-root emotion-9"
@@ -584,10 +556,17 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 2x"
                 style={
                   {
+                    "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='function () {
+        return fn.apply(this, arguments);
+      }'/%3E%3C/svg%3E")",
+                    "backgroundPosition": "50% 50%",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "borderRadius": "20px",
                     "color": "transparent",
                   }
                 }
@@ -612,18 +591,9 @@ exports[`The About Page has expected snapshot 1`] = `
                 </div>
               </div>
             </div>
-          </li>
-          <li
-            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
-            style={
-              {
-                "breakInside": undefined,
-                "gridColumnEnd": "span 1",
-                "gridRowEnd": "span 1",
-                "height": "auto",
-                "marginBottom": undefined,
-              }
-            }
+          </div>
+          <div
+            className="MuiBox-root emotion-8"
           >
             <div
               className="MuiBox-root emotion-9"
@@ -636,10 +606,17 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 2x"
                 style={
                   {
+                    "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='function () {
+        return fn.apply(this, arguments);
+      }'/%3E%3C/svg%3E")",
+                    "backgroundPosition": "50% 50%",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "borderRadius": "20px",
                     "color": "transparent",
                   }
                 }
@@ -664,18 +641,9 @@ exports[`The About Page has expected snapshot 1`] = `
                 </div>
               </div>
             </div>
-          </li>
-          <li
-            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
-            style={
-              {
-                "breakInside": undefined,
-                "gridColumnEnd": "span 1",
-                "gridRowEnd": "span 1",
-                "height": "auto",
-                "marginBottom": undefined,
-              }
-            }
+          </div>
+          <div
+            className="MuiBox-root emotion-8"
           >
             <div
               className="MuiBox-root emotion-9"
@@ -688,10 +656,17 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 2x"
                 style={
                   {
+                    "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='function () {
+        return fn.apply(this, arguments);
+      }'/%3E%3C/svg%3E")",
+                    "backgroundPosition": "50% 50%",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "borderRadius": "20px",
                     "color": "transparent",
                   }
                 }
@@ -716,18 +691,9 @@ exports[`The About Page has expected snapshot 1`] = `
                 </div>
               </div>
             </div>
-          </li>
-          <li
-            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
-            style={
-              {
-                "breakInside": undefined,
-                "gridColumnEnd": "span 1",
-                "gridRowEnd": "span 1",
-                "height": "auto",
-                "marginBottom": undefined,
-              }
-            }
+          </div>
+          <div
+            className="MuiBox-root emotion-8"
           >
             <div
               className="MuiBox-root emotion-9"
@@ -740,10 +706,17 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 2x"
                 style={
                   {
+                    "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='function () {
+        return fn.apply(this, arguments);
+      }'/%3E%3C/svg%3E")",
+                    "backgroundPosition": "50% 50%",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "borderRadius": "20px",
                     "color": "transparent",
                   }
                 }
@@ -768,18 +741,9 @@ exports[`The About Page has expected snapshot 1`] = `
                 </div>
               </div>
             </div>
-          </li>
-          <li
-            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
-            style={
-              {
-                "breakInside": undefined,
-                "gridColumnEnd": "span 1",
-                "gridRowEnd": "span 1",
-                "height": "auto",
-                "marginBottom": undefined,
-              }
-            }
+          </div>
+          <div
+            className="MuiBox-root emotion-8"
           >
             <div
               className="MuiBox-root emotion-9"
@@ -792,10 +756,17 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 2x"
                 style={
                   {
+                    "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='function () {
+        return fn.apply(this, arguments);
+      }'/%3E%3C/svg%3E")",
+                    "backgroundPosition": "50% 50%",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "borderRadius": "20px",
                     "color": "transparent",
                   }
                 }
@@ -820,18 +791,9 @@ exports[`The About Page has expected snapshot 1`] = `
                 </div>
               </div>
             </div>
-          </li>
-          <li
-            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
-            style={
-              {
-                "breakInside": undefined,
-                "gridColumnEnd": "span 1",
-                "gridRowEnd": "span 1",
-                "height": "auto",
-                "marginBottom": undefined,
-              }
-            }
+          </div>
+          <div
+            className="MuiBox-root emotion-8"
           >
             <div
               className="MuiBox-root emotion-9"
@@ -844,10 +806,17 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 2x"
                 style={
                   {
+                    "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='function () {
+        return fn.apply(this, arguments);
+      }'/%3E%3C/svg%3E")",
+                    "backgroundPosition": "50% 50%",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "borderRadius": "20px",
                     "color": "transparent",
                   }
                 }
@@ -872,18 +841,9 @@ exports[`The About Page has expected snapshot 1`] = `
                 </div>
               </div>
             </div>
-          </li>
-          <li
-            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
-            style={
-              {
-                "breakInside": undefined,
-                "gridColumnEnd": "span 1",
-                "gridRowEnd": "span 1",
-                "height": "auto",
-                "marginBottom": undefined,
-              }
-            }
+          </div>
+          <div
+            className="MuiBox-root emotion-8"
           >
             <div
               className="MuiBox-root emotion-9"
@@ -896,10 +856,17 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 2x"
                 style={
                   {
+                    "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='function () {
+        return fn.apply(this, arguments);
+      }'/%3E%3C/svg%3E")",
+                    "backgroundPosition": "50% 50%",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "borderRadius": "20px",
                     "color": "transparent",
                   }
                 }
@@ -924,18 +891,9 @@ exports[`The About Page has expected snapshot 1`] = `
                 </div>
               </div>
             </div>
-          </li>
-          <li
-            className="MuiImageListItem-root MuiImageListItem-standard emotion-8"
-            style={
-              {
-                "breakInside": undefined,
-                "gridColumnEnd": "span 1",
-                "gridRowEnd": "span 1",
-                "height": "auto",
-                "marginBottom": undefined,
-              }
-            }
+          </div>
+          <div
+            className="MuiBox-root emotion-8"
           >
             <div
               className="MuiBox-root emotion-9"
@@ -948,10 +906,17 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/r_20/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 2x"
                 style={
                   {
+                    "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='function () {
+        return fn.apply(this, arguments);
+      }'/%3E%3C/svg%3E")",
+                    "backgroundPosition": "50% 50%",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundSize": "cover",
+                    "borderRadius": "20px",
                     "color": "transparent",
                   }
                 }
@@ -976,7 +941,7 @@ exports[`The About Page has expected snapshot 1`] = `
                 </div>
               </div>
             </div>
-          </li>
+          </div>
         </ul>
       </div>
     </div>

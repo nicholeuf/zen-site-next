@@ -44,6 +44,13 @@ export {
   customSnapshotRenderWithLayout as renderSnapshotWithLayout,
 };
 
+// https://stackoverflow.com/a/77238122/23029493
+// Use for async server components
+export async function resolvedComponent(Component: any, props?: any) {
+  const ComponentResolved = await Component(props);
+  return () => ComponentResolved;
+}
+
 // https://mui.com/material-ui/react-use-media-query/#testing
 export const createMatchMedia = (width: unknown) => {
   return (query: string): MediaQueryList => ({
