@@ -556,8 +556,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVABqBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVABqBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVABqBy0 2x"
                 style={
                   {
                     "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blurred-image'/%3E%3C/svg%3E")",
@@ -604,8 +604,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVABqBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVABqBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVABqBy0 2x"
                 style={
                   {
                     "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blurred-image'/%3E%3C/svg%3E")",
@@ -652,8 +652,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVABqBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVABqBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVABqBy0 2x"
                 style={
                   {
                     "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blurred-image'/%3E%3C/svg%3E")",
@@ -700,8 +700,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVABqBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVABqBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVABqBy0 2x"
                 style={
                   {
                     "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blurred-image'/%3E%3C/svg%3E")",
@@ -748,8 +748,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVABqBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVABqBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVABqBy0 2x"
                 style={
                   {
                     "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blurred-image'/%3E%3C/svg%3E")",
@@ -796,8 +796,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVABqBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVABqBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVABqBy0 2x"
                 style={
                   {
                     "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blurred-image'/%3E%3C/svg%3E")",
@@ -844,8 +844,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVABqBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVABqBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVABqBy0 2x"
                 style={
                   {
                     "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blurred-image'/%3E%3C/svg%3E")",
@@ -892,8 +892,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 loading="lazy"
                 onError={[Function]}
                 onLoad={[Function]}
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0"
-                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_300,h_300,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAfVBy0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVABqBy0"
+                srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVABqBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVABqBy0 2x"
                 style={
                   {
                     "backgroundImage": "url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='none' style='filter: url(%23b);' href='blurred-image'/%3E%3C/svg%3E")",
@@ -1536,7 +1536,7 @@ exports[`The About Page has expected snapshot 1`] = `
           </a>
            | 
           <button
-            className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall emotion-17"
+            className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-17"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}

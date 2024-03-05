@@ -21,7 +21,7 @@ const getPlaceholderImage = async ({
     src,
     opacity,
     // lqip is a named transformation in cloudinary
-    transformations: 'lqip',
+    namedTransformations: 'lqip',
     width,
     height,
   });
