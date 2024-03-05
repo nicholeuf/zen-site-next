@@ -1,25 +1,22 @@
 import BackgroundImage from '@/components/BackgroundImage';
 import { ProfileImageProps } from './ProfileImage';
 import Content from './Content';
+import { CldImageProps } from 'next-cloudinary';
 
 export interface LandingPageProps {
   profileImageProps: ProfileImageProps;
+  backgroundImageProps: CldImageProps;
 }
 
-const LandingPage: React.FC<LandingPageProps> = ({ profileImageProps }) => {
+const LandingPage: React.FC<LandingPageProps> = ({
+  profileImageProps,
+  backgroundImageProps,
+}) => {
   return (
     <BackgroundImage
       wrapperTestId="landing"
       imageTestId="landing-background-image"
-      imageProps={{
-        opacity: '20',
-        src: 'zensite/andrei-slobtsov-Med3Kuxz97c-unsplash',
-        quality: '5',
-        alt: '',
-        style: {
-          objectPosition: '50% 25%',
-        },
-      }}
+      imageProps={backgroundImageProps}
       centerContent
     >
       <Content profileImageProps={profileImageProps} />

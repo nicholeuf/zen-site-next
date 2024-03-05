@@ -2,8 +2,9 @@ import { Metadata } from 'next';
 
 import getPlaceholderImage from './lib/getPlaceholderImage';
 
-import LandingPage from '@/components/LandingPage';
+import LandingPage, { LandingPageProps } from '@/components/LandingPage';
 import { ProfileImageProps } from '@/components/LandingPage/ProfileImage';
+import { CldImageProps } from 'next-cloudinary';
 
 export const metadata: Metadata = {
   title: 'The Coding Yogi | Nichole Frey',
@@ -22,31 +23,50 @@ const profileImageProps: ProfileImageProps = {
   },
 };
 
-interface LandingPageServerSideProps {
-  blurDataURL: string;
-}
+const backgroundImageProps: CldImageProps = {
+  opacity: '20',
+  src: 'zensite/andrei-slobtsov-Med3Kuxz97c-unsplash',
+  quality: '5',
+  alt: '',
+  style: {
+    objectPosition: '50% 25%',
+  },
+};
 
-const getServerSideProps = async (): Promise<LandingPageServerSideProps> => {
-  const blurDataURL = await getPlaceholderImage({
+const getServerSideProps = async (): Promise<LandingPageProps> => {
+  const getProfileBlurDataUrl = getPlaceholderImage({
     src: profileImageProps.src,
     width: profileImageProps.width as number,
     height: profileImageProps.height as number,
   });
 
-  return { blurDataURL };
+  const getBackgroundBlurDataUrl = getPlaceholderImage({
+    src: backgroundImageProps.src,
+    opacity: '5',
+  });
+
+  const [profileBlurDataURL, backgroundBlurDataUrl] = await Promise.all([
+    getProfileBlurDataUrl,
+    getBackgroundBlurDataUrl,
+  ]);
+
+  return {
+    backgroundImageProps: {
+      ...backgroundImageProps,
+      placeholder: 'blur',
+      blurDataURL: backgroundBlurDataUrl,
+    },
+    profileImageProps: {
+      ...profileImageProps,
+      placeholder: 'blur',
+      blurDataURL: profileBlurDataURL,
+    },
+  };
 };
 
 const Home: React.FC = async () => {
-  const { blurDataURL } = await getServerSideProps();
-  return (
-    <LandingPage
-      profileImageProps={{
-        ...profileImageProps,
-        placeholder: 'blur',
-        blurDataURL,
-      }}
-    />
-  );
+  const props = await getServerSideProps();
+  return <LandingPage {...props} />;
 };
 
 export default Home;
