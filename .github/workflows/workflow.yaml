@@ -22,9 +22,7 @@ jobs:
           NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
           NEXT_PUBLIC_GOOGLE_AUTHENTICATION: ${{ secrets.NEXT_PUBLIC_GOOGLE_AUTHENTICATION }}
           NEXT_PUBLIC_SMALLCHAT_ENABLED: ${{ secrets.NEXT_PUBLIC_SMALLCHAT_ENABLED }}
-        run: |
-          echo "$NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME"
-          yarn test
+        run: yarn test
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4
         with:
