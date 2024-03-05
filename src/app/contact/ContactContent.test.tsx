@@ -3,7 +3,7 @@
  */
 import { render, screen } from 'test-utils';
 
-import ContactPage from './ContactPage';
+import ContactContent from './ContactContent';
 
 const mockUsePathname = jest.fn();
 
@@ -19,7 +19,7 @@ describe('The Contact Page Component', () => {
   });
 
   test('has expected content when chat enabled', () => {
-    render(<ContactPage chatEnabled />);
+    render(<ContactContent chatEnabled />);
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
       'Contact'
@@ -30,7 +30,7 @@ describe('The Contact Page Component', () => {
   });
 
   test('has expected content when chat is not enabled', () => {
-    render(<ContactPage chatEnabled={false} />);
+    render(<ContactContent chatEnabled={false} />);
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
       'Contact'

@@ -422,7 +422,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-3 {
+.emotion-4 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -432,24 +432,24 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-3 {
+  .emotion-4 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-3 {
+  .emotion-4 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-3 {
+  .emotion-4 {
     font-size: 5.9983rem;
   }
 }
 
-.emotion-4 {
+.emotion-5 {
   margin: 0;
   font-size: 0.9rem;
   font-family: fontFamily;
@@ -457,7 +457,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   line-height: 1.43;
 }
 
-.emotion-5 {
+.emotion-6 {
   margin: 0;
   font: inherit;
   color: #FA2742;
@@ -466,7 +466,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   font-weight: 500;
 }
 
-.emotion-5:hover {
+.emotion-6:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -504,28 +504,32 @@ exports[`The Contact Page has expected snapshot 1`] = `
       <div
         className="MuiBox-root emotion-2"
       >
-        <h1
-          className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-3"
+        <div
+          className="MuiBox-root emotion-3"
         >
-          Contact
-        </h1>
-        <p
-          className="MuiTypography-root MuiTypography-body2 emotion-4"
-          data-testid="contact-copy"
-        >
-          Please connect with me on 
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-5"
-            href="https://www.linkedin.com/in/nicholeuf"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            rel="noopener"
-            target="_blank"
+          <h1
+            className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-4"
           >
-            LinkedIn
-          </a>
-          . I look forward to hearing from you!
-        </p>
+            Contact
+          </h1>
+          <p
+            className="MuiTypography-root MuiTypography-body2 emotion-5"
+            data-testid="contact-copy"
+          >
+            Please connect with me on 
+            <a
+              className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+              href="https://www.linkedin.com/in/nicholeuf"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              rel="noopener"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+            . I look forward to hearing from you!
+          </p>
+        </div>
       </div>
     </div>
   </main>,
