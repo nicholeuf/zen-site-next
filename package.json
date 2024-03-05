@@ -20,7 +20,7 @@
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "next": "^14.1.2",
-    "next-cloudinary": "^5.20.0",
+    "next-cloudinary": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ua-parser-js": "^1.0.37"

@@ -440,28 +440,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudinary-util/url-loader@npm:^4.1.1":
-  version: 4.2.0
-  resolution: "@cloudinary-util/url-loader@npm:4.2.0"
+"@cloudinary-util/types@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@cloudinary-util/types@npm:1.0.0"
+  checksum: 10c0/17bfd4dfccd0bcad9d9e588147805fd90f1a6b21c529fc9230dc52f4a9e8a14328ad3eca3f47be7ad7b45d68f484f79bbab84e3c6e1d8af7ca06872fc6492544
+  languageName: node
+  linkType: hard
+
+"@cloudinary-util/url-loader@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@cloudinary-util/url-loader@npm:5.1.0"
   dependencies:
     "@cloudinary-util/util": "npm:3.0.0"
     "@cloudinary/url-gen": "npm:1.15.0"
     zod: "npm:^3.22.4"
-  checksum: 10c0/1e99dbe84d68a750ec20d303cb48839dfb1bc1bacc7aa7ca2bf12468200186fe7cba36543bd7d3438469fc19a2c617af576933b98f953e616906d947001714e2
+  checksum: 10c0/5fa8a5043f4d4d110d8f3a9e3f82bd1f693bce9cb627bcee4d6a46eb0b78ee97474aaa83d78d8a96e1c2f945912064ebe36a5cea64c58e9b7b51f321a5d99532
   languageName: node
   linkType: hard
 
-"@cloudinary-util/util@npm:3.0.0":
+"@cloudinary-util/util@npm:3.0.0, @cloudinary-util/util@npm:^3.0.0":
   version: 3.0.0
   resolution: "@cloudinary-util/util@npm:3.0.0"
   checksum: 10c0/59f792bcee17c6e0782c3d325b47a0a888da6e5c4eac5f9ee99c5c58cbe6cd70b6a9e417f30155b2070487deab93089805b1196e63bdbb01228f38e57850c7bb
-  languageName: node
-  linkType: hard
-
-"@cloudinary-util/util@npm:^2.3.0":
-  version: 2.4.0
-  resolution: "@cloudinary-util/util@npm:2.4.0"
-  checksum: 10c0/9bf0fea5d17dfdf4371c7507d95261612faba89bde4cb6983a5f5dad5209211f1e14936da61a33d07bb110548923ee31e88433362b566f308ea0892d6d8eb2d4
   languageName: node
   linkType: hard
 
@@ -1817,6 +1817,13 @@ __metadata:
   version: 1.0.4
   resolution: "@tsconfig/node16@npm:1.0.4"
   checksum: 10c0/05f8f2734e266fb1839eb1d57290df1664fe2aa3b0fdd685a9035806daa635f7519bf6d5d9b33f6e69dd545b8c46bd6e2b5c79acb2b1f146e885f7f11a42a5bb
+  languageName: node
+  linkType: hard
+
+"@tsconfig/recommended@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@tsconfig/recommended@npm:1.0.3"
+  checksum: 10c0/2744d2798d52d337a7b0b78f6efa070ecda4e42262e93589d4bed615a55639a84035a8e3b2b020f2396f1f7832294b8c00d7acc78e644418566447ca53df9078
   languageName: node
   linkType: hard
 
@@ -5925,16 +5932,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-cloudinary@npm:^5.20.0":
-  version: 5.20.0
-  resolution: "next-cloudinary@npm:5.20.0"
+"next-cloudinary@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "next-cloudinary@npm:6.1.0"
   dependencies:
-    "@cloudinary-util/url-loader": "npm:^4.1.1"
-    "@cloudinary-util/util": "npm:^2.3.0"
+    "@cloudinary-util/types": "npm:1.0.0"
+    "@cloudinary-util/url-loader": "npm:5.1.0"
+    "@cloudinary-util/util": "npm:^3.0.0"
+    "@tsconfig/recommended": "npm:^1.0.3"
   peerDependencies:
     next: ^12 || ^13 || ^14
     react: ^17 || ^18
-  checksum: 10c0/4d24e0e0dbd4af7dbafa04def6e4a789b3836bf773cd71efde50c8ecc0c3efed7478c0df2653965edc0efffa131e08055b0927df32b03741eb1ff37a61ffd015
+  checksum: 10c0/8aac1f786e74df30c6434c9e241ce2f2c6701be337383cd0565ee9e2a70e63b9ef6d65c8751bfef3e7ea906b0d81f1f22dabcae16736628c05c2aba1533bc644
   languageName: node
   linkType: hard
 
@@ -7957,7 +7966,7 @@ __metadata:
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
     next: "npm:^14.1.2"
-    next-cloudinary: "npm:^5.20.0"
+    next-cloudinary: "npm:^6.1.0"
     prettier: "npm:^3.2.5"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
