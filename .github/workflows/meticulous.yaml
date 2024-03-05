@@ -48,7 +48,9 @@ jobs:
           NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
           NEXT_PUBLIC_GOOGLE_AUTHENTICATION: ${{ secrets.NEXT_PUBLIC_GOOGLE_AUTHENTICATION }}
           NEXT_PUBLIC_SMALLCHAT_ENABLED: ${{ secrets.NEXT_PUBLIC_SMALLCHAT_ENABLED }}
-        run: yarn build
+        run: |
+          echo "$NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME"
+          yarn build
 
       - name: Serve project
         # TODO: Update these commands to serve your app's frontend locally, and
