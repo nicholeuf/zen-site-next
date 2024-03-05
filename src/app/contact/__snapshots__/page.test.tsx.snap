@@ -487,8 +487,8 @@ exports[`The Contact Page has expected snapshot 1`] = `
         loading="lazy"
         onError={[Function]}
         onLoad={[Function]}
-        src="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_368,h_644,g_auto/o_30/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAfVBy0"
-        srcSet="https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_368,h_644,g_auto/o_30/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAfVBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_fill,w_368,h_644,g_auto/o_30/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAfVBy0 2x"
+        src="https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_fill,w_750,h_1312,g_auto/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVABqBy0"
+        srcSet="https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_fill,w_384,h_672,g_auto/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVABqBy0 1x, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_fill,w_750,h_1312,g_auto/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVABqBy0 2x"
         style={
           {
             "color": "transparent",
