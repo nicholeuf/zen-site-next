@@ -9,10 +9,12 @@ import {
   resetMatchMedia,
   XS_DEVICE,
   SM_DEVICE,
+  resolvedComponent,
 } from 'test-utils';
 import AboutPage from './page';
 
 const mockUsePathname = jest.fn();
+const mockGetPlaceholderImage = jest.fn();
 
 jest.mock('next/navigation', () => ({
   usePathname() {
@@ -20,15 +22,19 @@ jest.mock('next/navigation', () => ({
   },
 }));
 
+jest.mock('../lib/getPlaceholderImage', () => () => mockGetPlaceholderImage());
+
 describe('The About Page', () => {
   beforeAll(() => {
     mockUsePathname.mockImplementation(() => '/about');
+    mockGetPlaceholderImage.mockImplementation(() => 'blurred-image');
 
     resetMatchMedia();
   });
 
-  test('has expected snapshot', () => {
-    const component = renderSnapshotWithLayout(<AboutPage />);
+  test('has expected snapshot', async () => {
+    const AboutResolved = await resolvedComponent(AboutPage);
+    const component = renderSnapshotWithLayout(<AboutResolved />);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
@@ -36,16 +42,18 @@ describe('The About Page', () => {
 
   test.each([['header'], ['about-page'], ['footer']])(
     'contains the visible testid %p',
-    (testid) => {
-      renderWithLayout(<AboutPage />);
+    async (testid) => {
+      const AboutResolved = await resolvedComponent(AboutPage);
+      renderWithLayout(<AboutResolved />);
       const component = screen.getByTestId(testid);
       expect(component).toBeVisible();
     }
   );
 
   describe('User on Desktop', () => {
-    test('has a 3-column layout', () => {
-      render(<AboutPage />);
+    test('has a 3-column layout', async () => {
+      const AboutResolved = await resolvedComponent(AboutPage);
+      render(<AboutResolved />);
 
       const heading = screen.getByRole('heading', { level: 1 });
       expect(heading).toBeVisible();
@@ -66,8 +74,9 @@ describe('The About Page', () => {
       resetMatchMedia(XS_DEVICE);
     });
 
-    test('has a 1-column layout', () => {
-      render(<AboutPage />);
+    test('has a 1-column layout', async () => {
+      const AboutResolved = await resolvedComponent(AboutPage);
+      render(<AboutResolved />);
 
       const heading = screen.getByRole('heading', { level: 1 });
       expect(heading).toBeVisible();
@@ -88,8 +97,9 @@ describe('The About Page', () => {
       resetMatchMedia(SM_DEVICE);
     });
 
-    test('has a 2-column layout', () => {
-      render(<AboutPage />);
+    test('has a 2-column layout', async () => {
+      const AboutResolved = await resolvedComponent(AboutPage);
+      render(<AboutResolved />);
 
       const heading = screen.getByRole('heading', { level: 1 });
       expect(heading).toBeVisible();

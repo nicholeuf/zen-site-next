@@ -4,12 +4,41 @@ import { Metadata } from 'next';
 
 import PageContainer from '@/components/PageContainer';
 import Photos from './Photos';
+import Photo from './Photo';
+import { ItemDataPlaceholder, itemData } from './constants';
+import getPlaceholderImage from '../lib/getPlaceholderImage';
+import ImageDimensions from '@/types/ImageDimensions';
 
 export const metadata: Metadata = {
   title: 'About',
 };
 
-const About: React.FC = () => {
+const dim: ImageDimensions = {
+  width: 300,
+  height: 300,
+};
+
+const getServerSideProps = async () => {
+  const itemDataPlaceholder = await Promise.all(
+    itemData.map(async (item): Promise<ItemDataPlaceholder> => {
+      const blurDataURL = await getPlaceholderImage({
+        src: item.src,
+        ...dim,
+      });
+      return {
+        ...item,
+        ...dim,
+        blurDataURL,
+      };
+    })
+  );
+
+  return { itemDataPlaceholder };
+};
+
+const About: React.FC = async () => {
+  const { itemDataPlaceholder } = await getServerSideProps();
+
   return (
     <PageContainer data-testid="about-page">
       <Typography variant="h1" gutterBottom>
@@ -37,7 +66,11 @@ const About: React.FC = () => {
           mt: 3,
         }}
       >
-        <Photos />
+        <Photos>
+          {itemDataPlaceholder.map((item) => (
+            <Photo key={item.src} {...item} />
+          ))}
+        </Photos>
       </Box>
     </PageContainer>
   );

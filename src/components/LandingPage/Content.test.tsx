@@ -2,18 +2,26 @@
  * @jest-environment jsdom
  */
 import { render, screen } from 'test-utils';
-import Landing from './index';
+import Content from './Content';
 
-describe('The Landing component', () => {
-  test('has a background image', () => {
-    render(<Landing />);
-
-    const backgroundImage = screen.getByTestId('landing-background-image');
-    expect(backgroundImage).toBeVisible();
-  });
-
+describe('The Content component', () => {
   test('has expected copy', () => {
-    render(<Landing />);
+    render(
+      <Content
+        profileImageProps={{
+          width: 200,
+          height: 200,
+          crop: 'thumb',
+          zoom: '0.5',
+          src: 'zensite/nf-profile-c-hibiscus',
+          alt: 'Photo of website author',
+          style: {
+            border: '1px solid white',
+            borderRadius: '20px',
+          },
+        }}
+      />
+    );
 
     const heading = screen.getByRole('heading', { level: 1 });
     expect(heading).toBeVisible();

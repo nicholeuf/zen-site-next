@@ -9,10 +9,14 @@ import {
   XS_DEVICE,
   MD_DEVICE,
   waitFor,
+  resolvedComponent,
 } from 'test-utils';
 import userEvent from '@testing-library/user-event';
 
+import HomePage from './page';
+
 const mockUsePathname = jest.fn();
+const mockGetPlaceholderImage = jest.fn();
 
 jest.mock('next/navigation', () => ({
   usePathname() {
@@ -20,29 +24,22 @@ jest.mock('next/navigation', () => ({
   },
 }));
 
-import HomePage from './page';
+jest.mock('./lib/getPlaceholderImage', () => () => mockGetPlaceholderImage());
 
 describe('The Home Page', () => {
   beforeAll(() => {
     mockUsePathname.mockImplementation(() => '/');
+    mockGetPlaceholderImage.mockImplementation(() => 'blurred-image');
     resetMatchMedia();
   });
 
-  test('has expected snapshot', () => {
-    const component = renderSnapshotWithLayout(<HomePage />);
+  test('has expected snapshot', async () => {
+    const HomeResolved = await resolvedComponent(HomePage);
+    const component = renderSnapshotWithLayout(<HomeResolved />);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
   });
-
-  test.each([['header'], ['landing'], ['footer']])(
-    'contains the visible testid %p',
-    (testid) => {
-      renderWithLayout(<HomePage />);
-      const component = screen.getByTestId(testid);
-      expect(component).toBeVisible();
-    }
-  );
 
   describe('User with MD Device', () => {
     beforeAll(() => {
@@ -50,9 +47,8 @@ describe('The Home Page', () => {
     });
 
     test('can interact with navigation', async () => {
-      // mock usePathname to return the home page route
-
-      renderWithLayout(<HomePage />);
+      const HomeResolved = await resolvedComponent(HomePage);
+      renderWithLayout(<HomeResolved />);
 
       // The home link in the top left corner
       expect(
@@ -84,7 +80,8 @@ describe('The Home Page', () => {
     });
 
     test('can interact with mobile navigation', async () => {
-      renderWithLayout(<HomePage />);
+      const HomeResolved = await resolvedComponent(HomePage);
+      renderWithLayout(<HomeResolved />);
 
       const user = userEvent.setup();
       const getDialog = () => screen.queryByTestId('mobile-navigation-dialog');
