@@ -22,15 +22,12 @@ jest.mock('next/navigation', () => ({
   },
 }));
 
-jest.mock(
-  '../lib/getPlaceholderImage',
-  () => () =>
-    mockGetPlaceholderImage.mockImplementation(() => 'image-placeholder')
-);
+jest.mock('../lib/getPlaceholderImage', () => () => mockGetPlaceholderImage());
 
 describe('The About Page', () => {
   beforeAll(() => {
     mockUsePathname.mockImplementation(() => '/about');
+    mockGetPlaceholderImage.mockImplementation(() => 'blurred-image');
 
     resetMatchMedia();
   });
