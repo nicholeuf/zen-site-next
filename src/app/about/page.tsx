@@ -18,8 +18,8 @@ const dim: ImageDimensions = {
   height: 300,
 };
 
-const processImages = async () => {
-  return await Promise.all(
+const getServerSideProps = async () => {
+  const itemDataPlaceholder = await Promise.all(
     itemData.map(async (item): Promise<ItemDataPlaceholder> => {
       const blurDataURL = await getPlaceholderImage({
         src: item.src,
@@ -32,10 +32,12 @@ const processImages = async () => {
       };
     })
   );
+
+  return { itemDataPlaceholder };
 };
 
 const About: React.FC = async () => {
-  const data = await processImages();
+  const { itemDataPlaceholder } = await getServerSideProps();
 
   return (
     <PageContainer data-testid="about-page">
@@ -65,7 +67,7 @@ const About: React.FC = async () => {
         }}
       >
         <Photos>
-          {data.map((item) => (
+          {itemDataPlaceholder.map((item) => (
             <Photo key={item.src} {...item} />
           ))}
         </Photos>
