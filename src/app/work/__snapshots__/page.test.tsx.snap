@@ -188,14 +188,14 @@ exports[`The Work Page has expected snapshot 1`] = `
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
+  border-bottom: 4px solid;
+  border-bottom-color: rgb(251, 82, 103);
   box-sizing: border-box;
   letter-spacing: 1.25px;
   height: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #373833;
-  border-bottom: 4px solid;
-  border-bottom-color: rgb(251, 82, 103);
   -webkit-transition: color 0.25s ease;
   transition: color 0.25s ease;
 }

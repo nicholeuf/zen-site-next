@@ -1,10 +1,6 @@
-import React, {
-  useState,
-  forwardRef,
-  Fragment,
-  useRef,
-  useEffect,
-} from 'react';
+'use client';
+
+import { useState, forwardRef, Fragment, useRef, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';

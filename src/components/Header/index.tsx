@@ -1,12 +1,7 @@
-'use client';
 import AppBar from '@mui/material/AppBar';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { Theme } from '@mui/material/styles';
-
-import HeaderLogo from './HeaderLogo';
-import Navigation from './Navigation';
 import constants from '@/app/styles/constants';
-import MobileNavigation from './MobileNavigation';
+import HeaderLogo from './HeaderLogo';
+import MainNavigation from './MainNavigation';
 
 interface HeaderProps {
   color?: string;
@@ -19,17 +14,13 @@ const Header: React.FC<HeaderProps> = ({
   activeColor = 'primary.light',
   height = constants.header.height,
 }) => {
-  const isMobile = useMediaQuery<Theme>((theme) =>
-    theme.breakpoints.down('sm')
-  );
-
   return (
     <AppBar
       data-testid="header"
       position="fixed"
-      sx={(theme) => ({
+      sx={{
         backgroundColor: 'background.default',
-        border: `${theme.spacing(1)} solid`,
+        border: '8px solid',
         borderColor: color,
         minHeight: height,
         height,
@@ -39,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({
         justifyContent: 'space-between',
         alignItems: 'center',
         boxShadow: 'none',
-      })}
+      }}
     >
       <HeaderLogo
         // width === height of header to make logo a box
@@ -47,11 +38,7 @@ const Header: React.FC<HeaderProps> = ({
         color={color}
         activeColor={activeColor}
       />
-      {isMobile ? (
-        <MobileNavigation activeColor={activeColor} />
-      ) : (
-        <Navigation color={color} activeColor={activeColor} />
-      )}
+      <MainNavigation color={color} activeColor={activeColor} />
     </AppBar>
   );
 };
