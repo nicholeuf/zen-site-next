@@ -2,7 +2,7 @@
 
 import { useState, SyntheticEvent } from 'react';
 import Box from '@mui/material/Box';
-import Tabs from '@mui/material/Tabs';
+import Tabs, { TabsProps } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
 import { WorkItemType } from './constants';
@@ -17,13 +17,20 @@ type TabsOnChange = (event: SyntheticEvent, value: any) => void;
 
 interface WorkTabsProps {
   items: WorkItemType[];
+  scrollable: boolean;
 }
 
-const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
+const WorkTabs: React.FC<WorkTabsProps> = ({ items, scrollable }) => {
   const [value, setValue] = useState(0);
 
   const handleChange: TabsOnChange = (_, newValue) => {
     setValue(newValue);
+  };
+
+  const scrollableProps: TabsProps = {
+    variant: 'scrollable',
+    scrollButtons: true,
+    allowScrollButtonsMobile: true,
   };
 
   return (
@@ -33,11 +40,9 @@ const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
           value={value}
           onChange={handleChange}
           aria-label="work experience tabs"
-          variant="scrollable"
-          scrollButtons
-          allowScrollButtonsMobile
           // https://mui.com/base-ui/react-tabs/#keyboard-navigation
           selectionFollowsFocus
+          {...(scrollable && scrollableProps)}
         >
           {items.map((item, index) => {
             return (

@@ -7,7 +7,7 @@ import {
   screen,
   renderSnapshotWithLayout,
 } from 'test-utils';
-// import userEvent from '@testing-library/user-event';
+import userEvent from '@testing-library/user-event';
 
 import WorkPage from './page';
 
@@ -46,10 +46,10 @@ describe('The Work Page', () => {
     }
   );
 
-  test('works as expected', () => {
-    // const user = userEvent.setup();
+  test('works as expected', async () => {
+    const user = userEvent.setup();
 
-    render(<WorkPage />);
+    render(<WorkPage scrollable={false} />);
 
     const heading = screen.getByRole('heading', { level: 1 });
     expect(heading).toBeVisible();
@@ -65,7 +65,8 @@ describe('The Work Page', () => {
     expect(imperfectTab).toBeVisible();
 
     // TODO https://github.com/nicholeuf/zen-site-next/issues/30
-    // await user.click(imperfectTab);
+    // This triggers an error, which only happens while under test
+    await user.click(imperfectTab);
 
     // const imperfectHeading2 = screen.getByRole('heading', { level: 2 });
     // expect(imperfectHeading2).toBeVisible();
