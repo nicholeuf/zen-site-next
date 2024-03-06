@@ -9,7 +9,11 @@ export const metadata: Metadata = {
   title: 'Work',
 };
 
-const Work: React.FC = () => {
+interface WorkProps {
+  scrollable?: boolean;
+}
+
+const Work: React.FC<WorkProps> = ({ scrollable = true }) => {
   return (
     <PageContainer data-testid="work-page">
       <Typography variant="h1" gutterBottom>
@@ -24,7 +28,7 @@ const Work: React.FC = () => {
         mentorship to colleagues, and collaborating within agile,
         cross-functional teams.
       </Typography>
-      <WorkTabs items={items} />
+      <WorkTabs items={items} scrollable={scrollable} />
     </PageContainer>
   );
 };
