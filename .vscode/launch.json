@@ -23,6 +23,18 @@
         "uriFormat": "%s",
         "action": "debugWithChrome"
       }
+    },
+    {
+      "name": "Next.js: tests",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn test"
+    },
+    {
+      "name": "Next.js: watch tests",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn test:watch"
     }
   ]
 }
