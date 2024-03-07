@@ -45,7 +45,7 @@ yarn-error.log*
 # Edit at https://www.gitignore.io/?templates=visualstudiocode
 
 ### VisualStudioCode ###
-.vscode/*      # Maybe .vscode/**/* instead - see comments
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -56,3 +56,4 @@ yarn-error.log*
 **/.history
 
 # End of https://www.gitignore.io/api/visualstudiocode
+
