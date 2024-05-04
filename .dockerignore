@@ -1,0 +1,10 @@
+# add git-ignore syntax here of things you don't want copied into docker image
+.git
+coverage
+*Dockerfile*
+node_modules
+.env*
+.vscode
+.editorconfig
+.prettierrc
+.prettierignore
