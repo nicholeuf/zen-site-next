@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  app:
+    ports:
+      - '3000:3000'
+      - '9229:9229'
+      - '9230:9230'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env.local
+    working_dir: /app
+    volumes:
+      - .:/app

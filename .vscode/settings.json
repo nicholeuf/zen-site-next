@@ -7,6 +7,7 @@
     "**/.pnp.*": true
   },
   "eslint.nodePath": ".yarn/sdks",
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "prettier.prettierPath": "./node_modules/prettier",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "eslint.codeActionsOnSave.rules": null
 }

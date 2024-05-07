@@ -1,8 +1,9 @@
 {
   "name": "zen-site-next",
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "pnpm@9.0.6+sha256.0624e30eff866cdeb363b15061bdb7fd9425b17bc1bb42c22f5f4efdea21f6b3",
   "scripts": {
     "dev": "next dev",
+    "dev:debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -20,7 +21,7 @@
     "@sentry/nextjs": "^7.105.0",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "next": "^14.1.2",
+    "next": "^14.2.3",
     "next-cloudinary": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
