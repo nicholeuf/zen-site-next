@@ -1,22 +1,18 @@
 import ListItem from '@mui/material/ListItem';
-
-import SimpleIcon from '@/components/SimpleIcon';
+import IconButton from '@mui/material/IconButton';
 import ExternalLink from '@/components/ExternalLink';
 
 interface NavigationItemProps {
   href: string;
-  alt: string;
-  slug: string;
+  children: React.ReactNode;
   ariaLabel?: string;
-  color: string;
 }
 
 const NavigationItem: React.FC<NavigationItemProps> = ({
   href,
-  alt,
-  slug,
+  children,
+
   ariaLabel,
-  color,
 }) => {
   return (
     <ListItem
@@ -48,7 +44,13 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         }}
         aria-label={ariaLabel}
       >
-        <SimpleIcon slug={slug} alt={alt} color={color} />
+        <IconButton
+          sx={{
+            p: 0,
+          }}
+        >
+          {children}
+        </IconButton>
       </ExternalLink>
     </ListItem>
   );
