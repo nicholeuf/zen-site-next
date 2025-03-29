@@ -1,22 +1,23 @@
 import List from '@mui/material/List';
 import Box from '@mui/material/Box';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GithubIcon from '@mui/icons-material/GitHub';
 
 import constants from '@/app/styles/constants';
 import NavigationItem from './NavigationItem';
 
-// SimpleIcon expects a color hex without the hash
-const color = constants.colors.cream.replace('#', '');
+const iconColor = constants.colors.cream;
 
 const links = [
   {
     slug: 'linkedin',
-    alt: 'LinkedIn External Link',
+    icon: LinkedInIcon,
     href: 'https://www.linkedin.com/in/nicholeuf',
     ariaLabel: 'LinkedIn (opens in new window)',
   },
   {
     slug: 'github',
-    alt: 'Github External Link',
+    icon: GithubIcon,
     href: 'https://github.com/nicholeuf',
     ariaLabel: 'GitHub (opens in new window)',
   },
@@ -49,7 +50,9 @@ const Navigation: React.FC = () => {
         }}
       >
         {links.map((item) => (
-          <NavigationItem key={item.slug} {...item} color={color} />
+          <NavigationItem key={item.slug} {...item}>
+            <item.icon sx={{ color: iconColor }} />
+          </NavigationItem>
         ))}
       </List>
     </Box>
