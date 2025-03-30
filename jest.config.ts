@@ -123,7 +123,6 @@ const config: Config = {
       'jest-junit',
       {
         outputDirectory: '<rootDir>/junit',
-        classNameTemplate: '{filepath}',
       },
     ],
   ],
