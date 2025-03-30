@@ -34,10 +34,8 @@ describe('The About Page', () => {
 
   test('has expected snapshot', async () => {
     const AboutResolved = await resolvedComponent(AboutPage);
-    const component = renderSnapshotWithLayout(<AboutResolved />);
-    const tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
+    const { container } = renderSnapshotWithLayout(<AboutResolved />);
+    expect(container).toMatchSnapshot();
   });
 
   test.each([['header'], ['about-page'], ['footer']])(

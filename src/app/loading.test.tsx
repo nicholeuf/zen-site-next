@@ -18,10 +18,8 @@ describe('The Loading Page', () => {
     mockUsePathname.mockImplementation(() => '/contact');
   });
 
-  test('has expected snapshot', () => {
-    const component = renderSnapshotWithLayout(<Loading />);
-    const tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
+  test('has expected snapshot', async () => {
+    const { container } = renderSnapshotWithLayout(<Loading />);
+    expect(container).toMatchSnapshot();
   });
 });

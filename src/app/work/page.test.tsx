@@ -30,11 +30,9 @@ describe('The Work Page', () => {
     mockUsePathname.mockImplementation(() => '/work');
   });
 
-  test('has expected snapshot', () => {
-    const component = renderSnapshotWithLayout(<WorkPage />);
-    const tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
+  test('has expected snapshot', async () => {
+    const { container } = renderSnapshotWithLayout(<WorkPage />);
+    expect(container).toMatchSnapshot();
   });
 
   test.each([['header'], ['work-page'], ['footer']])(

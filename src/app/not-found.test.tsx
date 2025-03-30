@@ -25,14 +25,12 @@ describe('The Not Found (404) Page', () => {
     resetMatchMedia();
   });
 
-  test('has expected snapshot', () => {
+  test('has expected snapshot', async () => {
     // mock usePathname to return a 404 page
     mockUsePathname.mockImplementation(() => '/figs');
 
-    const component = renderSnapshotWithLayout(<NotFound />);
-    const tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
+    const { container } = renderSnapshotWithLayout(<NotFound />);
+    expect(container).toMatchSnapshot();
   });
 
   describe('User with XS Device', () => {

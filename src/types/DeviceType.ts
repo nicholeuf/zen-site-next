@@ -1,4 +1,4 @@
-//https://docs.uaparser.js.org/v2/api/ua-parser-js/get-device.html#type-string
+// https://docs.uaparser.dev/info/device/type.html
 // desktop added as an option in addition to uaparser options
 type DeviceType =
   | 'mobile'
@@ -7,6 +7,7 @@ type DeviceType =
   | 'console'
   | 'wearable'
   | 'embedded'
+  | 'xr'
   | 'desktop';
 
 export default DeviceType;

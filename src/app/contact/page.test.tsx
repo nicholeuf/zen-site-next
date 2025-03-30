@@ -26,11 +26,9 @@ describe('The Contact Page', () => {
     resetMatchMedia();
   });
 
-  test('has expected snapshot', () => {
-    const component = renderSnapshotWithLayout(<ContactPage />);
-    const tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
+  test('has expected snapshot', async () => {
+    const { container } = renderSnapshotWithLayout(<ContactPage />);
+    expect(container).toMatchSnapshot();
   });
 
   describe('User with XS Device', () => {
