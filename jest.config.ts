@@ -117,7 +117,16 @@ const config: Config = {
   // projects: undefined,
 
   // Use this configuration option to add custom reporters to Jest
-  // reporters: undefined,
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        outputDirectory: '<rootDir>/junit',
+        classNameTemplate: '{filepath}',
+      },
+    ],
+  ],
 
   // Automatically reset mock state before every test
   // resetMocks: false,
