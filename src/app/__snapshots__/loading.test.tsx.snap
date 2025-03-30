@@ -1,13 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The Loading Page has expected snapshot 1`] = `
-[
-  .emotion-0 {
+@keyframes animation-0 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animation-1 {
+  0% {
+    stroke-dasharray: 1px,200px;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 100px,200px;
+    stroke-dashoffset: -15px;
+  }
+
+  100% {
+    stroke-dasharray: 1px,200px;
+    stroke-dashoffset: -126px;
+  }
+}
+
+.emotion-0 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  box-shadow: var(--Paper-shadow);
+  background-image: var(--Paper-overlay);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,8 +58,10 @@ exports[`The Loading Page has expected snapshot 1`] = `
   top: 0;
   left: auto;
   right: 0;
-  background-color: #FA2742;
-  color: #fff;
+  --AppBar-background: #FA2742;
+  --AppBar-color: #fff;
+  background-color: var(--AppBar-background);
+  color: var(--AppBar-color);
   background-color: #E8EAE3;
   border: 8px solid;
   border-color: #373833;
@@ -84,6 +119,8 @@ exports[`The Loading Page has expected snapshot 1`] = `
 .emotion-2 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -159,22 +196,6 @@ exports[`The Loading Page has expected snapshot 1`] = `
   transition: transform 0.25s ease;
 }
 
-.emotion-5.Mui-focusVisible {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-
-.emotion-5.Mui-selected {
-  background-color: rgba(250, 39, 66, 0.08);
-}
-
-.emotion-5.Mui-selected.Mui-focusVisible {
-  background-color: rgba(250, 39, 66, 0.2);
-}
-
-.emotion-5.Mui-disabled {
-  opacity: 0.38;
-}
-
 .emotion-5:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -185,6 +206,8 @@ exports[`The Loading Page has expected snapshot 1`] = `
 .emotion-6 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -212,6 +235,8 @@ exports[`The Loading Page has expected snapshot 1`] = `
 .emotion-10 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -238,145 +263,11 @@ exports[`The Loading Page has expected snapshot 1`] = `
   text-decoration: none;
 }
 
-<header
-    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-0"
-    data-testid="header"
-  >
-    <div
-      className="MuiBox-root emotion-1"
-      data-testid="header-logo"
-    >
-      <a
-        className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
-        href="/"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
-      >
-        <span
-          className="MuiBox-root emotion-3"
-          data-testid="visually-hidden"
-        >
-          Home
-        </span>
-      </a>
-    </div>
-    <nav
-      aria-label="Main Navigation"
-      data-testid="header-nav"
-    >
-      <ul
-        className="MuiList-root MuiList-padding emotion-4"
-      >
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-          disabled={false}
-        >
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
-            href="/work"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Work
-          </a>
-        </li>
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-          disabled={false}
-        >
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
-            href="/about"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            About
-          </a>
-        </li>
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-          disabled={false}
-        >
-          <a
-            aria-current="page"
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-10"
-            href="/contact"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Contact
-          </a>
-        </li>
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-          disabled={false}
-        >
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
-            href="/"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Home
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>,
-  @keyframes animation-0 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animation-1 {
-  0% {
-    stroke-dasharray: 1px,200px;
-    stroke-dashoffset: 0;
-  }
-
-  50% {
-    stroke-dasharray: 100px,200px;
-    stroke-dashoffset: -15px;
-  }
-
-  100% {
-    stroke-dasharray: 100px,200px;
-    stroke-dashoffset: -125px;
-  }
-}
-
-.emotion-0 {
+.emotion-13 {
   width: 100%;
   margin-left: auto;
   box-sizing: border-box;
   margin-right: auto;
-  display: block;
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 60px;
@@ -386,19 +277,19 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-0 {
+  .emotion-13 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-0 {
+  .emotion-13 {
     max-width: 1200px;
   }
 }
 
-.emotion-1 {
+.emotion-14 {
   min-height: calc(var(--viewport-height) - 60px - 175px);
   display: -webkit-box;
   display: -webkit-flex;
@@ -414,18 +305,18 @@ exports[`The Loading Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-2 {
+.emotion-15 {
   display: inline-block;
-  color: #FA2742;
   -webkit-animation: animation-0 1.4s linear infinite;
   animation: animation-0 1.4s linear infinite;
+  color: #FA2742;
 }
 
-.emotion-3 {
+.emotion-16 {
   display: block;
 }
 
-.emotion-4 {
+.emotion-17 {
   stroke: currentColor;
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
@@ -433,40 +324,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
   animation: animation-1 1.4s ease-in-out infinite;
 }
 
-<main
-    className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
-  >
-    <div
-      className="MuiBox-root emotion-1"
-    >
-      <span
-        className="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary emotion-2"
-        role="progressbar"
-        style={
-          {
-            "height": 40,
-            "width": 40,
-          }
-        }
-      >
-        <svg
-          className="MuiCircularProgress-svg emotion-3"
-          viewBox="22 22 44 44"
-        >
-          <circle
-            className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate emotion-4"
-            cx={44}
-            cy={44}
-            fill="none"
-            r={20.2}
-            strokeWidth={3.6}
-            style={{}}
-          />
-        </svg>
-      </span>
-    </div>
-  </main>,
-  .emotion-0 {
+.emotion-18 {
   background-color: #373833;
   color: #E8EAE3;
   height: 175px;
@@ -485,7 +343,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-1 {
+.emotion-19 {
   max-width: 600px;
   display: grid;
   gap: 4px;
@@ -495,18 +353,18 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-1 {
+  .emotion-19 {
     grid-template-areas: "nav" "madeby" "copyright" "source";
   }
 }
 
 @media (min-width:600px) {
-  .emotion-1 {
+  .emotion-19 {
     grid-template-areas: "nav madeby" "nav copyright" "nav source";
   }
 }
 
-.emotion-2 {
+.emotion-20 {
   grid-area: nav;
   display: -webkit-box;
   display: -webkit-flex;
@@ -521,7 +379,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-2 {
+  .emotion-20 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -530,7 +388,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-2 {
+  .emotion-20 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
@@ -538,12 +396,12 @@ exports[`The Loading Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-3 {
+.emotion-21 {
   width: 25%;
   height: 100%;
 }
 
-.emotion-4 {
+.emotion-22 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -569,7 +427,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-4 {
+  .emotion-22 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -577,14 +435,14 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-4 {
+  .emotion-22 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
-.emotion-5 {
+.emotion-23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -624,44 +482,30 @@ exports[`The Loading Page has expected snapshot 1`] = `
   transition: transform 0.25s ease;
 }
 
-.emotion-5.Mui-focusVisible {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-
-.emotion-5.Mui-selected {
-  background-color: rgba(250, 39, 66, 0.08);
-}
-
-.emotion-5.Mui-selected.Mui-focusVisible {
-  background-color: rgba(250, 39, 66, 0.2);
-}
-
-.emotion-5.Mui-disabled {
-  opacity: 0.38;
-}
-
 @media (min-width:0px) {
-  .emotion-5 {
+  .emotion-23 {
     margin: 8px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-5 {
+  .emotion-23 {
     margin: 24px;
   }
 }
 
-.emotion-5:hover {
+.emotion-23:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.emotion-6 {
+.emotion-24 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -683,12 +527,12 @@ exports[`The Loading Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-6:hover {
+.emotion-24:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-7 {
+.emotion-25 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -728,45 +572,49 @@ exports[`The Loading Page has expected snapshot 1`] = `
   font-size: 1.5rem;
   padding: 8px;
   border-radius: 50%;
-  overflow: visible;
   color: rgba(0, 0, 0, 0.54);
   -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  --IconButton-hoverBg: rgba(0, 0, 0, 0.04);
   padding: 0px;
 }
 
-.emotion-7::-moz-focus-inner {
+.emotion-25::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-7.Mui-disabled {
+.emotion-25.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-7 {
+  .emotion-25 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-7:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+.emotion-25:hover {
+  background-color: var(--IconButton-hoverBg);
 }
 
 @media (hover: none) {
-  .emotion-7:hover {
+  .emotion-25:hover {
     background-color: transparent;
   }
 }
 
-.emotion-7.Mui-disabled {
+.emotion-25.Mui-disabled {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.26);
 }
 
-.emotion-8 {
+.emotion-25.MuiIconButton-loading {
+  color: transparent;
+}
+
+.emotion-26 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -774,17 +622,17 @@ exports[`The Loading Page has expected snapshot 1`] = `
   width: 1em;
   height: 1em;
   display: inline-block;
-  fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  fill: currentColor;
   font-size: 1.5rem;
   color: #E8EAE3;
 }
 
-.emotion-13 {
+.emotion-31 {
   grid-area: madeby;
   display: -webkit-box;
   display: -webkit-flex;
@@ -793,7 +641,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-13 {
+  .emotion-31 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -806,7 +654,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-13 {
+  .emotion-31 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -818,25 +666,25 @@ exports[`The Loading Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-14 {
+.emotion-32 {
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
 }
 
 @media (min-width:0px) {
-  .emotion-14 {
+  .emotion-32 {
     font-size: 24px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-14 {
+  .emotion-32 {
     font-size: 34px;
   }
 }
 
-.emotion-15 {
+.emotion-33 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -846,7 +694,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
   color: #FA2742;
 }
 
-.emotion-16 {
+.emotion-34 {
   grid-area: copyright;
   display: -webkit-box;
   display: -webkit-flex;
@@ -855,7 +703,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-16 {
+  .emotion-34 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -868,7 +716,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-16 {
+  .emotion-34 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -880,7 +728,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-17 {
+.emotion-35 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -890,7 +738,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
   text-transform: none;
 }
 
-.emotion-18 {
+.emotion-36 {
   grid-area: source;
   display: -webkit-box;
   display: -webkit-flex;
@@ -899,7 +747,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-18 {
+  .emotion-36 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -912,7 +760,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-18 {
+  .emotion-36 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -924,7 +772,7 @@ exports[`The Loading Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-19 {
+.emotion-37 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -937,21 +785,23 @@ exports[`The Loading Page has expected snapshot 1`] = `
   display: flex;
 }
 
-.emotion-20 {
+.emotion-38 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #E8EAE3;
 }
 
-.emotion-20:hover {
+.emotion-38:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-21 {
+.emotion-39 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -986,104 +836,206 @@ exports[`The Loading Page has expected snapshot 1`] = `
   color: inherit;
   font-family: fontFamily;
   font-weight: 500;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   line-height: 1.75;
   text-transform: uppercase;
   min-width: 64px;
-  padding: 4px 5px;
+  padding: 6px 16px;
+  border: 0;
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: #FA2742;
+  padding: 6px 8px;
+  color: var(--variant-textColor);
+  background-color: var(--variant-textBg);
+  --variant-textColor: #FA2742;
+  --variant-outlinedColor: #FA2742;
+  --variant-outlinedBorder: rgba(250, 39, 66, 0.5);
+  --variant-containedColor: #fff;
+  --variant-containedBg: #FA2742;
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   color: inherit;
   font-size: inherit;
   padding: 0px;
 }
 
-.emotion-21::-moz-focus-inner {
+.emotion-39::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-21.Mui-disabled {
+.emotion-39.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-21 {
+  .emotion-39 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-21:hover {
+.emotion-39:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: rgba(250, 39, 66, 0.04);
 }
 
-@media (hover: none) {
-  .emotion-21:hover {
-    background-color: transparent;
-  }
-}
-
-.emotion-21.Mui-disabled {
+.emotion-39.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 
-<footer
-    className="MuiBox-root emotion-0"
+@media (hover: hover) {
+  .emotion-39:hover {
+    --variant-containedBg: rgb(175, 27, 46);
+    --variant-textBg: rgba(250, 39, 66, 0.04);
+    --variant-outlinedBorder: #FA2742;
+    --variant-outlinedBg: rgba(250, 39, 66, 0.04);
+  }
+}
+
+.emotion-39.MuiButton-loading {
+  color: transparent;
+}
+
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-0"
+    data-testid="header"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiBox-root emotion-1"
+      data-testid="header-logo"
+    >
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
+        href="/"
+      >
+        <span
+          class="MuiBox-root emotion-3"
+          data-testid="visually-hidden"
+        >
+          Home
+        </span>
+      </a>
+    </div>
+    <nav
+      aria-label="Main Navigation"
+      data-testid="header-nav"
+    >
+      <ul
+        class="MuiList-root MuiList-padding emotion-4"
+      >
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            href="/work"
+          >
+            Work
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+        >
+          <a
+            aria-current="page"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-10"
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    class="MuiContainer-root MuiContainer-maxWidthLg emotion-13"
+  >
+    <div
+      class="MuiBox-root emotion-14"
+    >
+      <span
+        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary emotion-15"
+        role="progressbar"
+        style="width: 40px; height: 40px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg emotion-16"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate emotion-17"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="20.2"
+            stroke-width="3.6"
+          />
+        </svg>
+      </span>
+    </div>
+  </main>
+  <footer
+    class="MuiBox-root emotion-18"
     data-testid="footer"
   >
     <div
-      className="MuiBox-root emotion-1"
+      class="MuiBox-root emotion-19"
     >
       <div
-        className="MuiBox-root emotion-2"
+        class="MuiBox-root emotion-20"
       >
         <nav
           aria-label="External Navigation"
-          className="MuiBox-root emotion-3"
+          class="MuiBox-root emotion-21"
           data-testid="footer-nav"
         >
           <ul
-            className="MuiList-root MuiList-padding emotion-4"
+            class="MuiList-root MuiList-padding emotion-22"
           >
             <li
-              className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-              disabled={false}
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-23"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-24"
                 href="https://www.linkedin.com/in/nicholeuf"
-                onBlur={[Function]}
-                onFocus={[Function]}
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-7"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onContextMenu={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-25"
+                  tabindex="0"
                   type="button"
                 >
                   <svg
-                    aria-hidden={true}
-                    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-8"
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-26"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1096,39 +1048,23 @@ exports[`The Loading Page has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-              disabled={false}
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-23"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-24"
                 href="https://github.com/nicholeuf"
-                onBlur={[Function]}
-                onFocus={[Function]}
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-7"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onContextMenu={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-25"
+                  tabindex="0"
                   type="button"
                 >
                   <svg
-                    aria-hidden={true}
-                    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-8"
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-26"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1144,15 +1080,15 @@ exports[`The Loading Page has expected snapshot 1`] = `
         </nav>
       </div>
       <div
-        className="MuiBox-root emotion-13"
+        class="MuiBox-root emotion-31"
       >
         <p
-          className="MuiTypography-root MuiTypography-sacramento emotion-14"
+          class="MuiTypography-root MuiTypography-sacramento emotion-32"
         >
           Made with
            
           <span
-            className="MuiTypography-root MuiTypography-body1 emotion-15"
+            class="MuiTypography-root MuiTypography-body1 emotion-33"
           >
             ♥
           </span>
@@ -1161,10 +1097,10 @@ exports[`The Loading Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        className="MuiBox-root emotion-16"
+        class="MuiBox-root emotion-34"
       >
         <p
-          className="MuiTypography-root MuiTypography-overline emotion-17"
+          class="MuiTypography-root MuiTypography-overline emotion-35"
         >
           Copyright © 
           2025
@@ -1176,17 +1112,15 @@ exports[`The Loading Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        className="MuiBox-root emotion-18"
+        class="MuiBox-root emotion-36"
       >
         <p
-          className="MuiTypography-root MuiTypography-overline emotion-19"
+          class="MuiTypography-root MuiTypography-overline emotion-37"
         >
           <a
             aria-label="View Source Code"
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-20"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-38"
             href="https://github.com/nicholeuf/zen-site-next"
-            onBlur={[Function]}
-            onFocus={[Function]}
             rel="noopener"
             target="_blank"
           >
@@ -1194,22 +1128,8 @@ exports[`The Loading Page has expected snapshot 1`] = `
           </a>
            | 
           <button
-            className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-21"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex={0}
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-39"
+            tabindex="0"
             type="button"
           >
             View Credits
@@ -1217,6 +1137,6 @@ exports[`The Loading Page has expected snapshot 1`] = `
         </p>
       </div>
     </div>
-  </footer>,
-]
+  </footer>
+</div>
 `;

@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The Work Page has expected snapshot 1`] = `
-[
-  .emotion-0 {
+.emotion-0 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  box-shadow: var(--Paper-shadow);
+  background-image: var(--Paper-overlay);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,8 +25,10 @@ exports[`The Work Page has expected snapshot 1`] = `
   top: 0;
   left: auto;
   right: 0;
-  background-color: #FA2742;
-  color: #fff;
+  --AppBar-background: #FA2742;
+  --AppBar-color: #fff;
+  background-color: var(--AppBar-background);
+  color: var(--AppBar-color);
   background-color: #E8EAE3;
   border: 8px solid;
   border-color: #373833;
@@ -84,6 +86,8 @@ exports[`The Work Page has expected snapshot 1`] = `
 .emotion-2 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -159,22 +163,6 @@ exports[`The Work Page has expected snapshot 1`] = `
   transition: transform 0.25s ease;
 }
 
-.emotion-5.Mui-focusVisible {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-
-.emotion-5.Mui-selected {
-  background-color: rgba(250, 39, 66, 0.08);
-}
-
-.emotion-5.Mui-selected.Mui-focusVisible {
-  background-color: rgba(250, 39, 66, 0.2);
-}
-
-.emotion-5.Mui-disabled {
-  opacity: 0.38;
-}
-
 .emotion-5:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -185,6 +173,8 @@ exports[`The Work Page has expected snapshot 1`] = `
 .emotion-6 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -214,6 +204,8 @@ exports[`The Work Page has expected snapshot 1`] = `
 .emotion-8 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -238,112 +230,11 @@ exports[`The Work Page has expected snapshot 1`] = `
   text-decoration: none;
 }
 
-<header
-    className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-0"
-    data-testid="header"
-  >
-    <div
-      className="MuiBox-root emotion-1"
-      data-testid="header-logo"
-    >
-      <a
-        className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
-        href="/"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onTouchStart={[Function]}
-      >
-        <span
-          className="MuiBox-root emotion-3"
-          data-testid="visually-hidden"
-        >
-          Home
-        </span>
-      </a>
-    </div>
-    <nav
-      aria-label="Main Navigation"
-      data-testid="header-nav"
-    >
-      <ul
-        className="MuiList-root MuiList-padding emotion-4"
-      >
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-          disabled={false}
-        >
-          <a
-            aria-current="page"
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
-            href="/work"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Work
-          </a>
-        </li>
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-          disabled={false}
-        >
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
-            href="/about"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            About
-          </a>
-        </li>
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-          disabled={false}
-        >
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
-            href="/contact"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Contact
-          </a>
-        </li>
-        <li
-          className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-          disabled={false}
-        >
-          <a
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
-            href="/"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Home
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>,
-  .emotion-0 {
+.emotion-13 {
   width: 100%;
   margin-left: auto;
   box-sizing: border-box;
   margin-right: auto;
-  display: block;
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 60px;
@@ -353,24 +244,23 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-0 {
+  .emotion-13 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-0 {
+  .emotion-13 {
     max-width: 1200px;
   }
 }
 
-.emotion-1 {
+.emotion-14 {
   width: 100%;
   margin-left: auto;
   box-sizing: border-box;
   margin-right: auto;
-  display: block;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
@@ -378,19 +268,19 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-1 {
+  .emotion-14 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-1 {
+  .emotion-14 {
     max-width: 1200px;
   }
 }
 
-.emotion-2 {
+.emotion-15 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -400,24 +290,24 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-2 {
+  .emotion-15 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-2 {
+  .emotion-15 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-2 {
+  .emotion-15 {
     font-size: 5.9983rem;
   }
 }
 
-.emotion-3 {
+.emotion-16 {
   margin: 0;
   font-size: 0.9rem;
   font-family: fontFamily;
@@ -425,16 +315,16 @@ exports[`The Work Page has expected snapshot 1`] = `
   line-height: 1.43;
 }
 
-.emotion-4 {
+.emotion-17 {
   width: 100%;
 }
 
-.emotion-5 {
+.emotion-18 {
   border-bottom: 1px solid;
   border-color: rgba(0, 0, 0, 0.12);
 }
 
-.emotion-6 {
+.emotion-19 {
   overflow: hidden;
   min-height: 48px;
   -webkit-overflow-scrolling: touch;
@@ -444,7 +334,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   display: flex;
 }
 
-.emotion-7 {
+.emotion-20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -484,27 +374,27 @@ exports[`The Work Page has expected snapshot 1`] = `
   opacity: 0.8;
 }
 
-.emotion-7::-moz-focus-inner {
+.emotion-20::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-7.Mui-disabled {
+.emotion-20.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-7 {
+  .emotion-20 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-7.Mui-disabled {
+.emotion-20.Mui-disabled {
   opacity: 0;
 }
 
-.emotion-8 {
+.emotion-21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -512,26 +402,26 @@ exports[`The Work Page has expected snapshot 1`] = `
   width: 1em;
   height: 1em;
   display: inline-block;
-  fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  fill: currentColor;
   font-size: 1.25rem;
 }
 
-.emotion-9 {
+.emotion-22 {
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
 }
 
-.emotion-9::-webkit-scrollbar {
+.emotion-22::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-10 {
+.emotion-23 {
   position: relative;
   display: inline-block;
   -webkit-flex: 1 1 auto;
@@ -543,18 +433,18 @@ exports[`The Work Page has expected snapshot 1`] = `
   overflow-y: hidden;
 }
 
-.emotion-10::-webkit-scrollbar {
+.emotion-23::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-11 {
+.emotion-24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.emotion-12 {
+.emotion-25 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -609,31 +499,31 @@ exports[`The Work Page has expected snapshot 1`] = `
   color: rgba(0, 0, 0, 0.6);
 }
 
-.emotion-12::-moz-focus-inner {
+.emotion-25::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-12.Mui-disabled {
+.emotion-25.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-12 {
+  .emotion-25 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-12.Mui-selected {
+.emotion-25.Mui-selected {
   color: #FA2742;
 }
 
-.emotion-12.Mui-disabled {
+.emotion-25.Mui-disabled {
   color: rgba(0, 0, 0, 0.38);
 }
 
-.emotion-13 {
+.emotion-28 {
   position: absolute;
   height: 2px;
   bottom: 0;
@@ -643,11 +533,11 @@ exports[`The Work Page has expected snapshot 1`] = `
   background-color: #FA2742;
 }
 
-.emotion-19 {
+.emotion-32 {
   padding: 24px;
 }
 
-.emotion-20 {
+.emotion-33 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -656,24 +546,24 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-20 {
+  .emotion-33 {
     font-size: 1.3118rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-20 {
+  .emotion-33 {
     font-size: 1.4993rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-20 {
+  .emotion-33 {
     font-size: 1.4993rem;
   }
 }
 
-.emotion-21 {
+.emotion-34 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -682,7 +572,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   text-transform: uppercase;
 }
 
-.emotion-22 {
+.emotion-35 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 500;
@@ -690,7 +580,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   line-height: 1.57;
 }
 
-.emotion-23 {
+.emotion-36 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -699,7 +589,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   padding-bottom: 8px;
 }
 
-.emotion-24 {
+.emotion-37 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -724,23 +614,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   padding-right: 16px;
 }
 
-.emotion-24.Mui-focusVisible {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-
-.emotion-24.Mui-selected {
-  background-color: rgba(250, 39, 66, 0.08);
-}
-
-.emotion-24.Mui-selected.Mui-focusVisible {
-  background-color: rgba(250, 39, 66, 0.2);
-}
-
-.emotion-24.Mui-disabled {
-  opacity: 0.38;
-}
-
-.emotion-24::before {
+.emotion-37::before {
   content: "-";
   padding-right: 4px;
   -webkit-align-self: flex-start;
@@ -748,7 +622,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   align-self: flex-start;
 }
 
-.emotion-28 {
+.emotion-41 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -776,7 +650,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-29 {
+.emotion-42 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -804,1742 +678,312 @@ exports[`The Work Page has expected snapshot 1`] = `
   width: initial;
 }
 
-.emotion-29.Mui-focusVisible {
+.emotion-43 {
+  max-width: 100%;
+  font-family: fontFamily;
+  font-size: 0.8125rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  white-space: nowrap;
+  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  cursor: unset;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+  height: 24px;
+  background-color: #FA2742;
+  color: #fff;
+}
+
+.emotion-43.Mui-disabled {
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.emotion-43 .MuiChip-avatar {
+  margin-left: 5px;
+  margin-right: -6px;
+  width: 24px;
+  height: 24px;
+  color: #616161;
+  font-size: 0.75rem;
+}
+
+.emotion-43 .MuiChip-avatarColorPrimary {
+  color: #fff;
+  background-color: rgb(175, 27, 46);
+}
+
+.emotion-43 .MuiChip-avatarColorSecondary {
+  color: #fff;
+  background-color: rgb(38, 39, 35);
+}
+
+.emotion-43 .MuiChip-avatarSmall {
+  margin-left: 4px;
+  margin-right: -4px;
+  width: 18px;
+  height: 18px;
+  font-size: 0.625rem;
+}
+
+.emotion-43 .MuiChip-icon {
+  margin-left: 5px;
+  margin-right: -6px;
+}
+
+.emotion-43 .MuiChip-deleteIcon {
+  -webkit-tap-highlight-color: transparent;
+  color: rgba(0, 0, 0, 0.26);
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px 0 -6px;
+}
+
+.emotion-43 .MuiChip-deleteIcon:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.emotion-43 .MuiChip-icon {
+  font-size: 18px;
+  margin-left: 4px;
+  margin-right: -4px;
+}
+
+.emotion-43 .MuiChip-deleteIcon {
+  font-size: 16px;
+  margin-right: 4px;
+  margin-left: -4px;
+}
+
+.emotion-43 .MuiChip-deleteIcon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.emotion-43 .MuiChip-deleteIcon:hover,
+.emotion-43 .MuiChip-deleteIcon:active {
+  color: #fff;
+}
+
+.emotion-43 .MuiChip-icon {
+  color: #616161;
+}
+
+.emotion-43 .MuiChip-icon {
+  color: inherit;
+}
+
+.emotion-44 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 12px;
+  padding-right: 12px;
+  white-space: nowrap;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.emotion-62 {
+  max-width: 100%;
+  font-family: fontFamily;
+  font-size: 0.8125rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  white-space: nowrap;
+  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  cursor: unset;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+  height: 24px;
+  background-color: #FA2742;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #bdbdbd;
+  color: #FA2742;
+  border: 1px solid rgba(250, 39, 66, 0.7);
+}
+
+.emotion-62.Mui-disabled {
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.emotion-62 .MuiChip-avatar {
+  margin-left: 5px;
+  margin-right: -6px;
+  width: 24px;
+  height: 24px;
+  color: #616161;
+  font-size: 0.75rem;
+}
+
+.emotion-62 .MuiChip-avatarColorPrimary {
+  color: #fff;
+  background-color: rgb(175, 27, 46);
+}
+
+.emotion-62 .MuiChip-avatarColorSecondary {
+  color: #fff;
+  background-color: rgb(38, 39, 35);
+}
+
+.emotion-62 .MuiChip-avatarSmall {
+  margin-left: 4px;
+  margin-right: -4px;
+  width: 18px;
+  height: 18px;
+  font-size: 0.625rem;
+}
+
+.emotion-62 .MuiChip-icon {
+  margin-left: 5px;
+  margin-right: -6px;
+}
+
+.emotion-62 .MuiChip-deleteIcon {
+  -webkit-tap-highlight-color: transparent;
+  color: rgba(0, 0, 0, 0.26);
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px 0 -6px;
+}
+
+.emotion-62 .MuiChip-deleteIcon:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.emotion-62 .MuiChip-icon {
+  font-size: 18px;
+  margin-left: 4px;
+  margin-right: -4px;
+}
+
+.emotion-62 .MuiChip-deleteIcon {
+  font-size: 16px;
+  margin-right: 4px;
+  margin-left: -4px;
+}
+
+.emotion-62 .MuiChip-deleteIcon {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.emotion-62 .MuiChip-deleteIcon:hover,
+.emotion-62 .MuiChip-deleteIcon:active {
+  color: #fff;
+}
+
+.emotion-62 .MuiChip-icon {
+  color: #616161;
+}
+
+.emotion-62 .MuiChip-icon {
+  color: inherit;
+}
+
+.emotion-62.MuiChip-clickable:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.emotion-62.Mui-focusVisible {
   background-color: rgba(0, 0, 0, 0.12);
 }
 
-.emotion-29.Mui-selected {
-  background-color: rgba(250, 39, 66, 0.08);
-}
-
-.emotion-29.Mui-selected.Mui-focusVisible {
-  background-color: rgba(250, 39, 66, 0.2);
-}
-
-.emotion-29.Mui-disabled {
-  opacity: 0.38;
-}
-
-.emotion-30 {
-  max-width: 100%;
-  font-family: fontFamily;
-  font-size: 0.8125rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 24px;
-  color: #fff;
-  background-color: #FA2742;
-  border-radius: 16px;
-  white-space: nowrap;
-  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  cursor: unset;
-  outline: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  padding: 0;
-  vertical-align: middle;
-  box-sizing: border-box;
-}
-
-.emotion-30.Mui-disabled {
-  opacity: 0.38;
-  pointer-events: none;
-}
-
-.emotion-30 .MuiChip-avatar {
-  margin-left: 5px;
-  margin-right: -6px;
-  width: 24px;
-  height: 24px;
-  color: #616161;
-  font-size: 0.75rem;
-}
-
-.emotion-30 .MuiChip-avatarColorPrimary {
-  color: #fff;
-  background-color: rgb(175, 27, 46);
-}
-
-.emotion-30 .MuiChip-avatarColorSecondary {
-  color: #fff;
-  background-color: rgb(38, 39, 35);
-}
-
-.emotion-30 .MuiChip-avatarSmall {
-  margin-left: 4px;
-  margin-right: -4px;
-  width: 18px;
-  height: 18px;
-  font-size: 0.625rem;
-}
-
-.emotion-30 .MuiChip-icon {
-  margin-left: 4px;
-  margin-right: -4px;
-  font-size: 18px;
-  color: inherit;
-}
-
-.emotion-30 .MuiChip-deleteIcon {
-  -webkit-tap-highlight-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0 5px 0 -6px;
-  margin-right: 4px;
-  margin-left: -4px;
-}
-
-.emotion-30 .MuiChip-deleteIcon:hover {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.emotion-30 .MuiChip-deleteIcon:hover,
-.emotion-30 .MuiChip-deleteIcon:active {
-  color: #fff;
-}
-
-.emotion-31 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 8px;
-  padding-right: 8px;
-  white-space: nowrap;
-}
-
-.emotion-49 {
-  max-width: 100%;
-  font-family: fontFamily;
-  font-size: 0.8125rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 24px;
-  color: #fff;
-  background-color: #FA2742;
-  border-radius: 16px;
-  white-space: nowrap;
-  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  cursor: unset;
-  outline: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  padding: 0;
-  vertical-align: middle;
-  box-sizing: border-box;
-  background-color: transparent;
-  border: 1px solid rgba(250, 39, 66, 0.7);
-  color: #FA2742;
-}
-
-.emotion-49.Mui-disabled {
-  opacity: 0.38;
-  pointer-events: none;
-}
-
-.emotion-49 .MuiChip-avatar {
-  margin-left: 5px;
-  margin-right: -6px;
-  width: 24px;
-  height: 24px;
-  color: #616161;
-  font-size: 0.75rem;
-}
-
-.emotion-49 .MuiChip-avatarColorPrimary {
-  color: #fff;
-  background-color: rgb(175, 27, 46);
-}
-
-.emotion-49 .MuiChip-avatarColorSecondary {
-  color: #fff;
-  background-color: rgb(38, 39, 35);
-}
-
-.emotion-49 .MuiChip-avatarSmall {
-  margin-left: 4px;
-  margin-right: -4px;
-  width: 18px;
-  height: 18px;
-  font-size: 0.625rem;
-}
-
-.emotion-49 .MuiChip-icon {
-  margin-left: 4px;
-  margin-right: -4px;
-  font-size: 18px;
-  color: inherit;
-}
-
-.emotion-49 .MuiChip-deleteIcon {
-  -webkit-tap-highlight-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0 5px 0 -6px;
-  margin-right: 4px;
-  margin-left: -4px;
-}
-
-.emotion-49 .MuiChip-deleteIcon:hover {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.emotion-49 .MuiChip-deleteIcon:hover,
-.emotion-49 .MuiChip-deleteIcon:active {
-  color: #fff;
-}
-
-.emotion-49.MuiChip-clickable:hover {
-  background-color: rgba(250, 39, 66, 0.04);
-}
-
-.emotion-49.Mui-focusVisible {
-  background-color: rgba(250, 39, 66, 0.12);
-}
-
-.emotion-49 .MuiChip-avatar {
+.emotion-62 .MuiChip-avatar {
   margin-left: 4px;
 }
 
-.emotion-49 .MuiChip-avatarSmall {
+.emotion-62 .MuiChip-avatarSmall {
   margin-left: 2px;
 }
 
-.emotion-49 .MuiChip-icon {
+.emotion-62 .MuiChip-icon {
   margin-left: 4px;
 }
 
-.emotion-49 .MuiChip-iconSmall {
+.emotion-62 .MuiChip-iconSmall {
   margin-left: 2px;
 }
 
-.emotion-49 .MuiChip-deleteIcon {
-  color: rgba(250, 39, 66, 0.7);
+.emotion-62 .MuiChip-deleteIcon {
+  margin-right: 5px;
 }
 
-.emotion-49 .MuiChip-deleteIcon:hover,
-.emotion-49 .MuiChip-deleteIcon:active {
-  color: #FA2742;
-}
-
-.emotion-49 .MuiChip-deleteIconSmall {
+.emotion-62 .MuiChip-deleteIconSmall {
   margin-right: 3px;
 }
 
-.emotion-50 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 7px;
-  padding-right: 7px;
-  white-space: nowrap;
+.emotion-62.MuiChip-clickable:hover {
+  background-color: rgba(250, 39, 66, 0.04);
 }
 
-<main
-    className="MuiContainer-root MuiContainer-maxWidthLg emotion-0"
-  >
-    <div
-      className="MuiContainer-root MuiContainer-maxWidthLg emotion-1"
-      data-testid="work-page"
-    >
-      <h1
-        className="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-2"
-      >
-        Work
-      </h1>
-      <p
-        className="MuiTypography-root MuiTypography-body2 emotion-3"
-      >
-        After graduating in 2003 with a degree in Computer Engineering from the University of Florida, I worked in the defense industry for 7 years. I then transitioned to working for niche food delivery service companies, where I honed my skills as a Full-Stack Developer. Throughout my career progression, I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
-      </p>
-      <div
-        className="MuiBox-root emotion-4"
-      >
-        <div
-          className="MuiBox-root emotion-5"
-        >
-          <div
-            className="MuiTabs-root emotion-6"
-          >
-            <div
-              className="MuiButtonBase-root MuiTabScrollButton-root MuiTabScrollButton-horizontal Mui-disabled MuiTabs-scrollButtons emotion-7"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onContextMenu={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role={null}
-              tabIndex={null}
-            >
-              <svg
-                aria-hidden={true}
-                className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall emotion-8"
-                data-testid="KeyboardArrowLeftIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
-                />
-              </svg>
-            </div>
-            <div
-              className="MuiTabs-scrollableX MuiTabs-hideScrollbar emotion-9"
-              style={
-                {
-                  "height": 99,
-                  "overflow": "scroll",
-                  "position": "absolute",
-                  "top": -9999,
-                  "width": 99,
-                }
-              }
-            />
-            <div
-              className="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX emotion-10"
-              style={
-                {
-                  "marginBottom": -0,
-                  "overflow": "hidden",
-                }
-              }
-            >
-              <div
-                aria-label="work experience tabs"
-                aria-orientation={null}
-                className="MuiTabs-flexContainer emotion-11"
-                onKeyDown={[Function]}
-                role="tablist"
-              >
-                <button
-                  aria-controls="work-tabpanel-0"
-                  aria-selected={true}
-                  className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected emotion-12"
-                  disabled={false}
-                  id="work-tab-0"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onContextMenu={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  role="tab"
-                  tabIndex={0}
-                  type="button"
-                >
-                  The Coding Yogi
-                  <span
-                    className="MuiTabs-indicator emotion-13"
-                    style={{}}
-                  />
-                </button>
-                <button
-                  aria-controls="work-tabpanel-1"
-                  aria-selected={false}
-                  className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary emotion-12"
-                  disabled={false}
-                  id="work-tab-1"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onContextMenu={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  role="tab"
-                  tabIndex={-1}
-                  type="button"
-                >
-                  Imperfect Foods
-                </button>
-                <button
-                  aria-controls="work-tabpanel-2"
-                  aria-selected={false}
-                  className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary emotion-12"
-                  disabled={false}
-                  id="work-tab-2"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onContextMenu={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  role="tab"
-                  tabIndex={-1}
-                  type="button"
-                >
-                  Door to Door Organics
-                </button>
-              </div>
-            </div>
-            <div
-              className="MuiButtonBase-root MuiTabScrollButton-root MuiTabScrollButton-horizontal Mui-disabled MuiTabs-scrollButtons emotion-7"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onContextMenu={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              role={null}
-              tabIndex={null}
-            >
-              <svg
-                aria-hidden={true}
-                className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall emotion-8"
-                data-testid="KeyboardArrowRightIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div
-          aria-labelledby="work-tab-0"
-          className="MuiBox-root emotion-18"
-          data-testid="portfolio-site"
-          hidden={false}
-          id="work-tabpanel-0"
-          role="tabpanel"
-        >
-          <div
-            className="MuiBox-root emotion-19"
-          >
-            <h2
-              className="MuiTypography-root MuiTypography-h5 emotion-20"
-            >
-              The Coding Yogi
-               | 
-              Owner, Developer
-            </h2>
-            <span
-              className="MuiTypography-root MuiTypography-overline emotion-21"
-            >
-              Nov 2017
-               - 
-              Present
-            </span>
-            <h6
-              className="MuiTypography-root MuiTypography-subtitle2 emotion-22"
-            >
-              Remote
-            </h6>
-            <ul
-              className="MuiList-root MuiList-padding emotion-23"
-              data-testid="experience-list"
-            >
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  Current site is built with React, NextJS, and MaterialUI, and deployed to Vercel. Code is fully-tested and automated via Github Actions.
-                </p>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  Original site was built with React and Bulma, bundled with Webpack, and deployed to AWS via CircleCI.
-                </p>
-              </li>
-            </ul>
-            <ul
-              className="MuiList-root MuiList-padding emotion-28"
-              data-testid="chip-list"
-            >
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    MaterialUI
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Typescript
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    React
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    NextJS
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Emotion
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Jest
-                  </span>
-                </div>
-              </li>
-            </ul>
-            <ul
-              className="MuiList-root MuiList-padding emotion-28"
-              data-testid="chip-list"
-            >
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Vercel
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Cloudinary
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Codecov
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Github Actions
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Sentry.io
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Meticulous.ai
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Small.chat
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          aria-labelledby="work-tab-1"
-          className="MuiBox-root emotion-18"
-          data-testid="imperfect-foods"
-          hidden={true}
-          id="work-tabpanel-1"
-          role="tabpanel"
-        >
-          <div
-            className="MuiBox-root emotion-19"
-          >
-            <h2
-              className="MuiTypography-root MuiTypography-h5 emotion-20"
-            >
-              Imperfect Foods
-               | 
-              Full-Stack Developer
-            </h2>
-            <span
-              className="MuiTypography-root MuiTypography-overline emotion-21"
-            >
-              Jan 2018
-               - 
-              Dec 2022
-            </span>
-            <h6
-              className="MuiTypography-root MuiTypography-subtitle2 emotion-22"
-            >
-              Remote
-            </h6>
-            <ul
-              className="MuiList-root MuiList-padding emotion-23"
-              data-testid="experience-list"
-            >
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  Founding member of a collaborative, cross-functional team where we facilitated a unique shopping experience, intended to solve food waste.
-                </p>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  Contributed to the transition of our user base from the legacy site to the new platform after adapting the Door to Door Organics code to Imperfect's business model.
-                </p>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  Involved in architecture decisions and technology improvements.
-                </p>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  Involved in early exploration of new features with our design and project management team members.
-                </p>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  Responsible for the engineering side of our Stripe and Auth0 integrations, as well as collecting our site analytics using Segment and collaborating with merchandising and marketing efforts that relied on this data.
-                </p>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  Mentored junior and mid-level developers as we expanded our team.
-                </p>
-              </li>
-            </ul>
-            <ul
-              className="MuiList-root MuiList-padding emotion-28"
-              data-testid="chip-list"
-            >
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Node
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    TypeScript
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    React
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    React Router
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Redux
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Sagas
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Webpack
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Jest
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Express
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    SQL
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Microservices
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Technical Writing
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    A/B Testing
-                  </span>
-                </div>
-              </li>
-            </ul>
-            <ul
-              className="MuiList-root MuiList-padding emotion-28"
-              data-testid="chip-list"
-            >
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Auth0
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Stripe
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Split.io
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Algolia
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Segment.io
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Prismic
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Snowflake
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    CircleCI
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Cloudinary
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Storybook
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    DataDog
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    JIRA
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Codecov
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    PostGRES
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    AWS
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Docker
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          aria-labelledby="work-tab-2"
-          className="MuiBox-root emotion-18"
-          data-testid="dtdo"
-          hidden={true}
-          id="work-tabpanel-2"
-          role="tabpanel"
-        >
-          <div
-            className="MuiBox-root emotion-19"
-          >
-            <h2
-              className="MuiTypography-root MuiTypography-h5 emotion-20"
-            >
-              Door to Door Organics
-               | 
-              Lead Front-End Developer
-            </h2>
-            <span
-              className="MuiTypography-root MuiTypography-overline emotion-21"
-            >
-              Mar 2014
-               - 
-              Nov 2017
-            </span>
-            <h6
-              className="MuiTypography-root MuiTypography-subtitle2 emotion-22"
-            >
-              Louisville, CO & Remote
-            </h6>
-            <ul
-              className="MuiList-root MuiList-padding emotion-23"
-              data-testid="experience-list"
-            >
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  During my three and a half years with the company, I worked my way up from a Sr. Java Developer to the Lead
-      of the Front-End team.  In 2016 we merged with Relay Foods, and I transitioned to a Full-Stack Developer on a remote-first team,
-      where I continued to work in a lead role on our Front-End stack.
-                </p>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  I started at the company with a background in Enterprise Java, but fell in love with JavaScript and React at this job.  In addition,
-      I worked on several of our Node Micro-Services, Internal Tools, and contributed to the transition of our user base to the new platform.
-                </p>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  I introduced sagas for achieving complex user interactions and reselect for performant access to our
-      redux architecture.  We used JWT for authentication and our stack was hosted on Amazon Web Services (AWS) ElasticBeanstalk (EB) and CircleCI was used for build automation and deployment.
-                </p>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
-                data-testid="experience-list-item"
-                disabled={false}
-              >
-                <p
-                  className="MuiTypography-root MuiTypography-body2 emotion-3"
-                >
-                  Our team used slack and screenhero for paired programming and collaboration.  We were a fast-paced team
-      with a focus on iterative development.
-                </p>
-              </li>
-            </ul>
-            <ul
-              className="MuiList-root MuiList-padding emotion-28"
-              data-testid="chip-list"
-            >
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Node
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    JavaScript
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    React
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    React Native
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Redux
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Sagas
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Express
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    SQL
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-30"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-31"
-                  >
-                    Microservices
-                  </span>
-                </div>
-              </li>
-            </ul>
-            <ul
-              className="MuiList-root MuiList-padding emotion-28"
-              data-testid="chip-list"
-            >
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    AWS
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Auth0
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Stripe
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Segment.io
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Algolia
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    CircleCI
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    Cloudinary
-                  </span>
-                </div>
-              </li>
-              <li
-                className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
-                data-testid="chip-list-item"
-                disabled={false}
-              >
-                <div
-                  className="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-49"
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                >
-                  <span
-                    className="MuiChip-label MuiChip-labelSmall emotion-50"
-                  >
-                    PostGRES
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>,
-  .emotion-0 {
+.emotion-62.Mui-focusVisible {
+  background-color: rgba(250, 39, 66, 0.12);
+}
+
+.emotion-62 .MuiChip-deleteIcon {
+  color: rgba(250, 39, 66, 0.7);
+}
+
+.emotion-62 .MuiChip-deleteIcon:hover,
+.emotion-62 .MuiChip-deleteIcon:active {
+  color: #FA2742;
+}
+
+.emotion-63 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 12px;
+  padding-right: 12px;
+  white-space: nowrap;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.emotion-256 {
   background-color: #373833;
   color: #E8EAE3;
   height: 175px;
@@ -2558,7 +1002,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-1 {
+.emotion-257 {
   max-width: 600px;
   display: grid;
   gap: 4px;
@@ -2568,18 +1012,18 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-1 {
+  .emotion-257 {
     grid-template-areas: "nav" "madeby" "copyright" "source";
   }
 }
 
 @media (min-width:600px) {
-  .emotion-1 {
+  .emotion-257 {
     grid-template-areas: "nav madeby" "nav copyright" "nav source";
   }
 }
 
-.emotion-2 {
+.emotion-258 {
   grid-area: nav;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2594,7 +1038,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-2 {
+  .emotion-258 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -2603,7 +1047,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-2 {
+  .emotion-258 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
@@ -2611,12 +1055,12 @@ exports[`The Work Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-3 {
+.emotion-259 {
   width: 25%;
   height: 100%;
 }
 
-.emotion-4 {
+.emotion-260 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2642,7 +1086,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-4 {
+  .emotion-260 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -2650,14 +1094,14 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-4 {
+  .emotion-260 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
-.emotion-5 {
+.emotion-261 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2697,44 +1141,30 @@ exports[`The Work Page has expected snapshot 1`] = `
   transition: transform 0.25s ease;
 }
 
-.emotion-5.Mui-focusVisible {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-
-.emotion-5.Mui-selected {
-  background-color: rgba(250, 39, 66, 0.08);
-}
-
-.emotion-5.Mui-selected.Mui-focusVisible {
-  background-color: rgba(250, 39, 66, 0.2);
-}
-
-.emotion-5.Mui-disabled {
-  opacity: 0.38;
-}
-
 @media (min-width:0px) {
-  .emotion-5 {
+  .emotion-261 {
     margin: 8px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-5 {
+  .emotion-261 {
     margin: 24px;
   }
 }
 
-.emotion-5:hover {
+.emotion-261:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.emotion-6 {
+.emotion-262 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2756,12 +1186,12 @@ exports[`The Work Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-6:hover {
+.emotion-262:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-7 {
+.emotion-263 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2801,45 +1231,49 @@ exports[`The Work Page has expected snapshot 1`] = `
   font-size: 1.5rem;
   padding: 8px;
   border-radius: 50%;
-  overflow: visible;
   color: rgba(0, 0, 0, 0.54);
   -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  --IconButton-hoverBg: rgba(0, 0, 0, 0.04);
   padding: 0px;
 }
 
-.emotion-7::-moz-focus-inner {
+.emotion-263::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-7.Mui-disabled {
+.emotion-263.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-7 {
+  .emotion-263 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-7:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+.emotion-263:hover {
+  background-color: var(--IconButton-hoverBg);
 }
 
 @media (hover: none) {
-  .emotion-7:hover {
+  .emotion-263:hover {
     background-color: transparent;
   }
 }
 
-.emotion-7.Mui-disabled {
+.emotion-263.Mui-disabled {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.26);
 }
 
-.emotion-8 {
+.emotion-263.MuiIconButton-loading {
+  color: transparent;
+}
+
+.emotion-264 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2847,17 +1281,17 @@ exports[`The Work Page has expected snapshot 1`] = `
   width: 1em;
   height: 1em;
   display: inline-block;
-  fill: currentColor;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  fill: currentColor;
   font-size: 1.5rem;
   color: #E8EAE3;
 }
 
-.emotion-13 {
+.emotion-269 {
   grid-area: madeby;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2866,7 +1300,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-13 {
+  .emotion-269 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -2879,7 +1313,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-13 {
+  .emotion-269 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -2891,25 +1325,25 @@ exports[`The Work Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-14 {
+.emotion-270 {
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
 }
 
 @media (min-width:0px) {
-  .emotion-14 {
+  .emotion-270 {
     font-size: 24px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-14 {
+  .emotion-270 {
     font-size: 34px;
   }
 }
 
-.emotion-15 {
+.emotion-271 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -2919,7 +1353,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   color: #FA2742;
 }
 
-.emotion-16 {
+.emotion-272 {
   grid-area: copyright;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2928,7 +1362,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-16 {
+  .emotion-272 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -2941,7 +1375,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-16 {
+  .emotion-272 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -2953,7 +1387,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-17 {
+.emotion-273 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -2963,7 +1397,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   text-transform: none;
 }
 
-.emotion-18 {
+.emotion-274 {
   grid-area: source;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2972,7 +1406,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-18 {
+  .emotion-274 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -2985,7 +1419,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-18 {
+  .emotion-274 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -2997,7 +1431,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-19 {
+.emotion-275 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -3010,21 +1444,23 @@ exports[`The Work Page has expected snapshot 1`] = `
   display: flex;
 }
 
-.emotion-20 {
+.emotion-276 {
   margin: 0;
   font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: #FA2742;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #E8EAE3;
 }
 
-.emotion-20:hover {
+.emotion-276:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-21 {
+.emotion-277 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3059,104 +1495,1383 @@ exports[`The Work Page has expected snapshot 1`] = `
   color: inherit;
   font-family: fontFamily;
   font-weight: 500;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   line-height: 1.75;
   text-transform: uppercase;
   min-width: 64px;
-  padding: 4px 5px;
+  padding: 6px 16px;
+  border: 0;
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: #FA2742;
+  padding: 6px 8px;
+  color: var(--variant-textColor);
+  background-color: var(--variant-textBg);
+  --variant-textColor: #FA2742;
+  --variant-outlinedColor: #FA2742;
+  --variant-outlinedBorder: rgba(250, 39, 66, 0.5);
+  --variant-containedColor: #fff;
+  --variant-containedBg: #FA2742;
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   color: inherit;
   font-size: inherit;
   padding: 0px;
 }
 
-.emotion-21::-moz-focus-inner {
+.emotion-277::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-21.Mui-disabled {
+.emotion-277.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-21 {
+  .emotion-277 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-21:hover {
+.emotion-277:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: rgba(250, 39, 66, 0.04);
 }
 
-@media (hover: none) {
-  .emotion-21:hover {
-    background-color: transparent;
-  }
-}
-
-.emotion-21.Mui-disabled {
+.emotion-277.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 
-<footer
-    className="MuiBox-root emotion-0"
+@media (hover: hover) {
+  .emotion-277:hover {
+    --variant-containedBg: rgb(175, 27, 46);
+    --variant-textBg: rgba(250, 39, 66, 0.04);
+    --variant-outlinedBorder: #FA2742;
+    --variant-outlinedBg: rgba(250, 39, 66, 0.04);
+  }
+}
+
+.emotion-277.MuiButton-loading {
+  color: transparent;
+}
+
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-0"
+    data-testid="header"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiBox-root emotion-1"
+      data-testid="header-logo"
+    >
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
+        href="/"
+      >
+        <span
+          class="MuiBox-root emotion-3"
+          data-testid="visually-hidden"
+        >
+          Home
+        </span>
+      </a>
+    </div>
+    <nav
+      aria-label="Main Navigation"
+      data-testid="header-nav"
+    >
+      <ul
+        class="MuiList-root MuiList-padding emotion-4"
+      >
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+        >
+          <a
+            aria-current="page"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            href="/work"
+          >
+            Work
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    class="MuiContainer-root MuiContainer-maxWidthLg emotion-13"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg emotion-14"
+      data-testid="work-page"
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-15"
+      >
+        Work
+      </h1>
+      <p
+        class="MuiTypography-root MuiTypography-body2 emotion-16"
+      >
+        After graduating in 2003 with a degree in Computer Engineering from the University of Florida, I worked in the defense industry for 7 years. I then transitioned to working for niche food delivery service companies, where I honed my skills as a Full-Stack Developer. Throughout my career progression, I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
+      </p>
+      <div
+        class="MuiBox-root emotion-17"
+      >
+        <div
+          class="MuiBox-root emotion-18"
+        >
+          <div
+            class="MuiTabs-root emotion-19"
+          >
+            <div
+              class="MuiButtonBase-root MuiTabScrollButton-root MuiTabScrollButton-horizontal Mui-disabled MuiTabs-scrollButtons emotion-20"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall emotion-21"
+                data-testid="KeyboardArrowLeftIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                />
+              </svg>
+            </div>
+            <div
+              class="MuiTabs-scrollableX MuiTabs-hideScrollbar emotion-22"
+              style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
+            />
+            <div
+              class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX emotion-23"
+              style="margin-bottom: 0px;"
+            >
+              <div
+                aria-label="work experience tabs"
+                class="MuiTabs-list MuiTabs-flexContainer emotion-24"
+                role="tablist"
+              >
+                <button
+                  aria-controls="work-tabpanel-0"
+                  aria-selected="true"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected emotion-25"
+                  id="work-tab-0"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  The Coding Yogi
+                </button>
+                <button
+                  aria-controls="work-tabpanel-1"
+                  aria-selected="false"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary emotion-25"
+                  id="work-tab-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  Imperfect Foods
+                </button>
+                <button
+                  aria-controls="work-tabpanel-2"
+                  aria-selected="false"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary emotion-25"
+                  id="work-tab-2"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  Door to Door Organics
+                </button>
+              </div>
+              <span
+                class="MuiTabs-indicator emotion-28"
+                style="left: 0px; width: 0px;"
+              />
+            </div>
+            <div
+              class="MuiButtonBase-root MuiTabScrollButton-root MuiTabScrollButton-horizontal Mui-disabled MuiTabs-scrollButtons emotion-20"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall emotion-21"
+                data-testid="KeyboardArrowRightIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-labelledby="work-tab-0"
+          class="MuiBox-root emotion-31"
+          data-testid="portfolio-site"
+          id="work-tabpanel-0"
+          role="tabpanel"
+        >
+          <div
+            class="MuiBox-root emotion-32"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h5 emotion-33"
+            >
+              The Coding Yogi
+               | 
+              Owner, Developer
+            </h2>
+            <span
+              class="MuiTypography-root MuiTypography-overline emotion-34"
+            >
+              Nov 2017
+               - 
+              Present
+            </span>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 emotion-35"
+            >
+              Remote
+            </h6>
+            <ul
+              class="MuiList-root MuiList-padding emotion-36"
+              data-testid="experience-list"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  Current site is built with React, NextJS, and MaterialUI, and deployed to Vercel. Code is fully-tested and automated via Github Actions.
+                </p>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  Original site was built with React and Bulma, bundled with Webpack, and deployed to AWS via CircleCI.
+                </p>
+              </li>
+            </ul>
+            <ul
+              class="MuiList-root MuiList-padding emotion-41"
+              data-testid="chip-list"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    MaterialUI
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Typescript
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    React
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    NextJS
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Emotion
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Jest
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <ul
+              class="MuiList-root MuiList-padding emotion-41"
+              data-testid="chip-list"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Vercel
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Cloudinary
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Codecov
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Github Actions
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Sentry.io
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Meticulous.ai
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Small.chat
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          aria-labelledby="work-tab-1"
+          class="MuiBox-root emotion-31"
+          data-testid="imperfect-foods"
+          hidden=""
+          id="work-tabpanel-1"
+          role="tabpanel"
+        >
+          <div
+            class="MuiBox-root emotion-32"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h5 emotion-33"
+            >
+              Imperfect Foods
+               | 
+              Full-Stack Developer
+            </h2>
+            <span
+              class="MuiTypography-root MuiTypography-overline emotion-34"
+            >
+              Jan 2018
+               - 
+              Dec 2022
+            </span>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 emotion-35"
+            >
+              Remote
+            </h6>
+            <ul
+              class="MuiList-root MuiList-padding emotion-36"
+              data-testid="experience-list"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  Founding member of a collaborative, cross-functional team where we facilitated a unique shopping experience, intended to solve food waste.
+                </p>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  Contributed to the transition of our user base from the legacy site to the new platform after adapting the Door to Door Organics code to Imperfect's business model.
+                </p>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  Involved in architecture decisions and technology improvements.
+                </p>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  Involved in early exploration of new features with our design and project management team members.
+                </p>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  Responsible for the engineering side of our Stripe and Auth0 integrations, as well as collecting our site analytics using Segment and collaborating with merchandising and marketing efforts that relied on this data.
+                </p>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  Mentored junior and mid-level developers as we expanded our team.
+                </p>
+              </li>
+            </ul>
+            <ul
+              class="MuiList-root MuiList-padding emotion-41"
+              data-testid="chip-list"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Node
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    TypeScript
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    React
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    React Router
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Redux
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Sagas
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Webpack
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Jest
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Express
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    SQL
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Microservices
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Technical Writing
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    A/B Testing
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <ul
+              class="MuiList-root MuiList-padding emotion-41"
+              data-testid="chip-list"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Auth0
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Stripe
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Split.io
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Algolia
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Segment.io
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Prismic
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Snowflake
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    CircleCI
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Cloudinary
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Storybook
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    DataDog
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    JIRA
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Codecov
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    PostGRES
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    AWS
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Docker
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          aria-labelledby="work-tab-2"
+          class="MuiBox-root emotion-31"
+          data-testid="dtdo"
+          hidden=""
+          id="work-tabpanel-2"
+          role="tabpanel"
+        >
+          <div
+            class="MuiBox-root emotion-32"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h5 emotion-33"
+            >
+              Door to Door Organics
+               | 
+              Lead Front-End Developer
+            </h2>
+            <span
+              class="MuiTypography-root MuiTypography-overline emotion-34"
+            >
+              Mar 2014
+               - 
+              Nov 2017
+            </span>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 emotion-35"
+            >
+              Louisville, CO & Remote
+            </h6>
+            <ul
+              class="MuiList-root MuiList-padding emotion-36"
+              data-testid="experience-list"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  During my three and a half years with the company, I worked my way up from a Sr. Java Developer to the Lead
+      of the Front-End team.  In 2016 we merged with Relay Foods, and I transitioned to a Full-Stack Developer on a remote-first team,
+      where I continued to work in a lead role on our Front-End stack.
+                </p>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  I started at the company with a background in Enterprise Java, but fell in love with JavaScript and React at this job.  In addition,
+      I worked on several of our Node Micro-Services, Internal Tools, and contributed to the transition of our user base to the new platform.
+                </p>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  I introduced sagas for achieving complex user interactions and reselect for performant access to our
+      redux architecture.  We used JWT for authentication and our stack was hosted on Amazon Web Services (AWS) ElasticBeanstalk (EB) and CircleCI was used for build automation and deployment.
+                </p>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                data-testid="experience-list-item"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                >
+                  Our team used slack and screenhero for paired programming and collaboration.  We were a fast-paced team
+      with a focus on iterative development.
+                </p>
+              </li>
+            </ul>
+            <ul
+              class="MuiList-root MuiList-padding emotion-41"
+              data-testid="chip-list"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Node
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    JavaScript
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    React
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    React Native
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Redux
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Sagas
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Express
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    SQL
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                  >
+                    Microservices
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <ul
+              class="MuiList-root MuiList-padding emotion-41"
+              data-testid="chip-list"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    AWS
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Auth0
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Stripe
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Segment.io
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Algolia
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    CircleCI
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Cloudinary
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    PostGRES
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer
+    class="MuiBox-root emotion-256"
     data-testid="footer"
   >
     <div
-      className="MuiBox-root emotion-1"
+      class="MuiBox-root emotion-257"
     >
       <div
-        className="MuiBox-root emotion-2"
+        class="MuiBox-root emotion-258"
       >
         <nav
           aria-label="External Navigation"
-          className="MuiBox-root emotion-3"
+          class="MuiBox-root emotion-259"
           data-testid="footer-nav"
         >
           <ul
-            className="MuiList-root MuiList-padding emotion-4"
+            class="MuiList-root MuiList-padding emotion-260"
           >
             <li
-              className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-              disabled={false}
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-261"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-262"
                 href="https://www.linkedin.com/in/nicholeuf"
-                onBlur={[Function]}
-                onFocus={[Function]}
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-7"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onContextMenu={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-263"
+                  tabindex="0"
                   type="button"
                 >
                   <svg
-                    aria-hidden={true}
-                    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-8"
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-264"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -3169,39 +2884,23 @@ exports[`The Work Page has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              className="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
-              disabled={false}
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-261"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-262"
                 href="https://github.com/nicholeuf"
-                onBlur={[Function]}
-                onFocus={[Function]}
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-7"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onContextMenu={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-263"
+                  tabindex="0"
                   type="button"
                 >
                   <svg
-                    aria-hidden={true}
-                    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-8"
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-264"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -3217,15 +2916,15 @@ exports[`The Work Page has expected snapshot 1`] = `
         </nav>
       </div>
       <div
-        className="MuiBox-root emotion-13"
+        class="MuiBox-root emotion-269"
       >
         <p
-          className="MuiTypography-root MuiTypography-sacramento emotion-14"
+          class="MuiTypography-root MuiTypography-sacramento emotion-270"
         >
           Made with
            
           <span
-            className="MuiTypography-root MuiTypography-body1 emotion-15"
+            class="MuiTypography-root MuiTypography-body1 emotion-271"
           >
             ♥
           </span>
@@ -3234,10 +2933,10 @@ exports[`The Work Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        className="MuiBox-root emotion-16"
+        class="MuiBox-root emotion-272"
       >
         <p
-          className="MuiTypography-root MuiTypography-overline emotion-17"
+          class="MuiTypography-root MuiTypography-overline emotion-273"
         >
           Copyright © 
           2025
@@ -3249,17 +2948,15 @@ exports[`The Work Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        className="MuiBox-root emotion-18"
+        class="MuiBox-root emotion-274"
       >
         <p
-          className="MuiTypography-root MuiTypography-overline emotion-19"
+          class="MuiTypography-root MuiTypography-overline emotion-275"
         >
           <a
             aria-label="View Source Code"
-            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-20"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-276"
             href="https://github.com/nicholeuf/zen-site-next"
-            onBlur={[Function]}
-            onFocus={[Function]}
             rel="noopener"
             target="_blank"
           >
@@ -3267,22 +2964,8 @@ exports[`The Work Page has expected snapshot 1`] = `
           </a>
            | 
           <button
-            className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-21"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex={0}
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-277"
+            tabindex="0"
             type="button"
           >
             View Credits
@@ -3290,6 +2973,6 @@ exports[`The Work Page has expected snapshot 1`] = `
         </p>
       </div>
     </div>
-  </footer>,
-]
+  </footer>
+</div>
 `;

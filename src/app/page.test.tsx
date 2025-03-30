@@ -35,10 +35,8 @@ describe('The Home Page', () => {
 
   test('has expected snapshot', async () => {
     const HomeResolved = await resolvedComponent(HomePage);
-    const component = renderSnapshotWithLayout(<HomeResolved />);
-    const tree = component.toJSON();
-
-    expect(tree).toMatchSnapshot();
+    const { container } = renderSnapshotWithLayout(<HomeResolved />);
+    expect(container).toMatchSnapshot();
   });
 
   describe('User with MD Device', () => {

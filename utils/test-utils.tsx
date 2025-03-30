@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
-import renderer from 'react-test-renderer';
 import mediaQuery from 'css-mediaquery';
 
 import AppLayout from '@/components/AppLayout';
@@ -31,10 +30,10 @@ const customRenderWithLayout = (
 ) => render(ui, { wrapper: MockLayout, ...options });
 
 const customSnapshotRender = (children: ReactElement) =>
-  renderer.create(<MockStyles>{children}</MockStyles>);
+  render(<MockStyles>{children}</MockStyles>);
 
 const customSnapshotRenderWithLayout = (children: ReactElement) =>
-  renderer.create(<MockLayout>{children}</MockLayout>);
+  render(<MockLayout>{children}</MockLayout>);
 
 export * from '@testing-library/react';
 export {
