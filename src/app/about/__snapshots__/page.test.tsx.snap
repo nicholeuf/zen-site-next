@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`The About Page has expected snapshot 1`] = `
 .emotion-0 {
@@ -1096,8 +1096,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 decoding="async"
                 height="300"
                 loading="lazy"
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAZGDX0"
-                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAZGDX0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAZGDX0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAZGE70"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVAZGE70 2x"
                 style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                 width="300"
               />
@@ -1133,8 +1133,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 decoding="async"
                 height="300"
                 loading="lazy"
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAZGDX0"
-                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAZGDX0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAZGDX0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAZGE70"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVAZGE70 2x"
                 style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                 width="300"
               />
@@ -1170,8 +1170,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 decoding="async"
                 height="300"
                 loading="lazy"
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAZGDX0"
-                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAZGDX0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAZGDX0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAZGE70"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVAZGE70 2x"
                 style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                 width="300"
               />
@@ -1207,8 +1207,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 decoding="async"
                 height="300"
                 loading="lazy"
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAZGDX0"
-                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAZGDX0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAZGDX0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAZGE70"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVAZGE70 2x"
                 style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                 width="300"
               />
@@ -1244,8 +1244,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 decoding="async"
                 height="300"
                 loading="lazy"
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAZGDX0"
-                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAZGDX0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAZGDX0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAZGE70"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVAZGE70 2x"
                 style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                 width="300"
               />
@@ -1281,8 +1281,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 decoding="async"
                 height="300"
                 loading="lazy"
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAZGDX0"
-                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAZGDX0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAZGDX0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAZGE70"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVAZGE70 2x"
                 style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                 width="300"
               />
@@ -1318,8 +1318,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 decoding="async"
                 height="300"
                 loading="lazy"
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAZGDX0"
-                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAZGDX0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAZGDX0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAZGE70"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVAZGE70 2x"
                 style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                 width="300"
               />
@@ -1355,8 +1355,8 @@ exports[`The About Page has expected snapshot 1`] = `
                 decoding="async"
                 height="300"
                 loading="lazy"
-                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAZGDX0"
-                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAZGDX0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAZGDX0 2x"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAZGE70"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVAZGE70 2x"
                 style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
                 width="300"
               />
