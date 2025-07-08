@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`The Home Page has expected snapshot 1`] = `
 .emotion-0 {
@@ -1090,8 +1090,8 @@ exports[`The Home Page has expected snapshot 1`] = `
         decoding="async"
         loading="lazy"
         sizes="100vw"
-        src="https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_3840/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGDX0"
-        srcset="https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_640/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGDX0 640w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_750/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGDX0 750w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_828/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGDX0 828w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_1080/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGDX0 1080w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_1200/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGDX0 1200w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_1920/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGDX0 1920w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_2048/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGDX0 2048w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_3840/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGDX0 3840w"
+        src="https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_3840/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGE70"
+        srcset="https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_640/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGE70 640w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_750/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGE70 750w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_828/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGE70 828w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_1080/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGE70 1080w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_1200/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGE70 1200w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_1920/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGE70 1920w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_2048/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGE70 2048w, https://res.cloudinary.com/nicholeuf/image/upload/o_20/c_limit,w_3840/f_auto/q_5/v1/zensite/andrei-slobtsov-Med3Kuxz97c-unsplash?_a=BAVAZGE70 3840w"
         style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; object-position: 50% 25%; color: transparent; z-index: -1; background-size: cover; background-position: 50% 25%; background-repeat: no-repeat;"
       />
       <div
@@ -1106,8 +1106,8 @@ exports[`The Home Page has expected snapshot 1`] = `
             decoding="async"
             height="200"
             loading="lazy"
-            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAZGDX0"
-            srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_256,h_256,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAZGDX0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAZGDX0 2x"
+            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAZGE70"
+            srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_256,h_256,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_auto,z_0.5/f_auto/q_auto/v1/zensite/nf-profile-c-hibiscus?_a=BAVAZGE70 2x"
             style="color: transparent; border: 1px solid white; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="200"
           />

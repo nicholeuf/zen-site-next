@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`The Work Page has expected snapshot 1`] = `
 .emotion-0 {
@@ -695,6 +695,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   height: 32px;
+  line-height: 1.5;
   color: rgba(0, 0, 0, 0.87);
   background-color: rgba(0, 0, 0, 0.08);
   border-radius: 16px;
@@ -819,6 +820,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   height: 32px;
+  line-height: 1.5;
   color: rgba(0, 0, 0, 0.87);
   background-color: rgba(0, 0, 0, 0.08);
   border-radius: 16px;
