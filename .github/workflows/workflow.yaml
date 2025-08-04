@@ -1,4 +1,6 @@
 name: zen-site-next CI
+permissions:
+  contents: read
 
 on: [push]
 
