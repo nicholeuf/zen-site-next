@@ -1026,8 +1026,8 @@ exports[`The Contact Page has expected snapshot 1`] = `
         decoding="async"
         height="644"
         loading="lazy"
-        src="https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_fill,w_750,h_1312,g_auto/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAZGE70"
-        srcset="https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_fill,w_384,h_672,g_auto/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAZGE70 1x, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_fill,w_750,h_1312,g_auto/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAZGE70 2x"
+        src="https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_fill,w_750,h_1312,g_auto/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAZGGf0"
+        srcset="https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_fill,w_384,h_672,g_auto/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAZGGf0 1x, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_fill,w_750,h_1312,g_auto/f_auto/q_auto/v1/zensite/shine-stephania-plant-in-plant-pot?_a=BAVAZGGf0 2x"
         style="color: transparent; position: absolute; top: 10px; right: 10px; overflow: hidden; z-index: -1;"
         width="368"
       />
