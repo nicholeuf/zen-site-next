@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
+    "test:update": "jest -u",
     "test:ci": "jest --ci",
     "test:watch": "jest --watchAll",
     "act": "act --secret-file .env.local"
