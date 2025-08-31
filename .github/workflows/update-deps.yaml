@@ -19,6 +19,11 @@ jobs:
         run: pnpm update --latest
       - name: Run Jest to update snapshots
         run: pnpm run test:update
+        env:
+          NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: ${{ secrets.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+          NEXT_PUBLIC_GOOGLE_AUTHENTICATION: ${{ secrets.NEXT_PUBLIC_GOOGLE_AUTHENTICATION }}
+          NEXT_PUBLIC_SMALLCHAT_ENABLED: ${{ secrets.NEXT_PUBLIC_SMALLCHAT_ENABLED }}
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
