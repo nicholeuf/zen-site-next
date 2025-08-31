@@ -1,4 +1,7 @@
 name: Manual Update pnpm Dependencies and Snapshots
+permissions:
+  contents: read
+  pull-requests: write
 
 on:
   workflow_dispatch:
