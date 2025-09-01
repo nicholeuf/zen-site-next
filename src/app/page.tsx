@@ -26,7 +26,7 @@ const profileImageProps: ProfileImageProps = {
 const backgroundImageProps: CldImageProps = {
   opacity: '20',
   src: 'zensite/andrei-slobtsov-Med3Kuxz97c-unsplash',
-  quality: '5',
+  quality: 5,
   alt: '',
   style: {
     objectPosition: '50% 25%',
