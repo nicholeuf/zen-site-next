@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 
 import { Metadata } from 'next';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { getCldOgImageUrl } from 'next-cloudinary';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -78,7 +78,7 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children }) => {
         )}
       </head>
       <body>
-        <AppRouterCacheProvider options={{ key: 'mui' }}>
+        <AppRouterCacheProvider>
           <AppLayout deviceType={deviceType}>{children}</AppLayout>
         </AppRouterCacheProvider>
         <Analytics />
