@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true,
   images: {
     qualities: [5, 25, 50, 75],
-    dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       {
         protocol: 'https',
