@@ -24,6 +24,7 @@ jobs:
           NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
           NEXT_PUBLIC_GOOGLE_AUTHENTICATION: ${{ secrets.NEXT_PUBLIC_GOOGLE_AUTHENTICATION }}
           NEXT_PUBLIC_SMALLCHAT_ENABLED: ${{ secrets.NEXT_PUBLIC_SMALLCHAT_ENABLED }}
+          NEXT_PUBLIC_SENTRY_DSN: ${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
         run: pnpm run test:ci
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
