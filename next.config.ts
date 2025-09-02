@@ -3,18 +3,22 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true,
-  // Transpiles SDK to be compatible with IE11 (increases bundle size)
-  // transpileClientSDK: true,
-  // // Hides source maps from generated client bundles
-  // hideSourceMaps: false,
   images: {
-    qualities: [5],
+    qualities: [5, 25, 50, 75],
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+    ],
   },
-  experimental: {
-    serverSourceMaps: true,
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
   },
 };
 
@@ -49,4 +53,9 @@ export default withSentryConfig(nextConfig, {
   // https://docs.sentry.io/product/crons/
   // https://vercel.com/docs/cron-jobs
   automaticVercelMonitors: true,
+
+  // Hides source maps from generated client bundles
+  sourcemaps: {
+    disable: false,
+  },
 });
