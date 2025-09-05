@@ -9,7 +9,7 @@ Sentry.init({
   dsn: process.env.SENTRY_DSN,
 
   // Define how likely traces are sampled. Adjust this value in production, or use tracesSampler for greater control.
-  tracesSampleRate: 1,
+  tracesSampleRate: 0.5,
 
   integrations: [
     // send console.log, console.warn, and console.error calls as logs to Sentry
@@ -20,5 +20,5 @@ Sentry.init({
   enableLogs: true,
 
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
-  debug: true,
+  debug: false,
 });
