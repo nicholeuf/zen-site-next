@@ -1,6 +1,7 @@
 /* istanbul ignore file */
 
 import { Metadata } from 'next';
+import * as Sentry from '@sentry/nextjs';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { getCldOgImageUrl } from 'next-cloudinary';
 import { Analytics } from '@vercel/analytics/react';
@@ -13,44 +14,47 @@ import getDeviceType from './ssrMediaQueries/getDeviceType';
 
 import '@/app/styles/mobileFix.css';
 
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Nichole Frey',
-    // a default is required when creating a template
-    default: 'Nichole Frey',
-  },
-  description:
-    'Portfolio website for Nichole Frey, a Full-Stack Developer based in Orlando, FL',
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: {
+      template: '%s | Nichole Frey',
+      // a default is required when creating a template
+      default: 'Nichole Frey',
+    },
+    description:
+      'Portfolio website for Nichole Frey, a Full-Stack Developer based in Orlando, FL',
 
-  generator: 'Next.js',
-  applicationName: 'Nichole Frey | Full-Stack Developer',
-  referrer: 'origin-when-cross-origin',
-  keywords: [
-    'Full-Stack Developer',
-    'Web Developer',
-    'Next.js',
-    'React',
-    'JavaScript',
-    'TypeScript',
-    'Material UI',
-  ],
-  authors: [{ name: 'Nichole Frey' }],
-  creator: 'Nichole Frey',
-  publisher: 'Nichole Frey',
-  openGraph: {
-    url: getBaseUrl(),
-    images: [
-      {
-        width: 1200,
-        height: 627,
-        url: getCldOgImageUrl({
-          src: 'zensite/og-image',
-          crop: 'scale',
-        }),
-      },
+    generator: 'Next.js',
+    applicationName: 'Nichole Frey | Full-Stack Developer',
+    referrer: 'origin-when-cross-origin',
+    keywords: [
+      'Full-Stack Developer',
+      'Web Developer',
+      'Next.js',
+      'React',
+      'JavaScript',
+      'TypeScript',
+      'Material UI',
     ],
-  },
-};
+    authors: [{ name: 'Nichole Frey' }],
+    creator: 'Nichole Frey',
+    publisher: 'Nichole Frey',
+    openGraph: {
+      url: getBaseUrl(),
+      images: [
+        {
+          width: 1200,
+          height: 627,
+          url: getCldOgImageUrl({
+            src: 'zensite/og-image',
+            crop: 'scale',
+          }),
+        },
+      ],
+    },
+    ...Sentry.getTraceData(),
+  };
+}
 
 interface RootLayoutProps {
   children: React.ReactNode;
