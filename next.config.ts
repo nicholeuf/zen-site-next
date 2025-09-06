@@ -4,6 +4,7 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true,
   images: {
+    // https://nextjs.org/docs/app/api-reference/components/image#qualities
     qualities: [5, 25, 50, 75],
     remotePatterns: [
       {
