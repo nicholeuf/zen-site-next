@@ -58,3 +58,6 @@ yarn-error.log*
 
 # End of https://www.gitignore.io/api/visualstudiocode
 
+
+# Sentry Config File
+.env.sentry-build-plugin
