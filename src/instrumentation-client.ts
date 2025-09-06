@@ -6,15 +6,17 @@
 
 import * as Sentry from '@sentry/nextjs';
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 Sentry.init({
   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
 
   // Define how likely traces are sampled. Adjust this value in production, or use tracesSampler for greater control.
-  tracesSampleRate: 0.5,
+  tracesSampleRate: isProduction ? 0.5 : 1,
 
   // Adds request headers and IP for users, for more info visit:
   // https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/options/#sendDefaultPii
-  sendDefaultPii: true,
+  sendDefaultPii: !isProduction, // Or based on explicit consent
 
   integrations: [
     Sentry.replayIntegration(), // send console.log, console.warn, and console.error calls as logs to Sentry
@@ -29,7 +31,7 @@ Sentry.init({
   // Define how likely Replay events are sampled.
   // This sets the sample rate to be 10%. You may want this to be 100% while
   // in development and sample at a lower rate in production
-  replaysSessionSampleRate: 0.1,
+  replaysSessionSampleRate: isProduction ? 0.1 : 1,
 
   // Define how likely Replay events are sampled when an error occurs.
   replaysOnErrorSampleRate: 1.0,
