@@ -313,14 +313,10 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 .emotion-17 {
-  padding: 16px;
-}
-
-.emotion-18 {
   grid-area: heading;
 }
 
-.emotion-19 {
+.emotion-18 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -330,36 +326,36 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-19 {
+  .emotion-18 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-19 {
+  .emotion-18 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-19 {
+  .emotion-18 {
     font-size: 5.9983rem;
   }
 }
 
 @media (min-width:0px) {
-  .emotion-19 {
+  .emotion-18 {
     font-size: 2.75rem;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-19 {
+  .emotion-18 {
     font-size: 3.5rem;
   }
 }
 
-.emotion-20 {
+.emotion-19 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -370,46 +366,46 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-20 {
+  .emotion-19 {
     font-size: 1.8219rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-20 {
+  .emotion-19 {
     font-size: 2.0243rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-20 {
+  .emotion-19 {
     font-size: 2.0243rem;
   }
 }
 
-.emotion-21 {
+.emotion-20 {
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
 }
 
 @media (min-width:0px) {
-  .emotion-21 {
+  .emotion-20 {
     font-size: 34px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-21 {
+  .emotion-20 {
     font-size: 38px;
   }
 }
 
-.emotion-22 {
+.emotion-21 {
   grid-area: body;
 }
 
-.emotion-23 {
+.emotion-22 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -420,18 +416,18 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-23 {
+  .emotion-22 {
     font-size: 1.25rem;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-23 {
+  .emotion-22 {
     font-size: 1.5rem;
   }
 }
 
-.emotion-24 {
+.emotion-23 {
   background-color: #373833;
   color: #E8EAE3;
   height: 175px;
@@ -450,7 +446,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-25 {
+.emotion-24 {
   max-width: 600px;
   display: grid;
   gap: 4px;
@@ -460,18 +456,18 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-25 {
+  .emotion-24 {
     grid-template-areas: "nav" "madeby" "copyright" "source";
   }
 }
 
 @media (min-width:600px) {
-  .emotion-25 {
+  .emotion-24 {
     grid-template-areas: "nav madeby" "nav copyright" "nav source";
   }
 }
 
-.emotion-26 {
+.emotion-25 {
   grid-area: nav;
   display: -webkit-box;
   display: -webkit-flex;
@@ -486,7 +482,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-26 {
+  .emotion-25 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -495,7 +491,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-26 {
+  .emotion-25 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
@@ -503,12 +499,12 @@ exports[`The Home Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-27 {
+.emotion-26 {
   width: 25%;
   height: 100%;
 }
 
-.emotion-28 {
+.emotion-27 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -534,7 +530,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-28 {
+  .emotion-27 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -542,14 +538,14 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-28 {
+  .emotion-27 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
-.emotion-29 {
+.emotion-28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -590,25 +586,25 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-29 {
+  .emotion-28 {
     margin: 8px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-29 {
+  .emotion-28 {
     margin: 24px;
   }
 }
 
-.emotion-29:hover {
+.emotion-28:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.emotion-30 {
+.emotion-29 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -634,12 +630,12 @@ exports[`The Home Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-30:hover {
+.emotion-29:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-31 {
+.emotion-30 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -686,42 +682,42 @@ exports[`The Home Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-31::-moz-focus-inner {
+.emotion-30::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-31.Mui-disabled {
+.emotion-30.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-31 {
+  .emotion-30 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-31:hover {
+.emotion-30:hover {
   background-color: var(--IconButton-hoverBg);
 }
 
 @media (hover: none) {
-  .emotion-31:hover {
+  .emotion-30:hover {
     background-color: transparent;
   }
 }
 
-.emotion-31.Mui-disabled {
+.emotion-30.Mui-disabled {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.26);
 }
 
-.emotion-31.MuiIconButton-loading {
+.emotion-30.MuiIconButton-loading {
   color: transparent;
 }
 
-.emotion-32 {
+.emotion-31 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -739,7 +735,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   color: #E8EAE3;
 }
 
-.emotion-37 {
+.emotion-36 {
   grid-area: madeby;
   display: -webkit-box;
   display: -webkit-flex;
@@ -748,7 +744,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-37 {
+  .emotion-36 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -761,7 +757,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-37 {
+  .emotion-36 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -773,25 +769,25 @@ exports[`The Home Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-38 {
+.emotion-37 {
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
 }
 
 @media (min-width:0px) {
-  .emotion-38 {
+  .emotion-37 {
     font-size: 24px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-38 {
+  .emotion-37 {
     font-size: 34px;
   }
 }
 
-.emotion-39 {
+.emotion-38 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -801,7 +797,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   color: #FA2742;
 }
 
-.emotion-40 {
+.emotion-39 {
   grid-area: copyright;
   display: -webkit-box;
   display: -webkit-flex;
@@ -810,7 +806,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-40 {
+  .emotion-39 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -823,7 +819,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-40 {
+  .emotion-39 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -835,7 +831,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-41 {
+.emotion-40 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -845,7 +841,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   text-transform: none;
 }
 
-.emotion-42 {
+.emotion-41 {
   grid-area: source;
   display: -webkit-box;
   display: -webkit-flex;
@@ -854,7 +850,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-42 {
+  .emotion-41 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -867,7 +863,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-42 {
+  .emotion-41 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -879,7 +875,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-43 {
+.emotion-42 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -892,7 +888,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   display: flex;
 }
 
-.emotion-44 {
+.emotion-43 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -903,12 +899,12 @@ exports[`The Home Page has expected snapshot 1`] = `
   color: #E8EAE3;
 }
 
-.emotion-44:hover {
+.emotion-43:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-45 {
+.emotion-44 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -969,33 +965,33 @@ exports[`The Home Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-45::-moz-focus-inner {
+.emotion-44::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-45.Mui-disabled {
+.emotion-44.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-45 {
+  .emotion-44 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-45:hover {
+.emotion-44:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-45.Mui-disabled {
+.emotion-44.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 
 @media (hover: hover) {
-  .emotion-45:hover {
+  .emotion-44:hover {
     --variant-containedBg: rgb(175, 27, 46);
     --variant-textBg: rgba(250, 39, 66, 0.04);
     --variant-outlinedBorder: #FA2742;
@@ -1003,7 +999,7 @@ exports[`The Home Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-45.MuiButton-loading {
+.emotion-44.MuiButton-loading {
   color: transparent;
 }
 
@@ -1119,74 +1115,70 @@ exports[`The Home Page has expected snapshot 1`] = `
         <div
           class="MuiBox-root emotion-17"
         >
-          <div
-            class="MuiBox-root emotion-18"
+          <h1
+            class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-18"
           >
-            <h1
-              class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-19"
-            >
-              Hi, I'm Nichole
-            </h1>
-            <h2
-              class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom emotion-20"
-            >
-              Full-Stack Developer 
-              <span
-                class="MuiTypography-root MuiTypography-sacramento emotion-21"
-              >
-                and yogi!
-              </span>
-            </h2>
-          </div>
-          <div
-            class="MuiBox-root emotion-22"
+            Hi, I'm Nichole
+          </h1>
+          <h2
+            class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom emotion-19"
           >
-            <p
-              class="MuiTypography-root MuiTypography-body1 emotion-23"
+            Full-Stack Developer 
+            <span
+              class="MuiTypography-root MuiTypography-sacramento emotion-20"
             >
-              Based in Orlando, Florida, my passion lies in crafting intuitive, well-built experiences for the customer. I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
-            </p>
-          </div>
+              and yogi!
+            </span>
+          </h2>
+        </div>
+        <div
+          class="MuiBox-root emotion-21"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 emotion-22"
+          >
+            Based in Orlando, Florida, my passion lies in crafting intuitive, well-built experiences for the customer. I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
+          </p>
         </div>
       </div>
     </div>
   </main>
   <footer
-    class="MuiBox-root emotion-24"
+    class="MuiBox-root emotion-23"
     data-testid="footer"
   >
     <div
-      class="MuiBox-root emotion-25"
+      class="MuiBox-root emotion-24"
     >
       <div
-        class="MuiBox-root emotion-26"
+        class="MuiBox-root emotion-25"
       >
         <nav
           aria-label="External Navigation"
-          class="MuiBox-root emotion-27"
+          class="MuiBox-root emotion-26"
           data-testid="footer-nav"
         >
           <ul
-            class="MuiList-root MuiList-padding emotion-28"
+            class="MuiList-root MuiList-padding emotion-27"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-28"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-30"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-29"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-31"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-30"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-32"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-31"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1199,23 +1191,23 @@ exports[`The Home Page has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-28"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-30"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-29"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-31"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-30"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-32"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-31"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1231,15 +1223,15 @@ exports[`The Home Page has expected snapshot 1`] = `
         </nav>
       </div>
       <div
-        class="MuiBox-root emotion-37"
+        class="MuiBox-root emotion-36"
       >
         <p
-          class="MuiTypography-root MuiTypography-sacramento emotion-38"
+          class="MuiTypography-root MuiTypography-sacramento emotion-37"
         >
           Made with
            
           <span
-            class="MuiTypography-root MuiTypography-body1 emotion-39"
+            class="MuiTypography-root MuiTypography-body1 emotion-38"
           >
             ♥
           </span>
@@ -1248,10 +1240,10 @@ exports[`The Home Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-40"
+        class="MuiBox-root emotion-39"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-41"
+          class="MuiTypography-root MuiTypography-overline emotion-40"
         >
           Copyright © 
           2025
@@ -1263,14 +1255,14 @@ exports[`The Home Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-42"
+        class="MuiBox-root emotion-41"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-43"
+          class="MuiTypography-root MuiTypography-overline emotion-42"
         >
           <a
             aria-label="View Source Code"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-44"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-43"
             href="https://github.com/nicholeuf/zen-site-next"
             rel="noopener"
             target="_blank"
@@ -1279,7 +1271,7 @@ exports[`The Home Page has expected snapshot 1`] = `
           </a>
            | 
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-45"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-44"
             tabindex="0"
             type="button"
           >
