@@ -8,14 +8,19 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import AppLayout from '@/components/AppLayout';
-import getBaseUrl from '@/app/lib/getBaseUrl';
+
 import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
 import getDeviceType from './ssrMediaQueries/getDeviceType';
+import getServerPath from './lib/getServerPath';
 
 import '@/app/styles/mobileFix.css';
+import getBaseUrl from './lib/getBaseUrl';
 
 export async function generateMetadata(): Promise<Metadata> {
+  const pathname = await getServerPath();
+
   return {
+    metadataBase: new URL(getBaseUrl()),
     title: {
       template: '%s | Nichole Frey',
       // a default is required when creating a template
@@ -40,13 +45,14 @@ export async function generateMetadata(): Promise<Metadata> {
     creator: 'Nichole Frey',
     publisher: 'Nichole Frey',
     openGraph: {
-      url: getBaseUrl(),
+      siteName: "The Coding Yogi | Nichole Frey's Portfolio Site",
+      type: 'website',
+      locale: 'en_US',
+      url: pathname,
       images: [
         {
-          width: 1200,
-          height: 627,
           url: getCldOgImageUrl({
-            src: 'zensite/og-image',
+            src: 'zensite/nf-og-pink',
             crop: 'scale',
           }),
         },
