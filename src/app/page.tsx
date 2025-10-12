@@ -14,22 +14,20 @@ const profileImageProps: ProfileImageProps = {
   width: 200,
   height: 200,
   crop: 'thumb',
-  zoom: '0.5',
-  src: 'zensite/nf-profile-c-hibiscus',
+  src: 'zensite/Nichole-Pink-BG',
   alt: 'Photo of website author',
   style: {
-    border: '1px solid white',
-    borderRadius: '20px',
+    borderRadius: '50%',
   },
 };
 
 const backgroundImageProps: CldImageProps = {
-  opacity: '20',
-  src: 'zensite/andrei-slobtsov-Med3Kuxz97c-unsplash',
+  opacity: '8',
+  src: 'zensite/lucila-naves-fMEFsbfHWw4-unsplash',
   quality: '5',
   alt: '',
   style: {
-    objectPosition: '50% 25%',
+    objectPosition: 'center bottom',
   },
 };
 

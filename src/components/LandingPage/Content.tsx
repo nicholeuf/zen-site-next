@@ -23,7 +23,7 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
     <Box
       sx={{
         my: 3,
-        pl: 3,
+        p: 2,
         display: 'grid',
         gap: 2,
         gridTemplateAreas: {
@@ -37,52 +37,54 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
           gridArea: 'photo',
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center',
+          alignItems: 'flex-start',
         }}
       >
         <ProfileImage {...profileImageProps} />
       </Box>
-      <Box sx={{ gridArea: 'heading' }}>
-        <Heading>Hi, I&apos;m Nichole</Heading>
-        <Typography
-          variant="h4"
-          component="h2"
-          gutterBottom
-          sx={{
-            fontWeight: 500,
-          }}
-        >
-          Full-Stack Developer&nbsp;
+      <Box sx={{ p: 2 }}>
+        <Box sx={{ gridArea: 'heading' }}>
+          <Heading>Hi, I&apos;m Nichole</Heading>
           <Typography
-            variant="sacramento"
+            variant="h4"
+            component="h2"
+            gutterBottom
             sx={{
-              fontSize: {
-                xs: '34px',
-                sm: '38px',
-              },
+              fontWeight: 500,
             }}
           >
-            and yogi!
+            Full-Stack Developer&nbsp;
+            <Typography
+              variant="sacramento"
+              sx={{
+                fontSize: {
+                  xs: '34px',
+                  sm: '38px',
+                },
+              }}
+            >
+              and yogi!
+            </Typography>
           </Typography>
-        </Typography>
-      </Box>
-      <Box sx={{ gridArea: 'body' }}>
-        <Typography
-          variant="body1"
-          sx={{
-            fontSize: {
-              xs: '1.25rem',
-              sm: '1.5rem',
-            },
-            color: 'grey.800',
-          }}
-          maxWidth="md"
-        >
-          Based in Orlando, Florida, my passion lies in crafting intuitive,
-          well-built experiences for the customer. I have assumed roles such as
-          Technical Lead, providing mentorship to colleagues, and collaborating
-          within agile, cross-functional teams.
-        </Typography>
+        </Box>
+        <Box sx={{ gridArea: 'body' }}>
+          <Typography
+            variant="body1"
+            sx={{
+              fontSize: {
+                xs: '1.25rem',
+                sm: '1.5rem',
+              },
+              color: 'grey.800',
+            }}
+            maxWidth="md"
+          >
+            Based in Orlando, Florida, my passion lies in crafting intuitive,
+            well-built experiences for the customer. I have assumed roles such
+            as Technical Lead, providing mentorship to colleagues, and
+            collaborating within agile, cross-functional teams.
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
