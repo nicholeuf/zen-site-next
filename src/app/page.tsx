@@ -14,6 +14,8 @@ const profileImageProps: ProfileImageProps = {
   width: 200,
   height: 200,
   crop: 'thumb',
+  gravity: 'face',
+  zoom: '0.6',
   src: 'zensite/Nichole-Pink-BG',
   alt: 'Photo of website author',
   style: {
