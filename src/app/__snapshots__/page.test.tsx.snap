@@ -277,9 +277,7 @@ exports[`The Home Page has expected snapshot 1`] = `
 }
 
 .emotion-15 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding: 16px;
+  padding: 24px;
   display: grid;
   gap: 16px;
 }
@@ -1096,6 +1094,7 @@ exports[`The Home Page has expected snapshot 1`] = `
       />
       <div
         class="MuiBox-root emotion-15"
+        data-testid="landing-page-content"
       >
         <div
           class="MuiBox-root emotion-16"
@@ -1106,8 +1105,8 @@ exports[`The Home Page has expected snapshot 1`] = `
             decoding="async"
             height="200"
             loading="lazy"
-            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_auto/f_auto/q_auto/v1/zensite/Nichole-Pink-BG?_a=BAVAZGID0"
-            srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_256,h_256,g_auto/f_auto/q_auto/v1/zensite/Nichole-Pink-BG?_a=BAVAZGID0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_auto/f_auto/q_auto/v1/zensite/Nichole-Pink-BG?_a=BAVAZGID0 2x"
+            src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_face,z_0.6/f_auto/q_auto/v1/zensite/Nichole-Pink-BG?_a=BAVAZGID0"
+            srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_256,h_256,g_face,z_0.6/f_auto/q_auto/v1/zensite/Nichole-Pink-BG?_a=BAVAZGID0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_face,z_0.6/f_auto/q_auto/v1/zensite/Nichole-Pink-BG?_a=BAVAZGID0 2x"
             style="color: transparent; border-radius: 50%; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="200"
           />
