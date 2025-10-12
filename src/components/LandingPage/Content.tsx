@@ -21,9 +21,9 @@ interface ContentProps {
 const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
   return (
     <Box
+      data-testid="landing-page-content"
       sx={{
-        my: 3,
-        pl: 3,
+        p: 3,
         display: 'grid',
         gap: 2,
         gridTemplateAreas: {
@@ -37,7 +37,7 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
           gridArea: 'photo',
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center',
+          alignItems: 'flex-start',
         }}
       >
         <ProfileImage {...profileImageProps} />
