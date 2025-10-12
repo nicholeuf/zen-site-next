@@ -22,9 +22,9 @@ const profileImageProps: ProfileImageProps = {
 };
 
 const backgroundImageProps: CldImageProps = {
-  opacity: '8',
+  opacity: 8,
   src: 'zensite/lucila-naves-fMEFsbfHWw4-unsplash',
-  quality: '5',
+  quality: 5,
   alt: '',
   style: {
     objectPosition: 'center bottom',
