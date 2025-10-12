@@ -42,49 +42,47 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
       >
         <ProfileImage {...profileImageProps} />
       </Box>
-      <Box sx={{ p: 2 }}>
-        <Box sx={{ gridArea: 'heading' }}>
-          <Heading>Hi, I&apos;m Nichole</Heading>
+      <Box sx={{ gridArea: 'heading' }}>
+        <Heading>Hi, I&apos;m Nichole</Heading>
+        <Typography
+          variant="h4"
+          component="h2"
+          gutterBottom
+          sx={{
+            fontWeight: 500,
+          }}
+        >
+          Full-Stack Developer&nbsp;
           <Typography
-            variant="h4"
-            component="h2"
-            gutterBottom
-            sx={{
-              fontWeight: 500,
-            }}
-          >
-            Full-Stack Developer&nbsp;
-            <Typography
-              variant="sacramento"
-              sx={{
-                fontSize: {
-                  xs: '34px',
-                  sm: '38px',
-                },
-              }}
-            >
-              and yogi!
-            </Typography>
-          </Typography>
-        </Box>
-        <Box sx={{ gridArea: 'body' }}>
-          <Typography
-            variant="body1"
+            variant="sacramento"
             sx={{
               fontSize: {
-                xs: '1.25rem',
-                sm: '1.5rem',
+                xs: '34px',
+                sm: '38px',
               },
-              color: 'grey.800',
             }}
-            maxWidth="md"
           >
-            Based in Orlando, Florida, my passion lies in crafting intuitive,
-            well-built experiences for the customer. I have assumed roles such
-            as Technical Lead, providing mentorship to colleagues, and
-            collaborating within agile, cross-functional teams.
+            and yogi!
           </Typography>
-        </Box>
+        </Typography>
+      </Box>
+      <Box sx={{ gridArea: 'body' }}>
+        <Typography
+          variant="body1"
+          sx={{
+            fontSize: {
+              xs: '1.25rem',
+              sm: '1.5rem',
+            },
+            color: 'grey.800',
+          }}
+          maxWidth="md"
+        >
+          Based in Orlando, Florida, my passion lies in crafting intuitive,
+          well-built experiences for the customer. I have assumed roles such as
+          Technical Lead, providing mentorship to colleagues, and collaborating
+          within agile, cross-functional teams.
+        </Typography>
       </Box>
     </Box>
   );
