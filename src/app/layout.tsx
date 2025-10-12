@@ -3,12 +3,12 @@
 import { Metadata } from 'next';
 import * as Sentry from '@sentry/nextjs';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
-import { getCldOgImageUrl } from 'next-cloudinary';
+import { getCldOgImageUrl, GetCldOgImageUrlOptions } from 'next-cloudinary';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import AppLayout from '@/components/AppLayout';
-import getBaseUrl from '@/app/lib/getBaseUrl';
+
 import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
 import getDeviceType from './ssrMediaQueries/getDeviceType';
 
@@ -40,13 +40,11 @@ export async function generateMetadata(): Promise<Metadata> {
     creator: 'Nichole Frey',
     publisher: 'Nichole Frey',
     openGraph: {
-      url: getBaseUrl(),
+      type: 'website',
       images: [
         {
-          width: 1200,
-          height: 627,
           url: getCldOgImageUrl({
-            src: 'zensite/og-image',
+            src: 'zensite/nf-og-pink',
             crop: 'scale',
           }),
         },
