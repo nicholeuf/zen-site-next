@@ -271,7 +271,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: calc(var(--viewport-height) - 60px - 175px);
+  min-height: calc(var(--viewport-height) - 60px - 175px);
   width: auto;
   position: relative;
   overflow: hidden;
