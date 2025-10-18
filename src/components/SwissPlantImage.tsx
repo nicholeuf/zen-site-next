@@ -1,11 +1,17 @@
 /* eslint-disable react/react-in-jsx-scope -- Unaware of jsxImportSource */
 /** @jsxImportSource @emotion/react */
+
 import Box from '@mui/material/Box';
+// import styled from '@emotion/styled';
 import { CldImage } from 'next-cloudinary';
+import { Theme, styled } from '@mui/material/styles';
+
+// In order to use both sx and css on the same component, make it styled
+const StyledBox = styled(Box)``;
 
 const SwissPlantImage = () => {
   return (
-    <Box
+    <StyledBox
       data-testid="image-container"
       sx={{
         position: 'relative',
@@ -13,7 +19,7 @@ const SwissPlantImage = () => {
         aspectRatio: '0.77',
         overflow: 'hidden',
       }}
-      css={(theme) => `
+      css={(theme: Theme) => `
         width: 250px;
         @media (min-width: 401px) {
           width: 375px;
@@ -41,7 +47,7 @@ const SwissPlantImage = () => {
           zIndex: -1,
         }}
       />
-    </Box>
+    </StyledBox>
   );
 };
 
