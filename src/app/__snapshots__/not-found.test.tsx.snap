@@ -263,6 +263,8 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .emotion-16 {
@@ -308,6 +310,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 
 @media (min-width:900px) {
   .emotion-17 {
+    height: calc(var(--viewport-height) - 60px - 175px);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -1026,6 +1029,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
     >
       <div
         class="MuiBox-root emotion-15"
+        data-testid="image-background-container"
       >
         <div
           class="MuiBox-root emotion-16"
@@ -1046,6 +1050,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
       </div>
       <div
         class="MuiBox-root emotion-17"
+        data-testid="image-container-content"
       >
         <div
           class="MuiBox-root emotion-18"
