@@ -275,8 +275,6 @@ exports[`The Contact Page has expected snapshot 1`] = `
   width: auto;
   position: relative;
   overflow: hidden;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 @media (min-width:600px) {
@@ -319,7 +317,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 .emotion-17 {
-  height: calc(var(--viewport-height) - 60px - 175px);
+  min-height: calc(var(--viewport-height) - 60px - 175px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -327,10 +325,6 @@ exports[`The Contact Page has expected snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
   max-width: 500px;
 }
 
@@ -350,6 +344,10 @@ exports[`The Contact Page has expected snapshot 1`] = `
     -webkit-justify-content: center;
     justify-content: center;
   }
+}
+
+.emotion-18 {
+  margin: 16px;
 }
 
 .emotion-19 {
@@ -1057,13 +1055,14 @@ exports[`The Contact Page has expected snapshot 1`] = `
   >
     <div
       class="MuiContainer-root MuiContainer-maxWidthLg emotion-14"
+      data-testid="image-container"
     >
       <div
         class="MuiBox-root emotion-15"
       >
         <div
           class="MuiBox-root emotion-16"
-          data-testid="image-container"
+          data-testid="swiss-plant-image"
         >
           <img
             alt=""
@@ -1080,7 +1079,6 @@ exports[`The Contact Page has expected snapshot 1`] = `
       </div>
       <div
         class="MuiBox-root emotion-17"
-        data-testid="image-template-container"
       >
         <div
           class="MuiBox-root emotion-18"
