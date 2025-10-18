@@ -1084,7 +1084,6 @@ exports[`The Contact Page has expected snapshot 1`] = `
       >
         <div
           class="MuiBox-root emotion-18"
-          data-testid="contact-copy-container"
         >
           <h1
             class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-19"
