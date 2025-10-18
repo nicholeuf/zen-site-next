@@ -22,17 +22,22 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
       }}
     >
       <Box
+        data-testid="image-background-container"
         sx={{
           position: 'absolute',
           right: 0,
           top: 0,
+          zIndex: 0,
+          pointerEvents: 'none',
         }}
       >
         <SwissPlantImage />
       </Box>
       <Box
+        data-testid="image-container-content"
         sx={{
           minHeight: getMainHeight(),
+          height: { md: getMainHeight() },
           display: 'flex',
           flexDirection: 'column',
           justifyContent: {
