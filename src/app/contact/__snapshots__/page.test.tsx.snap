@@ -303,12 +303,12 @@ exports[`The Contact Page has expected snapshot 1`] = `
   height: auto;
   aspect-ratio: 0.77;
   overflow: hidden;
-  width: 250px;
+  width: 175px;
 }
 
 @media (min-width: 401px) {
   .emotion-16 {
-    width: 375px;
+    width: 300px;
   }
 }
 
