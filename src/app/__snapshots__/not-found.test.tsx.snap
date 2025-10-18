@@ -25,7 +25,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   top: 0;
   left: auto;
   right: 0;
-  --AppBar-background: #FA2742;
+  --AppBar-background: #fa2742;
   --AppBar-color: #fff;
   background-color: var(--AppBar-background);
   color: var(--AppBar-color);
@@ -88,7 +88,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   font: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  color: #FA2742;
+  color: #fa2742;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #373833;
@@ -175,7 +175,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   font: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  color: #FA2742;
+  color: #fa2742;
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -365,7 +365,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   font: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  color: #FA2742;
+  color: #fa2742;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -557,7 +557,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   font: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  color: #FA2742;
+  color: #fa2742;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-text-decoration: none;
@@ -742,7 +742,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   font-size: 1rem;
   line-height: 1.5;
   display: inline;
-  color: #FA2742;
+  color: #fa2742;
 }
 
 .emotion-38 {
@@ -841,7 +841,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   font: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  color: #FA2742;
+  color: #fa2742;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #f8faf3;
@@ -899,11 +899,11 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   padding: 6px 8px;
   color: var(--variant-textColor);
   background-color: var(--variant-textBg);
-  --variant-textColor: #FA2742;
-  --variant-outlinedColor: #FA2742;
+  --variant-textColor: #fa2742;
+  --variant-outlinedColor: #fa2742;
   --variant-outlinedBorder: rgba(250, 39, 66, 0.5);
   --variant-containedColor: #fff;
-  --variant-containedBg: #FA2742;
+  --variant-containedBg: #fa2742;
   padding: 4px 5px;
   font-size: 0.8125rem;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -942,7 +942,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   .emotion-43:hover {
     --variant-containedBg: rgb(175, 27, 46);
     --variant-textBg: rgba(250, 39, 66, 0.04);
-    --variant-outlinedBorder: #FA2742;
+    --variant-outlinedBorder: #fa2742;
     --variant-outlinedBg: rgba(250, 39, 66, 0.04);
   }
 }
