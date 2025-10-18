@@ -29,7 +29,7 @@ const ContactContent: React.FC<ContactContent> = ({ chatEnabled }) => {
     );
   };
   return (
-    <Box sx={{ m: 2 }}>
+    <Box>
       <Typography variant="h1" gutterBottom>
         Contact
       </Typography>

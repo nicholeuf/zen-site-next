@@ -42,7 +42,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
           maxWidth: '500px',
         }}
       >
-        {children}
+        <Box sx={{ m: 2 }}>{children}</Box>
       </Box>
     </PageContainer>
   );
