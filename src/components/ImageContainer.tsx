@@ -36,6 +36,8 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
       <Box
         data-testid="image-container-content"
         sx={{
+          position: 'relative',
+          zIndex: 1,
           minHeight: getMainHeight(),
           height: { md: getMainHeight() },
           display: 'flex',
