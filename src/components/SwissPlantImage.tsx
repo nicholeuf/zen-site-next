@@ -20,9 +20,9 @@ const SwissPlantImage = () => {
         overflow: 'hidden',
       }}
       css={(theme: Theme) => `
-        width: 250px;
+        width: 175px;
         @media (min-width: 401px) {
-          width: 375px;
+          width: 300px;
         }
         @media (min-width: ${theme.breakpoints.values.sm}px) {
           width: 500px;
@@ -31,7 +31,7 @@ const SwissPlantImage = () => {
     >
       <CldImage
         src="zensite/lucila-naves-swiss-guava"
-        opacity="50"
+        opacity="30"
         alt=""
         fill={true}
         aspectRatio="0.77"

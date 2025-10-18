@@ -13,7 +13,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
       sx={{
         display: 'flex',
         alignItems: 'center',
-        height: getMainHeight(),
+        minHeight: getMainHeight(),
         width: 'auto',
         position: 'relative',
         overflow: 'hidden',
@@ -31,7 +31,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
       <Box
         data-testid="image-template-container"
         sx={{
-          height: '100%',
+          height: getMainHeight(),
           display: 'flex',
           flexDirection: 'column',
           justifyContent: {
