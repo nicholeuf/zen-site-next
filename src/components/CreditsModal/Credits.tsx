@@ -41,27 +41,16 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
             </ExternalLink>
           </Typography>
         </DashListItem>
+
         <DashListItem>
           <Typography>
-            Contact page asset:&nbsp;
-            <ExternalLink href="https://icons8.com/illustrations/illustration/shine-stephania-plant-in-plant-pot">
-              Stephania Plant in Plant Pot
+            Contact Page and Not Found Page asset: Illustration by&nbsp;
+            <ExternalLink href="https://unsplash.com/@lucilanaves?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Lucila Naves
             </ExternalLink>
-            &nbsp;illustration by&nbsp;
-            <ExternalLink href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">
-              Icons8
-            </ExternalLink>
-          </Typography>
-        </DashListItem>
-        <DashListItem>
-          <Typography>
-            Not found page asset:&nbsp;
-            <ExternalLink href="https://icons8.com/illustrations/illustration/dizzy-plant-chlorophytum">
-              Dizzy Plant Chlorophytum
-            </ExternalLink>
-            &nbsp;illustration by&nbsp;
-            <ExternalLink href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">
-              Icons8
+            &nbsp;on&nbsp;
+            <ExternalLink href="https://unsplash.com/illustrations/a-plant-with-leaves-cascading-downward-o5zKF1LOoXk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
             </ExternalLink>
           </Typography>
         </DashListItem>
