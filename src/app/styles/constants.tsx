@@ -8,7 +8,7 @@ const constants = {
   colors: {
     guava: '#FA2742',
     carob: '#373833',
-    cream: '#E8EAE3',
+    cream: '#f8faf3',
     gunmetal: '#2b303aff',
   },
 };
