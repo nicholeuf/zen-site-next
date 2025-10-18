@@ -38,8 +38,9 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
         sx={{
           position: 'relative',
           zIndex: 1,
-          minHeight: getMainHeight(),
-          height: { md: getMainHeight() },
+          minHeight: { xs: getMainHeight(), md: getMainHeight() },
+          // Allow content to grow beyond minHeight without forcing a fixed height
+          height: 'auto',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: {
