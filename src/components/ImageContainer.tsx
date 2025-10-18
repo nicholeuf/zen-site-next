@@ -1,6 +1,5 @@
 import { getMainHeight } from '@/app/styles/styleUtils';
-import { Box, BoxProps } from '@mui/material';
-import { CldImageProps, CldImage } from 'next-cloudinary';
+import { Box } from '@mui/material';
 import PageContainer, { PageContainerProps } from './PageContainer';
 import SwissPlantImage from './SwissPlantImage';
 
