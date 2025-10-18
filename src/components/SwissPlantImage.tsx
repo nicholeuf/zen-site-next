@@ -1,5 +1,5 @@
-/* @jsxImportSource @emotion/react */
-import { css } from '@mui/material/styles';
+/* eslint-disable react/react-in-jsx-scope -- Unaware of jsxImportSource */
+/** @jsxImportSource @emotion/react */
 import Box from '@mui/material/Box';
 import { CldImage } from 'next-cloudinary';
 
@@ -13,7 +13,7 @@ const SwissPlantImage = () => {
         aspectRatio: '0.77',
         overflow: 'hidden',
       }}
-      css={(theme) => css`
+      css={(theme) => `
         width: 250px;
         @media (min-width: 401px) {
           width: 375px;
