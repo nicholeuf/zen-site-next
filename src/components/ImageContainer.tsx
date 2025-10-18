@@ -11,6 +11,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
   return (
     <PageContainer
       data-testid="image-container"
+      hasPadding={false}
       sx={{
         display: 'flex',
         alignItems: 'center',
