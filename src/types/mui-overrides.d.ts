@@ -9,10 +9,6 @@ declare module '@emotion/react' {
   export interface Theme extends MuiTheme {}
 }
 
-declare module '@mui/styles' {
-  interface DefaultTheme extends MuiTheme {}
-}
-
 // https://mui.com/material-ui/customization/typography/#adding-amp-disabling-variants
 declare module '@mui/material/styles' {
   interface TypographyVariants {
