@@ -1,45 +1,15 @@
 'use client';
 import Typography from '@mui/material/Typography';
 import { usePathname } from 'next/navigation';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { Theme } from '@mui/material/styles';
 
-import ImageTemplate from '@/components/ImageTemplate';
 import NextLink from './NextLink';
-
-const WIDTH = 367;
-const HEIGHT = 261;
+import ImageContainer from './ImageContainer';
 
 const NotFound = () => {
   const pathname = usePathname();
 
-  const isFactor2 = useMediaQuery<Theme>((theme) =>
-    theme.breakpoints.down(600)
-  );
-
-  const getFactor = (): number => {
-    if (isFactor2) {
-      return 2;
-    }
-
-    return 1;
-  };
-
-  const factor = getFactor();
-
   return (
-    <ImageTemplate
-      data-testid="not-found-page"
-      imageTestId={`plant-image-factor-${factor}`}
-      imageProps={{
-        width: Math.ceil(WIDTH / factor),
-        height: Math.ceil(HEIGHT / factor),
-        src: 'zensite/dizzy-plant-chlorophytum',
-        crop: 'fill',
-        opacity: '40',
-        alt: '',
-      }}
-    >
+    <ImageContainer>
       <Typography variant="h1" gutterBottom>
         Sorry
       </Typography>
@@ -48,7 +18,7 @@ const NotFound = () => {
         to go to the&nbsp;
         <NextLink href="/">Home Page</NextLink>?
       </Typography>
-    </ImageTemplate>
+    </ImageContainer>
   );
 };
 

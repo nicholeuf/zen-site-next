@@ -240,7 +240,8 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: calc(var(--viewport-height) - 60px - 175px);
+  height: calc(var(--viewport-height) - 60px - 175px);
+  width: auto;
   position: relative;
   overflow: hidden;
   padding-top: 16px;
@@ -261,6 +262,32 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 .emotion-15 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.emotion-16 {
+  position: relative;
+  height: auto;
+  aspect-ratio: 0.77;
+  overflow: hidden;
+  width: 250px;
+}
+
+@media (min-width: 401px) {
+  .emotion-16 {
+    width: 375px;
+  }
+}
+
+@media (min-width: 600px) {
+  .emotion-16 {
+    width: 500px;
+  }
+}
+
+.emotion-17 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -269,19 +296,32 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  max-width: 500px;
 }
 
-@media (min-width:900px) {
-  .emotion-15 {
-    margin-left: 80px;
+@media (min-width:0px) {
+  .emotion-17 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
 
-.emotion-16 {
+@media (min-width:900px) {
+  .emotion-17 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+.emotion-18 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -291,24 +331,24 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 5.9983rem;
   }
 }
 
-.emotion-17 {
+.emotion-19 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -316,7 +356,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   line-height: 1.5;
 }
 
-.emotion-18 {
+.emotion-20 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -326,12 +366,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   text-decoration: none;
 }
 
-.emotion-18:hover {
+.emotion-20:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-19 {
+.emotion-21 {
   background-color: #373833;
   color: #E8EAE3;
   height: 175px;
@@ -350,7 +390,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-20 {
+.emotion-22 {
   max-width: 600px;
   display: grid;
   gap: 4px;
@@ -360,18 +400,18 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-20 {
+  .emotion-22 {
     grid-template-areas: "nav" "madeby" "copyright" "source";
   }
 }
 
 @media (min-width:600px) {
-  .emotion-20 {
+  .emotion-22 {
     grid-template-areas: "nav madeby" "nav copyright" "nav source";
   }
 }
 
-.emotion-21 {
+.emotion-23 {
   grid-area: nav;
   display: -webkit-box;
   display: -webkit-flex;
@@ -386,7 +426,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-21 {
+  .emotion-23 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -395,7 +435,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-21 {
+  .emotion-23 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
@@ -403,12 +443,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-22 {
+.emotion-24 {
   width: 25%;
   height: 100%;
 }
 
-.emotion-23 {
+.emotion-25 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -434,7 +474,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-23 {
+  .emotion-25 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -442,14 +482,14 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-23 {
+  .emotion-25 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
-.emotion-24 {
+.emotion-26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -490,25 +530,25 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-24 {
+  .emotion-26 {
     margin: 8px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-24 {
+  .emotion-26 {
     margin: 24px;
   }
 }
 
-.emotion-24:hover {
+.emotion-26:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.emotion-25 {
+.emotion-27 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -534,12 +574,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-25:hover {
+.emotion-27:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-26 {
+.emotion-28 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -586,42 +626,42 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-26::-moz-focus-inner {
+.emotion-28::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-26.Mui-disabled {
+.emotion-28.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-26 {
+  .emotion-28 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-26:hover {
+.emotion-28:hover {
   background-color: var(--IconButton-hoverBg);
 }
 
 @media (hover: none) {
-  .emotion-26:hover {
+  .emotion-28:hover {
     background-color: transparent;
   }
 }
 
-.emotion-26.Mui-disabled {
+.emotion-28.Mui-disabled {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.26);
 }
 
-.emotion-26.MuiIconButton-loading {
+.emotion-28.MuiIconButton-loading {
   color: transparent;
 }
 
-.emotion-27 {
+.emotion-29 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -639,7 +679,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   color: #E8EAE3;
 }
 
-.emotion-32 {
+.emotion-34 {
   grid-area: madeby;
   display: -webkit-box;
   display: -webkit-flex;
@@ -648,7 +688,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-32 {
+  .emotion-34 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -661,7 +701,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-32 {
+  .emotion-34 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -673,25 +713,25 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-33 {
+.emotion-35 {
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
 }
 
 @media (min-width:0px) {
-  .emotion-33 {
+  .emotion-35 {
     font-size: 24px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-33 {
+  .emotion-35 {
     font-size: 34px;
   }
 }
 
-.emotion-34 {
+.emotion-36 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -701,52 +741,8 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   color: #FA2742;
 }
 
-.emotion-35 {
-  grid-area: copyright;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width:0px) {
-  .emotion-35 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-35 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-  }
-}
-
-.emotion-36 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 2.66;
-  text-transform: uppercase;
-  text-transform: none;
-}
-
 .emotion-37 {
-  grid-area: source;
+  grid-area: copyright;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -786,13 +782,57 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   font-size: 0.75rem;
   line-height: 2.66;
   text-transform: uppercase;
+  text-transform: none;
+}
+
+.emotion-39 {
+  grid-area: source;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.emotion-39 {
+@media (min-width:0px) {
+  .emotion-39 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-39 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.emotion-40 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 2.66;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-41 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -803,12 +843,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   color: #E8EAE3;
 }
 
-.emotion-39:hover {
+.emotion-41:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-40 {
+.emotion-42 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -869,33 +909,33 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-40::-moz-focus-inner {
+.emotion-42::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-40.Mui-disabled {
+.emotion-42.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-40 {
+  .emotion-42 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-40:hover {
+.emotion-42:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-40.Mui-disabled {
+.emotion-42.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 
 @media (hover: hover) {
-  .emotion-40:hover {
+  .emotion-42:hover {
     --variant-containedBg: rgb(175, 27, 46);
     --variant-textBg: rgba(250, 39, 66, 0.04);
     --variant-outlinedBorder: #FA2742;
@@ -903,7 +943,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-40.MuiButton-loading {
+.emotion-42.MuiButton-loading {
   color: transparent;
 }
 
@@ -984,30 +1024,38 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   >
     <div
       class="MuiContainer-root MuiContainer-maxWidthLg emotion-14"
-      data-testid="not-found-page"
     >
-      <img
-        alt=""
-        data-nimg="1"
-        data-testid="plant-image-factor-1"
-        decoding="async"
-        height="261"
-        loading="lazy"
-        src="https://res.cloudinary.com/nicholeuf/image/upload/o_40/c_fill,w_750,h_533,g_auto/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAZGID0"
-        srcset="https://res.cloudinary.com/nicholeuf/image/upload/o_40/c_fill,w_384,h_273,g_auto/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAZGID0 1x, https://res.cloudinary.com/nicholeuf/image/upload/o_40/c_fill,w_750,h_533,g_auto/f_auto/q_auto/v1/zensite/dizzy-plant-chlorophytum?_a=BAVAZGID0 2x"
-        style="color: transparent; position: absolute; top: 10px; right: 10px; overflow: hidden; z-index: -1;"
-        width="367"
-      />
       <div
         class="MuiBox-root emotion-15"
       >
+        <div
+          class="MuiBox-root emotion-16"
+          data-testid="image-container"
+        >
+          <img
+            alt=""
+            data-nimg="fill"
+            data-testid="bg-image"
+            decoding="async"
+            loading="lazy"
+            sizes="50vw"
+            src="https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_3840/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0"
+            srcset="https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_384/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 384w, https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_640/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 640w, https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_750/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 750w, https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_828/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 828w, https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_1080/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 1080w, https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_1200/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 1200w, https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_1920/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 1920w, https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_2048/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 2048w, https://res.cloudinary.com/nicholeuf/image/upload/o_50/c_scale,w_3840/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent; overflow: hidden; z-index: -1;"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiBox-root emotion-17"
+        data-testid="image-template-container"
+      >
         <h1
-          class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-16"
+          class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-18"
         >
           Sorry
         </h1>
         <p
-          class="MuiTypography-root MuiTypography-body1 emotion-17"
+          class="MuiTypography-root MuiTypography-body1 emotion-19"
           data-testid="not-found-copy"
         >
           The page 
@@ -1016,7 +1064,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
           </strong>
            could not be found. Would you like to go to the 
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-18"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-20"
             href="/"
           >
             Home Page
@@ -1027,41 +1075,41 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
     </div>
   </main>
   <footer
-    class="MuiBox-root emotion-19"
+    class="MuiBox-root emotion-21"
     data-testid="footer"
   >
     <div
-      class="MuiBox-root emotion-20"
+      class="MuiBox-root emotion-22"
     >
       <div
-        class="MuiBox-root emotion-21"
+        class="MuiBox-root emotion-23"
       >
         <nav
           aria-label="External Navigation"
-          class="MuiBox-root emotion-22"
+          class="MuiBox-root emotion-24"
           data-testid="footer-nav"
         >
           <ul
-            class="MuiList-root MuiList-padding emotion-23"
+            class="MuiList-root MuiList-padding emotion-25"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-26"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-25"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-27"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-26"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-28"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-27"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-29"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1074,23 +1122,23 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-24"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-26"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-25"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-27"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-26"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-28"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-27"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-29"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1106,15 +1154,15 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         </nav>
       </div>
       <div
-        class="MuiBox-root emotion-32"
+        class="MuiBox-root emotion-34"
       >
         <p
-          class="MuiTypography-root MuiTypography-sacramento emotion-33"
+          class="MuiTypography-root MuiTypography-sacramento emotion-35"
         >
           Made with
            
           <span
-            class="MuiTypography-root MuiTypography-body1 emotion-34"
+            class="MuiTypography-root MuiTypography-body1 emotion-36"
           >
             ♥
           </span>
@@ -1123,10 +1171,10 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-35"
+        class="MuiBox-root emotion-37"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-36"
+          class="MuiTypography-root MuiTypography-overline emotion-38"
         >
           Copyright © 
           2025
@@ -1138,14 +1186,14 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-37"
+        class="MuiBox-root emotion-39"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-38"
+          class="MuiTypography-root MuiTypography-overline emotion-40"
         >
           <a
             aria-label="View Source Code"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-39"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-41"
             href="https://github.com/nicholeuf/zen-site-next"
             rel="noopener"
             target="_blank"
@@ -1154,7 +1202,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
           </a>
            | 
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-40"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-42"
             tabindex="0"
             type="button"
           >
