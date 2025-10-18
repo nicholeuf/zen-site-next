@@ -290,7 +290,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 .emotion-17 {
   position: relative;
   z-index: 1;
-  min-height: calc(var(--viewport-height) - 60px - 175px);
+  height: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -303,6 +303,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 
 @media (min-width:0px) {
   .emotion-17 {
+    min-height: calc(var(--viewport-height) - 60px - 175px);
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -312,7 +313,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 
 @media (min-width:900px) {
   .emotion-17 {
-    height: calc(var(--viewport-height) - 60px - 175px);
+    min-height: calc(var(--viewport-height) - 60px - 175px);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
