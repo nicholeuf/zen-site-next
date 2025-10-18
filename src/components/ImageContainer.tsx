@@ -10,6 +10,8 @@ interface ImageContainerProps extends PageContainerProps {
 const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
   return (
     <PageContainer
+      data-testid="image-container"
+      hasPadding={false}
       sx={{
         display: 'flex',
         alignItems: 'center',
@@ -20,30 +22,35 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
       }}
     >
       <Box
+        data-testid="image-background-container"
         sx={{
           position: 'absolute',
           right: 0,
           top: 0,
+          zIndex: 0,
+          pointerEvents: 'none',
         }}
       >
         <SwissPlantImage />
       </Box>
       <Box
-        data-testid="image-template-container"
+        data-testid="image-container-content"
         sx={{
-          height: getMainHeight(),
+          position: 'relative',
+          zIndex: 1,
+          minHeight: { xs: getMainHeight(), md: getMainHeight() },
+          // Allow content to grow beyond minHeight without forcing a fixed height
+          height: 'auto',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: {
             xs: 'flex-end',
             md: 'center',
           },
-          my: 4,
-          mx: 2,
           maxWidth: '500px',
         }}
       >
-        {children}
+        <Box sx={{ m: 2 }}>{children}</Box>
       </Box>
     </PageContainer>
   );

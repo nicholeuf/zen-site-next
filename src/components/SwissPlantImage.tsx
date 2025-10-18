@@ -2,7 +2,6 @@
 /** @jsxImportSource @emotion/react */
 
 import Box from '@mui/material/Box';
-// import styled from '@emotion/styled';
 import { CldImage } from 'next-cloudinary';
 import { Theme, styled } from '@mui/material/styles';
 
@@ -12,10 +11,10 @@ const StyledBox = styled(Box)``;
 const SwissPlantImage = () => {
   return (
     <StyledBox
-      data-testid="image-container"
+      data-testid="swiss-plant-image"
       sx={{
         position: 'relative',
-        height: 'auto',
+        maxHeight: '100%',
         aspectRatio: '0.77',
         overflow: 'hidden',
       }}

@@ -2,11 +2,13 @@ import Container, { ContainerProps } from '@mui/material/Container';
 
 export interface PageContainerProps extends ContainerProps {
   children: React.ReactNode;
+  hasPadding?: boolean;
 }
 
 const PageContainer: React.FC<PageContainerProps> = ({
   children,
   maxWidth = 'lg',
+  hasPadding = true,
   sx,
   ...props
 }) => {
@@ -15,7 +17,7 @@ const PageContainer: React.FC<PageContainerProps> = ({
       {...props}
       sx={{
         ...sx,
-        py: 2,
+        ...(hasPadding && { py: 2 }),
       }}
       maxWidth={maxWidth}
     >

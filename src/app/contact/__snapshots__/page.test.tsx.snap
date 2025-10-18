@@ -275,8 +275,6 @@ exports[`The Contact Page has expected snapshot 1`] = `
   width: auto;
   position: relative;
   overflow: hidden;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 @media (min-width:600px) {
@@ -296,11 +294,13 @@ exports[`The Contact Page has expected snapshot 1`] = `
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .emotion-16 {
   position: relative;
-  height: auto;
+  max-height: 100%;
   aspect-ratio: 0.77;
   overflow: hidden;
   width: 175px;
@@ -319,7 +319,9 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 .emotion-17 {
-  height: calc(var(--viewport-height) - 60px - 175px);
+  position: relative;
+  z-index: 1;
+  height: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -327,15 +329,12 @@ exports[`The Contact Page has expected snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
   max-width: 500px;
 }
 
 @media (min-width:0px) {
   .emotion-17 {
+    min-height: calc(var(--viewport-height) - 60px - 175px);
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -345,6 +344,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 
 @media (min-width:900px) {
   .emotion-17 {
+    min-height: calc(var(--viewport-height) - 60px - 175px);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -352,7 +352,11 @@ exports[`The Contact Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-19 {
+.emotion-18 {
+  margin: 16px;
+}
+
+.emotion-20 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -362,24 +366,24 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-19 {
+  .emotion-20 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-19 {
+  .emotion-20 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-19 {
+  .emotion-20 {
     font-size: 5.9983rem;
   }
 }
 
-.emotion-20 {
+.emotion-21 {
   margin: 0;
   font-size: 0.9rem;
   font-family: fontFamily;
@@ -387,7 +391,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   line-height: 1.43;
 }
 
-.emotion-21 {
+.emotion-22 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -398,12 +402,12 @@ exports[`The Contact Page has expected snapshot 1`] = `
   font-weight: 500;
 }
 
-.emotion-21:hover {
+.emotion-22:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-22 {
+.emotion-23 {
   background-color: #373833;
   color: #E8EAE3;
   height: 175px;
@@ -422,7 +426,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-23 {
+.emotion-24 {
   max-width: 600px;
   display: grid;
   gap: 4px;
@@ -432,18 +436,18 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-23 {
+  .emotion-24 {
     grid-template-areas: "nav" "madeby" "copyright" "source";
   }
 }
 
 @media (min-width:600px) {
-  .emotion-23 {
+  .emotion-24 {
     grid-template-areas: "nav madeby" "nav copyright" "nav source";
   }
 }
 
-.emotion-24 {
+.emotion-25 {
   grid-area: nav;
   display: -webkit-box;
   display: -webkit-flex;
@@ -458,7 +462,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-24 {
+  .emotion-25 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -467,7 +471,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-24 {
+  .emotion-25 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
@@ -475,12 +479,12 @@ exports[`The Contact Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-25 {
+.emotion-26 {
   width: 25%;
   height: 100%;
 }
 
-.emotion-26 {
+.emotion-27 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -506,7 +510,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-26 {
+  .emotion-27 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -514,14 +518,14 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-26 {
+  .emotion-27 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
-.emotion-27 {
+.emotion-28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -562,25 +566,25 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-27 {
+  .emotion-28 {
     margin: 8px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-27 {
+  .emotion-28 {
     margin: 24px;
   }
 }
 
-.emotion-27:hover {
+.emotion-28:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.emotion-28 {
+.emotion-29 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -606,12 +610,12 @@ exports[`The Contact Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-28:hover {
+.emotion-29:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-29 {
+.emotion-30 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -658,42 +662,42 @@ exports[`The Contact Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-29::-moz-focus-inner {
+.emotion-30::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-29.Mui-disabled {
+.emotion-30.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-29 {
+  .emotion-30 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-29:hover {
+.emotion-30:hover {
   background-color: var(--IconButton-hoverBg);
 }
 
 @media (hover: none) {
-  .emotion-29:hover {
+  .emotion-30:hover {
     background-color: transparent;
   }
 }
 
-.emotion-29.Mui-disabled {
+.emotion-30.Mui-disabled {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.26);
 }
 
-.emotion-29.MuiIconButton-loading {
+.emotion-30.MuiIconButton-loading {
   color: transparent;
 }
 
-.emotion-30 {
+.emotion-31 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -711,7 +715,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   color: #E8EAE3;
 }
 
-.emotion-35 {
+.emotion-36 {
   grid-area: madeby;
   display: -webkit-box;
   display: -webkit-flex;
@@ -720,7 +724,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-35 {
+  .emotion-36 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -733,7 +737,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-35 {
+  .emotion-36 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -745,25 +749,25 @@ exports[`The Contact Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-36 {
+.emotion-37 {
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
 }
 
 @media (min-width:0px) {
-  .emotion-36 {
+  .emotion-37 {
     font-size: 24px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-36 {
+  .emotion-37 {
     font-size: 34px;
   }
 }
 
-.emotion-37 {
+.emotion-38 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -773,7 +777,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   color: #FA2742;
 }
 
-.emotion-38 {
+.emotion-39 {
   grid-area: copyright;
   display: -webkit-box;
   display: -webkit-flex;
@@ -782,7 +786,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-38 {
+  .emotion-39 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -795,7 +799,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-38 {
+  .emotion-39 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -807,7 +811,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-39 {
+.emotion-40 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -817,7 +821,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   text-transform: none;
 }
 
-.emotion-40 {
+.emotion-41 {
   grid-area: source;
   display: -webkit-box;
   display: -webkit-flex;
@@ -826,7 +830,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-40 {
+  .emotion-41 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -839,7 +843,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-40 {
+  .emotion-41 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -851,7 +855,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-41 {
+.emotion-42 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -864,7 +868,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   display: flex;
 }
 
-.emotion-42 {
+.emotion-43 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -875,12 +879,12 @@ exports[`The Contact Page has expected snapshot 1`] = `
   color: #E8EAE3;
 }
 
-.emotion-42:hover {
+.emotion-43:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-43 {
+.emotion-44 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -941,33 +945,33 @@ exports[`The Contact Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-43::-moz-focus-inner {
+.emotion-44::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-43.Mui-disabled {
+.emotion-44.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-43 {
+  .emotion-44 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-43:hover {
+.emotion-44:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-43.Mui-disabled {
+.emotion-44.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 
 @media (hover: hover) {
-  .emotion-43:hover {
+  .emotion-44:hover {
     --variant-containedBg: rgb(175, 27, 46);
     --variant-textBg: rgba(250, 39, 66, 0.04);
     --variant-outlinedBorder: #FA2742;
@@ -975,7 +979,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-43.MuiButton-loading {
+.emotion-44.MuiButton-loading {
   color: transparent;
 }
 
@@ -1057,13 +1061,15 @@ exports[`The Contact Page has expected snapshot 1`] = `
   >
     <div
       class="MuiContainer-root MuiContainer-maxWidthLg emotion-14"
+      data-testid="image-container"
     >
       <div
         class="MuiBox-root emotion-15"
+        data-testid="image-background-container"
       >
         <div
           class="MuiBox-root emotion-16"
-          data-testid="image-container"
+          data-testid="swiss-plant-image"
         >
           <img
             alt=""
@@ -1080,71 +1086,75 @@ exports[`The Contact Page has expected snapshot 1`] = `
       </div>
       <div
         class="MuiBox-root emotion-17"
-        data-testid="image-template-container"
+        data-testid="image-container-content"
       >
         <div
           class="MuiBox-root emotion-18"
         >
-          <h1
-            class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-19"
+          <div
+            class="MuiBox-root emotion-19"
           >
-            Contact
-          </h1>
-          <p
-            class="MuiTypography-root MuiTypography-body2 emotion-20"
-            data-testid="contact-copy"
-          >
-            Please connect with me on 
-            <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-21"
-              href="https://www.linkedin.com/in/nicholeuf"
-              rel="noopener"
-              target="_blank"
+            <h1
+              class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-20"
             >
-              LinkedIn
-            </a>
-            . I look forward to hearing from you!
-          </p>
+              Contact
+            </h1>
+            <p
+              class="MuiTypography-root MuiTypography-body2 emotion-21"
+              data-testid="contact-copy"
+            >
+              Please connect with me on 
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-22"
+                href="https://www.linkedin.com/in/nicholeuf"
+                rel="noopener"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+              . I look forward to hearing from you!
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </main>
   <footer
-    class="MuiBox-root emotion-22"
+    class="MuiBox-root emotion-23"
     data-testid="footer"
   >
     <div
-      class="MuiBox-root emotion-23"
+      class="MuiBox-root emotion-24"
     >
       <div
-        class="MuiBox-root emotion-24"
+        class="MuiBox-root emotion-25"
       >
         <nav
           aria-label="External Navigation"
-          class="MuiBox-root emotion-25"
+          class="MuiBox-root emotion-26"
           data-testid="footer-nav"
         >
           <ul
-            class="MuiList-root MuiList-padding emotion-26"
+            class="MuiList-root MuiList-padding emotion-27"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-27"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-28"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-28"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-29"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-29"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-30"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-30"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-31"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1157,23 +1167,23 @@ exports[`The Contact Page has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-27"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-28"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-28"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-29"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-29"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-30"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-30"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-31"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1189,15 +1199,15 @@ exports[`The Contact Page has expected snapshot 1`] = `
         </nav>
       </div>
       <div
-        class="MuiBox-root emotion-35"
+        class="MuiBox-root emotion-36"
       >
         <p
-          class="MuiTypography-root MuiTypography-sacramento emotion-36"
+          class="MuiTypography-root MuiTypography-sacramento emotion-37"
         >
           Made with
            
           <span
-            class="MuiTypography-root MuiTypography-body1 emotion-37"
+            class="MuiTypography-root MuiTypography-body1 emotion-38"
           >
             ♥
           </span>
@@ -1206,10 +1216,10 @@ exports[`The Contact Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-38"
+        class="MuiBox-root emotion-39"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-39"
+          class="MuiTypography-root MuiTypography-overline emotion-40"
         >
           Copyright © 
           2025
@@ -1221,14 +1231,14 @@ exports[`The Contact Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-40"
+        class="MuiBox-root emotion-41"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-41"
+          class="MuiTypography-root MuiTypography-overline emotion-42"
         >
           <a
             aria-label="View Source Code"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-42"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-43"
             href="https://github.com/nicholeuf/zen-site-next"
             rel="noopener"
             target="_blank"
@@ -1237,7 +1247,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
           </a>
            | 
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-43"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-44"
             tabindex="0"
             type="button"
           >
