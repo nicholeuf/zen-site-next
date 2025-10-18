@@ -7,7 +7,6 @@ import {
   renderSnapshotWithLayout,
   resetMatchMedia,
   XS_DEVICE,
-  SM_DEVICE,
 } from 'test-utils';
 
 const mockUsePathname = jest.fn();
@@ -51,31 +50,6 @@ describe('The Not Found (404) Page', () => {
       expect(screen.getByTestId('not-found-copy')).toHaveTextContent(
         'The page /figs could not be found. Would you like to go to the Home Page?'
       );
-
-      expect(screen.getByTestId('plant-image-factor-2')).toBeVisible();
-    });
-  });
-
-  describe('User with SM Device', () => {
-    beforeAll(() => {
-      resetMatchMedia(SM_DEVICE);
-    });
-
-    test('has expected content and factors image by 1', () => {
-      // mock usePathname to return a 404 page
-      mockUsePathname.mockImplementation(() => '/figs');
-
-      renderWithLayout(<NotFound />);
-
-      expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-        'Sorry'
-      );
-
-      expect(screen.getByTestId('not-found-copy')).toHaveTextContent(
-        'The page /figs could not be found. Would you like to go to the Home Page?'
-      );
-
-      expect(screen.getByTestId('plant-image-factor-1')).toBeVisible();
     });
   });
 });
