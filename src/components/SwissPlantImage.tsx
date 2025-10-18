@@ -12,7 +12,7 @@ const StyledBox = styled(Box)``;
 const SwissPlantImage = () => {
   return (
     <StyledBox
-      data-testid="image-container"
+      data-testid="swiss-plant-image"
       sx={{
         position: 'relative',
         height: 'auto',

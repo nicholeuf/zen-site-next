@@ -10,6 +10,7 @@ interface ImageContainerProps extends PageContainerProps {
 const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
   return (
     <PageContainer
+      data-testid="image-container"
       sx={{
         display: 'flex',
         alignItems: 'center',
@@ -29,17 +30,14 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
         <SwissPlantImage />
       </Box>
       <Box
-        data-testid="image-template-container"
         sx={{
-          height: getMainHeight(),
+          minHeight: getMainHeight(),
           display: 'flex',
           flexDirection: 'column',
           justifyContent: {
             xs: 'flex-end',
             md: 'center',
           },
-          my: 4,
-          mx: 2,
           maxWidth: '500px',
         }}
       >

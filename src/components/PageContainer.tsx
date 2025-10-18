@@ -7,18 +7,10 @@ export interface PageContainerProps extends ContainerProps {
 const PageContainer: React.FC<PageContainerProps> = ({
   children,
   maxWidth = 'lg',
-  sx,
   ...props
 }) => {
   return (
-    <Container
-      {...props}
-      sx={{
-        ...sx,
-        py: 2,
-      }}
-      maxWidth={maxWidth}
-    >
+    <Container {...props} maxWidth={maxWidth}>
       {children}
     </Container>
   );
