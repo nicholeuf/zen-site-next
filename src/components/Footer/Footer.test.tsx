@@ -10,7 +10,7 @@ describe('The Footer component', () => {
 
     const footer = screen.getByTestId('footer') as HTMLDivElement;
     expect(footer).toBeVisible();
-    expect(footer).toHaveStyleRule('color', '#E8EAE3');
+    expect(footer).toHaveStyleRule('color', '#f8faf3');
     expect(footer).toHaveStyleRule('background-color', '#373833');
 
     const nav = screen.getByRole('navigation', {
