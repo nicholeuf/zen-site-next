@@ -3,6 +3,7 @@
  */
 import { render, screen, fireEvent, waitFor } from 'test-utils';
 import Footer from './index';
+import constants from '../../app/styles/constants';
 
 describe('The Footer component', () => {
   test('has expected style rules and contains a nav and copy', () => {
@@ -10,8 +11,8 @@ describe('The Footer component', () => {
 
     const footer = screen.getByTestId('footer') as HTMLDivElement;
     expect(footer).toBeVisible();
-    expect(footer).toHaveStyleRule('color', '#f8faf3');
-    expect(footer).toHaveStyleRule('background-color', '#373833');
+    expect(footer).toHaveStyleRule('color', constants.colors.cream);
+    expect(footer).toHaveStyleRule('background-color', constants.colors.carob);
 
     const nav = screen.getByRole('navigation', {
       name: 'External Navigation',
