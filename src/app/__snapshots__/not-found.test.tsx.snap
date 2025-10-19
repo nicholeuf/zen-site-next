@@ -2,6 +2,35 @@
 
 exports[`The Not Found (404) Page has expected snapshot 1`] = `
 .emotion-0 {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  z-index: 1000;
+}
+
+.emotion-0 a {
+  position: absolute;
+  left: -9999px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fa2742;
+  color: #fff;
+  padding: 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.emotion-0 a:focus {
+  position: static;
+  left: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+.emotion-1 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -53,12 +82,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media print {
-  .emotion-0 {
+  .emotion-1 {
     position: absolute;
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   font-family: fontFamily;
   font-size: 30px;
   height: 100%;
@@ -79,11 +108,11 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-1:hover {
+.emotion-2:hover {
   cursor: pointer;
 }
 
-.emotion-2 {
+.emotion-3 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -96,22 +125,22 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   text-align: center;
 }
 
-.emotion-2:hover {
+.emotion-3:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2:hover {
+.emotion-3:hover {
   color: rgb(251, 82, 103);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2::before {
+.emotion-3::before {
   content: "nf";
 }
 
-.emotion-3 {
+.emotion-4 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -122,7 +151,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   border: 0px solid;
 }
 
-.emotion-4 {
+.emotion-5 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -136,7 +165,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   display: flex;
 }
 
-.emotion-5 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -163,14 +192,14 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   transition: transform 0.25s ease;
 }
 
-.emotion-5:hover {
+.emotion-6:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.emotion-6 {
+.emotion-7 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -188,18 +217,18 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   transition: color 0.25s ease;
 }
 
-.emotion-6:hover {
+.emotion-7:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:hover {
+.emotion-7:hover {
   color: rgb(251, 82, 103);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-13 {
+.emotion-14 {
   width: 100%;
   margin-left: auto;
   box-sizing: border-box;
@@ -213,19 +242,19 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-13 {
+  .emotion-14 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-13 {
+  .emotion-14 {
     max-width: 1200px;
   }
 }
 
-.emotion-14 {
+.emotion-15 {
   width: 100%;
   margin-left: auto;
   box-sizing: border-box;
@@ -247,19 +276,19 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-14 {
+  .emotion-15 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-14 {
+  .emotion-15 {
     max-width: 1200px;
   }
 }
 
-.emotion-15 {
+.emotion-16 {
   position: absolute;
   right: 0;
   top: 0;
@@ -267,7 +296,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   pointer-events: none;
 }
 
-.emotion-16 {
+.emotion-17 {
   position: relative;
   max-height: 100%;
   aspect-ratio: 0.77;
@@ -276,18 +305,18 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width: 401px) {
-  .emotion-16 {
+  .emotion-17 {
     width: 300px;
   }
 }
 
 @media (min-width: 600px) {
-  .emotion-16 {
+  .emotion-17 {
     width: 500px;
   }
 }
 
-.emotion-17 {
+.emotion-18 {
   position: relative;
   z-index: 1;
   height: auto;
@@ -302,7 +331,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-17 {
+  .emotion-18 {
     min-height: calc(var(--viewport-height) - 60px - 175px);
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -312,7 +341,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:900px) {
-  .emotion-17 {
+  .emotion-18 {
     min-height: calc(var(--viewport-height) - 60px - 175px);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -321,11 +350,11 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-18 {
+.emotion-19 {
   margin: 16px;
 }
 
-.emotion-19 {
+.emotion-20 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 300;
@@ -335,24 +364,24 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-19 {
+  .emotion-20 {
     font-size: 4.7129rem;
   }
 }
 
 @media (min-width:900px) {
-  .emotion-19 {
+  .emotion-20 {
     font-size: 5.3556rem;
   }
 }
 
 @media (min-width:1200px) {
-  .emotion-19 {
+  .emotion-20 {
     font-size: 5.9983rem;
   }
 }
 
-.emotion-20 {
+.emotion-21 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -360,7 +389,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   line-height: 1.5;
 }
 
-.emotion-21 {
+.emotion-22 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -370,12 +399,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   text-decoration: none;
 }
 
-.emotion-21:hover {
+.emotion-22:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-22 {
+.emotion-23 {
   background-color: #373833;
   color: #f8faf3;
   height: 175px;
@@ -394,7 +423,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-23 {
+.emotion-24 {
   max-width: 600px;
   display: grid;
   gap: 4px;
@@ -404,18 +433,18 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-23 {
+  .emotion-24 {
     grid-template-areas: "nav" "madeby" "copyright" "source";
   }
 }
 
 @media (min-width:600px) {
-  .emotion-23 {
+  .emotion-24 {
     grid-template-areas: "nav madeby" "nav copyright" "nav source";
   }
 }
 
-.emotion-24 {
+.emotion-25 {
   grid-area: nav;
   display: -webkit-box;
   display: -webkit-flex;
@@ -430,7 +459,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-24 {
+  .emotion-25 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -439,7 +468,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-24 {
+  .emotion-25 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
@@ -447,12 +476,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-25 {
+.emotion-26 {
   width: 25%;
   height: 100%;
 }
 
-.emotion-26 {
+.emotion-27 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -478,7 +507,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-26 {
+  .emotion-27 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -486,14 +515,14 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-26 {
+  .emotion-27 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
-.emotion-27 {
+.emotion-28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -534,25 +563,25 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-27 {
+  .emotion-28 {
     margin: 8px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-27 {
+  .emotion-28 {
     margin: 24px;
   }
 }
 
-.emotion-27:hover {
+.emotion-28:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.emotion-28 {
+.emotion-29 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -578,12 +607,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-28:hover {
+.emotion-29:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-29 {
+.emotion-30 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -630,42 +659,42 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-29::-moz-focus-inner {
+.emotion-30::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-29.Mui-disabled {
+.emotion-30.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-29 {
+  .emotion-30 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-29:hover {
+.emotion-30:hover {
   background-color: var(--IconButton-hoverBg);
 }
 
 @media (hover: none) {
-  .emotion-29:hover {
+  .emotion-30:hover {
     background-color: transparent;
   }
 }
 
-.emotion-29.Mui-disabled {
+.emotion-30.Mui-disabled {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.26);
 }
 
-.emotion-29.MuiIconButton-loading {
+.emotion-30.MuiIconButton-loading {
   color: transparent;
 }
 
-.emotion-30 {
+.emotion-31 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -683,7 +712,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   color: #f8faf3;
 }
 
-.emotion-35 {
+.emotion-36 {
   grid-area: madeby;
   display: -webkit-box;
   display: -webkit-flex;
@@ -692,7 +721,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-35 {
+  .emotion-36 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -705,7 +734,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-35 {
+  .emotion-36 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -717,25 +746,25 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-36 {
+.emotion-37 {
   margin: 0;
   font-family: fontFamily;
   font-size: 26px;
 }
 
 @media (min-width:0px) {
-  .emotion-36 {
+  .emotion-37 {
     font-size: 24px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-36 {
+  .emotion-37 {
     font-size: 34px;
   }
 }
 
-.emotion-37 {
+.emotion-38 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -745,7 +774,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   color: #fa2742;
 }
 
-.emotion-38 {
+.emotion-39 {
   grid-area: copyright;
   display: -webkit-box;
   display: -webkit-flex;
@@ -754,7 +783,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-38 {
+  .emotion-39 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -767,7 +796,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-38 {
+  .emotion-39 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -779,7 +808,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-39 {
+.emotion-40 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -789,7 +818,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   text-transform: none;
 }
 
-.emotion-40 {
+.emotion-41 {
   grid-area: source;
   display: -webkit-box;
   display: -webkit-flex;
@@ -798,7 +827,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-40 {
+  .emotion-41 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -811,7 +840,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-40 {
+  .emotion-41 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -823,7 +852,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-41 {
+.emotion-42 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -836,7 +865,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   display: flex;
 }
 
-.emotion-42 {
+.emotion-43 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -847,12 +876,12 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   color: #f8faf3;
 }
 
-.emotion-42:hover {
+.emotion-43:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-43 {
+.emotion-44 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -913,33 +942,33 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-43::-moz-focus-inner {
+.emotion-44::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-43.Mui-disabled {
+.emotion-44.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-43 {
+  .emotion-44 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-43:hover {
+.emotion-44:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-43.Mui-disabled {
+.emotion-44.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 
 @media (hover: hover) {
-  .emotion-43:hover {
+  .emotion-44:hover {
     --variant-containedBg: rgb(175, 27, 46);
     --variant-textBg: rgba(250, 39, 66, 0.04);
     --variant-outlinedBorder: #fa2742;
@@ -947,26 +976,45 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-43.MuiButton-loading {
+.emotion-44.MuiButton-loading {
   color: transparent;
 }
 
 <div>
+  <nav
+    class="MuiBox-root emotion-0"
+  >
+    <a
+      href="#main-content"
+    >
+      Skip to main content
+    </a>
+    <a
+      href="#main-navigation"
+    >
+      Skip to navigation
+    </a>
+    <a
+      href="#footer"
+    >
+      Skip to footer
+    </a>
+  </nav>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-0"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-1"
     data-testid="header"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <div
-      class="MuiBox-root emotion-1"
+      class="MuiBox-root emotion-2"
       data-testid="header-logo"
     >
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-3"
         href="/"
       >
         <span
-          class="MuiBox-root emotion-3"
+          class="MuiBox-root emotion-4"
           data-testid="visually-hidden"
         >
           Home
@@ -976,45 +1024,46 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
     <nav
       aria-label="Main Navigation"
       data-testid="header-nav"
+      id="main-navigation"
     >
       <ul
-        class="MuiList-root MuiList-padding emotion-4"
+        class="MuiList-root MuiList-padding emotion-5"
       >
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-6"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-7"
             href="/work"
           >
             Work
           </a>
         </li>
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-6"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-7"
             href="/about"
           >
             About
           </a>
         </li>
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-6"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-7"
             href="/contact"
           >
             Contact
           </a>
         </li>
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-6"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-7"
             href="/"
           >
             Home
@@ -1024,22 +1073,23 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
     </nav>
   </header>
   <main
-    class="MuiContainer-root MuiContainer-maxWidthLg emotion-13"
+    class="MuiContainer-root MuiContainer-maxWidthLg emotion-14"
+    id="main-content"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthLg emotion-14"
+      class="MuiContainer-root MuiContainer-maxWidthLg emotion-15"
       data-testid="image-container"
     >
       <div
-        class="MuiBox-root emotion-15"
+        class="MuiBox-root emotion-16"
         data-testid="image-background-container"
       >
         <div
-          class="MuiBox-root emotion-16"
+          class="MuiBox-root emotion-17"
           data-testid="swiss-plant-image"
         >
           <img
-            alt=""
+            alt="Decorative Swiss guava plant background image"
             data-nimg="fill"
             data-testid="bg-image"
             decoding="async"
@@ -1052,19 +1102,19 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiBox-root emotion-17"
+        class="MuiBox-root emotion-18"
         data-testid="image-container-content"
       >
         <div
-          class="MuiBox-root emotion-18"
+          class="MuiBox-root emotion-19"
         >
           <h1
-            class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-19"
+            class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-20"
           >
             Sorry
           </h1>
           <p
-            class="MuiTypography-root MuiTypography-body1 emotion-20"
+            class="MuiTypography-root MuiTypography-body1 emotion-21"
             data-testid="not-found-copy"
           >
             The page 
@@ -1073,7 +1123,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
             </strong>
              could not be found. Would you like to go to the 
             <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-21"
+              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-22"
               href="/"
             >
               Home Page
@@ -1085,41 +1135,42 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
     </div>
   </main>
   <footer
-    class="MuiBox-root emotion-22"
+    class="MuiBox-root emotion-23"
     data-testid="footer"
+    id="footer"
   >
     <div
-      class="MuiBox-root emotion-23"
+      class="MuiBox-root emotion-24"
     >
       <div
-        class="MuiBox-root emotion-24"
+        class="MuiBox-root emotion-25"
       >
         <nav
           aria-label="External Navigation"
-          class="MuiBox-root emotion-25"
+          class="MuiBox-root emotion-26"
           data-testid="footer-nav"
         >
           <ul
-            class="MuiList-root MuiList-padding emotion-26"
+            class="MuiList-root MuiList-padding emotion-27"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-27"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-28"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-28"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-29"
                 href="https://www.linkedin.com/in/nicholeuf"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-29"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-30"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-30"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-31"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1132,23 +1183,23 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-27"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-28"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-28"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-29"
                 href="https://github.com/nicholeuf"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-29"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-30"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-30"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-31"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1164,15 +1215,15 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         </nav>
       </div>
       <div
-        class="MuiBox-root emotion-35"
+        class="MuiBox-root emotion-36"
       >
         <p
-          class="MuiTypography-root MuiTypography-sacramento emotion-36"
+          class="MuiTypography-root MuiTypography-sacramento emotion-37"
         >
           Made with
            
           <span
-            class="MuiTypography-root MuiTypography-body1 emotion-37"
+            class="MuiTypography-root MuiTypography-body1 emotion-38"
           >
             ♥
           </span>
@@ -1181,10 +1232,10 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-38"
+        class="MuiBox-root emotion-39"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-39"
+          class="MuiTypography-root MuiTypography-overline emotion-40"
         >
           Copyright © 
           2025
@@ -1196,23 +1247,24 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-40"
+        class="MuiBox-root emotion-41"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-41"
+          class="MuiTypography-root MuiTypography-overline emotion-42"
         >
           <a
             aria-label="View Source Code"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-42"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-43"
             href="https://github.com/nicholeuf/zen-site-next"
-            rel="noopener"
+            rel="noopener noreferrer"
             target="_blank"
           >
             view source code
           </a>
            | 
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-43"
+            aria-label="View credits and acknowledgments"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-44"
             tabindex="0"
             type="button"
           >
