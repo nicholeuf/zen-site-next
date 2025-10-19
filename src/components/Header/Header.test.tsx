@@ -3,6 +3,7 @@
  */
 import { render, screen } from 'test-utils';
 import Header from './index';
+import constants from '../../app/styles/constants';
 
 describe('The Header component', () => {
   test(' has expected style rules and contains a logo and nav', () => {
@@ -12,8 +13,8 @@ describe('The Header component', () => {
     expect(header).toBeVisible();
     expect(header).toHaveStyleRule('position', 'fixed');
     expect(header).toHaveStyleRule('border', '8px solid');
-    expect(header).toHaveStyleRule('border-color', '#373833');
-    expect(header).toHaveStyleRule('background-color', '#E8EAE3');
+    expect(header).toHaveStyleRule('border-color', constants.colors.carob);
+    expect(header).toHaveStyleRule('background-color', constants.colors.cream);
 
     const logo = screen.getByTestId('header-logo') as HTMLDivElement;
     expect(logo).toBeVisible();

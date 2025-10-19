@@ -5,6 +5,7 @@ import { renderWithLayout, screen, renderSnapshotWithLayout } from 'test-utils';
 import userEvent from '@testing-library/user-event';
 
 import WorkPage from './page';
+import constants from '../styles/constants';
 
 const mockUsePathname = jest.fn();
 
@@ -61,8 +62,8 @@ describe('The Work Page', () => {
 
     const footer = screen.getByTestId('footer') as HTMLDivElement;
     expect(footer).toBeVisible();
-    expect(footer).toHaveStyleRule('color', '#E8EAE3');
-    expect(footer).toHaveStyleRule('background-color', '#373833');
+    expect(footer).toHaveStyleRule('color', constants.colors.cream);
+    expect(footer).toHaveStyleRule('background-color', constants.colors.carob);
 
     const nav = screen.getByTestId('footer-nav') as HTMLDivElement;
     expect(nav).toBeVisible();
