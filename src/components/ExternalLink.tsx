@@ -7,11 +7,16 @@ interface ExternalLinkProps extends LinkProps {
 const ExternalLink: React.FC<ExternalLinkProps> = ({
   children,
   target = '_blank',
-  rel = 'noopener',
+  rel = 'noopener noreferrer',
   ...props
 }) => {
+  // Add aria-label for external links if not already provided
+  const ariaLabel =
+    props['aria-label'] ||
+    (target === '_blank' ? `${children} (opens in new window)` : undefined);
+
   return (
-    <Link {...props} target={target} rel={rel}>
+    <Link {...props} target={target} rel={rel} aria-label={ariaLabel}>
       {children}
     </Link>
   );

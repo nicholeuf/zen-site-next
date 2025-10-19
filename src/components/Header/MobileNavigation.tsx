@@ -191,7 +191,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
               width={40}
               height={40}
               crop="fill"
-              alt=""
+              alt="Decorative lotus flower icon"
             />
             <Typography
               color="background.default"

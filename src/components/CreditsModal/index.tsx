@@ -19,7 +19,7 @@ const CreditsModal = () => {
   useEffect(() => {
     // closeButtonRef is not available without a timeout
     const timeout = setTimeout(() => {
-      // When the modcal opens, focus on the close button
+      // When the modal opens, focus on the close button
       if (open && closeButtonRef.current) {
         closeButtonRef.current.focus();
       }
@@ -34,6 +34,7 @@ const CreditsModal = () => {
     <>
       <Button
         onClick={handleOpen}
+        aria-label="View credits and acknowledgments"
         sx={{
           color: 'inherit',
           fontSize: 'inherit',

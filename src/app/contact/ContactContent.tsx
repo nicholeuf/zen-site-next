@@ -14,6 +14,7 @@ const ContactContent: React.FC<ContactContent> = ({ chatEnabled }) => {
         href="https://www.linkedin.com/in/nicholeuf"
         sx={{
           fontWeight: '500',
+          color: 'primary.main',
         }}
       >
         LinkedIn

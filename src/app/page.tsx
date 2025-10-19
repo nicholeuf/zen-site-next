@@ -27,7 +27,7 @@ const backgroundImageProps: CldImageProps = {
   opacity: 8,
   src: 'zensite/lucila-naves-fMEFsbfHWw4-unsplash',
   quality: 5,
-  alt: '',
+  alt: 'Decorative background image of nature',
   style: {
     objectPosition: 'center bottom',
   },

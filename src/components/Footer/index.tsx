@@ -31,6 +31,7 @@ const Footer: React.FC<FooterProps> = ({
   return (
     <Box
       data-testid="footer"
+      id="footer"
       component="footer"
       sx={{
         backgroundColor: 'secondary.main',
