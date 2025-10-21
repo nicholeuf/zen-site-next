@@ -1,5 +1,6 @@
 import { getMainHeight } from '@/app/styles/styleUtils';
 import { Box } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import PageContainer, { PageContainerProps } from './PageContainer';
 import SwissPlantImage from './SwissPlantImage';
 
@@ -53,11 +54,8 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
         <Box
           sx={(theme) => ({
             my: 2,
-            // Add 90% opacity to background color (hex E6)
-            // https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4
-            // For odd device sizes where the content overlaps the background image
-            // the content is more legible
-            backgroundColor: `${theme.palette.background.default}E6`,
+            // 90% opacity background, robust to rgb/variable palette values
+            backgroundColor: alpha(theme.palette.background.default, 0.9),
           })}
         >
           {children}
