@@ -58,6 +58,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
             pr: 1,
             // 90% opacity background, robust to rgb/variable palette values
             backgroundColor: alpha(theme.palette.background.default, 0.9),
+            borderRadius: '20px',
           })}
         >
           {children}
