@@ -1,5 +1,6 @@
 import { getMainHeight } from '@/app/styles/styleUtils';
 import { Box } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import PageContainer, { PageContainerProps } from './PageContainer';
 import SwissPlantImage from './SwissPlantImage';
 
@@ -50,7 +51,18 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
           maxWidth: '500px',
         }}
       >
-        <Box sx={{ m: 2 }}>{children}</Box>
+        <Box
+          sx={(theme) => ({
+            // Add padding so the content is not flush with the box border
+            py: 2,
+            pr: 1,
+            // 90% opacity background, robust to rgb/variable palette values
+            backgroundColor: alpha(theme.palette.background.default, 0.9),
+            borderRadius: '20px',
+          })}
+        >
+          {children}
+        </Box>
       </Box>
     </PageContainer>
   );

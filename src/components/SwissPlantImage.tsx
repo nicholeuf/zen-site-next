@@ -30,7 +30,7 @@ const SwissPlantImage = () => {
     >
       <CldImage
         src="zensite/lucila-naves-swiss-guava"
-        opacity="30"
+        opacity="60"
         alt="Decorative Swiss guava plant background image"
         fill={true}
         aspectRatio="0.77"
