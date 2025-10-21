@@ -53,7 +53,9 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
       >
         <Box
           sx={(theme) => ({
-            my: 2,
+            // Add padding so the content is not flush with the box border
+            py: 2,
+            pr: 1,
             // 90% opacity background, robust to rgb/variable palette values
             backgroundColor: alpha(theme.palette.background.default, 0.9),
           })}
