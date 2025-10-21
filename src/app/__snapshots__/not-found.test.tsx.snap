@@ -324,7 +324,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 .emotion-18 {
   margin-top: 16px;
   margin-bottom: 16px;
-  background-color: #f8faf3E6;
+  background-color: rgba(248, 250, 243, 0.9);
 }
 
 .emotion-19 {
