@@ -322,7 +322,9 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 }
 
 .emotion-18 {
-  margin: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: #f8faf3E6;
 }
 
 .emotion-19 {
@@ -1045,8 +1047,8 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
             decoding="async"
             loading="lazy"
             sizes="50vw"
-            src="https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_3840/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0"
-            srcset="https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_384/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 384w, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_640/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 640w, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_750/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 750w, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_828/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 828w, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_1080/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 1080w, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_1200/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 1200w, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_1920/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 1920w, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_2048/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 2048w, https://res.cloudinary.com/nicholeuf/image/upload/o_30/c_scale,w_3840/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 3840w"
+            src="https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_3840/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0"
+            srcset="https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_384/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 384w, https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_640/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 640w, https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_750/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 750w, https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_828/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 828w, https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_1080/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 1080w, https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_1200/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 1200w, https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_1920/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 1920w, https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_2048/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 2048w, https://res.cloudinary.com/nicholeuf/image/upload/o_60/c_scale,w_3840/f_auto/q_auto/v1/zensite/lucila-naves-swiss-guava?_a=BAVAZGID0 3840w"
             style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent; overflow: hidden; z-index: -1;"
           />
         </div>
