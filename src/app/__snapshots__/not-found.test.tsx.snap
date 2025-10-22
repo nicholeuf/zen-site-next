@@ -988,6 +988,7 @@ exports[`The Not Found (404) Page has expected snapshot 1`] = `
 <div>
   <nav
     class="MuiBox-root emotion-0"
+    data-testid="keyboard-skip-navigation"
   >
     <a
       href="#main-content"
