@@ -1,4 +1,4 @@
-// middleware.ts
+// proxy.ts
 
 import { NextResponse } from 'next/server';
 import type { NextRequest, NextProxy } from 'next/server';
@@ -29,4 +29,4 @@ export const config = {
   ],
 };
 
-export default middleware;
+export default proxy;
