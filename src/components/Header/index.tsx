@@ -23,6 +23,7 @@ const Header: React.FC<HeaderProps> = ({
       color="transparent"
       sx={{
         backgroundColor: alpha(constants.colors.cream, 0.95),
+        backdropFilter: 'blur(8px)',
         borderBottom: `3px solid ${color}`,
         minHeight: height,
         height,
