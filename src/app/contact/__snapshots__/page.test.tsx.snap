@@ -25,11 +25,13 @@ exports[`The Contact Page has expected snapshot 1`] = `
   top: 0;
   left: auto;
   right: 0;
-  --AppBar-background: #fa2742;
-  --AppBar-color: #fff;
+  --AppBar-background: transparent;
+  --AppBar-color: inherit;
   background-color: var(--AppBar-background);
   color: var(--AppBar-color);
-  background-color: #f8faf3;
+  background-color: rgba(248, 250, 243, 0.85);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   border-bottom: 3px solid #373833;
   min-height: 60px;
   height: 60px;
@@ -987,7 +989,7 @@ exports[`The Contact Page has expected snapshot 1`] = `
 
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed emotion-0"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed emotion-0"
     data-testid="header"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >

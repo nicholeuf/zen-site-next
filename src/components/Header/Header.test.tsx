@@ -2,6 +2,8 @@
  * @jest-environment jsdom
  */
 import { render, screen } from 'test-utils';
+import { alpha } from '@mui/material/styles';
+
 import Header from './index';
 import constants from '../../app/styles/constants';
 
@@ -16,7 +18,10 @@ describe('The Header component', () => {
       'border-bottom',
       `3px solid ${constants.colors.carob}`
     );
-    expect(header).toHaveStyleRule('background-color', constants.colors.cream);
+    expect(header).toHaveStyleRule(
+      'background-color',
+      alpha(constants.colors.cream, 0.85)
+    );
 
     const logo = screen.getByTestId('header-logo') as HTMLDivElement;
     expect(logo).toBeVisible();
