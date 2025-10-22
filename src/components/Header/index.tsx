@@ -10,8 +10,8 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({
-  color = 'secondary.main',
-  activeColor = 'primary.light',
+  color = constants.colors.carob,
+  activeColor = constants.colors.guava,
   height = constants.header.height,
 }) => {
   return (
