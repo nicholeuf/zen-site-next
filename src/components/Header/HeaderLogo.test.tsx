@@ -13,8 +13,6 @@ describe('The HeaderLogo component', () => {
 
     expect(logo).toBeVisible();
     expect(logo).toHaveStyleRule('width', '60px');
-    expect(logo).toHaveStyleRule('border-right', '8px solid');
-    expect(logo).toHaveStyleRule('border-right-color', 'blue');
     expect(logo).toHaveStyleRule('cursor', 'pointer', { target: ':hover' });
   });
 

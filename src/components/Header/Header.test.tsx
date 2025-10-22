@@ -12,8 +12,11 @@ describe('The Header component', () => {
     const header = screen.getByTestId('header') as HTMLDivElement;
     expect(header).toBeVisible();
     expect(header).toHaveStyleRule('position', 'fixed');
-    expect(header).toHaveStyleRule('border', '8px solid');
-    expect(header).toHaveStyleRule('border-color', constants.colors.carob);
+    expect(header).toHaveStyleRule('border-bottom', '3px solid');
+    expect(header).toHaveStyleRule(
+      'border-bottom-color',
+      constants.colors.carob
+    );
     expect(header).toHaveStyleRule('background-color', constants.colors.cream);
 
     const logo = screen.getByTestId('header-logo') as HTMLDivElement;
