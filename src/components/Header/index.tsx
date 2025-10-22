@@ -20,8 +20,8 @@ const Header: React.FC<HeaderProps> = ({
       position="fixed"
       sx={{
         backgroundColor: 'background.default',
-        border: '8px solid',
-        borderColor: color,
+        borderBottom: '3px solid',
+        borderBottomColor: color,
         minHeight: height,
         height,
         fontWeight: 700,
