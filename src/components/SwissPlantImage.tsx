@@ -3,14 +3,11 @@
 
 import Box from '@mui/material/Box';
 import { CldImage } from 'next-cloudinary';
-import { Theme, styled } from '@mui/material/styles';
-
-// In order to use both sx and css on the same component, make it styled
-const StyledBox = styled(Box)``;
+import { Theme } from '@mui/material/styles';
 
 const SwissPlantImage = () => {
   return (
-    <StyledBox
+    <Box
       data-testid="swiss-plant-image"
       sx={{
         position: 'relative',
@@ -46,7 +43,7 @@ const SwissPlantImage = () => {
           zIndex: -1,
         }}
       />
-    </StyledBox>
+    </Box>
   );
 };
 
