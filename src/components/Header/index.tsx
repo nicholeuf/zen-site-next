@@ -1,4 +1,6 @@
 import AppBar from '@mui/material/AppBar';
+import { alpha } from '@mui/material/styles';
+
 import constants from '@/app/styles/constants';
 import HeaderLogo from './HeaderLogo';
 import MainNavigation from './MainNavigation';
@@ -18,8 +20,9 @@ const Header: React.FC<HeaderProps> = ({
     <AppBar
       data-testid="header"
       position="fixed"
+      color="transparent"
       sx={{
-        backgroundColor: 'background.default',
+        backgroundColor: alpha(constants.colors.cream, 0.95),
         borderBottom: `3px solid ${color}`,
         minHeight: height,
         height,
