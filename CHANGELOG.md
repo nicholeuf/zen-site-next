@@ -1,3 +1,6 @@
+- Add initial CHANGELOG documenting project commit history [*](https://github.com/nicholeuf/zen-site-next/pull/133)
+- Capture historical commits covering features, fixes, and updates
+
 - Add semi-transparent header with blur effect (#131)
 - Header borders (#129)
 - Upgrade (#127)
