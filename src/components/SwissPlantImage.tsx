@@ -3,7 +3,6 @@
 
 import Box from '@mui/material/Box';
 import { CldImage } from 'next-cloudinary';
-import { Theme } from '@mui/material/styles';
 
 const SwissPlantImage = () => {
   return (
@@ -15,7 +14,7 @@ const SwissPlantImage = () => {
         aspectRatio: '0.77',
         overflow: 'hidden',
       }}
-      css={(theme: Theme) => `
+      css={(theme) => `
         width: 175px;
         @media (min-width: 401px) {
           width: 300px;
