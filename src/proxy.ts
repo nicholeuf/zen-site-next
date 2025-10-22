@@ -1,9 +1,9 @@
-// middleware.ts
+// proxy.ts
 
 import { NextResponse } from 'next/server';
-import type { NextRequest, NextMiddleware } from 'next/server';
+import type { NextRequest, NextProxy } from 'next/server';
 
-const middleware: NextMiddleware = (request) => {
+const proxy: NextProxy = (request) => {
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set('x-next-pathname', request.nextUrl.pathname);
 
@@ -29,4 +29,4 @@ export const config = {
   ],
 };
 
-export default middleware;
+export default proxy;
