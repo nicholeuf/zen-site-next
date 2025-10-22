@@ -20,7 +20,7 @@ describe('The Header component', () => {
     );
     expect(header).toHaveStyleRule(
       'background-color',
-      alpha(constants.colors.cream, 0.95)
+      alpha(constants.colors.cream, 0.85)
     );
 
     const logo = screen.getByTestId('header-logo') as HTMLDivElement;
