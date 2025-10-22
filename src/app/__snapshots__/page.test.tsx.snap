@@ -1216,13 +1216,14 @@ exports[`The Home Page has expected snapshot 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
             >
               <a
-                aria-label="LinkedIn (opens in new window)"
+                aria-label="[object Object] (opens in new window)"
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-30"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <button
+                  aria-label="LinkedIn (opens in new window)"
                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-31"
                   tabindex="0"
                   type="button"
@@ -1245,13 +1246,14 @@ exports[`The Home Page has expected snapshot 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-29"
             >
               <a
-                aria-label="GitHub (opens in new window)"
+                aria-label="[object Object] (opens in new window)"
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-30"
                 href="https://github.com/nicholeuf"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <button
+                  aria-label="GitHub (opens in new window)"
                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-31"
                   tabindex="0"
                   type="button"
