@@ -20,8 +20,6 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
         fontSize: '30px',
         height: '100%',
         width,
-        borderRight: '8px solid',
-        borderRightColor: color,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

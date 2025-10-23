@@ -1,4 +1,6 @@
 import AppBar from '@mui/material/AppBar';
+import { alpha } from '@mui/material/styles';
+
 import constants from '@/app/styles/constants';
 import HeaderLogo from './HeaderLogo';
 import MainNavigation from './MainNavigation';
@@ -10,18 +12,19 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({
-  color = 'secondary.main',
-  activeColor = 'primary.light',
+  color = constants.colors.carob,
+  activeColor = constants.colors.guava,
   height = constants.header.height,
 }) => {
   return (
     <AppBar
       data-testid="header"
       position="fixed"
+      color="transparent"
       sx={{
-        backgroundColor: 'background.default',
-        border: '8px solid',
-        borderColor: color,
+        backgroundColor: alpha(constants.colors.cream, 0.85),
+        backdropFilter: 'blur(8px)',
+        borderBottom: `3px solid ${color}`,
         minHeight: height,
         height,
         fontWeight: 700,

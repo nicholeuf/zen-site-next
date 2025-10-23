@@ -115,7 +115,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
               alignItems: 'center',
               height: constants.header.height,
               color: 'background.default',
-              px: 1,
+              px: 0,
             }}
           >
             <Box
