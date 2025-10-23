@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import MainContainer from '@/components/MainContainer';
 import GlobalStyles from '@/app/styles/GlobalStyles';
 import DeviceType from '@/types/DeviceType';
+import SkipNavigation from './SkipNavigation';
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -12,6 +13,7 @@ interface AppLayoutProps {
 const AppLayout: React.FC<AppLayoutProps> = ({ children, deviceType }) => {
   return (
     <GlobalStyles deviceType={deviceType}>
+      <SkipNavigation />
       <Header />
       <MainContainer>{children}</MainContainer>
       <Footer />

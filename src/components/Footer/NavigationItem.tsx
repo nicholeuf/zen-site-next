@@ -42,9 +42,9 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
           justifyContent: 'center',
           alignItems: 'center',
         }}
-        aria-label={ariaLabel}
       >
         <IconButton
+          aria-label={ariaLabel}
           sx={{
             p: 0,
           }}
