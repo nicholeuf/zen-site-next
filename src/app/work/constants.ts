@@ -13,13 +13,13 @@ export interface WorkItemType {
 export const items: WorkItemType[] = [
   {
     id: 'portfolio-site',
-    company: 'The Coding Yogi',
-    title: 'Owner, Developer',
+    company: 'thecodingyogi.me',
+    title: 'Developer',
     location: 'Remote',
     startDate: 'Nov 2017',
     endDate: 'Present',
     experience: [
-      'Current site is built with React, NextJS, and MaterialUI, and deployed to Vercel. Code is fully-tested and automated via Github Actions.',
+      'Current site is built with React, NextJS, and MaterialUI, and deployed to Vercel. Code is fully-tested and automated via Github Actions, Meticulous QA AI Automation, and Qodo AI Code Reviews.',
       'Original site was built with React and Bulma, bundled with Webpack, and deployed to AWS via CircleCI.',
     ],
     skills: ['MaterialUI', 'Typescript', 'React', 'NextJS', 'Emotion', 'Jest'],
@@ -31,6 +31,7 @@ export const items: WorkItemType[] = [
       'Sentry.io',
       'Meticulous.ai',
       'Small.chat',
+      'Qodo.ai',
     ],
   },
   {
