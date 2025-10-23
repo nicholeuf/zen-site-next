@@ -19,9 +19,8 @@ export const items: WorkItemType[] = [
     startDate: 'Nov 2017',
     endDate: 'Present',
     experience: [
-      'Current site is built with React, NextJS, and MaterialUI, and deployed to Vercel.',
+      'Current site, launched in 2024, is built with React, NextJS, and MaterialUI, and deployed to Vercel.',
       'Code is fully-tested and automated via Github Actions, Meticulous.ai QA Automation, and Qodo.ai Code Reviews.',
-      'Original site was built with React and Bulma, bundled with Webpack, and deployed to AWS via CircleCI.',
     ],
     skills: ['MaterialUI', 'Typescript', 'React', 'NextJS', 'Emotion', 'Jest'],
     tools: [
