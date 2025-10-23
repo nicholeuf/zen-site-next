@@ -1,3 +1,9 @@
+### 2025-10-23 [*](https://github.com/nicholeuf/zen-site-next/pull/139)
+
+#### Changed
+
+- Update portfolio work item to use website URL, simplify title, clarify launch details, and add automation tools; adjust tests accordingly
+
 ### 2025-10-23 [*](https://github.com/nicholeuf/zen-site-next/pull/136)
 
 #### Added
