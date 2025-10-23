@@ -1,0 +1,53 @@
+name: Qodo Merge PR Automation
+
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review, synchronize]
+  pull_request_target:
+    types: [opened, reopened, ready_for_review, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  # Standard Qodo tools for all PR events
+  qodo-standard-tools:
+    if: github.event.action != 'ready_for_review'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Qodo Merge CLI
+        run: npm install -g @qodo/command
+
+      - name: Run Qodo Merge Standard Tools
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_action_config.enable_output: 'true'
+        run: qodo merge
+
+  # Changelog update specifically for ready_for_review
+  qodo-changelog-update:
+    if: github.event.action == 'ready_for_review'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Qodo Merge CLI
+        run: npm install -g @qodo/command
+
+      - name: Run Qodo Merge Changelog Update
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_action_config.enable_output: 'true'
+        run: qodo merge
