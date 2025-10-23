@@ -1793,7 +1793,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 emotion-16"
                 >
-                  Code is fully-tested and automated via Github Actions, Meticulous QA AI Automation, and Qodo AI Code Reviews.
+                  Code is fully-tested and automated via Github Actions, Meticulous.ai QA Automation, and Qodo.ai Code Reviews.
                 </p>
               </li>
               <li
