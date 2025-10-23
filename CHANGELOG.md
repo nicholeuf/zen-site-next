@@ -1,3 +1,7 @@
+### 2025-10-23
+
+- Initialize comprehensive CHANGELOG with complete project history and maintenance guidelines ([#136](https://github.com/nicholeuf/zen-site-next/pull/136))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
