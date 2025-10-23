@@ -22,15 +22,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Qodo Merge CLI
-        run: npm install -g @qodo/command
-
-      - name: Run Qodo Merge Standard Tools
+      - name: PR Agent action step
+        id: pragent
+        uses: qodo-ai/pr-agent@main
         env:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_action_config.enable_output: 'true'
-        run: qodo merge
 
   # Changelog update specifically for ready_for_review
   qodo-changelog-update:
@@ -42,12 +40,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Qodo Merge CLI
-        run: npm install -g @qodo/command
-
-      - name: Run Qodo Merge Changelog Update
+      - name: PR Agent action step
+        id: pragent
+        uses: qodo-ai/pr-agent@main
         env:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_action_config.enable_output: 'true'
-        run: qodo merge
