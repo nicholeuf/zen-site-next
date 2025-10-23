@@ -1,3 +1,9 @@
+### 2025-10-23 [*](https://github.com/nicholeuf/zen-site-next/pull/136)
+
+#### Added
+
+- Initialize comprehensive CHANGELOG with organized project history, guidelines, and license links
+
 ### 2025-10-22
 
 #### Added
