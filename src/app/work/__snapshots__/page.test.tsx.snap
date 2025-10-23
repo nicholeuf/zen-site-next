@@ -984,7 +984,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   padding-right: 7px;
 }
 
-.emotion-256 {
+.emotion-259 {
   background-color: #373833;
   color: #f8faf3;
   height: 175px;
@@ -1003,7 +1003,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-257 {
+.emotion-260 {
   max-width: 600px;
   display: grid;
   gap: 4px;
@@ -1013,18 +1013,18 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-257 {
+  .emotion-260 {
     grid-template-areas: "nav" "madeby" "copyright" "source";
   }
 }
 
 @media (min-width:600px) {
-  .emotion-257 {
+  .emotion-260 {
     grid-template-areas: "nav madeby" "nav copyright" "nav source";
   }
 }
 
-.emotion-258 {
+.emotion-261 {
   grid-area: nav;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1039,7 +1039,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-258 {
+  .emotion-261 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -1048,7 +1048,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-258 {
+  .emotion-261 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     -webkit-justify-content: flex-start;
@@ -1056,12 +1056,12 @@ exports[`The Work Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-259 {
+.emotion-262 {
   width: 25%;
   height: 100%;
 }
 
-.emotion-260 {
+.emotion-263 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1087,7 +1087,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-260 {
+  .emotion-263 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -1095,14 +1095,14 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-260 {
+  .emotion-263 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
-.emotion-261 {
+.emotion-264 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1143,25 +1143,25 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-261 {
+  .emotion-264 {
     margin: 8px;
   }
 }
 
 @media (min-width:600px) {
-  .emotion-261 {
+  .emotion-264 {
     margin: 24px;
   }
 }
 
-.emotion-261:hover {
+.emotion-264:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.emotion-262 {
+.emotion-265 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -1187,12 +1187,12 @@ exports[`The Work Page has expected snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-262:hover {
+.emotion-265:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-263 {
+.emotion-266 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1239,42 +1239,42 @@ exports[`The Work Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-263::-moz-focus-inner {
+.emotion-266::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-263.Mui-disabled {
+.emotion-266.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-263 {
+  .emotion-266 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-263:hover {
+.emotion-266:hover {
   background-color: var(--IconButton-hoverBg);
 }
 
 @media (hover: none) {
-  .emotion-263:hover {
+  .emotion-266:hover {
     background-color: transparent;
   }
 }
 
-.emotion-263.Mui-disabled {
+.emotion-266.Mui-disabled {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.26);
 }
 
-.emotion-263.MuiIconButton-loading {
+.emotion-266.MuiIconButton-loading {
   color: transparent;
 }
 
-.emotion-264 {
+.emotion-267 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1292,70 +1292,8 @@ exports[`The Work Page has expected snapshot 1`] = `
   color: #f8faf3;
 }
 
-.emotion-269 {
-  grid-area: madeby;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width:0px) {
-  .emotion-269 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-269 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-  }
-}
-
-.emotion-270 {
-  margin: 0;
-  font-family: fontFamily;
-  font-size: 26px;
-}
-
-@media (min-width:0px) {
-  .emotion-270 {
-    font-size: 24px;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-270 {
-    font-size: 34px;
-  }
-}
-
-.emotion-271 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-  display: inline;
-  color: #fa2742;
-}
-
 .emotion-272 {
-  grid-area: copyright;
+  grid-area: madeby;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1391,15 +1329,33 @@ exports[`The Work Page has expected snapshot 1`] = `
 .emotion-273 {
   margin: 0;
   font-family: fontFamily;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 2.66;
-  text-transform: uppercase;
-  text-transform: none;
+  font-size: 26px;
+}
+
+@media (min-width:0px) {
+  .emotion-273 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-273 {
+    font-size: 34px;
+  }
 }
 
 .emotion-274 {
-  grid-area: source;
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: inline;
+  color: #fa2742;
+}
+
+.emotion-275 {
+  grid-area: copyright;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1407,7 +1363,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:0px) {
-  .emotion-274 {
+  .emotion-275 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -1420,7 +1376,7 @@ exports[`The Work Page has expected snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-274 {
+  .emotion-275 {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
@@ -1432,7 +1388,51 @@ exports[`The Work Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-275 {
+.emotion-276 {
+  margin: 0;
+  font-family: fontFamily;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 2.66;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+.emotion-277 {
+  grid-area: source;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:0px) {
+  .emotion-277 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-277 {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.emotion-278 {
   margin: 0;
   font-family: fontFamily;
   font-weight: 400;
@@ -1445,7 +1445,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   display: flex;
 }
 
-.emotion-276 {
+.emotion-279 {
   margin: 0;
   font: inherit;
   line-height: inherit;
@@ -1456,12 +1456,12 @@ exports[`The Work Page has expected snapshot 1`] = `
   color: #f8faf3;
 }
 
-.emotion-276:hover {
+.emotion-279:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-277 {
+.emotion-280 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1522,33 +1522,33 @@ exports[`The Work Page has expected snapshot 1`] = `
   padding: 0px;
 }
 
-.emotion-277::-moz-focus-inner {
+.emotion-280::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-277.Mui-disabled {
+.emotion-280.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-277 {
+  .emotion-280 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-277:hover {
+.emotion-280:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-277.Mui-disabled {
+.emotion-280.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 
 @media (hover: hover) {
-  .emotion-277:hover {
+  .emotion-280:hover {
     --variant-containedBg: rgb(175, 27, 46);
     --variant-textBg: rgba(250, 39, 66, 0.04);
     --variant-outlinedBorder: #fa2742;
@@ -1556,7 +1556,7 @@ exports[`The Work Page has expected snapshot 1`] = `
   }
 }
 
-.emotion-277.MuiButton-loading {
+.emotion-280.MuiButton-loading {
   color: transparent;
 }
 
@@ -1696,7 +1696,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                   tabindex="0"
                   type="button"
                 >
-                  The Coding Yogi
+                  thecodingyogi.me
                 </button>
                 <button
                   aria-controls="work-tabpanel-1"
@@ -1756,9 +1756,9 @@ exports[`The Work Page has expected snapshot 1`] = `
             <h2
               class="MuiTypography-root MuiTypography-h5 emotion-33"
             >
-              The Coding Yogi
+              thecodingyogi.me
                | 
-              Owner, Developer
+              Developer
             </h2>
             <span
               class="MuiTypography-root MuiTypography-overline emotion-34"
@@ -1783,7 +1783,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 emotion-16"
                 >
-                  Current site is built with React, NextJS, and MaterialUI, and deployed to Vercel. Code is fully-tested and automated via Github Actions.
+                  Current site is built with React, NextJS, and MaterialUI, and deployed to Vercel. Code is fully-tested and automated via Github Actions, Meticulous QA AI Automation, and Qodo AI Code Reviews.
                 </p>
               </li>
               <li
@@ -1985,6 +1985,20 @@ exports[`The Work Page has expected snapshot 1`] = `
                     class="MuiChip-label MuiChip-labelSmall emotion-63"
                   >
                     Small.chat
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                data-testid="chip-list-item"
+              >
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                  >
+                    Qodo.ai
                   </span>
                 </div>
               </li>
@@ -2838,41 +2852,41 @@ exports[`The Work Page has expected snapshot 1`] = `
     </div>
   </main>
   <footer
-    class="MuiBox-root emotion-256"
+    class="MuiBox-root emotion-259"
     data-testid="footer"
   >
     <div
-      class="MuiBox-root emotion-257"
+      class="MuiBox-root emotion-260"
     >
       <div
-        class="MuiBox-root emotion-258"
+        class="MuiBox-root emotion-261"
       >
         <nav
           aria-label="External Navigation"
-          class="MuiBox-root emotion-259"
+          class="MuiBox-root emotion-262"
           data-testid="footer-nav"
         >
           <ul
-            class="MuiList-root MuiList-padding emotion-260"
+            class="MuiList-root MuiList-padding emotion-263"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-261"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-264"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-262"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-265"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-263"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-266"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-264"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-267"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -2885,23 +2899,23 @@ exports[`The Work Page has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-261"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-264"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-262"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-265"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-263"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-266"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-264"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-267"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -2917,15 +2931,15 @@ exports[`The Work Page has expected snapshot 1`] = `
         </nav>
       </div>
       <div
-        class="MuiBox-root emotion-269"
+        class="MuiBox-root emotion-272"
       >
         <p
-          class="MuiTypography-root MuiTypography-sacramento emotion-270"
+          class="MuiTypography-root MuiTypography-sacramento emotion-273"
         >
           Made with
            
           <span
-            class="MuiTypography-root MuiTypography-body1 emotion-271"
+            class="MuiTypography-root MuiTypography-body1 emotion-274"
           >
             ♥
           </span>
@@ -2934,10 +2948,10 @@ exports[`The Work Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-272"
+        class="MuiBox-root emotion-275"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-273"
+          class="MuiTypography-root MuiTypography-overline emotion-276"
         >
           Copyright © 
           2025
@@ -2949,14 +2963,14 @@ exports[`The Work Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-274"
+        class="MuiBox-root emotion-277"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-275"
+          class="MuiTypography-root MuiTypography-overline emotion-278"
         >
           <a
             aria-label="View Source Code"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-276"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-279"
             href="https://github.com/nicholeuf/zen-site-next"
             rel="noopener"
             target="_blank"
@@ -2965,7 +2979,7 @@ exports[`The Work Page has expected snapshot 1`] = `
           </a>
            | 
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-277"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-280"
             tabindex="0"
             type="button"
           >

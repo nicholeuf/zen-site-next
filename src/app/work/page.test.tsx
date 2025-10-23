@@ -45,9 +45,7 @@ describe('The Work Page', () => {
 
     const portfolioHeading2 = screen.getByRole('heading', { level: 2 });
     expect(portfolioHeading2).toBeVisible();
-    expect(portfolioHeading2).toHaveTextContent(
-      'The Coding Yogi | Owner, Developer'
-    );
+    expect(portfolioHeading2).toHaveTextContent('thecodingyogi.me | Developer');
 
     const imperfectTab = screen.getByRole('tab', { name: 'Imperfect Foods' });
     expect(imperfectTab).toBeVisible();
