@@ -1,17 +1,3 @@
-### 2025-10-23
-
-- Initialize CHANGELOG with complete project history and contribution standards ([#136](https://github.com/nicholeuf/zen-site-next/pull/136))
-
-### 2025-10-23
-
-- Initialize comprehensive CHANGELOG with complete project history and maintenance guidelines ([#136](https://github.com/nicholeuf/zen-site-next/pull/136))
-
-# Changelog
-
-All notable changes to this project will be documented in this file.
-
-## [Unreleased]
-
 ### 2025-10-22
 
 - Add MIT License and update project documentation ([#134](https://github.com/nicholefrey/zen-site-next/pull/134))
