@@ -20,7 +20,7 @@ export const items: WorkItemType[] = [
     endDate: 'Present',
     experience: [
       'Current site is built with React, NextJS, and MaterialUI, and deployed to Vercel.',
-      'Code is fully-tested and automated via Github Actions, Meticulous QA AI Automation, and Qodo AI Code Reviews.',
+      'Code is fully-tested and automated via Github Actions, Meticulous.ai QA Automation, and Qodo.ai Code Reviews.',
       'Original site was built with React and Bulma, bundled with Webpack, and deployed to AWS via CircleCI.',
     ],
     skills: ['MaterialUI', 'Typescript', 'React', 'NextJS', 'Emotion', 'Jest'],
