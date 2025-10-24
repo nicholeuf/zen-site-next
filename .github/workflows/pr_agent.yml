@@ -2,7 +2,8 @@ name: Qodo PR Automation
 
 on:
   pull_request_target:
-    types: [ready_for_review]
+    types: [opened, ready_for_review, synchronize]
+  workflow_dispatch: # Allow manual triggering
 
 permissions:
   contents: write
@@ -14,6 +15,16 @@ jobs:
   qodo-changelog-update:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug workflow trigger
+        run: |
+          echo "Event name: ${{ github.event_name }}"
+          echo "Event action: ${{ github.event.action }}"
+          echo "PR number: ${{ github.event.pull_request.number }}"
+          echo "PR state: ${{ github.event.pull_request.state }}"
+          echo "PR draft: ${{ github.event.pull_request.draft }}"
+          echo "PR URL: ${{ github.event.pull_request.html_url }}"
+        shell: bash
+
       - name: Checkout code
         uses: actions/checkout@v4
         with:
@@ -27,6 +38,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Update Changelog with Qodo CLI
+        if: github.event.action == 'ready_for_review'
         run: |
           # Install Qodo CLI
           pnpm add -g @qodo/command
