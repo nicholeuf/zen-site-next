@@ -44,7 +44,7 @@ jobs:
           PR_URL="${{ github.event.pull_request.html_url }}"
 
           # Run Qodo command
-          qodo update_changelog --pr_url=$PR_URL
+          qodo update_changelog --pr_url=$PR_URL --ci
 
           # Clean up
           rm -f ~/.qodo/auth.key
