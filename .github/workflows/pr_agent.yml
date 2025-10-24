@@ -1,10 +1,10 @@
-name: Qodo Merge PR Automation
+name: Qodo PR Automation
 
 on:
   pull_request:
-    types: [opened, reopened, ready_for_review, synchronize]
+    types: [ready_for_review]
   pull_request_target:
-    types: [opened, reopened, ready_for_review, synchronize]
+    types: [ready_for_review]
 
 permissions:
   contents: write
@@ -12,24 +12,6 @@ permissions:
   issues: write
 
 jobs:
-  # Standard Qodo tools for all PR events
-  qodo-standard-tools:
-    if: github.event.action != 'ready_for_review'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: PR Agent action step
-        id: pragent
-        uses: qodo-ai/pr-agent@main
-        env:
-          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          github_action_config.enable_output: 'true'
-
   # Changelog update specifically for ready_for_review
   qodo-changelog-update:
     if: github.event.action == 'ready_for_review'
@@ -40,10 +22,31 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: PR Agent action step
-        id: pragent
-        uses: qodo-ai/pr-agent@main
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'pnpm'
+
+      - name: Update Changelog with Qodo CLI
+        run: |
+          # Install Qodo CLI
+          pnpm add -g @qodo/command
+
+          # Create file with secret content
+          echo "${{ secrets.QODO_API_KEY }}" > ~/.qodo/auth.key
+          chmod 600 ~/.qodo/auth.key
+
+          # Get PR URL
+          PR_URL="${{ github.event.pull_request.html_url }}"
+
+          # Run Qodo command
+          qodo update_changelog --pr_url=$PR_URL
+
+          # Clean up
+          rm -f ~/.qodo/auth.key
         env:
-          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_action_config.enable_output: 'true'
+        shell: bash
