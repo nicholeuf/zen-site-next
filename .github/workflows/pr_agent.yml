@@ -2,8 +2,9 @@ name: Qodo Automation
 
 on:
   pull_request:
-    types: [opened, ready_for_review, synchronize]
-  workflow_dispatch:
+    types: [opened, reopened, ready_for_review, synchronize]
+  pull_request_target:
+    types: [opened, reopened, ready_for_review, synchronize]
 
 permissions:
   contents: write
@@ -11,33 +12,42 @@ permissions:
   issues: write
 
 jobs:
-  debug:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Debug workflow trigger
-        run: |
-          echo "Event name: ${{ github.event_name }}"
-          echo "Event action: ${{ github.event.action }}"
-          echo "PR number: ${{ github.event.pull_request.number }}"
-          echo "PR state: ${{ github.event.pull_request.state }}"
-          echo "PR draft: ${{ github.event.pull_request.draft }}"
-          echo "PR URL: ${{ github.event.pull_request.html_url }}"
-          echo "Repository: ${{ github.repository }}"
-          echo "Ref: ${{ github.ref }}"
-          echo "Head ref: ${{ github.head_ref }}"
-          echo "Base ref: ${{ github.base_ref }}"
-
   changelog-update:
     if: github.event.action == 'ready_for_review'
     runs-on: ubuntu-latest
-    needs: debug
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Simple test
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'pnpm'
+
+      - name: Update Changelog with Qodo CLI
         run: |
-          echo "This would run the changelog update"
-          echo "PR URL: ${{ github.event.pull_request.html_url }}"
+          # Install Qodo CLI
+          pnpm add -g @qodo/command
+
+          # Create .qodo directory if it doesn't exist
+          mkdir -p ~/.qodo
+
+          # Create file with secret content
+          echo "${{ secrets.QODO_API_KEY }}" > ~/.qodo/auth.key
+          chmod 600 ~/.qodo/auth.key
+
+          # Get PR URL
+          PR_URL="${{ github.event.pull_request.html_url }}"
+
+          # Run Qodo command
+          qodo update_changelog --pr_url=$PR_URL
+
+          # Clean up
+          rm -f ~/.qodo/auth.key
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
