@@ -12,7 +12,6 @@ permissions:
 jobs:
   # Changelog update specifically for ready_for_review
   qodo-changelog-update:
-    if: github.event.action == 'ready_for_review'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -32,6 +31,9 @@ jobs:
           # Install Qodo CLI
           pnpm add -g @qodo/command
 
+          # Create .qodo directory if it doesn't exist
+          mkdir -p ~/.qodo
+
           # Create file with secret content
           echo "${{ secrets.QODO_API_KEY }}" > ~/.qodo/auth.key
           chmod 600 ~/.qodo/auth.key
@@ -46,5 +48,4 @@ jobs:
           rm -f ~/.qodo/auth.key
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          github_action_config.enable_output: 'true'
         shell: bash
