@@ -1,0 +1,62 @@
+# Qodo Merge Configuration
+# This file customizes the behavior of Qodo Merge tools
+
+[pr_reviewer]
+# Custom instructions for PR reviews
+extra_instructions = "Focus on code quality, security, and maintainability. Provide actionable feedback."
+
+[pr_description]
+# PR description settings
+publish_labels = true
+generate_ai_title=true
+final_update_message = true
+
+[pr_update_changelog]
+# Changelog update settings
+push_changelog_changes = true
+add_pr_link = true
+skip_ci_on_push = true
+extra_instructions = "Follow the existing changelog format with proper categorization (Added, Changed, Fixed, etc.) and include PR links"
+
+[pr_improve]
+# Code improvement suggestions
+extra_instructions = "Provide specific, actionable improvement suggestions with code examples when possible"
+
+# Ignore certain files and directories
+[ignore]
+files = [
+    "*.md",
+    "*.txt",
+    "*.json",
+    "*.lock",
+    "*.log",
+    "coverage/**",
+    "node_modules/**",
+    ".git/**",
+    ".next/**",
+    "dist/**",
+    "build/**"
+]
+
+# GitHub App specific settings
+[github_app]
+# Handle draft PRs
+feedback_on_draft_pr = true
+
+# PR actions to handle
+handle_pr_actions = ['opened', 'reopened', 'ready_for_review', 'synchronize']
+handle_push_trigger = true
+
+# Commands to run automatically
+pr_commands = [
+    "/describe --pr_description.final_update_message=false",
+    "/review",
+    "/improve",
+    "/compliance"
+]
+
+# Commands to run on push
+push_commands = [
+    "/describe --pr_description.final_update_message=false",
+    "/review"
+]
