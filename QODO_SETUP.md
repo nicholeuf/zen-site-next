@@ -19,13 +19,13 @@ The workflow provides two separate jobs:
 
 You need to add the following secrets to your GitHub repository:
 
-### 1. OpenAI API Key
+### 1. Qodo API Key
 
-- **Secret Name**: `OPENAI_KEY`
-- **Description**: Your OpenAI API key for Qodo Merge
+- **Secret Name**: `QODO_API_KEY`
+- **Description**: Your Qodo API key for Qodo Merge (no OpenAI account needed)
 - **How to get**:
-  1. Go to [OpenAI API Keys](https://platform.openai.com/api-keys)
-  2. Create a new secret key
+  1. Go to [Qodo Dashboard](https://qodo.ai) and sign up
+  2. Get your API key from the dashboard
   3. Copy the key and add it to your repository secrets
 
 ### 2. GitHub Token
@@ -104,7 +104,7 @@ feedback_on_draft_pr = true
 ### Changelog Not Updating
 
 - Ensure the PR is marked as "ready for review" (not just opened)
-- Check that the `OPENAI_KEY` secret is valid
+- Check that the `QODO_API_KEY` secret is valid
 - Verify the `GITHUB_TOKEN` has write permissions
 
 ### Tools Not Running

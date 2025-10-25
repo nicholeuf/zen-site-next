@@ -1,10 +1,6 @@
 name: Qodo Automation
 
-on:
-  pull_request:
-    types: [opened, reopened, ready_for_review, synchronize]
-  pull_request_target:
-    types: [opened, reopened, ready_for_review, synchronize]
+on: [pull_request_target]
 
 permissions:
   contents: write
