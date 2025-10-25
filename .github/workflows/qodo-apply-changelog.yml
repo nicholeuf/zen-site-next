@@ -27,6 +27,12 @@ jobs:
           name: CHANGELOG.md
           path: ./CHANGELOG.md
 
+      - name: Download PR URL artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: pr-url
+          path: ./pr-url
+
       - name: Apply changelog update
         run: |
           # Check if changelog file exists
@@ -56,6 +62,12 @@ jobs:
 
       - name: Comment on PR
         run: |
-          gh pr comment ${{ github.event.workflow_run.head_branch }} --body "✅ Changelog has been updated automatically by Qodo Merge"
+          # Read PR URL from artifact
+          if [ -f "./pr-url/pr_url.txt" ]; then
+            PR_URL=$(cat ./pr-url/pr_url.txt)
+            gh pr comment "$PR_URL" --body "✅ Changelog has been updated automatically"
+          else
+            echo "Could not find PR URL in artifact"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
