@@ -13,8 +13,8 @@ jobs:
   apply-changelog:
     # This workflow runs in a trusted context with write permissions
     runs-on: ubuntu-latest
-    # Temporarily removing success condition for debugging
-    # if: github.event.workflow_run.conclusion == 'success'
+    # Security: Only run if the triggering workflow was successful AND from a legitimate PR
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.pull_requests != null && github.event.workflow_run.pull_requests.length > 0
     steps:
       - name: Debug workflow run info
         run: |
@@ -38,6 +38,18 @@ jobs:
         run: |
           echo "PR head branch: $PR_HEAD_REF"
           echo "PR head SHA: $PR_HEAD_SHA"
+
+          # Security: Verify this is a legitimate PR workflow
+          if [ -z "$PR_HEAD_REF" ] || [ -z "$PR_HEAD_SHA" ]; then
+            echo "❌ Security check failed: Missing PR information"
+            exit 1
+          fi
+
+          # Security: Verify the PR is not from a fork (additional check)
+          if [ "$PR_IS_FORK" = "true" ]; then
+            echo "❌ Security check failed: PR is from a fork"
+            exit 1
+          fi
 
           # Check if changelog file exists
           if [ -f "./CHANGELOG.md" ]; then
@@ -66,6 +78,7 @@ jobs:
         env:
           PR_HEAD_REF: ${{ github.event.workflow_run.head_branch }}
           PR_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          PR_IS_FORK: ${{ github.event.workflow_run.pull_requests[0].head.repo.fork }}
 
       - name: Comment on PR
         run: |
