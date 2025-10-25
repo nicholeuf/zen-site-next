@@ -36,9 +36,6 @@ jobs:
 
       - name: Apply changelog update
         run: |
-          # Get PR information from workflow_run context
-          PR_HEAD_REF="${{ github.event.workflow_run.head_branch }}"
-          PR_HEAD_SHA="${{ github.event.workflow_run.head_sha }}"
           echo "PR head branch: $PR_HEAD_REF"
           echo "PR head SHA: $PR_HEAD_SHA"
 
@@ -66,11 +63,13 @@ jobs:
             echo "❌ No CHANGELOG.md file found in artifact"
             exit 1
           fi
+        env:
+          PR_HEAD_REF: ${{ github.event.workflow_run.head_branch }}
+          PR_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
 
       - name: Comment on PR
         run: |
-          # Get PR URL from workflow_run context
-          PR_URL="${{ github.event.workflow_run.pull_requests[0].html_url }}"
           gh pr comment "$PR_URL" --body "✅ Changelog has been updated automatically"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.workflow_run.pull_requests[0].html_url }}
