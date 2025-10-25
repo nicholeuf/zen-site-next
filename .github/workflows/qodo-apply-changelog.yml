@@ -1,0 +1,61 @@
+name: Qodo Apply Changelog
+
+on:
+  workflow_run:
+    workflows: ['Qodo Generate Changelog']
+    types: [completed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  apply-changelog:
+    # This workflow runs in a trusted context with write permissions
+    runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion == 'success'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download changelog artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: CHANGELOG.md
+          path: ./CHANGELOG.md
+
+      - name: Apply changelog update
+        run: |
+          # Check if changelog file exists
+          if [ -f "./CHANGELOG.md" ]; then
+            echo "Changelog file found, checking for changes..."
+            
+            # Check if there are any changes to commit
+            if git diff --quiet CHANGELOG.md; then
+              echo "ℹ️ No changes detected in CHANGELOG.md"
+              echo "Skipping commit as no changes were made"
+            else
+              echo "📝 Changes detected in CHANGELOG.md"
+              
+              # Commit and push the changes
+              git config --local user.email "noreply@github.com"
+              git config --local user.name "Qodo Changelog Bot"
+              git add CHANGELOG.md
+              git commit -m "Update CHANGELOG.md [skip ci]"
+              git push
+              
+              echo "✅ Changelog updated successfully"
+            fi
+          else
+            echo "❌ No CHANGELOG.md file found in artifact"
+            exit 1
+          fi
+
+      - name: Comment on PR
+        run: |
+          gh pr comment ${{ github.event.workflow_run.head_branch }} --body "✅ Changelog has been updated automatically by Qodo Merge"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
