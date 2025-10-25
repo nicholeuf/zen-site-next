@@ -33,10 +33,7 @@ jobs:
           # Install Qodo CLI
           pnpm add -g @qodo/command
 
-          # Create .qodo directory if it doesn't exist
-          mkdir -p ~/.qodo
-
-          # Create file with secret content
+          # Create file with secret content (in lieu of qodo login)
           echo "${{ secrets.QODO_API_KEY }}" > ~/.qodo/auth.key
           chmod 600 ~/.qodo/auth.key
 
@@ -45,6 +42,11 @@ jobs:
 
           # Run Qodo command
           qodo update_changelog --pr_url=$PR_URL --ci
+
+          # Commit and push the changelog changes
+          git add CHANGELOG.md
+          git commit -m "Update CHANGELOG.md"
+          git push
 
           # Clean up
           rm -f ~/.qodo/auth.key
