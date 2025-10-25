@@ -1,9 +1,22 @@
 name: Qodo Apply Changelog
 
 on:
-  workflow_run:
-    workflows: ['Qodo Generate Changelog']
-    types: [completed]
+  repository_dispatch:
+    types: [changelog-ready]
+  workflow_dispatch:
+    inputs:
+      pr_url:
+        description: 'PR URL'
+        required: true
+        type: string
+      head_branch:
+        description: 'PR head branch'
+        required: true
+        type: string
+      head_sha:
+        description: 'PR head SHA'
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -13,18 +26,19 @@ jobs:
   apply-changelog:
     # This workflow runs in a trusted context with write permissions
     runs-on: ubuntu-latest
-    # Security: Only run if the triggering workflow was successful AND from a legitimate PR
-    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.pull_requests != null && github.event.workflow_run.pull_requests.length > 0
     steps:
-      - name: Debug workflow run info
+      - name: Debug trigger info
         run: |
-          echo "Workflow run conclusion: ${{ github.event.workflow_run.conclusion }}"
-          echo "Workflow run status: ${{ github.event.workflow_run.status }}"
-          echo "Workflow run name: ${{ github.event.workflow_run.name }}"
+          echo "Trigger type: ${{ github.event_name }}"
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            echo "Repository dispatch payload: ${{ toJson(github.event.client_payload) }}"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual dispatch inputs: ${{ toJson(github.event.inputs) }}"
+          fi
       - name: Checkout PR branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: ${{ github.event.client_payload.head_sha || github.event.inputs.head_sha }}
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -76,13 +90,12 @@ jobs:
             exit 1
           fi
         env:
-          PR_HEAD_REF: ${{ github.event.workflow_run.head_branch }}
-          PR_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
-          PR_IS_FORK: ${{ github.event.workflow_run.pull_requests[0].head.repo.fork }}
+          PR_HEAD_REF: ${{ github.event.client_payload.head_branch || github.event.inputs.head_branch }}
+          PR_HEAD_SHA: ${{ github.event.client_payload.head_sha || github.event.inputs.head_sha }}
+          PR_URL: ${{ github.event.client_payload.pr_url || github.event.inputs.pr_url }}
 
       - name: Comment on PR
         run: |
           gh pr comment "$PR_URL" --body "✅ Changelog has been updated automatically"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_URL: ${{ github.event.workflow_run.pull_requests[0].html_url }}
