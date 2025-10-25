@@ -1,10 +1,8 @@
 name: Qodo Automation
 
 on:
-  pull_request:
-    types: [opened, reopened, ready_for_review, synchronize]
   pull_request_target:
-    types: [opened, reopened, ready_for_review, synchronize]
+    types: [ready_for_review]
 
 permissions:
   contents: write
@@ -13,13 +11,15 @@ permissions:
 
 jobs:
   changelog-update:
-    if: github.event.action == 'ready_for_review'
+    # Security: Only run on non-fork PRs to prevent abuse
+    if: github.event.action == 'ready_for_review' && github.event.pull_request.head.repo.fork == false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
@@ -30,10 +30,17 @@ jobs:
 
       - name: Update Changelog with Qodo CLI
         run: |
+          # Ensure debug mode is disabled (security best practice)
+          set +x
+
           # Install Qodo CLI
           pnpm add -g @qodo/command
 
-          # Create file with secret content (in lieu of qodo login)
+          # Create .qodo directory if it doesn't exist
+          mkdir -p ~/.qodo
+
+          # Create file with secret content for Qodo CLI authentication
+          # Alternative to providing an OPENAI_KEY secret, which this implementation is avoiding
           echo "${{ secrets.QODO_API_KEY }}" > ~/.qodo/auth.key
           chmod 600 ~/.qodo/auth.key
 
@@ -44,8 +51,10 @@ jobs:
           qodo update_changelog --pr_url=$PR_URL --ci
 
           # Commit and push the changelog changes
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add CHANGELOG.md
-          git commit -m "Update CHANGELOG.md"
+          git commit -m "Update CHANGELOG.md [skip ci]"
           git push
 
           # Clean up
