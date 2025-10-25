@@ -1,6 +1,8 @@
 name: Qodo Automation
 
 on:
+  pull_request:
+    types: [ready_for_review]
   pull_request_target:
     types: [ready_for_review]
 
@@ -36,14 +38,6 @@ jobs:
           # Install Qodo CLI
           pnpm add -g @qodo/command
 
-          # Create .qodo directory if it doesn't exist
-          mkdir -p ~/.qodo
-
-          # Create file with secret content for Qodo CLI authentication
-          # Alternative to providing an OPENAI_KEY secret, which this implementation is avoiding
-          echo "${{ secrets.QODO_API_KEY }}" > ~/.qodo/auth.key
-          chmod 600 ~/.qodo/auth.key
-
           # Get PR URL
           PR_URL="${{ github.event.pull_request.html_url }}"
 
@@ -56,9 +50,7 @@ jobs:
           git add CHANGELOG.md
           git commit -m "Update CHANGELOG.md [skip ci]"
           git push
-
-          # Clean up
-          rm -f ~/.qodo/auth.key
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          QODO_API_KEY: ${{ secrets.QODO_API_KEY }}
         shell: bash
