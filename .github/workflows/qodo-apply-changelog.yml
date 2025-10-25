@@ -30,7 +30,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: CHANGELOG.md
-          path: ./CHANGELOG.md
+          path: .
 
       - name: Download GitHub event artifact
         uses: actions/download-artifact@v4
