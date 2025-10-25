@@ -30,14 +30,12 @@ jobs:
 
       - name: Generate changelog update
         run: |
-          # Get PR URL for PR link
-          PR_URL="${{ github.event.pull_request.html_url }}"
-
           # Generate changelog update and save as artifact
           qodo update_changelog --ci --pr_link "$PR_URL"
         env:
           QODO_API_KEY: ${{ secrets.QODO_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
 
       - name: Upload changelog artifact
         uses: actions/upload-artifact@v4
