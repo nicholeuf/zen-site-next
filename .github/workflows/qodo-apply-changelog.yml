@@ -13,16 +13,18 @@ jobs:
   apply-changelog:
     # This workflow runs in a trusted context with write permissions
     runs-on: ubuntu-latest
-    if: github.event.workflow_run.conclusion == 'success'
+    # Temporarily removing success condition for debugging
+    # if: github.event.workflow_run.conclusion == 'success'
     steps:
       - name: Debug workflow run info
         run: |
           echo "Workflow run conclusion: ${{ github.event.workflow_run.conclusion }}"
           echo "Workflow run status: ${{ github.event.workflow_run.status }}"
           echo "Workflow run name: ${{ github.event.workflow_run.name }}"
-      - name: Checkout code
+      - name: Checkout PR branch
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.workflow_run.head_sha }}
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,32 +34,17 @@ jobs:
           name: CHANGELOG.md
           path: .
 
-      - name: Download GitHub event artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: github-event
-          path: ./github-event
-
       - name: Apply changelog update
         run: |
-          # Extract PR information from GitHub event
-          if [ -f "./github-event/github_event.json" ]; then
-            PR_HEAD_REF=$(jq -r '.pull_request.head.ref' ./github-event/github_event.json)
-            PR_HEAD_SHA=$(jq -r '.pull_request.head.sha' ./github-event/github_event.json)
-            echo "PR head branch: $PR_HEAD_REF"
-            echo "PR head SHA: $PR_HEAD_SHA"
-          else
-            echo "❌ No GitHub event data found"
-            exit 1
-          fi
+          # Get PR information from workflow_run context
+          PR_HEAD_REF="${{ github.event.workflow_run.head_branch }}"
+          PR_HEAD_SHA="${{ github.event.workflow_run.head_sha }}"
+          echo "PR head branch: $PR_HEAD_REF"
+          echo "PR head SHA: $PR_HEAD_SHA"
 
           # Check if changelog file exists
           if [ -f "./CHANGELOG.md" ]; then
             echo "Changelog file found, checking for changes..."
-            
-            # Checkout the PR's head branch
-            git fetch origin "$PR_HEAD_REF"
-            git checkout "$PR_HEAD_REF"
             
             # Check if there are any changes to commit
             if git diff --quiet CHANGELOG.md; then
@@ -66,7 +53,7 @@ jobs:
             else
               echo "📝 Changes detected in CHANGELOG.md"
               
-              # Commit and push the changes to the PR's head branch
+              # Commit and push the changes to the current branch
               git config --local user.email "noreply@github.com"
               git config --local user.name "Qodo Changelog Bot"
               git add CHANGELOG.md
@@ -82,12 +69,8 @@ jobs:
 
       - name: Comment on PR
         run: |
-          # Extract PR URL from GitHub event
-          if [ -f "./github-event/github_event.json" ]; then
-            PR_URL=$(jq -r '.pull_request.html_url' ./github-event/github_event.json)
-            gh pr comment "$PR_URL" --body "✅ Changelog has been updated automatically"
-          else
-            echo "Could not find GitHub event data"
-          fi
+          # Get PR URL from workflow_run context
+          PR_URL="${{ github.event.workflow_run.pull_requests[0].html_url }}"
+          gh pr comment "$PR_URL" --body "✅ Changelog has been updated automatically"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

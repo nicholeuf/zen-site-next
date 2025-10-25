@@ -33,9 +33,6 @@ jobs:
           # Get PR URL for PR link
           PR_URL="${{ github.event.pull_request.html_url }}"
 
-          # Save GitHub event data for the apply workflow
-          echo '${{ toJson(github.event) }}' > github_event.json
-
           # Generate changelog update and save as artifact
           qodo update_changelog --ci --pr_link "$PR_URL"
         env:
@@ -47,9 +44,3 @@ jobs:
         with:
           name: CHANGELOG.md
           path: CHANGELOG.md
-
-      - name: Upload GitHub event artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-event
-          path: github_event.json
