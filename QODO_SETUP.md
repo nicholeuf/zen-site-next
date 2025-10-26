@@ -28,10 +28,10 @@ You need to add the following secrets to your GitHub repository:
   2. Get your API key from the dashboard
   3. Copy the key and add it to your repository secrets
 
-### 2. GitHub Token
+### 2. GitHub Token (PAT)
 
-- **Secret Name**: `GITHUB_TOKEN`
-- **Description**: GitHub token for repository access
+- **Secret Name**: `REPO_WRITE_TOKEN`
+- **Description**: Personal Access Token for repository write access
 - **How to get**:
   1. Go to GitHub Settings → Developer settings → Personal access tokens
   2. Generate a new token with `repo` and `workflow` permissions
