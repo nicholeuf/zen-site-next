@@ -1,6 +1,6 @@
 name: Qodo Automation
 
-on: [pull_request_target]
+on: [pull_request]
 
 permissions:
   contents: write
@@ -47,7 +47,7 @@ jobs:
           gh pr comment "$PR_URL" --body "✅ Changelog has been updated automatically"
         env:
           QODO_API_KEY: ${{ secrets.QODO_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.REPO_WRITE_TOKEN }}
+          GH_TOKEN: ${{ secrets.REPO_WRITE_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         shell: bash
 
