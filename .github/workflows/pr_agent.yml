@@ -1,0 +1,60 @@
+name: Qodo Automation
+
+on: [pull_request]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  changelog-update:
+    # Security: Only run on non-fork PRs to prevent abuse
+    if: github.event.action == 'ready_for_review' && github.event.pull_request.head.repo.fork == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'pnpm'
+
+      - name: Update Changelog with Qodo CLI
+        run: |
+          # Ensure debug mode is disabled (security best practice)
+          set +x
+
+          # Install Qodo CLI
+          pnpm add -g @qodo/command
+
+          # Run Qodo command
+          qodo update_changelog --ci --pr_link "$PR_URL"
+
+          # Commit and push the changelog changes
+          git config --local user.email "noreply@github.com"
+          git config --local user.name "Qodo Changelog Bot"
+          git pull --rebase
+          git add CHANGELOG.md
+          git commit -m "Update CHANGELOG.md [skip ci]"
+          git push
+
+          gh pr comment "$PR_URL" --body "✅ Changelog has been updated automatically"
+        env:
+          QODO_API_KEY: ${{ secrets.QODO_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        shell: bash
+
+      - name: Upload CHANGELOG.md artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CHANGELOG.md
+          path: CHANGELOG.md

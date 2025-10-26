@@ -1,0 +1,10 @@
+# Qodo Merge Configuration
+# This file customizes the behavior of Qodo Merge tools
+# Note: Review tools are handled by Qodo's built-in system via wiki configuration
+# This file only configures the changelog update functionality
+
+[pr_update_changelog]
+push_changelog_changes=true
+add_pr_link=true
+skip_ci_on_push=true
+extra_instructions = "Follow the existing changelog format with proper categorization (Added, Changed, Fixed, etc.) and include PR links"

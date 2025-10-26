@@ -1,10 +1,10 @@
-### 2025-10-23 [*](https://github.com/nicholeuf/zen-site-next/pull/139)
+### 2025-10-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/139)
 
 #### Changed
 
 - Update portfolio work item to use website URL, simplify title, clarify launch details, and add automation tools; adjust tests accordingly
 
-### 2025-10-23 [*](https://github.com/nicholeuf/zen-site-next/pull/136)
+### 2025-10-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/136)
 
 #### Added
 
@@ -340,9 +340,12 @@
 When making changes to this project, please follow these guidelines:
 
 1. Use conventional commit messages
-2. [Qodo](https://github.com/nicholeuf/zen-site-next/wiki/.pr_agent.toml) will update this changelog with your changes when the PR is ready for review
-3. Test your changes thoroughly
-4. Follow the existing code style and patterns
+2. **Changelog Automation**: Qodo will automatically update this changelog when your PR is marked as "ready for review" via GitHub Actions (see `.github/workflows/pr_agent.yml`)
+3. **PR Review Automation**: Qodo will automatically run review, describe, improve, and compliance tools when PRs are opened, reopened, or updated
+4. Test your changes thoroughly
+5. Follow the existing code style and patterns
+
+**Note**: The changelog automation only runs when a PR is marked as "ready for review" to avoid conflicts with other automated tools.
 
 ## License
 
