@@ -1,18 +1,9 @@
 import getServerPath from './getServerPath';
 
-const mockHeaders = jest.fn();
-
-jest.mock('next/headers', () => ({
-  headers() {
-    return mockHeaders();
-  },
-}));
-
 describe('getServerPath', () => {
   test('returns path', async () => {
-    mockHeaders.mockImplementation(() => ({
-      get: () => '/work',
-    }));
+    // use the global test helper to set headers for the next/headers mock
+    (global as any).__setTestHeaders({ 'x-next-pathname': '/work' });
     const serverPath = await getServerPath();
     expect(serverPath).toBe('/work');
   });

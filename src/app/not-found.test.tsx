@@ -9,14 +9,6 @@ import {
   XS_DEVICE,
 } from 'test-utils';
 
-const mockUsePathname = jest.fn();
-
-jest.mock('next/navigation', () => ({
-  usePathname() {
-    return mockUsePathname();
-  },
-}));
-
 import NotFound from './not-found';
 
 describe('The Not Found (404) Page', () => {
@@ -26,7 +18,7 @@ describe('The Not Found (404) Page', () => {
 
   test('has expected snapshot', async () => {
     // mock usePathname to return a 404 page
-    mockUsePathname.mockImplementation(() => '/figs');
+    (global as any).__setTestPathname('/figs');
 
     const { container } = renderSnapshotWithLayout(<NotFound />);
     expect(container).toMatchSnapshot();
@@ -39,7 +31,8 @@ describe('The Not Found (404) Page', () => {
 
     test('has expected content and factors image by 2', () => {
       // mock usePathname to return a 404 page
-      mockUsePathname.mockImplementation(() => '/figs');
+
+      (global as any).__setTestPathname('/figs');
 
       renderWithLayout(<NotFound />);
 

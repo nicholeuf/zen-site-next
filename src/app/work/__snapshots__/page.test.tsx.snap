@@ -1,1581 +1,22 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`The Work Page has expected snapshot 1`] = `
-.emotion-0 {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  box-shadow: var(--Paper-shadow);
-  background-image: var(--Paper-overlay);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  position: fixed;
-  z-index: 1100;
-  top: 0;
-  left: auto;
-  right: 0;
-  --AppBar-background: transparent;
-  --AppBar-color: inherit;
-  background-color: var(--AppBar-background);
-  color: var(--AppBar-color);
-  background-color: rgba(248, 250, 243, 0.85);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border-bottom: 3px solid #373833;
-  min-height: 60px;
-  height: 60px;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-shadow: none;
-}
-
-@media print {
-  .emotion-0 {
-    position: absolute;
-  }
-}
-
-.emotion-1 {
-  font-family: fontFamily;
-  font-size: 30px;
-  height: 100%;
-  width: 60px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-1:hover {
-  cursor: pointer;
-}
-
-.emotion-2 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #373833;
-  width: 100%;
-  text-align: center;
-}
-
-.emotion-2:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2:hover {
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-2::before {
-  content: "nf";
-}
-
-.emotion-3 {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0px solid;
-}
-
-.emotion-4 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: left;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-transition: -webkit-transform 0.25s ease;
-  transition: transform 0.25s ease;
-}
-
-.emotion-5:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.emotion-6 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-bottom: 4px solid;
-  border-bottom-color: #fa2742;
-  box-sizing: border-box;
-  letter-spacing: 1.25px;
-  height: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #373833;
-  -webkit-transition: color 0.25s ease;
-  transition: color 0.25s ease;
-}
-
-.emotion-6:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-6:hover {
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-8 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  letter-spacing: 1.25px;
-  height: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #373833;
-  -webkit-transition: color 0.25s ease;
-  transition: color 0.25s ease;
-}
-
-.emotion-8:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-8:hover {
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-13 {
-  width: 100%;
-  margin-left: auto;
-  box-sizing: border-box;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 60px;
-  min-height: calc(var(--viewport-height) - 60px - 175px);
-  padding: 0!important;
-  max-width: 100%!important;
-}
-
-@media (min-width:600px) {
-  .emotion-13 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-13 {
-    max-width: 1200px;
-  }
-}
-
-.emotion-14 {
-  width: 100%;
-  margin-left: auto;
-  box-sizing: border-box;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-@media (min-width:600px) {
-  .emotion-14 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-14 {
-    max-width: 1200px;
-  }
-}
-
-.emotion-15 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 300;
-  font-size: 3.5rem;
-  line-height: 1.167;
-  margin-bottom: 0.35em;
-}
-
-@media (min-width:600px) {
-  .emotion-15 {
-    font-size: 4.7129rem;
-  }
-}
-
-@media (min-width:900px) {
-  .emotion-15 {
-    font-size: 5.3556rem;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-15 {
-    font-size: 5.9983rem;
-  }
-}
-
-.emotion-16 {
-  margin: 0;
-  font-size: 0.9rem;
-  font-family: fontFamily;
-  font-weight: 400;
-  line-height: 1.43;
-}
-
-.emotion-17 {
-  width: 100%;
-}
-
-.emotion-18 {
-  border-bottom: 1px solid;
-  border-color: rgba(0, 0, 0, 0.12);
-}
-
-.emotion-19 {
-  overflow: hidden;
-  min-height: 48px;
-  -webkit-overflow-scrolling: touch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-20 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  width: 40px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  opacity: 0.8;
-}
-
-.emotion-20::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-20.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-20 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-20.Mui-disabled {
-  opacity: 0;
-}
-
-.emotion-21 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  fill: currentColor;
-  font-size: 1.25rem;
-}
-
-.emotion-22 {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: none;
-}
-
-.emotion-22::-webkit-scrollbar {
-  display: none;
-}
-
-.emotion-23 {
-  position: relative;
-  display: inline-block;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  white-space: nowrap;
-  scrollbar-width: none;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.emotion-23::-webkit-scrollbar {
-  display: none;
-}
-
-.emotion-24 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-25 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  font-family: fontFamily;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.25;
-  text-transform: uppercase;
-  max-width: 360px;
-  min-width: 90px;
-  position: relative;
-  min-height: 48px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  padding: 12px 16px;
-  overflow: hidden;
-  white-space: normal;
-  text-align: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.emotion-25::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-25.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-25 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-25.Mui-selected {
-  color: #fa2742;
-}
-
-.emotion-25.Mui-disabled {
-  color: rgba(0, 0, 0, 0.38);
-}
-
-.emotion-28 {
-  position: absolute;
-  height: 2px;
-  bottom: 0;
-  width: 100%;
-  -webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  background-color: #fa2742;
-}
-
-.emotion-32 {
-  padding: 24px;
-}
-
-.emotion-33 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.334;
-}
-
-@media (min-width:600px) {
-  .emotion-33 {
-    font-size: 1.3118rem;
-  }
-}
-
-@media (min-width:900px) {
-  .emotion-33 {
-    font-size: 1.4993rem;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-33 {
-    font-size: 1.4993rem;
-  }
-}
-
-.emotion-34 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 2.66;
-  text-transform: uppercase;
-}
-
-.emotion-35 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.57;
-}
-
-.emotion-36 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.emotion-37 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: left;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.emotion-37::before {
-  content: "-";
-  padding-right: 4px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: flex-start;
-  align-self: flex-start;
-}
-
-.emotion-41 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.emotion-42 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: left;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-right: 8px;
-  padding-left: 0px;
-  width: initial;
-}
-
-.emotion-43 {
-  max-width: 100%;
-  font-family: fontFamily;
-  font-size: 0.8125rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 32px;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(0, 0, 0, 0.08);
-  border-radius: 16px;
-  white-space: nowrap;
-  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  cursor: unset;
-  outline: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  padding: 0;
-  vertical-align: middle;
-  box-sizing: border-box;
-  height: 24px;
-  background-color: #fa2742;
-  color: #fff;
-}
-
-.emotion-43.Mui-disabled {
-  opacity: 0.38;
-  pointer-events: none;
-}
-
-.emotion-43 .MuiChip-avatar {
-  margin-left: 5px;
-  margin-right: -6px;
-  width: 24px;
-  height: 24px;
-  color: #616161;
-  font-size: 0.75rem;
-}
-
-.emotion-43 .MuiChip-avatarColorPrimary {
-  color: #fff;
-  background-color: rgb(175, 27, 46);
-}
-
-.emotion-43 .MuiChip-avatarColorSecondary {
-  color: #fff;
-  background-color: rgb(38, 39, 35);
-}
-
-.emotion-43 .MuiChip-avatarSmall {
-  margin-left: 4px;
-  margin-right: -4px;
-  width: 18px;
-  height: 18px;
-  font-size: 0.625rem;
-}
-
-.emotion-43 .MuiChip-icon {
-  margin-left: 5px;
-  margin-right: -6px;
-}
-
-.emotion-43 .MuiChip-deleteIcon {
-  -webkit-tap-highlight-color: transparent;
-  color: rgba(0, 0, 0, 0.26);
-  font-size: 22px;
-  cursor: pointer;
-  margin: 0 5px 0 -6px;
-}
-
-.emotion-43 .MuiChip-deleteIcon:hover {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.emotion-43 .MuiChip-icon {
-  font-size: 18px;
-  margin-left: 4px;
-  margin-right: -4px;
-}
-
-.emotion-43 .MuiChip-deleteIcon {
-  font-size: 16px;
-  margin-right: 4px;
-  margin-left: -4px;
-}
-
-.emotion-43 .MuiChip-deleteIcon {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.emotion-43 .MuiChip-deleteIcon:hover,
-.emotion-43 .MuiChip-deleteIcon:active {
-  color: #fff;
-}
-
-.emotion-43 .MuiChip-icon {
-  color: #616161;
-}
-
-.emotion-43 .MuiChip-icon {
-  color: inherit;
-}
-
-.emotion-44 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 12px;
-  padding-right: 12px;
-  white-space: nowrap;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.emotion-62 {
-  max-width: 100%;
-  font-family: fontFamily;
-  font-size: 0.8125rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  height: 32px;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: rgba(0, 0, 0, 0.08);
-  border-radius: 16px;
-  white-space: nowrap;
-  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  cursor: unset;
-  outline: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  padding: 0;
-  vertical-align: middle;
-  box-sizing: border-box;
-  height: 24px;
-  background-color: #fa2742;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #bdbdbd;
-  color: #fa2742;
-  border: 1px solid rgba(250, 39, 66, 0.7);
-}
-
-.emotion-62.Mui-disabled {
-  opacity: 0.38;
-  pointer-events: none;
-}
-
-.emotion-62 .MuiChip-avatar {
-  margin-left: 5px;
-  margin-right: -6px;
-  width: 24px;
-  height: 24px;
-  color: #616161;
-  font-size: 0.75rem;
-}
-
-.emotion-62 .MuiChip-avatarColorPrimary {
-  color: #fff;
-  background-color: rgb(175, 27, 46);
-}
-
-.emotion-62 .MuiChip-avatarColorSecondary {
-  color: #fff;
-  background-color: rgb(38, 39, 35);
-}
-
-.emotion-62 .MuiChip-avatarSmall {
-  margin-left: 4px;
-  margin-right: -4px;
-  width: 18px;
-  height: 18px;
-  font-size: 0.625rem;
-}
-
-.emotion-62 .MuiChip-icon {
-  margin-left: 5px;
-  margin-right: -6px;
-}
-
-.emotion-62 .MuiChip-deleteIcon {
-  -webkit-tap-highlight-color: transparent;
-  color: rgba(0, 0, 0, 0.26);
-  font-size: 22px;
-  cursor: pointer;
-  margin: 0 5px 0 -6px;
-}
-
-.emotion-62 .MuiChip-deleteIcon:hover {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.emotion-62 .MuiChip-icon {
-  font-size: 18px;
-  margin-left: 4px;
-  margin-right: -4px;
-}
-
-.emotion-62 .MuiChip-deleteIcon {
-  font-size: 16px;
-  margin-right: 4px;
-  margin-left: -4px;
-}
-
-.emotion-62 .MuiChip-deleteIcon {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.emotion-62 .MuiChip-deleteIcon:hover,
-.emotion-62 .MuiChip-deleteIcon:active {
-  color: #fff;
-}
-
-.emotion-62 .MuiChip-icon {
-  color: #616161;
-}
-
-.emotion-62 .MuiChip-icon {
-  color: inherit;
-}
-
-.emotion-62.MuiChip-clickable:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-}
-
-.emotion-62.Mui-focusVisible {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-
-.emotion-62 .MuiChip-avatar {
-  margin-left: 4px;
-}
-
-.emotion-62 .MuiChip-avatarSmall {
-  margin-left: 2px;
-}
-
-.emotion-62 .MuiChip-icon {
-  margin-left: 4px;
-}
-
-.emotion-62 .MuiChip-iconSmall {
-  margin-left: 2px;
-}
-
-.emotion-62 .MuiChip-deleteIcon {
-  margin-right: 5px;
-}
-
-.emotion-62 .MuiChip-deleteIconSmall {
-  margin-right: 3px;
-}
-
-.emotion-62.MuiChip-clickable:hover {
-  background-color: rgba(250, 39, 66, 0.04);
-}
-
-.emotion-62.Mui-focusVisible {
-  background-color: rgba(250, 39, 66, 0.12);
-}
-
-.emotion-62 .MuiChip-deleteIcon {
-  color: rgba(250, 39, 66, 0.7);
-}
-
-.emotion-62 .MuiChip-deleteIcon:hover,
-.emotion-62 .MuiChip-deleteIcon:active {
-  color: #fa2742;
-}
-
-.emotion-63 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 12px;
-  padding-right: 12px;
-  white-space: nowrap;
-  padding-left: 11px;
-  padding-right: 11px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-left: 7px;
-  padding-right: 7px;
-}
-
-.emotion-259 {
-  background-color: #373833;
-  color: #f8faf3;
-  height: 175px;
-  padding: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-260 {
-  max-width: 600px;
-  display: grid;
-  gap: 4px;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-
-@media (min-width:0px) {
-  .emotion-260 {
-    grid-template-areas: "nav" "madeby" "copyright" "source";
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-260 {
-    grid-template-areas: "nav madeby" "nav copyright" "nav source";
-  }
-}
-
-.emotion-261 {
-  grid-area: nav;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-@media (min-width:0px) {
-  .emotion-261 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-261 {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-  }
-}
-
-.emotion-262 {
-  width: 25%;
-  height: 100%;
-}
-
-.emotion-263 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-}
-
-@media (min-width:0px) {
-  .emotion-263 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-263 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-.emotion-264 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: left;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding: 0px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: -webkit-transform 0.25s ease;
-  transition: transform 0.25s ease;
-}
-
-@media (min-width:0px) {
-  .emotion-264 {
-    margin: 8px;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-264 {
-    margin: 24px;
-  }
-}
-
-.emotion-264:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.emotion-265 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-265:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-266 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  text-align: center;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  font-size: 1.5rem;
-  padding: 8px;
-  border-radius: 50%;
-  color: rgba(0, 0, 0, 0.54);
-  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  --IconButton-hoverBg: rgba(0, 0, 0, 0.04);
-  padding: 0px;
-}
-
-.emotion-266::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-266.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-266 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-266:hover {
-  background-color: var(--IconButton-hoverBg);
-}
-
-@media (hover: none) {
-  .emotion-266:hover {
-    background-color: transparent;
-  }
-}
-
-.emotion-266.Mui-disabled {
-  background-color: transparent;
-  color: rgba(0, 0, 0, 0.26);
-}
-
-.emotion-266.MuiIconButton-loading {
-  color: transparent;
-}
-
-.emotion-267 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  fill: currentColor;
-  font-size: 1.5rem;
-  color: #f8faf3;
-}
-
-.emotion-272 {
-  grid-area: madeby;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width:0px) {
-  .emotion-272 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-272 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-  }
-}
-
-.emotion-273 {
-  margin: 0;
-  font-family: fontFamily;
-  font-size: 26px;
-}
-
-@media (min-width:0px) {
-  .emotion-273 {
-    font-size: 24px;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-273 {
-    font-size: 34px;
-  }
-}
-
-.emotion-274 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-  display: inline;
-  color: #fa2742;
-}
-
-.emotion-275 {
-  grid-area: copyright;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width:0px) {
-  .emotion-275 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-275 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-  }
-}
-
-.emotion-276 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 2.66;
-  text-transform: uppercase;
-  text-transform: none;
-}
-
-.emotion-277 {
-  grid-area: source;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width:0px) {
-  .emotion-277 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-277 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-  }
-}
-
-.emotion-278 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 2.66;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-279 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #f8faf3;
-}
-
-.emotion-279:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-280 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  font-family: fontFamily;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.75;
-  text-transform: uppercase;
-  min-width: 64px;
-  padding: 6px 16px;
-  border: 0;
-  border-radius: 4px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  padding: 6px 8px;
-  color: var(--variant-textColor);
-  background-color: var(--variant-textBg);
-  --variant-textColor: #fa2742;
-  --variant-outlinedColor: #fa2742;
-  --variant-outlinedBorder: rgba(250, 39, 66, 0.5);
-  --variant-containedColor: #fff;
-  --variant-containedBg: #fa2742;
-  padding: 4px 5px;
-  font-size: 0.8125rem;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: inherit;
-  font-size: inherit;
-  padding: 0px;
-}
-
-.emotion-280::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-280.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-280 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-280:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-280.Mui-disabled {
-  color: rgba(0, 0, 0, 0.26);
-}
-
-@media (hover: hover) {
-  .emotion-280:hover {
-    --variant-containedBg: rgb(175, 27, 46);
-    --variant-textBg: rgba(250, 39, 66, 0.04);
-    --variant-outlinedBorder: #fa2742;
-    --variant-outlinedBg: rgba(250, 39, 66, 0.04);
-  }
-}
-
-.emotion-280.MuiButton-loading {
-  color: transparent;
-}
-
+exports[`The Work Page > has expected snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed emotion-0"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed css-1p3daan-MuiPaper-root-MuiAppBar-root"
     data-testid="header"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <div
-      class="MuiBox-root emotion-1"
+      class="MuiBox-root css-yj3n64"
       data-testid="header-logo"
     >
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1qolyb7-MuiTypography-root-MuiLink-root"
         href="/"
       >
         <span
-          class="MuiBox-root emotion-3"
+          class="MuiBox-root css-1ep31vt"
           data-testid="visually-hidden"
         >
           Home
@@ -1587,44 +28,44 @@ exports[`The Work Page has expected snapshot 1`] = `
       data-testid="header-nav"
     >
       <ul
-        class="MuiList-root MuiList-padding emotion-4"
+        class="MuiList-root MuiList-padding css-u4ixcn-MuiList-root"
       >
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            aria-current="page"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
             href="/work"
           >
             Work
           </a>
         </li>
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
             href="/about"
           >
             About
           </a>
         </li>
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
             href="/contact"
           >
             Contact
           </a>
         </li>
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
+            aria-current="page"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-5i0839-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home
@@ -1634,37 +75,37 @@ exports[`The Work Page has expected snapshot 1`] = `
     </nav>
   </header>
   <main
-    class="MuiContainer-root MuiContainer-maxWidthLg emotion-13"
+    class="MuiContainer-root MuiContainer-maxWidthLg css-jbpjbe-MuiContainer-root"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthLg emotion-14"
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1ipbonz-MuiContainer-root"
       data-testid="work-page"
     >
       <h1
-        class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-15"
+        class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom css-1dn1ar9-MuiTypography-root"
       >
         Work
       </h1>
       <p
-        class="MuiTypography-root MuiTypography-body2 emotion-16"
+        class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
       >
         After graduating in 2003 with a degree in Computer Engineering from the University of Florida, I worked in the defense industry for 7 years. I then transitioned to working for niche food delivery service companies, where I honed my skills as a Full-Stack Developer. Throughout my career progression, I have assumed roles such as Technical Lead, providing mentorship to colleagues, and collaborating within agile, cross-functional teams.
       </p>
       <div
-        class="MuiBox-root emotion-17"
+        class="MuiBox-root css-8atqhb"
       >
         <div
-          class="MuiBox-root emotion-18"
+          class="MuiBox-root css-1gsv261"
         >
           <div
-            class="MuiTabs-root emotion-19"
+            class="MuiTabs-root css-1xkjjjh-MuiTabs-root"
           >
             <div
-              class="MuiButtonBase-root MuiTabScrollButton-root MuiTabScrollButton-horizontal Mui-disabled MuiTabs-scrollButtons emotion-20"
+              class="MuiButtonBase-root MuiTabScrollButton-root MuiTabScrollButton-horizontal Mui-disabled MuiTabs-scrollButtons css-1mf9qzl-MuiButtonBase-root-MuiTabScrollButton-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall emotion-21"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
                 data-testid="KeyboardArrowLeftIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -1675,22 +116,22 @@ exports[`The Work Page has expected snapshot 1`] = `
               </svg>
             </div>
             <div
-              class="MuiTabs-scrollableX MuiTabs-hideScrollbar emotion-22"
+              class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-i8yde5"
               style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
             />
             <div
-              class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX emotion-23"
+              class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-1fr578y-MuiTabs-scroller"
               style="margin-bottom: 0px;"
             >
               <div
                 aria-label="work experience tabs"
-                class="MuiTabs-list MuiTabs-flexContainer emotion-24"
+                class="MuiTabs-list MuiTabs-flexContainer css-hzcega-MuiTabs-list"
                 role="tablist"
               >
                 <button
                   aria-controls="work-tabpanel-0"
                   aria-selected="true"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected emotion-25"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1lb57lp-MuiButtonBase-root-MuiTab-root"
                   id="work-tab-0"
                   role="tab"
                   tabindex="0"
@@ -1701,7 +142,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <button
                   aria-controls="work-tabpanel-1"
                   aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary emotion-25"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1lb57lp-MuiButtonBase-root-MuiTab-root"
                   id="work-tab-1"
                   role="tab"
                   tabindex="-1"
@@ -1712,7 +153,7 @@ exports[`The Work Page has expected snapshot 1`] = `
                 <button
                   aria-controls="work-tabpanel-2"
                   aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary emotion-25"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1lb57lp-MuiButtonBase-root-MuiTab-root"
                   id="work-tab-2"
                   role="tab"
                   tabindex="-1"
@@ -1722,16 +163,16 @@ exports[`The Work Page has expected snapshot 1`] = `
                 </button>
               </div>
               <span
-                class="MuiTabs-indicator emotion-28"
+                class="MuiTabs-indicator css-ojdi7e-MuiTabs-indicator"
                 style="left: 0px; width: 0px;"
               />
             </div>
             <div
-              class="MuiButtonBase-root MuiTabScrollButton-root MuiTabScrollButton-horizontal Mui-disabled MuiTabs-scrollButtons emotion-20"
+              class="MuiButtonBase-root MuiTabScrollButton-root MuiTabScrollButton-horizontal Mui-disabled MuiTabs-scrollButtons css-1mf9qzl-MuiButtonBase-root-MuiTabScrollButton-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall emotion-21"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
                 data-testid="KeyboardArrowRightIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -1745,141 +186,141 @@ exports[`The Work Page has expected snapshot 1`] = `
         </div>
         <div
           aria-labelledby="work-tab-0"
-          class="MuiBox-root emotion-31"
+          class="MuiBox-root css-0"
           data-testid="portfolio-site"
           id="work-tabpanel-0"
           role="tabpanel"
         >
           <div
-            class="MuiBox-root emotion-32"
+            class="MuiBox-root css-19kzrtu"
           >
             <h2
-              class="MuiTypography-root MuiTypography-h5 emotion-33"
+              class="MuiTypography-root MuiTypography-h5 css-12fjch-MuiTypography-root"
             >
               thecodingyogi.me
                | 
               Developer
             </h2>
             <span
-              class="MuiTypography-root MuiTypography-overline emotion-34"
+              class="MuiTypography-root MuiTypography-overline css-1wvzdjr-MuiTypography-root"
             >
               Nov 2017
                - 
               Present
             </span>
             <h6
-              class="MuiTypography-root MuiTypography-subtitle2 emotion-35"
+              class="MuiTypography-root MuiTypography-subtitle2 css-10glyy7-MuiTypography-root"
             >
               Remote
             </h6>
             <ul
-              class="MuiList-root MuiList-padding emotion-36"
+              class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"
               data-testid="experience-list"
             >
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   Current site, launched in 2024, is built with React, NextJS, and MaterialUI, and deployed to Vercel.
                 </p>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   Code is fully-tested and automated via Github Actions, Meticulous.ai QA Automation, and Qodo.ai Code Reviews.
                 </p>
               </li>
             </ul>
             <ul
-              class="MuiList-root MuiList-padding emotion-41"
+              class="MuiList-root MuiList-padding css-10nu5dk-MuiList-root"
               data-testid="chip-list"
             >
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     MaterialUI
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Typescript
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     React
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     NextJS
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Emotion
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Jest
                   </span>
@@ -1887,116 +328,116 @@ exports[`The Work Page has expected snapshot 1`] = `
               </li>
             </ul>
             <ul
-              class="MuiList-root MuiList-padding emotion-41"
+              class="MuiList-root MuiList-padding css-10nu5dk-MuiList-root"
               data-testid="chip-list"
             >
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Vercel
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Cloudinary
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Codecov
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Github Actions
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Sentry.io
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Meticulous.ai
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Small.chat
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Qodo.ai
                   </span>
@@ -2007,280 +448,280 @@ exports[`The Work Page has expected snapshot 1`] = `
         </div>
         <div
           aria-labelledby="work-tab-1"
-          class="MuiBox-root emotion-31"
+          class="MuiBox-root css-0"
           data-testid="imperfect-foods"
           hidden=""
           id="work-tabpanel-1"
           role="tabpanel"
         >
           <div
-            class="MuiBox-root emotion-32"
+            class="MuiBox-root css-19kzrtu"
           >
             <h2
-              class="MuiTypography-root MuiTypography-h5 emotion-33"
+              class="MuiTypography-root MuiTypography-h5 css-12fjch-MuiTypography-root"
             >
               Imperfect Foods
                | 
               Full-Stack Developer
             </h2>
             <span
-              class="MuiTypography-root MuiTypography-overline emotion-34"
+              class="MuiTypography-root MuiTypography-overline css-1wvzdjr-MuiTypography-root"
             >
               Jan 2018
                - 
               Dec 2022
             </span>
             <h6
-              class="MuiTypography-root MuiTypography-subtitle2 emotion-35"
+              class="MuiTypography-root MuiTypography-subtitle2 css-10glyy7-MuiTypography-root"
             >
               Remote
             </h6>
             <ul
-              class="MuiList-root MuiList-padding emotion-36"
+              class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"
               data-testid="experience-list"
             >
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   Founding member of a collaborative, cross-functional team where we facilitated a unique shopping experience, intended to solve food waste.
                 </p>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   Contributed to the transition of our user base from the legacy site to the new platform after adapting the Door to Door Organics code to Imperfect's business model.
                 </p>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   Involved in architecture decisions and technology improvements.
                 </p>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   Involved in early exploration of new features with our design and project management team members.
                 </p>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   Responsible for the engineering side of our Stripe and Auth0 integrations, as well as collecting our site analytics using Segment and collaborating with merchandising and marketing efforts that relied on this data.
                 </p>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   Mentored junior and mid-level developers as we expanded our team.
                 </p>
               </li>
             </ul>
             <ul
-              class="MuiList-root MuiList-padding emotion-41"
+              class="MuiList-root MuiList-padding css-10nu5dk-MuiList-root"
               data-testid="chip-list"
             >
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Node
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     TypeScript
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     React
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     React Router
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Redux
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Sagas
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Webpack
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Jest
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Express
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     SQL
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Microservices
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Technical Writing
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     A/B Testing
                   </span>
@@ -2288,228 +729,228 @@ exports[`The Work Page has expected snapshot 1`] = `
               </li>
             </ul>
             <ul
-              class="MuiList-root MuiList-padding emotion-41"
+              class="MuiList-root MuiList-padding css-10nu5dk-MuiList-root"
               data-testid="chip-list"
             >
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Auth0
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Stripe
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Split.io
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Algolia
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Segment.io
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Prismic
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Snowflake
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     CircleCI
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Cloudinary
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Storybook
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     DataDog
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     JIRA
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Codecov
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     PostGRES
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     AWS
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Docker
                   </span>
@@ -2520,44 +961,44 @@ exports[`The Work Page has expected snapshot 1`] = `
         </div>
         <div
           aria-labelledby="work-tab-2"
-          class="MuiBox-root emotion-31"
+          class="MuiBox-root css-0"
           data-testid="dtdo"
           hidden=""
           id="work-tabpanel-2"
           role="tabpanel"
         >
           <div
-            class="MuiBox-root emotion-32"
+            class="MuiBox-root css-19kzrtu"
           >
             <h2
-              class="MuiTypography-root MuiTypography-h5 emotion-33"
+              class="MuiTypography-root MuiTypography-h5 css-12fjch-MuiTypography-root"
             >
               Door to Door Organics
                | 
               Lead Front-End Developer
             </h2>
             <span
-              class="MuiTypography-root MuiTypography-overline emotion-34"
+              class="MuiTypography-root MuiTypography-overline css-1wvzdjr-MuiTypography-root"
             >
               Mar 2014
                - 
               Nov 2017
             </span>
             <h6
-              class="MuiTypography-root MuiTypography-subtitle2 emotion-35"
+              class="MuiTypography-root MuiTypography-subtitle2 css-10glyy7-MuiTypography-root"
             >
               Louisville, CO & Remote
             </h6>
             <ul
-              class="MuiList-root MuiList-padding emotion-36"
+              class="MuiList-root MuiList-padding css-b7dj7n-MuiList-root"
               data-testid="experience-list"
             >
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   During my three and a half years with the company, I worked my way up from a Sr. Java Developer to the Lead
       of the Front-End team.  In 2016 we merged with Relay Foods, and I transitioned to a Full-Stack Developer on a remote-first team,
@@ -2565,33 +1006,33 @@ exports[`The Work Page has expected snapshot 1`] = `
                 </p>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   I started at the company with a background in Enterprise Java, but fell in love with JavaScript and React at this job.  In addition,
       I worked on several of our Node Micro-Services, Internal Tools, and contributed to the transition of our user base to the new platform.
                 </p>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   I introduced sagas for achieving complex user interactions and reselect for performant access to our
       redux architecture.  We used JWT for authentication and our stack was hosted on Amazon Web Services (AWS) ElasticBeanstalk (EB) and CircleCI was used for build automation and deployment.
                 </p>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-37"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1h14n07-MuiListItem-root"
                 data-testid="experience-list-item"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body2 emotion-16"
+                  class="MuiTypography-root MuiTypography-body2 css-ozzs4i-MuiTypography-root"
                 >
                   Our team used slack and screenhero for paired programming and collaboration.  We were a fast-paced team
       with a focus on iterative development.
@@ -2599,130 +1040,130 @@ exports[`The Work Page has expected snapshot 1`] = `
               </li>
             </ul>
             <ul
-              class="MuiList-root MuiList-padding emotion-41"
+              class="MuiList-root MuiList-padding css-10nu5dk-MuiList-root"
               data-testid="chip-list"
             >
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Node
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     JavaScript
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     React
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     React Native
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Redux
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Sagas
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Express
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     SQL
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary emotion-43"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-44"
+                    class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
                   >
                     Microservices
                   </span>
@@ -2730,116 +1171,116 @@ exports[`The Work Page has expected snapshot 1`] = `
               </li>
             </ul>
             <ul
-              class="MuiList-root MuiList-padding emotion-41"
+              class="MuiList-root MuiList-padding css-10nu5dk-MuiList-root"
               data-testid="chip-list"
             >
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     AWS
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Auth0
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Stripe
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Segment.io
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Algolia
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     CircleCI
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     Cloudinary
                   </span>
                 </div>
               </li>
               <li
-                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-42"
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p41xa8-MuiListItem-root"
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary emotion-62"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
                 >
                   <span
-                    class="MuiChip-label MuiChip-labelSmall emotion-63"
+                    class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
                   >
                     PostGRES
                   </span>
@@ -2852,41 +1293,41 @@ exports[`The Work Page has expected snapshot 1`] = `
     </div>
   </main>
   <footer
-    class="MuiBox-root emotion-259"
+    class="MuiBox-root css-kyi7o"
     data-testid="footer"
   >
     <div
-      class="MuiBox-root emotion-260"
+      class="MuiBox-root css-nku55u"
     >
       <div
-        class="MuiBox-root emotion-261"
+        class="MuiBox-root css-1v6xpbi"
       >
         <nav
           aria-label="External Navigation"
-          class="MuiBox-root emotion-262"
+          class="MuiBox-root css-jsi86s"
           data-testid="footer-nav"
         >
           <ul
-            class="MuiList-root MuiList-padding emotion-263"
+            class="MuiList-root MuiList-padding css-15hnovt-MuiList-root"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-264"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-v8su1p-MuiListItem-root"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-265"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-12g0397-MuiTypography-root-MuiLink-root"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-266"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1avsmgh-MuiButtonBase-root-MuiIconButton-root"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-267"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-115r2fk-MuiSvgIcon-root"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -2899,23 +1340,23 @@ exports[`The Work Page has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-264"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-v8su1p-MuiListItem-root"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-265"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-12g0397-MuiTypography-root-MuiLink-root"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-266"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1avsmgh-MuiButtonBase-root-MuiIconButton-root"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-267"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-115r2fk-MuiSvgIcon-root"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -2931,15 +1372,15 @@ exports[`The Work Page has expected snapshot 1`] = `
         </nav>
       </div>
       <div
-        class="MuiBox-root emotion-272"
+        class="MuiBox-root css-rml1qc"
       >
         <p
-          class="MuiTypography-root MuiTypography-sacramento emotion-273"
+          class="MuiTypography-root MuiTypography-sacramento css-yievsj-MuiTypography-root"
         >
           Made with
            
           <span
-            class="MuiTypography-root MuiTypography-body1 emotion-274"
+            class="MuiTypography-root MuiTypography-body1 css-3son8n-MuiTypography-root"
           >
             ♥
           </span>
@@ -2948,10 +1389,10 @@ exports[`The Work Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-275"
+        class="MuiBox-root css-1giw8x0"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-276"
+          class="MuiTypography-root MuiTypography-overline css-1g2tyjo-MuiTypography-root"
         >
           Copyright © 
           2025
@@ -2963,14 +1404,14 @@ exports[`The Work Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-277"
+        class="MuiBox-root css-1pv0fve"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-278"
+          class="MuiTypography-root MuiTypography-overline css-cqr3qr-MuiTypography-root"
         >
           <a
             aria-label="View Source Code"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-279"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-rrrsrh-MuiTypography-root-MuiLink-root"
             href="https://github.com/nicholeuf/zen-site-next"
             rel="noopener"
             target="_blank"
@@ -2979,7 +1420,7 @@ exports[`The Work Page has expected snapshot 1`] = `
           </a>
            | 
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-280"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-2dgmo4-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
