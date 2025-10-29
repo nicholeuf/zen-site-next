@@ -10,7 +10,7 @@
     "lint": "next lint",
     "tsc": "npx tsc --project  ./tsconfig.json",
     "test": "vitest",
-    "test:ci": "vitest run --coverage",
+    "test:ci": "vitest run",
     "test:watch": "vitest watch",
     "act": "act --secret-file .env.local",
     "storybook": "storybook dev -p 6006",

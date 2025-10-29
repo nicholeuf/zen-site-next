@@ -31,11 +31,13 @@ export default defineConfig({
     outputFile: '<rootDir>/junit/junit.xml',
     // Exclude Storybook files and stories from coverage collection
     coverage: {
+      enabled: true,
       provider: 'v8',
       exclude: [
         '.storybook/**',
         '**/*.stories.*',
         '**/*.stories.@(ts|tsx|js|jsx|mdx)',
+        '**/utils/**',
       ],
     },
     // Default project: run unit/test files in the src folder
