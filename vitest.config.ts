@@ -27,6 +27,8 @@ export default defineConfig({
   test: {
     // Inject globals like `describe`, `it`, `expect` so setup files and tests don't need to import them
     globals: true,
+    reporters: ['default', 'jest-junit'],
+    outputFile: '<rootDir>/junit/junit.xml',
     // Exclude Storybook files and stories from coverage collection
     coverage: {
       provider: 'v8',
