@@ -2,6 +2,23 @@ import { Meta, StoryObj } from '@storybook/react';
 import Typography, { TypographyProps } from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 
+const typographyVariants: TypographyProps['variant'][] = [
+  'h1',
+  'h2',
+  'h3',
+  'h4',
+  'h5',
+  'h6',
+  'subtitle1',
+  'subtitle2',
+  'body1',
+  'body2',
+  'caption',
+  'button',
+  'overline',
+  'inherit',
+];
+
 const meta: Meta<typeof Typography> = {
   title: 'Theme/Typography',
   component: Typography,
@@ -10,22 +27,7 @@ const meta: Meta<typeof Typography> = {
     children: { control: 'text' },
     variant: {
       control: { type: 'select' },
-      options: [
-        'h1',
-        'h2',
-        'h3',
-        'h4',
-        'h5',
-        'h6',
-        'subtitle1',
-        'subtitle2',
-        'body1',
-        'body2',
-        'caption',
-        'button',
-        'overline',
-        'inherit',
-      ],
+      options: typographyVariants,
     },
     align: {
       control: { type: 'select' },
@@ -59,8 +61,8 @@ export default meta;
 type Story = StoryObj<TypographyProps>;
 
 const Template: Story = {
-  render: (args: TypographyProps) => (
-    <Typography {...args}>{args.children}</Typography>
+  render: ({ children, ...args }: TypographyProps) => (
+    <Typography {...args}>{children}</Typography>
   ),
 };
 
@@ -82,27 +84,11 @@ export const Playground: Story = {
 export const AllVariants: Story = {
   args: { children: 'The quick brown fox jumps over the lazy dog.' },
   render: (args: TypographyProps) => {
-    const variants: TypographyProps['variant'][] = [
-      'h1',
-      'h2',
-      'h3',
-      'h4',
-      'h5',
-      'h6',
-      'subtitle1',
-      'subtitle2',
-      'body1',
-      'body2',
-      'caption',
-      'button',
-      'overline',
-      'inherit',
-    ];
     return (
       <Stack spacing={2}>
-        {variants.map((v) => (
+        {typographyVariants.map((v) => (
           <Typography key={String(v)} variant={v}>
-            {String(v)} — {args.children}
+            {v} — {args.children}
           </Typography>
         ))}
       </Stack>
