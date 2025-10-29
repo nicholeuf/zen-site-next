@@ -15,6 +15,11 @@ const dirname =
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   test: {
+    // Exclude Storybook files and stories from coverage collection
+    coverage: {
+      provider: 'v8',
+      exclude: ['.storybook/**', '**/*.stories.*', '**/*.stories.@(ts|tsx|js|jsx|mdx)'],
+    },
     projects: [
       {
         extends: true,

@@ -33,6 +33,10 @@ const config: Config = {
     'src/**/*.{ts,tsx}',
     '!<rootDir>/node_modules/',
     '!src/**/*.test.{ts,tsx}.snap',
+    // Exclude Storybook config and stories from coverage
+    '!<rootDir>/.storybook/**',
+    '!**/*.stories.{ts,tsx,js,jsx,mdx}',
+    '!src/**/__stories__/**',
   ],
 
   // The directory where Jest should output its coverage files
