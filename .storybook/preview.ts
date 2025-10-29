@@ -18,7 +18,7 @@ const preview: Preview = {
       // 'todo' - show a11y violations in the test UI only
       // 'error' - fail CI on a11y violations
       // 'off' - skip a11y checks entirely
-      test: 'todo',
+      test: 'error',
     },
     //👇 Enables auto-generated documentation for all stories
     tags: ['autodocs'],
@@ -30,8 +30,6 @@ const preview: Preview = {
       Provider: ThemeProvider,
       themes: {
         desktop: theme('desktop'),
-        mobile: theme('mobile'),
-        tablet: theme('tablet'),
       },
       defaultTheme: 'desktop',
     }),
