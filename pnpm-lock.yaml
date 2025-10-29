@@ -67,9 +67,6 @@ importers:
       '@storybook/addon-docs':
         specifier: ^10.0.1
         version: 10.0.1(@types/react@19.2.2)(esbuild@0.25.11)(rollup@4.52.5)(storybook@10.0.1(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(terser@5.44.0)))(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(terser@5.44.0))(webpack@5.101.3(esbuild@0.25.11))
-      '@storybook/addon-onboarding':
-        specifier: ^10.0.1
-        version: 10.0.1(storybook@10.0.1(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(terser@5.44.0)))
       '@storybook/addon-themes':
         specifier: ^10.0.1
         version: 10.0.1(storybook@10.0.1(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(terser@5.44.0)))
@@ -1668,11 +1665,6 @@ packages:
 
   '@storybook/addon-docs@10.0.1':
     resolution: {integrity: sha512-xGbRcVItKtRBXRwdrLndO9JYa9Bv6Go/W9l6hLm1zT2v8L/HEPoUXYT3oQaRbfBf/XWOj7Nn5HyDGijQ3BuzpQ==}
-    peerDependencies:
-      storybook: ^10.0.1
-
-  '@storybook/addon-onboarding@10.0.1':
-    resolution: {integrity: sha512-SEkb1xSqVUCIAP0nD311ESK/onA112mnxEdLm0VLlpMAiaN4wYvRXFVtwd2OFJeEp6FbAtkAJX/qLVjWxCH6xw==}
     peerDependencies:
       storybook: ^10.0.1
 
@@ -6612,10 +6604,6 @@ snapshots:
       - rollup
       - vite
       - webpack
-
-  '@storybook/addon-onboarding@10.0.1(storybook@10.0.1(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(terser@5.44.0)))':
-    dependencies:
-      storybook: 10.0.1(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(terser@5.44.0))
 
   '@storybook/addon-themes@10.0.1(storybook@10.0.1(@testing-library/dom@10.4.1)(prettier@3.6.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(vite@7.1.12(@types/node@24.9.1)(jiti@2.6.1)(terser@5.44.0)))':
     dependencies:
