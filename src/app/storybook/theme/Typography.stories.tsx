@@ -41,8 +41,8 @@ const meta: Meta<typeof Typography> = {
         'primary',
         'secondary',
         'error',
-        'textPrimary',
-        'textSecondary',
+        'text.primary',
+        'text.secondary',
       ],
     },
     display: {
