@@ -6,6 +6,8 @@ import { vi } from 'vitest';
 const navigationMocks = vi.hoisted(() => ({
   usePathname: vi.fn(),
   useSearchParams: vi.fn(),
+  useRouter: vi.fn(),
+  useParams: vi.fn(),
 }));
 
 vi.mock('next/navigation', async () => navigationMocks);

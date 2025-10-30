@@ -1,14 +1,12 @@
-/*
- * @jest-environment jsdom
- */
+import { vi } from 'vitest';
+
+import navigationMocks from 'utils/nextNavigationMock';
 import {
   renderWithLayout,
   screen,
   renderSnapshotWithLayout,
   resetMatchMedia,
   XS_DEVICE,
-  getRouter,
-  setRuntimePathname,
 } from 'test-utils';
 
 import NotFound from './not-found';
@@ -18,9 +16,13 @@ describe('The Not Found (404) Page', () => {
     resetMatchMedia();
   });
 
+  afterEach(() => {
+    vi.clearAllMocks();
+  });
+
   test('has expected snapshot', async () => {
     // set pathname for the next/navigation mock
-    setRuntimePathname('/figs');
+    navigationMocks.usePathname.mockImplementation(() => '/figs');
 
     const { container } = renderSnapshotWithLayout(<NotFound />);
     expect(container).toMatchSnapshot();
@@ -33,7 +35,7 @@ describe('The Not Found (404) Page', () => {
 
     test('has expected content and factors image by 2', () => {
       // set pathname for the next/navigation mock
-      setRuntimePathname('/figs');
+      navigationMocks.usePathname.mockImplementation(() => '/figs');
 
       renderWithLayout(<NotFound />);
 
