@@ -1,6 +1,5 @@
-import '@testing-library/jest-dom';
-import 'cross-fetch/polyfill';
-import { matchers } from '@emotion/jest';
+// Backwards-compatible shim for the old `jest.setup.ts` filename.
+// This file delegates to `vitest.setup.ts` so existing references keep working.
+import './vitest.setup.ts';
 
-// Add the custom matchers provided by '@emotion/jest'
-expect.extend(matchers);
+// No exports; the imported setup file performs global test setup.

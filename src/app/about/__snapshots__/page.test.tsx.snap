@@ -1,991 +1,22 @@
-// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`The About Page has expected snapshot 1`] = `
-.emotion-0 {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  box-shadow: var(--Paper-shadow);
-  background-image: var(--Paper-overlay);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  position: fixed;
-  z-index: 1100;
-  top: 0;
-  left: auto;
-  right: 0;
-  --AppBar-background: transparent;
-  --AppBar-color: inherit;
-  background-color: var(--AppBar-background);
-  color: var(--AppBar-color);
-  background-color: rgba(248, 250, 243, 0.85);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border-bottom: 3px solid #373833;
-  min-height: 60px;
-  height: 60px;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-shadow: none;
-}
-
-@media print {
-  .emotion-0 {
-    position: absolute;
-  }
-}
-
-.emotion-1 {
-  font-family: fontFamily;
-  font-size: 30px;
-  height: 100%;
-  width: 60px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-1:hover {
-  cursor: pointer;
-}
-
-.emotion-2 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #373833;
-  width: 100%;
-  text-align: center;
-}
-
-.emotion-2:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2:hover {
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-2::before {
-  content: "nf";
-}
-
-.emotion-3 {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0px solid;
-}
-
-.emotion-4 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: left;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-transition: -webkit-transform 0.25s ease;
-  transition: transform 0.25s ease;
-}
-
-.emotion-5:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.emotion-6 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  letter-spacing: 1.25px;
-  height: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #373833;
-  -webkit-transition: color 0.25s ease;
-  transition: color 0.25s ease;
-}
-
-.emotion-6:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-6:hover {
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-8 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-bottom: 4px solid;
-  border-bottom-color: #fa2742;
-  box-sizing: border-box;
-  letter-spacing: 1.25px;
-  height: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #373833;
-  -webkit-transition: color 0.25s ease;
-  transition: color 0.25s ease;
-}
-
-.emotion-8:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-8:hover {
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-13 {
-  width: 100%;
-  margin-left: auto;
-  box-sizing: border-box;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 60px;
-  min-height: calc(var(--viewport-height) - 60px - 175px);
-  padding: 0!important;
-  max-width: 100%!important;
-}
-
-@media (min-width:600px) {
-  .emotion-13 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-13 {
-    max-width: 1200px;
-  }
-}
-
-.emotion-14 {
-  width: 100%;
-  margin-left: auto;
-  box-sizing: border-box;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-@media (min-width:600px) {
-  .emotion-14 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-14 {
-    max-width: 1200px;
-  }
-}
-
-.emotion-15 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 300;
-  font-size: 3.5rem;
-  line-height: 1.167;
-  margin-bottom: 0.35em;
-}
-
-@media (min-width:600px) {
-  .emotion-15 {
-    font-size: 4.7129rem;
-  }
-}
-
-@media (min-width:900px) {
-  .emotion-15 {
-    font-size: 5.3556rem;
-  }
-}
-
-@media (min-width:1200px) {
-  .emotion-15 {
-    font-size: 5.9983rem;
-  }
-}
-
-.emotion-16 {
-  margin: 0;
-  font-size: 0.9rem;
-  font-family: fontFamily;
-  font-weight: 400;
-  line-height: 1.43;
-  margin-bottom: 0.35em;
-}
-
-.emotion-19 {
-  margin-top: 24px;
-}
-
-.emotion-20 {
-  display: grid;
-  overflow-y: auto;
-  list-style: none;
-  padding: 0;
-  -webkit-overflow-scrolling: touch;
-  width: 100%;
-  height: 100%;
-}
-
-.emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-23 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-family: fontFamily;
-  position: relative;
-  background: transparent;
-  -webkit-align-items: normal;
-  -webkit-box-align: normal;
-  -ms-flex-align: normal;
-  align-items: normal;
-}
-
-.emotion-24 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  padding: 12px 16px;
-  color: #fff;
-  overflow: hidden;
-  padding: 6px 0 12px;
-  color: inherit;
-}
-
-.emotion-25 {
-  font-size: 1rem;
-  line-height: 24px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.emotion-26 {
-  font-size: 0.75rem;
-  line-height: 1;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.emotion-69 {
-  background-color: #373833;
-  color: #f8faf3;
-  height: 175px;
-  padding: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-70 {
-  max-width: 600px;
-  display: grid;
-  gap: 4px;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-
-@media (min-width:0px) {
-  .emotion-70 {
-    grid-template-areas: "nav" "madeby" "copyright" "source";
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-70 {
-    grid-template-areas: "nav madeby" "nav copyright" "nav source";
-  }
-}
-
-.emotion-71 {
-  grid-area: nav;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-@media (min-width:0px) {
-  .emotion-71 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-71 {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-  }
-}
-
-.emotion-72 {
-  width: 25%;
-  height: 100%;
-}
-
-.emotion-73 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-}
-
-@media (min-width:0px) {
-  .emotion-73 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-73 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-.emotion-74 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: left;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding: 0px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: -webkit-transform 0.25s ease;
-  transition: transform 0.25s ease;
-}
-
-@media (min-width:0px) {
-  .emotion-74 {
-    margin: 8px;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-74 {
-    margin: 24px;
-  }
-}
-
-.emotion-74:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.emotion-75 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-75:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-76 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  text-align: center;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  font-size: 1.5rem;
-  padding: 8px;
-  border-radius: 50%;
-  color: rgba(0, 0, 0, 0.54);
-  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  --IconButton-hoverBg: rgba(0, 0, 0, 0.04);
-  padding: 0px;
-}
-
-.emotion-76::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-76.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-76 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-76:hover {
-  background-color: var(--IconButton-hoverBg);
-}
-
-@media (hover: none) {
-  .emotion-76:hover {
-    background-color: transparent;
-  }
-}
-
-.emotion-76.Mui-disabled {
-  background-color: transparent;
-  color: rgba(0, 0, 0, 0.26);
-}
-
-.emotion-76.MuiIconButton-loading {
-  color: transparent;
-}
-
-.emotion-77 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  fill: currentColor;
-  font-size: 1.5rem;
-  color: #f8faf3;
-}
-
-.emotion-82 {
-  grid-area: madeby;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width:0px) {
-  .emotion-82 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-82 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-  }
-}
-
-.emotion-83 {
-  margin: 0;
-  font-family: fontFamily;
-  font-size: 26px;
-}
-
-@media (min-width:0px) {
-  .emotion-83 {
-    font-size: 24px;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-83 {
-    font-size: 34px;
-  }
-}
-
-.emotion-84 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-  display: inline;
-  color: #fa2742;
-}
-
-.emotion-85 {
-  grid-area: copyright;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width:0px) {
-  .emotion-85 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-85 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-  }
-}
-
-.emotion-86 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 2.66;
-  text-transform: uppercase;
-  text-transform: none;
-}
-
-.emotion-87 {
-  grid-area: source;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width:0px) {
-  .emotion-87 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media (min-width:600px) {
-  .emotion-87 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-  }
-}
-
-.emotion-88 {
-  margin: 0;
-  font-family: fontFamily;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 2.66;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-89 {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: #fa2742;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #f8faf3;
-}
-
-.emotion-89:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-90 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  font-family: fontFamily;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.75;
-  text-transform: uppercase;
-  min-width: 64px;
-  padding: 6px 16px;
-  border: 0;
-  border-radius: 4px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  padding: 6px 8px;
-  color: var(--variant-textColor);
-  background-color: var(--variant-textBg);
-  --variant-textColor: #fa2742;
-  --variant-outlinedColor: #fa2742;
-  --variant-outlinedBorder: rgba(250, 39, 66, 0.5);
-  --variant-containedColor: #fff;
-  --variant-containedBg: #fa2742;
-  padding: 4px 5px;
-  font-size: 0.8125rem;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: inherit;
-  font-size: inherit;
-  padding: 0px;
-}
-
-.emotion-90::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-90.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-90 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-90:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-90.Mui-disabled {
-  color: rgba(0, 0, 0, 0.26);
-}
-
-@media (hover: hover) {
-  .emotion-90:hover {
-    --variant-containedBg: rgb(175, 27, 46);
-    --variant-textBg: rgba(250, 39, 66, 0.04);
-    --variant-outlinedBorder: #fa2742;
-    --variant-outlinedBg: rgba(250, 39, 66, 0.04);
-  }
-}
-
-.emotion-90.MuiButton-loading {
-  color: transparent;
-}
-
+exports[`The About Page > has expected snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed emotion-0"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed css-1p3daan-MuiPaper-root-MuiAppBar-root"
     data-testid="header"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <div
-      class="MuiBox-root emotion-1"
+      class="MuiBox-root css-yj3n64"
       data-testid="header-logo"
     >
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-2"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1qolyb7-MuiTypography-root-MuiLink-root"
         href="/"
       >
         <span
-          class="MuiBox-root emotion-3"
+          class="MuiBox-root css-1ep31vt"
           data-testid="visually-hidden"
         >
           Home
@@ -997,44 +28,43 @@ exports[`The About Page has expected snapshot 1`] = `
       data-testid="header-nav"
     >
       <ul
-        class="MuiList-root MuiList-padding emotion-4"
+        class="MuiList-root MuiList-padding css-u4ixcn-MuiList-root"
       >
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
             href="/work"
           >
             Work
           </a>
         </li>
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            aria-current="page"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-8"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
             href="/about"
           >
             About
           </a>
         </li>
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
             href="/contact"
           >
             Contact
           </a>
         </li>
         <li
-          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-5"
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-6"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home
@@ -1044,19 +74,19 @@ exports[`The About Page has expected snapshot 1`] = `
     </nav>
   </header>
   <main
-    class="MuiContainer-root MuiContainer-maxWidthLg emotion-13"
+    class="MuiContainer-root MuiContainer-maxWidthLg css-jbpjbe-MuiContainer-root"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthLg emotion-14"
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1ipbonz-MuiContainer-root"
       data-testid="about-page"
     >
       <h1
-        class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom emotion-15"
+        class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom css-1dn1ar9-MuiTypography-root"
       >
         About
       </h1>
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom emotion-16"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom css-17pc76b-MuiTypography-root"
       >
         I'm a native Floridian and graduate of the University of Florida
          
@@ -1066,28 +96,28 @@ exports[`The About Page has expected snapshot 1`] = `
         , now living in Orlando. Prior to our return to the sunshine state, we experienced life in both Georgia and Colorado. Colorado was a remarkable experience that left a mark on my heart.
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom emotion-16"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom css-17pc76b-MuiTypography-root"
       >
         Since 2014, I've been practicing yoga. Beyond the physical benefits, I love how it connects me back into the physical body and serves as a form of moving meditation. Lately I've been working on my inversions. It took me some time to gather the courage to embrace being upside down, but I'm grateful I took that leap.
       </p>
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom emotion-16"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom css-17pc76b-MuiTypography-root"
       >
         Beyond the mat, I enjoy cooking, caring for my houseplants, and spending time in nature.
       </p>
       <div
-        class="MuiBox-root emotion-19"
+        class="MuiBox-root css-178yklu"
       >
         <ul
-          class="MuiImageList-root MuiImageList-standard emotion-20"
+          class="MuiImageList-root MuiImageList-standard css-13wt0ca-MuiImageList-root"
           data-testid="about-photos-3-column-layout"
           style="grid-template-columns: repeat(3, 1fr); gap: 4px;"
         >
           <div
-            class="MuiBox-root emotion-21"
+            class="MuiBox-root css-1n2mv2k"
           >
             <div
-              class="MuiBox-root emotion-22"
+              class="MuiBox-root css-0"
             >
               <img
                 alt="Luau Kalamaku in Kauai, HI (2019)"
@@ -1101,18 +131,18 @@ exports[`The About Page has expected snapshot 1`] = `
                 width="300"
               />
               <div
-                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight emotion-23"
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
               >
                 <div
-                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-24"
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
                 >
                   <div
-                    class="MuiImageListItemBar-title emotion-25"
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
                   >
                     Luau Kalamaku
                   </div>
                   <div
-                    class="MuiImageListItemBar-subtitle emotion-26"
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
                   >
                     Kauai, HI (2019)
                   </div>
@@ -1121,10 +151,10 @@ exports[`The About Page has expected snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root emotion-21"
+            class="MuiBox-root css-1n2mv2k"
           >
             <div
-              class="MuiBox-root emotion-22"
+              class="MuiBox-root css-0"
             >
               <img
                 alt="Na Pali Coast Tour in Kauai, HI (2019)"
@@ -1138,18 +168,18 @@ exports[`The About Page has expected snapshot 1`] = `
                 width="300"
               />
               <div
-                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight emotion-23"
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
               >
                 <div
-                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-24"
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
                 >
                   <div
-                    class="MuiImageListItemBar-title emotion-25"
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
                   >
                     Na Pali Coast Tour
                   </div>
                   <div
-                    class="MuiImageListItemBar-subtitle emotion-26"
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
                   >
                     Kauai, HI (2019)
                   </div>
@@ -1158,10 +188,10 @@ exports[`The About Page has expected snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root emotion-21"
+            class="MuiBox-root css-1n2mv2k"
           >
             <div
-              class="MuiBox-root emotion-22"
+              class="MuiBox-root css-0"
             >
               <img
                 alt="Visiting Sea Turtles in Maui, HI (2019)"
@@ -1175,18 +205,18 @@ exports[`The About Page has expected snapshot 1`] = `
                 width="300"
               />
               <div
-                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight emotion-23"
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
               >
                 <div
-                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-24"
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
                 >
                   <div
-                    class="MuiImageListItemBar-title emotion-25"
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
                   >
                     Visiting Sea Turtles
                   </div>
                   <div
-                    class="MuiImageListItemBar-subtitle emotion-26"
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
                   >
                     Maui, HI (2019)
                   </div>
@@ -1195,10 +225,10 @@ exports[`The About Page has expected snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root emotion-21"
+            class="MuiBox-root css-1n2mv2k"
           >
             <div
-              class="MuiBox-root emotion-22"
+              class="MuiBox-root css-0"
             >
               <img
                 alt="Epcot Food & Wine Festival in Orlando, FL (2019)"
@@ -1212,18 +242,18 @@ exports[`The About Page has expected snapshot 1`] = `
                 width="300"
               />
               <div
-                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight emotion-23"
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
               >
                 <div
-                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-24"
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
                 >
                   <div
-                    class="MuiImageListItemBar-title emotion-25"
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
                   >
                     Epcot Food & Wine Festival
                   </div>
                   <div
-                    class="MuiImageListItemBar-subtitle emotion-26"
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
                   >
                     Orlando, FL (2019)
                   </div>
@@ -1232,10 +262,10 @@ exports[`The About Page has expected snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root emotion-21"
+            class="MuiBox-root css-1n2mv2k"
           >
             <div
-              class="MuiBox-root emotion-22"
+              class="MuiBox-root css-0"
             >
               <img
                 alt="Disney in Orlando, FL (2018)"
@@ -1249,18 +279,18 @@ exports[`The About Page has expected snapshot 1`] = `
                 width="300"
               />
               <div
-                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight emotion-23"
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
               >
                 <div
-                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-24"
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
                 >
                   <div
-                    class="MuiImageListItemBar-title emotion-25"
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
                   >
                     Disney
                   </div>
                   <div
-                    class="MuiImageListItemBar-subtitle emotion-26"
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
                   >
                     Orlando, FL (2018)
                   </div>
@@ -1269,10 +299,10 @@ exports[`The About Page has expected snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root emotion-21"
+            class="MuiBox-root css-1n2mv2k"
           >
             <div
-              class="MuiBox-root emotion-22"
+              class="MuiBox-root css-0"
             >
               <img
                 alt="Sledding in Superior, CO (2015)"
@@ -1286,18 +316,18 @@ exports[`The About Page has expected snapshot 1`] = `
                 width="300"
               />
               <div
-                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight emotion-23"
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
               >
                 <div
-                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-24"
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
                 >
                   <div
-                    class="MuiImageListItemBar-title emotion-25"
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
                   >
                     Sledding
                   </div>
                   <div
-                    class="MuiImageListItemBar-subtitle emotion-26"
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
                   >
                     Superior, CO (2015)
                   </div>
@@ -1306,10 +336,10 @@ exports[`The About Page has expected snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root emotion-21"
+            class="MuiBox-root css-1n2mv2k"
           >
             <div
-              class="MuiBox-root emotion-22"
+              class="MuiBox-root css-0"
             >
               <img
                 alt="Fall in the Mountains in Telluride, CO (2014)"
@@ -1323,18 +353,18 @@ exports[`The About Page has expected snapshot 1`] = `
                 width="300"
               />
               <div
-                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight emotion-23"
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
               >
                 <div
-                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-24"
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
                 >
                   <div
-                    class="MuiImageListItemBar-title emotion-25"
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
                   >
                     Fall in the Mountains
                   </div>
                   <div
-                    class="MuiImageListItemBar-subtitle emotion-26"
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
                   >
                     Telluride, CO (2014)
                   </div>
@@ -1343,10 +373,10 @@ exports[`The About Page has expected snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root emotion-21"
+            class="MuiBox-root css-1n2mv2k"
           >
             <div
-              class="MuiBox-root emotion-22"
+              class="MuiBox-root css-0"
             >
               <img
                 alt="Hiking in Boulder, CO (2014)"
@@ -1360,18 +390,18 @@ exports[`The About Page has expected snapshot 1`] = `
                 width="300"
               />
               <div
-                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight emotion-23"
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
               >
                 <div
-                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow emotion-24"
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
                 >
                   <div
-                    class="MuiImageListItemBar-title emotion-25"
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
                   >
                     Hiking
                   </div>
                   <div
-                    class="MuiImageListItemBar-subtitle emotion-26"
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
                   >
                     Boulder, CO (2014)
                   </div>
@@ -1384,41 +414,41 @@ exports[`The About Page has expected snapshot 1`] = `
     </div>
   </main>
   <footer
-    class="MuiBox-root emotion-69"
+    class="MuiBox-root css-kyi7o"
     data-testid="footer"
   >
     <div
-      class="MuiBox-root emotion-70"
+      class="MuiBox-root css-nku55u"
     >
       <div
-        class="MuiBox-root emotion-71"
+        class="MuiBox-root css-1v6xpbi"
       >
         <nav
           aria-label="External Navigation"
-          class="MuiBox-root emotion-72"
+          class="MuiBox-root css-jsi86s"
           data-testid="footer-nav"
         >
           <ul
-            class="MuiList-root MuiList-padding emotion-73"
+            class="MuiList-root MuiList-padding css-15hnovt-MuiList-root"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-74"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-v8su1p-MuiListItem-root"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-75"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-12g0397-MuiTypography-root-MuiLink-root"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-76"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1avsmgh-MuiButtonBase-root-MuiIconButton-root"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-77"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-115r2fk-MuiSvgIcon-root"
                     data-testid="LinkedInIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1431,23 +461,23 @@ exports[`The About Page has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding emotion-74"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-v8su1p-MuiListItem-root"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-75"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-12g0397-MuiTypography-root-MuiLink-root"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 target="_blank"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium emotion-76"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1avsmgh-MuiButtonBase-root-MuiIconButton-root"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-77"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-115r2fk-MuiSvgIcon-root"
                     data-testid="GitHubIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1463,15 +493,15 @@ exports[`The About Page has expected snapshot 1`] = `
         </nav>
       </div>
       <div
-        class="MuiBox-root emotion-82"
+        class="MuiBox-root css-rml1qc"
       >
         <p
-          class="MuiTypography-root MuiTypography-sacramento emotion-83"
+          class="MuiTypography-root MuiTypography-sacramento css-yievsj-MuiTypography-root"
         >
           Made with
            
           <span
-            class="MuiTypography-root MuiTypography-body1 emotion-84"
+            class="MuiTypography-root MuiTypography-body1 css-3son8n-MuiTypography-root"
           >
             ♥
           </span>
@@ -1480,10 +510,10 @@ exports[`The About Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-85"
+        class="MuiBox-root css-1giw8x0"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-86"
+          class="MuiTypography-root MuiTypography-overline css-1g2tyjo-MuiTypography-root"
         >
           Copyright © 
           2025
@@ -1495,14 +525,14 @@ exports[`The About Page has expected snapshot 1`] = `
         </p>
       </div>
       <div
-        class="MuiBox-root emotion-87"
+        class="MuiBox-root css-1pv0fve"
       >
         <p
-          class="MuiTypography-root MuiTypography-overline emotion-88"
+          class="MuiTypography-root MuiTypography-overline css-cqr3qr-MuiTypography-root"
         >
           <a
             aria-label="View Source Code"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover emotion-89"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-rrrsrh-MuiTypography-root-MuiLink-root"
             href="https://github.com/nicholeuf/zen-site-next"
             rel="noopener"
             target="_blank"
@@ -1511,7 +541,7 @@ exports[`The About Page has expected snapshot 1`] = `
           </a>
            | 
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary emotion-90"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-2dgmo4-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >

@@ -1,23 +1,19 @@
-/*
- * @jest-environment jsdom
- */
+import { vi } from 'vitest';
+
+import navigationMocks from 'utils/nextNavigationMock';
 import { renderWithLayout, screen, renderSnapshotWithLayout } from 'test-utils';
 import userEvent from '@testing-library/user-event';
 
 import WorkPage from './page';
 import constants from '../styles/constants';
 
-const mockUsePathname = jest.fn();
-
-jest.mock('next/navigation', () => ({
-  usePathname() {
-    return mockUsePathname();
-  },
-}));
-
 describe('The Work Page', () => {
-  beforeAll(() => {
-    mockUsePathname.mockImplementation(() => '/work');
+  beforeEach(() => {
+    navigationMocks.usePathname.mockImplementation(() => '/work');
+  });
+
+  afterEach(() => {
+    vi.clearAllMocks();
   });
 
   test('has expected snapshot', async () => {

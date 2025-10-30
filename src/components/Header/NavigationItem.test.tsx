@@ -1,7 +1,3 @@
-/*
- * @jest-environment jsdom
- */
-
 import { render, screen } from 'test-utils';
 import NavigationItem from './NavigationItem';
 

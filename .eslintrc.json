@@ -1,6 +1,11 @@
 {
-  "extends": ["next/core-web-vitals"],
-  "plugins": ["prettier"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
   "settings": {
     "next": {
       "rootDir": "src"

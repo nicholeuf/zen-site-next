@@ -1,6 +1,3 @@
-/*
- * @jest-environment jsdom
- */
 import { render, screen } from 'test-utils';
 import { alpha } from '@mui/material/styles';
 

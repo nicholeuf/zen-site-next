@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -22,13 +18,12 @@
         "name": "next"
       }
     ],
+    // Add vitest globals so `describe`, `it`, `expect` are recognized by TS
+    "types": ["vitest/globals", "node"],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "test-utils": [
-        "./utils/test-utils"
-      ]
+      "@/*": ["./src/*"],
+      "utils/*": ["./utils/*"],
+      "test-utils": ["./utils/test-utils"]
     }
   },
   "include": [
@@ -39,6 +34,11 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    // Exclude Storybook config and story files from the TypeScript build/check
+    ".storybook",
+    "**/*.stories.*",
+    "src/**/.storybook/**",
+    "src/**/*.stories.*"
   ]
 }

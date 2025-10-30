@@ -1,3 +1,13 @@
+### 2025-10-30 [*](https://github.com/nicholeuf/zen-site-next/pull/144)
+
+#### Added
+
+- Integrate Storybook with themed MUI Typography stories and testing addon
+
+#### Changed
+
+- Migrate test framework from Jest to Vitest, update configs and mocks, and adjust CI to run Vitest and Playwright browser tests
+
 ### 2025-10-23 [*](https://github.com/nicholeuf/zen-site-next/pull/139)
 
 #### Changed

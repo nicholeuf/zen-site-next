@@ -1,18 +1,16 @@
+import { vi } from 'vitest';
+
+import headerMocks from 'utils/nextHeaderMock';
 import getServerPath from './getServerPath';
 
-const mockHeaders = jest.fn();
-
-jest.mock('next/headers', () => ({
-  headers() {
-    return mockHeaders();
-  },
-}));
-
 describe('getServerPath', () => {
+  afterEach(() => {
+    vi.clearAllMocks();
+  });
+
   test('returns path', async () => {
-    mockHeaders.mockImplementation(() => ({
-      get: () => '/work',
-    }));
+    // mock next/headers response to return /work
+    headerMocks.get.mockReturnValue('/work');
     const serverPath = await getServerPath();
     expect(serverPath).toBe('/work');
   });
