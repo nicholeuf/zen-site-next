@@ -1,9 +1,10 @@
 import getServerPath from './getServerPath';
+import { headers } from 'test-utils';
 
 describe('getServerPath', () => {
   test('returns path', async () => {
-    // use the global test helper to set headers for the next/headers mock
-    (global as any).__setTestHeaders({ 'x-next-pathname': '/work' });
+  // set headers for the next/headers mock using Storybook's headers mock
+  headers().set('x-next-pathname', '/work');
     const serverPath = await getServerPath();
     expect(serverPath).toBe('/work');
   });
