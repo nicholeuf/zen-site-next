@@ -38,7 +38,9 @@ export default defineConfig({
         '.storybook/**',
         '**/*.stories.*',
         '**/*.stories.@(ts|tsx|js|jsx|mdx)',
-        '**/utils/**',
+        // Narrow the utils exclusion to the repository root `utils/` so
+        // app-side utilities under `src/` are still measured by coverage.
+        'utils/**',
         '**/*.mock.*',
       ],
     },
