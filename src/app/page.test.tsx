@@ -1,6 +1,7 @@
-/*
- * @jest-environment jsdom
- */
+import { vi } from 'vitest';
+
+import navigationMocks from 'utils/nextNavigationMock';
+import mockGetPlaceholderImage from './lib/getPlaceholderImage.mock';
 import {
   renderWithLayout,
   screen,
@@ -15,23 +16,17 @@ import userEvent from '@testing-library/user-event';
 
 import HomePage from './page';
 
-const mockUsePathname = jest.fn();
-const mockGetPlaceholderImage = jest.fn();
-
-jest.mock('next/navigation', () => ({
-  usePathname() {
-    return mockUsePathname();
-  },
-}));
-
-jest.mock('./lib/getPlaceholderImage', () => () => mockGetPlaceholderImage());
-
 describe('The Home Page', () => {
   beforeAll(() => {
-    mockUsePathname.mockImplementation(() => '/');
-    mockGetPlaceholderImage.mockImplementation(() => 'blurred-image');
+    // set pathname for the next/navigation mock
+    navigationMocks.usePathname.mockImplementation(() => '/');
+    mockGetPlaceholderImage.mockResolvedValue('blurred-image');
     resetMatchMedia();
   });
+
+  // afterEach(() => {
+  //   vi.clearAllMocks();
+  // });
 
   test('has expected snapshot', async () => {
     const HomeResolved = await resolvedComponent(HomePage);
