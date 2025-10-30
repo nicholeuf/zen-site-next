@@ -83,12 +83,12 @@ export const Playground: Story = {
 
 export const AllVariants: Story = {
   args: { children: 'The quick brown fox jumps over the lazy dog.' },
-  render: (args: TypographyProps) => {
+  render: ({ children, ...args }: TypographyProps) => {
     return (
       <Stack spacing={2}>
         {typographyVariants.map((v) => (
-          <Typography key={String(v)} variant={v}>
-            {v} — {args.children}
+          <Typography key={String(v)} variant={v} {...args}>
+            {v} — {children}
           </Typography>
         ))}
       </Stack>
