@@ -1,40 +1,9 @@
 import React, { ReactElement } from 'react';
-import { vi } from 'vitest';
 import { render, RenderOptions } from '@testing-library/react';
 import mediaQuery from 'css-mediaquery';
 
 import AppLayout from '@/components/AppLayout';
 import GlobalStyles from '@/app/styles/GlobalStyles';
-
-export const getRouter = (): any => {
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    return require('@storybook/nextjs-vite/navigation.mock').getRouter();
-  } catch (e) {
-    // Provide a minimal mocked router compatible with tests that read or set
-    // `pathname`/`asPath` and call navigation methods.
-    return {
-      pathname: getRuntimePathname(),
-      asPath: getRuntimePathname(),
-      push: vi ? (vi.fn?.() as any) : () => {},
-      replace: vi ? (vi.fn?.() as any) : () => {},
-      back: vi ? (vi.fn?.() as any) : () => {},
-    } as any;
-  }
-};
-
-// Minimal runtime helpers used by the test setup to mock Next runtime APIs
-// without importing Storybook internals. These provide a simple in-memory
-// map that `jest.setup.ts` can read to implement `next/headers` and
-// `next/navigation` mocks safely during test setup.
-
-let __RUNTIME_PATHNAME = '/';
-
-export const setRuntimePathname = (p: string) => {
-  __RUNTIME_PATHNAME = p;
-};
-
-export const getRuntimePathname = () => __RUNTIME_PATHNAME;
 
 interface Props {
   children: React.ReactNode;

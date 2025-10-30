@@ -18,24 +18,6 @@ vi.mock('next/font/google', async () => {
   };
 });
 
-// Use explicit importable helpers from `utils/test-utils` to control Next runtime
-// mocks in tests (improves isolation and maintainability).
-import { getRouter, getRuntimePathname } from './utils/test-utils';
-
-vi.mock('next/navigation', async () => {
-  return {
-    usePathname: () => {
-      // Prefer the runtime helper value (setRuntimePathname in tests/setup).
-      try {
-        return getRuntimePathname();
-      } catch (e) {
-        return '/';
-      }
-    },
-    useSearchParams: () => new URLSearchParams(),
-  };
-});
-
 import '@testing-library/jest-dom';
 import 'cross-fetch/polyfill';
 import { matchers } from '@emotion/jest';
