@@ -51,8 +51,8 @@ export default defineConfig({
           environment: 'jsdom',
           // Only include typical test file patterns inside src
           include: ['src/**/*.{test,spec}.{ts,tsx,js,jsx}'],
-          // Reuse the existing jest setup which imports testing-library matchers
-          setupFiles: ['./jest.setup.ts'],
+          // Reuse the existing setup which imports testing-library matchers
+          setupFiles: ['./vitest.setup.ts'],
         },
       },
       {

@@ -1,6 +1,3 @@
-/*
- * @jest-environment jsdom
- */
 import { render, screen, fireEvent, waitFor } from 'test-utils';
 import Footer from './index';
 import constants from '../../app/styles/constants';

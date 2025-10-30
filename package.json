@@ -12,6 +12,7 @@
     "test": "vitest",
     "test:ci": "vitest run",
     "test:watch": "vitest watch",
+    "test:update": "vitest -u",
     "act": "act --secret-file .env.local",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"

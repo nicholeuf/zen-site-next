@@ -1,6 +1,3 @@
-/*
- * @jest-environment jsdom
- */
 import { renderSnapshotWithLayout, resetMatchMedia } from 'test-utils';
 
 import ContactPage from './page';

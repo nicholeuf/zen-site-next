@@ -2,7 +2,7 @@
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+![Vitest](https://img.shields.io/badge/-vitest-%2349C5B6?style=for-the-badge&logo=vitest&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 ![github actions](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml/badge.svg)
@@ -38,6 +38,30 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Testing
+
+This project uses Vitest for unit and integration tests and integrates Storybook tests via the Storybook Vitest addon.
+
+- Run the test runner interactively:
+
+```bash
+pnpm test
+# or
+npm run test
+```
+
+- Run tests in CI / headless mode:
+
+```bash
+pnpm run test:ci
+```
+
+- Update snapshots (used by the GitHub workflow):
+
+```bash
+pnpm run test:update
+```
 
 ## Deploy on Vercel
 
