@@ -6,26 +6,6 @@ import mediaQuery from 'css-mediaquery';
 import AppLayout from '@/components/AppLayout';
 import GlobalStyles from '@/app/styles/GlobalStyles';
 
-// Prefer dynamic require of the Storybook mock modules so importing this
-// helper file doesn't eagerly load Storybook internals that can trigger
-// environment-specific module resolution errors during test discovery.
-export const headers = (): any => {
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    return require('@storybook/nextjs-vite/headers.mock').headers();
-  } catch (e) {
-    // Fall back to a lightweight in-memory mock that reads/writes the
-    // runtime header map used by the test setup. This allows tests to call
-    // `headers()` safely even when Storybook internals can't be required in
-    // the current environment.
-    return {
-      set: (k: string, v: string) => setRuntimeHeaders({ [k]: v }),
-      delete: (k: string) => setRuntimeHeaders({ [k]: null }),
-      get: (k: string) => getRuntimeHeaders()[k] ?? undefined,
-    } as any;
-  }
-};
-
 export const getRouter = (): any => {
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -36,9 +16,9 @@ export const getRouter = (): any => {
     return {
       pathname: getRuntimePathname(),
       asPath: getRuntimePathname(),
-      push: vi ? (vi.fn?.() as any) : (() => {}),
-      replace: vi ? (vi.fn?.() as any) : (() => {}),
-      back: vi ? (vi.fn?.() as any) : (() => {}),
+      push: vi ? (vi.fn?.() as any) : () => {},
+      replace: vi ? (vi.fn?.() as any) : () => {},
+      back: vi ? (vi.fn?.() as any) : () => {},
     } as any;
   }
 };
@@ -47,18 +27,8 @@ export const getRouter = (): any => {
 // without importing Storybook internals. These provide a simple in-memory
 // map that `jest.setup.ts` can read to implement `next/headers` and
 // `next/navigation` mocks safely during test setup.
-let __RUNTIME_HEADERS: Record<string, string | null> = {};
+
 let __RUNTIME_PATHNAME = '/';
-
-export const setRuntimeHeaders = (obj: Record<string, string | null>) => {
-  __RUNTIME_HEADERS = { ...__RUNTIME_HEADERS, ...obj };
-};
-
-export const getRuntimeHeaders = () => __RUNTIME_HEADERS;
-
-export const resetRuntimeHeaders = () => {
-  __RUNTIME_HEADERS = {};
-};
 
 export const setRuntimePathname = (p: string) => {
   __RUNTIME_PATHNAME = p;
@@ -137,9 +107,3 @@ export const SM_DEVICE = 768;
 export const MD_DEVICE = 1000;
 export const LG_DEVICE = 1280;
 export const XL_DEVICE = 1600;
-
-// --- Next runtime test helpers (replace global state-based mocking) ---
-// These helpers are importable and can be used in tests to control the
-// behavior of the Next runtime mocks configured in the test setup.
-// Prefer using the Storybook mocks directly in tests. Exported helpers were
-// removed in favor of calling `headers()` and `getRouter()` where needed.

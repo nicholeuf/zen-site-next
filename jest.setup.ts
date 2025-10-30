@@ -20,14 +20,7 @@ vi.mock('next/font/google', async () => {
 
 // Use explicit importable helpers from `utils/test-utils` to control Next runtime
 // mocks in tests (improves isolation and maintainability).
-import {
-  // Storybook mocks (used directly in tests)
-  headers,
-  getRouter,
-  // Runtime helpers for setup (in-memory fallback used by these mocks)
-  getRuntimeHeaders,
-  getRuntimePathname,
-} from './utils/test-utils';
+import { getRouter, getRuntimePathname } from './utils/test-utils';
 
 vi.mock('next/navigation', async () => {
   return {
@@ -40,35 +33,6 @@ vi.mock('next/navigation', async () => {
       }
     },
     useSearchParams: () => new URLSearchParams(),
-  };
-});
-
-vi.mock('next/headers', async () => {
-  return {
-    headers: async () => ({
-      get: (name: string) => {
-        try {
-          // Read from the runtime helper map first. Tests can set these via
-          // `setRuntimeHeaders` when they don't want to use the Storybook mock.
-          const map = getRuntimeHeaders();
-          if (name in map) return map[name as keyof typeof map];
-        } catch (e) {
-          // fallthrough to storybook mock if present
-        }
-
-        try {
-          const h = headers();
-          const val = h?.get(name);
-          if (val !== undefined) return val;
-        } catch (e) {
-          // fallthrough to defaults
-        }
-
-        // sensible defaults for tests
-        if (name === 'x-next-pathname') return '/';
-        return null;
-      },
-    }),
   };
 });
 

@@ -1,10 +1,16 @@
+import { vi } from 'vitest';
+
+import headerMocks from 'utils/nextHeaderMock';
 import getServerPath from './getServerPath';
-import { headers } from 'test-utils';
 
 describe('getServerPath', () => {
+  afterEach(() => {
+    vi.clearAllMocks();
+  });
+
   test('returns path', async () => {
-  // set headers for the next/headers mock using Storybook's headers mock
-  headers().set('x-next-pathname', '/work');
+    // mock next/headers response to return /work
+    headerMocks.get.mockReturnValue('/work');
     const serverPath = await getServerPath();
     expect(serverPath).toBe('/work');
   });

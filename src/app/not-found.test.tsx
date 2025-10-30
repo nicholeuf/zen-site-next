@@ -19,8 +19,8 @@ describe('The Not Found (404) Page', () => {
   });
 
   test('has expected snapshot', async () => {
-  // set pathname for the next/navigation mock
-  setRuntimePathname('/figs');
+    // set pathname for the next/navigation mock
+    setRuntimePathname('/figs');
 
     const { container } = renderSnapshotWithLayout(<NotFound />);
     expect(container).toMatchSnapshot();
@@ -32,10 +32,10 @@ describe('The Not Found (404) Page', () => {
     });
 
     test('has expected content and factors image by 2', () => {
-  // set pathname for the next/navigation mock
-  setRuntimePathname('/figs');
+      // set pathname for the next/navigation mock
+      setRuntimePathname('/figs');
 
-  renderWithLayout(<NotFound />);
+      renderWithLayout(<NotFound />);
 
       expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
         'Sorry'
