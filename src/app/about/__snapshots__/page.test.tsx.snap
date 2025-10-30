@@ -64,8 +64,7 @@ exports[`The About Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            aria-current="page"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-5i0839-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home
