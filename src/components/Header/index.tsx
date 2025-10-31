@@ -11,10 +11,14 @@ interface HeaderProps {
   height?: string;
 }
 
+export const DEFAULT_HEIGHT = constants.header.height;
+export const DEFAULT_COLOR = constants.colors.carob;
+export const DEFAULT_ACTIVE_COLOR = constants.colors.guava;
+
 const Header: React.FC<HeaderProps> = ({
-  color = constants.colors.carob,
-  activeColor = constants.colors.guava,
-  height = constants.header.height,
+  color = DEFAULT_COLOR,
+  activeColor = DEFAULT_ACTIVE_COLOR,
+  height = DEFAULT_HEIGHT,
 }) => {
   return (
     <AppBar

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import Footer from './index';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
+import Footer, { DEFAULT_HEIGHT } from './index';
 
 const meta: Meta<typeof Footer> = {
   title: 'Components/Footer/Footer',
@@ -13,4 +13,7 @@ type Story = StoryObj<React.ComponentProps<typeof Footer>>;
 
 export const Playground: Story = {
   render: (args: any) => <Footer {...args} />,
+  args: {
+    height: DEFAULT_HEIGHT,
+  },
 };

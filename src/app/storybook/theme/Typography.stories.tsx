@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import Typography, { TypographyProps } from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 

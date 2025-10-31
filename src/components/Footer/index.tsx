@@ -24,9 +24,9 @@ interface FooterProps {
   height?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({
-  height = constants.footer.height,
-}) => {
+export const DEFAULT_HEIGHT = constants.footer.height;
+
+const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
   const color = 'background.default';
   return (
     <Box
