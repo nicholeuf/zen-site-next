@@ -33,8 +33,18 @@ export default defineConfig({
   test: {
     // Inject globals like `describe`, `it`, `expect` so setup files and tests don't need to import them
     globals: true,
-    reporters: ['default', 'jest-junit'],
-    outputFile: '<rootDir>/junit/junit.xml',
+    // Configure reporters. Pass options directly to the jest-junit reporter
+    // so it writes the XML to the expected location.
+    reporters: [
+      'default',
+      [
+        'jest-junit',
+        {
+          // vitest expands <rootDir> to the repository root
+          outputFile: '<rootDir>/junit/junit.xml',
+        },
+      ],
+    ],
     // Exclude Storybook files and stories from coverage collection
     coverage: {
       enabled: true,
