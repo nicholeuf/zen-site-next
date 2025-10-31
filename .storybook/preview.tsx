@@ -1,12 +1,18 @@
 import type { Preview } from '@storybook/nextjs-vite';
+import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider/next-13.5';
+import { action } from 'storybook/actions';
 
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
+
 import theme from '../src/app/styles/theme';
 import GlobalStyles from '../src/app/styles/GlobalStyles';
 
 const preview: Preview = {
   parameters: {
+    nextjs: {
+      appDirectory: true,
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -25,6 +31,11 @@ const preview: Preview = {
   },
 
   decorators: [
+    (Story) => (
+      <MemoryRouterProvider url="/" onPush={action('router.push')}>
+        <Story />
+      </MemoryRouterProvider>
+    ),
     withThemeFromJSXProvider({
       GlobalStyles,
       Provider: ThemeProvider,

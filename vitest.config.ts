@@ -23,6 +23,11 @@ export default defineConfig({
         find: 'test-utils',
         replacement: path.join(dirname, 'utils/test-utils'),
       },
+      // https://www.npmjs.com/package/next-router-mock#usage-with-storybook
+      {
+        find: 'next/router',
+        replacement: path.join(dirname, 'next-router-mock'),
+      },
     ],
   },
   test: {
