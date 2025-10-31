@@ -1,4 +1,4 @@
-/* istanbul ignore file */
+/* v8 ignore file -- @preserve */
 
 import * as Sentry from '@sentry/nextjs';
 

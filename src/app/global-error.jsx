@@ -1,3 +1,4 @@
+/* v8 ignore file -- @preserve */
 'use client';
 
 import * as Sentry from '@sentry/nextjs';

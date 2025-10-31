@@ -1,4 +1,4 @@
-/* istanbul ignore file */
+/* v8 ignore file -- @preserve */
 
 import { getCldImageUrl } from 'next-cloudinary';
 
