@@ -12,7 +12,7 @@ export default meta;
 type Story = StoryObj<React.ComponentProps<typeof Footer>>;
 
 export const Playground: Story = {
-  render: (args: any) => <Footer {...args} />,
+  render: (args) => <Footer {...args} />,
   args: {
     height: DEFAULT_HEIGHT,
   },

@@ -17,7 +17,7 @@ export default meta;
 type Story = StoryObj<React.ComponentProps<typeof Header>>;
 
 export const Playground: Story = {
-  render: (args: any) => <Header {...args} />,
+  render: (args) => <Header {...args} />,
   args: {
     color: DEFAULT_COLOR,
     activeColor: DEFAULT_ACTIVE_COLOR,
