@@ -1,5 +1,4 @@
 import ListItem from '@mui/material/ListItem';
-import IconButton from '@mui/material/IconButton';
 import ExternalLink from '@/components/ExternalLink';
 
 interface NavigationItemProps {
@@ -44,13 +43,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         }}
         aria-label={ariaLabel}
       >
-        <IconButton
-          sx={{
-            p: 0,
-          }}
-        >
-          {children}
-        </IconButton>
+        {children}
       </ExternalLink>
     </ListItem>
   );
