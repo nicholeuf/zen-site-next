@@ -1,3 +1,9 @@
+### 2025-11-01 [*](https://github.com/nicholeuf/zen-site-next/pull/147)
+
+#### Changed
+
+- Migrate coverage ignore comments to v8 and refine Vitest coverage configuration for improved accuracy and src-focused patterns
+
 ### 2025-10-30 [*](https://github.com/nicholeuf/zen-site-next/pull/144)
 
 #### Added
