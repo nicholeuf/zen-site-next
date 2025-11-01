@@ -1,6 +1,4 @@
 import type { Preview } from '@storybook/nextjs-vite';
-import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider/next-13.5';
-import { action } from 'storybook/actions';
 
 import { ThemeProvider } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
@@ -31,11 +29,6 @@ const preview: Preview = {
   },
 
   decorators: [
-    (Story) => (
-      <MemoryRouterProvider url="/" onPush={action('router.push')}>
-        <Story />
-      </MemoryRouterProvider>
-    ),
     withThemeFromJSXProvider({
       GlobalStyles,
       Provider: ThemeProvider,
