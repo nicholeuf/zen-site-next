@@ -1,4 +1,4 @@
-/* istanbul ignore file */
+/* v8 ignore file -- @preserve */
 
 // This file configures the initialization of Sentry on the client.
 // The added config here will be used whenever a users loads a page in their browser.
