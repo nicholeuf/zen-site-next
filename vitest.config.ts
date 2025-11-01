@@ -29,19 +29,17 @@ export default defineConfig({
     // Inject globals like `describe`, `it`, `expect` so setup files and tests don't need to import them
     globals: true,
     reporters: ['default', 'jest-junit'],
-    outputFile: '<rootDir>/junit/junit.xml',
+
     // Exclude Storybook files and stories from coverage collection
     coverage: {
       enabled: true,
       provider: 'v8',
+      include: ['src/**/*.{ts,tsx,js,jsx}'],
       exclude: [
-        '.storybook/**',
         '**/*.stories.*',
         '**/*.stories.@(ts|tsx|js|jsx|mdx)',
-        // Narrow the utils exclusion to the repository root `utils/` so
-        // app-side utilities under `src/` are still measured by coverage.
-        'utils/**',
         '**/*.mock.*',
+        'src/types/**',
       ],
     },
     // Default project: run unit/test files in the src folder
