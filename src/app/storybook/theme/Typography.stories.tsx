@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import Typography, { TypographyProps } from '@mui/material/Typography';
+import { Typography, TypographyProps } from '@mui/material';
 import Stack from '@mui/material/Stack';
 
 const typographyVariants: TypographyProps['variant'][] = [
@@ -17,6 +17,9 @@ const typographyVariants: TypographyProps['variant'][] = [
   'button',
   'overline',
   'inherit',
+  // custom variant from mui-overrides.d.ts
+  // @ts-ignore
+  'sacramento',
 ];
 
 const meta: Meta<typeof Typography> = {
@@ -133,4 +136,10 @@ export const Overline = makeVariant(
 export const Inherit = makeVariant(
   'inherit',
   'Inherit — Inherits font from parent.'
+);
+
+export const Sacramento = makeVariant(
+  // @ts-ignore
+  'sacramento',
+  'Sacramento — A custom font variant.'
 );
