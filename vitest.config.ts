@@ -26,7 +26,7 @@ export default defineConfig({
       // https://www.npmjs.com/package/next-router-mock#usage-with-storybook
       {
         find: 'next/router',
-        replacement: path.join(dirname, 'next-router-mock'),
+        replacement: 'next-router-mock',
       },
     ],
   },
