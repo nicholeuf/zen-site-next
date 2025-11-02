@@ -1,8 +1,14 @@
+// Ensure local MUI type augmentations are included so custom variants like 'sacramento' are recognized.
+// Adjust the relative path if your `types` folder lives elsewhere.
+/// <reference path="../../../../src/types/mui-overrides.d.ts" />
 import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import { Typography, TypographyProps } from '@mui/material';
+import { Typography, TypographyProps, TypographyVariants } from '@mui/material';
 import Stack from '@mui/material/Stack';
 
-const typographyVariants: TypographyProps['variant'][] = [
+type TypographyVariant = TypographyProps['variant'];
+
+// All available typography variants including custom ones
+const typographyVariants: TypographyVariant[] = [
   'h1',
   'h2',
   'h3',
@@ -17,8 +23,6 @@ const typographyVariants: TypographyProps['variant'][] = [
   'button',
   'overline',
   'inherit',
-  // custom variant from mui-overrides.d.ts
-  // @ts-ignore
   'sacramento',
 ];
 
@@ -100,10 +104,7 @@ export const AllVariants: Story = {
 };
 
 // individual variant stories using the template
-const makeVariant = (
-  variant: TypographyProps['variant'],
-  text: string
-): Story => ({
+const makeVariant = (variant: TypographyVariant, text: string): Story => ({
   ...Template,
   args: { children: text, variant },
 });
@@ -139,7 +140,6 @@ export const Inherit = makeVariant(
 );
 
 export const Sacramento = makeVariant(
-  // @ts-ignore
   'sacramento',
   'Sacramento — A custom font variant.'
 );
