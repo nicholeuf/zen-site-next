@@ -17,5 +17,18 @@ const config: StorybookConfig = {
     actions: true,
   },
   staticDirs: ['../public'],
+  viteFinal: async (config) => {
+    return {
+      ...config,
+      resolve: {
+        ...config.resolve,
+        alias: {
+          ...config.resolve?.alias,
+          'next/router': 'next-router-mock',
+          'next/navigation': 'next-router-mock/navigation',
+        },
+      },
+    };
+  },
 };
 export default config;
