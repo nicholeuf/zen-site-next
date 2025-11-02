@@ -1,7 +1,9 @@
 import type { Preview } from '@storybook/nextjs-vite';
 
-import { ThemeProvider } from '@mui/material';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
+import createCache from '@emotion/cache';
+import { CacheProvider } from '@emotion/react';
 
 import theme from '../src/app/styles/theme';
 import GlobalStyles from '../src/app/styles/GlobalStyles';
@@ -30,6 +32,15 @@ const preview: Preview = {
   },
 
   decorators: [
+    // Emotion cache provider ensures MUI styles are injected in the right order
+    ((Story: any) => {
+      const muiCache = createCache({ key: 'mui', prepend: true });
+      return (
+        <CacheProvider value={muiCache}>
+          <Story />
+        </CacheProvider>
+      );
+    }),
     withThemeFromJSXProvider({
       GlobalStyles,
       Provider: ThemeProvider,
@@ -38,6 +49,7 @@ const preview: Preview = {
       },
       defaultTheme: 'desktop',
     }),
+    // ensure Next.js router mocks are applied after theme
     NextRouterDecorator,
   ],
 };
