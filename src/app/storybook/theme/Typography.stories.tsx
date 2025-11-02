@@ -1,6 +1,3 @@
-// Ensure local MUI type augmentations are included so custom variants like 'sacramento' are recognized.
-// Adjust the relative path if your `types` folder lives elsewhere.
-/// <reference path="../../../../src/types/mui-overrides.d.ts" />
 import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { Typography, TypographyProps, TypographyVariants } from '@mui/material';
 import Stack from '@mui/material/Stack';

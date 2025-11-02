@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/nextjs-vite';
 
-import { ThemeProvider, CssBaseline } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';

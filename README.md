@@ -39,6 +39,18 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## Storybook
+
+This project includes a Storybook setup for visual component development and documentation. It is pre-configured to work with MUI (Emotion) and to pick up local TypeScript module augmentations.
+
+See `.storybook/README.md` for details, validation commands, and troubleshooting tips.
+
+To start Storybook locally:
+
+```bash
+pnpm storybook
+```
+
 ## Testing
 
 This project uses Vitest for unit and integration tests and integrates Storybook tests via the Storybook Vitest addon.
