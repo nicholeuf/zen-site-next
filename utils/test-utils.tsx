@@ -11,12 +11,21 @@ interface Props {
 
 // Include header, main, and footer in rendered content
 const MockLayout: React.FC<Props> = ({ children }) => {
-  return <AppLayout deviceType="desktop">{children}</AppLayout>;
+  return (
+    <AppLayout deviceType="desktop" disableRipple>
+      {children}
+    </AppLayout>
+  );
 };
 
-// Include just mui theme global styles
+// Include just mui theme global styles. Disable ripples in tests to avoid
+// TouchRipple async state updates that cause act(...) warnings.
 const MockStyles: React.FC<Props> = ({ children }) => {
-  return <GlobalStyles deviceType="desktop">{children}</GlobalStyles>;
+  return (
+    <GlobalStyles deviceType="desktop" disableRipple>
+      {children}
+    </GlobalStyles>
+  );
 };
 
 const customRender = (

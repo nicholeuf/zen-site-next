@@ -7,11 +7,13 @@ import DeviceType from '@/types/DeviceType';
 interface AppLayoutProps {
   children: React.ReactNode;
   deviceType: DeviceType;
+  // When true, disable ripples for test environments
+  disableRipple?: boolean;
 }
 
-const AppLayout: React.FC<AppLayoutProps> = ({ children, deviceType }) => {
+const AppLayout: React.FC<AppLayoutProps> = ({ children, deviceType, disableRipple = false }) => {
   return (
-    <GlobalStyles deviceType={deviceType}>
+    <GlobalStyles deviceType={deviceType} disableRipple={disableRipple}>
       <Header />
       <MainContainer>{children}</MainContainer>
       <Footer />
