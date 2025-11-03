@@ -21,7 +21,7 @@ const config: StorybookConfig = {
     return {
       ...config,
       resolve: {
-        ...config.resolve,
+        ...(config.resolve ?? {}),
         alias: {
           ...config.resolve?.alias,
           // TODO: https://github.com/nicholeuf/zen-site-next/issues/149
