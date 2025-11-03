@@ -1,3 +1,10 @@
+### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/155)
+
+#### Added
+
+- Mock Next.js router in Storybook with a decorator and provider to enable navigation hooks in stories
+- Configure Storybook/Vite aliases and add dependency to support router mocking
+
 ### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/152)
 
 #### Changed
