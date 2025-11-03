@@ -34,7 +34,6 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         component={ExternalLink}
         href={href}
         sx={{
-          textDecoration: 'none',
           height: '100%',
           width: '100%',
           display: 'flex',
@@ -55,8 +54,6 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
           // Make keyboard focus look like a focused link (browser default)
           // so keyboard selection matches the ExternalLink-only appearance.
           '&:focus-visible': {
-            outline: 'auto 5px -webkit-focus-ring-color',
-            outlineOffset: '3px',
             borderRadius: '50%',
           },
         }}
