@@ -153,11 +153,11 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
             class="MuiList-root MuiList-padding css-15hnovt-MuiList-root"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-v8su1p-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1m0ooyr-MuiListItem-root"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-12g0397-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-14xsgja-MuiTypography-root-MuiLink-root"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 target="_blank"
@@ -176,11 +176,11 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-v8su1p-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1m0ooyr-MuiListItem-root"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-12g0397-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-14xsgja-MuiTypography-root-MuiLink-root"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 target="_blank"
