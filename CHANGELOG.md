@@ -1,3 +1,13 @@
+### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/150)
+
+#### Changed
+
+- Modernize mobile navigation to use slots-based transitions and lifecycle callbacks for focus management
+
+#### Added
+
+- Add tests to verify focus restoration behavior and maintain coverage
+
 ### 2025-11-01 [*](https://github.com/nicholeuf/zen-site-next/pull/147)
 
 #### Changed
