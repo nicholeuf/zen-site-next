@@ -18,40 +18,49 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
     <ListItem
       key={href}
       sx={{
+        width: '40px',
+        height: '40px',
         m: {
-          xs: 1,
-          sm: 3,
+          xs: 0,
+          sm: 2,
         },
         p: 0,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        transition: 'transform 0.25s ease',
-        '&:hover': {
-          transform: 'scale(1.2)',
-        },
       }}
     >
-      <ExternalLink
+      <IconButton
+        component={ExternalLink}
         href={href}
         sx={{
-          textDecoration: 'none',
           height: '100%',
           width: '100%',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          p: 1,
+          borderRadius: '50%',
+          transition: (theme) =>
+            theme.transitions.create(['background-color', 'transform'], {
+              duration: theme.transitions.duration.shortest,
+            }),
+          // Increase specificity so this rule overrides any less-specific
+          // background rules (for example a global `a` or link reset).
+          '&:hover': {
+            backgroundColor: 'action.hover',
+            transform: 'scale(1.2)',
+          },
+          // Make keyboard focus look like a focused link (browser default)
+          // so keyboard selection matches the ExternalLink-only appearance.
+          '&:focus-visible': {
+            borderRadius: '50%',
+          },
         }}
         aria-label={ariaLabel}
       >
-        <IconButton
-          sx={{
-            p: 0,
-          }}
-        >
-          {children}
-        </IconButton>
-      </ExternalLink>
+        {children}
+      </IconButton>
     </ListItem>
   );
 };

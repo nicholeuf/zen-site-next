@@ -1,3 +1,11 @@
+### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/152)
+
+#### Changed
+
+- Improve navigation accessibility and spacing; consolidate hover/focus behaviors on interactive elements
+- Apply global link styles and refactor link components for consistent styling and better control
+- Add option to disable ripple effects in tests to reduce async warnings
+
 ### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/150)
 
 #### Changed
