@@ -33,14 +33,14 @@ const preview: Preview = {
 
   decorators: [
     // Emotion cache provider ensures MUI styles are injected in the right order
-    ((Story: any) => {
+    (Story) => {
       const muiCache = createCache({ key: 'mui', prepend: true });
       return (
         <CacheProvider value={muiCache}>
           <Story />
         </CacheProvider>
       );
-    }),
+    },
     withThemeFromJSXProvider({
       GlobalStyles,
       Provider: ThemeProvider,
