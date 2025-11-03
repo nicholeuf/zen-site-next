@@ -16,6 +16,9 @@ const ExternalLink = React.forwardRef<HTMLAnchorElement, ExternalLinkProps>(
     { children, target = '_blank', rel = 'noopener', className, sx, ...props },
     ref
   ) => {
+    // No local visual defaults here — rely on theme (MuiLink / CssBaseline)
+    // so callers and global styles remain consistent.
+
     return (
       <Box
         component="a"
