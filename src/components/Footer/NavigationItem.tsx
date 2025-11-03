@@ -1,5 +1,6 @@
 import ListItem from '@mui/material/ListItem';
 import ExternalLink from '@/components/ExternalLink';
+import IconButton from '@mui/material/IconButton';
 
 interface NavigationItemProps {
   href: string;
