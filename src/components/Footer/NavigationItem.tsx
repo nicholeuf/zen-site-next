@@ -1,4 +1,5 @@
 import ListItem from '@mui/material/ListItem';
+import IconButton from '@mui/material/IconButton';
 import ExternalLink from '@/components/ExternalLink';
 
 interface NavigationItemProps {
@@ -33,7 +34,8 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         },
       }}
     >
-      <ExternalLink
+      <IconButton
+        component={ExternalLink}
         href={href}
         sx={{
           textDecoration: 'none',
@@ -48,14 +50,23 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
             theme.transitions.create('background-color', {
               duration: theme.transitions.duration.shortest,
             }),
+          // Increase specificity so this rule overrides any less-specific
+          // background rules (for example a global `a` or link reset).
           '&:hover': {
             backgroundColor: 'action.hover',
+          },
+          // Make keyboard focus look like a focused link (browser default)
+          // so keyboard selection matches the ExternalLink-only appearance.
+          '&:focus-visible': {
+            outline: 'auto 5px -webkit-focus-ring-color',
+            outlineOffset: '3px',
+            borderRadius: '50%',
           },
         }}
         aria-label={ariaLabel}
       >
         {children}
-      </ExternalLink>
+      </IconButton>
     </ListItem>
   );
 };
