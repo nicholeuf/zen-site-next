@@ -436,9 +436,10 @@ exports[`The About Page > has expected snapshot 1`] = `
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-14xsgja-MuiTypography-root-MuiLink-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-1botr53-MuiButtonBase-root-MuiIconButton-root"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
+                tabindex="0"
                 target="_blank"
               >
                 <svg
@@ -459,9 +460,10 @@ exports[`The About Page > has expected snapshot 1`] = `
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-14xsgja-MuiTypography-root-MuiLink-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-1botr53-MuiButtonBase-root-MuiIconButton-root"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
+                tabindex="0"
                 target="_blank"
               >
                 <svg
@@ -520,7 +522,7 @@ exports[`The About Page > has expected snapshot 1`] = `
         >
           <a
             aria-label="View Source Code"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-rrrsrh-MuiTypography-root-MuiLink-root"
+            class="MuiBox-root css-17oo6ja"
             href="https://github.com/nicholeuf/zen-site-next"
             rel="noopener"
             target="_blank"
