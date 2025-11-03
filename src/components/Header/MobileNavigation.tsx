@@ -1,6 +1,13 @@
 'use client';
 
-import { useState, forwardRef, Fragment, useRef, useEffect } from 'react';
+import {
+  useState,
+  forwardRef,
+  Fragment,
+  useRef,
+  useEffect,
+  ForwardedRef,
+} from 'react';
 import Typography from '@mui/material/Typography';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -25,7 +32,7 @@ const Transition = forwardRef(function Transition(
   props: TransitionProps & {
     children: React.ReactElement;
   },
-  ref: React.Ref<unknown>
+  ref: ForwardedRef<HTMLDivElement>
 ) {
   return <Slide direction="left" ref={ref} {...props} />;
 });
@@ -48,24 +55,20 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
     setOpen(false);
   };
 
+  // Instead of a timeout, use the transition lifecycle. We'll pass handlers
+  // to the transition via Dialog's `slotProps` so focus happens when the
+  // Slide transition finishes (onEntered/onExited). This is more reliable
+  // than setTimeout and maps cleanly for coverage/source-maps.
+
   useEffect(() => {
-    // closeButtonRef is not available without a timeout
-    const timeout = setTimeout(() => {
-      // When the dialog opens, focus on the close button
-      if (open && closeButtonRef.current) {
-        closeButtonRef.current.focus();
-
-        // When the dialog closes, focus on the open button
-      } else if (!open && openButtonRef.current) {
-        openButtonRef.current.focus();
-      }
-    }, 100);
-
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, [open]);
-
+    // Ensure the open button is focused on initial mount for keyboard users.
+    // Previously we used a timeout to return focus after transitions; the
+    // transition lifecycle now handles focus on open/close, but on initial
+    // render we still want the trigger to be focusable and focused.
+    if (openButtonRef.current) {
+      openButtonRef.current.focus();
+    }
+  }, []);
   return (
     <Fragment>
       <Box
@@ -93,7 +96,19 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
         fullScreen
         open={open}
         onClose={handleClose}
-        TransitionComponent={Transition}
+        slots={{ transition: Transition }}
+        slotProps={{
+          transition: {
+            onEntered: () => {
+              // When the dialog opens and the transition finishes, focus the close button
+              if (closeButtonRef.current) closeButtonRef.current.focus();
+            },
+            onExited: () => {
+              // When the dialog has fully closed, return focus to the open button
+              if (openButtonRef.current) openButtonRef.current.focus();
+            },
+          },
+        }}
         sx={{
           '& .MuiDialog-paper': {
             backgroundColor: 'secondary.main',
