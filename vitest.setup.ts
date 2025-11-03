@@ -24,3 +24,18 @@ import { matchers } from '@emotion/jest';
 
 // Add the custom matchers provided by '@emotion/jest'
 (expect as any).extend(matchers);
+
+// Prevent Sentry from initializing real instrumentation in the test environment.
+// Sentry can create intervals/workers that may keep the Node process alive in CI.
+vi.mock('@sentry/nextjs', () => {
+  return {
+    init: () => {},
+    captureRouterTransitionStart: () => {},
+    captureRequestError: () => {},
+    captureException: () => {},
+    captureMessage: () => {},
+    // integrations helpers used in our code
+    replayIntegration: () => undefined,
+    consoleLoggingIntegration: () => undefined,
+  };
+});
