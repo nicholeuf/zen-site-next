@@ -48,17 +48,25 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
     setOpen(false);
   };
 
+  // Helper: focus the appropriate button after the dialog opens/closes.
+  // Split into separate `if` statements and extract to a named function so
+  // source-map instrumentation maps branches more predictably for coverage.
+  const focusDialogButtons = (isOpen: boolean) => {
+    // When the dialog opens, focus the close button if available
+    if (isOpen && closeButtonRef.current) {
+      closeButtonRef.current.focus();
+    }
+
+    // When the dialog closes, focus the open button if available
+    if (!isOpen && openButtonRef.current) {
+      openButtonRef.current.focus();
+    }
+  };
+
   useEffect(() => {
     // closeButtonRef is not available without a timeout
     const timeout = setTimeout(() => {
-      // When the dialog opens, focus on the close button
-      if (open && closeButtonRef.current) {
-        closeButtonRef.current.focus();
-
-        // When the dialog closes, focus on the open button
-      } else if (!open && openButtonRef.current) {
-        openButtonRef.current.focus();
-      }
+      focusDialogButtons(open);
     }, 100);
 
     return () => {
