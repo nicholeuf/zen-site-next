@@ -2,11 +2,10 @@ import type { Preview } from '@storybook/nextjs-vite';
 
 import { ThemeProvider } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
-import createCache from '@emotion/cache';
-import { CacheProvider } from '@emotion/react';
 
 import theme from '../src/app/styles/theme';
 import GlobalStyles from '../src/app/styles/GlobalStyles';
+import MuiCacheDecorator from './MuiCacheDecorator';
 import NextRouterDecorator from './NextRouterDecorator';
 
 const preview: Preview = {
@@ -32,15 +31,7 @@ const preview: Preview = {
   },
 
   decorators: [
-    // Emotion cache provider ensures MUI styles are injected in the right order
-    (Story) => {
-      const muiCache = createCache({ key: 'mui', prepend: true });
-      return (
-        <CacheProvider value={muiCache}>
-          <Story />
-        </CacheProvider>
-      );
-    },
+    MuiCacheDecorator,
     withThemeFromJSXProvider({
       GlobalStyles,
       Provider: ThemeProvider,
