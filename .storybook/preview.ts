@@ -8,6 +8,8 @@ import GlobalStyles from '../src/app/styles/GlobalStyles';
 import MuiCacheDecorator from './MuiCacheDecorator';
 import NextRouterDecorator from './NextRouterDecorator';
 
+import constants from '../src/app/styles/constants';
+
 const preview: Preview = {
   parameters: {
     nextjs: {
@@ -20,6 +22,13 @@ const preview: Preview = {
       },
     },
 
+    backgrounds: {
+      options: {
+        cream: { name: 'cream', value: constants.colors.cream },
+        carob: { name: 'carob', value: constants.colors.carob },
+      },
+    },
+
     a11y: {
       // 'todo' - show a11y violations in the test UI only
       // 'error' - fail CI on a11y violations
@@ -28,6 +37,10 @@ const preview: Preview = {
     },
     //👇 Enables auto-generated documentation for all stories
     tags: ['autodocs'],
+    initialGlobals: {
+      // 👇 Set the initial background color
+      backgrounds: { value: 'cream' },
+    },
   },
 
   decorators: [
