@@ -150,7 +150,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
           data-testid="footer-nav"
         >
           <ul
-            class="MuiList-root MuiList-padding css-15hnovt-MuiList-root"
+            class="MuiList-root MuiList-padding css-1mt3rcp-MuiList-root"
           >
             <li
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-mp07eo-MuiListItem-root"
