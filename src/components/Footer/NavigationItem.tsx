@@ -28,10 +28,6 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        transition: 'transform 0.25s ease',
-        '&:hover': {
-          transform: 'scale(1.2)',
-        },
       }}
     >
       <IconButton
@@ -47,13 +43,14 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
           p: 1,
           borderRadius: '50%',
           transition: (theme) =>
-            theme.transitions.create('background-color', {
+            theme.transitions.create(['background-color', 'transform'], {
               duration: theme.transitions.duration.shortest,
             }),
           // Increase specificity so this rule overrides any less-specific
           // background rules (for example a global `a` or link reset).
           '&:hover': {
             backgroundColor: 'action.hover',
+            transform: 'scale(1.2)',
           },
           // Make keyboard focus look like a focused link (browser default)
           // so keyboard selection matches the ExternalLink-only appearance.
