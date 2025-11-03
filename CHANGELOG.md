@@ -1,9 +1,3 @@
-### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/152)
-
-#### Changed
-
-- Simplify footer navigation item structure by removing unnecessary wrapper and rendering children directly to improve accessibility
-
 ### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/150)
 
 #### Changed
