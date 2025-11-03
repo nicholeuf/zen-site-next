@@ -17,10 +17,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
     <ListItem
       key={href}
       sx={{
-        m: {
-          xs: 1,
-          sm: 3,
-        },
+        m: 1,
         p: 0,
         display: 'flex',
         justifyContent: 'center',
@@ -40,6 +37,15 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          p: 1,
+          borderRadius: '50%',
+          transition: (theme) =>
+            theme.transitions.create('background-color', {
+              duration: theme.transitions.duration.shortest,
+            }),
+          '&:hover': {
+            backgroundColor: 'action.hover',
+          },
         }}
         aria-label={ariaLabel}
       >
