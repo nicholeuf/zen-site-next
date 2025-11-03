@@ -11,7 +11,11 @@ interface AppLayoutProps {
   disableRipple?: boolean;
 }
 
-const AppLayout: React.FC<AppLayoutProps> = ({ children, deviceType, disableRipple = false }) => {
+const AppLayout: React.FC<AppLayoutProps> = ({
+  children,
+  deviceType,
+  disableRipple = false,
+}) => {
   return (
     <GlobalStyles deviceType={deviceType} disableRipple={disableRipple}>
       <Header />
