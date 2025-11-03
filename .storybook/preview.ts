@@ -34,6 +34,8 @@ const preview: Preview = {
       },
       defaultTheme: 'desktop',
     }),
+    // ensure Next.js router mocks are applied after theme
+    // TODO: https://github.com/nicholeuf/zen-site-next/issues/149
     NextRouterDecorator,
   ],
 };

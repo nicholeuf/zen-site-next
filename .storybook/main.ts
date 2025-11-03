@@ -21,6 +21,7 @@ const config: StorybookConfig = {
         ...config.resolve,
         alias: {
           ...config.resolve?.alias,
+          // TODO: https://github.com/nicholeuf/zen-site-next/issues/149
           'next/router': 'next-router-mock',
           'next/navigation': 'next-router-mock/navigation',
         },
