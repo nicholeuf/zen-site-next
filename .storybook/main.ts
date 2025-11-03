@@ -14,5 +14,19 @@ const config: StorybookConfig = {
     options: {},
   },
   staticDirs: ['../public'],
+  viteFinal: async (config) => {
+    return {
+      ...config,
+      resolve: {
+        ...config.resolve,
+        alias: {
+          ...(config.resolve?.alias ?? {}),
+          // TODO: https://github.com/nicholeuf/zen-site-next/issues/149
+          'next/router': 'next-router-mock',
+          'next/navigation': 'next-router-mock/navigation',
+        },
+      },
+    };
+  },
 };
 export default config;

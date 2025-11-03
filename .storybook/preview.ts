@@ -4,6 +4,7 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import theme from '../src/app/styles/theme';
 import GlobalStyles from '../src/app/styles/GlobalStyles';
+import NextRouterDecorator from './NextRouterDecorator';
 
 const preview: Preview = {
   parameters: {
@@ -33,6 +34,9 @@ const preview: Preview = {
       },
       defaultTheme: 'desktop',
     }),
+    // ensure Next.js router mocks are applied after theme
+    // TODO: https://github.com/nicholeuf/zen-site-next/issues/149
+    NextRouterDecorator,
   ],
 };
 
