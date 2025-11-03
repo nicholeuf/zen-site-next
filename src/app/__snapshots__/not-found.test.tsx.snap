@@ -157,7 +157,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-b6asv8-MuiButtonBase-root-MuiIconButton-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-kzod0a-MuiButtonBase-root-MuiIconButton-root"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 tabindex="0"
@@ -181,7 +181,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-b6asv8-MuiButtonBase-root-MuiIconButton-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-kzod0a-MuiButtonBase-root-MuiIconButton-root"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 tabindex="0"
