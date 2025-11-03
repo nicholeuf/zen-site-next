@@ -8,6 +8,7 @@ import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider/next
 // Next.js app directory (`appDirectory: true`).
 // See related Storybook issue: https://github.com/storybookjs/storybook/issues/32342
 // This can be removed once Storybook fixes the issue with mocks when using the app directory.
+// TODO: https://github.com/nicholeuf/zen-site-next/issues/149
 import React from 'react';
 
 const NextRouterDecorator = (Story: any) => {
