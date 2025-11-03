@@ -1,5 +1,5 @@
 import { action } from 'storybook/actions';
-
+import type { Decorator } from '@storybook/nextjs-vite';
 import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider/next-13.5';
 
 // Storybook decorator that wraps stories with a mock Next.js router and logs navigation actions.
@@ -9,15 +9,12 @@ import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider/next
 // See related Storybook issue: https://github.com/storybookjs/storybook/issues/32342
 // This can be removed once Storybook fixes the issue with mocks when using the app directory.
 // TODO: https://github.com/nicholeuf/zen-site-next/issues/149
-import React from 'react';
 
-const NextRouterDecorator = (Story: any) => {
-  const onPush = React.useCallback((url: string) => {
-    action('push')(url);
-  }, []);
+const pushAction = action('push');
 
+const NextRouterDecorator: Decorator = (Story) => {
   return (
-    <MemoryRouterProvider onPush={onPush}>
+    <MemoryRouterProvider onPush={pushAction}>
       <Story />
     </MemoryRouterProvider>
   );
