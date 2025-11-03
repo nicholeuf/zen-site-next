@@ -12,7 +12,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
       data-testid="header-logo"
     >
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1qolyb7-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-r4te2v-MuiTypography-root-MuiLink-root"
         href="/"
       >
         <span
@@ -35,7 +35,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
         >
           <a
             aria-current="page"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-5i0839-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1h4te5p-MuiTypography-root-MuiLink-root"
             href="/work"
           >
             Work
@@ -45,7 +45,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ufehlg-MuiTypography-root-MuiLink-root"
             href="/about"
           >
             About
@@ -55,7 +55,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ufehlg-MuiTypography-root-MuiLink-root"
             href="/contact"
           >
             Contact
@@ -65,7 +65,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-utfdxl-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ufehlg-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home
@@ -1308,16 +1308,17 @@ exports[`The Work Page > has expected snapshot 1`] = `
           data-testid="footer-nav"
         >
           <ul
-            class="MuiList-root MuiList-padding css-15hnovt-MuiList-root"
+            class="MuiList-root MuiList-padding css-1mt3rcp-MuiList-root"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-v8su1p-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-mp07eo-MuiListItem-root"
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-12g0397-MuiTypography-root-MuiLink-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-kzod0a-MuiButtonBase-root-MuiIconButton-root"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
+                tabindex="0"
                 target="_blank"
               >
                 <svg
@@ -1334,13 +1335,14 @@ exports[`The Work Page > has expected snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-v8su1p-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-mp07eo-MuiListItem-root"
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-12g0397-MuiTypography-root-MuiLink-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-kzod0a-MuiButtonBase-root-MuiIconButton-root"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
+                tabindex="0"
                 target="_blank"
               >
                 <svg
@@ -1399,7 +1401,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
         >
           <a
             aria-label="View Source Code"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-rrrsrh-MuiTypography-root-MuiLink-root"
+            class="MuiBox-root css-17oo6ja"
             href="https://github.com/nicholeuf/zen-site-next"
             rel="noopener"
             target="_blank"

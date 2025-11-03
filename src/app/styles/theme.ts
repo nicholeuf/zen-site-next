@@ -6,6 +6,7 @@ import mediaQuery from 'css-mediaquery';
 import constants from './constants';
 import DeviceType from '@/types/DeviceType';
 import getWidthByDeviceType from '../ssrMediaQueries/getWidthByDeviceType';
+import { colors } from '@mui/material';
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts#using-multiple-fonts
 export const inter = Inter({
@@ -34,6 +35,19 @@ const ssrMatchMedia = (deviceType: DeviceType) => (query: string) => {
 // dark: will be calculated from palette.primary.main,
 // contrastText: will be calculated to contrast with palette.primary.main
 const theme = (deviceType: DeviceType) => {
+  // Shared link styles used for both MUI Link and global <a> elements.
+  const linkStyles = {
+    color: constants.colors.guava,
+    textDecoration: 'none',
+    '&:hover': {
+      textDecoration: 'underline',
+    },
+    '&:focus-visible': {
+      outline: 'auto 5px -webkit-focus-ring-color',
+      outlineOffset: '3px',
+    },
+  } as const;
+
   const mainTheme = createTheme({
     spacing: 8,
     palette: {
@@ -73,11 +87,15 @@ const theme = (deviceType: DeviceType) => {
             overflowX: 'hidden',
             maxWidth: '100vw',
           },
+          a: linkStyles,
         },
       },
       MuiLink: {
         defaultProps: {
           underline: 'hover',
+        },
+        styleOverrides: {
+          root: linkStyles,
         },
       },
     },

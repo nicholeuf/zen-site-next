@@ -65,7 +65,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
     // Previously we used a timeout to return focus after transitions; the
     // transition lifecycle now handles focus on open/close, but on initial
     // render we still want the trigger to be focusable and focused.
-    if (!open && openButtonRef.current) {
+    if (openButtonRef.current) {
       openButtonRef.current.focus();
     }
   }, []);
