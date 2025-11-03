@@ -28,7 +28,9 @@ export default defineConfig({
   test: {
     // Inject globals like `describe`, `it`, `expect` so setup files and tests don't need to import them
     globals: true,
-    reporters: ['default', 'jest-junit'],
+  // Add the `hanging-process` reporter to help diagnose hanging tests in CI.
+  // It prints a summary of active handles preventing Node from exiting.
+  reporters: ['default', 'jest-junit', 'hanging-process'],
 
     // Exclude Storybook files and stories from coverage collection
     coverage: {
