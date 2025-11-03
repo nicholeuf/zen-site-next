@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, forwardRef, Fragment, useRef, useEffect } from 'react';
+import { useState, forwardRef, Fragment, useRef, useEffect, ForwardedRef } from 'react';
 import Typography from '@mui/material/Typography';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -25,7 +25,7 @@ const Transition = forwardRef(function Transition(
   props: TransitionProps & {
     children: React.ReactElement;
   },
-  ref: React.Ref<unknown>
+  ref: ForwardedRef<HTMLDivElement>
 ) {
   return <Slide direction="left" ref={ref} {...props} />;
 });
@@ -93,7 +93,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
         fullScreen
         open={open}
         onClose={handleClose}
-        TransitionComponent={Transition}
+        slots={{ transition: Transition }}
         sx={{
           '& .MuiDialog-paper': {
             backgroundColor: 'secondary.main',
