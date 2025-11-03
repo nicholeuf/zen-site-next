@@ -17,7 +17,10 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
     <ListItem
       key={href}
       sx={{
-        m: 1,
+        m: {
+          xs: 0,
+          sm: 2,
+        },
         p: 0,
         display: 'flex',
         justifyContent: 'center',
