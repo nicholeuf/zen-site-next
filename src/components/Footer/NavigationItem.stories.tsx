@@ -20,10 +20,6 @@ const meta: Meta<typeof NavigationItem> = {
         component="nav"
         data-testid="footer-nav"
         aria-label="External Navigation"
-        sx={{
-          height: constants.footer.height,
-          border: `1px solid ${constants.colors.cream}`,
-        }}
       >
         <NavigationList>
           <Story />
@@ -58,20 +54,7 @@ export const FocusVisible: Story = {
     href: 'https://example.com',
     ariaLabel: 'LinkedIn (opens in new window)',
   },
-  play: async ({ canvasElement, userEvent }) => {
-    // Use testing user-event to simulate a real Tab press so :focus-visible applies.
-    const el = canvasElement.querySelector(
-      'a,button,[role="button"],[role="link"]'
-    );
-    if (!(el instanceof HTMLElement)) return;
-
-    const user = userEvent.setup();
-    // tab until the element is focused; user.tab() moves focus forward once,
-    // so if it's the first focusable element in the canvas this will focus it.
-    await user.tab();
-    // If it's not focused yet, explicitly focus it to be deterministic.
-    if (document.activeElement !== el) {
-      el.focus();
-    }
+  play: async ({ canvas, userEvent }) => {
+    await userEvent.tab(canvas.getByRole('link'));
   },
 };
