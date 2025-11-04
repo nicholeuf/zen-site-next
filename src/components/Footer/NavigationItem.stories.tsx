@@ -21,8 +21,7 @@ const meta: Meta<typeof NavigationItem> = {
         data-testid="footer-nav"
         aria-label="External Navigation"
         sx={{
-          width: '25%',
-          height: '100%',
+          height: constants.footer.height,
           border: `1px solid ${constants.colors.cream}`,
         }}
       >
@@ -59,9 +58,8 @@ export const FocusVisible: Story = {
     href: 'https://example.com',
     ariaLabel: 'LinkedIn (opens in new window)',
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement, userEvent }) => {
     // Use testing user-event to simulate a real Tab press so :focus-visible applies.
-    const { default: userEvent } = await import('@testing-library/user-event');
     const el = canvasElement.querySelector(
       'a,button,[role="button"],[role="link"]'
     );
