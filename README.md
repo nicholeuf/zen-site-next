@@ -72,3 +72,26 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## TypeScript setup (dev vs production)
+
+This repository keeps a short guide in `TSConfig-README.md` that explains the split between development and production TypeScript configurations. Quick pointers:
+
+- The strict production config used by CI and `next build` is `tsconfig.build.json`.
+- The developer/storybook/test config (includes dev-only `types/`) is `tsconfig.test.json`.
+- To help VS Code resolve the workspace TypeScript, there's an example file at `.vscode-settings-example.json` you can copy into your local `.vscode/settings.json`.
+
+Run local checks:
+
+Production (CI-like):
+
+```bash
+pnpm -s tsc -p tsconfig.build.json
+```
+
+Dev/Storybook (editor surface):
+
+```bash
+pnpm -s tsc -p tsconfig.test.json
+```
+
