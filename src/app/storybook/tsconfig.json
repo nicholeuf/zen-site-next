@@ -1,0 +1,8 @@
+{
+  "extends": "../../../tsconfig.dev.json",
+  "compilerOptions": {
+    // keep defaults from tsconfig.dev.json — this file only exists so editors
+    // find a nearby tsconfig and associate story files with the dev project.
+  },
+  "include": ["**/*", "../../types/**/*", "../../**/*.d.ts"]
+}
