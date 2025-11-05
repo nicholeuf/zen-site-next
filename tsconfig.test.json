@@ -1,0 +1,36 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["vitest/globals", "vitest", "node", "@testing-library/jest-dom", "jest"]
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*",
+    "utils/**/*",
+    ".storybook/**/*",
+    "tests/**/*",
+    "**/*.stories.*",
+    "**/*.test.*",
+    "**/*.spec.*"
+  ],
+  "exclude": ["node_modules", ".next"]
+}
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["vitest/globals", "vitest", "node", "@testing-library/jest-dom", "jest"]
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*",
+    "utils/**/*",
+    ".storybook/**/*",
+    "tests/**/*",
+    "**/*.stories.*",
+    "**/*.test.*",
+    "**/*.spec.*"
+  ],
+  "exclude": ["node_modules", ".next"]
+}
