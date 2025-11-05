@@ -23,8 +23,10 @@ declare global {
   }
 
   // Sometimes code or helper libs expose `JestMatchers<T>` as an interface name.
+  // Matchers typically return `void` (or `Promise<void>` when async). Use `void`
+  // here for a stricter, non-`any` signature.
   interface JestMatchers<T = any> {
-    toHaveStyleRule(property: string, value?: any, options?: any): any;
+    toHaveStyleRule(property: string, value?: any, options?: any): void;
   }
 }
 
@@ -43,7 +45,7 @@ declare module 'vitest' {
   }
 
   interface JestMatchers<T = any> {
-    toHaveStyleRule(property: string, value?: any, options?: any): any;
+    toHaveStyleRule(property: string, value?: any, options?: any): void;
   }
 }
 
@@ -52,12 +54,9 @@ declare module 'vitest' {
 // used in tests.
 declare global {
   namespace jest {
-    interface Expect {
-      <T = any>(
-        actual: T
-      ): JestMatchers<T> & {
-        toHaveStyleRule(property: string, value?: any, options?: any): any;
-      };
-    }
+    // No Expect augmentation — we rely on the Matchers/JestMatchers augmentations
+    // above. This keeps the change narrow and compatible with @types/jest's
+    // `Expect` return type of `JestMatchers<T>`.
+    interface Expect {}
   }
 }
