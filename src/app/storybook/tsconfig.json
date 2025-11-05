@@ -1,8 +1,0 @@
-{
-  "extends": "../../../tsconfig.test.json",
-  "compilerOptions": {
-    // keep defaults from tsconfig.test.json — this file exists so editors
-    // and Storybook associate story files with the test/dev project.
-  },
-  "include": ["**/*", "../../types/**/*", "../../**/*.d.ts"]
-}
