@@ -12,6 +12,7 @@ This project uses a split TypeScript configuration to keep the developer experie
 - `tsconfig.build.json`
   - Purpose: strict production/CI checks. Extend `tsconfig.base.json` and enable stricter flags used by CI.
   - This is the config used for production type-checks and is wired into the build pipeline (see `package.json` build script and `NEXT_TSCONFIG` usage in `next.config.ts`).
+  - This is the config used for production type-checks and is wired into the build pipeline — the build script now passes it explicitly to Next via the CLI flag `--tsconfig`.
 
 - `tsconfig.test.json`
   - Purpose: test/storybook/dev type-checking.

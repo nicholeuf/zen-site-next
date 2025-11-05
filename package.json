@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:debug": "NODE_OPTIONS='--inspect' next dev",
-    "build": "NEXT_TSCONFIG=tsconfig.build.json next build",
+    "build": "next build --tsconfig tsconfig.build.json",
     "start": "next start",
     "lint": "next lint",
     "tsc": "npx tsc --project  ./tsconfig.json",
