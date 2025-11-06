@@ -46,8 +46,6 @@ pnpm -s tsc -p tsconfig.test.json
 
 If you want to remove the dev-only augmentations later, move the file out of `types/` and update `tsconfig.test.json` accordingly.
 
-If anything here needs clarification or you'd like me to add an internal doc that explains how to author shims with concrete examples, I can add that too.
-
 ## TypeScript configuration strategy for this repo
 
 This repository separates shared, production, and development TypeScript settings so Next's build stays focused on app code while Storybook and test tooling can opt into extra types and includes.
@@ -118,14 +116,6 @@ module.exports = {
 ```
 
 - If you use path aliases (from `tsconfig.base.json` `paths`), ensure Storybook/Vite/webpack use the same alias resolution (e.g., `tsconfig-paths-webpack-plugin` for webpack or `vite-tsconfig-paths` for Vite).
-
-Next steps (I can implement these for you)
-
-- Update `tsconfig.json` to `extend` `tsconfig.base.json` and narrow `include`/`exclude` to Next's app folders.
-- Optionally create `tsconfig.storybook.json` and `tsconfig.vitest.json` if you want separate configs per tool.
-- Add a `.vscode/settings.json` to surface both TS projects cleanly in the editor.
-
-Would you like me to apply the `tsconfig.json` update now (so it extends the base) and/or add a Storybook-specific config next?
 
 ### Generated files
 
