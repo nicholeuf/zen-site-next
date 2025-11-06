@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MainContainer from '@/components/MainContainer';
 import GlobalStyles from '@/app/styles/GlobalStyles';
-import DeviceType from '@/types/DeviceType';
+import DeviceType from 'types/DeviceType';
 
 interface AppLayoutProps {
   children: React.ReactNode;

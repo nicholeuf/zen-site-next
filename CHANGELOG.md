@@ -1,3 +1,11 @@
+### 2025-11-06 [*](https://github.com/nicholeuf/zen-site-next/pull/157)
+
+#### Changed
+
+- Split TypeScript configs into base/build/test for stricter production checks and flexible development
+- Configure Next.js and CI to use strict build config; add dual typecheck workflow and update path aliases
+- Consolidate dev-only types under a dedicated directory and add documentation and editor settings
+
 ### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/155)
 
 #### Added

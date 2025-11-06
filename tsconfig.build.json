@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    // Include only production-required type augmentations. Keep dev-only shims
+    // (e.g. jest/Storybook matchers) out of the strict production check.
+    "types/mui-overrides.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.stories.*",
+    "src/**/.storybook/**",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "tests",
+    "utils"
+  ]
+}

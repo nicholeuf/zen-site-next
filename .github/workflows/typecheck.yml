@@ -1,0 +1,31 @@
+name: Typecheck
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Production Typecheck (strict build config)
+        run: pnpm -s tsc -p tsconfig.build.json
+
+      - name: Dev Typecheck (Storybook / Tests)
+        run: pnpm -s tsc -p tsconfig.test.json

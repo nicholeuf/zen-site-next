@@ -4,9 +4,8 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import mediaQuery from 'css-mediaquery';
 
 import constants from './constants';
-import DeviceType from '@/types/DeviceType';
+import DeviceType from 'types/DeviceType';
 import getWidthByDeviceType from '../ssrMediaQueries/getWidthByDeviceType';
-import { colors } from '@mui/material';
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts#using-multiple-fonts
 export const inter = Inter({

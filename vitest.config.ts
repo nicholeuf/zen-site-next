@@ -39,7 +39,7 @@ export default defineConfig({
         '**/*.stories.*',
         '**/*.stories.@(ts|tsx|js|jsx|mdx)',
         '**/*.mock.*',
-        'src/types/**',
+        'types/**',
       ],
     },
     // Default project: run unit/test files in the src folder

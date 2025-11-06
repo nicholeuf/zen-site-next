@@ -1,7 +1,14 @@
 import { withSentryConfig } from '@sentry/nextjs';
 import type { NextConfig } from 'next';
 
+// See TSConfig-README.md for notes on how `next.config.ts` uses NODE_ENV to
+// select `tsconfig.build.json` for production builds.
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
+  typescript: {
+    tsconfigPath: isProd ? 'tsconfig.build.json' : 'tsconfig.json',
+  },
   productionBrowserSourceMaps: true,
   images: {
     // https://nextjs.org/docs/app/api-reference/components/image#qualities
