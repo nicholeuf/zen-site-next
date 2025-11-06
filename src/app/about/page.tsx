@@ -7,7 +7,7 @@ import Photos from './Photos';
 import Photo from './Photo';
 import { ItemDataPlaceholder, itemData } from './constants';
 import getPlaceholderImage from '../lib/getPlaceholderImage';
-import ImageDimensions from '@/types/ImageDimensions';
+import ImageDimensions from 'types/ImageDimensions';
 
 export const metadata: Metadata = {
   title: 'About',

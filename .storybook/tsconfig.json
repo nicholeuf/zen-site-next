@@ -1,18 +1,8 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../tsconfig.test.json",
   "compilerOptions": {
-    "composite": false
-  },
-  "include": [
-    "../src/**/*.ts",
-    "../src/**/*.tsx",
-    "../src/**/*.d.ts",
-    "../src/**/*.stories.*",
-    "./**/*"
-  ],
-  "exclude": [
-    "../node_modules",
-    "../src/**/*.test.*",
-    "../src/**/*.spec.*"
-  ]
+    // keep defaults from tsconfig.test.json — this file exists so editors and
+    // Storybook tooling pick up the dev/test compiler settings when working
+    // inside the `.storybook` folder.
+  }
 }

@@ -23,7 +23,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "utils/*": ["./utils/*"],
-      "test-utils": ["./utils/test-utils"]
+      "test-utils": ["./utils/test-utils"],
+      "types/*": ["./types/*"]
     }
   },
   "include": [

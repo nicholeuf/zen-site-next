@@ -1,4 +1,4 @@
-import DeviceType from '@/types/DeviceType';
+import DeviceType from 'types/DeviceType';
 
 const getWidthByDeviceType = (deviceType: DeviceType): string => {
   switch (deviceType) {
