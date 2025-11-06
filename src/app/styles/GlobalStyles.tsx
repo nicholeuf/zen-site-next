@@ -3,7 +3,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 import theme from '@/app/styles/theme';
-import DeviceType from '@/types/DeviceType';
+import DeviceType from 'types/DeviceType';
 
 interface GlobalStylesProps {
   children: React.ReactNode;

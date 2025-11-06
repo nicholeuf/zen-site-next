@@ -1,4 +1,4 @@
-import DeviceType from '@/types/DeviceType';
+import DeviceType from 'types/DeviceType';
 import { headers } from 'next/headers';
 import { UAParser, IDevice } from 'ua-parser-js';
 

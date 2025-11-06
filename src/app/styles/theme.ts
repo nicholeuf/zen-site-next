@@ -4,7 +4,7 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import mediaQuery from 'css-mediaquery';
 
 import constants from './constants';
-import DeviceType from '@/types/DeviceType';
+import DeviceType from 'types/DeviceType';
 import getWidthByDeviceType from '../ssrMediaQueries/getWidthByDeviceType';
 import { colors } from '@mui/material';
 
