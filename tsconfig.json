@@ -24,8 +24,7 @@
       "@/*": ["./src/*"],
       "utils/*": ["./utils/*"],
       "test-utils": ["./utils/test-utils"],
-      "types/*": ["./types/*"],
-      "@/types/*": ["./types/*"]
+      "types/*": ["./types/*"]
     }
   },
   "include": [
