@@ -81,6 +81,16 @@ This repository keeps a short guide in `TSConfig-README.md` that explains the sp
 - The developer/storybook/test config (includes dev-only `types/`) is `tsconfig.test.json`.
 - To help VS Code resolve the workspace TypeScript, there's an example file at `.vscode-settings-example.json` you can copy into your local `.vscode/settings.json`.
 
+### Next.js NODE_ENV & tsconfig selection
+
+Next.js sets NODE_ENV for you: `next dev` runs with `development`, while `next build` and production runs use `production`. This repo's `next.config.ts` relies on that behavior to pick the strict tsconfig at build time. See `TSConfig-README.md` for more details.
+
+If you want to run the strict production type-check locally, run:
+
+```bash
+pnpm -s tsc -p tsconfig.build.json
+```
+
 Run local checks:
 
 Production (CI-like):
@@ -94,4 +104,3 @@ Dev/Storybook (editor surface):
 ```bash
 pnpm -s tsc -p tsconfig.test.json
 ```
-

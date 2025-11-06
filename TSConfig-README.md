@@ -2,6 +2,29 @@
 
 This project uses a split TypeScript configuration to keep the developer experience fast and forgiving while enforcing stricter checks for CI/production builds.
 
+### Next.js NODE_ENV & tsconfig selection
+
+Next.js will set the environment mode for you: when you run `next dev` it uses `development`, and for `next build`/production it uses `production`.
+
+This repository's `next.config.ts` relies on that behavior to choose which tsconfig Next uses at build time. Concretely the config contains logic like:
+
+```ts
+const isProd = process.env.NODE_ENV === 'production';
+
+// in next.config.ts
+typescript: {
+  tsconfigPath: isProd ? 'tsconfig.build.json' : 'tsconfig.json',
+}
+```
+
+That means production builds (including most CI runs and `next build`) will use `tsconfig.build.json`, while local development and editors will continue to use `tsconfig.json`. If you want to run the production type-check locally, either run the build (`NODE_ENV=production pnpm next build`) or run the strict check directly:
+
+```bash
+pnpm -s tsc -p tsconfig.build.json
+```
+
+If your CI sets NODE_ENV explicitly to something else, ensure it is set to `production` for the build step so Next picks the strict config.
+
 - `tsconfig.json` (root)
   - Purpose: developer/IDE convenience and `next dev`.
   - Not intended to be the canonical strict config for CI.
