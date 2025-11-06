@@ -22,15 +22,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
   };
 
   return (
-    <ListItem
-      key={href}
-      sx={{
-        transition: 'transform 0.25s ease',
-        '&:hover': {
-          transform: 'scale(1.2)',
-        },
-      }}
-    >
+    <ListItem key={href}>
       <NextLink
         href={href}
         aria-current={isActive ? 'page' : undefined}
@@ -41,10 +33,16 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
           height: '100%',
           textDecoration: 'none',
           color,
-          transition: 'color 0.25s ease',
+          transition: (theme) =>
+            theme.transitions.create(['color', 'transform'], {
+              duration: theme.transitions.duration.shortest,
+            }),
+          transformOrigin: 'center',
+          willChange: 'transform',
           '&:hover': {
             color: activeColor,
             textDecoration: 'none',
+            transform: 'scale(1.2)',
           },
         }}
       >
