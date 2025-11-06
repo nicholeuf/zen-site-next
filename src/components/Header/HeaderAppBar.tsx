@@ -1,4 +1,4 @@
-import { alpha } from '@mui/material';
+import { alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import constants from '@/app/styles/constants';
 

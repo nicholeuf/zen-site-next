@@ -1,7 +1,8 @@
-import AppBar from '@mui/material/AppBar';
-import { alpha } from '@mui/material/styles';
-
-import constants from '@/app/styles/constants';
+import {
+  DEFAULT_HEIGHT,
+  DEFAULT_COLOR,
+  DEFAULT_ACTIVE_COLOR,
+} from './constants';
 import HeaderLogo from './HeaderLogo';
 import MainNavigation from './MainNavigation';
 import HeaderAppBar from './HeaderAppBar';
@@ -11,10 +12,6 @@ interface HeaderProps {
   activeColor?: string;
   height?: string;
 }
-
-export const DEFAULT_HEIGHT = constants.header.height;
-export const DEFAULT_COLOR = constants.colors.carob;
-export const DEFAULT_ACTIVE_COLOR = constants.colors.guava;
 
 const Header: React.FC<HeaderProps> = ({
   color = DEFAULT_COLOR,

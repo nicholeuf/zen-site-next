@@ -1,15 +1,13 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/nextjs-vite';
 
-import Box from '@mui/material/Box';
-
-import constants from '@/app/styles/constants';
 import HeaderLogo from './HeaderLogo';
 import HeaderAppBar from './HeaderAppBar';
-
-const HEIGHT = constants.header.height;
-const COLOR = constants.colors.carob;
-const ACTIVE_COLOR = constants.colors.guava;
+import {
+  DEFAULT_COLOR,
+  DEFAULT_HEIGHT,
+  DEFAULT_ACTIVE_COLOR,
+} from './constants';
 
 type Props = React.ComponentProps<typeof HeaderLogo>;
 
@@ -24,7 +22,11 @@ const meta: Meta<typeof HeaderLogo> = {
   },
   decorators: [
     (Story) => (
-      <HeaderAppBar color={COLOR} height={HEIGHT} hasBottomBorder={false}>
+      <HeaderAppBar
+        color={DEFAULT_COLOR}
+        height={DEFAULT_HEIGHT}
+        hasBottomBorder={false}
+      >
         <Story />
       </HeaderAppBar>
     ),
@@ -37,8 +39,8 @@ type Story = StoryObj<Props>;
 
 export const Playground: Story = {
   args: {
-    width: HEIGHT,
-    color: COLOR,
-    activeColor: ACTIVE_COLOR,
+    width: DEFAULT_HEIGHT,
+    color: DEFAULT_COLOR,
+    activeColor: DEFAULT_ACTIVE_COLOR,
   },
 };
