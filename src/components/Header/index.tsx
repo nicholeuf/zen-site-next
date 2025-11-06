@@ -4,6 +4,7 @@ import { alpha } from '@mui/material/styles';
 import constants from '@/app/styles/constants';
 import HeaderLogo from './HeaderLogo';
 import MainNavigation from './MainNavigation';
+import HeaderAppBar from './HeaderAppBar';
 
 interface HeaderProps {
   color?: string;
@@ -21,24 +22,7 @@ const Header: React.FC<HeaderProps> = ({
   height = DEFAULT_HEIGHT,
 }) => {
   return (
-    <AppBar
-      data-testid="header"
-      position="fixed"
-      color="transparent"
-      sx={{
-        backgroundColor: alpha(constants.colors.cream, 0.85),
-        backdropFilter: 'blur(8px)',
-        borderBottom: `3px solid ${color}`,
-        minHeight: height,
-        height,
-        fontWeight: 700,
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        boxShadow: 'none',
-      }}
-    >
+    <HeaderAppBar color={color} height={height}>
       <HeaderLogo
         // width === height of header to make logo a box
         width={height}
@@ -46,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({
         activeColor={activeColor}
       />
       <MainNavigation color={color} activeColor={activeColor} />
-    </AppBar>
+    </HeaderAppBar>
   );
 };
 
