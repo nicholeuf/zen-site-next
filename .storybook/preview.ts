@@ -5,8 +5,8 @@ import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
 import theme from '../src/app/styles/theme';
 import GlobalStyles from '../src/app/styles/GlobalStyles';
-import MuiCacheDecorator from './MuiCacheDecorator';
-import NextRouterDecorator from './NextRouterDecorator';
+import MuiCacheDecorator from '../utils/MuiCacheDecorator';
+import NextRouterDecorator from '../utils/NextRouterDecorator';
 
 import constants from '../src/app/styles/constants';
 
