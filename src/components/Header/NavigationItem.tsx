@@ -21,8 +21,14 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
     borderBottomColor: activeColor,
   };
 
+  const linkHoverFocusStyle = {
+    color: activeColor,
+    textDecoration: 'none',
+    transform: 'scale(1.2)',
+  };
+
   return (
-    <ListItem key={href}>
+    <ListItem key={href} data-testid="header-nav-item">
       <NextLink
         href={href}
         aria-current={isActive ? 'page' : undefined}
@@ -39,11 +45,8 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
             }),
           transformOrigin: 'center',
           willChange: 'transform',
-          '&:hover': {
-            color: activeColor,
-            textDecoration: 'none',
-            transform: 'scale(1.2)',
-          },
+          '&:hover': linkHoverFocusStyle,
+          '&:focus-visible': linkHoverFocusStyle,
         }}
       >
         {name}
