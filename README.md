@@ -51,6 +51,34 @@ To start Storybook locally:
 pnpm storybook
 ```
 
+### Storybook interactions & hover
+
+Notes on why some visual states are implemented via Storybook interactions and the
+`storybook-addon-pseudo-states` addon:
+
+- Focus-visible: keyboard focus is best demonstrated with Storybook play interactions
+  (we use `userEvent.tab()` in the `FocusVisible` story). Programmatic focus via the
+  interactions API ensures the component receives the same :focus-visible styles that
+  keyboard users see in the app.
+- Hover: due to differences in how Storybook (and headless browsers) handle synthetic
+  pointer events, the CSS `:hover` pseudo-class may not always paint reliably during
+  play interactions. To ensure visual coverage in Storybook we include the
+  `storybook-addon-pseudo-states` addon (already configured in this project) which
+  can render `:hover`/`:active` states in the canvas. Additionally, some stories
+  include low-level event dispatches (e.g. `pointerOver`, `mouseEnter`) before
+  calling `userEvent.hover()` as a fallback to trigger the pseudo-state when needed.
+
+Debug tips:
+
+- Open the browser devtools while viewing the story and check the console for the
+  play function logs (some Hover stories log computed styles to help debug).
+- If hover isn't appearing in CI or headless runs, try running Storybook locally
+  (non-headless) to confirm it's a paint/timing issue. Increasing a small delay in
+  the story's `play` function often helps.
+- If you want deterministic assertions for CI, consider using a test-only attribute
+  toggle (onMouseEnter/onMouseLeave) or asserting the presence of a class instead of
+  relying on the browser's pseudo-class rendering.
+
 ## Testing
 
 This project uses Vitest for unit and integration tests and integrates Storybook tests via the Storybook Vitest addon.
