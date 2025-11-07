@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import List from '@mui/material/List';
+import { within } from '@testing-library/dom';
 
 import NavigationItem from './NavigationItem';
 import { DEFAULT_ACTIVE_COLOR, DEFAULT_COLOR } from './constants';
@@ -10,7 +11,9 @@ type Props = React.ComponentProps<typeof NavigationItem>;
 const meta: Meta<typeof NavigationItem> = {
   title: 'Components/Header/NavigationItem',
   component: NavigationItem,
-  parameters: { layout: 'padded' },
+  parameters: {
+    layout: 'padded',
+  },
   argTypes: {
     isActive: { control: 'boolean' },
     activeColor: { control: 'color' },
@@ -18,6 +21,7 @@ const meta: Meta<typeof NavigationItem> = {
     href: { control: 'text' },
     name: { control: 'text' },
   },
+
   decorators: [
     (Story) => (
       <List
@@ -57,4 +61,21 @@ export const Active: Story = {
 export const Inactive: Story = {
   ...Playground,
   args: { ...Playground.args, isActive: false },
+};
+
+export const FocusVisible: Story = {
+  ...Playground,
+  args: Playground.args,
+  play: async ({ canvasElement, userEvent }) => {
+    const canvas = within(canvasElement as HTMLElement);
+    await userEvent.tab(canvas.getByRole('link'));
+  },
+};
+
+export const Hover: Story = {
+  ...Playground,
+  args: Playground.args,
+  parameters: {
+    pseudo: { hover: true },
+  },
 };

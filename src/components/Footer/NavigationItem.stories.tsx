@@ -46,17 +46,18 @@ export const Playground: Story = {
 };
 
 export const FocusVisible: Story = {
-  render: (args) => (
-    <NavigationItem {...args}>
-      <LinkedInIcon sx={{ color: constants.colors.cream }} />
-    </NavigationItem>
-  ),
-  args: {
-    href: 'https://example.com',
-    ariaLabel: 'LinkedIn (opens in new window)',
-  },
+  ...Playground,
+  args: Playground.args,
   play: async ({ canvasElement, userEvent }) => {
     const canvas = within(canvasElement as HTMLElement);
     await userEvent.tab(canvas.getByRole('link'));
+  },
+};
+
+export const Hover: Story = {
+  ...Playground,
+  args: Playground.args,
+  parameters: {
+    pseudo: { hover: true },
   },
 };
