@@ -34,19 +34,36 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         aria-current={isActive ? 'page' : undefined}
         sx={{
           ...(isActive && activeStyle),
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
           boxSizing: 'border-box',
           letterSpacing: '1.25px',
           height: '100%',
+          padding: 1,
+          borderRadius: 1,
+          outline: 'none',
           textDecoration: 'none',
           color,
           transition: (theme) =>
-            theme.transitions.create(['color', 'transform'], {
-              duration: theme.transitions.duration.shortest,
-            }),
+            theme.transitions.create(
+              ['background-color', 'color', 'transform'],
+              {
+                duration: theme.transitions.duration.shortest,
+              }
+            ),
           transformOrigin: 'center',
           willChange: 'transform',
-          '&:hover': linkHoverFocusStyle,
-          '&:focus-visible': linkHoverFocusStyle,
+          '&:hover': {
+            ...linkHoverFocusStyle,
+            // backgroundColor: (theme) => theme.palette.action.hover,
+          },
+          '&:focus-visible': {
+            ...linkHoverFocusStyle,
+            // outline: (theme) => `2px solid ${theme.palette.primary.main}`,
+            // outlineOffset: 2,
+            // backgroundColor: (theme) => theme.palette.action.focus,
+          },
         }}
       >
         {name}
