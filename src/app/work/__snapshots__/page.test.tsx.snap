@@ -35,7 +35,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
         >
           <a
             aria-current="page"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1dpei8n-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-19ii20p-MuiTypography-root-MuiLink-root"
             href="/work"
           >
             Work
@@ -45,7 +45,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ycwl3y-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-sx4ayl-MuiTypography-root-MuiLink-root"
             href="/about"
           >
             About
@@ -55,7 +55,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ycwl3y-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-sx4ayl-MuiTypography-root-MuiLink-root"
             href="/contact"
           >
             Contact
@@ -65,7 +65,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-cfd5wn-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ycwl3y-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-sx4ayl-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home

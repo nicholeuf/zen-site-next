@@ -28,7 +28,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
   };
 
   return (
-    <ListItem key={href} data-testid="header-nav-item">
+    <ListItem key={href}>
       <NextLink
         href={href}
         aria-current={isActive ? 'page' : undefined}
