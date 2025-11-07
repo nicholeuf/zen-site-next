@@ -38,7 +38,6 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
           ...(isActive && activeStyle),
           boxSizing: 'border-box',
           letterSpacing: '1.25px',
-          lineHeight: '100%',
           height: '100%',
           p: 1,
           textDecoration: 'none',

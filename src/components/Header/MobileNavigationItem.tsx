@@ -35,6 +35,7 @@ const MobileNavigationItem: React.FC<MobileNavigationItemProps> = ({
         aria-current={isActive ? 'page' : undefined}
         sx={{
           ...(isActive && activeStyle),
+          p: 1,
           color: 'background.default',
 
           '&:hover': {
