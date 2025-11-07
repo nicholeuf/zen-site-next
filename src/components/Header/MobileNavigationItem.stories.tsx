@@ -1,6 +1,5 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import { action } from 'storybook/actions';
 import List from '@mui/material/List';
 
 import MobileNavigationItem from './MobileNavigationItem';
@@ -42,7 +41,6 @@ export const Playground: Story = {
     activeColor: DEFAULT_ACTIVE_COLOR,
     href: '/about',
     name: 'About',
-    onClick: action('close mobile navigation'),
   },
 };
 
