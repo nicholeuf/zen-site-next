@@ -8,6 +8,9 @@ import NavigationItem from './NavigationItem';
 import { within } from '@testing-library/dom';
 
 import constants from '../../app/styles/constants';
+import { footerLinks } from '../Footer/constants';
+
+const footerLink = footerLinks[0];
 
 const meta: Meta<typeof NavigationItem> = {
   title: 'Components/Footer/NavigationItem',
@@ -40,8 +43,8 @@ export const Playground: Story = {
     </NavigationItem>
   ),
   args: {
-    href: 'https://example.com',
-    ariaLabel: 'LinkedIn (opens in new window)',
+    href: footerLink.href,
+    ariaLabel: footerLink.ariaLabel,
   },
 };
 
