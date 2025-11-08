@@ -17,7 +17,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
   name,
 }) => {
   const activeStyle = {
-    borderBottom: '4px solid',
+    // only change the color when active; base border is transparent so items don't shift
     borderBottomColor: activeColor,
   };
 
@@ -35,6 +35,8 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         href={href}
         aria-current={isActive ? 'page' : undefined}
         sx={{
+          // reserve the same bottom border space for all items to avoid layout shift
+          borderBottom: '4px solid transparent',
           ...(isActive && activeStyle),
           boxSizing: 'border-box',
           letterSpacing: '1.25px',
