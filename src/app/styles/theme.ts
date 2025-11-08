@@ -1,6 +1,17 @@
 'use client';
 import { Inter, Sacramento } from 'next/font/google';
 import { createTheme, responsiveFontSizes, Theme } from '@mui/material/styles';
+import type { ButtonProps } from '@mui/material/Button';
+import type { IconButtonProps } from '@mui/material/IconButton';
+import type { LinkProps } from '@mui/material/Link';
+
+// Helper for typing styleOverride callbacks: MUI passes an object containing
+// the theme and (optionally) ownerState for the component. We declare a
+// small generic alias so we can annotate the full `props` parameter clearly.
+type OverrideProps<OwnerState = any> = {
+  theme: Theme;
+  ownerState?: OwnerState;
+};
 import mediaQuery from 'css-mediaquery';
 
 import constants from './constants';
@@ -134,7 +145,7 @@ const theme = (deviceType: DeviceType) => {
           underline: 'hover',
         },
         styleOverrides: {
-          root: (props: any) => {
+          root: (props: OverrideProps<LinkProps>) => {
             const parts = buildInteractiveParts(props.theme);
             return {
               color: linkStyles.color,
@@ -151,12 +162,14 @@ const theme = (deviceType: DeviceType) => {
       },
       MuiButton: {
         styleOverrides: {
-          root: (props: any) => buildInteractiveParts(props.theme).root,
+          root: (props: OverrideProps<ButtonProps>) =>
+            buildInteractiveParts(props.theme).root,
         },
       },
       MuiIconButton: {
         styleOverrides: {
-          root: (props: any) => buildInteractiveParts(props.theme).root,
+          root: (props: OverrideProps<IconButtonProps>) =>
+            buildInteractiveParts(props.theme).root,
         },
       },
     },
