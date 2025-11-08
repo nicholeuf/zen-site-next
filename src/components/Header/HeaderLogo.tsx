@@ -36,6 +36,7 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
           textAlign: 'center',
           '&:hover': {
             color: activeColor,
+            textDecoration: 'none',
           },
           '&::before': {
             content: '"nf"',

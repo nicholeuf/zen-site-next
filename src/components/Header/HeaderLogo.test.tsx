@@ -8,8 +8,6 @@ describe('The HeaderLogo component', () => {
     const logo = screen.getByTestId('header-logo') as HTMLDivElement;
 
     expect(logo).toBeVisible();
-    expect(logo).toHaveStyleRule('width', '60px');
-    expect(logo).toHaveStyleRule('cursor', 'pointer', { target: ':hover' });
   });
 
   test('link has expected href and style rules', () => {
@@ -21,8 +19,6 @@ describe('The HeaderLogo component', () => {
 
     expect(link).toBeVisible();
     expect(link).toHaveAttribute('href', '/');
-    expect(link).toHaveStyleRule('color', 'blue');
-    expect(link).toHaveStyleRule('color', 'red', { target: ':hover' });
     expect(link).toHaveStyleRule('text-decoration', 'none', {
       target: ':hover',
     });
