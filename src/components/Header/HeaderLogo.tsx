@@ -23,9 +23,6 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        '&:hover': {
-          cursor: 'pointer',
-        },
         p: 1,
       }}
       data-testid="header-logo"
@@ -39,7 +36,6 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
           textAlign: 'center',
           '&:hover': {
             color: activeColor,
-            textDecoration: 'none',
           },
           '&::before': {
             content: '"nf"',
