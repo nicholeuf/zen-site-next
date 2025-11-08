@@ -159,16 +159,6 @@ const theme = (deviceType: DeviceType) => {
           root: (props: any) => buildInteractiveParts(props.theme).root,
         },
       },
-      MuiListItemButton: {
-        styleOverrides: {
-          root: (props: any) => buildInteractiveParts(props.theme).root,
-        },
-      },
-      MuiMenuItem: {
-        styleOverrides: {
-          root: (props: any) => buildInteractiveParts(props.theme).root,
-        },
-      },
     },
   });
 
