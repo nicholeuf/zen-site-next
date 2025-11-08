@@ -47,14 +47,12 @@ const theme = (deviceType: DeviceType) => {
   // returns both a `root` style (for component styleOverrides) and separate
   // hover/focus pieces for use in global baseline selectors.
   const buildInteractiveParts = (t: Theme) => {
-    const transition =
-      'color 150ms ease, background-color 150ms ease, box-shadow 150ms ease';
+    const transition = 'color 150ms ease, background-color 150ms ease';
     const hover = { backgroundColor: t.palette.action.hover };
     const focus = {
       backgroundColor: t.palette.action.focus,
       outline: `3px solid ${t.palette.primary.main}`,
       outlineOffset: 3,
-      borderRadius: 4,
     };
 
     const root = {
