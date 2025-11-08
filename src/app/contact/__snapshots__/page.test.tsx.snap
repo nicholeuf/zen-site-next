@@ -12,7 +12,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
       data-testid="header-logo"
     >
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1se9sxj-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-iyrgct-MuiTypography-root-MuiLink-root"
         href="/"
       >
         <span
@@ -34,7 +34,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1oykfm1-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-45acj5-MuiTypography-root-MuiLink-root"
             href="/work"
           >
             Work
@@ -44,7 +44,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1oykfm1-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-45acj5-MuiTypography-root-MuiLink-root"
             href="/about"
           >
             About
@@ -54,7 +54,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1oykfm1-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-45acj5-MuiTypography-root-MuiLink-root"
             href="/contact"
           >
             Contact
@@ -64,7 +64,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1l5ioub-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1oykfm1-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-45acj5-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home
@@ -159,7 +159,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-j73b8q-MuiButtonBase-root-MuiIconButton-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-1wbhqqy-MuiButtonBase-root-MuiIconButton-root"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 tabindex="0"
@@ -183,7 +183,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-j73b8q-MuiButtonBase-root-MuiIconButton-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-1wbhqqy-MuiButtonBase-root-MuiIconButton-root"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 tabindex="0"
@@ -254,7 +254,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
           </a>
            | 
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-1f8dl83-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-4uie6z-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
