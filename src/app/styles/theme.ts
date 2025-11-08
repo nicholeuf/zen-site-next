@@ -139,13 +139,11 @@ const theme = (deviceType: DeviceType) => {
           root: (props: any) => {
             const parts = buildInteractiveParts(props.theme);
             return {
-              // base link visuals
               color: linkStyles.color,
               textDecoration: linkStyles.textDecoration,
-              // merge interactive defaults, then ensure link textDecoration on hover
-              ...parts.root,
+              transition: parts.transitionRule.transition,
               '&:hover': {
-                ...(parts.root['&:hover'] || {}),
+                ...parts.hoverRule,
                 ...linkStyles['&:hover'],
               },
               '&:focus-visible, &.Mui-focusVisible': parts.focusRule,
