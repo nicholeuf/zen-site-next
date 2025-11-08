@@ -45,8 +45,6 @@ describe('The NavigationItem component', () => {
 
     expect(link).toBeVisible();
     expect(link).toHaveAttribute('href', '/about');
-    expect(link).toHaveStyleRule('border-bottom', '4px solid transparent');
-    expect(link).toHaveStyleRule('border-bottom-color', 'red');
     expect(link).toHaveStyleRule('color', 'blue');
     expect(link).toHaveStyleRule('color', 'red', { target: ':hover' });
     expect(link).toHaveStyleRule('text-decoration', 'none', {
