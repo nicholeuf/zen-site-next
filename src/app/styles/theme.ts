@@ -143,18 +143,14 @@ const theme = (deviceType: DeviceType) => {
       MuiLink: {
         defaultProps: {
           underline: 'hover',
+          color: 'primary',
         },
         styleOverrides: {
           root: (props: OverrideProps<LinkProps>) => {
             const parts = buildInteractiveParts(props.theme);
             return {
-              color: linkStyles.color,
-              textDecoration: linkStyles.textDecoration,
               transition: parts.transitionRule.transition,
-              '&:hover': {
-                ...parts.hoverRule,
-                ...linkStyles['&:hover'],
-              },
+              '&:hover': parts.hoverRule,
               '&:focus-visible, &.Mui-focusVisible': parts.focusRule,
             };
           },
