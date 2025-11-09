@@ -134,8 +134,11 @@ const theme = (deviceType: DeviceType) => {
             // hover for native elements
             'a:hover, button:hover, [role="button"]:hover, [role="link"]:hover':
               parts.hoverRule,
-            // focus-visible for native elements
-            'a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, [role="button"]:focus-visible, [role="link"]:focus-visible, [tabindex]:focus-visible':
+            // focus-visible for native interactive elements only.
+            // NOTE: removed the overly-broad `[tabindex]:focus-visible` selector
+            // to avoid applying focus styles to non-interactive elements that
+            // may carry tabindex for other reasons.
+            'a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, [role="button"]:focus-visible, [role="link"]:focus-visible':
               parts.focusRule,
           };
         },
