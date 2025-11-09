@@ -38,8 +38,8 @@ export default meta;
 type Story = StoryObj<NextLinkProps>;
 
 const Template: Story = {
-  render: ({ children, ...args }: NextLinkProps) => (
-    <NextLink {...args}>{children}</NextLink>
+  render: (args) => (
+    <NextLink {...(args as NextLinkProps)}>{args.children}</NextLink>
   ),
 };
 
@@ -55,24 +55,7 @@ export const Playground: Story = {
   },
 };
 
-export const UnderlineVariants: Story = {
-  args: { children: 'The quick brown fox jumps over the lazy dog.' },
-  render: ({ children, ...args }: NextLinkProps) => (
-    <Stack spacing={1}>
-      <NextLink underline="none" {...args} href="#">
-        none — {children}
-      </NextLink>
-      <NextLink underline="hover" {...args} href="#">
-        hover — {children}
-      </NextLink>
-      <NextLink underline="always" {...args} href="#">
-        always — {children}
-      </NextLink>
-    </Stack>
-  ),
-};
-
-export const NextLinkExample: Story = {
+export const InternalLink: Story = {
   ...Template,
   args: {
     children: 'Go to About (NextLink wrapper)',
