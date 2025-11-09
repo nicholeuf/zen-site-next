@@ -12,7 +12,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
       data-testid="header-logo"
     >
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-iyrgct-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-dkpksc-MuiTypography-root-MuiLink-root"
         href="/"
       >
         <span
@@ -34,7 +34,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1w7t2pf-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
             href="/work"
           >
             Work
@@ -44,7 +44,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1w7t2pf-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
             href="/about"
           >
             About
@@ -54,7 +54,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1w7t2pf-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
             href="/contact"
           >
             Contact
@@ -64,7 +64,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1w7t2pf-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home
@@ -123,7 +123,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
             </strong>
              could not be found. Would you like to go to the 
             <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-13vqotz-MuiTypography-root-MuiLink-root"
+              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ca5kl3-MuiTypography-root-MuiLink-root"
               href="/"
             >
               Home Page

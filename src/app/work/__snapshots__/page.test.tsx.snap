@@ -12,7 +12,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
       data-testid="header-logo"
     >
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-iyrgct-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-dkpksc-MuiTypography-root-MuiLink-root"
         href="/"
       >
         <span
@@ -35,7 +35,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
         >
           <a
             aria-current="page"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-oros3o-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-pbupbn-MuiTypography-root-MuiLink-root"
             href="/work"
           >
             Work
@@ -45,7 +45,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1w7t2pf-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
             href="/about"
           >
             About
@@ -55,7 +55,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1w7t2pf-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
             href="/contact"
           >
             Contact
@@ -65,7 +65,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1w7t2pf-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home
