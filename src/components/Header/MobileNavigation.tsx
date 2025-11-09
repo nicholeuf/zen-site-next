@@ -77,6 +77,9 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          p: 1,
+          width: constants.header.height,
+          height: constants.header.height,
         }}
       >
         <IconButton
@@ -86,6 +89,11 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
           aria-label="Mobile Navigation Trigger"
           aria-expanded={open}
           ref={openButtonRef}
+          sx={{
+            width: '100%',
+            height: '100%',
+            ml: 0,
+          }}
         >
           <MenuIcon color="secondary" fontSize="large" />
         </IconButton>
@@ -139,6 +147,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                p: 1,
               }}
             >
               <Typography
@@ -151,15 +160,28 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
                 nf
               </Typography>
             </Box>
-            <IconButton
-              edge="start"
-              color="inherit"
-              onClick={handleClose}
-              aria-label="Close Mobile Navigation"
-              ref={closeButtonRef}
+            <Box
+              sx={{
+                p: 1,
+                width: constants.header.height,
+                height: constants.header.height,
+              }}
             >
-              <CloseIcon fontSize="large" />
-            </IconButton>
+              <IconButton
+                edge="start"
+                color="inherit"
+                onClick={handleClose}
+                aria-label="Close Mobile Navigation"
+                ref={closeButtonRef}
+                sx={{
+                  height: '100%',
+                  width: '100%',
+                  ml: 0,
+                }}
+              >
+                <CloseIcon fontSize="large" />
+              </IconButton>
+            </Box>
           </Toolbar>
           <DialogContent>
             <VisuallyHidden

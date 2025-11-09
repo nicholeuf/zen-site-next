@@ -1,3 +1,11 @@
+### 2025-11-09 [*](https://github.com/nicholeuf/zen-site-next/pull/160)
+
+#### Changed
+
+- Add theme-aware hover and focus-visible styles across components and native elements for consistent interactivity
+- Improve header spacing and alignment; refine navigation active indicator with animated underline
+- Simplify link and button styling via shared helper and adjust Storybook a11y checks to todo
+
 ### 2025-11-06 [*](https://github.com/nicholeuf/zen-site-next/pull/157)
 
 #### Changed

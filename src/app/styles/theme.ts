@@ -1,6 +1,17 @@
 'use client';
 import { Inter, Sacramento } from 'next/font/google';
-import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes, Theme } from '@mui/material/styles';
+import type { ButtonProps } from '@mui/material/Button';
+import type { IconButtonProps } from '@mui/material/IconButton';
+import type { LinkProps } from '@mui/material/Link';
+
+// Helper for typing styleOverride callbacks: MUI passes an object containing
+// the theme and (optionally) ownerState for the component. We declare a
+// small generic alias so we can annotate the full `props` parameter clearly.
+type OverrideProps<OwnerState = any> = {
+  theme: Theme;
+  ownerState?: OwnerState;
+};
 import mediaQuery from 'css-mediaquery';
 
 import constants from './constants';
@@ -41,11 +52,33 @@ const theme = (deviceType: DeviceType) => {
     '&:hover': {
       textDecoration: 'underline',
     },
-    '&:focus-visible': {
-      outline: 'auto 5px -webkit-focus-ring-color',
-      outlineOffset: '3px',
-    },
   } as const;
+
+  // helper that returns the common interactive styles for many MUI components
+  // returns both a `root` style (for component styleOverrides) and separate
+  // hover/focus pieces for use in global baseline selectors.
+  const buildInteractiveParts = (t: Theme) => {
+    const transition = 'color 150ms ease, background-color 150ms ease';
+    const hover = { backgroundColor: t.palette.action.hover };
+    const focus = {
+      backgroundColor: t.palette.action.focus,
+      outline: `3px solid ${t.palette.primary.main}`,
+      outlineOffset: 3,
+    };
+
+    const root = {
+      transition,
+      '&:hover': hover,
+      '&:focus-visible, &.Mui-focusVisible': focus,
+    };
+
+    return {
+      root,
+      transitionRule: { transition },
+      hoverRule: hover,
+      focusRule: focus,
+    };
+  };
 
   const mainTheme = createTheme({
     spacing: 8,
@@ -81,20 +114,61 @@ const theme = (deviceType: DeviceType) => {
         },
       },
       MuiCssBaseline: {
-        styleOverrides: {
-          body: {
-            overflowX: 'hidden',
-            maxWidth: '100vw',
-          },
-          a: linkStyles,
+        // Make CssBaseline a theme-aware override so global <a> can use theme.palette.primary.main
+        styleOverrides: (themeParam: Theme) => {
+          const parts = buildInteractiveParts(themeParam);
+          return {
+            body: {
+              overflowX: 'hidden',
+              maxWidth: '100vw',
+            },
+            // transitions for native interactive elements (use the same transition string)
+            'a, button, [role="button"], [role="link"]': {
+              transition: parts.transitionRule.transition,
+            },
+            // base link styles
+            a: {
+              ...linkStyles,
+              '&:focus-visible': parts.focusRule,
+            },
+            // hover for native elements
+            'a:hover, button:hover, [role="button"]:hover, [role="link"]:hover':
+              parts.hoverRule,
+            // focus-visible for native interactive elements only.
+            // NOTE: removed the overly-broad `[tabindex]:focus-visible` selector
+            // to avoid applying focus styles to non-interactive elements that
+            // may carry tabindex for other reasons.
+            'a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, [role="button"]:focus-visible, [role="link"]:focus-visible':
+              parts.focusRule,
+          };
         },
       },
       MuiLink: {
         defaultProps: {
           underline: 'hover',
+          color: 'primary',
         },
         styleOverrides: {
-          root: linkStyles,
+          root: (props: OverrideProps<LinkProps>) => {
+            const parts = buildInteractiveParts(props.theme);
+            return {
+              transition: parts.transitionRule.transition,
+              '&:hover': parts.hoverRule,
+              '&:focus-visible, &.Mui-focusVisible': parts.focusRule,
+            };
+          },
+        },
+      },
+      MuiButton: {
+        styleOverrides: {
+          root: (props: OverrideProps<ButtonProps>) =>
+            buildInteractiveParts(props.theme).root,
+        },
+      },
+      MuiIconButton: {
+        styleOverrides: {
+          root: (props: OverrideProps<IconButtonProps>) =>
+            buildInteractiveParts(props.theme).root,
         },
       },
     },
