@@ -8,10 +8,14 @@ const config: StorybookConfig = {
     '@storybook/addon-a11y',
     '@storybook/addon-vitest',
     '@storybook/addon-themes',
+    'storybook-addon-pseudo-states'
   ],
   framework: {
     name: '@storybook/nextjs-vite',
     options: {},
+  },
+  features: {
+    actions: true,
   },
   staticDirs: ['../public'],
   viteFinal: async (config) => {

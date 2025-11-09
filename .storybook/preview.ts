@@ -1,17 +1,31 @@
 import type { Preview } from '@storybook/nextjs-vite';
 
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
+
 import theme from '../src/app/styles/theme';
 import GlobalStyles from '../src/app/styles/GlobalStyles';
-import NextRouterDecorator from './NextRouterDecorator';
+import MuiCacheDecorator from '../utils/MuiCacheDecorator';
+import NextRouterDecorator from '../utils/NextRouterDecorator';
+
+import constants from '../src/app/styles/constants';
 
 const preview: Preview = {
   parameters: {
+    nextjs: {
+      appDirectory: true,
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
+      },
+    },
+
+    backgrounds: {
+      options: {
+        cream: { name: 'cream', value: constants.colors.cream },
+        carob: { name: 'carob', value: constants.colors.carob },
       },
     },
 
@@ -23,9 +37,14 @@ const preview: Preview = {
     },
     //👇 Enables auto-generated documentation for all stories
     tags: ['autodocs'],
+    initialGlobals: {
+      // 👇 Set the initial background color
+      backgrounds: { value: 'cream' },
+    },
   },
 
   decorators: [
+    MuiCacheDecorator,
     withThemeFromJSXProvider({
       GlobalStyles,
       Provider: ThemeProvider,

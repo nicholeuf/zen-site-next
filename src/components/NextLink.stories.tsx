@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import Stack from '@mui/material/Stack';
+import { within } from '@testing-library/dom';
 
 import NextLink, { NextLinkProps } from './NextLink';
 
@@ -61,5 +61,22 @@ export const InternalLink: Story = {
     children: 'Go to About (NextLink wrapper)',
     href: '/about',
     underline: 'hover',
+  },
+};
+
+export const FocusVisible: Story = {
+  ...Playground,
+  args: Playground.args,
+  play: async ({ canvasElement, userEvent }) => {
+    const canvas = within(canvasElement as HTMLElement);
+    await userEvent.tab(canvas.getByRole('link'));
+  },
+};
+
+export const Hover: Story = {
+  ...Playground,
+  args: Playground.args,
+  parameters: {
+    pseudo: { hover: true },
   },
 };

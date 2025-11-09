@@ -1,27 +1,11 @@
-import List from '@mui/material/List';
 import Box from '@mui/material/Box';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GithubIcon from '@mui/icons-material/GitHub';
 
 import constants from '@/app/styles/constants';
+import NavigationList from './NavigationList';
 import NavigationItem from './NavigationItem';
+import { footerLinks } from './constants';
 
 const iconColor = constants.colors.cream;
-
-const links = [
-  {
-    slug: 'linkedin',
-    icon: LinkedInIcon,
-    href: 'https://www.linkedin.com/in/nicholeuf',
-    ariaLabel: 'LinkedIn (opens in new window)',
-  },
-  {
-    slug: 'github',
-    icon: GithubIcon,
-    href: 'https://github.com/nicholeuf',
-    ariaLabel: 'GitHub (opens in new window)',
-  },
-];
 
 const Navigation: React.FC = () => {
   return (
@@ -34,27 +18,13 @@ const Navigation: React.FC = () => {
         height: '100%',
       }}
     >
-      <List
-        sx={{
-          listStyle: 'none',
-          display: 'flex',
-          flexDirection: {
-            xs: 'row',
-            sm: 'column',
-          },
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          width: '100%',
-          height: '100%',
-          p: 0,
-        }}
-      >
-        {links.map((item) => (
+      <NavigationList>
+        {footerLinks.map((item) => (
           <NavigationItem key={item.slug} {...item}>
             <item.icon sx={{ color: iconColor }} />
           </NavigationItem>
         ))}
-      </List>
+      </NavigationList>
     </Box>
   );
 };

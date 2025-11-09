@@ -3,7 +3,7 @@
 exports[`The Not Found (404) Page > has expected snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed css-1p3daan-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed css-1ytkxrk-MuiPaper-root-MuiAppBar-root"
     data-testid="header"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
@@ -157,7 +157,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
             >
               <a
                 aria-label="LinkedIn (opens in new window)"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-1wbhqqy-MuiButtonBase-root-MuiIconButton-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-o8clt2-MuiButtonBase-root-MuiIconButton-root"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 tabindex="0"
@@ -181,7 +181,7 @@ exports[`The Not Found (404) Page > has expected snapshot 1`] = `
             >
               <a
                 aria-label="GitHub (opens in new window)"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-1wbhqqy-MuiButtonBase-root-MuiIconButton-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-o8clt2-MuiButtonBase-root-MuiIconButton-root"
                 href="https://github.com/nicholeuf"
                 rel="noopener"
                 tabindex="0"

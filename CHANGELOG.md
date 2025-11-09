@@ -1,3 +1,14 @@
+### 2025-11-09 [*](https://github.com/nicholeuf/zen-site-next/pull/146)
+
+#### Added
+
+- Add Storybook stories for header and footer components, including interaction and pseudo-state examples
+
+#### Changed
+
+- Upgrade Storybook to v10.0.5 and configure theme, MUI cache, backgrounds, and actions
+- Refactor header/footer into reusable subcomponents and improve Storybook documentation
+
 ### 2025-11-09 [*](https://github.com/nicholeuf/zen-site-next/pull/160)
 
 #### Changed
