@@ -167,8 +167,19 @@ const theme = (deviceType: DeviceType) => {
       },
       MuiIconButton: {
         styleOverrides: {
-          root: (props: OverrideProps<IconButtonProps>) =>
-            buildInteractiveParts(props.theme).root,
+          root: (props: OverrideProps<IconButtonProps>) => {
+            const parts = buildInteractiveParts(props.theme);
+            return {
+              ...parts.root,
+              // default icon buttons are round in this project (e.g. footer nav)
+              borderRadius: '50%',
+              // ensure focus-visible state keeps the round shape too
+              '&:focus-visible, &.Mui-focusVisible': {
+                ...parts.focusRule,
+                borderRadius: '50%',
+              },
+            };
+          },
         },
       },
     },
