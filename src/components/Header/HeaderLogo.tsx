@@ -18,14 +18,12 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
       sx={{
         typography: 'sacramento',
         fontSize: '30px',
-        height: '100%',
+        height: width,
         width,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        '&:hover': {
-          cursor: 'pointer',
-        },
+        p: 1,
       }}
       data-testid="header-logo"
     >
@@ -34,6 +32,7 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
         sx={{
           color,
           width: '100%',
+          height: '100%',
           textAlign: 'center',
           '&:hover': {
             color: activeColor,
@@ -41,6 +40,9 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
           },
           '&::before': {
             content: '"nf"',
+            width: '100%',
+            height: '100%',
+            display: 'block',
           },
         }}
       >
