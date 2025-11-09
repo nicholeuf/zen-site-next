@@ -1,4 +1,4 @@
-### 2025-11-01 [*](https://github.com/nicholeuf/zen-site-next/pull/146)
+### 2025-11-09 [*](https://github.com/nicholeuf/zen-site-next/pull/146)
 
 #### Added
 
