@@ -40,7 +40,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
           justifyContent: 'center',
           alignItems: 'center',
           p: 1,
-          borderRadius: '50%',
+          borderRadius: '50% !important',
           transition: (theme) =>
             theme.transitions.create(['background-color', 'transform'], {
               duration: theme.transitions.duration.shortest,
@@ -48,16 +48,13 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
           // Increase specificity so this rule overrides any less-specific
           // background rules (for example a global `a` or link reset).
           '&:hover': {
-            // backgroundColor: 'action.hover',
+            backgroundColor: 'action.hover',
             transform: 'scale(1.2)',
           },
           // Make keyboard focus look like a focused link (browser default)
           // so keyboard selection matches the ExternalLink-only appearance.
           '&:focus-visible': {
-            borderRadius: '50%',
-            // backgroundColor: 'action.focus',
-            // outline: (theme) => `2px solid ${theme.palette.primary.main}`,
-            // outlineOffset: 2,
+            borderRadius: '50% !important',
           },
         }}
         aria-label={ariaLabel}
