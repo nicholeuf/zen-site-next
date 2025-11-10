@@ -1,3 +1,9 @@
+### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/165)
+
+#### Changed
+
+- Made the GitHub Actions workflow badge in README clickable, linking to the workflow page
+
 ### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/163)
 
 #### Added
