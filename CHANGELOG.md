@@ -1,3 +1,9 @@
+### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/166)
+
+#### Changed
+
+- Prevent Storybook from being indexed by search engines using a noindex directive
+
 ### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/165)
 
 #### Changed
