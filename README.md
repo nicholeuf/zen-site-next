@@ -7,6 +7,7 @@
 
 ![github actions](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml/badge.svg)
 [![codecov](https://codecov.io/gh/nicholeuf/zen-site-next/graph/badge.svg?token=DVTFETZP3V)](https://codecov.io/gh/nicholeuf/zen-site-next)
+[![Storybook](https://img.shields.io/badge/Storybook-%23FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://nicholeuf.github.io/zen-site-next)
 
 This is a personal portfolio website for Nichole Frey, a Full-Stack Developer. Built with [Next.js](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -50,6 +51,8 @@ To start Storybook locally:
 ```bash
 pnpm storybook
 ```
+
+View the published Storybook: https://nicholeuf.github.io/zen-site-next
 
 ### Storybook interactions & hover
 
