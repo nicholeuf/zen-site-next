@@ -5,7 +5,7 @@
 ![Vitest](https://img.shields.io/badge/-vitest-%2349C5B6?style=for-the-badge&logo=vitest&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-![github actions](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml/badge.svg)
+[![github actions](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml/badge.svg)](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml)
 [![Deploy Storybook](https://github.com/nicholeuf/zen-site-next/actions/workflows/deploy-storybook.yml/badge.svg)](https://github.com/nicholeuf/zen-site-next/actions/workflows/deploy-storybook.yml)
 [![codecov](https://codecov.io/gh/nicholeuf/zen-site-next/graph/badge.svg?token=DVTFETZP3V)](https://codecov.io/gh/nicholeuf/zen-site-next)
 [![Storybook](https://img.shields.io/badge/Storybook-%23FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://nicholeuf.github.io/zen-site-next)
