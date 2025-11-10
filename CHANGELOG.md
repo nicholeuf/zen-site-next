@@ -1,3 +1,10 @@
+### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/163)
+
+#### Added
+
+- Automated CI workflow to build and deploy Storybook to GitHub Pages, with deployment badge and published link
+- Documentation covering Storybook deployment process and troubleshooting
+
 ### 2025-11-09 [*](https://github.com/nicholeuf/zen-site-next/pull/146)
 
 #### Added
