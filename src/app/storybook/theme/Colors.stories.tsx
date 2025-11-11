@@ -64,11 +64,13 @@ export const Palette: Story = {
     return (
       <Stack spacing={3} sx={{ p: 2 }}>
         <Typography variant="h6">MUI Palette</Typography>
-        <Stack direction="row" spacing={2} flexWrap="wrap">
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
           {paletteItems.map((p) => (
-            <Swatch key={p.name} name={p.name} value={p.value} />
+            <Box key={p.name} sx={{ display: 'block' }}>
+              <Swatch name={p.name} value={p.value} />
+            </Box>
           ))}
-        </Stack>
+        </Box>
       </Stack>
     );
   },
