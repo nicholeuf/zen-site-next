@@ -3,7 +3,7 @@
 exports[`The Work Page > has expected snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed css-1ytkxrk-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed css-1beuld8-MuiPaper-root-MuiAppBar-root"
     data-testid="header"
     style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
@@ -12,7 +12,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
       data-testid="header-logo"
     >
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-dkpksc-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-103hey5-MuiTypography-root-MuiLink-root"
         href="/"
       >
         <span
@@ -35,7 +35,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
         >
           <a
             aria-current="page"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-pbupbn-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-7nl3sr-MuiTypography-root-MuiLink-root"
             href="/work"
           >
             Work
@@ -45,7 +45,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-kyf1zo-MuiTypography-root-MuiLink-root"
             href="/about"
           >
             About
@@ -55,7 +55,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-kyf1zo-MuiTypography-root-MuiLink-root"
             href="/contact"
           >
             Contact
@@ -65,7 +65,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15ifes7-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-kyf1zo-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home
@@ -247,7 +247,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -261,7 +261,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -275,7 +275,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -289,7 +289,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -303,7 +303,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -317,7 +317,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -336,7 +336,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -350,7 +350,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -364,7 +364,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -378,7 +378,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -392,7 +392,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -406,7 +406,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -420,7 +420,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -434,7 +434,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -550,7 +550,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -564,7 +564,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -578,7 +578,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -592,7 +592,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -606,7 +606,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -620,7 +620,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -634,7 +634,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -648,7 +648,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -662,7 +662,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -676,7 +676,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -690,7 +690,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -704,7 +704,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -718,7 +718,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -737,7 +737,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -751,7 +751,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -765,7 +765,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -779,7 +779,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -793,7 +793,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -807,7 +807,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -821,7 +821,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -835,7 +835,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -849,7 +849,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -863,7 +863,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -877,7 +877,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -891,7 +891,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -905,7 +905,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -919,7 +919,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -933,7 +933,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -947,7 +947,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -1048,7 +1048,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -1062,7 +1062,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -1076,7 +1076,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -1090,7 +1090,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -1104,7 +1104,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -1118,7 +1118,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -1132,7 +1132,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -1146,7 +1146,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -1160,7 +1160,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-9ver3n-MuiChip-root"
+                  class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-x8e30r-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label"
@@ -1179,7 +1179,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -1193,7 +1193,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -1207,7 +1207,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -1221,7 +1221,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -1235,7 +1235,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -1249,7 +1249,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -1263,7 +1263,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
@@ -1277,7 +1277,7 @@ exports[`The Work Page > has expected snapshot 1`] = `
                 data-testid="chip-list-item"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-1mkgov0-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-outlinedPrimary css-kcnew6-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label MuiChip-labelSmall css-19m61dl-MuiChip-label"
