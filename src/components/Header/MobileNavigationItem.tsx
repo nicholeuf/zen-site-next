@@ -37,6 +37,7 @@ const MobileNavigationItem: React.FC<MobileNavigationItemProps> = ({
           ...(isActive && activeStyle),
           p: 1,
           color: 'background.default',
+          textDecoration: 'none',
 
           '&:hover': {
             textDecoration: 'none',
