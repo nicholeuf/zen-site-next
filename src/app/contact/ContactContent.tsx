@@ -10,12 +10,7 @@ interface ContactContent {
 const ContactContent: React.FC<ContactContent> = ({ chatEnabled }) => {
   const getCopy = () => {
     const LinkedInContent = (
-      <ExternalLink
-        href="https://www.linkedin.com/in/nicholeuf"
-        sx={{
-          fontWeight: '500',
-        }}
-      >
+      <ExternalLink href="https://www.linkedin.com/in/nicholeuf">
         LinkedIn
       </ExternalLink>
     );
