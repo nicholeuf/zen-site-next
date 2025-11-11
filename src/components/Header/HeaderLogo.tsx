@@ -34,6 +34,8 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
           width: '100%',
           height: '100%',
           textAlign: 'center',
+          // Ensure the generated logo letters don't get underlined by global link styles
+          textDecoration: 'none',
           '&:hover': {
             color: activeColor,
             textDecoration: 'none',
