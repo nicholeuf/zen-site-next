@@ -45,14 +45,7 @@ const ssrMatchMedia = (deviceType: DeviceType) => (query: string) => {
 // dark: will be calculated from palette.primary.main,
 // contrastText: will be calculated to contrast with palette.primary.main
 const theme = (deviceType: DeviceType) => {
-  // Shared link styles used for both MUI Link and global <a> elements.
-  const linkStyles = {
-    color: constants.colors.guava,
-    textDecoration: 'none',
-    '&:hover': {
-      textDecoration: 'underline',
-    },
-  } as const;
+  // Note: link styles are applied inline in CssBaseline below so MUI Link can inherit.
 
   // helper that returns the common interactive styles for many MUI components
   // returns both a `root` style (for component styleOverrides) and separate
@@ -89,6 +82,11 @@ const theme = (deviceType: DeviceType) => {
       },
       secondary: {
         main: constants.colors.carob,
+        contrastText: constants.colors.cream,
+      },
+      // ensure text uses the project's carob color by default
+      text: {
+        primary: constants.colors.carob,
       },
       background: {
         default: constants.colors.cream,
@@ -121,14 +119,24 @@ const theme = (deviceType: DeviceType) => {
             body: {
               overflowX: 'hidden',
               maxWidth: '100vw',
+              color: themeParam.palette.text.primary,
             },
             // transitions for native interactive elements (use the same transition string)
             'a, button, [role="button"], [role="link"]': {
               transition: parts.transitionRule.transition,
             },
-            // base link styles
+            // base link styles (inline so components can inherit)
             a: {
-              ...linkStyles,
+              // base link color should be the dark `carob` for good contrast;
+              // links are underlined by default so they remain visible when
+              // their color matches body text. Hover uses guava as the accent.
+              color: constants.colors.carob,
+              textDecoration: 'underline',
+              fontWeight: 700,
+              '&:hover': {
+                color: constants.colors.guava,
+                textDecoration: 'underline',
+              },
               '&:focus-visible': parts.focusRule,
             },
             // hover for native elements
@@ -145,14 +153,17 @@ const theme = (deviceType: DeviceType) => {
       },
       MuiLink: {
         defaultProps: {
-          underline: 'hover',
-          color: 'primary',
+          underline: 'always',
+          // let links inherit color so global `a` styles
+          // control the default color (carob) and hover accent (guava)
+          color: 'inherit',
         },
         styleOverrides: {
           root: (props: OverrideProps<LinkProps>) => {
             const parts = buildInteractiveParts(props.theme);
             return {
               transition: parts.transitionRule.transition,
+              fontWeight: 700,
               '&:hover': parts.hoverRule,
               '&:focus-visible, &.Mui-focusVisible': parts.focusRule,
             };
