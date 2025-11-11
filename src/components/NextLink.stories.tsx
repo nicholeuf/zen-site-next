@@ -38,9 +38,7 @@ export default meta;
 type Story = StoryObj<NextLinkProps>;
 
 const Template: Story = {
-  render: (args) => (
-    <NextLink {...(args as NextLinkProps)}>{args.children}</NextLink>
-  ),
+  render: ({ children, ...rest }) => <NextLink {...rest}>{children}</NextLink>,
 };
 
 export const Playground: Story = {
