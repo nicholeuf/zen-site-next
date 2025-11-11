@@ -49,7 +49,7 @@ export const Playground: Story = {
     children: 'Example link — The quick brown fox jumps over the lazy dog.',
     href: '#',
     underline: 'hover',
-    color: 'primary',
+    color: 'inherit',
     target: '_self',
     sx: {},
   },
