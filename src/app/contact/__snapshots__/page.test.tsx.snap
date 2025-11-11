@@ -122,7 +122,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
             >
               Please connect with me on 
               <a
-                class="MuiBox-root css-10rvbm3"
+                class="MuiBox-root css-0"
                 href="https://www.linkedin.com/in/nicholeuf"
                 rel="noopener"
                 target="_blank"
