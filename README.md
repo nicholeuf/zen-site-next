@@ -148,3 +148,78 @@ Dev/Storybook (editor surface):
 ```bash
 pnpm -s tsc -p tsconfig.test.json
 ```
+
+## Code style & linting
+
+This project uses Biome for both linting and formatting. Biome is a drop-in
+replacement for ESLint + Prettier and is supported by Next.js. We recommend
+running the commands below during development and in CI.
+
+Install:
+
+```bash
+pnpm install --save-dev @biomejs/biome
+# or
+pnpm add -D @biomejs/biome
+```
+
+Developer commands (examples):
+
+```bash
+# Lint (quick check)
+pnpm lint           # runs `biome check` (see package.json scripts)
+
+# Format files in-place
+pnpm format         # runs `biome format --write`
+
+# To limit operations to the source directory, you can run
+pnpm exec biome check src
+pnpm exec biome format src --write
+```
+
+VS Code integration (recommended): install the Biome extension and add to
+.vscode/settings.json:
+
+```json
+{
+  "editor.defaultFormatter": "biome.run",
+  "editor.formatOnSave": true
+}
+```
+
+CI example (GitHub Actions)
+
+Add a small lint job to your existing workflow (or create a new one). This
+example runs Biome to check formatting and linting on pushes and pull requests:
+
+```yaml
+name: Lint
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Run Biome (lint)
+        run: pnpm exec biome check src
+
+      - name: Run Biome (CI checks)
+        run: pnpm exec biome ci src
+```
+
+Notes:
+- If you still need Next-specific lint rules that were provided by `next lint`,
+  keep ESLint or run `next lint` in CI. Newer Next installs support Biome as
+  an alternative linter during setup; consult Next docs if you rely on
+  Next-provided rules.
+- If you want Biome to only operate on `src`, add a small `.biome.json` to the
+  repo root with `{"files": ["src"]}` or pass `src` on the CLI as shown above.
