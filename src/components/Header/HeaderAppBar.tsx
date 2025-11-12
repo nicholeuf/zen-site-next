@@ -1,5 +1,5 @@
-import { alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
+import { alpha } from '@mui/material/styles';
 import constants from '@/app/styles/constants';
 
 interface HeaderAppBarProps {

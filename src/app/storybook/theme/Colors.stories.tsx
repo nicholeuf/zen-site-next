@@ -1,6 +1,6 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { Box, Stack, Typography, useTheme } from '@mui/material';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
+import React from 'react';
 import constants from '../../styles/constants';
 
 const meta: Meta = {

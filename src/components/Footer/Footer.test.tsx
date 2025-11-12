@@ -1,6 +1,6 @@
-import { render, screen, fireEvent, waitFor } from 'test-utils';
-import Footer from './index';
+import { fireEvent, render, screen, waitFor } from 'test-utils';
 import constants from '../../app/styles/constants';
+import Footer from './index';
 
 describe('The Footer component', () => {
   test('has expected style rules and contains a nav and copy', () => {

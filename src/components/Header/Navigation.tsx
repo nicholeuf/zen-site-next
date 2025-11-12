@@ -1,7 +1,7 @@
 import List from '@mui/material/List';
 import { usePathname } from 'next/navigation';
-import NavigationItem from './NavigationItem';
 import { navigationItems } from './constants';
+import NavigationItem from './NavigationItem';
 
 interface NavigationProps {
   color: string;

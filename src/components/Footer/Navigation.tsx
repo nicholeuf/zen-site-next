@@ -1,9 +1,9 @@
 import Box from '@mui/material/Box';
 
 import constants from '@/app/styles/constants';
-import NavigationList from './NavigationList';
-import NavigationItem from './NavigationItem';
 import { footerLinks } from './constants';
+import NavigationItem from './NavigationItem';
+import NavigationList from './NavigationList';
 
 const iconColor = constants.colors.cream;
 

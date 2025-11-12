@@ -1,8 +1,8 @@
 'use client';
 
 import ImageList from '@mui/material/ImageList';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import { Theme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 interface PhotosProps {
   children: NonNullable<React.ReactNode>;

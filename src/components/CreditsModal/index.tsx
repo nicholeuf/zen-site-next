@@ -1,9 +1,9 @@
-import { useState, useRef, useEffect } from 'react';
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Modal from '@mui/material/Modal';
 import IconButton from '@mui/material/IconButton';
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import Modal from '@mui/material/Modal';
+import { useEffect, useRef, useState } from 'react';
 
 import Credits from './Credits';
 

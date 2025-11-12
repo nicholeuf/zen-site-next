@@ -1,7 +1,7 @@
-import BackgroundImage from '@/components/BackgroundImage';
-import { ProfileImageProps } from './ProfileImage';
-import Content from './Content';
 import { CldImageProps } from 'next-cloudinary';
+import BackgroundImage from '@/components/BackgroundImage';
+import Content from './Content';
+import { ProfileImageProps } from './ProfileImage';
 
 export interface LandingPageProps {
   profileImageProps: ProfileImageProps;

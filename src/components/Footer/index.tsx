@@ -2,11 +2,10 @@
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
-import Navigation from './Navigation';
 import constants from '@/app/styles/constants';
-import ExternalLink from '@/components/ExternalLink';
 import CreditsModal from '@/components/CreditsModal';
+import ExternalLink from '@/components/ExternalLink';
+import Navigation from './Navigation';
 
 const smallGridTemplateAreas = `
 "nav"

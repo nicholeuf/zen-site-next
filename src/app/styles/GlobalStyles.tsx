@@ -1,9 +1,8 @@
 'use client';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-
-import theme from '@/app/styles/theme';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import DeviceType from 'types/DeviceType';
+import theme from '@/app/styles/theme';
 
 interface GlobalStylesProps {
   children: React.ReactNode;

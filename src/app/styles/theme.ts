@@ -1,9 +1,9 @@
 'use client';
-import { Inter, Sacramento } from 'next/font/google';
-import { createTheme, responsiveFontSizes, Theme } from '@mui/material/styles';
 import type { ButtonProps } from '@mui/material/Button';
 import type { IconButtonProps } from '@mui/material/IconButton';
 import type { LinkProps } from '@mui/material/Link';
+import { createTheme, responsiveFontSizes, Theme } from '@mui/material/styles';
+import { Inter, Sacramento } from 'next/font/google';
 
 // Helper for typing styleOverride callbacks: MUI passes an object containing
 // the theme and (optionally) ownerState for the component. We declare a
@@ -12,11 +12,11 @@ type OverrideProps<OwnerState = any> = {
   theme: Theme;
   ownerState?: OwnerState;
 };
-import mediaQuery from 'css-mediaquery';
 
-import constants from './constants';
+import mediaQuery from 'css-mediaquery';
 import DeviceType from 'types/DeviceType';
 import getWidthByDeviceType from '../ssrMediaQueries/getWidthByDeviceType';
+import constants from './constants';
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts#using-multiple-fonts
 export const inter = Inter({

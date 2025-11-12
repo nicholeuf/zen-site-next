@@ -1,6 +1,5 @@
-import { vi } from 'vitest';
-
 import headerMocks from 'utils/nextHeaderMock';
+import { vi } from 'vitest';
 import getDeviceType from './getDeviceType';
 
 describe('The getDeviceType function', () => {

@@ -1,13 +1,12 @@
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import { Metadata } from 'next';
-
-import PageContainer from '@/components/PageContainer';
-import Photos from './Photos';
-import Photo from './Photo';
-import { ItemDataPlaceholder, itemData } from './constants';
-import getPlaceholderImage from '../lib/getPlaceholderImage';
 import ImageDimensions from 'types/ImageDimensions';
+import PageContainer from '@/components/PageContainer';
+import getPlaceholderImage from '../lib/getPlaceholderImage';
+import { ItemDataPlaceholder, itemData } from './constants';
+import Photo from './Photo';
+import Photos from './Photos';
 
 export const metadata: Metadata = {
   title: 'About',

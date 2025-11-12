@@ -1,6 +1,6 @@
-import DeviceType from 'types/DeviceType';
 import { headers } from 'next/headers';
-import { UAParser, IDevice } from 'ua-parser-js';
+import DeviceType from 'types/DeviceType';
+import { IDevice, UAParser } from 'ua-parser-js';
 
 const getDeviceType = async (): Promise<DeviceType> => {
   // Parse deviceType from user agent header on server

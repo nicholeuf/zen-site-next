@@ -1,9 +1,8 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import List from '@mui/material/List';
-
-import MobileNavigationItem from './MobileNavigationItem';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
+import React from 'react';
 import { DEFAULT_ACTIVE_COLOR } from './constants';
+import MobileNavigationItem from './MobileNavigationItem';
 
 type Props = React.ComponentProps<typeof MobileNavigationItem>;
 

@@ -1,18 +1,17 @@
-import { vi } from 'vitest';
-
-import navigationMocks from 'utils/nextNavigationMock';
-import mockGetPlaceholderImage from './lib/getPlaceholderImage.mock';
-import {
-  renderWithLayout,
-  screen,
-  renderSnapshotWithLayout,
-  resetMatchMedia,
-  XS_DEVICE,
-  MD_DEVICE,
-  waitFor,
-  resolvedComponent,
-} from 'test-utils';
 import userEvent from '@testing-library/user-event';
+import {
+  MD_DEVICE,
+  renderSnapshotWithLayout,
+  renderWithLayout,
+  resetMatchMedia,
+  resolvedComponent,
+  screen,
+  waitFor,
+  XS_DEVICE,
+} from 'test-utils';
+import navigationMocks from 'utils/nextNavigationMock';
+import { vi } from 'vitest';
+import mockGetPlaceholderImage from './lib/getPlaceholderImage.mock';
 
 import HomePage from './page';
 

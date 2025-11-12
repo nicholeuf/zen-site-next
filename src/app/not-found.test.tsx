@@ -1,13 +1,13 @@
-import { vi } from 'vitest';
-
-import navigationMocks from 'utils/nextNavigationMock';
 import {
-  renderWithLayout,
-  screen,
   renderSnapshotWithLayout,
+  renderWithLayout,
   resetMatchMedia,
+  screen,
   XS_DEVICE,
 } from 'test-utils';
+
+import navigationMocks from 'utils/nextNavigationMock';
+import { vi } from 'vitest';
 
 import NotFound from './not-found';
 

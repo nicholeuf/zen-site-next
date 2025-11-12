@@ -1,12 +1,12 @@
 import {
   render,
-  renderWithLayout,
-  screen,
   renderSnapshotWithLayout,
+  renderWithLayout,
   resetMatchMedia,
-  XS_DEVICE,
-  SM_DEVICE,
   resolvedComponent,
+  SM_DEVICE,
+  screen,
+  XS_DEVICE,
 } from 'test-utils';
 import AboutPage from './page';
 

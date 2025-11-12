@@ -1,7 +1,7 @@
 import {
+  fireEvent,
   render,
   screen,
-  fireEvent,
   waitForElementToBeRemoved,
 } from 'test-utils';
 

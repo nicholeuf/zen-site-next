@@ -1,11 +1,10 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import List from '@mui/material/List';
+import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { within } from '@testing-library/dom';
-
-import NavigationItem from './NavigationItem';
-import { DEFAULT_ACTIVE_COLOR, DEFAULT_COLOR } from './constants';
+import React from 'react';
 import constants from '../../app/styles/constants';
+import { DEFAULT_ACTIVE_COLOR, DEFAULT_COLOR } from './constants';
+import NavigationItem from './NavigationItem';
 
 type Props = React.ComponentProps<typeof NavigationItem>;
 

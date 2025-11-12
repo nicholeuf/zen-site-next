@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
-
-import ContactPage from './ContactPage';
 import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
+import ContactPage from './ContactPage';
 
 export const metadata: Metadata = {
   title: 'Contact',

@@ -1,8 +1,7 @@
-import { render, screen } from 'test-utils';
 import { alpha } from '@mui/material/styles';
-
-import Header from './index';
+import { render, screen } from 'test-utils';
 import constants from '../../app/styles/constants';
+import Header from './index';
 
 describe('The Header component', () => {
   test(' has expected style rules and contains a logo and nav', () => {
