@@ -12,7 +12,7 @@ exports[`The Home Page > has expected snapshot 1`] = `
       data-testid="header-logo"
     >
       <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-103hey5-MuiTypography-root-MuiLink-root"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1vfjspd-MuiTypography-root-MuiLink-root"
         href="/"
       >
         <span
@@ -34,7 +34,7 @@ exports[`The Home Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-kyf1zo-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1x8noty-MuiTypography-root-MuiLink-root"
             href="/work"
           >
             Work
@@ -44,7 +44,7 @@ exports[`The Home Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-kyf1zo-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1x8noty-MuiTypography-root-MuiLink-root"
             href="/about"
           >
             About
@@ -54,7 +54,7 @@ exports[`The Home Page > has expected snapshot 1`] = `
           class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
         >
           <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-kyf1zo-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1x8noty-MuiTypography-root-MuiLink-root"
             href="/contact"
           >
             Contact
@@ -65,7 +65,7 @@ exports[`The Home Page > has expected snapshot 1`] = `
         >
           <a
             aria-current="page"
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-7nl3sr-MuiTypography-root-MuiLink-root"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1opjkwk-MuiTypography-root-MuiLink-root"
             href="/"
           >
             Home
