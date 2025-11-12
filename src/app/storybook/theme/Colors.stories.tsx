@@ -14,9 +14,10 @@ type Story = StoryObj;
 const Swatch: React.FC<{ name: string; value: string }> = ({ name, value }) => {
   const theme = useTheme();
   // Use MUI's contrast helper to pick readable text color when possible
-  const textColor = theme.palette.getContrastText
-    ? theme.palette.getContrastText(value)
-    : '#000';
+  const textColor =
+    typeof theme.palette.getContrastText === 'function'
+      ? theme.palette.getContrastText(value)
+      : '#000';
 
   return (
     <Box>
