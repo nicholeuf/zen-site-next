@@ -33,6 +33,8 @@ jobs:
 
       - name: Build Storybook
         run: pnpm build-storybook
+        env:
+          NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: ${{ secrets.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME }}
 
       - name: Upload Storybook artifact
         uses: actions/upload-pages-artifact@v3
