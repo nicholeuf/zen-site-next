@@ -5,9 +5,10 @@ on:
   pull_request:
 
 jobs:
-  biome:
-    name: Biome check
+  quality:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -29,4 +30,4 @@ jobs:
         with:
           version: latest
       - name: Run Biome
-        run: pnpm biome ci
+        run: biome ci
