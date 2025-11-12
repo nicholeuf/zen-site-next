@@ -19,7 +19,16 @@
     "useEditorconfig": true,
     "includes": ["src/**"]
   },
-  "linter": { "enabled": true, "rules": { "recommended": false } },
+  "linter": {
+    "enabled": true,
+    "rules": { "recommended": false },
+    "domains": {
+      "next": "recommended",
+      "react": "recommended",
+      "test": "recommended",
+      "project": "recommended"
+    }
+  },
   "javascript": {
     "formatter": {
       "jsxQuoteStyle": "double",
