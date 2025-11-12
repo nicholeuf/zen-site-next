@@ -1,6 +1,6 @@
 'use client';
 
-import Link, { LinkProps } from '@mui/material/Link';
+import Link, { type LinkProps } from '@mui/material/Link';
 import NLink from 'next/link';
 import React from 'react';
 

@@ -1,7 +1,7 @@
 import List from '@mui/material/List';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { within } from '@testing-library/dom';
-import React from 'react';
+import type React from 'react';
 import constants from '../../app/styles/constants';
 import { DEFAULT_ACTIVE_COLOR, DEFAULT_COLOR } from './constants';
 import NavigationItem from './NavigationItem';

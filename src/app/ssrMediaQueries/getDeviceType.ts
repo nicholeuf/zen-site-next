@@ -1,5 +1,5 @@
 import { headers } from 'next/headers';
-import DeviceType from 'types/DeviceType';
+import type DeviceType from 'types/DeviceType';
 import { IDevice, UAParser } from 'ua-parser-js';
 
 const getDeviceType = async (): Promise<DeviceType> => {

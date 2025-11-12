@@ -11,11 +11,11 @@ import List from '@mui/material/List';
 import Slide from '@mui/material/Slide';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { TransitionProps } from '@mui/material/transitions';
+import type { TransitionProps } from '@mui/material/transitions';
 import { usePathname } from 'next/navigation';
 import { CldImage } from 'next-cloudinary';
 import {
-  ForwardedRef,
+  type ForwardedRef,
   Fragment,
   forwardRef,
   useEffect,

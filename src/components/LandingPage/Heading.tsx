@@ -2,7 +2,7 @@
 'use client';
 
 import Typography from '@mui/material/Typography';
-import React from 'react';
+import type React from 'react';
 
 interface HeadingProps {
   children: React.ReactNode;

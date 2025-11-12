@@ -1,6 +1,6 @@
-import { Typography, TypographyProps } from '@mui/material';
+import { Typography, type TypographyProps } from '@mui/material';
 import Stack from '@mui/material/Stack';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 
 type TypographyVariant = TypographyProps['variant'];
 

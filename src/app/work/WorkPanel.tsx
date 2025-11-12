@@ -1,4 +1,4 @@
-import Box, { BoxProps } from '@mui/material/Box';
+import Box, { type BoxProps } from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
 import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
@@ -6,7 +6,7 @@ import DashListItem from '@/components/DashListItem';
 import constants from '../styles/constants';
 import ChipList from './ChipList';
 import ChipListItem from './ChipListItem';
-import { WorkItemType } from './constants';
+import type { WorkItemType } from './constants';
 
 interface WorkPanelProps extends BoxProps {
   item: WorkItemType;

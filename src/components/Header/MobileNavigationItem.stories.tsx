@@ -1,6 +1,6 @@
 import List from '@mui/material/List';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import React from 'react';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
+import type React from 'react';
 import { DEFAULT_ACTIVE_COLOR } from './constants';
 import MobileNavigationItem from './MobileNavigationItem';
 

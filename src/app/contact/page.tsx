@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
 import ContactPage from './ContactPage';
 

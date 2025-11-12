@@ -1,4 +1,4 @@
-import DeviceType from 'types/DeviceType';
+import type DeviceType from 'types/DeviceType';
 import GlobalStyles from '@/app/styles/GlobalStyles';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';

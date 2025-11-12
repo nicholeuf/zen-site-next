@@ -4,7 +4,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import * as Sentry from '@sentry/nextjs';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { getCldOgImageUrl } from 'next-cloudinary';
 import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
 import AppLayout from '@/components/AppLayout';

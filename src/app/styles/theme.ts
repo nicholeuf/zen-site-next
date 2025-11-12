@@ -2,7 +2,11 @@
 import type { ButtonProps } from '@mui/material/Button';
 import type { IconButtonProps } from '@mui/material/IconButton';
 import type { LinkProps } from '@mui/material/Link';
-import { createTheme, responsiveFontSizes, Theme } from '@mui/material/styles';
+import {
+  createTheme,
+  responsiveFontSizes,
+  type Theme,
+} from '@mui/material/styles';
 import { Inter, Sacramento } from 'next/font/google';
 
 // Helper for typing styleOverride callbacks: MUI passes an object containing
@@ -14,7 +18,7 @@ type OverrideProps<OwnerState = any> = {
 };
 
 import mediaQuery from 'css-mediaquery';
-import DeviceType from 'types/DeviceType';
+import type DeviceType from 'types/DeviceType';
 import getWidthByDeviceType from '../ssrMediaQueries/getWidthByDeviceType';
 import constants from './constants';
 

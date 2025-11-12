@@ -1,4 +1,4 @@
-import ListItem, { ListItemProps } from '@mui/material/ListItem';
+import ListItem, { type ListItemProps } from '@mui/material/ListItem';
 
 interface DashListItemProps extends ListItemProps {
   children: React.ReactNode;

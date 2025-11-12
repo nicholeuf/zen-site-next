@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import PageContainer from '@/components/PageContainer';
 import { items } from './constants';
 import WorkTabs from './WorkTabs';

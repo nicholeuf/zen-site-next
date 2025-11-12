@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { getMainHeight } from '@/app/styles/styleUtils';
-import PageContainer, { PageContainerProps } from './PageContainer';
+import PageContainer, { type PageContainerProps } from './PageContainer';
 import SwissPlantImage from './SwissPlantImage';
 
 interface ImageContainerProps extends PageContainerProps {

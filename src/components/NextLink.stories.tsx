@@ -1,7 +1,7 @@
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { within } from '@testing-library/dom';
 
-import NextLink, { NextLinkProps } from './NextLink';
+import NextLink, { type NextLinkProps } from './NextLink';
 
 const meta: Meta<typeof NextLink> = {
   title: 'components/NextLink',

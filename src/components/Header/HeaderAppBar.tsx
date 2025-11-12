@@ -31,7 +31,7 @@ const HeaderAppBar = ({
         justifyContent: 'space-between',
         alignItems: 'center',
         boxShadow: 'none',
-        borderBottom: !!hasBottomBorder ? `3px solid ${color}` : 'none',
+        borderBottom: hasBottomBorder ? `3px solid ${color}` : 'none',
       }}
     >
       {children}

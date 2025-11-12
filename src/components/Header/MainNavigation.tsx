@@ -1,5 +1,5 @@
 'use client';
-import { Theme } from '@mui/material/styles';
+import type { Theme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import MobileNavigation from './MobileNavigation';

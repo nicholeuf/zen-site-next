@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Heading from './Heading';
-import ProfileImage, { ProfileImageProps } from './ProfileImage';
+import ProfileImage, { type ProfileImageProps } from './ProfileImage';
 
 const smallGridTemplateAreas = `
 "photo"

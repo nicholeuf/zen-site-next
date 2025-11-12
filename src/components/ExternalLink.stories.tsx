@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { within } from '@testing-library/dom';
 
 import ExternalLink from './ExternalLink';

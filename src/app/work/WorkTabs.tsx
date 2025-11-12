@@ -3,9 +3,9 @@
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
-import { SyntheticEvent, useState } from 'react';
+import { type SyntheticEvent, useState } from 'react';
 
-import { WorkItemType } from './constants';
+import type { WorkItemType } from './constants';
 import WorkPanel from './WorkPanel';
 
 type GetIdType = (index: number) => string;

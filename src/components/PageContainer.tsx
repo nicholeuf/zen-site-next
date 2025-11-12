@@ -1,4 +1,4 @@
-import Container, { ContainerProps } from '@mui/material/Container';
+import Container, { type ContainerProps } from '@mui/material/Container';
 
 export interface PageContainerProps extends ContainerProps {
   children: React.ReactNode;

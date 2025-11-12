@@ -1,8 +1,8 @@
-import { Metadata } from 'next';
-import { CldImageProps } from 'next-cloudinary';
+import type { Metadata } from 'next';
+import type { CldImageProps } from 'next-cloudinary';
 
-import LandingPage, { LandingPageProps } from '@/components/LandingPage';
-import { ProfileImageProps } from '@/components/LandingPage/ProfileImage';
+import LandingPage, { type LandingPageProps } from '@/components/LandingPage';
+import type { ProfileImageProps } from '@/components/LandingPage/ProfileImage';
 import getPlaceholderImage from './lib/getPlaceholderImage';
 
 export const metadata: Metadata = {

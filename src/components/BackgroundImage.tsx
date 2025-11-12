@@ -1,7 +1,7 @@
 'use client';
 
 import Box from '@mui/material/Box';
-import { CldImage, CldImageProps } from 'next-cloudinary';
+import { CldImage, type CldImageProps } from 'next-cloudinary';
 
 import { getMainHeight } from '@/app/styles/styleUtils';
 

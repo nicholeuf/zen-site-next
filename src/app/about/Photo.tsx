@@ -3,7 +3,7 @@
 import Box from '@mui/material/Box';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { CldImage } from 'next-cloudinary';
-import { ItemDataPlaceholder } from './constants';
+import type { ItemDataPlaceholder } from './constants';
 
 const Photo: React.FC<ItemDataPlaceholder> = (props) => {
   return (

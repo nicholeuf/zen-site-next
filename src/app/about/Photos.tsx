@@ -1,7 +1,7 @@
 'use client';
 
 import ImageList from '@mui/material/ImageList';
-import { Theme } from '@mui/material/styles';
+import type { Theme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 interface PhotosProps {

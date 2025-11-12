@@ -1,7 +1,7 @@
 'use client';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import DeviceType from 'types/DeviceType';
+import type DeviceType from 'types/DeviceType';
 import theme from '@/app/styles/theme';
 
 interface GlobalStylesProps {

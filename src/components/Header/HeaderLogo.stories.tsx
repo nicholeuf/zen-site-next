@@ -1,5 +1,5 @@
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import React from 'react';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
+import type React from 'react';
 import {
   DEFAULT_ACTIVE_COLOR,
   DEFAULT_COLOR,

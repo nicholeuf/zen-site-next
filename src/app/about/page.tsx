@@ -1,10 +1,10 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { Metadata } from 'next';
-import ImageDimensions from 'types/ImageDimensions';
+import type { Metadata } from 'next';
+import type ImageDimensions from 'types/ImageDimensions';
 import PageContainer from '@/components/PageContainer';
 import getPlaceholderImage from '../lib/getPlaceholderImage';
-import { ItemDataPlaceholder, itemData } from './constants';
+import { type ItemDataPlaceholder, itemData } from './constants';
 import Photo from './Photo';
 import Photos from './Photos';
 

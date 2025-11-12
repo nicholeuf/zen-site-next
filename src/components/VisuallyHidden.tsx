@@ -1,4 +1,4 @@
-import Box, { BoxProps } from '@mui/material/Box';
+import Box, { type BoxProps } from '@mui/material/Box';
 
 interface VisuallyHidden extends Omit<BoxProps, 'sx'> {
   children?: React.ReactNode;
