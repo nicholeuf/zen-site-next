@@ -1,3 +1,12 @@
+### 2025-11-12 [*](https://github.com/nicholeuf/zen-site-next/pull/169)
+
+#### Changed
+
+- Improved link contrast and accessibility; links now inherit text color with underline and accent on hover
+- Introduced font weight constants and applied semi-bold styling to links and work panel chips
+- Updated theme text color defaults and refreshed skills/tools lists
+- Added Storybook stories for color palette and external link
+
 ### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/166)
 
 #### Changed

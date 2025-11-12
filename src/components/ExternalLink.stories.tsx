@@ -1,52 +1,42 @@
 import { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { within } from '@testing-library/dom';
 
-import NextLink, { NextLinkProps } from './NextLink';
+import ExternalLink from './ExternalLink';
 
-const meta: Meta<typeof NextLink> = {
-  title: 'components/NextLink',
-  component: NextLink,
+const meta: Meta<typeof ExternalLink> = {
+  title: 'components/ExternalLink',
+  component: ExternalLink,
   parameters: { layout: 'padded' },
   argTypes: {
     children: { control: 'text' },
     href: { control: 'text' },
-    underline: {
-      control: { type: 'select' },
-      options: ['none', 'hover', 'always'],
-    },
-    color: {
-      control: { type: 'select' },
-      options: [
-        'inherit',
-        'primary',
-        'secondary',
-        'error',
-        'text.primary',
-        'text.secondary',
-      ],
-    },
     target: {
       control: { type: 'select' },
       options: ['_self', '_blank', '_parent', '_top'],
     },
+    rel: { control: 'text' },
     sx: { control: 'object' },
+    className: { control: 'text' },
   },
 };
 
 export default meta;
 
-type Story = StoryObj<NextLinkProps>;
+type Story = StoryObj<React.ComponentProps<typeof ExternalLink>>;
 
 const Template: Story = {
-  render: ({ children, ...rest }) => <NextLink {...rest}>{children}</NextLink>,
+  render: ({ children, ...rest }) => (
+    <ExternalLink {...rest}>{children}</ExternalLink>
+  ),
 };
 
 export const Playground: Story = {
   ...Template,
   args: {
-    children: 'Go to About (NextLink wrapper)',
-    href: '/about',
-    underline: 'always',
+    children: 'External link — https://example.com',
+    href: 'https://example.com',
+    target: '_blank',
+    rel: 'noopener',
     sx: {},
   },
 };

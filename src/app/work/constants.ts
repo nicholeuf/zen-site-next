@@ -22,7 +22,14 @@ export const items: WorkItemType[] = [
       'Current site, launched in 2024, is built with React, NextJS, and MaterialUI, and deployed to Vercel.',
       'Code is fully-tested and automated via Github Actions, Meticulous.ai QA Automation, and Qodo.ai Code Reviews.',
     ],
-    skills: ['MaterialUI', 'Typescript', 'React', 'NextJS', 'Emotion', 'Jest'],
+    skills: [
+      'MaterialUI',
+      'Typescript',
+      'React',
+      'NextJS',
+      'Emotion',
+      'Vitest',
+    ],
     tools: [
       'Vercel',
       'Cloudinary',
@@ -32,6 +39,7 @@ export const items: WorkItemType[] = [
       'Meticulous.ai',
       'Small.chat',
       'Qodo.ai',
+      'Storybook',
     ],
   },
   {

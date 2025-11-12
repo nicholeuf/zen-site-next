@@ -7,6 +7,7 @@ import { WorkItemType } from './constants';
 import ChipList from './ChipList';
 import ChipListItem from './ChipListItem';
 import DashListItem from '@/components/DashListItem';
+import constants from '../styles/constants';
 
 interface WorkPanelProps extends BoxProps {
   item: WorkItemType;
@@ -39,7 +40,14 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
             {item.skills.map((skill) => {
               return (
                 <ChipListItem key={skill}>
-                  <Chip label={skill} color="primary" size="small" />
+                  <Chip
+                    label={skill}
+                    color="primary"
+                    size="medium"
+                    sx={{
+                      fontWeight: constants.fontWeights.semiBold,
+                    }}
+                  />
                 </ChipListItem>
               );
             })}
@@ -54,7 +62,10 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
                     label={tool}
                     variant="outlined"
                     color="primary"
-                    size="small"
+                    size="medium"
+                    sx={{
+                      fontWeight: constants.fontWeights.semiBold,
+                    }}
                   />
                 </ChipListItem>
               );
