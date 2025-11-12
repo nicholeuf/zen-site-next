@@ -25,9 +25,12 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
         <Typography variant="subtitle2">{item.location}</Typography>
         {!!item.experience.length && (
           <List data-testid="experience-list">
-            {item.experience.map((experience, index) => {
+            {item.experience.map((experience) => {
               return (
-                <DashListItem key={index} data-testid="experience-list-item">
+                <DashListItem
+                  key={experience}
+                  data-testid="experience-list-item"
+                >
                   <Typography variant="body2">{experience}</Typography>
                 </DashListItem>
               );
