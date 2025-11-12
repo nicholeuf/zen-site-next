@@ -135,7 +135,6 @@ const theme = (deviceType: DeviceType) => {
               fontWeight: 700,
               '&:hover': {
                 color: themeParam.palette.primary.main,
-                textDecoration: 'underline',
               },
               '&:focus-visible': parts.focusRule,
             },
