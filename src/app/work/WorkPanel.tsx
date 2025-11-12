@@ -7,6 +7,7 @@ import { WorkItemType } from './constants';
 import ChipList from './ChipList';
 import ChipListItem from './ChipListItem';
 import DashListItem from '@/components/DashListItem';
+import constants from '../styles/constants';
 
 interface WorkPanelProps extends BoxProps {
   item: WorkItemType;
@@ -44,7 +45,7 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
                     color="primary"
                     size="medium"
                     sx={{
-                      fontWeight: '700',
+                      fontWeight: constants.fontWeights.semiBold,
                     }}
                   />
                 </ChipListItem>
@@ -63,7 +64,7 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
                     color="primary"
                     size="medium"
                     sx={{
-                      fontWeight: '700',
+                      fontWeight: constants.fontWeights.semiBold,
                     }}
                   />
                 </ChipListItem>

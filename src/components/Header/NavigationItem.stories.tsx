@@ -5,6 +5,7 @@ import { within } from '@testing-library/dom';
 
 import NavigationItem from './NavigationItem';
 import { DEFAULT_ACTIVE_COLOR, DEFAULT_COLOR } from './constants';
+import constants from '../../app/styles/constants';
 
 type Props = React.ComponentProps<typeof NavigationItem>;
 
@@ -31,7 +32,7 @@ const meta: Meta<typeof NavigationItem> = {
           alignItems: 'center',
           height: '100%',
           p: 0,
-          fontWeight: '700',
+          fontWeight: constants.fontWeights.bold,
         }}
       >
         <Story />
