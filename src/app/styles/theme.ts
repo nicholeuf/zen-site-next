@@ -132,7 +132,7 @@ const theme = (deviceType: DeviceType) => {
               // their color matches body text. Hover uses guava as the accent.
               color: 'inherit',
               textDecoration: 'underline',
-              fontWeight: 700,
+              fontWeight: '600',
               '&:hover': {
                 color: themeParam.palette.primary.main,
               },
@@ -162,7 +162,7 @@ const theme = (deviceType: DeviceType) => {
             const parts = buildInteractiveParts(props.theme);
             return {
               transition: parts.transitionRule.transition,
-              fontWeight: 700,
+              fontWeight: '600',
               '&:hover': parts.hoverRule,
               '&:focus-visible, &.Mui-focusVisible': parts.focusRule,
             };
