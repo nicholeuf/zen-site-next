@@ -44,21 +44,10 @@ const Template: Story = {
 export const Playground: Story = {
   ...Template,
   args: {
-    children: 'Example link — The quick brown fox jumps over the lazy dog.',
-    href: '#',
-    underline: 'hover',
-    color: 'inherit',
-    target: '_self',
-    sx: {},
-  },
-};
-
-export const InternalLink: Story = {
-  ...Template,
-  args: {
     children: 'Go to About (NextLink wrapper)',
     href: '/about',
-    underline: 'hover',
+    underline: 'always',
+    sx: {},
   },
 };
 

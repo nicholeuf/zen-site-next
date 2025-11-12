@@ -33,8 +33,8 @@ const Template: Story = {
 export const Playground: Story = {
   ...Template,
   args: {
-    children: 'External link — The quick brown fox jumps over the lazy dog.',
-    href: '#',
+    children: 'External link — https://example.com',
+    href: 'https://example.com',
     target: '_blank',
     rel: 'noopener',
     sx: {},
