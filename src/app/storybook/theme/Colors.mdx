@@ -1,0 +1,62 @@
+import React from 'react';
+import { Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as ColorsStories from './Colors.stories';
+
+<Meta of={ColorsStories} />
+
+# Colors
+
+Documentation of the theme color palette used across the application. The
+`Palette` story renders a set of swatches including MUI theme tokens and
+project-specific constants so you can preview the colors and their hex values.
+
+## Palette
+
+<Canvas of={ColorsStories.Palette} />
+
+## Usage
+
+Use these tokens as the single source of truth for colors in the app. Prefer
+theme tokens (for example `theme.palette.primary.main`) over hard-coded hex
+values so components automatically pick up theme-level adjustments.
+
+Note: this project does not use a dark mode variant — the palette is
+designed for the light theme. When choosing or adjusting colors, ensure they
+provide sufficient contrast in the light theme rather than relying on a
+dark-mode fallback.
+
+- Buttons and primary actions: `theme.palette.primary.main`
+- Secondary accents and subtle calls-to-action: `theme.palette.secondary.main`
+- Backgrounds: `theme.palette.background.default` / `theme.palette.background.paper`
+- Text: `theme.palette.text.primary` / `theme.palette.text.secondary`
+- Project-specific constants (see `constants.colors`) may be used for
+  decorative elements, but prefer palette tokens for interactive UI elements.
+
+### Example
+
+When styling with the `sx` prop or `styled()` helper, reference theme tokens:
+
+```tsx
+// preferred — responds to theme mode
+<Box sx={{ backgroundColor: (theme) => theme.palette.primary.main }} />
+
+// avoid — harder to update globally
+<Box sx={{ backgroundColor: '#5aa897' }} />
+```
+
+## Accessibility
+
+Color is one cue among many. Keep the following accessibility considerations in
+mind when applying palette colors:
+
+- Contrast: Ensure sufficient contrast between text and background. Aim for
+  at least 4.5:1 for body text and 3:1 for large text. Use `theme.palette.getContrastText` or a contrast checker during design.
+- Do not rely on color alone to convey status (errors, success, warnings). Add
+  icons, labels, or patterns to communicate meaning.
+- Focus and hover states: Interactive elements should show clear focus and
+  hover indicators that don't rely solely on color changes (outline, underline,
+  or elevation changes are recommended).
+  -- Test in light (project default) and, if you ever add a dark theme, dark
+  modes: some colors that pass contrast in one mode may fail in the other;
+  prefer palette tokens which adapt automatically.
+- Provide text alternatives for color-only charts or decorative color maps.

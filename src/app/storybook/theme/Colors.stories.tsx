@@ -64,7 +64,6 @@ export const Palette: Story = {
 
     return (
       <Stack spacing={3} sx={{ p: 2 }}>
-        <Typography variant="h6">Color Palette</Typography>
         <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
           {paletteItems.map((p) => (
             <Box key={p.name} sx={{ display: 'block' }}>
