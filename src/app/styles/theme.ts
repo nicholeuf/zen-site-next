@@ -130,11 +130,11 @@ const theme = (deviceType: DeviceType) => {
               // base link color should be the dark `carob` for good contrast;
               // links are underlined by default so they remain visible when
               // their color matches body text. Hover uses guava as the accent.
-              color: constants.colors.carob,
+              color: 'inherit',
               textDecoration: 'underline',
               fontWeight: 700,
               '&:hover': {
-                color: constants.colors.guava,
+                color: themeParam.palette.primary.main,
                 textDecoration: 'underline',
               },
               '&:focus-visible': parts.focusRule,
