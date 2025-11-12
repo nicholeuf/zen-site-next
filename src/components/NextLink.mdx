@@ -1,0 +1,28 @@
+import React from 'react';
+import { Canvas, Meta } from '@storybook/addon-docs/blocks';
+import * as NextLinkStories from './NextLink.stories';
+
+<Meta of={NextLinkStories} />
+
+# NextLink
+
+A thin wrapper around MUI `Link` that uses Next.js `Link` for internal routes defined in the application's `URLS` list.
+
+This component preserves the MUI `Link` API and therefore supports the same props (color, underline, target, sx, etc.).
+
+## Example — Playground
+
+<Canvas of={NextLinkStories.Playground} />
+
+## Interaction examples
+
+### Focus (keyboard)
+
+Use the `FocusVisible` story in the story list to see keyboard focus styles. The original story automatically tabs to the link using a play function.
+
+<Canvas of={NextLinkStories.FocusVisible} />
+### Hover state
+
+Use the `Hover` story (pseudo state) to preview hover styles in isolation.
+
+<Canvas of={NextLinkStories.Hover} />
