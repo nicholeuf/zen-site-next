@@ -1,3 +1,9 @@
+### 2025-11-12 [*](https://github.com/nicholeuf/zen-site-next/pull/171)
+
+#### Changed
+
+- Fixed Storybook deployment by setting required Cloudinary environment variable during build in the workflow
+
 ### 2025-11-12 [*](https://github.com/nicholeuf/zen-site-next/pull/169)
 
 #### Changed
