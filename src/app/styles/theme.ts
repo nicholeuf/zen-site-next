@@ -12,6 +12,7 @@ import { Inter, Sacramento } from 'next/font/google';
 // Helper for typing styleOverride callbacks: MUI passes an object containing
 // the theme and (optionally) ownerState for the component. We declare a
 // small generic alias so we can annotate the full `props` parameter clearly.
+// biome-ignore lint/suspicious/noExplicitAny: <IGNORE>
 type OverrideProps<OwnerState = any> = {
   theme: Theme;
   ownerState?: OwnerState;

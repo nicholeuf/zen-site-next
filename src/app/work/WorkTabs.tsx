@@ -13,7 +13,7 @@ type GetIdType = (index: number) => string;
 const getTabId: GetIdType = (index) => `work-tab-${index}`;
 const getTabPanelId: GetIdType = (index) => `work-tabpanel-${index}`;
 
-type TabsOnChange = (event: SyntheticEvent, value: any) => void;
+type TabsOnChange = (event: SyntheticEvent, value: number) => void;
 
 interface WorkTabsProps {
   items: WorkItemType[];

@@ -4,9 +4,9 @@ import { getCldImageUrl } from 'next-cloudinary';
 
 interface GetPlaceholderImageProps {
   src: string;
-  width?: number;
-  height?: number;
-  opacity?: any;
+  width?: string | number | undefined;
+  height?: string | number | undefined;
+  opacity?: string | number | undefined;
 }
 
 // https://next.cloudinary.dev/guides/placeholders#blurred-images
