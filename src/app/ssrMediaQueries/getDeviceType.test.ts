@@ -5,7 +5,7 @@ import getDeviceType from './getDeviceType';
 
 describe('The getDeviceType function', () => {
   afterEach(() => {
-    vi.clearAllMocks();
+    vi.resetAllMocks();
   });
 
   test('returns mobile for iphone user agent', async () => {

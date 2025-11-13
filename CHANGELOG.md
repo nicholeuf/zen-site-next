@@ -1,3 +1,10 @@
+### 2025-11-13 [*](https://github.com/nicholeuf/zen-site-next/pull/173)
+
+#### Changed
+
+- Improved test reliability by resetting mocks between runs and restructuring about page tests for clarity
+- Added verification that navigation marks the current page correctly
+
 ### 2025-11-12 [*](https://github.com/nicholeuf/zen-site-next/pull/171)
 
 #### Changed

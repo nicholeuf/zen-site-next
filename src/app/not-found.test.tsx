@@ -17,7 +17,7 @@ describe('The Not Found (404) Page', () => {
   });
 
   afterEach(() => {
-    vi.clearAllMocks();
+    vi.resetAllMocks();
   });
 
   test('has expected snapshot', async () => {
