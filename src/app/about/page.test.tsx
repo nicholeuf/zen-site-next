@@ -1,52 +1,84 @@
+import navigationMocks from 'utils/nextNavigationMock';
+import mockGetPlaceholderImage from '../lib/getPlaceholderImage.mock';
+
 import {
   render,
   renderSnapshotWithLayout,
   renderWithLayout,
   resetMatchMedia,
   resolvedComponent,
-  SM_DEVICE,
-  screen,
-  XS_DEVICE,
-} from "test-utils";
-import AboutPage from "./page";
+} from 'test-utils';
+import { vi } from 'vitest';
+import { within } from '@testing-library/dom';
 
-const mockUsePathname = jest.fn();
-const mockGetPlaceholderImage = jest.fn();
+import AboutPage from './page';
 
-jest.mock("next/navigation", () => ({
-  usePathname() {
-    return mockUsePathname();
-  },
-}));
+describe('The About Page', () => {
+  describe('Snapshot', () => {
+    beforeEach(() => {
+      resetMatchMedia();
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => '/about');
+      mockGetPlaceholderImage.mockResolvedValue('blurred-image');
+    });
 
-jest.mock("../lib/getPlaceholderImage", () => () => mockGetPlaceholderImage());
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
 
-describe("The About Page", () => {
-  beforeAll(() => {
-    mockUsePathname.mockImplementation(() => "/about");
-    mockGetPlaceholderImage.mockImplementation(() => "blurred-image");
-
-    resetMatchMedia();
+    test('has expected snapshot', async () => {
+      const AboutResolved = await resolvedComponent(AboutPage);
+      const { container } = renderSnapshotWithLayout(<AboutResolved />);
+      expect(container).toMatchSnapshot();
+    });
   });
 
-  test("has expected snapshot", async () => {
-    const AboutResolved = await resolvedComponent(AboutPage);
-    const { container } = renderSnapshotWithLayout(<AboutResolved />);
-    expect(container).toMatchSnapshot();
-  });
+  describe('Navigation', () => {
+    beforeEach(() => {
+      resetMatchMedia();
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => '/about');
+      mockGetPlaceholderImage.mockResolvedValue('blurred-image');
+    });
 
-  test.each([["header"], ["about-page"], ["footer"]])(
-    "contains the visible testid %p",
-    async (testid) => {
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
+
+    test('can interact with navigation', async () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       renderWithLayout(<AboutResolved />);
-      const component = screen.getByTestId(testid);
-      expect(component).toBeVisible();
-    }
-  );
 
-  describe("User on Desktop", () => {
-    test("has a 3-column layout", async () => {
+      const mainNav = screen.getByRole('navigation', {
+        name: 'Main Navigation',
+      });
+
+      expect(mainNav).toBeVisible();
+
+      const aboutLink = within(mainNav).getByRole('link', {
+        name: 'About',
+      });
+      expect(aboutLink).toHaveAttribute('aria-current', 'page');
+      const homeLink = within(mainNav).getByRole('link', {
+        name: 'Home',
+      });
+      expect(homeLink).not.toHaveAttribute('aria-current', 'page');
+    });
+  });
+
+  describe('User on Desktop', () => {
+    beforeEach(() => {
+      resetMatchMedia();
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => '/about');
+      mockGetPlaceholderImage.mockResolvedValue('blurred-image');
+    });
+
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
+
+    test('has a 3-column layout', async () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       render(<AboutResolved />);
 
@@ -64,12 +96,19 @@ describe("The About Page", () => {
     });
   });
 
-  describe("User with XS Device", () => {
-    beforeAll(() => {
+  describe('User with XS Device', () => {
+    beforeEach(() => {
       resetMatchMedia(XS_DEVICE);
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => '/about');
+      mockGetPlaceholderImage.mockResolvedValue('blurred-image');
     });
 
-    test("has a 1-column layout", async () => {
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
+
+    test('has a 1-column layout', async () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       render(<AboutResolved />);
 
@@ -87,12 +126,19 @@ describe("The About Page", () => {
     });
   });
 
-  describe("User with SM Device", () => {
-    beforeAll(() => {
+  describe('User with SM Device', () => {
+    beforeEach(() => {
       resetMatchMedia(SM_DEVICE);
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => '/about');
+      mockGetPlaceholderImage.mockResolvedValue('blurred-image');
     });
 
-    test("has a 2-column layout", async () => {
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
+
+    test('has a 2-column layout', async () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       render(<AboutResolved />);
 

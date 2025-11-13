@@ -17,15 +17,18 @@ import HomePage from "./page";
 
 describe("The Home Page", () => {
   beforeAll(() => {
-    // set pathname for the next/navigation mock
-    navigationMocks.usePathname.mockImplementation(() => "/");
-    mockGetPlaceholderImage.mockResolvedValue("blurred-image");
     resetMatchMedia();
   });
 
-  // afterEach(() => {
-  //   vi.clearAllMocks();
-  // });
+  beforeEach(() => {
+    // set pathname for the next/navigation mock
+    navigationMocks.usePathname.mockImplementation(() => '/');
+    mockGetPlaceholderImage.mockResolvedValue('blurred-image');
+  });
+
+  afterEach(() => {
+    vi.resetAllMocks();
+  });
 
   test("has expected snapshot", async () => {
     const HomeResolved = await resolvedComponent(HomePage);

@@ -4,7 +4,7 @@ import getServerPath from "./getServerPath";
 
 describe("getServerPath", () => {
   afterEach(() => {
-    vi.clearAllMocks();
+    vi.resetAllMocks();
   });
 
   test("returns path", async () => {
