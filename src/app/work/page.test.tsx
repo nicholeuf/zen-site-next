@@ -13,7 +13,7 @@ describe('The Work Page', () => {
   });
 
   afterEach(() => {
-    vi.clearAllMocks();
+    vi.resetAllMocks();
   });
 
   test('has expected snapshot', async () => {

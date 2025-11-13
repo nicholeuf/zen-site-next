@@ -27,7 +27,7 @@ describe('The About Page', () => {
   });
 
   afterEach(() => {
-    vi.clearAllMocks();
+    vi.resetAllMocks();
   });
 
   test('has expected snapshot', async () => {
