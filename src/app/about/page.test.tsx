@@ -1,3 +1,6 @@
+import navigationMocks from 'utils/nextNavigationMock';
+import mockGetPlaceholderImage from '../lib/getPlaceholderImage.mock';
+
 import {
   render,
   renderWithLayout,
@@ -8,25 +11,23 @@ import {
   SM_DEVICE,
   resolvedComponent,
 } from 'test-utils';
+import { vi } from 'vitest';
+
 import AboutPage from './page';
-
-const mockUsePathname = jest.fn();
-const mockGetPlaceholderImage = jest.fn();
-
-jest.mock('next/navigation', () => ({
-  usePathname() {
-    return mockUsePathname();
-  },
-}));
-
-jest.mock('../lib/getPlaceholderImage', () => () => mockGetPlaceholderImage());
 
 describe('The About Page', () => {
   beforeAll(() => {
-    mockUsePathname.mockImplementation(() => '/about');
-    mockGetPlaceholderImage.mockImplementation(() => 'blurred-image');
-
     resetMatchMedia();
+  });
+
+  beforeEach(() => {
+    // set pathname for the next/navigation mock
+    navigationMocks.usePathname.mockImplementation(() => '/about');
+    mockGetPlaceholderImage.mockResolvedValue('blurred-image');
+  });
+
+  afterEach(() => {
+    vi.clearAllMocks();
   });
 
   test('has expected snapshot', async () => {
@@ -35,15 +36,34 @@ describe('The About Page', () => {
     expect(container).toMatchSnapshot();
   });
 
-  test.each([['header'], ['about-page'], ['footer']])(
-    'contains the visible testid %p',
-    async (testid) => {
+  describe('Navigation', () => {
+    test('can interact with navigation', async () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       renderWithLayout(<AboutResolved />);
-      const component = screen.getByTestId(testid);
-      expect(component).toBeVisible();
-    }
-  );
+
+      // The home link in the top left corner
+      expect(
+        screen.getAllByRole('link', {
+          name: 'Home',
+        })[0]
+      ).toBeVisible();
+
+      expect(
+        screen.getByRole('navigation', {
+          name: 'Main Navigation',
+        })
+      ).toBeVisible();
+
+      const aboutLink = screen.getByRole('link', {
+        name: 'About',
+      });
+      expect(aboutLink).toHaveAttribute('aria-current', 'page');
+      const homeLink = screen.getAllByRole('link', {
+        name: 'Home',
+      })[1];
+      expect(homeLink).not.toHaveAttribute('aria-current', 'page');
+    });
+  });
 
   describe('User on Desktop', () => {
     test('has a 3-column layout', async () => {
