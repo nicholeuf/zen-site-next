@@ -12,6 +12,7 @@ import {
   resolvedComponent,
 } from 'test-utils';
 import { vi } from 'vitest';
+import { within } from '@testing-library/dom';
 
 import AboutPage from './page';
 
