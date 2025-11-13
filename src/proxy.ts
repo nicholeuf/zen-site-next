@@ -1,6 +1,6 @@
 // proxy.ts
 
-import type { NextProxy, NextRequest } from 'next/server';
+import type { NextProxy } from 'next/server';
 import { NextResponse } from 'next/server';
 
 const proxy: NextProxy = (request) => {

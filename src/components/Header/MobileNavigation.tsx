@@ -189,7 +189,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
             >
               Main Navigation Dialog
             </VisuallyHidden>
-            <nav aria-label="Main Navigation" role="navigation">
+            <nav aria-label="Main Navigation">
               <List
                 sx={{
                   mt: '10vh',

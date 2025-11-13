@@ -10,7 +10,6 @@ import {
   XS_DEVICE,
 } from 'test-utils';
 import navigationMocks from 'utils/nextNavigationMock';
-import { vi } from 'vitest';
 import mockGetPlaceholderImage from './lib/getPlaceholderImage.mock';
 
 import HomePage from './page';
