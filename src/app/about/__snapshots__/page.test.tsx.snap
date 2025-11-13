@@ -1,5 +1,550 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`The About Page > Snapshot > has expected snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed css-1beuld8-MuiPaper-root-MuiAppBar-root"
+    data-testid="header"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiBox-root css-phm4v4"
+      data-testid="header-logo"
+    >
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1vfjspd-MuiTypography-root-MuiLink-root"
+        href="/"
+      >
+        <span
+          class="MuiBox-root css-1ep31vt"
+          data-testid="visually-hidden"
+        >
+          Home
+        </span>
+      </a>
+    </div>
+    <nav
+      aria-label="Main Navigation"
+      data-testid="header-nav"
+    >
+      <ul
+        class="MuiList-root MuiList-padding css-u4ixcn-MuiList-root"
+      >
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1x8noty-MuiTypography-root-MuiLink-root"
+            href="/work"
+          >
+            Work
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
+        >
+          <a
+            aria-current="page"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1opjkwk-MuiTypography-root-MuiLink-root"
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1x8noty-MuiTypography-root-MuiLink-root"
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+        <li
+          class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1jngq3x-MuiListItem-root"
+        >
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1x8noty-MuiTypography-root-MuiLink-root"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    class="MuiContainer-root MuiContainer-maxWidthLg css-jbpjbe-MuiContainer-root"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1ipbonz-MuiContainer-root"
+      data-testid="about-page"
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-h1 MuiTypography-gutterBottom css-1dn1ar9-MuiTypography-root"
+      >
+        About
+      </h1>
+      <p
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom css-17pc76b-MuiTypography-root"
+      >
+        I'm a native Floridian and graduate of the University of Florida
+         
+        <i>
+          (Go Gators!)
+        </i>
+        , now living in Orlando. Prior to our return to the sunshine state, we experienced life in both Georgia and Colorado. Colorado was a remarkable experience that left a mark on my heart.
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom css-17pc76b-MuiTypography-root"
+      >
+        Since 2014, I've been practicing yoga. Beyond the physical benefits, I love how it connects me back into the physical body and serves as a form of moving meditation. Lately I've been working on my inversions. It took me some time to gather the courage to embrace being upside down, but I'm grateful I took that leap.
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom css-17pc76b-MuiTypography-root"
+      >
+        Beyond the mat, I enjoy cooking, caring for my houseplants, and spending time in nature.
+      </p>
+      <div
+        class="MuiBox-root css-178yklu"
+      >
+        <ul
+          class="MuiImageList-root MuiImageList-standard css-13wt0ca-MuiImageList-root"
+          data-testid="about-photos-3-column-layout"
+          style="grid-template-columns: repeat(3, 1fr); gap: 4px;"
+        >
+          <div
+            class="MuiBox-root css-1n2mv2k"
+          >
+            <div
+              class="MuiBox-root css-0"
+            >
+              <img
+                alt="Luau Kalamaku in Kauai, HI (2019)"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVFRmAQ0"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVFRmAQ0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-hawaii?_a=BAVFRmAQ0 2x"
+                style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                width="300"
+              />
+              <div
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
+              >
+                <div
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
+                >
+                  <div
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
+                  >
+                    Luau Kalamaku
+                  </div>
+                  <div
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
+                  >
+                    Kauai, HI (2019)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-1n2mv2k"
+          >
+            <div
+              class="MuiBox-root css-0"
+            >
+              <img
+                alt="Na Pali Coast Tour in Kauai, HI (2019)"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVFRmAQ0"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVFRmAQ0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/napoli-coast?_a=BAVFRmAQ0 2x"
+                style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                width="300"
+              />
+              <div
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
+              >
+                <div
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
+                >
+                  <div
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
+                  >
+                    Na Pali Coast Tour
+                  </div>
+                  <div
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
+                  >
+                    Kauai, HI (2019)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-1n2mv2k"
+          >
+            <div
+              class="MuiBox-root css-0"
+            >
+              <img
+                alt="Visiting Sea Turtles in Maui, HI (2019)"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVFRmAQ0"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVFRmAQ0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-hawaii?_a=BAVFRmAQ0 2x"
+                style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                width="300"
+              />
+              <div
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
+              >
+                <div
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
+                >
+                  <div
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
+                  >
+                    Visiting Sea Turtles
+                  </div>
+                  <div
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
+                  >
+                    Maui, HI (2019)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-1n2mv2k"
+          >
+            <div
+              class="MuiBox-root css-0"
+            >
+              <img
+                alt="Epcot Food & Wine Festival in Orlando, FL (2019)"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVFRmAQ0"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVFRmAQ0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/nichole-epcot?_a=BAVFRmAQ0 2x"
+                style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                width="300"
+              />
+              <div
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
+              >
+                <div
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
+                >
+                  <div
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
+                  >
+                    Epcot Food & Wine Festival
+                  </div>
+                  <div
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
+                  >
+                    Orlando, FL (2019)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-1n2mv2k"
+          >
+            <div
+              class="MuiBox-root css-0"
+            >
+              <img
+                alt="Disney in Orlando, FL (2018)"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVFRmAQ0"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVFRmAQ0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-disney?_a=BAVFRmAQ0 2x"
+                style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                width="300"
+              />
+              <div
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
+              >
+                <div
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
+                >
+                  <div
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
+                  >
+                    Disney
+                  </div>
+                  <div
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
+                  >
+                    Orlando, FL (2018)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-1n2mv2k"
+          >
+            <div
+              class="MuiBox-root css-0"
+            >
+              <img
+                alt="Sledding in Superior, CO (2015)"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVFRmAQ0"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVFRmAQ0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-snow?_a=BAVFRmAQ0 2x"
+                style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                width="300"
+              />
+              <div
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
+              >
+                <div
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
+                >
+                  <div
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
+                  >
+                    Sledding
+                  </div>
+                  <div
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
+                  >
+                    Superior, CO (2015)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-1n2mv2k"
+          >
+            <div
+              class="MuiBox-root css-0"
+            >
+              <img
+                alt="Fall in the Mountains in Telluride, CO (2014)"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVFRmAQ0"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVFRmAQ0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-telluride?_a=BAVFRmAQ0 2x"
+                style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                width="300"
+              />
+              <div
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
+              >
+                <div
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
+                >
+                  <div
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
+                  >
+                    Fall in the Mountains
+                  </div>
+                  <div
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
+                  >
+                    Telluride, CO (2014)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-1n2mv2k"
+          >
+            <div
+              class="MuiBox-root css-0"
+            >
+              <img
+                alt="Hiking in Boulder, CO (2014)"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVFRmAQ0"
+                srcset="https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_384,h_384,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVFRmAQ0 1x, https://res.cloudinary.com/nicholeuf/image/upload/c_thumb,w_640,h_640,g_faces,z_0.1/f_auto/q_auto/v1/zensite/personal/family-mountain?_a=BAVFRmAQ0 2x"
+                style="color: transparent; border-radius: 20px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                width="300"
+              />
+              <div
+                class="MuiImageListItemBar-root MuiImageListItemBar-positionBelow MuiImageListItemBar-actionPositionRight css-hzqm6y-MuiImageListItemBar-root"
+              >
+                <div
+                  class="MuiImageListItemBar-titleWrap MuiImageListItemBar-titleWrapBelow css-1delowj-MuiImageListItemBar-titleWrap"
+                >
+                  <div
+                    class="MuiImageListItemBar-title css-1sdhmys-MuiImageListItemBar-title"
+                  >
+                    Hiking
+                  </div>
+                  <div
+                    class="MuiImageListItemBar-subtitle css-12mqd3t-MuiImageListItemBar-subtitle"
+                  >
+                    Boulder, CO (2014)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer
+    class="MuiBox-root css-kyi7o"
+    data-testid="footer"
+  >
+    <div
+      class="MuiBox-root css-nku55u"
+    >
+      <div
+        class="MuiBox-root css-1v6xpbi"
+      >
+        <nav
+          aria-label="External Navigation"
+          class="MuiBox-root css-jsi86s"
+          data-testid="footer-nav"
+        >
+          <ul
+            class="MuiList-root MuiList-padding css-1mt3rcp-MuiList-root"
+          >
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-mp07eo-MuiListItem-root"
+            >
+              <a
+                aria-label="LinkedIn (opens in new window)"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-o8clt2-MuiButtonBase-root-MuiIconButton-root"
+                href="https://www.linkedin.com/in/nicholeuf"
+                rel="noopener"
+                tabindex="0"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-115r2fk-MuiSvgIcon-root"
+                  data-testid="LinkedInIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-mp07eo-MuiListItem-root"
+            >
+              <a
+                aria-label="GitHub (opens in new window)"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiBox-root css-o8clt2-MuiButtonBase-root-MuiIconButton-root"
+                href="https://github.com/nicholeuf"
+                rel="noopener"
+                tabindex="0"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-115r2fk-MuiSvgIcon-root"
+                  data-testid="GitHubIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="MuiBox-root css-rml1qc"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-sacramento css-yievsj-MuiTypography-root"
+        >
+          Made with
+           
+          <span
+            class="MuiTypography-root MuiTypography-body1 css-3son8n-MuiTypography-root"
+          >
+            ♥
+          </span>
+           
+          by Nichole Frey
+        </p>
+      </div>
+      <div
+        class="MuiBox-root css-1giw8x0"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-overline css-1g2tyjo-MuiTypography-root"
+        >
+          Copyright © 
+          2025
+           -
+           
+          <strong>
+            All Rights Reserved
+          </strong>
+        </p>
+      </div>
+      <div
+        class="MuiBox-root css-1pv0fve"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-overline css-cqr3qr-MuiTypography-root"
+        >
+          <a
+            aria-label="View Source Code"
+            class="MuiBox-root css-17oo6ja"
+            href="https://github.com/nicholeuf/zen-site-next"
+            rel="noopener"
+            target="_blank"
+          >
+            view source code
+          </a>
+           | 
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-4uie6z-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            View Credits
+          </button>
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
 exports[`The About Page > has expected snapshot 1`] = `
 <div>
   <header
