@@ -54,13 +54,16 @@ describe('The About Page', () => {
         })
       ).toBeVisible();
 
-      const aboutLink = screen.getByRole('link', {
+      const mainNav = screen.getByRole('navigation', {
+        name: 'Main Navigation',
+      });
+      const aboutLink = within(mainNav).getByRole('link', {
         name: 'About',
       });
       expect(aboutLink).toHaveAttribute('aria-current', 'page');
-      const homeLink = screen.getAllByRole('link', {
+      const homeLink = within(mainNav).getByRole('link', {
         name: 'Home',
-      })[1];
+      });
       expect(homeLink).not.toHaveAttribute('aria-current', 'page');
     });
   });
