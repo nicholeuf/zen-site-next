@@ -1,17 +1,15 @@
 /* v8 ignore file -- @preserve */
 
-import { Metadata } from "next";
-import * as Sentry from "@sentry/nextjs";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
-import { getCldOgImageUrl } from "next-cloudinary";
+import * as Sentry from "@sentry/nextjs";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-import AppLayout from "@/components/AppLayout";
-
+import { Metadata } from "next";
+import { getCldOgImageUrl } from "next-cloudinary";
 import { SMALLCHAT_ENABLED } from "@/app/lib/smallchat";
-import getDeviceType from "./ssrMediaQueries/getDeviceType";
+import AppLayout from "@/components/AppLayout";
 import getServerPath from "./lib/getServerPath";
+import getDeviceType from "./ssrMediaQueries/getDeviceType";
 
 import "@/app/styles/mobileFix.css";
 import getBaseUrl from "./lib/getBaseUrl";

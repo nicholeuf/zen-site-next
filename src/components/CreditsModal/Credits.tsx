@@ -1,5 +1,5 @@
-import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
+import Typography from "@mui/material/Typography";
 
 import DashListItem from "@/components/DashListItem";
 import ExternalLink from "@/components/ExternalLink";

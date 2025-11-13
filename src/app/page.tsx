@@ -1,10 +1,9 @@
 import { Metadata } from "next";
-
-import getPlaceholderImage from "./lib/getPlaceholderImage";
+import { CldImageProps } from "next-cloudinary";
 
 import LandingPage, { LandingPageProps } from "@/components/LandingPage";
 import { ProfileImageProps } from "@/components/LandingPage/ProfileImage";
-import { CldImageProps } from "next-cloudinary";
+import getPlaceholderImage from "./lib/getPlaceholderImage";
 
 export const metadata: Metadata = {
   title: "The Coding Yogi | Nichole Frey",

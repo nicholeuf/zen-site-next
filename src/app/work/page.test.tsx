@@ -1,11 +1,9 @@
-import { vi } from "vitest";
-
-import navigationMocks from "utils/nextNavigationMock";
-import { renderWithLayout, screen, renderSnapshotWithLayout } from "test-utils";
 import userEvent from "@testing-library/user-event";
-
-import WorkPage from "./page";
+import { renderSnapshotWithLayout, renderWithLayout, screen } from "test-utils";
+import navigationMocks from "utils/nextNavigationMock";
+import { vi } from "vitest";
 import constants from "../styles/constants";
+import WorkPage from "./page";
 
 describe("The Work Page", () => {
   beforeEach(() => {

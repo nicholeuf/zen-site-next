@@ -1,5 +1,5 @@
-import React from "react";
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
+import React from "react";
 import Footer, { DEFAULT_HEIGHT } from "./index";
 
 const meta: Meta<typeof Footer> = {

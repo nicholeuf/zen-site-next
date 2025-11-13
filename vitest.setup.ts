@@ -1,5 +1,6 @@
 // Ensure Vitest's `expect` is available to imported setup helpers
 import { expect, vi } from "vitest";
+
 (globalThis as any).expect = expect;
 // Provide a `jest` alias for tests still using `jest.*` APIs
 (globalThis as any).jest = vi;

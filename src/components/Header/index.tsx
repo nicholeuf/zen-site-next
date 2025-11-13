@@ -1,11 +1,11 @@
 import {
-  DEFAULT_HEIGHT,
-  DEFAULT_COLOR,
   DEFAULT_ACTIVE_COLOR,
+  DEFAULT_COLOR,
+  DEFAULT_HEIGHT,
 } from "./constants";
+import HeaderAppBar from "./HeaderAppBar";
 import HeaderLogo from "./HeaderLogo";
 import MainNavigation from "./MainNavigation";
-import HeaderAppBar from "./HeaderAppBar";
 
 interface HeaderProps {
   color?: string;

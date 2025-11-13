@@ -1,14 +1,11 @@
-import type { Preview } from "@storybook/nextjs-vite";
-
 import { ThemeProvider } from "@mui/material";
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
-
-import theme from "../src/app/styles/theme";
+import type { Preview } from "@storybook/nextjs-vite";
+import constants from "../src/app/styles/constants";
 import GlobalStyles from "../src/app/styles/GlobalStyles";
+import theme from "../src/app/styles/theme";
 import MuiCacheDecorator from "../utils/MuiCacheDecorator";
 import NextRouterDecorator from "../utils/NextRouterDecorator";
-
-import constants from "../src/app/styles/constants";
 
 const preview: Preview = {
   parameters: {

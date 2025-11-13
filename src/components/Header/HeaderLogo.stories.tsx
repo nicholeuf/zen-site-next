@@ -1,13 +1,12 @@
-import React from "react";
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
-
-import HeaderLogo from "./HeaderLogo";
-import HeaderAppBar from "./HeaderAppBar";
+import React from "react";
 import {
+  DEFAULT_ACTIVE_COLOR,
   DEFAULT_COLOR,
   DEFAULT_HEIGHT,
-  DEFAULT_ACTIVE_COLOR,
 } from "./constants";
+import HeaderAppBar from "./HeaderAppBar";
+import HeaderLogo from "./HeaderLogo";
 
 type Props = React.ComponentProps<typeof HeaderLogo>;
 

@@ -1,9 +1,8 @@
-import React, { ReactElement } from "react";
-import { render, RenderOptions } from "@testing-library/react";
+import { RenderOptions, render } from "@testing-library/react";
 import mediaQuery from "css-mediaquery";
-
-import AppLayout from "@/components/AppLayout";
+import React, { ReactElement } from "react";
 import GlobalStyles from "@/app/styles/GlobalStyles";
+import AppLayout from "@/components/AppLayout";
 
 interface Props {
   children: React.ReactNode;

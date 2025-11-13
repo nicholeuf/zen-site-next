@@ -1,6 +1,6 @@
-import { action } from "storybook/actions";
 import type { Decorator } from "@storybook/nextjs-vite";
 import { MemoryRouterProvider } from "next-router-mock/MemoryRouterProvider/next-13.5";
+import { action } from "storybook/actions";
 
 // Storybook decorator that wraps stories with a mock Next.js router and logs navigation actions.
 // Uses `next-router-mock`'s `MemoryRouterProvider` so components that rely on Next navigation

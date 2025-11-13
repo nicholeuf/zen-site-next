@@ -1,14 +1,12 @@
-import React from "react";
-import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Box from "@mui/material/Box";
-
-import NavigationList from "./NavigationList";
-import NavigationItem from "./NavigationItem";
+import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { within } from "@testing-library/dom";
-
+import React from "react";
 import constants from "../../app/styles/constants";
 import { footerLinks } from "../Footer/constants";
+import NavigationItem from "./NavigationItem";
+import NavigationList from "./NavigationList";
 
 const footerLink = footerLinks[0];
 

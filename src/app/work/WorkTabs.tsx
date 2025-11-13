@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, SyntheticEvent } from "react";
 import Box from "@mui/material/Box";
-import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
+import { SyntheticEvent, useState } from "react";
 
 import { WorkItemType } from "./constants";
 import WorkPanel from "./WorkPanel";
