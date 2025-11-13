@@ -1,8 +1,8 @@
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
-import ProfileImage, { ProfileImageProps } from './ProfileImage';
-import Heading from './Heading';
+import ProfileImage, { ProfileImageProps } from "./ProfileImage";
+import Heading from "./Heading";
 
 const smallGridTemplateAreas = `
 "photo"
@@ -24,7 +24,7 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
       data-testid="landing-page-content"
       sx={{
         p: 3,
-        display: 'grid',
+        display: "grid",
         gap: 2,
         gridTemplateAreas: {
           xs: smallGridTemplateAreas,
@@ -34,15 +34,15 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
     >
       <Box
         sx={{
-          gridArea: 'photo',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'flex-start',
+          gridArea: "photo",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "flex-start",
         }}
       >
         <ProfileImage {...profileImageProps} />
       </Box>
-      <Box sx={{ gridArea: 'heading' }}>
+      <Box sx={{ gridArea: "heading" }}>
         <Heading>Hi, I&apos;m Nichole</Heading>
         <Typography
           variant="h4"
@@ -57,8 +57,8 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
             variant="sacramento"
             sx={{
               fontSize: {
-                xs: '34px',
-                sm: '38px',
+                xs: "34px",
+                sm: "38px",
               },
             }}
           >
@@ -66,15 +66,15 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
           </Typography>
         </Typography>
       </Box>
-      <Box sx={{ gridArea: 'body' }}>
+      <Box sx={{ gridArea: "body" }}>
         <Typography
           variant="body1"
           sx={{
             fontSize: {
-              xs: '1.25rem',
-              sm: '1.5rem',
+              xs: "1.25rem",
+              sm: "1.5rem",
             },
-            color: 'grey.800',
+            color: "grey.800",
           }}
           maxWidth="md"
         >

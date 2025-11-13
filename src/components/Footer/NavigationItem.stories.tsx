@@ -1,22 +1,22 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Box from '@mui/material/Box';
+import React from "react";
+import { Meta, StoryObj } from "@storybook/nextjs-vite";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Box from "@mui/material/Box";
 
-import NavigationList from './NavigationList';
-import NavigationItem from './NavigationItem';
-import { within } from '@testing-library/dom';
+import NavigationList from "./NavigationList";
+import NavigationItem from "./NavigationItem";
+import { within } from "@testing-library/dom";
 
-import constants from '../../app/styles/constants';
-import { footerLinks } from '../Footer/constants';
+import constants from "../../app/styles/constants";
+import { footerLinks } from "../Footer/constants";
 
 const footerLink = footerLinks[0];
 
 const meta: Meta<typeof NavigationItem> = {
-  title: 'Components/Footer/NavigationItem',
+  title: "Components/Footer/NavigationItem",
   component: NavigationItem,
   globals: {
-    backgrounds: { value: 'carob' },
+    backgrounds: { value: "carob" },
   },
   decorators: [
     (Story) => (
@@ -53,7 +53,7 @@ export const FocusVisible: Story = {
   args: Playground.args,
   play: async ({ canvasElement, userEvent }) => {
     const canvas = within(canvasElement as HTMLElement);
-    await userEvent.tab(canvas.getByRole('link'));
+    await userEvent.tab(canvas.getByRole("link"));
   },
 };
 

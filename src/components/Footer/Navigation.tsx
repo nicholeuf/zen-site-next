@@ -1,9 +1,9 @@
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box";
 
-import constants from '@/app/styles/constants';
-import NavigationList from './NavigationList';
-import NavigationItem from './NavigationItem';
-import { footerLinks } from './constants';
+import constants from "@/app/styles/constants";
+import NavigationList from "./NavigationList";
+import NavigationItem from "./NavigationItem";
+import { footerLinks } from "./constants";
 
 const iconColor = constants.colors.cream;
 
@@ -14,8 +14,8 @@ const Navigation: React.FC = () => {
       data-testid="footer-nav"
       aria-label="External Navigation"
       sx={{
-        width: '25%',
-        height: '100%',
+        width: "25%",
+        height: "100%",
       }}
     >
       <NavigationList>

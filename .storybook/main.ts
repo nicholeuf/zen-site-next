@@ -1,23 +1,23 @@
-import type { StorybookConfig } from '@storybook/nextjs-vite';
+import type { StorybookConfig } from "@storybook/nextjs-vite";
 
 const config: StorybookConfig = {
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
-    '@chromatic-com/storybook',
-    '@storybook/addon-docs',
-    '@storybook/addon-a11y',
-    '@storybook/addon-vitest',
-    '@storybook/addon-themes',
-    'storybook-addon-pseudo-states'
+    "@chromatic-com/storybook",
+    "@storybook/addon-docs",
+    "@storybook/addon-a11y",
+    "@storybook/addon-vitest",
+    "@storybook/addon-themes",
+    "storybook-addon-pseudo-states",
   ],
   framework: {
-    name: '@storybook/nextjs-vite',
+    name: "@storybook/nextjs-vite",
     options: {},
   },
   features: {
     actions: true,
   },
-  staticDirs: ['../public'],
+  staticDirs: ["../public"],
   viteFinal: async (config) => {
     return {
       ...config,
@@ -26,8 +26,8 @@ const config: StorybookConfig = {
         alias: {
           ...(config.resolve?.alias ?? {}),
           // TODO: https://github.com/nicholeuf/zen-site-next/issues/149
-          'next/router': 'next-router-mock',
-          'next/navigation': 'next-router-mock/navigation',
+          "next/router": "next-router-mock",
+          "next/navigation": "next-router-mock/navigation",
         },
       },
     };

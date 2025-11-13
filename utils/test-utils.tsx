@@ -1,9 +1,9 @@
-import React, { ReactElement } from 'react';
-import { render, RenderOptions } from '@testing-library/react';
-import mediaQuery from 'css-mediaquery';
+import React, { ReactElement } from "react";
+import { render, RenderOptions } from "@testing-library/react";
+import mediaQuery from "css-mediaquery";
 
-import AppLayout from '@/components/AppLayout';
-import GlobalStyles from '@/app/styles/GlobalStyles';
+import AppLayout from "@/components/AppLayout";
+import GlobalStyles from "@/app/styles/GlobalStyles";
 
 interface Props {
   children: React.ReactNode;
@@ -30,12 +30,12 @@ const MockStyles: React.FC<Props> = ({ children }) => {
 
 const customRender = (
   ui: ReactElement,
-  options?: Omit<RenderOptions, 'wrapper'>
+  options?: Omit<RenderOptions, "wrapper">
 ) => render(ui, { wrapper: MockStyles, ...options });
 
 const customRenderWithLayout = (
   ui: ReactElement,
-  options?: Omit<RenderOptions, 'wrapper'>
+  options?: Omit<RenderOptions, "wrapper">
 ) => render(ui, { wrapper: MockLayout, ...options });
 
 const customSnapshotRender = (children: ReactElement) =>
@@ -44,7 +44,7 @@ const customSnapshotRender = (children: ReactElement) =>
 const customSnapshotRenderWithLayout = (children: ReactElement) =>
   render(<MockLayout>{children}</MockLayout>);
 
-export * from '@testing-library/react';
+export * from "@testing-library/react";
 export {
   customRender as render,
   customRenderWithLayout as renderWithLayout,

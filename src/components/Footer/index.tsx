@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
-import Navigation from './Navigation';
-import constants from '@/app/styles/constants';
-import ExternalLink from '@/components/ExternalLink';
-import CreditsModal from '@/components/CreditsModal';
+import Navigation from "./Navigation";
+import constants from "@/app/styles/constants";
+import ExternalLink from "@/components/ExternalLink";
+import CreditsModal from "@/components/CreditsModal";
 
 const smallGridTemplateAreas = `
 "nav"
@@ -27,29 +27,29 @@ interface FooterProps {
 export const DEFAULT_HEIGHT = constants.footer.height;
 
 const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
-  const color = 'background.default';
+  const color = "background.default";
   return (
     <Box
       data-testid="footer"
       component="footer"
       sx={{
-        backgroundColor: 'secondary.main',
+        backgroundColor: "secondary.main",
         color,
         height,
         padding: 2,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <Box
         maxWidth="sm"
         sx={{
-          display: 'grid',
+          display: "grid",
           gap: 0.5,
-          textAlign: 'center',
-          height: '100%',
-          width: '100%',
+          textAlign: "center",
+          height: "100%",
+          width: "100%",
           gridTemplateAreas: {
             xs: smallGridTemplateAreas,
             sm: largeGridTemplateAreas,
@@ -58,30 +58,30 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
       >
         <Box
           sx={{
-            gridArea: 'nav',
-            display: 'flex',
+            gridArea: "nav",
+            display: "flex",
             justifyContent: {
-              xs: 'center',
-              sm: 'flex-start',
+              xs: "center",
+              sm: "flex-start",
             },
-            alignItems: 'center',
-            width: '100%',
-            height: '100%',
+            alignItems: "center",
+            width: "100%",
+            height: "100%",
           }}
         >
           <Navigation />
         </Box>
         <Box
           sx={{
-            gridArea: 'madeby',
-            display: 'flex',
+            gridArea: "madeby",
+            display: "flex",
             justifyContent: {
-              xs: 'center',
-              sm: 'flex-end',
+              xs: "center",
+              sm: "flex-end",
             },
             alignItems: {
-              xs: 'center',
-              sm: 'flex-end',
+              xs: "center",
+              sm: "flex-end",
             },
           }}
         >
@@ -90,60 +90,60 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
             component="p"
             sx={{
               fontSize: {
-                xs: '24px',
-                sm: '34px',
+                xs: "24px",
+                sm: "34px",
               },
             }}
           >
-            Made with{' '}
+            Made with{" "}
             <Typography
-              display={'inline'}
+              display={"inline"}
               component="span"
-              sx={{ color: 'primary.main' }}
+              sx={{ color: "primary.main" }}
             >
               &#9829;
-            </Typography>{' '}
+            </Typography>{" "}
             by Nichole Frey
           </Typography>
         </Box>
         <Box
           sx={{
-            gridArea: 'copyright',
-            display: 'flex',
+            gridArea: "copyright",
+            display: "flex",
             justifyContent: {
-              xs: 'center',
-              sm: 'flex-end',
+              xs: "center",
+              sm: "flex-end",
             },
             alignItems: {
-              xs: 'center',
-              sm: 'flex-end',
+              xs: "center",
+              sm: "flex-end",
             },
           }}
         >
           <Typography
             variant="overline"
             component="p"
-            sx={{ textTransform: 'none' }}
+            sx={{ textTransform: "none" }}
           >
-            Copyright &#169; {new Date().getFullYear()} -{' '}
+            Copyright &#169; {new Date().getFullYear()} -{" "}
             <strong>All Rights Reserved</strong>
           </Typography>
         </Box>
         <Box
           sx={{
-            gridArea: 'source',
-            display: 'flex',
+            gridArea: "source",
+            display: "flex",
             justifyContent: {
-              xs: 'center',
-              sm: 'flex-end',
+              xs: "center",
+              sm: "flex-end",
             },
             alignItems: {
-              xs: 'center',
-              sm: 'flex-end',
+              xs: "center",
+              sm: "flex-end",
             },
           }}
         >
-          <Typography variant="overline" component="p" sx={{ display: 'flex' }}>
+          <Typography variant="overline" component="p" sx={{ display: "flex" }}>
             <ExternalLink
               href="https://github.com/nicholeuf/zen-site-next"
               sx={{

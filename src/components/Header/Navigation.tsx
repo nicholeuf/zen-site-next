@@ -1,7 +1,7 @@
-import List from '@mui/material/List';
-import { usePathname } from 'next/navigation';
-import NavigationItem from './NavigationItem';
-import { navigationItems } from './constants';
+import List from "@mui/material/List";
+import { usePathname } from "next/navigation";
+import NavigationItem from "./NavigationItem";
+import { navigationItems } from "./constants";
 
 interface NavigationProps {
   color: string;
@@ -14,8 +14,8 @@ const Navigation: React.FC<NavigationProps> = ({ color, activeColor }) => {
     <nav data-testid="header-nav" aria-label="Main Navigation">
       <List
         sx={{
-          listStyle: 'none',
-          display: 'flex',
+          listStyle: "none",
+          display: "flex",
         }}
       >
         {navigationItems.map(({ href, name }) => {

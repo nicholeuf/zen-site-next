@@ -1,16 +1,16 @@
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import { Metadata } from 'next';
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import { Metadata } from "next";
 
-import PageContainer from '@/components/PageContainer';
-import Photos from './Photos';
-import Photo from './Photo';
-import { ItemDataPlaceholder, itemData } from './constants';
-import getPlaceholderImage from '../lib/getPlaceholderImage';
-import ImageDimensions from 'types/ImageDimensions';
+import PageContainer from "@/components/PageContainer";
+import Photos from "./Photos";
+import Photo from "./Photo";
+import { ItemDataPlaceholder, itemData } from "./constants";
+import getPlaceholderImage from "../lib/getPlaceholderImage";
+import ImageDimensions from "types/ImageDimensions";
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: "About",
 };
 
 const dim: ImageDimensions = {
@@ -45,7 +45,7 @@ const About: React.FC = async () => {
         About
       </Typography>
       <Typography gutterBottom variant="body2">
-        I&apos;m a native Floridian and graduate of the University of Florida{' '}
+        I&apos;m a native Floridian and graduate of the University of Florida{" "}
         <i>(Go Gators!)</i>, now living in Orlando. Prior to our return to the
         sunshine state, we experienced life in both Georgia and Colorado.
         Colorado was a remarkable experience that left a mark on my heart.

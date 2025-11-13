@@ -1,35 +1,35 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
-import getPlaceholderImage from './lib/getPlaceholderImage';
+import getPlaceholderImage from "./lib/getPlaceholderImage";
 
-import LandingPage, { LandingPageProps } from '@/components/LandingPage';
-import { ProfileImageProps } from '@/components/LandingPage/ProfileImage';
-import { CldImageProps } from 'next-cloudinary';
+import LandingPage, { LandingPageProps } from "@/components/LandingPage";
+import { ProfileImageProps } from "@/components/LandingPage/ProfileImage";
+import { CldImageProps } from "next-cloudinary";
 
 export const metadata: Metadata = {
-  title: 'The Coding Yogi | Nichole Frey',
+  title: "The Coding Yogi | Nichole Frey",
 };
 
 const profileImageProps: ProfileImageProps = {
   width: 200,
   height: 200,
-  crop: 'thumb',
-  gravity: 'face',
-  zoom: '0.6',
-  src: 'zensite/Nichole-Pink-BG',
-  alt: 'Photo of website author',
+  crop: "thumb",
+  gravity: "face",
+  zoom: "0.6",
+  src: "zensite/Nichole-Pink-BG",
+  alt: "Photo of website author",
   style: {
-    borderRadius: '50%',
+    borderRadius: "50%",
   },
 };
 
 const backgroundImageProps: CldImageProps = {
   opacity: 8,
-  src: 'zensite/lucila-naves-fMEFsbfHWw4-unsplash',
+  src: "zensite/lucila-naves-fMEFsbfHWw4-unsplash",
   quality: 5,
-  alt: '',
+  alt: "",
   style: {
-    objectPosition: 'center bottom',
+    objectPosition: "center bottom",
   },
 };
 
@@ -42,7 +42,7 @@ const getServerSideProps = async (): Promise<LandingPageProps> => {
 
   const getBackgroundBlurDataUrl = getPlaceholderImage({
     src: backgroundImageProps.src,
-    opacity: '5',
+    opacity: "5",
   });
 
   const [profileBlurDataURL, backgroundBlurDataUrl] = await Promise.all([
@@ -53,12 +53,12 @@ const getServerSideProps = async (): Promise<LandingPageProps> => {
   return {
     backgroundImageProps: {
       ...backgroundImageProps,
-      placeholder: 'blur',
+      placeholder: "blur",
       blurDataURL: backgroundBlurDataUrl,
     },
     profileImageProps: {
       ...profileImageProps,
-      placeholder: 'blur',
+      placeholder: "blur",
       blurDataURL: profileBlurDataURL,
     },
   };

@@ -1,11 +1,11 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import Footer, { DEFAULT_HEIGHT } from './index';
+import React from "react";
+import { Meta, StoryObj } from "@storybook/nextjs-vite";
+import Footer, { DEFAULT_HEIGHT } from "./index";
 
 const meta: Meta<typeof Footer> = {
-  title: 'Components/Footer/Footer',
+  title: "Components/Footer/Footer",
   component: Footer,
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: "fullscreen" },
 };
 
 export default meta;

@@ -1,6 +1,6 @@
-import ListItem from '@mui/material/ListItem';
-import IconButton from '@mui/material/IconButton';
-import ExternalLink from '@/components/ExternalLink';
+import ListItem from "@mui/material/ListItem";
+import IconButton from "@mui/material/IconButton";
+import ExternalLink from "@/components/ExternalLink";
 
 interface NavigationItemProps {
   href: string;
@@ -18,37 +18,37 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
     <ListItem
       key={href}
       sx={{
-        width: '40px',
-        height: '40px',
+        width: "40px",
+        height: "40px",
         m: {
           xs: 0,
           sm: 2,
         },
         p: 0,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <IconButton
         component={ExternalLink}
         href={href}
         sx={{
-          height: '100%',
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+          height: "100%",
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
           p: 1,
           transition: (theme) =>
-            theme.transitions.create(['background-color', 'transform'], {
+            theme.transitions.create(["background-color", "transform"], {
               duration: theme.transitions.duration.shortest,
             }),
           // Increase specificity so this rule overrides any less-specific
           // background rules (for example a global `a` or link reset).
-          '&:hover': {
-            backgroundColor: 'action.hover',
-            transform: 'scale(1.2)',
+          "&:hover": {
+            backgroundColor: "action.hover",
+            transform: "scale(1.2)",
           },
         }}
         aria-label={ariaLabel}

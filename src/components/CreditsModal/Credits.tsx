@@ -1,8 +1,8 @@
-import Typography from '@mui/material/Typography';
-import List from '@mui/material/List';
+import Typography from "@mui/material/Typography";
+import List from "@mui/material/List";
 
-import DashListItem from '@/components/DashListItem';
-import ExternalLink from '@/components/ExternalLink';
+import DashListItem from "@/components/DashListItem";
+import ExternalLink from "@/components/ExternalLink";
 
 interface CreditsProps {
   titleId: string;
@@ -16,7 +16,7 @@ const Credits: React.FC<CreditsProps> = ({ titleId, descriptionId }) => {
         Credits
       </Typography>
       <Typography id={descriptionId}>
-        The following assets were used on the site:{' '}
+        The following assets were used on the site:{" "}
       </Typography>
       <List>
         <DashListItem>

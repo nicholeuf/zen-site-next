@@ -1,11 +1,11 @@
 // proxy.ts
 
-import { NextResponse } from 'next/server';
-import type { NextRequest, NextProxy } from 'next/server';
+import { NextResponse } from "next/server";
+import type { NextRequest, NextProxy } from "next/server";
 
 const proxy: NextProxy = (request) => {
   const requestHeaders = new Headers(request.headers);
-  requestHeaders.set('x-next-pathname', request.nextUrl.pathname);
+  requestHeaders.set("x-next-pathname", request.nextUrl.pathname);
 
   return NextResponse.next({
     request: {
@@ -25,7 +25,7 @@ export const config = {
      * - sitemap.xml
      * - robots.txt
      */
-    '/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',
+    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
   ],
 };
 

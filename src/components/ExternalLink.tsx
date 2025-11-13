@@ -1,6 +1,6 @@
-import React from 'react';
-import Box from '@mui/material/Box';
-import type { SxProps, Theme } from '@mui/material/styles';
+import React from "react";
+import Box from "@mui/material/Box";
+import type { SxProps, Theme } from "@mui/material/styles";
 
 interface ExternalLinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -13,7 +13,7 @@ interface ExternalLinkProps
 // compound selectors to override IconButton styles.
 const ExternalLink = React.forwardRef<HTMLAnchorElement, ExternalLinkProps>(
   (
-    { children, target = '_blank', rel = 'noopener', className, sx, ...props },
+    { children, target = "_blank", rel = "noopener", className, sx, ...props },
     ref
   ) => {
     // No local visual defaults here — rely on theme (MuiLink / CssBaseline)
@@ -35,6 +35,6 @@ const ExternalLink = React.forwardRef<HTMLAnchorElement, ExternalLinkProps>(
   }
 );
 
-ExternalLink.displayName = 'ExternalLink';
+ExternalLink.displayName = "ExternalLink";
 
 export default ExternalLink;

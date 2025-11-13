@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useState, SyntheticEvent } from 'react';
-import Box from '@mui/material/Box';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import { useState, SyntheticEvent } from "react";
+import Box from "@mui/material/Box";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 
-import { WorkItemType } from './constants';
-import WorkPanel from './WorkPanel';
+import { WorkItemType } from "./constants";
+import WorkPanel from "./WorkPanel";
 
 type GetIdType = (index: number) => string;
 
@@ -27,8 +27,8 @@ const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+    <Box sx={{ width: "100%" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}
           onChange={handleChange}

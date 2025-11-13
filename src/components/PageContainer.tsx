@@ -1,4 +1,4 @@
-import Container, { ContainerProps } from '@mui/material/Container';
+import Container, { ContainerProps } from "@mui/material/Container";
 
 export interface PageContainerProps extends ContainerProps {
   children: React.ReactNode;
@@ -7,7 +7,7 @@ export interface PageContainerProps extends ContainerProps {
 
 const PageContainer: React.FC<PageContainerProps> = ({
   children,
-  maxWidth = 'lg',
+  maxWidth = "lg",
   hasPadding = true,
   sx,
   ...props

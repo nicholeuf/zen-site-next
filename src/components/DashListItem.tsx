@@ -1,4 +1,4 @@
-import ListItem, { ListItemProps } from '@mui/material/ListItem';
+import ListItem, { ListItemProps } from "@mui/material/ListItem";
 
 interface DashListItemProps extends ListItemProps {
   children: React.ReactNode;
@@ -10,10 +10,10 @@ const DashListItem: React.FC<DashListItemProps> = ({ children, ...props }) => {
       {...props}
       sx={{
         ...props.sx,
-        '&::before': {
+        "&::before": {
           content: '"-"',
           pr: 0.5,
-          alignSelf: 'flex-start',
+          alignSelf: "flex-start",
         },
       }}
     >

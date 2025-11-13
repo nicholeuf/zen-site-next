@@ -35,7 +35,7 @@ export {};
 // Vitest-specific augmentation: cover common Vitest matcher/expect shapes. Different
 // Vitest versions expose slightly different names (AssertionMatchers, Matchers, JestMatchers),
 // so provide a few compatible declarations.
-declare module 'vitest' {
+declare module "vitest" {
   interface AssertionMatchers<R = any, T = any> {
     toHaveStyleRule(property: string, value?: any, options?: any): R;
   }

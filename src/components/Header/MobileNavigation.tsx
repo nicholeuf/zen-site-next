@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   useState,
@@ -7,26 +7,26 @@ import {
   useRef,
   useEffect,
   ForwardedRef,
-} from 'react';
-import Typography from '@mui/material/Typography';
-import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
-import DialogContent from '@mui/material/DialogContent';
-import List from '@mui/material/List';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
-import MenuIcon from '@mui/icons-material/Menu';
-import Slide from '@mui/material/Slide';
-import { TransitionProps } from '@mui/material/transitions';
-import { CldImage } from 'next-cloudinary';
-import { usePathname } from 'next/navigation';
+} from "react";
+import Typography from "@mui/material/Typography";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogContent from "@mui/material/DialogContent";
+import List from "@mui/material/List";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
+import Slide from "@mui/material/Slide";
+import { TransitionProps } from "@mui/material/transitions";
+import { CldImage } from "next-cloudinary";
+import { usePathname } from "next/navigation";
 
-import MobileNavigationItem from './MobileNavigationItem';
-import { mobileNavigationItems } from './constants';
-import constants from '@/app/styles/constants';
-import VisuallyHidden from '../VisuallyHidden';
+import MobileNavigationItem from "./MobileNavigationItem";
+import { mobileNavigationItems } from "./constants";
+import constants from "@/app/styles/constants";
+import VisuallyHidden from "../VisuallyHidden";
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & {
@@ -74,9 +74,9 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
       <Box
         component="section"
         sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
           p: 1,
           width: constants.header.height,
           height: constants.header.height,
@@ -90,8 +90,8 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
           aria-expanded={open}
           ref={openButtonRef}
           sx={{
-            width: '100%',
-            height: '100%',
+            width: "100%",
+            height: "100%",
             ml: 0,
           }}
         >
@@ -118,43 +118,43 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
           },
         }}
         sx={{
-          '& .MuiDialog-paper': {
-            backgroundColor: 'secondary.main',
+          "& .MuiDialog-paper": {
+            backgroundColor: "secondary.main",
           },
         }}
       >
         <Box
           sx={{
-            height: '100%',
-            width: '100%',
-            position: 'relative',
+            height: "100%",
+            width: "100%",
+            position: "relative",
           }}
         >
           <Toolbar
             component="section"
             sx={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
               height: constants.header.height,
-              color: 'background.default',
+              color: "background.default",
               px: 0,
             }}
           >
             <Box
               sx={{
                 width: constants.header.height,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
                 p: 1,
               }}
             >
               <Typography
                 variant="sacramento"
                 sx={{
-                  fontSize: '30px',
-                  fontWeight: 'bold',
+                  fontSize: "30px",
+                  fontWeight: "bold",
                 }}
               >
                 nf
@@ -174,8 +174,8 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
                 aria-label="Close Mobile Navigation"
                 ref={closeButtonRef}
                 sx={{
-                  height: '100%',
-                  width: '100%',
+                  height: "100%",
+                  width: "100%",
                   ml: 0,
                 }}
               >
@@ -193,8 +193,8 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
             <nav aria-label="Main Navigation" role="navigation">
               <List
                 sx={{
-                  mt: '10vh',
-                  ml: '20vw',
+                  mt: "10vh",
+                  ml: "20vw",
                 }}
               >
                 {mobileNavigationItems.map(({ href, name }) => {
@@ -215,12 +215,12 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
           </DialogContent>
           <Box
             sx={{
-              position: 'absolute',
+              position: "absolute",
               bottom: 0,
               right: 0,
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <CldImage
