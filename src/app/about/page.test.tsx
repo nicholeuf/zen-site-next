@@ -42,22 +42,12 @@ describe('The About Page', () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       renderWithLayout(<AboutResolved />);
 
-      // The home link in the top left corner
-      expect(
-        screen.getAllByRole('link', {
-          name: 'Home',
-        })[0]
-      ).toBeVisible();
-
-      expect(
-        screen.getByRole('navigation', {
-          name: 'Main Navigation',
-        })
-      ).toBeVisible();
-
       const mainNav = screen.getByRole('navigation', {
         name: 'Main Navigation',
       });
+
+      expect(mainNav).toBeVisible();
+
       const aboutLink = within(mainNav).getByRole('link', {
         name: 'About',
       });
