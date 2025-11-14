@@ -1,14 +1,14 @@
 import {
+  fireEvent,
   render,
   screen,
-  fireEvent,
   waitForElementToBeRemoved,
-} from 'test-utils';
+} from "test-utils";
 
-import MobileNavigation from './MobileNavigation';
+import MobileNavigation from "./MobileNavigation";
 
-describe('MobileNavigation', () => {
-  test('returns focus to open button when dialog closes', async () => {
+describe("MobileNavigation", () => {
+  test("returns focus to open button when dialog closes", async () => {
     render(<MobileNavigation activeColor="primary.main" />);
     const openButton = screen.getByLabelText(/Mobile Navigation Trigger/i);
     fireEvent.click(openButton);
@@ -16,7 +16,7 @@ describe('MobileNavigation', () => {
     const closeButton = await screen.findByLabelText(
       /Close Mobile Navigation/i
     );
-    const dialog = screen.getByTestId('mobile-navigation-dialog');
+    const dialog = screen.getByTestId("mobile-navigation-dialog");
 
     fireEvent.click(closeButton);
 

@@ -62,5 +62,8 @@ yarn-error.log*
 # Sentry Config File
 .env.sentry-build-plugin
 
+# Ignore VS Code settings example used for docs/editor examples
+.vscode-settings-example.json
+
 *storybook.log
 storybook-static

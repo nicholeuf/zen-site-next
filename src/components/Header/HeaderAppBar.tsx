@@ -1,6 +1,6 @@
-import { alpha } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
-import constants from '@/app/styles/constants';
+import AppBar from "@mui/material/AppBar";
+import { alpha } from "@mui/material/styles";
+import constants from "@/app/styles/constants";
 
 interface HeaderAppBarProps {
   color: string;
@@ -22,16 +22,16 @@ const HeaderAppBar = ({
       color="transparent"
       sx={{
         backgroundColor: alpha(constants.colors.cream, 0.85),
-        backdropFilter: 'blur(8px)',
+        backdropFilter: "blur(8px)",
         minHeight: height,
         height,
         fontWeight: 700,
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        boxShadow: 'none',
-        borderBottom: !!hasBottomBorder ? `3px solid ${color}` : 'none',
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        boxShadow: "none",
+        borderBottom: !!hasBottomBorder ? `3px solid ${color}` : "none",
       }}
     >
       {children}

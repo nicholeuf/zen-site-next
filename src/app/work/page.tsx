@@ -1,12 +1,11 @@
-import Typography from '@mui/material/Typography';
-import { Metadata } from 'next';
-
-import WorkTabs from './WorkTabs';
-import { items } from './constants';
-import PageContainer from '@/components/PageContainer';
+import Typography from "@mui/material/Typography";
+import { Metadata } from "next";
+import PageContainer from "@/components/PageContainer";
+import { items } from "./constants";
+import WorkTabs from "./WorkTabs";
 
 export const metadata: Metadata = {
-  title: 'Work',
+  title: "Work",
 };
 
 const Work: React.FC = () => {

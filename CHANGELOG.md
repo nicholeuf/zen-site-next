@@ -1,3 +1,11 @@
+### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/175)
+
+#### Changed
+
+- Migrated linting/formatting to Biome and updated scripts accordingly
+- Standardized code style (double quotes) and organized imports project-wide
+- Removed legacy ESLint/Prettier configs and added Biome configuration
+
 ### 2025-11-13 [*](https://github.com/nicholeuf/zen-site-next/pull/173)
 
 #### Changed

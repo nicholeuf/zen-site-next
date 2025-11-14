@@ -1,17 +1,17 @@
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GithubIcon from '@mui/icons-material/GitHub';
+import GithubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const footerLinks = [
   {
-    slug: 'linkedin',
+    slug: "linkedin",
     icon: LinkedInIcon,
-    href: 'https://www.linkedin.com/in/nicholeuf',
-    ariaLabel: 'LinkedIn (opens in new window)',
+    href: "https://www.linkedin.com/in/nicholeuf",
+    ariaLabel: "LinkedIn (opens in new window)",
   },
   {
-    slug: 'github',
+    slug: "github",
     icon: GithubIcon,
-    href: 'https://github.com/nicholeuf',
-    ariaLabel: 'GitHub (opens in new window)',
+    href: "https://github.com/nicholeuf",
+    ariaLabel: "GitHub (opens in new window)",
   },
 ];

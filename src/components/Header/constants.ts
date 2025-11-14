@@ -1,5 +1,5 @@
-import routes from '@/app/lib/routes';
-import constants from '@/app/styles/constants';
+import routes from "@/app/lib/routes";
+import constants from "@/app/styles/constants";
 
 const { home, work, about, contact } = routes;
 

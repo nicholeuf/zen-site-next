@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import Link, { LinkProps } from '@mui/material/Link';
-import NLink from 'next/link';
-import React from 'react';
+import Link, { LinkProps } from "@mui/material/Link";
+import NLink from "next/link";
+import React from "react";
 
-import { URLS } from '@/app/lib/routes';
+import { URLS } from "@/app/lib/routes";
 
 export interface NextLinkProps extends LinkProps {
   children: React.ReactNode;
@@ -18,13 +18,13 @@ const NextLink = React.forwardRef<HTMLAnchorElement, NextLinkProps>(
     const isDefinedPath = props.href ? URLS.includes(props.href) : false;
 
     return (
-      <Link component={isDefinedPath ? NLink : 'a'} {...props} ref={ref}>
+      <Link component={isDefinedPath ? NLink : "a"} {...props} ref={ref}>
         {children}
       </Link>
     );
   }
 );
 
-NextLink.displayName = 'NextLink';
+NextLink.displayName = "NextLink";
 
 export default NextLink;

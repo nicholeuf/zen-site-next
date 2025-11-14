@@ -1,27 +1,26 @@
-import { vi } from 'vitest';
+import headerMocks from "utils/nextHeaderMock";
+import { vi } from "vitest";
+import getDeviceType from "./getDeviceType";
 
-import headerMocks from 'utils/nextHeaderMock';
-import getDeviceType from './getDeviceType';
-
-describe('The getDeviceType function', () => {
+describe("The getDeviceType function", () => {
   afterEach(() => {
     vi.resetAllMocks();
   });
 
-  test('returns mobile for iphone user agent', async () => {
+  test("returns mobile for iphone user agent", async () => {
     // mock next/headers response to return a mobile user agent
     headerMocks.get.mockReturnValue(
-      'Mozilla/5.0 (iPhone; U; CPU iPhone OS 5_1_1 like Mac OS X; en) AppleWebKit/534.46.0 (KHTML, like Gecko) CriOS/19.0.1084.60 Mobile/9B206 Safari/7534.48.3'
+      "Mozilla/5.0 (iPhone; U; CPU iPhone OS 5_1_1 like Mac OS X; en) AppleWebKit/534.46.0 (KHTML, like Gecko) CriOS/19.0.1084.60 Mobile/9B206 Safari/7534.48.3"
     );
 
     const deviceType = await getDeviceType();
-    expect(deviceType).toBe('mobile');
+    expect(deviceType).toBe("mobile");
   });
 
-  test('returns desktop for null user agent', async () => {
+  test("returns desktop for null user agent", async () => {
     // mock next/headers response to return a null user agent
     headerMocks.get.mockReturnValue(null);
     const deviceType = await getDeviceType();
-    expect(deviceType).toBe('desktop');
+    expect(deviceType).toBe("desktop");
   });
 });

@@ -1,22 +1,22 @@
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import { within } from '@testing-library/dom';
+import { Meta, StoryObj } from "@storybook/nextjs-vite";
+import { within } from "@testing-library/dom";
 
-import ExternalLink from './ExternalLink';
+import ExternalLink from "./ExternalLink";
 
 const meta: Meta<typeof ExternalLink> = {
-  title: 'components/ExternalLink',
+  title: "components/ExternalLink",
   component: ExternalLink,
-  parameters: { layout: 'padded' },
+  parameters: { layout: "padded" },
   argTypes: {
-    children: { control: 'text' },
-    href: { control: 'text' },
+    children: { control: "text" },
+    href: { control: "text" },
     target: {
-      control: { type: 'select' },
-      options: ['_self', '_blank', '_parent', '_top'],
+      control: { type: "select" },
+      options: ["_self", "_blank", "_parent", "_top"],
     },
-    rel: { control: 'text' },
-    sx: { control: 'object' },
-    className: { control: 'text' },
+    rel: { control: "text" },
+    sx: { control: "object" },
+    className: { control: "text" },
   },
 };
 
@@ -33,10 +33,10 @@ const Template: Story = {
 export const Playground: Story = {
   ...Template,
   args: {
-    children: 'External link — https://example.com',
-    href: 'https://example.com',
-    target: '_blank',
-    rel: 'noopener',
+    children: "External link — https://example.com",
+    href: "https://example.com",
+    target: "_blank",
+    rel: "noopener",
     sx: {},
   },
 };
@@ -46,7 +46,7 @@ export const FocusVisible: Story = {
   args: Playground.args,
   play: async ({ canvasElement, userEvent }) => {
     const canvas = within(canvasElement as HTMLElement);
-    await userEvent.tab(canvas.getByRole('link'));
+    await userEvent.tab(canvas.getByRole("link"));
   },
 };
 
