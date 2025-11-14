@@ -1,0 +1,68 @@
+import React from 'react';
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+import * as HeaderStories from './Header.stories';
+import * as HeaderLogoStories from './HeaderLogo.stories';
+import * as NavigationItemStories from './NavigationItem.stories';
+import * as MobileNavigationItemStories from './MobileNavigationItem.stories';
+
+
+<Meta of={HeaderStories} />
+
+{/* Render AppBar in-flow inside the docs page so the assembled header is visible.
+	The HeaderAppBar component uses position="fixed" which can be hidden behind
+	the Storybook chrome in docs pages. Overriding the MUI AppBar position here
+	keeps the visual while documenting. */}
+<style>{`.MuiAppBar-root { position: static !important; }`}</style>
+
+## Header — composition and stories
+
+This page documents how the Header is built from a few smaller components and how you can preview each part individually in Storybook.
+
+We compose the header from these story modules:
+
+- `Header` (the assembled app bar)
+- `HeaderLogo` (the logo used inside the app bar)
+- `NavigationItem` (desktop navigation link)
+- `MobileNavigationItem` (mobile navigation link)
+
+The pattern used here follows the Storybook docs for "Working with multiple components":
+https://storybook.js.org/docs/writing-docs/mdx#working-with-multiple-components
+
+### Assembled header
+
+A preview of the assembled header. This uses the main story exported from `Header.stories.tsx`.
+
+<Canvas of={HeaderStories.Playground} parameters={{ layout: 'fullscreen' }} />
+
+If the assembled header doesn't render at mobile size in this docs canvas, open the standalone Mobile story to view the mobile viewport and controls:
+
+[Go to Mobile Story](?path=/story/components-header-header--mobile)
+
+### Logo
+
+The `HeaderLogo` story shows the logo configuration and is rendered inside the app bar using a decorator so you can see it in-context.
+
+<Canvas of={HeaderLogoStories.Playground} />
+
+{/* Args table is not exported in this project's docs blocks; use the Controls panel in Storybook to inspect props. */}
+
+### Navigation item (desktop)
+
+Individual navigation items can be rendered and tested independently. Here is the default playground for `NavigationItem`.
+
+<Canvas of={NavigationItemStories.Playground} />
+
+{/* Use the Controls panel in Storybook to inspect NavigationItem props. */}
+
+### Navigation item (mobile)
+
+Mobile navigation items are the same principle but rendered for mobile contexts. Use the playground below to inspect props and interactions.
+
+<Canvas of={MobileNavigationItemStories.Playground} />
+
+{/* Use the Controls panel in Storybook to inspect MobileNavigationItem props. */}
+
+### Notes
+
+- Each of the component stories uses decorators to render the component in the appropriate parent (for example `HeaderAppBar` for the logo). That keeps the component stories focused on a single unit while showing it in-context.
+- To reference a specific story export from another stories file, import the module as a namespace (for example `import * as HeaderLogoStories from './HeaderLogo.stories'`) and then use `<Story of={HeaderLogoStories.Playground} />` in MDX.
