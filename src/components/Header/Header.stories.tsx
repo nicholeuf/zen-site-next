@@ -24,3 +24,11 @@ export const Playground: Story = {
     height: DEFAULT_HEIGHT,
   },
 };
+
+export const Mobile: Story = {
+  ...Playground,
+  globals: {
+    // 👇 Set viewport for all component stories
+    viewport: { value: "mobile1", isRotated: false },
+  },
+};
