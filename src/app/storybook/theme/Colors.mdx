@@ -16,7 +16,7 @@ export const ThemeColorPalette = () => {
     { title: 'background.default', subtitle: constants.colors.cream, colors: { cream: theme.palette.background.default } },
     { title: 'background.paper', subtitle: '#fff', colors: { white: theme.palette.background.paper } },
     { title: 'text.primary', subtitle: constants.colors.carob, colors: { carob: theme.palette.text.primary } },
-    { title: 'text.secondary', subtitle: '?', colors: { secondary: theme.palette.text.secondary } },
+    { title: 'text.secondary', subtitle: theme.palette.text.secondary, colors: { secondary: theme.palette.text.secondary } },
     // project constants
     { title: 'constants.colors.guava', subtitle: constants.colors.guava, colors: { guava: constants.colors.guava } },
     { title: 'constants.colors.carob', subtitle: constants.colors.carob, colors: { carob: constants.colors.carob } },
@@ -27,7 +27,7 @@ export const ThemeColorPalette = () => {
   return (
     <ColorPalette>
       {paletteItems.map((p) => (
-        <ColorItem key={p.title} title={p.title} colors={p.colors} />
+        <ColorItem key={p.title} title={p.title} subtitle={p.subtitle} colors={p.colors} />
       ))}
     </ColorPalette>
   );
