@@ -1,16 +1,15 @@
 import React from 'react';
 import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
-
 import { useTheme } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+
+import theme from '../../styles/theme';
 import constants from '../../styles/constants';
 
-<Meta title="Theme/Colors" />
+<Meta title='Theme/Colors' />
 
 export const ThemeColorPalette = () => {
   const theme = useTheme();
-
-  console.log('palette', theme.palette)
-
   const paletteItems = [
     { title: 'primary.main', subtitle: constants.colors.guava, colors: { guava: theme.palette.primary.main } },
     { title: 'secondary.main', subtitle: constants.colors.carob, colors: { carob: theme.palette.secondary.main } },
@@ -19,13 +18,11 @@ export const ThemeColorPalette = () => {
     { title: 'text.primary', subtitle: constants.colors.carob, colors: { carob: theme.palette.text.primary } },
     { title: 'text.secondary', subtitle: '?', colors: { secondary: theme.palette.text.secondary } },
     // project constants
-    { title: 'constants.guava', subtitle: constants.colors.guava, colors: { guava: constants.colors.guava } },
-    { title: 'constants.carob', subtitle: constants.colors.carob, colors: { carob: constants.colors.carob } },
-    { title: 'constants.cream', subtitle: constants.colors.cream, colors: { cream: constants.colors.cream } },
-    { title: 'constants.gunmetal', subtitle: constants.colors.gunmetal, colors: { gunmetal: constants.colors.gunmetal } },
+    { title: 'constants.colors.guava', subtitle: constants.colors.guava, colors: { guava: constants.colors.guava } },
+    { title: 'constants.colors.carob', subtitle: constants.colors.carob, colors: { carob: constants.colors.carob } },
+    { title: 'constants.colors.cream', subtitle: constants.colors.cream, colors: { cream: constants.colors.cream } },
+    { title: 'constants.colors.gunmetal', subtitle: constants.colors.gunmetal, colors: { gunmetal: constants.colors.gunmetal } },
   ];
-
-  console.log(paletteItems)
 
   return (
     <ColorPalette>
@@ -44,7 +41,9 @@ project-specific constants so you can preview the colors and their hex values.
 
 ## Palette
 
-<ThemeColorPalette />
+<ThemeProvider theme={theme('desktop')}>
+  <ThemeColorPalette />
+</ThemeProvider>
 
 ## Usage
 
