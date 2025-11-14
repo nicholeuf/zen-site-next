@@ -1,8 +1,40 @@
 import React from 'react';
-import { Canvas, Meta } from '@storybook/addon-docs/blocks';
-import * as ColorsStories from './Colors.stories';
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
 
-<Meta of={ColorsStories} />
+import { useTheme } from '@mui/material';
+import constants from '../../styles/constants';
+
+<Meta title="Theme/Colors" />
+
+export const ThemeColorPalette = () => {
+  const theme = useTheme();
+
+  console.log('palette', theme.palette)
+
+  const paletteItems = [
+    { title: 'primary.main', subtitle: constants.colors.guava, colors: { guava: theme.palette.primary.main } },
+    { title: 'secondary.main', subtitle: constants.colors.carob, colors: { carob: theme.palette.secondary.main } },
+    { title: 'background.default', subtitle: constants.colors.cream, colors: { cream: theme.palette.background.default } },
+    { title: 'background.paper', subtitle: '#fff', colors: { white: theme.palette.background.paper } },
+    { title: 'text.primary', subtitle: constants.colors.carob, colors: { carob: theme.palette.text.primary } },
+    { title: 'text.secondary', subtitle: '?', colors: { secondary: theme.palette.text.secondary } },
+    // project constants
+    { title: 'constants.guava', subtitle: constants.colors.guava, colors: { guava: constants.colors.guava } },
+    { title: 'constants.carob', subtitle: constants.colors.carob, colors: { carob: constants.colors.carob } },
+    { title: 'constants.cream', subtitle: constants.colors.cream, colors: { cream: constants.colors.cream } },
+    { title: 'constants.gunmetal', subtitle: constants.colors.gunmetal, colors: { gunmetal: constants.colors.gunmetal } },
+  ];
+
+  console.log(paletteItems)
+
+  return (
+    <ColorPalette>
+      {paletteItems.map((p) => (
+        <ColorItem key={p.title} title={p.title} colors={p.colors} />
+      ))}
+    </ColorPalette>
+  );
+};
 
 # Colors
 
@@ -12,7 +44,7 @@ project-specific constants so you can preview the colors and their hex values.
 
 ## Palette
 
-<Canvas of={ColorsStories.Palette} />
+<ThemeColorPalette />
 
 ## Usage
 
