@@ -1,3 +1,11 @@
+### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/177)
+
+#### Added
+
+- Comprehensive Storybook MDX documentation for theme and components, including Colors and Typography
+- MDX docs for Header, Footer, NextLink, and ExternalLink with mobile/tablet viewport stories
+- Changelog page in Storybook rendering project CHANGELOG.md
+
 ### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/175)
 
 #### Changed
