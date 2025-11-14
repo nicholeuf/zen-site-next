@@ -1,16 +1,18 @@
 import React from 'react';
-import { Canvas, Meta } from '@storybook/addon-docs/blocks';
+import { Canvas, Meta, Controls, Heading, Subheading } from '@storybook/addon-docs/blocks';
 import * as TypographyStories from './Typography.stories';
 
 <Meta of={TypographyStories} />
 
-# Typography
+<Heading>Typography</Heading>
 
 Typography is used for rendering text with theme-aware styles. The examples below show available variants and a Playground you can use to try different props.
 
-## Playground
+
+<Subheading>Playground</Subheading>
 
 <Canvas of={TypographyStories.Playground} />
+<Controls of={TypographyStories.Playground} />
 
 ## Individual examples
 

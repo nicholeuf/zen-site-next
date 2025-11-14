@@ -1,12 +1,12 @@
 import React from 'react';
-import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, Heading, Subheading } from '@storybook/addon-docs/blocks';
 import * as FooterStories from './Footer.stories';
 import * as NavigationItemStories from './NavigationItem.stories';
 
 
 <Meta of={FooterStories} />
 
-## Footer — composition and stories
+<Heading>Footer</Heading>
 
 This page documents how the Footer is built from smaller components and links to their Storybook stories so global decorators and globals (for example backgrounds) are respected in the standalone story pages.
 
@@ -18,20 +18,23 @@ We compose the footer from these story modules:
 The pattern follows Storybook docs for "Working with multiple components":
 https://storybook.js.org/docs/writing-docs/mdx#working-with-multiple-components
 
-### Assembled footer
+
+<Subheading>Assembled footer</Subheading>
 
 A preview of the assembled footer. This uses the main story exported from `Footer.stories.tsx`.
 
 <Canvas of={FooterStories.Playground} parameters={{ layout: 'centered' }} />
+<Controls of={FooterStories.Playground} />
 
 [Go to Mobile Story](?path=/story/components-footer-footer--mobile)
 
 
-### Navigation item (footer)
+<Subheading>Navigation item (footer)</Subheading>
 
 Open the NavigationItem story to inspect the component in its decorated context (note: this story sets the background globals to `carob`).
 
-[Open NavigationItem Story](?path=/story/components-footer-navigationitem--playground)
+<Canvas of={NavigationItemStories.Playground} />
+<Controls of={NavigationItemStories.Playground} />
 
 {/* Use the Controls panel in Storybook to inspect props for component stories. */}
 
