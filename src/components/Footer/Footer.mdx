@@ -1,0 +1,42 @@
+import React from 'react';
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+import * as FooterStories from './Footer.stories';
+import * as NavigationItemStories from './NavigationItem.stories';
+
+
+<Meta of={FooterStories} />
+
+## Footer — composition and stories
+
+This page documents how the Footer is built from smaller components and links to their Storybook stories so global decorators and globals (for example backgrounds) are respected in the standalone story pages.
+
+We compose the footer from these story modules:
+
+- `Footer` (the assembled footer)
+- `NavigationItem` (individual navigation link used in the footer)
+
+The pattern follows Storybook docs for "Working with multiple components":
+https://storybook.js.org/docs/writing-docs/mdx#working-with-multiple-components
+
+### Assembled footer
+
+A preview of the assembled footer. This uses the main story exported from `Footer.stories.tsx`.
+
+<Canvas of={FooterStories.Playground} parameters={{ layout: 'centered' }} />
+
+[Go to Mobile Story](?path=/story/components-footer-footer--mobile)
+
+
+### Navigation item (footer)
+
+Open the NavigationItem story to inspect the component in its decorated context (note: this story sets the background globals to `carob`).
+
+[Open NavigationItem Story](?path=/story/components-footer-navigationitem--playground)
+
+{/* Use the Controls panel in Storybook to inspect props for component stories. */}
+
+### Notes
+
+- The MDX Docs canvas doesn't always pick up story-level or global parameters (such as backgrounds set in the story meta). Linking to the standalone story page guarantees the story's decorators and globals are respected.
+- If you prefer an in-doc preview that mirrors the standalone story, we can add a short code example or copy the decorator into the MDX, but linking is the most reliable option.
+
