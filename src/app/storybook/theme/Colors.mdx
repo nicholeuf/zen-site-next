@@ -3,7 +3,7 @@ import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
 import { useTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 
-import theme from '../../styles/theme';
+import createTheme from '../../styles/theme';
 import constants from '../../styles/constants';
 
 <Meta title='Theme/Colors' />
@@ -41,7 +41,7 @@ project-specific constants so you can preview the colors and their hex values.
 
 ## Palette
 
-<ThemeProvider theme={theme('desktop')}>
+<ThemeProvider theme={createTheme('desktop')}>
   <ThemeColorPalette />
 </ThemeProvider>
 
