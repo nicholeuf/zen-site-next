@@ -1,6 +1,8 @@
+// biome-ignore assist/source/organizeImports: manual sort for mocking
+import navigationMocks from "utils/nextNavigationMock";
+
 import userEvent from "@testing-library/user-event";
 import { renderSnapshotWithLayout, renderWithLayout, screen } from "test-utils";
-import navigationMocks from "utils/nextNavigationMock";
 import { vi } from "vitest";
 import constants from "../styles/constants";
 import WorkPage from "./page";

@@ -27,6 +27,7 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
           <List data-testid="experience-list">
             {item.experience.map((experience, index) => {
               return (
+                // biome-ignore lint/suspicious/noArrayIndexKey: manual fix
                 <DashListItem key={index} data-testid="experience-list-item">
                   <Typography variant="body2">{experience}</Typography>
                 </DashListItem>

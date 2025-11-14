@@ -1,3 +1,7 @@
+// biome-ignore assist/source/organizeImports: manual sort for mocking
+import navigationMocks from "utils/nextNavigationMock";
+import mockGetPlaceholderImage from "./lib/getPlaceholderImage.mock";
+
 import userEvent from "@testing-library/user-event";
 import {
   MD_DEVICE,
@@ -9,10 +13,7 @@ import {
   waitFor,
   XS_DEVICE,
 } from "test-utils";
-import navigationMocks from "utils/nextNavigationMock";
 import { vi } from "vitest";
-import mockGetPlaceholderImage from "./lib/getPlaceholderImage.mock";
-
 import HomePage from "./page";
 
 describe("The Home Page", () => {
@@ -22,8 +23,8 @@ describe("The Home Page", () => {
 
   beforeEach(() => {
     // set pathname for the next/navigation mock
-    navigationMocks.usePathname.mockImplementation(() => '/');
-    mockGetPlaceholderImage.mockResolvedValue('blurred-image');
+    navigationMocks.usePathname.mockImplementation(() => "/");
+    mockGetPlaceholderImage.mockResolvedValue("blurred-image");
   });
 
   afterEach(() => {
