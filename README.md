@@ -1,14 +1,22 @@
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![Vitest](https://img.shields.io/badge/-vitest-%2349C5B6?style=for-the-badge&logo=vitest&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+<!-- Badge rows: tech / tools / CI -->
+<!-- Tech badges -->
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) 
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)](https://reactjs.org/) 
+[![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=flat&logo=mui&logoColor=white)](https://mui.com/) 
+[![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/) 
+[![Storybook](https://img.shields.io/badge/Storybook-%23FF4785?style=flat&logo=storybook&logoColor=white)](https://nicholeuf.github.io/zen-site-next) 
+[![Vitest](https://img.shields.io/badge/-vitest-%2349C5B6?style=flat&logo=vitest&logoColor=white)](https://vitest.dev/) 
+[![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white)](https://vercel.com/)
 
-[![github actions](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml/badge.svg)](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml)
-[![Deploy Storybook](https://github.com/nicholeuf/zen-site-next/actions/workflows/deploy-storybook.yml/badge.svg)](https://github.com/nicholeuf/zen-site-next/actions/workflows/deploy-storybook.yml)
-[![codecov](https://codecov.io/gh/nicholeuf/zen-site-next/graph/badge.svg?token=DVTFETZP3V)](https://codecov.io/gh/nicholeuf/zen-site-next)
-[![Storybook](https://img.shields.io/badge/Storybook-%23FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://nicholeuf.github.io/zen-site-next)
+<!-- Tools / formatting badges -->
+[![Formatted with Biome](https://img.shields.io/badge/Formatted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/) 
+[![Linted with Biome](https://img.shields.io/badge/Linted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/) 
+[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/)
+
+<!-- CI / status badges -->
+[![tests (coverage)](https://img.shields.io/github/actions/workflow/status/nicholeuf/zen-site-next/workflow.yaml?style=flat&label=tests%20%28coverage%29)](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml) 
+[![deploy storybook](https://img.shields.io/github/actions/workflow/status/nicholeuf/zen-site-next/deploy-storybook.yml?style=flat&label=deploy%20storybook)](https://github.com/nicholeuf/zen-site-next/actions/workflows/deploy-storybook.yml) 
+[![codecov](https://img.shields.io/codecov/c/github/nicholeuf/zen-site-next?style=flat)](https://codecov.io/gh/nicholeuf/zen-site-next)
 
 This is a personal portfolio website for Nichole Frey, a Full-Stack Developer. Built with [Next.js](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
