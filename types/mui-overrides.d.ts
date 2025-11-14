@@ -1,14 +1,14 @@
-import '@mui/material/styles';
-import '@mui/material/Typography';
+import "@mui/material/styles";
+import "@mui/material/Typography";
 
-import { Theme as MuiTheme } from '@mui/material/styles';
+import { Theme as MuiTheme } from "@mui/material/styles";
 
-declare module '@emotion/react' {
+declare module "@emotion/react" {
   export interface Theme extends MuiTheme {}
 }
 
 // https://mui.com/material-ui/customization/typography/#adding-amp-disabling-variants
-declare module '@mui/material/styles' {
+declare module "@mui/material/styles" {
   interface TypographyVariants {
     sacramento: React.CSSProperties;
   }
@@ -20,7 +20,7 @@ declare module '@mui/material/styles' {
 }
 
 // Update the Typography's variant prop options
-declare module '@mui/material/Typography' {
+declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     sacramento: true;
   }

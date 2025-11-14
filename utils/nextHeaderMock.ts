@@ -1,4 +1,4 @@
-import { vi } from 'vitest';
+import { vi } from "vitest";
 
 // All static import statements in ES modules are hoisted to the top of the file,
 // so any code that is defined before the imports will actually be executed after
@@ -9,7 +9,7 @@ const headerMocks = vi.hoisted(() => ({
   set: vi.fn(),
 }));
 
-vi.mock('next/headers', async () => ({
+vi.mock("next/headers", async () => ({
   headers() {
     return headerMocks;
   },

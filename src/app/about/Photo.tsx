@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import Box from '@mui/material/Box';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { ItemDataPlaceholder } from './constants';
-import { CldImage } from 'next-cloudinary';
+import Box from "@mui/material/Box";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
+import { CldImage } from "next-cloudinary";
+import { ItemDataPlaceholder } from "./constants";
 
 const Photo: React.FC<ItemDataPlaceholder> = (props) => {
   return (
     <Box
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <Box>
@@ -26,7 +26,7 @@ const Photo: React.FC<ItemDataPlaceholder> = (props) => {
           placeholder="blur"
           blurDataURL={props.blurDataURL}
           style={{
-            borderRadius: '20px',
+            borderRadius: "20px",
           }}
         />
         <ImageListItemBar

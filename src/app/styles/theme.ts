@@ -1,9 +1,9 @@
-'use client';
-import { Inter, Sacramento } from 'next/font/google';
-import { createTheme, responsiveFontSizes, Theme } from '@mui/material/styles';
-import type { ButtonProps } from '@mui/material/Button';
-import type { IconButtonProps } from '@mui/material/IconButton';
-import type { LinkProps } from '@mui/material/Link';
+"use client";
+import type { ButtonProps } from "@mui/material/Button";
+import type { IconButtonProps } from "@mui/material/IconButton";
+import type { LinkProps } from "@mui/material/Link";
+import { createTheme, responsiveFontSizes, Theme } from "@mui/material/styles";
+import { Inter, Sacramento } from "next/font/google";
 
 // Helper for typing styleOverride callbacks: MUI passes an object containing
 // the theme and (optionally) ownerState for the component. We declare a
@@ -12,24 +12,24 @@ type OverrideProps<OwnerState = any> = {
   theme: Theme;
   ownerState?: OwnerState;
 };
-import mediaQuery from 'css-mediaquery';
 
-import constants from './constants';
-import DeviceType from 'types/DeviceType';
-import getWidthByDeviceType from '../ssrMediaQueries/getWidthByDeviceType';
+import mediaQuery from "css-mediaquery";
+import DeviceType from "types/DeviceType";
+import getWidthByDeviceType from "../ssrMediaQueries/getWidthByDeviceType";
+import constants from "./constants";
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts#using-multiple-fonts
 export const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const sacramento = Sacramento({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-sacramento',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-sacramento",
+  display: "swap",
 });
 
 const ssrMatchMedia = (deviceType: DeviceType) => (query: string) => {
@@ -51,7 +51,7 @@ const theme = (deviceType: DeviceType) => {
   // returns both a `root` style (for component styleOverrides) and separate
   // hover/focus pieces for use in global baseline selectors.
   const buildInteractiveParts = (t: Theme) => {
-    const transition = 'color 150ms ease, background-color 150ms ease';
+    const transition = "color 150ms ease, background-color 150ms ease";
     const hover = { backgroundColor: t.palette.action.hover };
     const focus = {
       backgroundColor: t.palette.action.focus,
@@ -61,8 +61,8 @@ const theme = (deviceType: DeviceType) => {
 
     const root = {
       transition,
-      '&:hover': hover,
-      '&:focus-visible, &.Mui-focusVisible': focus,
+      "&:hover": hover,
+      "&:focus-visible, &.Mui-focusVisible": focus,
     };
 
     return {
@@ -76,7 +76,7 @@ const theme = (deviceType: DeviceType) => {
   const mainTheme = createTheme({
     spacing: 8,
     palette: {
-      mode: 'light',
+      mode: "light",
       primary: {
         main: constants.colors.guava,
       },
@@ -90,7 +90,7 @@ const theme = (deviceType: DeviceType) => {
       },
       background: {
         default: constants.colors.cream,
-        paper: '#fff',
+        paper: "#fff",
       },
     },
     typography: {
@@ -98,11 +98,11 @@ const theme = (deviceType: DeviceType) => {
       fontSize: 14,
       sacramento: {
         fontFamily: sacramento.style.fontFamily,
-        fontSize: '26px',
+        fontSize: "26px",
       },
       body2: {
         // default is 0.875rem
-        fontSize: '0.9rem',
+        fontSize: "0.9rem",
       },
     },
     components: {
@@ -117,8 +117,8 @@ const theme = (deviceType: DeviceType) => {
           const parts = buildInteractiveParts(themeParam);
           return {
             body: {
-              overflowX: 'hidden',
-              maxWidth: '100vw',
+              overflowX: "hidden",
+              maxWidth: "100vw",
               color: themeParam.palette.text.primary,
             },
             // transitions for native interactive elements (use the same transition string)
@@ -130,13 +130,13 @@ const theme = (deviceType: DeviceType) => {
               // base link color should be the dark `carob` for good contrast;
               // links are underlined by default so they remain visible when
               // their color matches body text. Hover uses guava as the accent.
-              color: 'inherit',
-              textDecoration: 'underline',
+              color: "inherit",
+              textDecoration: "underline",
               fontWeight: constants.fontWeights.semiBold,
-              '&:hover': {
+              "&:hover": {
                 color: themeParam.palette.primary.main,
               },
-              '&:focus-visible': parts.focusRule,
+              "&:focus-visible": parts.focusRule,
             },
             // hover for native elements
             'a:hover, button:hover, [role="button"]:hover, [role="link"]:hover':
@@ -152,10 +152,10 @@ const theme = (deviceType: DeviceType) => {
       },
       MuiLink: {
         defaultProps: {
-          underline: 'always',
+          underline: "always",
           // let links inherit color so global `a` styles
           // control the default color (carob) and hover accent (guava)
-          color: 'inherit',
+          color: "inherit",
         },
         styleOverrides: {
           root: (props: OverrideProps<LinkProps>) => {
@@ -163,8 +163,8 @@ const theme = (deviceType: DeviceType) => {
             return {
               transition: parts.transitionRule.transition,
               fontWeight: constants.fontWeights.semiBold,
-              '&:hover': parts.hoverRule,
-              '&:focus-visible, &.Mui-focusVisible': parts.focusRule,
+              "&:hover": parts.hoverRule,
+              "&:focus-visible, &.Mui-focusVisible": parts.focusRule,
             };
           },
         },
@@ -182,11 +182,11 @@ const theme = (deviceType: DeviceType) => {
             return {
               ...parts.root,
               // default icon buttons are round in this project (e.g. footer nav)
-              borderRadius: '50%',
+              borderRadius: "50%",
               // ensure focus-visible state keeps the round shape too
-              '&:focus-visible, &.Mui-focusVisible': {
+              "&:focus-visible, &.Mui-focusVisible": {
                 ...parts.focusRule,
-                borderRadius: '50%',
+                borderRadius: "50%",
               },
             };
           },

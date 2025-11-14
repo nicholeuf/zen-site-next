@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Box from '@mui/material/Box';
-import { CldImage, CldImageProps } from 'next-cloudinary';
+import Box from "@mui/material/Box";
+import { CldImage, CldImageProps } from "next-cloudinary";
 
-import { getMainHeight } from '@/app/styles/styleUtils';
+import { getMainHeight } from "@/app/styles/styleUtils";
 
 // https://next.cloudinary.dev/cldimage/examples#fill-parent
 
@@ -23,10 +23,10 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
   children,
 }) => {
   const centerSx = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   };
   return (
     <Box
@@ -34,7 +34,7 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
       sx={{
         ...(centerContent && centerSx),
         minHeight: getMainHeight(),
-        position: 'relative',
+        position: "relative",
       }}
     >
       <CldImage
@@ -44,7 +44,7 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
         {...imageProps}
         style={{
           ...imageProps.style,
-          objectFit: 'cover',
+          objectFit: "cover",
           zIndex: -1,
         }}
       />

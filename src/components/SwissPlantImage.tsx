@@ -1,18 +1,18 @@
 /* eslint-disable react/react-in-jsx-scope -- Unaware of jsxImportSource */
 /** @jsxImportSource @emotion/react */
-import { css } from '@mui/material';
-import Box from '@mui/material/Box';
-import { CldImage } from 'next-cloudinary';
+import { css } from "@mui/material";
+import Box from "@mui/material/Box";
+import { CldImage } from "next-cloudinary";
 
 const SwissPlantImage = () => {
   return (
     <Box
       data-testid="swiss-plant-image"
       sx={{
-        position: 'relative',
-        maxHeight: '100%',
-        aspectRatio: '0.77',
-        overflow: 'hidden',
+        position: "relative",
+        maxHeight: "100%",
+        aspectRatio: "0.77",
+        overflow: "hidden",
       }}
       css={css`
         width: 175px;
@@ -35,11 +35,11 @@ const SwissPlantImage = () => {
         data-testid="bg-image"
         crop="scale"
         style={{
-          objectFit: 'contain',
-          position: 'absolute',
-          top: '0',
-          right: '0',
-          overflow: 'hidden',
+          objectFit: "contain",
+          position: "absolute",
+          top: "0",
+          right: "0",
+          overflow: "hidden",
           zIndex: -1,
         }}
       />

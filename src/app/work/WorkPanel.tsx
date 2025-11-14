@@ -1,13 +1,12 @@
-import Box, { BoxProps } from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Chip from '@mui/material/Chip';
-import List from '@mui/material/List';
-
-import { WorkItemType } from './constants';
-import ChipList from './ChipList';
-import ChipListItem from './ChipListItem';
-import DashListItem from '@/components/DashListItem';
-import constants from '../styles/constants';
+import Box, { BoxProps } from "@mui/material/Box";
+import Chip from "@mui/material/Chip";
+import List from "@mui/material/List";
+import Typography from "@mui/material/Typography";
+import DashListItem from "@/components/DashListItem";
+import constants from "../styles/constants";
+import ChipList from "./ChipList";
+import ChipListItem from "./ChipListItem";
+import { WorkItemType } from "./constants";
 
 interface WorkPanelProps extends BoxProps {
   item: WorkItemType;
@@ -28,6 +27,7 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
           <List data-testid="experience-list">
             {item.experience.map((experience, index) => {
               return (
+                // biome-ignore lint/suspicious/noArrayIndexKey: manual fix
                 <DashListItem key={index} data-testid="experience-list-item">
                   <Typography variant="body2">{experience}</Typography>
                 </DashListItem>

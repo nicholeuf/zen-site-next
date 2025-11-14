@@ -1,9 +1,9 @@
-'use client';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { Theme } from '@mui/material/styles';
+"use client";
+import { Theme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-import MobileNavigation from './MobileNavigation';
-import Navigation from './Navigation';
+import MobileNavigation from "./MobileNavigation";
+import Navigation from "./Navigation";
 
 interface MainNavigationProps {
   color: string;
@@ -15,7 +15,7 @@ const MainNavigation: React.FC<MainNavigationProps> = ({
   activeColor,
 }) => {
   const isMobile = useMediaQuery<Theme>((theme) =>
-    theme.breakpoints.down('sm')
+    theme.breakpoints.down("sm")
   );
 
   return isMobile ? (

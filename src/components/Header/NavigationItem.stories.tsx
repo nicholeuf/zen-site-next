@@ -1,36 +1,35 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
-import List from '@mui/material/List';
-import { within } from '@testing-library/dom';
-
-import NavigationItem from './NavigationItem';
-import { DEFAULT_ACTIVE_COLOR, DEFAULT_COLOR } from './constants';
-import constants from '../../app/styles/constants';
+import List from "@mui/material/List";
+import { Meta, StoryObj } from "@storybook/nextjs-vite";
+import { within } from "@testing-library/dom";
+import React from "react";
+import constants from "../../app/styles/constants";
+import { DEFAULT_ACTIVE_COLOR, DEFAULT_COLOR } from "./constants";
+import NavigationItem from "./NavigationItem";
 
 type Props = React.ComponentProps<typeof NavigationItem>;
 
 const meta: Meta<typeof NavigationItem> = {
-  title: 'Components/Header/NavigationItem',
+  title: "Components/Header/NavigationItem",
   component: NavigationItem,
   parameters: {
-    layout: 'padded',
+    layout: "padded",
   },
   argTypes: {
-    isActive: { control: 'boolean' },
-    activeColor: { control: 'color' },
-    color: { control: 'color' },
-    href: { control: 'text' },
-    name: { control: 'text' },
+    isActive: { control: "boolean" },
+    activeColor: { control: "color" },
+    color: { control: "color" },
+    href: { control: "text" },
+    name: { control: "text" },
   },
 
   decorators: [
     (Story) => (
       <List
         sx={{
-          listStyle: 'none',
-          display: 'flex',
-          alignItems: 'center',
-          height: '100%',
+          listStyle: "none",
+          display: "flex",
+          alignItems: "center",
+          height: "100%",
           p: 0,
           fontWeight: constants.fontWeights.bold,
         }}
@@ -49,8 +48,8 @@ export const Playground: Story = {
     isActive: false,
     activeColor: DEFAULT_ACTIVE_COLOR,
     color: DEFAULT_COLOR,
-    href: '/about',
-    name: 'About',
+    href: "/about",
+    name: "About",
   },
 };
 
@@ -69,7 +68,7 @@ export const FocusVisible: Story = {
   args: Playground.args,
   play: async ({ canvasElement, userEvent }) => {
     const canvas = within(canvasElement as HTMLElement);
-    await userEvent.tab(canvas.getByRole('link'));
+    await userEvent.tab(canvas.getByRole("link"));
   },
 };
 

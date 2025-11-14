@@ -1,8 +1,8 @@
-import { render, screen } from 'test-utils';
-import NavigationItem from './NavigationItem';
+import { render, screen } from "test-utils";
+import NavigationItem from "./NavigationItem";
 
-describe('The NavigationItem component', () => {
-  test('inactive state has expected attributes and style rules', () => {
+describe("The NavigationItem component", () => {
+  test("inactive state has expected attributes and style rules", () => {
     render(
       <NavigationItem
         name="Work"
@@ -13,22 +13,22 @@ describe('The NavigationItem component', () => {
       />
     );
 
-    const link = screen.getByRole('link', {
-      name: 'Work',
+    const link = screen.getByRole("link", {
+      name: "Work",
     }) as HTMLAnchorElement;
 
     expect(link).toBeVisible();
-    expect(link).toHaveAttribute('href', '/work');
-    expect(link).not.toHaveStyleRule('border-bottom', '4px solid');
-    expect(link).not.toHaveStyleRule('border-bottom-color', 'red');
-    expect(link).toHaveStyleRule('color', 'blue');
-    expect(link).toHaveStyleRule('color', 'red', { target: ':hover' });
-    expect(link).toHaveStyleRule('text-decoration', 'none', {
-      target: ':hover',
+    expect(link).toHaveAttribute("href", "/work");
+    expect(link).not.toHaveStyleRule("border-bottom", "4px solid");
+    expect(link).not.toHaveStyleRule("border-bottom-color", "red");
+    expect(link).toHaveStyleRule("color", "blue");
+    expect(link).toHaveStyleRule("color", "red", { target: ":hover" });
+    expect(link).toHaveStyleRule("text-decoration", "none", {
+      target: ":hover",
     });
   });
 
-  test('active state has expected attributes and style rules', () => {
+  test("active state has expected attributes and style rules", () => {
     render(
       <NavigationItem
         name="About"
@@ -39,16 +39,16 @@ describe('The NavigationItem component', () => {
       />
     );
 
-    const link = screen.getByRole('link', {
-      name: 'About',
+    const link = screen.getByRole("link", {
+      name: "About",
     }) as HTMLAnchorElement;
 
     expect(link).toBeVisible();
-    expect(link).toHaveAttribute('href', '/about');
-    expect(link).toHaveStyleRule('color', 'blue');
-    expect(link).toHaveStyleRule('color', 'red', { target: ':hover' });
-    expect(link).toHaveStyleRule('text-decoration', 'none', {
-      target: ':hover',
+    expect(link).toHaveAttribute("href", "/about");
+    expect(link).toHaveStyleRule("color", "blue");
+    expect(link).toHaveStyleRule("color", "red", { target: ":hover" });
+    expect(link).toHaveStyleRule("text-decoration", "none", {
+      target: ":hover",
     });
   });
 });

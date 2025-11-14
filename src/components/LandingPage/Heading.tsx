@@ -1,8 +1,8 @@
 // must declare "use client" because sx is a function
-'use client';
+"use client";
 
-import Typography from '@mui/material/Typography';
-import React from 'react';
+import Typography from "@mui/material/Typography";
+import React from "react";
 
 interface HeadingProps {
   children: React.ReactNode;
@@ -14,7 +14,7 @@ const Heading: React.FC<HeadingProps> = ({ children }) => {
       gutterBottom
       sx={(theme) => ({
         fontSize: {
-          xs: '2.75rem',
+          xs: "2.75rem",
           sm: theme.typography.h1.fontSize,
         },
       })}

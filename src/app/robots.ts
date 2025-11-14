@@ -1,14 +1,14 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
-import getBaseUrl from '@/app/lib/getBaseUrl';
+import getBaseUrl from "@/app/lib/getBaseUrl";
 
 const robots = (): MetadataRoute.Robots => {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
+      userAgent: "*",
+      allow: "/",
     },
-    sitemap: new URL('sitemap.xml', getBaseUrl()).toString(),
+    sitemap: new URL("sitemap.xml", getBaseUrl()).toString(),
   };
 };
 

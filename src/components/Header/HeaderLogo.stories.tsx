@@ -1,24 +1,23 @@
-import React from 'react';
-import { Meta, StoryObj } from '@storybook/nextjs-vite';
-
-import HeaderLogo from './HeaderLogo';
-import HeaderAppBar from './HeaderAppBar';
+import { Meta, StoryObj } from "@storybook/nextjs-vite";
+import React from "react";
 import {
+  DEFAULT_ACTIVE_COLOR,
   DEFAULT_COLOR,
   DEFAULT_HEIGHT,
-  DEFAULT_ACTIVE_COLOR,
-} from './constants';
+} from "./constants";
+import HeaderAppBar from "./HeaderAppBar";
+import HeaderLogo from "./HeaderLogo";
 
 type Props = React.ComponentProps<typeof HeaderLogo>;
 
 const meta: Meta<typeof HeaderLogo> = {
-  title: 'Components/Header/HeaderLogo',
+  title: "Components/Header/HeaderLogo",
   component: HeaderLogo,
-  parameters: { layout: 'padded' },
+  parameters: { layout: "padded" },
   argTypes: {
-    width: { control: 'text' },
-    color: { control: 'color' },
-    activeColor: { control: 'color' },
+    width: { control: "text" },
+    color: { control: "color" },
+    activeColor: { control: "color" },
   },
   decorators: [
     (Story) => (
