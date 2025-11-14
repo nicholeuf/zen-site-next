@@ -1,3 +1,10 @@
+### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/179)
+
+#### Changed
+
+- Upgraded Storybook and associated addons to latest patch release
+- Updated lockfile to reflect new dependency resolutions
+
 ### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/177)
 
 #### Added
