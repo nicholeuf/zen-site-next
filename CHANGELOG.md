@@ -1,3 +1,9 @@
+### 2025-11-25 [*](https://github.com/nicholeuf/zen-site-next/pull/181)
+
+#### Changed
+
+- Streamlined CI workflows: use project Biome via pnpm, simplified Playwright install, and enforced frozen lockfile for consistency
+
 ### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/179)
 
 #### Changed
