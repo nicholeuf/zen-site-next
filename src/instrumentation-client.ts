@@ -19,8 +19,7 @@ Sentry.init({
   sendDefaultPii: !isProduction, // Or based on explicit consent
 
   integrations: [
-    // Only enable replay integration in production to avoid exceeding quota in development
-    ...(isProduction ? [Sentry.replayIntegration()] : []),
+    Sentry.replayIntegration(),
 
     // send console.log, console.warn, and console.error calls as logs to Sentry
     Sentry.consoleLoggingIntegration({ levels: ["warn", "error"] }),
