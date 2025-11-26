@@ -21,14 +21,15 @@ describe("The Work Page", () => {
     expect(container).toMatchSnapshot();
   });
 
-  test.each([["header"], ["work-page"], ["footer"]])(
-    "contains the visible testid %p",
-    (testid) => {
-      renderWithLayout(<WorkPage />);
-      const component = screen.getByTestId(testid);
-      expect(component).toBeVisible();
-    }
-  );
+  test.each([
+    ["header"],
+    ["work-page"],
+    ["footer"],
+  ])("contains the visible testid %p", (testid) => {
+    renderWithLayout(<WorkPage />);
+    const component = screen.getByTestId(testid);
+    expect(component).toBeVisible();
+  });
 
   test("works as expected", async () => {
     const user = userEvent.setup();

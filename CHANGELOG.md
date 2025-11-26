@@ -1,3 +1,12 @@
+### 2025-11-26 [*](https://github.com/nicholeuf/zen-site-next/pull/183)
+
+#### Changed
+
+- Upgraded dependencies across the project and updated tooling configurations
+- Enabled Sentry performance monitoring via browser tracing integration
+- Updated MUI Next.js integration for compatibility with Next.js 16
+- Removed pinned type overrides and applied project-wide formatting
+
 ### 2025-11-26 [*](https://github.com/nicholeuf/zen-site-next/pull/180)
 
 #### Changed
