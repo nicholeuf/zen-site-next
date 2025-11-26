@@ -29,12 +29,11 @@ Sentry.init({
   enableLogs: true,
 
   // Define how likely Replay events are sampled.
-  // This sets the sample rate to be 10%. You may want this to be 100% while
-  // in development and sample at a lower rate in production
-  replaysSessionSampleRate: isProduction ? 0.1 : 1,
+  // Disabled in development to avoid exceeding quota
+  replaysSessionSampleRate: isProduction ? 0.1 : 0,
 
   // Define how likely Replay events are sampled when an error occurs.
-  replaysOnErrorSampleRate: 1.0,
+  replaysOnErrorSampleRate: isProduction ? 1.0 : 0,
 
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
   debug: false,
