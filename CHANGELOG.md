@@ -1,3 +1,9 @@
+### 2025-11-26 [*](https://github.com/nicholeuf/zen-site-next/pull/180)
+
+#### Changed
+
+- Restricted Sentry Replay to production only; disabled replays in development to conserve quota
+
 ### 2025-11-25 [*](https://github.com/nicholeuf/zen-site-next/pull/181)
 
 #### Changed
