@@ -1,15 +1,16 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { vi } from "vitest";
 import SkipLink from "./index";
 
 describe("SkipLink", () => {
   beforeEach(() => {
     // Mock window.history.replaceState
-    window.history.replaceState = jest.fn();
+    window.history.replaceState = vi.fn();
   });
 
   afterEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
 
   it("renders a skip link with correct text", () => {
