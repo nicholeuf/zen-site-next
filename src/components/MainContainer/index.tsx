@@ -14,6 +14,7 @@ const MainContainer: React.FC<MainContainerProps> = ({ children }) => {
     <Container
       // maxWidth="lg"
       component="main"
+      id="main-content"
       sx={{
         mt: constants.header.height,
         minHeight: getMainHeight(),
