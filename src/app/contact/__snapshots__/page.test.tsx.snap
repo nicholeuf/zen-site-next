@@ -2,6 +2,12 @@
 
 exports[`The Contact Page > has expected snapshot 1`] = `
 <div>
+  <a
+    class="MuiBox-root css-277w65"
+    href="#main-content"
+  >
+    Skip to main content
+  </a>
   <header
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionFixed mui-fixed css-1beuld8-MuiPaper-root-MuiAppBar-root"
     data-testid="header"
@@ -75,6 +81,7 @@ exports[`The Contact Page > has expected snapshot 1`] = `
   </header>
   <main
     class="MuiContainer-root MuiContainer-maxWidthLg css-jbpjbe-MuiContainer-root"
+    id="main-content"
   >
     <div
       class="MuiContainer-root MuiContainer-maxWidthLg css-xpnq6v-MuiContainer-root"
