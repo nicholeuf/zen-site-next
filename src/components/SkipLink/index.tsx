@@ -17,7 +17,7 @@ const SkipLink: React.FC = () => {
       href="#main-content"
       onClick={handleClick}
       sx={{
-        position: "absolute",
+        position: "fixed",
         left: "-9999px",
         top: "8px",
         zIndex: 10000,
@@ -29,7 +29,7 @@ const SkipLink: React.FC = () => {
         fontSize: "15px",
         letterSpacing: "0.5px",
         boxShadow: "0 2px 8px rgba(0, 0, 0, 0.2)",
-        transition: "left 0.2s ease-in-out, background-color 0.2s ease-in-out",
+        transition: "all 0.2s ease-in-out",
         "&:focus": {
           left: "12px",
           backgroundColor: `${constants.colors.guava} !important`,
