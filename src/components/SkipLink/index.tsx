@@ -1,13 +1,17 @@
 "use client";
 
 import Box from "@mui/material/Box";
+import { usePathname, useRouter } from "next/navigation";
 import constants from "@/app/styles/constants";
 
 const SkipLink: React.FC = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const handleClick = () => {
     // Remove hash from URL after navigation completes
     setTimeout(() => {
-      window.history.replaceState(null, "", window.location.pathname);
+      router.replace(pathname, { scroll: false });
     }, 0);
   };
 
