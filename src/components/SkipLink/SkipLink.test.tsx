@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { vi } from "vitest";
 import navigationMocks from "utils/nextNavigationMock";
+import { vi } from "vitest";
 import SkipLink from "./index";
 
 const mockReplace = vi.fn();
