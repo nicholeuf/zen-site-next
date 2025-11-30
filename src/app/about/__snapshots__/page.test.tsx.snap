@@ -81,8 +81,9 @@ exports[`The About Page > Snapshot > has expected snapshot 1`] = `
     </nav>
   </header>
   <main
-    class="MuiContainer-root MuiContainer-maxWidthLg css-jbpjbe-MuiContainer-root"
+    class="MuiContainer-root MuiContainer-maxWidthLg css-uscsbk-MuiContainer-root"
     id="main-content"
+    tabindex="-1"
   >
     <div
       class="MuiContainer-root MuiContainer-maxWidthLg css-1ipbonz-MuiContainer-root"
