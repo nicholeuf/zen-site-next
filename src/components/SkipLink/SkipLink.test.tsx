@@ -1,16 +1,24 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { vi } from "vitest";
+import navigationMocks from "utils/nextNavigationMock";
 import SkipLink from "./index";
+
+const mockReplace = vi.fn();
+const mockPathname = "/test-path";
 
 describe("SkipLink", () => {
   beforeEach(() => {
-    // Mock window.history.replaceState
-    window.history.replaceState = vi.fn();
-  });
-
-  afterEach(() => {
-    vi.clearAllMocks();
+    mockReplace.mockClear();
+    navigationMocks.useRouter.mockReturnValue({
+      replace: mockReplace,
+      push: vi.fn(),
+      back: vi.fn(),
+      forward: vi.fn(),
+      refresh: vi.fn(),
+      prefetch: vi.fn(),
+    });
+    navigationMocks.usePathname.mockReturnValue(mockPathname);
   });
 
   it("renders a skip link with correct text", () => {
@@ -48,12 +56,8 @@ describe("SkipLink", () => {
     // Wait for setTimeout to execute
     await new Promise((resolve) => setTimeout(resolve, 10));
 
-    // Verify hash is removed from URL
-    expect(window.history.replaceState).toHaveBeenCalledWith(
-      null,
-      "",
-      window.location.pathname
-    );
+    // Verify router.replace is called to remove hash from URL
+    expect(mockReplace).toHaveBeenCalledWith(mockPathname, { scroll: false });
   });
 
   it("is keyboard accessible with Tab key", async () => {
@@ -86,7 +90,7 @@ describe("SkipLink", () => {
     // Wait for setTimeout
     await new Promise((resolve) => setTimeout(resolve, 10));
 
-    expect(window.history.replaceState).toHaveBeenCalled();
+    expect(mockReplace).toHaveBeenCalled();
   });
 
   it("is positioned fixed for reliable visibility", () => {

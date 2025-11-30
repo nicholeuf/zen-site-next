@@ -1,3 +1,6 @@
+// biome-ignore assist/source/organizeImports: manual sort for mocking
+import navigationMocks from "utils/nextNavigationMock";
+
 import {
   renderSnapshotWithLayout,
   renderWithLayout,
@@ -6,7 +9,6 @@ import {
   XS_DEVICE,
 } from "test-utils";
 
-import navigationMocks from "utils/nextNavigationMock";
 import { vi } from "vitest";
 
 import NotFound from "./not-found";
@@ -16,14 +18,15 @@ describe("The Not Found (404) Page", () => {
     resetMatchMedia();
   });
 
+  beforeEach(() => {
+    navigationMocks.usePathname.mockReturnValue("/figs");
+  });
+
   afterEach(() => {
     vi.resetAllMocks();
   });
 
   test("has expected snapshot", async () => {
-    // set pathname for the next/navigation mock
-    navigationMocks.usePathname.mockImplementation(() => "/figs");
-
     const { container } = renderSnapshotWithLayout(<NotFound />);
     expect(container).toMatchSnapshot();
   });
