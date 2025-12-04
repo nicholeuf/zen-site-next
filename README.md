@@ -22,16 +22,34 @@ This is a personal portfolio website for Nichole Frey, a Full-Stack Developer. B
 
 ## Getting Started
 
+### Prerequisites
+
+This project requires:
+- **Node.js**: See `.nvmrc` for the required version
+- **pnpm**: Version managed via Corepack (see `packageManager` field in `package.json`)
+
+The Node.js version is specified in `.nvmrc` and referenced by all CI workflows. If you use [nvm](https://github.com/nvm-sh/nvm), simply run:
+
+```bash
+nvm use
+```
+
+The pnpm version is pinned via the `packageManager` field in `package.json` and will be automatically used when Corepack is enabled. To enable Corepack:
+
+```bash
+corepack enable
+```
+
+#### Vercel Configuration
+
+For Vercel deployments, the environment variable `ENABLE_EXPERIMENTAL_COREPACK=1` must be set in your project settings to ensure the correct pnpm version is used during builds.
+
+### Development Server
+
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
