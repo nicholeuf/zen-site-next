@@ -1,3 +1,9 @@
+### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/190)
+
+#### Fixed
+
+- CI update-deps workflow now installs Playwright browsers before tests to prevent snapshot failures
+
 ### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/187)
 
 #### Changed
