@@ -1,3 +1,10 @@
+### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/191)
+
+#### Changed
+
+- Updated dependencies across the project, including Next.js, React, MUI, Storybook, and testing tools
+- Regenerated lockfile and refreshed Vitest snapshots for compatibility
+
 ### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/190)
 
 #### Fixed
