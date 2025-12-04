@@ -1,0 +1,38 @@
+import React from 'react';
+import { Canvas, Meta, Controls, Heading, Subheading } from '@storybook/addon-docs/blocks';
+import * as ExternalLinkStories from './ExternalLink.stories';
+
+<Meta of={ExternalLinkStories} />
+
+<Heading>ExternalLink</Heading>
+
+A small wrapper that renders an anchor (`<a>`) using MUI `Box` so theme-aware
+styles and the `sx` prop are supported. This is intended for links that
+navigate to external sites and therefore defaults to `target="_blank"` and
+`rel="noopener"`.
+
+The component accepts the normal anchor props (href, target, rel) plus the
+optional `sx` and `className` props for styling.
+
+
+<Subheading>Example — Playground</Subheading>
+
+<Canvas of={ExternalLinkStories.Playground} />
+<Controls of={ExternalLinkStories.Playground} />
+
+## Interaction examples
+
+<Subheading>Focus (keyboard)</Subheading>
+
+Use the `FocusVisible` story to preview keyboard focus styles. The story
+automatically tabs to the link using a play function.
+
+<Canvas of={ExternalLinkStories.FocusVisible} />
+<Controls of={ExternalLinkStories.FocusVisible} />
+
+<Subheading>Hover state</Subheading>
+
+Use the `Hover` story (pseudo state) to preview hover styles in isolation.
+
+<Canvas of={ExternalLinkStories.Hover} />
+<Controls of={ExternalLinkStories.Hover} />

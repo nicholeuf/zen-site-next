@@ -1,15 +1,22 @@
-import { withSentryConfig } from '@sentry/nextjs';
-import type { NextConfig } from 'next';
+import { withSentryConfig } from "@sentry/nextjs";
+import type { NextConfig } from "next";
+
+// See TSConfig-README.md for notes on how `next.config.ts` uses NODE_ENV to
+// select `tsconfig.build.json` for production builds.
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
+  typescript: {
+    tsconfigPath: isProd ? "tsconfig.build.json" : "tsconfig.json",
+  },
   productionBrowserSourceMaps: true,
   images: {
     // https://nextjs.org/docs/app/api-reference/components/image#qualities
     qualities: [5, 25, 50, 75],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
+        protocol: "https",
+        hostname: "res.cloudinary.com",
       },
     ],
   },
@@ -24,9 +31,9 @@ export default withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://www.npmjs.com/package/@sentry/webpack-plugin#options
 
-  org: 'nicholeuf',
+  org: "nicholeuf",
 
-  project: 'javascript-nextjs',
+  project: "javascript-nextjs",
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,
@@ -41,7 +48,7 @@ export default withSentryConfig(nextConfig, {
   // This can increase your server load as well as your hosting bill.
   // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
   // side errors will fail.
-  tunnelRoute: '/monitoring',
+  tunnelRoute: "/monitoring",
 
   // Automatically tree-shake Sentry logger statements to reduce bundle size
   disableLogger: true,

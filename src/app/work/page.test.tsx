@@ -1,65 +1,66 @@
-import { vi } from 'vitest';
+// biome-ignore assist/source/organizeImports: manual sort for mocking
+import navigationMocks from "utils/nextNavigationMock";
 
-import navigationMocks from 'utils/nextNavigationMock';
-import { renderWithLayout, screen, renderSnapshotWithLayout } from 'test-utils';
-import userEvent from '@testing-library/user-event';
+import userEvent from "@testing-library/user-event";
+import { renderSnapshotWithLayout, renderWithLayout, screen } from "test-utils";
+import { vi } from "vitest";
+import constants from "../styles/constants";
+import WorkPage from "./page";
 
-import WorkPage from './page';
-import constants from '../styles/constants';
-
-describe('The Work Page', () => {
+describe("The Work Page", () => {
   beforeEach(() => {
-    navigationMocks.usePathname.mockImplementation(() => '/work');
+    navigationMocks.usePathname.mockImplementation(() => "/work");
   });
 
   afterEach(() => {
-    vi.clearAllMocks();
+    vi.resetAllMocks();
   });
 
-  test('has expected snapshot', async () => {
+  test("has expected snapshot", async () => {
     const { container } = renderSnapshotWithLayout(<WorkPage />);
     expect(container).toMatchSnapshot();
   });
 
-  test.each([['header'], ['work-page'], ['footer']])(
-    'contains the visible testid %p',
-    (testid) => {
-      renderWithLayout(<WorkPage />);
-      const component = screen.getByTestId(testid);
-      expect(component).toBeVisible();
-    }
-  );
+  test.each([
+    ["header"],
+    ["work-page"],
+    ["footer"],
+  ])("contains the visible testid %p", (testid) => {
+    renderWithLayout(<WorkPage />);
+    const component = screen.getByTestId(testid);
+    expect(component).toBeVisible();
+  });
 
-  test('works as expected', async () => {
+  test("works as expected", async () => {
     const user = userEvent.setup();
 
     renderWithLayout(<WorkPage />);
 
-    const heading = screen.getByRole('heading', { level: 1 });
+    const heading = screen.getByRole("heading", { level: 1 });
     expect(heading).toBeVisible();
-    expect(heading).toHaveTextContent('Work');
+    expect(heading).toHaveTextContent("Work");
 
-    const portfolioHeading2 = screen.getByRole('heading', { level: 2 });
+    const portfolioHeading2 = screen.getByRole("heading", { level: 2 });
     expect(portfolioHeading2).toBeVisible();
-    expect(portfolioHeading2).toHaveTextContent('thecodingyogi.me | Developer');
+    expect(portfolioHeading2).toHaveTextContent("thecodingyogi.me | Developer");
 
-    const imperfectTab = screen.getByRole('tab', { name: 'Imperfect Foods' });
+    const imperfectTab = screen.getByRole("tab", { name: "Imperfect Foods" });
     expect(imperfectTab).toBeVisible();
 
     await user.click(imperfectTab);
 
-    const imperfectHeading2 = screen.getByRole('heading', { level: 2 });
+    const imperfectHeading2 = screen.getByRole("heading", { level: 2 });
     expect(imperfectHeading2).toBeVisible();
     expect(imperfectHeading2).toHaveTextContent(
-      'Imperfect Foods | Full-Stack Developer'
+      "Imperfect Foods | Full-Stack Developer"
     );
 
-    const footer = screen.getByTestId('footer') as HTMLDivElement;
+    const footer = screen.getByTestId("footer") as HTMLDivElement;
     expect(footer).toBeVisible();
-    expect(footer).toHaveStyleRule('color', constants.colors.cream);
-    expect(footer).toHaveStyleRule('background-color', constants.colors.carob);
+    expect(footer).toHaveStyleRule("color", constants.colors.cream);
+    expect(footer).toHaveStyleRule("background-color", constants.colors.carob);
 
-    const nav = screen.getByTestId('footer-nav') as HTMLDivElement;
+    const nav = screen.getByTestId("footer-nav") as HTMLDivElement;
     expect(nav).toBeVisible();
 
     const madeWithLoveCopy = screen.getByText(/Made with/i);

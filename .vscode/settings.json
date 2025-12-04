@@ -1,13 +1,16 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "biomejs.biome",
   "editor.formatOnSave": true,
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "eslint.nodePath": ".yarn/sdks",
-  "prettier.prettierPath": "./node_modules/prettier",
+
+  // Use the workspace TypeScript version (node_modules) so editor and TS server
+  // resolve the same compiler and types as the project.
+  "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "eslint.codeActionsOnSave.rules": null
+
+  // Prefer project-relative import module specifiers where possible
+  "typescript.preferences.importModuleSpecifier": "project-relative"
 }

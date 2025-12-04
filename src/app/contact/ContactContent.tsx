@@ -1,7 +1,7 @@
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
-import ExternalLink from '@/components/ExternalLink';
+import ExternalLink from "@/components/ExternalLink";
 
 interface ContactContent {
   chatEnabled: boolean;
@@ -10,12 +10,7 @@ interface ContactContent {
 const ContactContent: React.FC<ContactContent> = ({ chatEnabled }) => {
   const getCopy = () => {
     const LinkedInContent = (
-      <ExternalLink
-        href="https://www.linkedin.com/in/nicholeuf"
-        sx={{
-          fontWeight: '500',
-        }}
-      >
+      <ExternalLink href="https://www.linkedin.com/in/nicholeuf">
         LinkedIn
       </ExternalLink>
     );
@@ -23,7 +18,7 @@ const ContactContent: React.FC<ContactContent> = ({ chatEnabled }) => {
     return (
       <Typography variant="body2" data-testid="contact-copy">
         Please connect with me on&nbsp;{LinkedInContent}
-        {chatEnabled && ' or send a message in chat'}. I look forward to hearing
+        {chatEnabled && " or send a message in chat"}. I look forward to hearing
         from you!
       </Typography>
     );

@@ -1,9 +1,8 @@
-'use client';
-import Typography from '@mui/material/Typography';
-import { usePathname } from 'next/navigation';
-
-import NextLink from './NextLink';
-import ImageContainer from './ImageContainer';
+"use client";
+import Typography from "@mui/material/Typography";
+import { usePathname } from "next/navigation";
+import ImageContainer from "./ImageContainer";
+import NextLink from "./NextLink";
 
 const NotFound = () => {
   const pathname = usePathname();

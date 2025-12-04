@@ -1,0 +1,9 @@
+{
+  // Use the workspace TypeScript version (node_modules) so editor and TS server
+  // resolve the same compiler and types as the project.
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // Prefer project-relative import module specifiers where possible
+  "typescript.preferences.importModuleSpecifier": "project-relative"
+}

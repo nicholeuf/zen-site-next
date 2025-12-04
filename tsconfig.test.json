@@ -1,0 +1,30 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": [
+      "vitest/globals",
+      "vitest",
+      "node",
+      "@testing-library/jest-dom",
+      "jest"
+    ],
+
+    "paths": {
+      "@/*": ["./src/*"],
+      "utils/*": ["./utils/*"],
+      "test-utils": ["./utils/test-utils"],
+      "types/*": ["./types/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*",
+    "utils/**/*",
+    "tests/**/*",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "types/**/*"
+  ],
+  "exclude": ["node_modules", ".next"]
+}

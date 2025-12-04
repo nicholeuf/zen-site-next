@@ -1,4 +1,4 @@
-import List, { ListProps } from '@mui/material/List';
+import List, { ListProps } from "@mui/material/List";
 
 interface ChipListProps extends ListProps {
   children: React.ReactNode;
@@ -10,11 +10,11 @@ const ChipList: React.FC<ChipListProps> = ({ children, ...props }) => {
       {...props}
       data-testid="chip-list"
       sx={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        flexWrap: 'wrap',
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "flex-start",
+        alignItems: "center",
+        flexWrap: "wrap",
       }}
     >
       {children}

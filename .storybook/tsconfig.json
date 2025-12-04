@@ -1,0 +1,8 @@
+{
+  "extends": "../tsconfig.test.json",
+  "compilerOptions": {
+    // keep defaults from tsconfig.test.json — this file exists so editors and
+    // Storybook tooling pick up the dev/test compiler settings when working
+    // inside the `.storybook` folder.
+  }
+}

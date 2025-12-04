@@ -1,0 +1,43 @@
+import React from 'react';
+import { Canvas, Meta, Controls, Heading, Subheading } from '@storybook/addon-docs/blocks';
+import * as TypographyStories from './Typography.stories';
+
+<Meta of={TypographyStories} />
+
+<Heading>Typography</Heading>
+
+Typography is used for rendering text with theme-aware styles. The examples below show available variants and a Playground you can use to try different props.
+
+
+<Subheading>Playground</Subheading>
+
+<Canvas of={TypographyStories.Playground} />
+<Controls of={TypographyStories.Playground} />
+
+## Individual examples
+
+The sections below show some of the common variants. These reference the individual story exports from `Typography.stories.tsx`.
+
+### Headings
+
+<Canvas of={TypographyStories.H1} />
+<Canvas of={TypographyStories.H2} />
+<Canvas of={TypographyStories.H3} />
+<Canvas of={TypographyStories.H4} />
+<Canvas of={TypographyStories.H5} />
+<Canvas of={TypographyStories.H6} />
+
+### Body & Helper text
+
+<Canvas of={TypographyStories.Subtitle1} />
+<Canvas of={TypographyStories.Subtitle2} />
+<Canvas of={TypographyStories.Body1} />
+<Canvas of={TypographyStories.Body2} />
+<Canvas of={TypographyStories.Caption} />
+<Canvas of={TypographyStories.ButtonText} />
+<Canvas of={TypographyStories.Overline} />
+<Canvas of={TypographyStories.Inherit} />
+
+### Custom / Decorative
+
+<Canvas of={TypographyStories.Sacramento} />

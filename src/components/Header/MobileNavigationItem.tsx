@@ -1,5 +1,5 @@
-import ListItem from '@mui/material/ListItem';
-import NextLink from '@/components/NextLink';
+import ListItem from "@mui/material/ListItem";
+import NextLink from "@/components/NextLink";
 
 interface MobileNavigationItemProps {
   isActive: boolean;
@@ -17,7 +17,7 @@ const MobileNavigationItem: React.FC<MobileNavigationItemProps> = ({
   name,
 }) => {
   const activeStyle = {
-    borderBottom: '4px solid',
+    borderBottom: "4px solid",
     borderBottomColor: activeColor,
   };
 
@@ -32,13 +32,15 @@ const MobileNavigationItem: React.FC<MobileNavigationItemProps> = ({
         href={href}
         onClick={onClick}
         variant="h3"
-        aria-current={isActive ? 'page' : undefined}
+        aria-current={isActive ? "page" : undefined}
         sx={{
           ...(isActive && activeStyle),
-          color: 'background.default',
+          p: 1,
+          color: "background.default",
+          textDecoration: "none",
 
-          '&:hover': {
-            textDecoration: 'none',
+          "&:hover": {
+            textDecoration: "none",
           },
         }}
       >

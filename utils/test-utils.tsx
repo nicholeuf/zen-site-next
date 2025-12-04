@@ -1,9 +1,8 @@
-import React, { ReactElement } from 'react';
-import { render, RenderOptions } from '@testing-library/react';
-import mediaQuery from 'css-mediaquery';
-
-import AppLayout from '@/components/AppLayout';
-import GlobalStyles from '@/app/styles/GlobalStyles';
+import { RenderOptions, render } from "@testing-library/react";
+import mediaQuery from "css-mediaquery";
+import React, { ReactElement } from "react";
+import GlobalStyles from "@/app/styles/GlobalStyles";
+import AppLayout from "@/components/AppLayout";
 
 interface Props {
   children: React.ReactNode;
@@ -11,22 +10,31 @@ interface Props {
 
 // Include header, main, and footer in rendered content
 const MockLayout: React.FC<Props> = ({ children }) => {
-  return <AppLayout deviceType="desktop">{children}</AppLayout>;
+  return (
+    <AppLayout deviceType="desktop" disableRipple>
+      {children}
+    </AppLayout>
+  );
 };
 
-// Include just mui theme global styles
+// Include just mui theme global styles. Disable ripples in tests to avoid
+// TouchRipple async state updates that cause act(...) warnings.
 const MockStyles: React.FC<Props> = ({ children }) => {
-  return <GlobalStyles deviceType="desktop">{children}</GlobalStyles>;
+  return (
+    <GlobalStyles deviceType="desktop" disableRipple>
+      {children}
+    </GlobalStyles>
+  );
 };
 
 const customRender = (
   ui: ReactElement,
-  options?: Omit<RenderOptions, 'wrapper'>
+  options?: Omit<RenderOptions, "wrapper">
 ) => render(ui, { wrapper: MockStyles, ...options });
 
 const customRenderWithLayout = (
   ui: ReactElement,
-  options?: Omit<RenderOptions, 'wrapper'>
+  options?: Omit<RenderOptions, "wrapper">
 ) => render(ui, { wrapper: MockLayout, ...options });
 
 const customSnapshotRender = (children: ReactElement) =>
@@ -35,7 +43,7 @@ const customSnapshotRender = (children: ReactElement) =>
 const customSnapshotRenderWithLayout = (children: ReactElement) =>
   render(<MockLayout>{children}</MockLayout>);
 
-export * from '@testing-library/react';
+export * from "@testing-library/react";
 export {
   customRender as render,
   customRenderWithLayout as renderWithLayout,

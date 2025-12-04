@@ -1,6 +1,6 @@
-import ListItem from '@mui/material/ListItem';
-import IconButton from '@mui/material/IconButton';
-import ExternalLink from '@/components/ExternalLink';
+import IconButton from "@mui/material/IconButton";
+import ListItem from "@mui/material/ListItem";
+import ExternalLink from "@/components/ExternalLink";
 
 interface NavigationItemProps {
   href: string;
@@ -18,40 +18,43 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
     <ListItem
       key={href}
       sx={{
+        width: "40px",
+        height: "40px",
         m: {
-          xs: 1,
-          sm: 3,
+          xs: 0,
+          sm: 2,
         },
         p: 0,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        transition: 'transform 0.25s ease',
-        '&:hover': {
-          transform: 'scale(1.2)',
-        },
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      <ExternalLink
+      <IconButton
+        component={ExternalLink}
         href={href}
         sx={{
-          textDecoration: 'none',
-          height: '100%',
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+          height: "100%",
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          p: 1,
+          transition: (theme) =>
+            theme.transitions.create(["background-color", "transform"], {
+              duration: theme.transitions.duration.shortest,
+            }),
+          // Increase specificity so this rule overrides any less-specific
+          // background rules (for example a global `a` or link reset).
+          "&:hover": {
+            backgroundColor: "action.hover",
+            transform: "scale(1.2)",
+          },
         }}
         aria-label={ariaLabel}
       >
-        <IconButton
-          sx={{
-            p: 0,
-          }}
-        >
-          {children}
-        </IconButton>
-      </ExternalLink>
+        {children}
+      </IconButton>
     </ListItem>
   );
 };

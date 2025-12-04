@@ -1,6 +1,6 @@
-import Box from '@mui/material/Box';
-import NextLink from '@/components/NextLink';
-import VisuallyHidden from '@/components/VisuallyHidden';
+import Box from "@mui/material/Box";
+import NextLink from "@/components/NextLink";
+import VisuallyHidden from "@/components/VisuallyHidden";
 
 interface HeaderLogoProps {
   width: string;
@@ -16,16 +16,14 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
   return (
     <Box
       sx={{
-        typography: 'sacramento',
-        fontSize: '30px',
-        height: '100%',
+        typography: "sacramento",
+        fontSize: "30px",
+        height: width,
         width,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        '&:hover': {
-          cursor: 'pointer',
-        },
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        p: 1,
       }}
       data-testid="header-logo"
     >
@@ -33,14 +31,20 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({
         href="/"
         sx={{
           color,
-          width: '100%',
-          textAlign: 'center',
-          '&:hover': {
+          width: "100%",
+          height: "100%",
+          textAlign: "center",
+          // Ensure the generated logo letters don't get underlined by global link styles
+          textDecoration: "none",
+          "&:hover": {
             color: activeColor,
-            textDecoration: 'none',
+            textDecoration: "none",
           },
-          '&::before': {
+          "&::before": {
             content: '"nf"',
+            width: "100%",
+            height: "100%",
+            display: "block",
           },
         }}
       >

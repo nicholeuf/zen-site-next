@@ -1,20 +1,18 @@
-/* istanbul ignore file */
+/* v8 ignore file -- @preserve */
 
-import { Metadata } from 'next';
-import * as Sentry from '@sentry/nextjs';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
-import { getCldOgImageUrl } from 'next-cloudinary';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
+import * as Sentry from "@sentry/nextjs";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Metadata } from "next";
+import { getCldOgImageUrl } from "next-cloudinary";
+import { SMALLCHAT_ENABLED } from "@/app/lib/smallchat";
+import AppLayout from "@/components/AppLayout";
+import getServerPath from "./lib/getServerPath";
+import getDeviceType from "./ssrMediaQueries/getDeviceType";
 
-import AppLayout from '@/components/AppLayout';
-
-import { SMALLCHAT_ENABLED } from '@/app/lib/smallchat';
-import getDeviceType from './ssrMediaQueries/getDeviceType';
-import getServerPath from './lib/getServerPath';
-
-import '@/app/styles/mobileFix.css';
-import getBaseUrl from './lib/getBaseUrl';
+import "@/app/styles/mobileFix.css";
+import getBaseUrl from "./lib/getBaseUrl";
 
 export async function generateMetadata(): Promise<Metadata> {
   const pathname = await getServerPath();
@@ -22,38 +20,38 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL(getBaseUrl()),
     title: {
-      template: '%s | Nichole Frey',
+      template: "%s | Nichole Frey",
       // a default is required when creating a template
-      default: 'Nichole Frey',
+      default: "Nichole Frey",
     },
     description:
-      'Portfolio website for Nichole Frey, a Full-Stack Developer based in Orlando, FL',
+      "Portfolio website for Nichole Frey, a Full-Stack Developer based in Orlando, FL",
 
-    generator: 'Next.js',
-    applicationName: 'Nichole Frey | Full-Stack Developer',
-    referrer: 'origin-when-cross-origin',
+    generator: "Next.js",
+    applicationName: "Nichole Frey | Full-Stack Developer",
+    referrer: "origin-when-cross-origin",
     keywords: [
-      'Full-Stack Developer',
-      'Web Developer',
-      'Next.js',
-      'React',
-      'JavaScript',
-      'TypeScript',
-      'Material UI',
+      "Full-Stack Developer",
+      "Web Developer",
+      "Next.js",
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "Material UI",
     ],
-    authors: [{ name: 'Nichole Frey' }],
-    creator: 'Nichole Frey',
-    publisher: 'Nichole Frey',
+    authors: [{ name: "Nichole Frey" }],
+    creator: "Nichole Frey",
+    publisher: "Nichole Frey",
     openGraph: {
       siteName: "The Coding Yogi | Nichole Frey's Portfolio Site",
-      type: 'website',
-      locale: 'en_US',
+      type: "website",
+      locale: "en_US",
       url: pathname,
       images: [
         {
           url: getCldOgImageUrl({
-            src: 'zensite/nf-og-pink',
-            crop: 'scale',
+            src: "zensite/nf-og-pink",
+            crop: "scale",
           }),
         },
       ],
@@ -77,8 +75,8 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children }) => {
           name="google-site-verification"
           content={process.env.NEXT_PUBLIC_GOOGLE_AUTHENTICATION}
         />
-        {(process.env.NODE_ENV === 'development' ||
-          process.env.VERCEL_ENV === 'preview') && (
+        {(process.env.NODE_ENV === "development" ||
+          process.env.VERCEL_ENV === "preview") && (
           // eslint-disable-next-line @next/next/no-sync-scripts
           <script
             data-recording-token="T86sC1LMCwAHgHYlQ4lEOy9jKn8djK4LpTfdwgv5"

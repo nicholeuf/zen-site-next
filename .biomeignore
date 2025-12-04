@@ -1,0 +1,5 @@
+.vscode-settings-example.json
+.vscode/**
+node_modules/
+build/
+coverage/

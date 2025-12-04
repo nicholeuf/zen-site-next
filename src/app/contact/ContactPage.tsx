@@ -1,6 +1,6 @@
-'use client';
-import ContactContent from './ContactContent';
-import ImageContainer from '@/components/ImageContainer';
+"use client";
+import ImageContainer from "@/components/ImageContainer";
+import ContactContent from "./ContactContent";
 
 interface ContactPageProps {
   chatEnabled: boolean;

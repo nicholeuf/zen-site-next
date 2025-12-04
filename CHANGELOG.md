@@ -1,3 +1,146 @@
+### 2025-11-26 [*](https://github.com/nicholeuf/zen-site-next/pull/183)
+
+#### Changed
+
+- Upgraded dependencies across the project and updated tooling configurations
+- Enabled Sentry performance monitoring via browser tracing integration
+- Updated MUI Next.js integration for compatibility with Next.js 16
+- Removed pinned type overrides and applied project-wide formatting
+
+### 2025-11-26 [*](https://github.com/nicholeuf/zen-site-next/pull/180)
+
+#### Changed
+
+- Restricted Sentry Replay to production only; disabled replays in development to conserve quota
+
+### 2025-11-25 [*](https://github.com/nicholeuf/zen-site-next/pull/181)
+
+#### Changed
+
+- Streamlined CI workflows: use project Biome via pnpm, simplified Playwright install, and enforced frozen lockfile for consistency
+
+### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/179)
+
+#### Changed
+
+- Upgraded Storybook and associated addons to latest patch release
+- Updated lockfile to reflect new dependency resolutions
+
+### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/177)
+
+#### Added
+
+- Comprehensive Storybook MDX documentation for theme and components, including Colors and Typography
+- MDX docs for Header, Footer, NextLink, and ExternalLink with mobile/tablet viewport stories
+- Changelog page in Storybook rendering project CHANGELOG.md
+
+### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/175)
+
+#### Changed
+
+- Migrated linting/formatting to Biome and updated scripts accordingly
+- Standardized code style (double quotes) and organized imports project-wide
+- Removed legacy ESLint/Prettier configs and added Biome configuration
+
+### 2025-11-13 [*](https://github.com/nicholeuf/zen-site-next/pull/173)
+
+#### Changed
+
+- Improved test reliability by resetting mocks between runs and restructuring about page tests for clarity
+- Added verification that navigation marks the current page correctly
+
+### 2025-11-12 [*](https://github.com/nicholeuf/zen-site-next/pull/171)
+
+#### Changed
+
+- Fixed Storybook deployment by setting required Cloudinary environment variable during build in the workflow
+
+### 2025-11-12 [*](https://github.com/nicholeuf/zen-site-next/pull/169)
+
+#### Changed
+
+- Improved link contrast and accessibility; links now inherit text color with underline and accent on hover
+- Introduced font weight constants and applied semi-bold styling to links and work panel chips
+- Updated theme text color defaults and refreshed skills/tools lists
+- Added Storybook stories for color palette and external link
+
+### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/166)
+
+#### Changed
+
+- Prevent Storybook from being indexed by search engines using a noindex directive
+
+### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/165)
+
+#### Changed
+
+- Made the GitHub Actions workflow badge in README clickable, linking to the workflow page
+
+### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/163)
+
+#### Added
+
+- Automated CI workflow to build and deploy Storybook to GitHub Pages, with deployment badge and published link
+- Documentation covering Storybook deployment process and troubleshooting
+
+### 2025-11-09 [*](https://github.com/nicholeuf/zen-site-next/pull/146)
+
+#### Added
+
+- Add Storybook stories for header and footer components, including interaction and pseudo-state examples
+
+#### Changed
+
+- Upgrade Storybook to v10.0.5 and configure theme, MUI cache, backgrounds, and actions
+- Refactor header/footer into reusable subcomponents and improve Storybook documentation
+
+### 2025-11-09 [*](https://github.com/nicholeuf/zen-site-next/pull/160)
+
+#### Changed
+
+- Add theme-aware hover and focus-visible styles across components and native elements for consistent interactivity
+- Improve header spacing and alignment; refine navigation active indicator with animated underline
+- Simplify link and button styling via shared helper and adjust Storybook a11y checks to todo
+
+### 2025-11-06 [*](https://github.com/nicholeuf/zen-site-next/pull/157)
+
+#### Changed
+
+- Split TypeScript configs into base/build/test for stricter production checks and flexible development
+- Configure Next.js and CI to use strict build config; add dual typecheck workflow and update path aliases
+- Consolidate dev-only types under a dedicated directory and add documentation and editor settings
+
+### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/155)
+
+#### Added
+
+- Mock Next.js router in Storybook with a decorator and provider to enable navigation hooks in stories
+- Configure Storybook/Vite aliases and add dependency to support router mocking
+
+### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/152)
+
+#### Changed
+
+- Improve navigation accessibility and spacing; consolidate hover/focus behaviors on interactive elements
+- Apply global link styles and refactor link components for consistent styling and better control
+- Add option to disable ripple effects in tests to reduce async warnings
+
+### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/150)
+
+#### Changed
+
+- Modernize mobile navigation to use slots-based transitions and lifecycle callbacks for focus management
+
+#### Added
+
+- Add tests to verify focus restoration behavior and maintain coverage
+
+### 2025-11-01 [*](https://github.com/nicholeuf/zen-site-next/pull/147)
+
+#### Changed
+
+- Migrate coverage ignore comments to v8 and refine Vitest coverage configuration for improved accuracy and src-focused patterns
+
 ### 2025-10-30 [*](https://github.com/nicholeuf/zen-site-next/pull/144)
 
 #### Added

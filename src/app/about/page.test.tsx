@@ -1,110 +1,159 @@
+// biome-ignore assist/source/organizeImports: manual sort for mocking
+import navigationMocks from "utils/nextNavigationMock";
+import mockGetPlaceholderImage from "../lib/getPlaceholderImage.mock";
+
+import { within } from "@testing-library/dom";
 import {
   render,
-  renderWithLayout,
-  screen,
   renderSnapshotWithLayout,
+  renderWithLayout,
   resetMatchMedia,
-  XS_DEVICE,
-  SM_DEVICE,
   resolvedComponent,
-} from 'test-utils';
-import AboutPage from './page';
+  SM_DEVICE,
+  XS_DEVICE,
+  screen,
+} from "test-utils";
+import { vi } from "vitest";
+import AboutPage from "./page";
 
-const mockUsePathname = jest.fn();
-const mockGetPlaceholderImage = jest.fn();
+describe("The About Page", () => {
+  describe("Snapshot", () => {
+    beforeEach(() => {
+      resetMatchMedia();
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => "/about");
+      mockGetPlaceholderImage.mockResolvedValue("blurred-image");
+    });
 
-jest.mock('next/navigation', () => ({
-  usePathname() {
-    return mockUsePathname();
-  },
-}));
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
 
-jest.mock('../lib/getPlaceholderImage', () => () => mockGetPlaceholderImage());
-
-describe('The About Page', () => {
-  beforeAll(() => {
-    mockUsePathname.mockImplementation(() => '/about');
-    mockGetPlaceholderImage.mockImplementation(() => 'blurred-image');
-
-    resetMatchMedia();
+    test("has expected snapshot", async () => {
+      const AboutResolved = await resolvedComponent(AboutPage);
+      const { container } = renderSnapshotWithLayout(<AboutResolved />);
+      expect(container).toMatchSnapshot();
+    });
   });
 
-  test('has expected snapshot', async () => {
-    const AboutResolved = await resolvedComponent(AboutPage);
-    const { container } = renderSnapshotWithLayout(<AboutResolved />);
-    expect(container).toMatchSnapshot();
-  });
+  describe("Navigation", () => {
+    beforeEach(() => {
+      resetMatchMedia();
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => "/about");
+      mockGetPlaceholderImage.mockResolvedValue("blurred-image");
+    });
 
-  test.each([['header'], ['about-page'], ['footer']])(
-    'contains the visible testid %p',
-    async (testid) => {
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
+
+    test("can interact with navigation", async () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       renderWithLayout(<AboutResolved />);
-      const component = screen.getByTestId(testid);
-      expect(component).toBeVisible();
-    }
-  );
 
-  describe('User on Desktop', () => {
-    test('has a 3-column layout', async () => {
+      const mainNav = screen.getByRole("navigation", {
+        name: "Main Navigation",
+      });
+
+      expect(mainNav).toBeVisible();
+
+      const aboutLink = within(mainNav).getByRole("link", {
+        name: "About",
+      });
+      expect(aboutLink).toHaveAttribute("aria-current", "page");
+      const homeLink = within(mainNav).getByRole("link", {
+        name: "Home",
+      });
+      expect(homeLink).not.toHaveAttribute("aria-current", "page");
+    });
+  });
+
+  describe("User on Desktop", () => {
+    beforeEach(() => {
+      resetMatchMedia();
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => "/about");
+      mockGetPlaceholderImage.mockResolvedValue("blurred-image");
+    });
+
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
+
+    test("has a 3-column layout", async () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       render(<AboutResolved />);
 
-      const heading = screen.getByRole('heading', { level: 1 });
+      const heading = screen.getByRole("heading", { level: 1 });
       expect(heading).toBeVisible();
-      expect(heading).toHaveTextContent('About');
+      expect(heading).toHaveTextContent("About");
 
-      const photoGrid = screen.queryByTestId('about-photos-3-column-layout');
+      const photoGrid = screen.queryByTestId("about-photos-3-column-layout");
       expect(photoGrid).toBeVisible();
 
-      const napaliPhoto = screen.getByRole('img', {
-        name: 'Na Pali Coast Tour in Kauai, HI (2019)',
+      const napaliPhoto = screen.getByRole("img", {
+        name: "Na Pali Coast Tour in Kauai, HI (2019)",
       });
       expect(napaliPhoto).toBeVisible();
     });
   });
 
-  describe('User with XS Device', () => {
-    beforeAll(() => {
+  describe("User with XS Device", () => {
+    beforeEach(() => {
       resetMatchMedia(XS_DEVICE);
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => "/about");
+      mockGetPlaceholderImage.mockResolvedValue("blurred-image");
     });
 
-    test('has a 1-column layout', async () => {
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
+
+    test("has a 1-column layout", async () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       render(<AboutResolved />);
 
-      const heading = screen.getByRole('heading', { level: 1 });
+      const heading = screen.getByRole("heading", { level: 1 });
       expect(heading).toBeVisible();
-      expect(heading).toHaveTextContent('About');
+      expect(heading).toHaveTextContent("About");
 
-      const photoGrid = screen.queryByTestId('about-photos-1-column-layout');
+      const photoGrid = screen.queryByTestId("about-photos-1-column-layout");
       expect(photoGrid).toBeVisible();
 
-      const napaliPhoto = screen.getByRole('img', {
-        name: 'Na Pali Coast Tour in Kauai, HI (2019)',
+      const napaliPhoto = screen.getByRole("img", {
+        name: "Na Pali Coast Tour in Kauai, HI (2019)",
       });
       expect(napaliPhoto).toBeVisible();
     });
   });
 
-  describe('User with SM Device', () => {
-    beforeAll(() => {
+  describe("User with SM Device", () => {
+    beforeEach(() => {
       resetMatchMedia(SM_DEVICE);
+      // set pathname for the next/navigation mock
+      navigationMocks.usePathname.mockImplementation(() => "/about");
+      mockGetPlaceholderImage.mockResolvedValue("blurred-image");
     });
 
-    test('has a 2-column layout', async () => {
+    afterEach(() => {
+      vi.resetAllMocks();
+    });
+
+    test("has a 2-column layout", async () => {
       const AboutResolved = await resolvedComponent(AboutPage);
       render(<AboutResolved />);
 
-      const heading = screen.getByRole('heading', { level: 1 });
+      const heading = screen.getByRole("heading", { level: 1 });
       expect(heading).toBeVisible();
-      expect(heading).toHaveTextContent('About');
+      expect(heading).toHaveTextContent("About");
 
-      const photoGrid = screen.queryByTestId('about-photos-2-column-layout');
+      const photoGrid = screen.queryByTestId("about-photos-2-column-layout");
       expect(photoGrid).toBeVisible();
 
-      const napaliPhoto = screen.getByRole('img', {
-        name: 'Na Pali Coast Tour in Kauai, HI (2019)',
+      const napaliPhoto = screen.getByRole("img", {
+        name: "Na Pali Coast Tour in Kauai, HI (2019)",
       });
       expect(napaliPhoto).toBeVisible();
     });

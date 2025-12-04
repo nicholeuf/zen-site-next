@@ -1,12 +1,12 @@
-import Box, { BoxProps } from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Chip from '@mui/material/Chip';
-import List from '@mui/material/List';
-
-import { WorkItemType } from './constants';
-import ChipList from './ChipList';
-import ChipListItem from './ChipListItem';
-import DashListItem from '@/components/DashListItem';
+import Box, { BoxProps } from "@mui/material/Box";
+import Chip from "@mui/material/Chip";
+import List from "@mui/material/List";
+import Typography from "@mui/material/Typography";
+import DashListItem from "@/components/DashListItem";
+import constants from "../styles/constants";
+import ChipList from "./ChipList";
+import ChipListItem from "./ChipListItem";
+import { WorkItemType } from "./constants";
 
 interface WorkPanelProps extends BoxProps {
   item: WorkItemType;
@@ -27,6 +27,7 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
           <List data-testid="experience-list">
             {item.experience.map((experience, index) => {
               return (
+                // biome-ignore lint/suspicious/noArrayIndexKey: manual fix
                 <DashListItem key={index} data-testid="experience-list-item">
                   <Typography variant="body2">{experience}</Typography>
                 </DashListItem>
@@ -39,7 +40,14 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
             {item.skills.map((skill) => {
               return (
                 <ChipListItem key={skill}>
-                  <Chip label={skill} color="primary" size="small" />
+                  <Chip
+                    label={skill}
+                    color="primary"
+                    size="medium"
+                    sx={{
+                      fontWeight: constants.fontWeights.semiBold,
+                    }}
+                  />
                 </ChipListItem>
               );
             })}
@@ -54,7 +62,10 @@ const WorkPanel: React.FC<WorkPanelProps> = ({ item, ...props }) => {
                     label={tool}
                     variant="outlined"
                     color="primary"
-                    size="small"
+                    size="medium"
+                    sx={{
+                      fontWeight: constants.fontWeights.semiBold,
+                    }}
                   />
                 </ChipListItem>
               );
