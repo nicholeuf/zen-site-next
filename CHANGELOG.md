@@ -1,3 +1,10 @@
+### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/187)
+
+#### Changed
+
+- Upgraded Node.js runtime to 24 and standardized CI to use it consistently
+- Updated pnpm to 10.24.0 and set explicit Node.js engine constraint
+
 ### 2025-11-26 [*](https://github.com/nicholeuf/zen-site-next/pull/183)
 
 #### Changed
