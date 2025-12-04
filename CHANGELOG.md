@@ -1,3 +1,25 @@
+### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/191)
+
+#### Changed
+
+- Updated dependencies across the project, including Next.js, React, MUI, Storybook, and testing tools
+- Regenerated lockfile and refreshed Vitest snapshots for compatibility
+
+### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/190)
+
+#### Fixed
+
+- CI update-deps workflow now installs Playwright browsers before tests to prevent snapshot failures
+
+### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/187)
+
+#### Changed
+
+- Upgraded Node.js runtime to 24 and centralized version via .nvmrc across environments
+- Updated CI workflows to reference .nvmrc for consistency and maintainability
+- Bumped pnpm version and enforced engine constraints
+- Refreshed documentation and Docker base image to align with new runtime
+
 ### 2025-11-26 [*](https://github.com/nicholeuf/zen-site-next/pull/183)
 
 #### Changed

@@ -15,11 +15,13 @@ jobs:
         name: Install pnpm
       - uses: actions/setup-node@v4
         with:
-          node-version: '22.x'
+          node-version-file: '.nvmrc'
           cache: 'pnpm'
       - run: pnpm install
       - name: Update dependencies
         run: pnpm update --latest
+      - name: Install Playwright Browsers
+        run: pnpm exec playwright install chromium
       - name: Run Vitest to update snapshots
         run: pnpm run test:update
         env:
