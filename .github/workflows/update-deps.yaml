@@ -20,6 +20,8 @@ jobs:
       - run: pnpm install
       - name: Update dependencies
         run: pnpm update --latest
+      - name: Install Playwright Browsers
+        run: pnpm exec playwright install chromium
       - name: Run Vitest to update snapshots
         run: pnpm run test:update
         env:
