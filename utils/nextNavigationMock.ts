@@ -4,10 +4,17 @@ import { vi } from "vitest";
 // so any code that is defined before the imports will actually be executed after
 // imports are evaluated.
 const navigationMocks = vi.hoisted(() => ({
-  usePathname: vi.fn(),
-  useSearchParams: vi.fn(),
-  useRouter: vi.fn(),
-  useParams: vi.fn(),
+  usePathname: vi.fn(() => "/"),
+  useSearchParams: vi.fn(() => new URLSearchParams()),
+  useRouter: vi.fn(() => ({
+    replace: vi.fn(),
+    push: vi.fn(),
+    back: vi.fn(),
+    forward: vi.fn(),
+    refresh: vi.fn(),
+    prefetch: vi.fn(),
+  })),
+  useParams: vi.fn(() => ({})),
 }));
 
 vi.mock("next/navigation", async () => navigationMocks);
