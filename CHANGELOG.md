@@ -1,3 +1,11 @@
+### 2025-12-12 [*](https://github.com/nicholeuf/zen-site-next/pull/194)
+
+#### Changed
+
+- Updated dependencies and refreshed test snapshots for compatibility
+- Migrated Sentry configuration to new webpack-based option structure
+- Added Sentry CLI to built dependencies to support release tooling
+
 ### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/191)
 
 #### Changed
