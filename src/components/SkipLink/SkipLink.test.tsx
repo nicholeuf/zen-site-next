@@ -7,6 +7,15 @@ import SkipLink from "./index";
 const mockReplace = vi.fn();
 const mockPathname = "/test-path";
 
+const addMainContent = () => {
+  const mainContent = document.createElement("div");
+  mainContent.id = "main-content";
+  mainContent.tabIndex = -1;
+  document.body.appendChild(mainContent);
+
+  return mainContent;
+};
+
 describe("SkipLink", () => {
   beforeEach(() => {
     mockReplace.mockClear();
@@ -19,6 +28,10 @@ describe("SkipLink", () => {
       prefetch: vi.fn(),
     });
     navigationMocks.usePathname.mockReturnValue(mockPathname);
+  });
+
+  afterEach(() => {
+    document.body.innerHTML = "";
   });
 
   it("renders a skip link with correct text", () => {
@@ -44,14 +57,17 @@ describe("SkipLink", () => {
     });
   });
 
-  it("removes hash from URL when clicked", async () => {
+  it("moves focus to main content and removes hash when clicked", async () => {
     const user = userEvent.setup();
+    const mainContent = addMainContent();
     render(<SkipLink />);
 
     const link = screen.getByRole("link", { name: /skip to main content/i });
 
     // Click the link
     await user.click(link);
+
+    expect(mainContent).toHaveFocus();
 
     // Wait for setTimeout to execute
     await new Promise((resolve) => setTimeout(resolve, 10));
@@ -79,6 +95,7 @@ describe("SkipLink", () => {
 
   it("can be activated with Enter key", async () => {
     const user = userEvent.setup();
+    const mainContent = addMainContent();
     render(<SkipLink />);
 
     const link = screen.getByRole("link", { name: /skip to main content/i });
@@ -90,6 +107,7 @@ describe("SkipLink", () => {
     // Wait for setTimeout
     await new Promise((resolve) => setTimeout(resolve, 10));
 
+    expect(mainContent).toHaveFocus();
     expect(mockReplace).toHaveBeenCalled();
   });
 

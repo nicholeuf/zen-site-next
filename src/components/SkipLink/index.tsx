@@ -8,7 +8,16 @@ const SkipLink: React.FC = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleClick = () => {
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    const mainContent = document.getElementById("main-content");
+
+    if (mainContent instanceof HTMLElement) {
+      mainContent.focus({ preventScroll: true });
+      mainContent.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
     // Remove hash from URL after navigation completes
     setTimeout(() => {
       router.replace(pathname, { scroll: false });
