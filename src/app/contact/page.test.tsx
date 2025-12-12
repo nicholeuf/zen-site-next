@@ -1,19 +1,22 @@
+// biome-ignore assist/source/organizeImports: manual sort for mocking
+import navigationMocks from "utils/nextNavigationMock";
+
 import { renderSnapshotWithLayout, resetMatchMedia } from "test-utils";
+import { vi } from "vitest";
 
 import ContactPage from "./page";
 
-const mockUsePathname = jest.fn();
-
-jest.mock("next/navigation", () => ({
-  usePathname() {
-    return mockUsePathname();
-  },
-}));
-
 describe("The Contact Page", () => {
   beforeAll(() => {
-    mockUsePathname.mockImplementation(() => "/contact");
     resetMatchMedia();
+  });
+
+  beforeEach(() => {
+    navigationMocks.usePathname.mockReturnValue("/contact");
+  });
+
+  afterEach(() => {
+    vi.resetAllMocks();
   });
 
   test("has expected snapshot", async () => {

@@ -14,11 +14,14 @@ const MainContainer: React.FC<MainContainerProps> = ({ children }) => {
     <Container
       // maxWidth="lg"
       component="main"
+      id="main-content"
+      tabIndex={-1}
       sx={{
         mt: constants.header.height,
         minHeight: getMainHeight(),
         p: "0 !important",
         maxWidth: "100% !important",
+        outline: "none", // To hide the focus ring on the container
       }}
     >
       {children}
