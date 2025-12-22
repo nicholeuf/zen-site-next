@@ -1,3 +1,10 @@
+### 2025-12-22 [*](https://github.com/nicholeuf/zen-site-next/pull/195)
+
+#### Changed
+
+- Updated production and development dependencies to latest versions and refreshed test snapshots
+- Regenerated the lockfile to reflect resolved dependency updates
+
 ### 2025-12-12 [*](https://github.com/nicholeuf/zen-site-next/pull/194)
 
 #### Changed
