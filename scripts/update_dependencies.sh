@@ -3,6 +3,11 @@ set -euo pipefail
 
 # Read the Node major version from .nvmrc and align @types/node with it.
 NODE_MAJOR=$(tr -d 'v' < .nvmrc | cut -d. -f1 | tr -d '[:space:]')
+if [[ ! "$NODE_MAJOR" =~ ^[0-9]+$ ]]; then
+  echo "Error: .nvmrc does not contain a numeric Node major version (got: '${NODE_MAJOR}')."
+  exit 1
+fi
+
 NODE_TYPES_VERSION="^${NODE_MAJOR}"
 
 echo "Using Node major version: ${NODE_MAJOR}"
