@@ -1,3 +1,9 @@
+### 2026-02-05 [*](https://github.com/nicholeuf/zen-site-next/pull/197)
+
+#### Changed
+
+- Updated the dependency update workflow to keep @types/node aligned with the Node version in .nvmrc
+
 ### 2025-12-22 [*](https://github.com/nicholeuf/zen-site-next/pull/195)
 
 #### Changed
