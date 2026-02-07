@@ -1,14 +1,17 @@
 // Bowser does not document all possible platform.type values.
 // These values are based on UAParserJS device types plus Bowser heuristics, not a formal standard.
-type DeviceType =
-  | "mobile"
-  | "tablet"
-  | "tv"
-  | "bot"
-  | "console"
-  | "wearable"
-  | "embedded"
-  | "xr"
-  | "desktop";
+export const DEVICE_TYPES = [
+  "mobile",
+  "tablet",
+  "tv",
+  "bot",
+  "console",
+  "wearable",
+  "embedded",
+  "xr",
+  "desktop",
+] as const;
+
+type DeviceType = (typeof DEVICE_TYPES)[number];
 
 export default DeviceType;

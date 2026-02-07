@@ -16,6 +16,7 @@ export default defineConfig({
     alias: [
       { find: "@", replacement: path.join(dirname, "src") },
       { find: "utils", replacement: path.join(dirname, "utils") },
+      { find: "types", replacement: path.join(dirname, "types") },
       {
         find: "test-utils",
         replacement: path.join(dirname, "utils/test-utils"),
