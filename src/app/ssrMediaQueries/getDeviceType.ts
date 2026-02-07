@@ -1,6 +1,6 @@
+import Bowser from "bowser";
 import { headers } from "next/headers";
-import DeviceType from "types/DeviceType";
-import { IDevice, UAParser } from "ua-parser-js";
+import DeviceType, { DEVICE_TYPES } from "types/DeviceType";
 
 const getDeviceType = async (): Promise<DeviceType> => {
   // Parse deviceType from user agent header on server
@@ -8,13 +8,28 @@ const getDeviceType = async (): Promise<DeviceType> => {
   return getDeviceTypeFromUserAgent(userAgent);
 };
 
-const getDeviceTypeFromUserAgent = (ua: string | null) => {
+const getDeviceTypeFromUserAgent = (ua: string | null): DeviceType => {
   if (ua) {
-    const { device } = UAParser(ua);
-    return device.type || "desktop";
+    try {
+      const parsedUA = Bowser.parse(ua);
+      const platformType = parsedUA?.platform?.type;
+
+      // Return the platform type if present, otherwise default to desktop
+      // Bowser supports: mobile, tablet, desktop, tv, bot
+      if (platformType && isDeviceType(platformType)) {
+        return platformType;
+      }
+    } catch {
+      // fall through to default
+    }
   }
 
   return "desktop";
 };
+
+const DEVICE_TYPE_VALUES = DEVICE_TYPES as readonly string[];
+
+const isDeviceType = (value: unknown): value is DeviceType =>
+  typeof value === "string" && DEVICE_TYPE_VALUES.includes(value);
 
 export default getDeviceType;
