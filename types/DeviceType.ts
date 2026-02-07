@@ -1,9 +1,10 @@
-// https://docs.uaparser.dev/info/device/type.html
-// desktop added as an option in addition to uaparser options
+// Bowser does not document all possible platform.type values.
+// These values are based on UAParserJS device types plus Bowser heuristics, not a formal standard.
 type DeviceType =
   | "mobile"
   | "tablet"
-  | "smarttv"
+  | "tv"
+  | "bot"
   | "console"
   | "wearable"
   | "embedded"

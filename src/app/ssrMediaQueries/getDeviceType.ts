@@ -13,20 +13,10 @@ const getDeviceTypeFromUserAgent = (ua: string | null): DeviceType => {
     const parsedUA = Bowser.parse(ua);
     const platformType = parsedUA.platform.type;
 
-    // Map Bowser's platform types to our DeviceType
+    // Return the platform type if present, otherwise default to desktop
     // Bowser supports: mobile, tablet, desktop, tv, bot
-    if (platformType === "tv") {
-      return "smarttv";
-    }
-
-    // Return the platform type if it matches DeviceType, otherwise default to desktop
-    // platformType can be: mobile, tablet, desktop, bot, or undefined
-    if (
-      platformType === "mobile" ||
-      platformType === "tablet" ||
-      platformType === "desktop"
-    ) {
-      return platformType;
+    if (platformType) {
+      return platformType as DeviceType;
     }
   }
 
