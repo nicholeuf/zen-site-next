@@ -10,13 +10,17 @@ const getDeviceType = async (): Promise<DeviceType> => {
 
 const getDeviceTypeFromUserAgent = (ua: string | null): DeviceType => {
   if (ua) {
-    const parsedUA = Bowser.parse(ua);
-    const platformType = parsedUA.platform.type;
+    try {
+      const parsedUA = Bowser.parse(ua);
+      const platformType = parsedUA?.platform?.type;
 
-    // Return the platform type if present, otherwise default to desktop
-    // Bowser supports: mobile, tablet, desktop, tv, bot
-    if (platformType && isDeviceType(platformType)) {
-      return platformType;
+      // Return the platform type if present, otherwise default to desktop
+      // Bowser supports: mobile, tablet, desktop, tv, bot
+      if (platformType && isDeviceType(platformType)) {
+        return platformType;
+      }
+    } catch {
+      // fall through to default
     }
   }
 
