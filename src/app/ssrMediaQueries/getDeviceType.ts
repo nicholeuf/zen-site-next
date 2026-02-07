@@ -27,7 +27,9 @@ const getDeviceTypeFromUserAgent = (ua: string | null): DeviceType => {
   return "desktop";
 };
 
-const isDeviceType = (value: string): value is DeviceType =>
-  DEVICE_TYPES.includes(value as DeviceType);
+const DEVICE_TYPE_VALUES = DEVICE_TYPES as readonly string[];
+
+const isDeviceType = (value: unknown): value is DeviceType =>
+  typeof value === "string" && DEVICE_TYPE_VALUES.includes(value);
 
 export default getDeviceType;
