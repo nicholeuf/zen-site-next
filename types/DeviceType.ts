@@ -5,10 +5,6 @@ export const DEVICE_TYPES = [
   "tablet",
   "tv",
   "bot",
-  "console",
-  "wearable",
-  "embedded",
-  "xr",
   "desktop",
 ] as const;
 
