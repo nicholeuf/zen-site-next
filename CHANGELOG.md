@@ -1,3 +1,9 @@
+### 2026-02-07 [*](https://github.com/nicholeuf/zen-site-next/pull/198)
+
+#### Changed
+
+- Updated production and development dependencies to latest versions and refreshed test snapshots
+
 ### 2026-02-05 [*](https://github.com/nicholeuf/zen-site-next/pull/197)
 
 #### Changed
