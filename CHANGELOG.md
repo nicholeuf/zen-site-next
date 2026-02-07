@@ -1,3 +1,9 @@
+### 2026-02-07 [*](https://github.com/nicholeuf/zen-site-next/pull/199)
+
+#### Changed
+
+- Replaced the user agent parsing library to improve license compliance and maintainability
+
 ### 2026-02-07 [*](https://github.com/nicholeuf/zen-site-next/pull/198)
 
 #### Changed
