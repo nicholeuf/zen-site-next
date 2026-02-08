@@ -19,7 +19,8 @@
     "test:update": "vitest -u",
     "act": "act --secret-file .env.local",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
