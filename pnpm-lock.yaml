@@ -4,10 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  webpack@>=5.49.0 <5.104.0: '>=5.104.0'
-  webpack@>=5.49.0 <=5.104.0: '>=5.104.1'
-
 importers:
 
   .:
@@ -1451,7 +1447,7 @@ packages:
     resolution: {integrity: sha512-2usiAS8vVBb24DXMYHtHsuCasnxo5uJMO6tpGPCMpyLYVooq5ypNvV+egiwlO6Dmyp9/BFK2hcK1vPRL5K5Trw==}
     engines: {node: '>= 14'}
     peerDependencies:
-      webpack: '>=5.104.1'
+      webpack: '>=4.40.0'
 
   '@sinclair/typebox@0.34.48':
     resolution: {integrity: sha512-kKJTNuK3AQOrgjjotVxMrCn1sUJwM76wMszfq1kdU4uYVJjvEWuFQ6HgvLt4Xz3fSmZlTOxJ/Ie13KnIcWQXFA==}
@@ -1511,7 +1507,7 @@ packages:
       rollup: '*'
       storybook: ^10.2.7
       vite: '*'
-      webpack: '>=5.104.1'
+      webpack: '*'
     peerDependenciesMeta:
       esbuild:
         optional: true
@@ -3106,7 +3102,7 @@ packages:
       '@swc/core': '*'
       esbuild: '*'
       uglify-js: '*'
-      webpack: '>=5.104.1'
+      webpack: ^5.1.0
     peerDependenciesMeta:
       '@swc/core':
         optional: true
