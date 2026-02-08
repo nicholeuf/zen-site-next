@@ -1,3 +1,9 @@
+### 2026-02-08 [*](https://github.com/nicholeuf/zen-site-next/pull/201)
+
+#### Fixed
+
+- Updated webpack and related dependencies to address reported security vulnerabilities
+
 ### 2026-02-07 [*](https://github.com/nicholeuf/zen-site-next/pull/199)
 
 #### Changed
