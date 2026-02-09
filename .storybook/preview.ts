@@ -10,7 +10,9 @@ import theme from "../src/app/styles/theme";
 import MuiCacheDecorator from "../utils/MuiCacheDecorator";
 import NextRouterDecorator from "../utils/NextRouterDecorator";
 
-sb.mock(import("next/navigation"), { spy: true });
+// Ensure the mock is registered before any stories load, so hooks like
+// `usePathname` are consistently mocked across local and CI/Chromatic runs.
+await sb.mock(import("next/navigation"), { spy: true });
 
 const preview: Preview = {
   parameters: {
