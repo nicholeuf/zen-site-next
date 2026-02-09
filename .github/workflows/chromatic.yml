@@ -27,8 +27,8 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Publish to Chromatic
-            projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          env:
-          exitOnceUploaded: true
+        uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         env:
           NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: ${{ secrets.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME }}
