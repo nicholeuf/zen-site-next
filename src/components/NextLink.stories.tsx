@@ -56,7 +56,8 @@ export const FocusVisible: Story = {
   args: Playground.args,
   play: async ({ canvasElement, userEvent }) => {
     const canvas = within(canvasElement as HTMLElement);
-    await userEvent.tab(canvas.getByRole("link"));
+    canvas.getByRole("link").focus();
+    await userEvent.tab();
   },
 };
 
