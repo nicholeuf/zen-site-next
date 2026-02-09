@@ -66,9 +66,7 @@ export const Inactive: Story = {
 export const FocusVisible: Story = {
   ...Playground,
   args: Playground.args,
-  play: async ({ canvasElement, userEvent }) => {
-    const canvas = within(canvasElement as HTMLElement);
-    canvas.getByRole("link").focus();
+  play: async ({ userEvent }) => {
     await userEvent.tab();
   },
 };
