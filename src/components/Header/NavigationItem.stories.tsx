@@ -1,6 +1,7 @@
 import List from "@mui/material/List";
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { within } from "@testing-library/dom";
+import { expect } from "storybook/test";
 import React from "react";
 import constants from "../../app/styles/constants";
 import { DEFAULT_ACTIVE_COLOR, DEFAULT_COLOR } from "./constants";
@@ -66,8 +67,11 @@ export const Inactive: Story = {
 export const FocusVisible: Story = {
   ...Playground,
   args: Playground.args,
-  play: async ({ userEvent }) => {
+  play: async ({ canvasElement, userEvent }) => {
+    const canvas = within(canvasElement as HTMLElement);
+    const link = canvas.getByRole("link");
     await userEvent.tab();
+    await expect(link).toHaveFocus();
   },
 };
 

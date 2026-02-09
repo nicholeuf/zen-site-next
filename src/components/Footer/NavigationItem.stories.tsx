@@ -2,6 +2,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Box from "@mui/material/Box";
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { within } from "@testing-library/dom";
+import { expect } from "storybook/test";
 import React from "react";
 import constants from "../../app/styles/constants";
 import { footerLinks } from "../Footer/constants";
@@ -49,8 +50,11 @@ export const Playground: Story = {
 export const FocusVisible: Story = {
   ...Playground,
   args: Playground.args,
-  play: async ({ userEvent }) => {
+  play: async ({ canvasElement, userEvent }) => {
+    const canvas = within(canvasElement as HTMLElement);
+    const link = canvas.getByRole("link");
     await userEvent.tab();
+    await expect(link).toHaveFocus();
   },
 };
 
