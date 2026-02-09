@@ -10,13 +10,17 @@ interface ImageContainerProps extends PageContainerProps {
 
 const ImageContainer: React.FC<ImageContainerProps> = ({
   children,
+  hasPadding = false,
+  sx,
   ...others
 }) => {
   return (
     <PageContainer
+      {...others}
       data-testid="image-container"
-      hasPadding={false}
+      hasPadding={hasPadding}
       sx={{
+        ...sx,
         display: "flex",
         alignItems: "center",
         minHeight: getMainHeight(),
@@ -24,7 +28,6 @@ const ImageContainer: React.FC<ImageContainerProps> = ({
         position: "relative",
         overflow: "hidden",
       }}
-      {...others}
     >
       <Box
         data-testid="image-background-container"
