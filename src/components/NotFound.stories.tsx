@@ -26,9 +26,9 @@ export default meta;
 type Story = StoryObj<React.ComponentProps<typeof NotFound>>;
 
 const WithFigsRoute: Story = {
-  beforeEach: async () => {
-    mocked(usePathname).mockReturnValue("/figs");
-  },
+  const WithFigsRoute: Story = {
+    beforeEach: () => {
+      mocked(usePathname).mockReturnValue("/figs");
 };
 
 export const Default: Story = {
