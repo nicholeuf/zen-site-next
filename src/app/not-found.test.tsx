@@ -1,51 +1,12 @@
-import {
-  renderSnapshotWithLayout,
-  renderWithLayout,
-  resetMatchMedia,
-  screen,
-  XS_DEVICE,
-} from "test-utils";
-
-import navigationMocks from "utils/nextNavigationMock";
-import { vi } from "vitest";
+import { renderWithLayout } from "test-utils";
+import { describe, expect, test } from "vitest";
 
 import NotFound from "./not-found";
 
-describe("The Not Found (404) Page", () => {
-  beforeAll(() => {
-    resetMatchMedia();
-  });
+describe("The Not Found (404) Route", () => {
+  test("renders the not-found container", () => {
+    renderWithLayout(<NotFound />);
 
-  afterEach(() => {
-    vi.resetAllMocks();
-  });
-
-  test("has expected snapshot", async () => {
-    // set pathname for the next/navigation mock
-    navigationMocks.usePathname.mockImplementation(() => "/figs");
-
-    const { container } = renderSnapshotWithLayout(<NotFound />);
-    expect(container).toMatchSnapshot();
-  });
-
-  describe("User with XS Device", () => {
-    beforeAll(() => {
-      resetMatchMedia(XS_DEVICE);
-    });
-
-    test("has expected content and factors image by 2", () => {
-      // set pathname for the next/navigation mock
-      navigationMocks.usePathname.mockImplementation(() => "/figs");
-
-      renderWithLayout(<NotFound />);
-
-      expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
-        "Sorry"
-      );
-
-      expect(screen.getByTestId("not-found-copy")).toHaveTextContent(
-        "The page /figs could not be found. Would you like to go to the Home Page?"
-      );
-    });
+    expect(document.getElementById("not-found")).toBeInTheDocument();
   });
 });

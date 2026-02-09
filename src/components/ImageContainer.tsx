@@ -8,7 +8,10 @@ interface ImageContainerProps extends PageContainerProps {
   children: React.ReactNode;
 }
 
-const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
+const ImageContainer: React.FC<ImageContainerProps> = ({
+  children,
+  ...others
+}) => {
   return (
     <PageContainer
       data-testid="image-container"
@@ -21,6 +24,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
         position: "relative",
         overflow: "hidden",
       }}
+      {...others}
     >
       <Box
         data-testid="image-background-container"
