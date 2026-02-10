@@ -6,6 +6,7 @@ import {
   DEFAULT_HEIGHT,
 } from "./constants";
 import Header from "./index";
+import { expect, userEvent, waitFor, within, screen } from "storybook/test";
 
 const meta: Meta<typeof Header> = {
   title: "Components/Header/Header",
@@ -29,7 +30,43 @@ export const Mobile: Story = {
   ...Playground,
   globals: {
     // 👇 Set viewport for all component stories
-    viewport: { value: "mobile1", isRotated: false },
+    viewport: { value: "mobile2", isRotated: false },
+  },
+};
+
+export const MobileNavigation: Story = {
+  ...Playground,
+  globals: {
+    // 👇 Set viewport for all component stories
+    viewport: { value: "mobile2", isRotated: false },
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement as HTMLElement);
+    const user = userEvent.setup();
+    const getDialog = () => screen.queryByTestId("mobile-navigation-dialog");
+
+    const openButton = canvas.getByRole("button", {
+      name: "Mobile Navigation Trigger",
+    });
+    await waitFor(() => expect(openButton).toHaveFocus());
+    expect(openButton).toHaveAttribute("aria-expanded", "false");
+
+    await user.click(openButton);
+    expect(getDialog()).toBeVisible();
+    expect(openButton).toHaveAttribute("aria-expanded", "true");
+
+    const closeButton = screen.getByRole("button", {
+      name: "Close Mobile Navigation",
+    });
+    await waitFor(() => expect(closeButton).toHaveFocus());
+
+    await waitFor(() => {
+      expect(
+        screen.getByRole("navigation", {
+          name: "Main Navigation",
+        })
+      ).toBeVisible();
+    });
   },
 };
 
