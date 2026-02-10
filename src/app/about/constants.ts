@@ -1,3 +1,6 @@
+import getPlaceholderImage from "../lib/getPlaceholderImage";
+import ImageDimensions from "../../../types/ImageDimensions";
+
 export interface ItemData {
   src: string;
   title: string;
@@ -10,6 +13,11 @@ export interface ItemDataPlaceholder extends ItemData {
   width: number;
   height: number;
 }
+
+export const defaultDimensions: ImageDimensions = {
+  width: 300,
+  height: 300,
+};
 
 export const itemData: ItemData[] = [
   {
@@ -53,3 +61,21 @@ export const itemData: ItemData[] = [
     location: "Boulder, CO (2014)",
   },
 ];
+
+export const getItemPlaceholderData = async () => {
+  const itemDataPlaceholder = await Promise.all(
+    itemData.map(async (item): Promise<ItemDataPlaceholder> => {
+      const blurDataURL = await getPlaceholderImage({
+        src: item.src,
+        ...defaultDimensions,
+      });
+      return {
+        ...item,
+        ...defaultDimensions,
+        blurDataURL,
+      };
+    })
+  );
+
+  return { itemDataPlaceholder };
+};
