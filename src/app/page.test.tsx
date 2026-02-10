@@ -23,7 +23,6 @@ describe("The Home Page", () => {
   ])("contains the visible testid %p", async (testid) => {
     const HomeResolved = await resolvedComponent(HomePage);
     renderWithLayout(<HomeResolved />);
-    // renderWithLayout(<HomePage />);
     const component = screen.getByTestId(testid);
     expect(component).toBeVisible();
   });
