@@ -1,3 +1,10 @@
+### 2026-02-10 [*](https://github.com/nicholeuf/zen-site-next/pull/202)
+
+#### Changed
+
+- Added Chromatic visual testing integration in CI
+- Migrated page-level UI tests to Storybook interaction tests and streamlined unit tests
+
 ### 2026-02-08 [*](https://github.com/nicholeuf/zen-site-next/pull/201)
 
 #### Fixed
