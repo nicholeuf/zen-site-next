@@ -53,7 +53,7 @@ export const Default: Story = {
     const heading = canvas.getByRole("heading", { name: "About" });
     expect(heading).toBeVisible();
 
-    expect(usePathname).toBeCalled();
+    expect(usePathname).toHaveBeenCalled();
   },
 };
 
