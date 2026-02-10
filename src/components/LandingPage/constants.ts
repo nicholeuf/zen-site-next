@@ -46,13 +46,17 @@ export const getLandingPageProps = async (): Promise<LandingPageProps> => {
   return {
     backgroundImageProps: {
       ...backgroundImageProps,
-      placeholder: "blur",
-      blurDataURL: backgroundBlurDataUrl,
+      ...(!!backgroundBlurDataUrl && {
+        placeholder: "blur",
+        blurDataURL: backgroundBlurDataUrl,
+      }),
     },
     profileImageProps: {
       ...profileImageProps,
-      placeholder: "blur",
-      blurDataURL: profileBlurDataURL,
+      ...(!!profileBlurDataURL && {
+        placeholder: "blur",
+        blurDataURL: profileBlurDataURL,
+      }),
     },
   };
 };

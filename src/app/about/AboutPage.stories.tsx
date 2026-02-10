@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
 
 import StoryAppLayout from "utils/StoryAppLayout";
+import getPlaceholderImage from "../lib/getPlaceholderImage";
 import routes from "@/app/lib/routes";
 import AboutPage from "./AboutPage";
 import { getItemPlaceholderData } from "./constants";
@@ -32,6 +33,7 @@ type Story = StoryObj<React.ComponentProps<typeof AboutPage>>;
 const WithAboutRoute: Story = {
   beforeEach: () => {
     mocked(usePathname).mockReturnValue(routes.about.href);
+    mocked(getPlaceholderImage).mockResolvedValue("blurred-image");
   },
   loaders: [
     async () => {

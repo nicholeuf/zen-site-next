@@ -3,6 +3,7 @@ import { within } from "@testing-library/dom";
 import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
 import StoryAppLayout from "utils/StoryAppLayout";
+import getPlaceholderImage from "../../app/lib/getPlaceholderImage";
 import routes from "@/app/lib/routes";
 import LandingPage from ".";
 import { getLandingPageProps } from "./constants";
@@ -31,6 +32,7 @@ type Story = StoryObj<React.ComponentProps<typeof LandingPage>>;
 const WithLandingPageRoute: Story = {
   beforeEach: () => {
     mocked(usePathname).mockReturnValue(routes.home.href);
+    mocked(getPlaceholderImage).mockResolvedValue("blurred-image");
   },
   loaders: [
     async () => {
@@ -39,7 +41,9 @@ const WithLandingPageRoute: Story = {
       };
     },
   ],
-  render: (args, { loaded: { props } }) => <LandingPage {...args} {...props} />,
+  render: (args, { loaded: { props } }) => {
+    return <LandingPage {...args} {...props} />;
+  },
 };
 
 export const Default: Story = {

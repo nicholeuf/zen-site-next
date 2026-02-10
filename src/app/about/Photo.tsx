@@ -23,11 +23,13 @@ const Photo: React.FC<ItemDataPlaceholder> = (props) => {
           zoom="0.1"
           gravity="faces"
           alt={`${props.title} in ${props.location}`}
-          placeholder="blur"
-          blurDataURL={props.blurDataURL}
           style={{
             borderRadius: "20px",
           }}
+          {...(!!props.blurDataURL && {
+            placeholder: "blur",
+            blurDataURL: props.blurDataURL,
+          })}
         />
         <ImageListItemBar
           title={props.title}
