@@ -5,6 +5,7 @@
 [![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=flat&logo=mui&logoColor=white)](https://mui.com/) 
 [![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/) 
 [![Storybook](https://img.shields.io/badge/Storybook-%23FF4785?style=flat&logo=storybook&logoColor=white)](https://nicholeuf.github.io/zen-site-next) 
+[![Chromatic](https://img.shields.io/badge/Chromatic-%23F14C4C?style=flat&logo=chromatic&logoColor=white)](https://www.chromatic.com/library?appId=69890fe4cbad40f185523f5e)
 [![Vitest](https://img.shields.io/badge/-vitest-%2349C5B6?style=flat&logo=vitest&logoColor=white)](https://vitest.dev/) 
 [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white)](https://vercel.com/)
 
@@ -71,6 +72,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 This project includes a Storybook setup for visual component development and documentation. It is pre-configured to work with MUI (Emotion) and to pick up local TypeScript module augmentations.
 
+Chromatic is used to publish the latest Storybook build; use the Storybook and Chromatic badges above as the source of truth for access.
+The GitHub Pages Storybook reflects the latest master build.
+
 See `.storybook/README.md` for details, validation commands, and troubleshooting tips.
 
 To start Storybook locally:
@@ -78,11 +82,6 @@ To start Storybook locally:
 ```bash
 pnpm storybook
 ```
-
-View the published Storybooks:
-
-- Chromatic (latest build): https://www.chromatic.com/library?appId=69890fe4cbad40f185523f5e
-- GitHub Pages (last main branch snapshot): https://nicholeuf.github.io/zen-site-next
 
 ### Storybook interactions & hover
 
