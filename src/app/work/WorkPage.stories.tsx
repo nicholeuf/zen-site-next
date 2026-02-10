@@ -30,9 +30,6 @@ const WithWorkRoute: Story = {
   beforeEach: () => {
     mocked(usePathname).mockReturnValue(routes.work.href);
   },
-  afterEach: () => {
-    mocked(usePathname).mockReset();
-  },
 };
 
 export const Default: Story = {

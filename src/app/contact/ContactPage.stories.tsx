@@ -30,9 +30,6 @@ const WithContactRoute: Story = {
   beforeEach: () => {
     mocked(usePathname).mockReturnValue(routes.contact.href);
   },
-  afterEach: () => {
-    mocked(usePathname).mockReset();
-  },
   args: {
     chatEnabled: false,
   },

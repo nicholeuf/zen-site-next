@@ -33,9 +33,6 @@ const WithAboutRoute: Story = {
   beforeEach: () => {
     mocked(usePathname).mockReturnValue(routes.about.href);
   },
-  afterEach: () => {
-    mocked(usePathname).mockReset();
-  },
   loaders: [
     async () => {
       return {
