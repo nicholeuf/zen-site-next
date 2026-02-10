@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import React from "react";
+import { expect, screen, userEvent, waitFor, within } from "storybook/test";
 import Footer, { DEFAULT_HEIGHT } from "./index";
 
 const meta: Meta<typeof Footer> = {
@@ -16,13 +17,53 @@ export const Playground: Story = {
   args: {
     height: DEFAULT_HEIGHT,
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement as HTMLElement);
+
+    const footer = canvas.getByTestId("footer") as HTMLDivElement;
+    expect(footer).toBeVisible();
+
+    const nav = canvas.getByRole("navigation", {
+      name: "External Navigation",
+    }) as HTMLDivElement;
+    expect(nav).toBeVisible();
+
+    const madeWithLoveCopy = canvas.getByText(/Made with/i);
+    expect(madeWithLoveCopy).toBeVisible();
+
+    const copyRightCopy = canvas.getByText(/Copyright/i);
+    expect(copyRightCopy).toBeVisible();
+
+    const sourceCopy = canvas.getByText(/View Source Code/i);
+    expect(sourceCopy).toBeVisible();
+  },
+};
+
+export const ViewCredits: Story = {
+  render: (args) => <Footer {...args} />,
+  args: {
+    height: DEFAULT_HEIGHT,
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement as HTMLElement);
+
+    const viewCreditsButton = canvas.getByRole("button", {
+      name: /view credits/i,
+    });
+
+    await userEvent.click(viewCreditsButton);
+
+    await waitFor(() => {
+      expect(screen.getByRole("heading", { name: /credits/i })).toBeVisible();
+    });
+  },
 };
 
 export const Mobile: Story = {
   ...Playground,
   globals: {
     // 👇 Set viewport for all component stories
-    viewport: { value: "mobile1", isRotated: false },
+    viewport: { value: "mobile2", isRotated: false },
   },
 };
 

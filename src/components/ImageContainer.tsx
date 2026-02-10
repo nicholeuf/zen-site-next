@@ -8,12 +8,19 @@ interface ImageContainerProps extends PageContainerProps {
   children: React.ReactNode;
 }
 
-const ImageContainer: React.FC<ImageContainerProps> = ({ children }) => {
+const ImageContainer: React.FC<ImageContainerProps> = ({
+  children,
+  hasPadding = false,
+  sx,
+  ...others
+}) => {
   return (
     <PageContainer
+      {...others}
       data-testid="image-container"
-      hasPadding={false}
+      hasPadding={hasPadding}
       sx={{
+        ...sx,
         display: "flex",
         alignItems: "center",
         minHeight: getMainHeight(),

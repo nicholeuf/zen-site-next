@@ -1,4 +1,13 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import type { StorybookConfig } from "@storybook/nextjs-vite";
+import tsconfigPaths from "vite-tsconfig-paths";
+
+const dirname =
+  typeof __dirname !== "undefined"
+    ? __dirname
+    : path.dirname(fileURLToPath(import.meta.url));
+const appRoot = path.join(dirname, "..");
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -30,6 +39,12 @@ const config: StorybookConfig = {
           "next/navigation": "next-router-mock/navigation",
         },
       },
+      plugins: [
+        ...(config.plugins ?? []),
+        tsconfigPaths({
+          projects: [path.join(appRoot, "tsconfig.test.json")],
+        }),
+      ],
     };
   },
 };

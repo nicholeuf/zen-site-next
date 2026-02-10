@@ -1,11 +1,20 @@
 import { ThemeProvider } from "@mui/material";
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 import type { Preview } from "@storybook/nextjs-vite";
+import { sb } from "storybook/test";
 import constants from "../src/app/styles/constants";
 import GlobalStyles from "../src/app/styles/GlobalStyles";
+import "../src/app/styles/mobileFix.css";
+
 import theme from "../src/app/styles/theme";
 import MuiCacheDecorator from "../utils/MuiCacheDecorator";
 import NextRouterDecorator from "../utils/NextRouterDecorator";
+
+// Ensure the mock is registered before any stories load, so hooks like
+// `usePathname` are consistently mocked across local and CI/Chromatic runs.
+await sb.mock(import("next/navigation"), { spy: true });
+// Ensure image placeholder helper is mocked for story loaders.
+await sb.mock(import("../src/app/lib/getPlaceholderImage.ts"));
 
 const preview: Preview = {
   parameters: {

@@ -79,7 +79,10 @@ To start Storybook locally:
 pnpm storybook
 ```
 
-View the published Storybook: https://nicholeuf.github.io/zen-site-next
+View the published Storybooks:
+
+- Chromatic (latest build): https://www.chromatic.com/library?appId=69890fe4cbad40f185523f5e
+- GitHub Pages (last main branch snapshot): https://nicholeuf.github.io/zen-site-next
 
 ### Storybook interactions & hover
 

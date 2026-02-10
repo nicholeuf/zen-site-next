@@ -8,7 +8,7 @@ interface ContactPageProps {
 
 const ContactPage: React.FC<ContactPageProps> = ({ chatEnabled }) => {
   return (
-    <ImageContainer>
+    <ImageContainer id="contact-page">
       <ContactContent chatEnabled={chatEnabled} />
     </ImageContainer>
   );

@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write",
+    "format": "biome format --write && biome check --fix",
     "tsc": "tsc --project  ./tsconfig.json",
     "test": "vitest",
     "test:ci": "vitest run",
@@ -19,7 +19,8 @@
     "test:update": "vitest -u",
     "act": "act --secret-file .env.local",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -57,6 +58,7 @@
     "@types/react-dom": "19.2.3",
     "@vitest/browser-playwright": "^4.0.18",
     "@vitest/coverage-v8": "^4.0.18",
+    "chromatic": "^15.0.0",
     "cross-fetch": "^4.1.0",
     "css-mediaquery": "^0.1.2",
     "jest-environment-jsdom": "^30.2.0",
@@ -67,6 +69,7 @@
     "storybook-addon-pseudo-states": "^10.2.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
+    "vite-tsconfig-paths": "^6.1.0",
     "vitest": "^4.0.18"
   }
 }

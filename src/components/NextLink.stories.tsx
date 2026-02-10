@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { within } from "@testing-library/dom";
+import { expect } from "storybook/test";
 
 import NextLink, { NextLinkProps } from "./NextLink";
 
@@ -56,7 +57,9 @@ export const FocusVisible: Story = {
   args: Playground.args,
   play: async ({ canvasElement, userEvent }) => {
     const canvas = within(canvasElement as HTMLElement);
-    await userEvent.tab(canvas.getByRole("link"));
+    const link = canvas.getByRole("link");
+    await userEvent.tab();
+    await expect(link).toHaveFocus();
   },
 };
 

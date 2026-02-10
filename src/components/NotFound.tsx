@@ -8,7 +8,7 @@ const NotFound = () => {
   const pathname = usePathname();
 
   return (
-    <ImageContainer>
+    <ImageContainer id="not-found">
       <Typography variant="h1" gutterBottom>
         Sorry
       </Typography>
