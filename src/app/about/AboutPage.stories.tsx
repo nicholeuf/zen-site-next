@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
 
 import StoryAppLayout from "utils/StoryAppLayout";
-import getPlaceholderImage from "../lib/getPlaceholderImage";
 import routes from "@/app/lib/routes";
+import getPlaceholderImage from "../lib/getPlaceholderImage";
 import AboutPage from "./AboutPage";
 import { getItemPlaceholderData } from "./constants";
 
