@@ -32,6 +32,9 @@ const WithLandingPageRoute: Story = {
   beforeEach: () => {
     mocked(usePathname).mockReturnValue(routes.home.href);
   },
+  afterEach: () => {
+    mocked(usePathname).mockReset();
+  },
   loaders: [
     async () => {
       return {

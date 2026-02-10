@@ -29,6 +29,9 @@ const WithFigsRoute: Story = {
   beforeEach: () => {
     mocked(usePathname).mockReturnValue("/figs");
   },
+  afterEach: () => {
+    mocked(usePathname).mockReset();
+  },
 };
 
 export const Default: Story = {
