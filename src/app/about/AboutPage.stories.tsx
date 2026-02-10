@@ -5,7 +5,6 @@ import { expect, mocked } from "storybook/test";
 
 import StoryAppLayout from "utils/StoryAppLayout";
 import routes from "@/app/lib/routes";
-import getPlaceholderImage from "../lib/getPlaceholderImage";
 import AboutPage from "./AboutPage";
 import { getItemPlaceholderData } from "./constants";
 
@@ -33,7 +32,6 @@ type Story = StoryObj<React.ComponentProps<typeof AboutPage>>;
 const WithAboutRoute: Story = {
   beforeEach: () => {
     mocked(usePathname).mockReturnValue(routes.about.href);
-    mocked(getPlaceholderImage).mockResolvedValue("blurred-image");
   },
   loaders: [
     async () => {
@@ -42,9 +40,9 @@ const WithAboutRoute: Story = {
       };
     },
   ],
-  render: (args, { loaded: { itemPlaceholder } }) => (
-    <AboutPage {...args} itemPlaceholder={itemPlaceholder} />
-  ),
+  render: (args, { loaded: { itemPlaceholder } }) => {
+    return <AboutPage {...args} itemPlaceholder={itemPlaceholder} />;
+  },
 };
 
 export const Default: Story = {
@@ -54,6 +52,8 @@ export const Default: Story = {
 
     const heading = canvas.getByRole("heading", { name: "About" });
     expect(heading).toBeVisible();
+
+    expect(usePathname).toBeCalled();
   },
 };
 

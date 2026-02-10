@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
 import StoryAppLayout from "utils/StoryAppLayout";
 import routes from "@/app/lib/routes";
-import getPlaceholderImage from "../../app/lib/getPlaceholderImage";
 import LandingPage from ".";
 import { getLandingPageProps } from "./constants";
 
@@ -32,7 +31,6 @@ type Story = StoryObj<React.ComponentProps<typeof LandingPage>>;
 const WithLandingPageRoute: Story = {
   beforeEach: () => {
     mocked(usePathname).mockReturnValue(routes.home.href);
-    mocked(getPlaceholderImage).mockResolvedValue("blurred-image");
   },
   loaders: [
     async () => {
@@ -58,6 +56,7 @@ export const Default: Story = {
       name: /full-stack developer/i,
     });
     expect(subheading, "Subheading").toBeVisible();
+    expect(usePathname).toBeCalled();
   },
 };
 
