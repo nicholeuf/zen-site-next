@@ -6,7 +6,7 @@ interface GetPlaceholderImageProps {
   src: string;
   width?: number;
   height?: number;
-  opacity?: any;
+  opacity?: number;
 }
 
 // https://next.cloudinary.dev/guides/placeholders#blurred-images
@@ -15,7 +15,7 @@ const getPlaceholderImage = async ({
   src,
   width = 100,
   height = 100,
-  opacity = "100",
+  opacity = 100,
 }: GetPlaceholderImageProps) => {
   const imageUrl = getCldImageUrl({
     src,
