@@ -2,7 +2,8 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { within } from "@testing-library/dom";
 import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
-import StoryAppLayout from "../../../utils/StoryAppLayout";
+import StoryAppLayout from "utils/StoryAppLayout";
+import routes from "@/app/lib/routes";
 import LandingPage from ".";
 import { getLandingPageProps } from "./constants";
 
@@ -29,7 +30,7 @@ type Story = StoryObj<React.ComponentProps<typeof LandingPage>>;
 
 const WithLandingPageRoute: Story = {
   beforeEach: () => {
-    mocked(usePathname).mockReturnValue("/");
+    mocked(usePathname).mockReturnValue(routes.home.href);
   },
   loaders: [
     async () => {

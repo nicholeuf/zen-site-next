@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { within } from "@testing-library/dom";
 import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
-import StoryAppLayout from "../../utils/StoryAppLayout";
+import StoryAppLayout from "utils/StoryAppLayout";
 import NotFound from "./NotFound";
 
 const meta: Meta<typeof NotFound> = {

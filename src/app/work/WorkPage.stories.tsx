@@ -2,7 +2,8 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { within } from "@testing-library/dom";
 import { usePathname } from "next/navigation";
 import { expect, mocked, userEvent } from "storybook/test";
-import StoryAppLayout from "../../../utils/StoryAppLayout";
+import StoryAppLayout from "utils/StoryAppLayout";
+import routes from "@/app/lib/routes";
 import WorkPage from "./WorkPage";
 
 const meta: Meta<typeof WorkPage> = {
@@ -27,7 +28,7 @@ type Story = StoryObj<React.ComponentProps<typeof WorkPage>>;
 
 const WithWorkRoute: Story = {
   beforeEach: () => {
-    mocked(usePathname).mockReturnValue("/work");
+    mocked(usePathname).mockReturnValue(routes.work.href);
   },
 };
 
