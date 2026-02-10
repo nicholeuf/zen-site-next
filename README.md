@@ -73,7 +73,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 This project includes a Storybook setup for visual component development and documentation. It is pre-configured to work with MUI (Emotion) and to pick up local TypeScript module augmentations.
 
 Chromatic is used to publish the latest Storybook build; use the Storybook and Chromatic badges above as the source of truth for access.
-The GitHub Pages Storybook reflects the latest master build.
+The GitHub Pages Storybook reflects the latest `main` build (the Pages workflow runs on push to `main` or manual dispatch).
 
 See `.storybook/README.md` for details, validation commands, and troubleshooting tips.
 
