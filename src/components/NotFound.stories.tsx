@@ -47,14 +47,14 @@ export const Default: Story = {
 };
 
 export const Mobile: Story = {
-  ...WithFigsRoute,
+  ...Default,
   globals: {
     viewport: { value: "mobile2", isRotated: false },
   },
 };
 
 export const Tablet: Story = {
-  ...WithFigsRoute,
+  ...Default,
   globals: {
     viewport: { value: "tablet", isRotated: false },
   },
