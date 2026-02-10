@@ -1,3 +1,10 @@
+### 2026-02-10 [*](https://github.com/nicholeuf/zen-site-next/pull/203)
+
+#### Changed
+
+- Improved Storybook/Vitest mocking and test coverage configuration
+- Refreshed CI and documentation to better reflect Chromatic/Storybook publishing setup
+
 ### 2026-02-10 [*](https://github.com/nicholeuf/zen-site-next/pull/202)
 
 #### Changed
