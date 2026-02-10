@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import React from "react";
+import { expect, screen, userEvent, waitFor, within } from "storybook/test";
 import Footer, { DEFAULT_HEIGHT } from "./index";
-import { within, expect, userEvent, waitFor, screen } from "storybook/test";
 
 const meta: Meta<typeof Footer> = {
   title: "Components/Footer/Footer",

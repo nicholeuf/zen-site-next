@@ -1,5 +1,5 @@
-import getPlaceholderImage from "../lib/getPlaceholderImage";
 import ImageDimensions from "../../../types/ImageDimensions";
+import getPlaceholderImage from "../lib/getPlaceholderImage";
 
 export interface ItemData {
   src: string;

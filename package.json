@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write",
+    "format": "biome format --write && biome check --fix",
     "tsc": "tsc --project  ./tsconfig.json",
     "test": "vitest",
     "test:ci": "vitest run",

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
-import { getItemPlaceholderData } from "./constants";
 import AboutPage from "./AboutPage";
+import { getItemPlaceholderData } from "./constants";
 
 export const metadata: Metadata = {
   title: "About",

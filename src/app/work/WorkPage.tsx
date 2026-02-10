@@ -4,7 +4,7 @@ import { items } from "./constants";
 import WorkTabs from "./WorkTabs";
 
 const WorkPage: React.FC = () => {
- return (
+  return (
     <PageContainer data-testid="work-page">
       <Typography variant="h1" gutterBottom>
         Work
@@ -21,6 +21,6 @@ const WorkPage: React.FC = () => {
       <WorkTabs items={items} />
     </PageContainer>
   );
-}
+};
 
 export default WorkPage;

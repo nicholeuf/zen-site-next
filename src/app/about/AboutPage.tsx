@@ -1,9 +1,9 @@
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import PageContainer from "@/components/PageContainer";
 import { ItemDataPlaceholder } from "./constants";
 import Photo from "./Photo";
 import Photos from "./Photos";
-import PageContainer from "@/components/PageContainer";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 
 interface AboutPageProps {
   itemPlaceholder: ItemDataPlaceholder[];

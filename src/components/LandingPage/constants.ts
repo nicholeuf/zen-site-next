@@ -1,7 +1,7 @@
 import { CldImageProps } from "next-cloudinary";
+import getPlaceholderImage from "../../app/lib/getPlaceholderImage";
 import { LandingPageProps } from ".";
 import { ProfileImageProps } from "./ProfileImage";
-import getPlaceholderImage from "../../app/lib/getPlaceholderImage";
 
 const profileImageProps: ProfileImageProps = {
   width: 200,

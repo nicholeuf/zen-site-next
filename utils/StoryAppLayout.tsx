@@ -1,6 +1,6 @@
-import MainContainer from "../src/components/MainContainer";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import MainContainer from "../src/components/MainContainer";
 
 const StoryAppLayout: React.FC<{ children: React.ReactNode }> = ({
   children,
