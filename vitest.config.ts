@@ -37,6 +37,7 @@ export default defineConfig({
         "**/*.stories.*",
         "**/*.stories.@(ts|tsx|js|jsx|mdx)",
         "**/*.mock.*",
+        "**/__mocks__/**",
         "types/**",
       ],
     },
