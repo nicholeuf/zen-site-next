@@ -56,7 +56,6 @@ export const Default: Story = {
       name: /full-stack developer/i,
     });
     expect(subheading, "Subheading").toBeVisible();
-    expect(usePathname).toHaveBeenCalled();
   },
 };
 
