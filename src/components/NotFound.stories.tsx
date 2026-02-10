@@ -6,7 +6,7 @@ import StoryAppLayout from "../../utils/StoryAppLayout";
 import NotFound from "./NotFound";
 
 const meta: Meta<typeof NotFound> = {
-  title: "Components/NotFound",
+  title: "Pages/NotFound",
   component: NotFound,
   parameters: { layout: "fullscreen" },
   decorators: [

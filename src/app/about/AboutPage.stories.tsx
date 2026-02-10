@@ -7,7 +7,7 @@ import AboutPage from "./AboutPage";
 import { getItemPlaceholderData } from "./constants";
 
 const meta: Meta<typeof AboutPage> = {
-  title: "Components/About/AboutPage",
+  title: "Pages/About",
   component: AboutPage,
   parameters: { layout: "fullscreen" },
 

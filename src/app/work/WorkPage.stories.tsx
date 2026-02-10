@@ -6,7 +6,7 @@ import StoryAppLayout from "../../../utils/StoryAppLayout";
 import WorkPage from "./WorkPage";
 
 const meta: Meta<typeof WorkPage> = {
-  title: "Components/Work/WorkPage",
+  title: "Pages/Work",
   component: WorkPage,
   parameters: { layout: "fullscreen" },
   decorators: [
