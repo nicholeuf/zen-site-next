@@ -1,23 +1,25 @@
-import { renderSnapshotWithLayout, resetMatchMedia } from "test-utils";
+// biome-ignore assist/source/organizeImports: manual sort for mocking
+import navigationMocks from "utils/nextNavigationMock";
+
+import { renderWithLayout, screen } from "test-utils";
+import { vi } from "vitest";
 
 import ContactPage from "./page";
 
-const mockUsePathname = jest.fn();
-
-jest.mock("next/navigation", () => ({
-  usePathname() {
-    return mockUsePathname();
-  },
-}));
-
 describe("The Contact Page", () => {
-  beforeAll(() => {
-    mockUsePathname.mockImplementation(() => "/contact");
-    resetMatchMedia();
+  beforeEach(() => {
+    navigationMocks.usePathname.mockImplementation(() => "/contact");
   });
 
-  test("has expected snapshot", async () => {
-    const { container } = renderSnapshotWithLayout(<ContactPage />);
-    expect(container).toMatchSnapshot();
+  afterEach(() => {
+    vi.resetAllMocks();
+  });
+
+  test("renders the contact container", () => {
+    renderWithLayout(<ContactPage />);
+    expect(document.getElementById("contact-page")).toBeInTheDocument();
+    // At this level, just test that the contact container is rendered.
+    // The ContactPage component itself is tested in its own story, so we can
+    // be confident that if the container is present, the content is as well.
   });
 });
