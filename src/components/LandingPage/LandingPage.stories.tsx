@@ -62,7 +62,7 @@ export const Default: Story = {
 };
 
 export const Mobile: Story = {
-  ...WithLandingPageRoute,
+  ...Default,
   globals: {
     viewport: { value: "mobile2", isRotated: false },
   },
