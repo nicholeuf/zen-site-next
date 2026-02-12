@@ -31,7 +31,7 @@ describe("The Contact Page Component", () => {
     ).toHaveAttribute("href", `mailto:${CONTACT_EMAIL}`);
     expect(
       screen.getByRole("link", {
-        name: "Connect on LinkedIn",
+        name: "Connect on LinkedIn (opens in new window)",
       })
     ).toHaveAttribute("href", LINKEDIN_URL);
   });
@@ -52,7 +52,7 @@ describe("The Contact Page Component", () => {
     ).toHaveAttribute("href", `mailto:${CONTACT_EMAIL}`);
     expect(
       screen.getByRole("link", {
-        name: "Connect on LinkedIn",
+        name: "Connect on LinkedIn (opens in new window)",
       })
     ).toHaveAttribute("href", LINKEDIN_URL);
   });

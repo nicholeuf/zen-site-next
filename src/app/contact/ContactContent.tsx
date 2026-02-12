@@ -48,7 +48,9 @@ const ContactContent: React.FC<ContactContent> = ({ chatEnabled }) => {
         variant="text"
         href={LINKEDIN_URL}
         sx={{ mt: 1 }}
-        aria-label="Connect on LinkedIn"
+        aria-label="Connect on LinkedIn (opens in new window)"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         Connect on LinkedIn
       </Button>
