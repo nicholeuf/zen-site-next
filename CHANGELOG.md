@@ -1,3 +1,10 @@
+### 2026-02-12 [*](https://github.com/nicholeuf/zen-site-next/pull/206)
+
+#### Changed
+
+- Added email as a primary contact option across the site and footer
+- Centralized contact/social link values into shared constants and expanded related test coverage
+
 ### 2026-02-10 [*](https://github.com/nicholeuf/zen-site-next/pull/203)
 
 #### Changed

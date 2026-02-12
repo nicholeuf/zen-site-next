@@ -3,6 +3,7 @@ import { within } from "@testing-library/dom";
 import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
 import StoryAppLayout from "utils/StoryAppLayout";
+import { CONTACT_EMAIL, getEmailHref, LINKEDIN_URL } from "@/app/lib/constants";
 import routes from "@/app/lib/routes";
 import ContactPage from "./ContactPage";
 
@@ -45,13 +46,25 @@ export const Default: Story = {
 
     if (args.chatEnabled) {
       await expect(canvas.getByTestId("contact-copy")).toHaveTextContent(
-        "Please connect with me on LinkedIn or send a message in chat. I look forward to hearing from you!"
+        "Email is the best way to reach me. You can also connect on LinkedIn, or send a message in the chat and I’ll see it on Slack."
       );
     } else {
       await expect(canvas.getByTestId("contact-copy")).toHaveTextContent(
-        "Please connect with me on LinkedIn. I look forward to hearing from you!"
+        "Email is the best way to reach me. You can also connect on LinkedIn."
       );
     }
+
+    const emailLink = canvas.getByRole("link", {
+      name: /send email to nichole at/i,
+    });
+    expect(emailLink, "Email CTA").toBeVisible();
+    expect(emailLink).toHaveAttribute("href", getEmailHref());
+
+    const linkedInLink = canvas.getByRole("link", {
+      name: /connect on linkedin/i,
+    });
+    expect(linkedInLink, "LinkedIn CTA").toBeVisible();
+    expect(linkedInLink).toHaveAttribute("href", LINKEDIN_URL);
   },
 };
 

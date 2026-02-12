@@ -1,5 +1,8 @@
+import EmailIcon from "@mui/icons-material/Email";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { CONTACT_EMAIL, getEmailHref } from "@/app/lib/constants";
 import Heading from "./Heading";
 import ProfileImage, { ProfileImageProps } from "./ProfileImage";
 
@@ -82,6 +85,15 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
           Technical Lead, providing mentorship to colleagues, and collaborating
           within agile, cross-functional teams.
         </Typography>
+        <Button
+          variant="contained"
+          startIcon={<EmailIcon />}
+          href={getEmailHref()}
+          sx={{ mt: 3 }}
+          aria-label={`Contact Nichole via email at ${CONTACT_EMAIL}`}
+        >
+          Contact me
+        </Button>
       </Box>
     </Box>
   );

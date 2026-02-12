@@ -3,6 +3,7 @@ import { within } from "@testing-library/dom";
 import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
 import StoryAppLayout from "utils/StoryAppLayout";
+import { CONTACT_EMAIL, getEmailHref } from "@/app/lib/constants";
 import routes from "@/app/lib/routes";
 import LandingPage from ".";
 import { getLandingPageProps } from "./constants";
@@ -56,6 +57,12 @@ export const Default: Story = {
       name: /full-stack developer/i,
     });
     expect(subheading, "Subheading").toBeVisible();
+
+    const contactButton = canvas.getByRole("link", {
+      name: /contact nichole/i,
+    });
+    expect(contactButton, "Contact Me Button").toBeVisible();
+    expect(contactButton).toHaveAttribute("href", getEmailHref());
   },
 };
 

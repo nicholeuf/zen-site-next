@@ -1,6 +1,12 @@
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import React from "react";
 import { expect, screen, userEvent, waitFor, within } from "storybook/test";
+import {
+  CONTACT_EMAIL,
+  GITHUB_URL,
+  getEmailHref,
+  LINKEDIN_URL,
+} from "@/app/lib/constants";
 import Footer, { DEFAULT_HEIGHT } from "./index";
 
 const meta: Meta<typeof Footer> = {
@@ -28,6 +34,24 @@ export const Playground: Story = {
     }) as HTMLDivElement;
     expect(nav).toBeVisible();
 
+    const linkedInLink = canvas.getByRole("link", {
+      name: /linkedin/i,
+    });
+    expect(linkedInLink).toBeVisible();
+    expect(linkedInLink).toHaveAttribute("href", LINKEDIN_URL);
+
+    const githubLink = canvas.getByRole("link", {
+      name: /github/i,
+    });
+    expect(githubLink).toBeVisible();
+    expect(githubLink).toHaveAttribute("href", GITHUB_URL);
+
+    const emailLink = canvas.getByRole("link", {
+      name: /email/i,
+    });
+    expect(emailLink).toBeVisible();
+    expect(emailLink).toHaveAttribute("href", getEmailHref());
+
     const madeWithLoveCopy = canvas.getByText(/Made with/i);
     expect(madeWithLoveCopy).toBeVisible();
 
@@ -36,6 +60,22 @@ export const Playground: Story = {
 
     const sourceCopy = canvas.getByText(/View Source Code/i);
     expect(sourceCopy).toBeVisible();
+  },
+};
+
+export const Mobile: Story = {
+  ...Playground,
+  globals: {
+    // 👇 Set viewport for all component stories
+    viewport: { value: "mobile2", isRotated: false },
+  },
+};
+
+export const Tablet: Story = {
+  ...Playground,
+  globals: {
+    // 👇 Set viewport for all component stories
+    viewport: { value: "tablet", isRotated: false },
   },
 };
 
@@ -56,21 +96,5 @@ export const ViewCredits: Story = {
     await waitFor(() => {
       expect(screen.getByRole("heading", { name: /credits/i })).toBeVisible();
     });
-  },
-};
-
-export const Mobile: Story = {
-  ...Playground,
-  globals: {
-    // 👇 Set viewport for all component stories
-    viewport: { value: "mobile2", isRotated: false },
-  },
-};
-
-export const Tablet: Story = {
-  ...Playground,
-  globals: {
-    // 👇 Set viewport for all component stories
-    viewport: { value: "tablet", isRotated: false },
   },
 };

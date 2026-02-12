@@ -14,7 +14,6 @@ const Navigation: React.FC = () => {
       data-testid="footer-nav"
       aria-label="External Navigation"
       sx={{
-        width: "25%",
         height: "100%",
       }}
     >

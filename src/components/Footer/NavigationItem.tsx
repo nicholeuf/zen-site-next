@@ -22,7 +22,6 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
         height: "40px",
         m: {
           xs: 0,
-          sm: 2,
         },
         p: 0,
         display: "flex",
