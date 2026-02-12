@@ -58,7 +58,7 @@ export const Default: Story = {
       name: /send email to nichole at/i,
     });
     expect(emailLink, "Email CTA").toBeVisible();
-    expect(emailLink).toHaveAttribute("href", getEmailHref);
+    expect(emailLink).toHaveAttribute("href", getEmailHref());
 
     const linkedInLink = canvas.getByRole("link", {
       name: /connect on linkedin/i,
