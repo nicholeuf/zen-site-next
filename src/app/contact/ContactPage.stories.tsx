@@ -3,6 +3,7 @@ import { within } from "@testing-library/dom";
 import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
 import StoryAppLayout from "utils/StoryAppLayout";
+import { CONTACT_EMAIL, LINKEDIN_URL } from "@/app/lib/constants";
 import routes from "@/app/lib/routes";
 import ContactPage from "./ContactPage";
 
@@ -54,22 +55,16 @@ export const Default: Story = {
     }
 
     const emailLink = canvas.getByRole("link", {
-      name: "Send email to Nichole at contact@thecodingyogi.me",
+      name: `Send email to Nichole at ${CONTACT_EMAIL}`,
     });
     expect(emailLink, "Email CTA").toBeVisible();
-    expect(emailLink).toHaveAttribute(
-      "href",
-      "mailto:contact@thecodingyogi.me"
-    );
+    expect(emailLink).toHaveAttribute("href", `mailto:${CONTACT_EMAIL}`);
 
     const linkedInLink = canvas.getByRole("link", {
       name: "Connect on LinkedIn",
     });
     expect(linkedInLink, "LinkedIn CTA").toBeVisible();
-    expect(linkedInLink).toHaveAttribute(
-      "href",
-      "https://www.linkedin.com/in/nicholeuf"
-    );
+    expect(linkedInLink).toHaveAttribute("href", LINKEDIN_URL);
   },
 };
 

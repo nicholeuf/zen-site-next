@@ -1,5 +1,5 @@
 import { render, screen } from "test-utils";
-
+import { CONTACT_EMAIL, LINKEDIN_URL } from "@/app/lib/constants";
 import ContactContent from "./ContactContent";
 
 const mockUsePathname = jest.fn();
@@ -26,14 +26,14 @@ describe("The Contact Page Component", () => {
     );
     expect(
       screen.getByRole("link", {
-        name: "Send email to Nichole at contact@thecodingyogi.me",
+        name: `Send email to Nichole at ${CONTACT_EMAIL}`,
       })
-    ).toHaveAttribute("href", "mailto:contact@thecodingyogi.me");
+    ).toHaveAttribute("href", `mailto:${CONTACT_EMAIL}`);
     expect(
       screen.getByRole("link", {
         name: "Connect on LinkedIn",
       })
-    ).toHaveAttribute("href", "https://www.linkedin.com/in/nicholeuf");
+    ).toHaveAttribute("href", LINKEDIN_URL);
   });
 
   test("has expected content when chat is not enabled", () => {
@@ -47,13 +47,13 @@ describe("The Contact Page Component", () => {
     );
     expect(
       screen.getByRole("link", {
-        name: "Send email to Nichole at contact@thecodingyogi.me",
+        name: `Send email to Nichole at ${CONTACT_EMAIL}`,
       })
-    ).toHaveAttribute("href", "mailto:contact@thecodingyogi.me");
+    ).toHaveAttribute("href", `mailto:${CONTACT_EMAIL}`);
     expect(
       screen.getByRole("link", {
         name: "Connect on LinkedIn",
       })
-    ).toHaveAttribute("href", "https://www.linkedin.com/in/nicholeuf");
+    ).toHaveAttribute("href", LINKEDIN_URL);
   });
 });

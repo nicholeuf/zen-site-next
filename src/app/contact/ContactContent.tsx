@@ -3,15 +3,13 @@ import EmailIcon from "@mui/icons-material/Email";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { CONTACT_EMAIL, LINKEDIN_URL } from "@/app/lib/constants";
 
 interface ContactContent {
   chatEnabled: boolean;
 }
 
 const ContactContent: React.FC<ContactContent> = ({ chatEnabled }) => {
-  const emailAddress = "contact@thecodingyogi.me";
-  const emailHref = `mailto:${emailAddress}`;
-
   const getCopy = () => {
     return (
       <Typography variant="body2" data-testid="contact-copy">
@@ -40,15 +38,15 @@ const ContactContent: React.FC<ContactContent> = ({ chatEnabled }) => {
       <Button
         variant="outlined"
         startIcon={<EmailIcon />}
-        href={emailHref}
+        href={`mailto:${CONTACT_EMAIL}`}
         sx={{ mt: 2 }}
-        aria-label={`Send email to Nichole at ${emailAddress}`}
+        aria-label={`Send email to Nichole at ${CONTACT_EMAIL}`}
       >
-        Email me at {emailAddress}
+        Email me at {CONTACT_EMAIL}
       </Button>
       <Button
         variant="text"
-        href="https://www.linkedin.com/in/nicholeuf"
+        href={LINKEDIN_URL}
         sx={{ mt: 1 }}
         aria-label="Connect on LinkedIn"
       >
