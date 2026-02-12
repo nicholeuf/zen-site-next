@@ -1,5 +1,6 @@
 import GithubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 
 export const footerLinks = [
   {
@@ -13,5 +14,11 @@ export const footerLinks = [
     icon: GithubIcon,
     href: "https://github.com/nicholeuf",
     ariaLabel: "GitHub (opens in new window)",
+  },
+  {
+    slug: "email",
+    icon: EmailIcon,
+    href: "mailto:contact@thecodingyogi.me",
+    ariaLabel: "Email (opens email client)",
   },
 ];

@@ -28,6 +28,30 @@ export const Playground: Story = {
     }) as HTMLDivElement;
     expect(nav).toBeVisible();
 
+    const linkedInLink = canvas.getByRole("link", {
+      name: "LinkedIn (opens in new window)",
+    });
+    expect(linkedInLink).toBeVisible();
+    expect(linkedInLink).toHaveAttribute(
+      "href",
+      "https://www.linkedin.com/in/nicholeuf"
+    );
+
+    const githubLink = canvas.getByRole("link", {
+      name: "GitHub (opens in new window)",
+    });
+    expect(githubLink).toBeVisible();
+    expect(githubLink).toHaveAttribute("href", "https://github.com/nicholeuf");
+
+    const emailLink = canvas.getByRole("link", {
+      name: "Email (opens email client)",
+    });
+    expect(emailLink).toBeVisible();
+    expect(emailLink).toHaveAttribute(
+      "href",
+      "mailto:contact@thecodingyogi.me"
+    );
+
     const madeWithLoveCopy = canvas.getByText(/Made with/i);
     expect(madeWithLoveCopy).toBeVisible();
 
@@ -36,6 +60,22 @@ export const Playground: Story = {
 
     const sourceCopy = canvas.getByText(/View Source Code/i);
     expect(sourceCopy).toBeVisible();
+  },
+};
+
+export const Mobile: Story = {
+  ...Playground,
+  globals: {
+    // 👇 Set viewport for all component stories
+    viewport: { value: "mobile2", isRotated: false },
+  },
+};
+
+export const Tablet: Story = {
+  ...Playground,
+  globals: {
+    // 👇 Set viewport for all component stories
+    viewport: { value: "tablet", isRotated: false },
   },
 };
 
@@ -56,21 +96,5 @@ export const ViewCredits: Story = {
     await waitFor(() => {
       expect(screen.getByRole("heading", { name: /credits/i })).toBeVisible();
     });
-  },
-};
-
-export const Mobile: Story = {
-  ...Playground,
-  globals: {
-    // 👇 Set viewport for all component stories
-    viewport: { value: "mobile2", isRotated: false },
-  },
-};
-
-export const Tablet: Story = {
-  ...Playground,
-  globals: {
-    // 👇 Set viewport for all component stories
-    viewport: { value: "tablet", isRotated: false },
   },
 };
