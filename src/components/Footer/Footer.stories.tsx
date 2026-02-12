@@ -1,7 +1,12 @@
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import React from "react";
 import { expect, screen, userEvent, waitFor, within } from "storybook/test";
-import { CONTACT_EMAIL, GITHUB_URL, LINKEDIN_URL } from "@/app/lib/constants";
+import {
+  CONTACT_EMAIL,
+  GITHUB_URL,
+  LINKEDIN_URL,
+  getEmailHref,
+} from "@/app/lib/constants";
 import Footer, { DEFAULT_HEIGHT } from "./index";
 
 const meta: Meta<typeof Footer> = {
@@ -45,7 +50,7 @@ export const Playground: Story = {
       name: /email/i,
     });
     expect(emailLink).toBeVisible();
-    expect(emailLink).toHaveAttribute("href", `mailto:${CONTACT_EMAIL}`);
+    expect(emailLink).toHaveAttribute("href", getEmailHref());
 
     const madeWithLoveCopy = canvas.getByText(/Made with/i);
     expect(madeWithLoveCopy).toBeVisible();

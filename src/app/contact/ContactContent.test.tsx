@@ -1,5 +1,5 @@
 import { render, screen } from "test-utils";
-import { CONTACT_EMAIL, LINKEDIN_URL } from "@/app/lib/constants";
+import { CONTACT_EMAIL, getEmailHref, LINKEDIN_URL } from "@/app/lib/constants";
 import ContactContent from "./ContactContent";
 
 const mockUsePathname = jest.fn();
@@ -28,7 +28,7 @@ describe("The Contact Page Component", () => {
       screen.getByRole("link", {
         name: `Send email to Nichole at ${CONTACT_EMAIL}`,
       })
-    ).toHaveAttribute("href", `mailto:${CONTACT_EMAIL}`);
+    ).toHaveAttribute("href", getEmailHref());
     expect(
       screen.getByRole("link", {
         name: /connect on linkedin/i,
@@ -49,7 +49,7 @@ describe("The Contact Page Component", () => {
       screen.getByRole("link", {
         name: /send email to nichole at/i,
       })
-    ).toHaveAttribute("href", `mailto:${CONTACT_EMAIL}`);
+    ).toHaveAttribute("href", getEmailHref());
     expect(
       screen.getByRole("link", {
         name: /connect on linkedin/i,

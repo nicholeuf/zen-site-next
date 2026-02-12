@@ -6,6 +6,7 @@ import StoryAppLayout from "utils/StoryAppLayout";
 import routes from "@/app/lib/routes";
 import LandingPage from ".";
 import { getLandingPageProps } from "./constants";
+import { CONTACT_EMAIL, getEmailHref } from "@/app/lib/constants";
 
 const meta: Meta<typeof LandingPage> = {
   title: "Pages/Landing",
@@ -56,6 +57,12 @@ export const Default: Story = {
       name: /full-stack developer/i,
     });
     expect(subheading, "Subheading").toBeVisible();
+
+    const contactButton = canvas.getByRole("link", {
+      name: /contact nichole/i,
+    });
+    expect(contactButton, "Contact Me Button").toBeVisible();
+    expect(contactButton).toHaveAttribute("href", getEmailHref());
   },
 };
 

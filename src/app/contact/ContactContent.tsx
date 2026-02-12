@@ -3,7 +3,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { CONTACT_EMAIL, LINKEDIN_URL } from "@/app/lib/constants";
+import { CONTACT_EMAIL, getEmailHref, LINKEDIN_URL } from "@/app/lib/constants";
 
 interface ContactContent {
   chatEnabled: boolean;
@@ -38,7 +38,7 @@ const ContactContent: React.FC<ContactContent> = ({ chatEnabled }) => {
       <Button
         variant="outlined"
         startIcon={<EmailIcon />}
-        href={`mailto:${CONTACT_EMAIL}`}
+        href={getEmailHref()}
         sx={{ mt: 2 }}
         aria-label={`Send email to Nichole at ${CONTACT_EMAIL}`}
       >
