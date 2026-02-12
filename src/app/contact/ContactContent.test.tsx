@@ -22,7 +22,7 @@ describe("The Contact Page Component", () => {
       "Contact"
     );
     expect(screen.getByTestId("contact-copy")).toHaveTextContent(
-      "Email is the best way to reach me. You can also connect on LinkedIn, or send a message in the chat and I’ll see it on Slack. I look forward to hearing from you!"
+      "Email is the best way to reach me. You can also connect on LinkedIn, or send a message in the chat and I’ll see it on Slack."
     );
     expect(
       screen.getByRole("link", {
@@ -43,7 +43,7 @@ describe("The Contact Page Component", () => {
       "Contact"
     );
     expect(screen.getByTestId("contact-copy")).toHaveTextContent(
-      "Email is the best way to reach me. You can also connect on LinkedIn. I look forward to hearing from you!"
+      "Email is the best way to reach me. You can also connect on LinkedIn."
     );
     expect(
       screen.getByRole("link", {
