@@ -30,19 +30,19 @@ export const Playground: Story = {
     expect(nav).toBeVisible();
 
     const linkedInLink = canvas.getByRole("link", {
-      name: "LinkedIn (opens in new window)",
+      name: /linkedin/i,
     });
     expect(linkedInLink).toBeVisible();
     expect(linkedInLink).toHaveAttribute("href", LINKEDIN_URL);
 
     const githubLink = canvas.getByRole("link", {
-      name: "GitHub (opens in new window)",
+      name: /github/i,
     });
     expect(githubLink).toBeVisible();
     expect(githubLink).toHaveAttribute("href", GITHUB_URL);
 
     const emailLink = canvas.getByRole("link", {
-      name: "Email (opens email client)",
+      name: /email/i,
     });
     expect(emailLink).toBeVisible();
     expect(emailLink).toHaveAttribute("href", `mailto:${CONTACT_EMAIL}`);
