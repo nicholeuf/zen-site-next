@@ -2,9 +2,9 @@ import EmailIcon from "@mui/icons-material/Email";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { CONTACT_EMAIL, getEmailHref } from "@/app/lib/constants";
 import Heading from "./Heading";
 import ProfileImage, { ProfileImageProps } from "./ProfileImage";
-import { CONTACT_EMAIL, getEmailHref } from "@/app/lib/constants";
 
 const smallGridTemplateAreas = `
 "photo"

@@ -3,10 +3,10 @@ import { within } from "@testing-library/dom";
 import { usePathname } from "next/navigation";
 import { expect, mocked } from "storybook/test";
 import StoryAppLayout from "utils/StoryAppLayout";
+import { CONTACT_EMAIL, getEmailHref } from "@/app/lib/constants";
 import routes from "@/app/lib/routes";
 import LandingPage from ".";
 import { getLandingPageProps } from "./constants";
-import { CONTACT_EMAIL, getEmailHref } from "@/app/lib/constants";
 
 const meta: Meta<typeof LandingPage> = {
   title: "Pages/Landing",

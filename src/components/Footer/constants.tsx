@@ -1,7 +1,7 @@
 import EmailIcon from "@mui/icons-material/Email";
 import GithubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { GITHUB_URL, LINKEDIN_URL, getEmailHref } from "@/app/lib/constants";
+import { GITHUB_URL, getEmailHref, LINKEDIN_URL } from "@/app/lib/constants";
 
 export const footerLinks = [
   {

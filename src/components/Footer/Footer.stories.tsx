@@ -4,8 +4,8 @@ import { expect, screen, userEvent, waitFor, within } from "storybook/test";
 import {
   CONTACT_EMAIL,
   GITHUB_URL,
-  LINKEDIN_URL,
   getEmailHref,
+  LINKEDIN_URL,
 } from "@/app/lib/constants";
 import Footer, { DEFAULT_HEIGHT } from "./index";
 
