@@ -45,13 +45,31 @@ export const Default: Story = {
 
     if (args.chatEnabled) {
       await expect(canvas.getByTestId("contact-copy")).toHaveTextContent(
-        "Please connect with me on LinkedIn or send a message in chat. I look forward to hearing from you!"
+        "Email is the best way to reach me. You can also connect on LinkedIn, or send a message in the chat and I’ll see it on Slack. I look forward to hearing from you!"
       );
     } else {
       await expect(canvas.getByTestId("contact-copy")).toHaveTextContent(
-        "Please connect with me on LinkedIn. I look forward to hearing from you!"
+        "Email is the best way to reach me. You can also connect on LinkedIn. I look forward to hearing from you!"
       );
     }
+
+    const emailLink = canvas.getByRole("link", {
+      name: "Send email to Nichole at contact@thecodingyogi.me",
+    });
+    expect(emailLink, "Email CTA").toBeVisible();
+    expect(emailLink).toHaveAttribute(
+      "href",
+      "mailto:contact@thecodingyogi.me"
+    );
+
+    const linkedInLink = canvas.getByRole("link", {
+      name: "Connect on LinkedIn",
+    });
+    expect(linkedInLink, "LinkedIn CTA").toBeVisible();
+    expect(linkedInLink).toHaveAttribute(
+      "href",
+      "https://www.linkedin.com/in/nicholeuf"
+    );
   },
 };
 

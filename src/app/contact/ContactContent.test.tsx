@@ -22,8 +22,18 @@ describe("The Contact Page Component", () => {
       "Contact"
     );
     expect(screen.getByTestId("contact-copy")).toHaveTextContent(
-      "Please connect with me on LinkedIn or send a message in chat. I look forward to hearing from you!"
+      "Email is the best way to reach me. You can also connect on LinkedIn, or send a message in the chat and I’ll see it on Slack. I look forward to hearing from you!"
     );
+    expect(
+      screen.getByRole("link", {
+        name: "Send email to Nichole at contact@thecodingyogi.me",
+      })
+    ).toHaveAttribute("href", "mailto:contact@thecodingyogi.me");
+    expect(
+      screen.getByRole("link", {
+        name: "Connect on LinkedIn",
+      })
+    ).toHaveAttribute("href", "https://www.linkedin.com/in/nicholeuf");
   });
 
   test("has expected content when chat is not enabled", () => {
@@ -33,7 +43,17 @@ describe("The Contact Page Component", () => {
       "Contact"
     );
     expect(screen.getByTestId("contact-copy")).toHaveTextContent(
-      "Please connect with me on LinkedIn. I look forward to hearing from you!"
+      "Email is the best way to reach me. You can also connect on LinkedIn. I look forward to hearing from you!"
     );
+    expect(
+      screen.getByRole("link", {
+        name: "Send email to Nichole at contact@thecodingyogi.me",
+      })
+    ).toHaveAttribute("href", "mailto:contact@thecodingyogi.me");
+    expect(
+      screen.getByRole("link", {
+        name: "Connect on LinkedIn",
+      })
+    ).toHaveAttribute("href", "https://www.linkedin.com/in/nicholeuf");
   });
 });
