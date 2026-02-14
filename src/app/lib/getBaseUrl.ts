@@ -10,25 +10,15 @@ const getBaseUrl: (options?: GetBaseUrlOptions) => string = (
   options = {}
 ): string => {
   const {
+    // VERCEL_TARGET_ENV: "production" | "preview" | "development"
     vercelTargetEnv = process.env.VERCEL_TARGET_ENV,
+    // VERCEL_PROJECT_PRODUCTION_URL: stable canonical prod URL
     vercelProjectProductionUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL,
+    // VERCEL_BRANCH_URL: per-deployment URL (preview/prod)
     vercelBranchUrl = process.env.VERCEL_BRANCH_URL,
+    // Fallback to NEXT_PUBLIC_SITE_URL for non-Vercel hosting or overrides.
     nextPublicSiteUrl = process.env.NEXT_PUBLIC_SITE_URL,
   } = options;
-
-  // Prefer Vercel system env vars when deployed.
-  // - VERCEL_PROJECT_PRODUCTION_URL: stable canonical prod URL
-  // - VERCEL_URL: per-deployment URL (preview/prod)
-  // Fallback to NEXT_PUBLIC_SITE_URL for non-Vercel hosting or overrides.
-  if (process.env.VERCEL) {
-    // Logging for deployment verification. Remove after confirming values.
-    console.info("getBaseUrl env", {
-      VERCEL_TARGET_ENV: vercelTargetEnv,
-      VERCEL_PROJECT_PRODUCTION_URL: vercelProjectProductionUrl,
-      VERCEL_BRANCH_URL: vercelBranchUrl,
-      NEXT_PUBLIC_SITE_URL: nextPublicSiteUrl,
-    });
-  }
 
   const rawBaseUrl =
     (vercelTargetEnv === "production" && vercelProjectProductionUrl) ||
