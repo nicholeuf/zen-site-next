@@ -1,4 +1,4 @@
-import getBaseUrl from "./getBaseUrl";
+import getBaseUrl, { FALLBACK } from "./getBaseUrl";
 
 describe("getBaseUrl", () => {
   test("uses VERCEL_PROJECT_PRODUCTION_URL for production target", () => {
@@ -44,8 +44,6 @@ describe("getBaseUrl", () => {
   test("defaults to localhost when no values provided", () => {
     const baseUrl = getBaseUrl();
 
-    expect(baseUrl).toBe(
-      process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
-    );
+    expect(baseUrl).toBe(process.env.NEXT_PUBLIC_SITE_URL || FALLBACK);
   });
 });

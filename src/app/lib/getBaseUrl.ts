@@ -2,11 +2,10 @@ interface GetBaseUrlOptions {
   vercelTargetEnv?: string;
   vercelProjectProductionUrl?: string;
   vercelBranchUrl?: string;
-  vercelUrl?: string;
   fallbackUrl?: string;
 }
 
-const DEFAULT_URL = "http://localhost:3000";
+export const FALLBACK = "http://localhost:3000";
 
 const getBaseUrl: (options?: GetBaseUrlOptions) => string = (
   options = {}
@@ -19,7 +18,7 @@ const getBaseUrl: (options?: GetBaseUrlOptions) => string = (
     // VERCEL_BRANCH_URL: per-deployment URL (preview/prod)
     vercelBranchUrl = process.env.VERCEL_BRANCH_URL,
     // Fallback to NEXT_PUBLIC_SITE_URL for non-Vercel hosting or overrides.
-    fallbackUrl = process.env.NEXT_PUBLIC_SITE_URL || DEFAULT_URL,
+    fallbackUrl = process.env.NEXT_PUBLIC_SITE_URL || FALLBACK,
   } = options;
 
   const rawBaseUrl =
