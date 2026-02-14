@@ -1,3 +1,9 @@
+### 2026-02-14 [*](https://github.com/nicholeuf/zen-site-next/pull/211)
+
+#### Changed
+
+- Reorganized Storybook preview configuration to improve clarity while preserving autodocs behavior
+
 ### 2026-02-14 [*](https://github.com/nicholeuf/zen-site-next/pull/208)
 
 #### Fixed
