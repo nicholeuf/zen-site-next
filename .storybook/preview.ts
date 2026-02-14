@@ -17,6 +17,8 @@ await sb.mock(import("next/navigation"), { spy: true });
 await sb.mock(import("../src/app/lib/getPlaceholderImage.ts"));
 
 const preview: Preview = {
+  //👇 Enables auto-generated documentation for all stories
+  tags: ["autodocs"],
   parameters: {
     nextjs: {
       appDirectory: true,
@@ -41,8 +43,7 @@ const preview: Preview = {
       // 'off' - skip a11y checks entirely
       test: "todo",
     },
-    //👇 Enables auto-generated documentation for all stories
-    tags: ["autodocs"],
+
     initialGlobals: {
       // 👇 Set the initial background color
       backgrounds: { value: "cream" },
