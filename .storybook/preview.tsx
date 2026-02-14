@@ -1,14 +1,22 @@
 import { ThemeProvider } from "@mui/material";
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 import type { Preview } from "@storybook/nextjs-vite";
+import {
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+} from "@storybook/addon-docs/blocks";
 import { sb } from "storybook/test";
-import constants from "../src/app/styles/constants";
-import GlobalStyles from "../src/app/styles/GlobalStyles";
+import constants from "../src/app/styles/constants.tsx";
+import GlobalStyles from "../src/app/styles/GlobalStyles.tsx";
 import "../src/app/styles/mobileFix.css";
 
-import theme from "../src/app/styles/theme";
-import MuiCacheDecorator from "../utils/MuiCacheDecorator";
-import NextRouterDecorator from "../utils/NextRouterDecorator";
+import theme from "../src/app/styles/theme.ts";
+import MuiCacheDecorator from "../utils/MuiCacheDecorator.tsx";
+import NextRouterDecorator from "../utils/NextRouterDecorator.tsx";
 
 // Ensure the mock is registered before any stories load, so hooks like
 // `usePathname` are consistently mocked across local and CI/Chromatic runs.
@@ -17,6 +25,8 @@ await sb.mock(import("next/navigation"), { spy: true });
 await sb.mock(import("../src/app/lib/getPlaceholderImage.ts"));
 
 const preview: Preview = {
+  //👇 Enables auto-generated documentation for all stories
+  tags: ["autodocs"],
   parameters: {
     nextjs: {
       appDirectory: true,
@@ -41,11 +51,22 @@ const preview: Preview = {
       // 'off' - skip a11y checks entirely
       test: "todo",
     },
-    //👇 Enables auto-generated documentation for all stories
-    tags: ["autodocs"],
+
     initialGlobals: {
       // 👇 Set the initial background color
       backgrounds: { value: "cream" },
+    },
+    docs: {
+      page: () => (
+        <>
+          <Title />
+          <Subtitle />
+          <Description />
+          <Primary />
+          <Controls />
+          <Stories />
+        </>
+      ),
     },
   },
 
