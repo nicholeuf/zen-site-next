@@ -62,7 +62,11 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const RootLayout = async (props: LayoutProps<"/">) => {
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
+const RootLayout: React.FC<RootLayoutProps> = async ({ children }) => {
   // Parse deviceType from user agent header on server
   const deviceType = await getDeviceType();
 
@@ -85,7 +89,7 @@ const RootLayout = async (props: LayoutProps<"/">) => {
       </head>
       <body>
         <AppRouterCacheProvider>
-          <AppLayout deviceType={deviceType}>{props.children}</AppLayout>
+          <AppLayout deviceType={deviceType}>{children}</AppLayout>
         </AppRouterCacheProvider>
         <Analytics />
         <SpeedInsights />
