@@ -6,7 +6,7 @@ describe("getBaseUrl", () => {
       vercelTargetEnv: "production",
       vercelProjectProductionUrl: "www.example.com",
       vercelBranchUrl: "preview.vercel.app",
-      nextPublicSiteUrl: "https://fallback.example.com",
+      fallbackUrl: "https://fallback.example.com",
     });
 
     expect(baseUrl).toBe("https://www.example.com");
@@ -17,7 +17,7 @@ describe("getBaseUrl", () => {
       vercelTargetEnv: "preview",
       vercelProjectProductionUrl: "www.example.com",
       vercelBranchUrl: "preview.vercel.app",
-      nextPublicSiteUrl: "https://fallback.example.com",
+      fallbackUrl: "https://fallback.example.com",
     });
 
     expect(baseUrl).toBe("https://preview.vercel.app");
@@ -26,7 +26,7 @@ describe("getBaseUrl", () => {
   test("falls back to NEXT_PUBLIC_SITE_URL when target env is not production/preview", () => {
     const baseUrl = getBaseUrl({
       vercelTargetEnv: "development",
-      nextPublicSiteUrl: "https://fallback.example.com",
+      fallbackUrl: "https://fallback.example.com",
     });
 
     expect(baseUrl).toBe("https://fallback.example.com");
