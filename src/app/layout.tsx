@@ -14,11 +14,13 @@ import getDeviceType from "./ssrMediaQueries/getDeviceType";
 import "@/app/styles/mobileFix.css";
 import getBaseUrl from "./lib/getBaseUrl";
 
+const metadataBase = new URL(getBaseUrl());
+
 export async function generateMetadata(): Promise<Metadata> {
   const pathname = await getServerPath();
 
   return {
-    metadataBase: new URL(getBaseUrl()),
+    metadataBase,
     title: {
       template: "%s | Nichole Frey",
       // a default is required when creating a template

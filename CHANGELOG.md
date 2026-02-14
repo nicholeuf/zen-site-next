@@ -1,3 +1,14 @@
+### 2026-02-14 [*](https://github.com/nicholeuf/zen-site-next/pull/208)
+
+#### Fixed
+
+- Corrected Vercel base URL detection and protocol handling across environments
+
+#### Changed
+
+- Optimized metadata and sitemap generation by reusing computed values
+- Added comprehensive test coverage for base URL resolution logic
+
 ### 2026-02-12 [*](https://github.com/nicholeuf/zen-site-next/pull/206)
 
 #### Changed
