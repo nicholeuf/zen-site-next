@@ -5,18 +5,18 @@ describe("getBaseUrl", () => {
     const baseUrl = getBaseUrl({
       vercelTargetEnv: "production",
       vercelProjectProductionUrl: "www.example.com",
-      vercelUrl: "preview.vercel.app",
+      vercelBranchUrl: "preview.vercel.app",
       nextPublicSiteUrl: "https://fallback.example.com",
     });
 
     expect(baseUrl).toBe("https://www.example.com");
   });
 
-  test("uses VERCEL_URL for preview target", () => {
+  test("uses VERCEL_BRANCH_URL for preview target", () => {
     const baseUrl = getBaseUrl({
       vercelTargetEnv: "preview",
       vercelProjectProductionUrl: "www.example.com",
-      vercelUrl: "preview.vercel.app",
+      vercelBranchUrl: "preview.vercel.app",
       nextPublicSiteUrl: "https://fallback.example.com",
     });
 

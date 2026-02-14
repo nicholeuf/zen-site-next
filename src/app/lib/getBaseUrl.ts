@@ -13,7 +13,6 @@ const getBaseUrl: (options?: GetBaseUrlOptions) => string = (
     vercelTargetEnv = process.env.VERCEL_TARGET_ENV,
     vercelProjectProductionUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL,
     vercelBranchUrl = process.env.VERCEL_BRANCH_URL,
-    vercelUrl = process.env.VERCEL_URL,
     nextPublicSiteUrl = process.env.NEXT_PUBLIC_SITE_URL,
   } = options;
 
@@ -27,14 +26,13 @@ const getBaseUrl: (options?: GetBaseUrlOptions) => string = (
       VERCEL_TARGET_ENV: vercelTargetEnv,
       VERCEL_PROJECT_PRODUCTION_URL: vercelProjectProductionUrl,
       VERCEL_BRANCH_URL: vercelBranchUrl,
-      VERCEL_URL: vercelUrl,
       NEXT_PUBLIC_SITE_URL: nextPublicSiteUrl,
     });
   }
 
   const rawBaseUrl =
     (vercelTargetEnv === "production" && vercelProjectProductionUrl) ||
-    (vercelTargetEnv === "preview" && vercelUrl) ||
+    (vercelTargetEnv === "preview" && vercelBranchUrl) ||
     nextPublicSiteUrl ||
     "http://localhost:3000";
 
