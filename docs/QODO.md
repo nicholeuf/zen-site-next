@@ -11,12 +11,11 @@ That wiki file is the source of truth for the commands Qodo runs and the PR even
 
 ## What Qodo does here
 
-When a PR is opened, reopened, or marked **Ready for review**, Qodo will:
+When a PR is opened, reopened, or marked **Ready for review** (including draft PRs), Qodo will:
 - Generate or improve the PR title and description
 - Post review feedback with suggestions
 - Offer automated improvements
 
-Draft PRs are included in automation (see the wiki config).
 
 ## Current commands (summary)
 
