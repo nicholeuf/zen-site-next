@@ -1,3 +1,9 @@
+### 2026-02-15 [*](https://github.com/nicholeuf/zen-site-next/pull/215)
+
+#### Changed
+
+- Added Qodo documentation and updated contributor guidance to clarify the manual changelog workflow
+
 ### 2026-02-14 [*](https://github.com/nicholeuf/zen-site-next/pull/211)
 
 #### Changed
