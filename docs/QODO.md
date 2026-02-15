@@ -30,10 +30,14 @@ See the wiki for the exact, up-to-date command list:
 
 ## Changelog updates
 
-Changelog updates are **manual** in this repo. Before merging:
+Changelog updates are **manual** in this repo and are initiated by contributors.
+When the `/changelog` command is run (either manually in the PR or via the Qodo Chrome Extension), Qodo will **push the generated `CHANGELOG.md` updates automatically** because `push_changelog_changes=true` is enabled in the config.
+
+Typical flow before merging:
 1. Open the PR in GitHub
-2. Use the Qodo Chrome Extension to generate changelog entries
-3. Review/edit the output and commit `CHANGELOG.md` updates to the PR branch
+2. Run `/changelog` (manually in the PR or via the Qodo Chrome Extension)
+3. Review/edit the generated entries if needed
+4. Ensure the resulting `CHANGELOG.md` updates are committed to the PR branch
 
 Chrome extension docs:
 - https://docs.qodo.ai/qodo-documentation/qodo-merge/integrations/chrome-extension
