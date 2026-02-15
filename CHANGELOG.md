@@ -1,3 +1,9 @@
+### 2026-02-15 [*](https://github.com/nicholeuf/zen-site-next/pull/215)
+
+#### Changed
+
+- Added Qodo documentation and updated contributor guidance to clarify the manual changelog workflow
+
 ### 2026-02-14 [*](https://github.com/nicholeuf/zen-site-next/pull/211)
 
 #### Changed
@@ -592,7 +598,7 @@
 When making changes to this project, please follow these guidelines:
 
 1. Use conventional commit messages
-2. [Qodo](https://github.com/nicholeuf/zen-site-next/wiki/.pr_agent.toml) will update this changelog with your changes when the PR is ready for review
+2. Changelog updates are initiated manually; see [docs/QODO.md](docs/QODO.md) for the Qodo workflow
 3. Test your changes thoroughly
 4. Follow the existing code style and patterns
 

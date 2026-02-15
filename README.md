@@ -12,7 +12,8 @@
 <!-- Tools / formatting badges -->
 [![Formatted with Biome](https://img.shields.io/badge/Formatted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/) 
 [![Linted with Biome](https://img.shields.io/badge/Linted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/) 
-[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/)
+[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/) 
+[![Qodo](https://img.shields.io/badge/Qodo-Code%20Review-6b5bff?style=flat)](docs/QODO.md) 
 
 <!-- CI / status badges -->
 [![tests (coverage)](https://img.shields.io/github/actions/workflow/status/nicholeuf/zen-site-next/workflow.yaml?style=flat&label=tests%20%28coverage%29)](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml) 
@@ -20,6 +21,8 @@
 [![codecov](https://img.shields.io/codecov/c/github/nicholeuf/zen-site-next?style=flat)](https://codecov.io/gh/nicholeuf/zen-site-next)
 
 This is a personal portfolio website for Nichole Frey, a Full-Stack Developer. Built with [Next.js](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+Qodo is used for code review on this project. See [docs/QODO.md](docs/QODO.md) for project-specific guidance.
 
 ## Getting Started
 
