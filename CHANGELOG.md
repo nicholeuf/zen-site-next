@@ -592,7 +592,7 @@
 When making changes to this project, please follow these guidelines:
 
 1. Use conventional commit messages
-2. [Qodo](https://github.com/nicholeuf/zen-site-next/wiki/.pr_agent.toml) will update this changelog with your changes when the PR is ready for review
+2. [Qodo](docs/QODO.md) will update this changelog with your changes when the PR is ready for review
 3. Test your changes thoroughly
 4. Follow the existing code style and patterns
 
