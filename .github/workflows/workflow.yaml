@@ -10,8 +10,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        
       - name: Use Node.js
         id: setup-node
         uses: actions/setup-node@v6
@@ -33,11 +34,25 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
 
-      - name: Record cache status
+      - name: Record pnpm cache status
         if: ${{ always() }}
         run: |
           bash scripts/gen-ci-cache-status.sh \
+            "pnpm" \
             "${{ steps.setup-node.outputs.cache-hit || 'unknown' }}" \
+            "${{ github.run_id }}" \
+            "${{ github.run_attempt }}" \
+            "${{ github.workflow }}" \
+            "${{ github.job }}" \
+            "${{ github.ref }}" \
+            "${{ github.sha }}" \
+            "artifacts/ci-cache-status-pnpm.json"
+
+      - name: Record nextjs cache status
+        if: ${{ always() }}
+        run: |
+          bash scripts/gen-ci-cache-status.sh \
+            "nextjs" \
             "${{ steps.nextjs-cache.outputs.cache-hit || 'false' }}" \
             "${{ github.run_id }}" \
             "${{ github.run_attempt }}" \
@@ -45,15 +60,15 @@ jobs:
             "${{ github.job }}" \
             "${{ github.ref }}" \
             "${{ github.sha }}" \
-            "artifacts/ci-cache-status.json"
+            "artifacts/ci-cache-status-nextjs.json"
 
-      - name: Upload cache status artifact
+      - name: Upload cache status artifacts
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: ci-cache-status
-          path: artifacts/ci-cache-status.json
-          if-no-files-found: error
+          path: artifacts/
+          if-no-files-found: warn
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -69,8 +84,6 @@ jobs:
           NEXT_PUBLIC_SMALLCHAT_ENABLED: ${{ secrets.NEXT_PUBLIC_SMALLCHAT_ENABLED }}
           NEXT_PUBLIC_SENTRY_DSN: ${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
         run: pnpm run test:ci
-
-      # (Build timing artifact step removed)
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5

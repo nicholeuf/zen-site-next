@@ -16,10 +16,33 @@ jobs:
         uses: pnpm/action-setup@v4
 
       - name: Use Node.js
+        id: setup-node
         uses: actions/setup-node@v6
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
+
+      - name: Record pnpm cache status
+        if: ${{ always() }}
+        run: |
+          bash scripts/gen-ci-cache-status.sh \
+            "pnpm" \
+            "${{ steps.setup-node.outputs.cache-hit || 'unknown' }}" \
+            "${{ github.run_id }}" \
+            "${{ github.run_attempt }}" \
+            "${{ github.workflow }}" \
+            "${{ github.job }}" \
+            "${{ github.ref }}" \
+            "${{ github.sha }}" \
+            "artifacts/ci-cache-status-pnpm.json"
+
+      - name: Upload cache status artifacts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-cache-status
+          path: artifacts/
+          if-no-files-found: warn
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile

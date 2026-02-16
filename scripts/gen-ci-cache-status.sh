@@ -1,25 +1,35 @@
 #!/usr/bin/env bash
-# Generate a CI cache status JSON file from environment variables
+# Generate a CI cache status JSON file for a single cache type
 
 set -e
 
-# Arguments (all optional, fallback to env)
-pnpm_cache_hit="${1:-${PNPM_CACHE_HIT:-unknown}}"
-nextjs_cache_hit="${2:-${NEXTJS_CACHE_HIT:-false}}"
-run_id="${3:-${GITHUB_RUN_ID:-}}"
-run_attempt="${4:-${GITHUB_RUN_ATTEMPT:-}}"
-workflow="${5:-${GITHUB_WORKFLOW:-}}"
-job="${6:-${GITHUB_JOB:-}}"
-ref="${7:-${GITHUB_REF:-}}"
-sha="${8:-${GITHUB_SHA:-}}"
+# Arguments
+# $1: cache_type (e.g. pnpm, nextjs)
+# $2: cache_hit (true/false/unknown)
+# $3: run_id
+# $4: run_attempt
+# $5: workflow
+# $6: job
+# $7: ref
+# $8: sha
+# $9: output_file (e.g. artifacts/ci-cache-status-pnpm.json)
 
-output_file="${9:-artifacts/ci-cache-status.json}"
+cache_type="$1"
+cache_hit="$2"
+run_id="$3"
+run_attempt="$4"
+workflow="$5"
+job="$6"
+ref="$7"
+sha="$8"
+output_file="$9"
+
 mkdir -p "$(dirname "$output_file")"
 
 cat <<EOF > "$output_file"
 {
-  "pnpm_cache_hit": "$pnpm_cache_hit",
-  "nextjs_cache_hit": "$nextjs_cache_hit",
+  "cache_type": "$cache_type",
+  "cache_hit": "$cache_hit",
   "run_id": "$run_id",
   "run_attempt": "$run_attempt",
   "workflow": "$workflow",
