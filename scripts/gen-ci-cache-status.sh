@@ -35,17 +35,25 @@ fi
 
 mkdir -p "$(dirname "$output_file")"
 
-cat <<EOF > "$output_file"
-{
-  "cache_type": "$cache_type",
-  "cache_hit": $cache_hit,
-  "run_id": "$run_id",
-  "run_attempt": "$run_attempt",
-  "workflow": "$workflow",
-  "job": "$job",
-  "ref": "$ref",
-  "sha": "$sha"
-}
-EOF
+# Use jq to safely generate JSON with proper escaping
+jq -n \
+  --arg cache_type "$cache_type" \
+  --arg run_id "$run_id" \
+  --arg run_attempt "$run_attempt" \
+  --arg workflow "$workflow" \
+  --arg job "$job" \
+  --arg ref "$ref" \
+  --arg sha "$sha" \
+  --argjson cache_hit "$cache_hit" \
+  '{
+    cache_type: $cache_type,
+    cache_hit: $cache_hit,
+    run_id: $run_id,
+    run_attempt: $run_attempt,
+    workflow: $workflow,
+    job: $job,
+    ref: $ref,
+    sha: $sha
+  }' > "$output_file"
 
 printf "Cache status written to %s\n" "$output_file"
