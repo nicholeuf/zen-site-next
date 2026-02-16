@@ -27,7 +27,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Restore cache
-        id: nextjs-cache
+        id: nextjs-cache-storybook
         uses: actions/cache@v5
         with:
           # Next.js build cache only. pnpm cache is handled by setup-node above.
@@ -59,7 +59,7 @@ jobs:
         run: |
           bash scripts/gen-ci-cache-status.sh \
             "nextjs" \
-            "${{ steps.nextjs-cache.outputs.cache-hit }}" \
+            "${{ steps.nextjs-cache-storybook.outputs.cache-hit }}" \
             "${{ github.run_id }}" \
             "${{ github.run_attempt }}" \
             "${{ github.workflow }}" \
