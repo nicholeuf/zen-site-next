@@ -20,12 +20,14 @@ jobs:
         name: Install pnpm
 
       - name: Use Node.js
+          id: setup-node
         uses: actions/setup-node@v6
         with:
           node-version-file: ".nvmrc"
           cache: "pnpm"
 
       - name: Restore cache
+          id: nextjs-cache
         uses: actions/cache@v5
         with:
           path: |
@@ -38,6 +40,28 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+        - name: Record cache status
+          if: ${{ always() }}
+          run: |
+            bash scripts/gen-ci-cache-status.sh \
+              "${{ steps.setup-node.outputs.cache-hit || 'unknown' }}" \
+              "${{ steps.nextjs-cache.outputs.cache-hit || 'false' }}" \
+              "${{ github.run_id }}" \
+              "${{ github.run_attempt }}" \
+              "${{ github.workflow }}" \
+              "${{ github.job }}" \
+              "${{ github.ref }}" \
+              "${{ github.sha }}" \
+              "artifacts/ci-cache-status.json"
+
+        - name: Upload cache status artifact
+          if: ${{ always() }}
+          uses: actions/upload-artifact@v4
+          with:
+            name: ci-cache-status
+            path: artifacts/ci-cache-status.json
+            if-no-files-found: error
 
       - name: Publish to Chromatic
         uses: chromaui/action@v15

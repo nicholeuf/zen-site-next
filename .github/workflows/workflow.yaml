@@ -36,9 +36,24 @@ jobs:
       - name: Record cache status
         if: ${{ always() }}
         run: |
-          echo "## CI cache status" >> "$GITHUB_STEP_SUMMARY"
-          echo "- pnpm cache: ${{ steps.setup-node.outputs.cache-hit || 'unknown' }}" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Next.js cache: ${{ steps.nextjs-cache.outputs.cache-hit || 'false' }}" >> "$GITHUB_STEP_SUMMARY"
+          bash scripts/gen-ci-cache-status.sh \
+            "${{ steps.setup-node.outputs.cache-hit || 'unknown' }}" \
+            "${{ steps.nextjs-cache.outputs.cache-hit || 'false' }}" \
+            "${{ github.run_id }}" \
+            "${{ github.run_attempt }}" \
+            "${{ github.workflow }}" \
+            "${{ github.job }}" \
+            "${{ github.ref }}" \
+            "${{ github.sha }}" \
+            "artifacts/ci-cache-status.json"
+
+      - name: Upload cache status artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-cache-status
+          path: artifacts/ci-cache-status.json
+          if-no-files-found: error
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -54,6 +69,8 @@ jobs:
           NEXT_PUBLIC_SMALLCHAT_ENABLED: ${{ secrets.NEXT_PUBLIC_SMALLCHAT_ENABLED }}
           NEXT_PUBLIC_SENTRY_DSN: ${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
         run: pnpm run test:ci
+
+      # (Build timing artifact step removed)
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
