@@ -46,7 +46,7 @@ jobs:
         run: |
           bash scripts/gen-ci-cache-status.sh \
             "pnpm" \
-            "${{ steps.setup-node.outputs.cache-hit || 'unknown' }}" \
+            "${{ steps.setup-node.outputs.cache-hit }}" \
             "${{ github.run_id }}" \
             "${{ github.run_attempt }}" \
             "${{ github.workflow }}" \
@@ -60,7 +60,7 @@ jobs:
         run: |
           bash scripts/gen-ci-cache-status.sh \
             "nextjs" \
-            "${{ steps.nextjs-cache.outputs.cache-hit || 'false' }}" \
+            "${{ steps.nextjs-cache.outputs.cache-hit }}" \
             "${{ github.run_id }}" \
             "${{ github.run_attempt }}" \
             "${{ github.workflow }}" \
