@@ -51,10 +51,10 @@ jobs:
         if: ${{ always() }}
         run: |
           bash scripts/gen-ci-cache-status.sh \
-            "pnpm" \
-            "${{ steps.setup-node.outputs.cache-hit }}" \
-            "${{ github.run_id }}" \
-            "${{ github.run_attempt }}" \
+            pnpm \
+            ${{ steps.setup-node.outputs.cache-hit }} \
+            ${{ github.run_id }} \
+            ${{ github.run_attempt }} \
             "${{ github.workflow }}" \
             "${{ github.job }}" \
             "${{ github.ref }}" \
@@ -65,10 +65,10 @@ jobs:
         if: ${{ always() }}
         run: |
           bash scripts/gen-ci-cache-status.sh \
-            "nextjs" \
-            "${{ steps.nextjs-cache-storybook.outputs.cache-hit }}" \
-            "${{ github.run_id }}" \
-            "${{ github.run_attempt }}" \
+            nextjs \
+            ${{ steps.nextjs-cache-storybook.outputs.cache-hit }} \
+            ${{ github.run_id }} \
+            ${{ github.run_attempt }} \
             "${{ github.workflow }}" \
             "${{ github.job }}" \
             "${{ github.ref }}" \
