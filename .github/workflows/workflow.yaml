@@ -21,9 +21,11 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v5
         with:
+          # Next.js build cache only. pnpm cache is handled by setup-node above.
           path: |
             ${{ github.workspace }}/.next/cache
           # Generate a new cache whenever packages or source files change.
+          # Key structure: OS + lockfile hash + source hash.
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
