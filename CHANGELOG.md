@@ -1,3 +1,15 @@
+### 2026-02-16 [*](https://github.com/nicholeuf/zen-site-next/pull/216)
+
+#### Added
+
+- Introduced comprehensive build caching documentation with strategy details plus debugging guidance
+- Created a reusable `gen-ci-cache-status.sh` helper to capture cache hit and miss data across workflows
+
+#### Changed
+
+- Enabled pnpm and Next.js build caching plus cache status artifact uploads across all CI workflows
+- Upgraded GitHub Actions versions (checkout, setup-node, cache, Codecov) to their latest releases for consistency
+
 ### 2026-02-15 [*](https://github.com/nicholeuf/zen-site-next/pull/215)
 
 #### Changed
