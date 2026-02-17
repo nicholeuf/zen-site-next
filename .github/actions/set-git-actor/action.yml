@@ -1,0 +1,10 @@
+name: 'Set Git to Triggering Actor'
+description: 'Sets git user.name/email to github.actor for clean commit authorship'
+runs:
+  using: 'composite'
+  steps:
+    - name: Configure git identity
+      shell: bash
+      run: |
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"

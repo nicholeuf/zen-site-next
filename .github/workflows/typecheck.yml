@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set git identity to triggering user
+        uses: ./.github/actions/set-git-actor
+        
       - uses: pnpm/action-setup@v4
         name: Install pnpm
       - name: Use Node.js
