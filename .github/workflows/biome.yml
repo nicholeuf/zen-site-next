@@ -12,6 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set git identity to triggering user
+        uses: ./.github/actions/set-git-actor
+
       - name: Install pnpm
         uses: pnpm/action-setup@v4
 
