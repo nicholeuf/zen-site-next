@@ -32,6 +32,15 @@ jobs:
           NEXT_PUBLIC_SMALLCHAT_ENABLED: ${{ secrets.NEXT_PUBLIC_SMALLCHAT_ENABLED }}
           NEXT_PUBLIC_SENTRY_DSN: ${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
         run: pnpm run test:ci
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          report_type: coverage
+          directory: ./coverage
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }} # required
+          verbose: true
           
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
@@ -40,9 +49,6 @@ jobs:
           report_type: test_results
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }}
+          verbose: true
 
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v5
-        with:
-          fail_ci_if_error: true
-          token: ${{ secrets.CODECOV_TOKEN }} # required
+
