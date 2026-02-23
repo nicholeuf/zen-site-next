@@ -15,7 +15,6 @@
     "tsc": "tsc --project  ./tsconfig.json",
     "test": "vitest",
     "test:ci": "vitest run --coverage",
-    "test:results": "vitest run --reporter=junit --outputFile=junit/test-report.junit.xml",
     "test:watch": "vitest watch",
     "test:update": "vitest -u",
     "act": "act --secret-file .env.local",
