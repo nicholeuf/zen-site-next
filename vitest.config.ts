@@ -27,7 +27,8 @@ export default defineConfig({
     // Inject globals like `describe`, `it`, `expect` so setup files and tests don't need to import them
     globals: true,
     mockReset: true,
-    reporters: ["default", "jest-junit"],
+    reporters: ["default", "junit"],
+    outputFile: { junit: "coverage/vitest-junit.xml" },
 
     // Exclude Storybook files and stories from coverage collection
     coverage: {
