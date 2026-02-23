@@ -39,3 +39,10 @@ jobs:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }} # required
           
+      - name: Upload test results to Codecov
+        if: ${{ !cancelled() }}
+        uses: codecov/codecov-action@v5
+        with:
+          report_type: test_results
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
