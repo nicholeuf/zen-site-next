@@ -10,23 +10,18 @@ jobs:
   update-dep:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
         name: Install pnpm
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install
-
+      - run: pnpm install
       - name: Update dependencies (restore @types/node)
         run: bash scripts/update_dependencies.sh
-
       - name: Install Playwright Browsers
         run: pnpm exec playwright install chromium
-
       - name: Run Vitest to update snapshots
         run: pnpm run test:update
         env:
@@ -35,7 +30,6 @@ jobs:
           NEXT_PUBLIC_GOOGLE_AUTHENTICATION: ${{ secrets.NEXT_PUBLIC_GOOGLE_AUTHENTICATION }}
           NEXT_PUBLIC_SMALLCHAT_ENABLED: ${{ secrets.NEXT_PUBLIC_SMALLCHAT_ENABLED }}
           NEXT_PUBLIC_SENTRY_DSN: ${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:

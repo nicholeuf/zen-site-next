@@ -1,11 +1,3 @@
-### 2026-02-23 [*](https://github.com/nicholeuf/zen-site-next/pull/221)
-
-#### Changed
-
-- Upgraded GitHub Actions to latest versions (checkout@v6, setup-node@v6)
-- Enabled code coverage reporting in CI (run tests with coverage)
-- Improved workflow step naming/formatting and removed deprecated Codecov test-results action
-
 ### 2026-02-15 [*](https://github.com/nicholeuf/zen-site-next/pull/215)
 
 #### Changed
