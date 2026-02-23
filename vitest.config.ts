@@ -27,7 +27,16 @@ export default defineConfig({
     // Inject globals like `describe`, `it`, `expect` so setup files and tests don't need to import them
     globals: true,
     mockReset: true,
-    reporters: ["default", "jest-junit"],
+    reporters: [
+      "default",
+      // conditional reporter
+      process.env.CI ? "github-actions" : {},
+      "junit",
+      "hanging-process",
+    ],
+    outputFile: {
+      junit: "./junit/junit-report.xml",
+    },
 
     // Exclude Storybook files and stories from coverage collection
     coverage: {
