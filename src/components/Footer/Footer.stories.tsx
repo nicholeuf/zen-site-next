@@ -79,7 +79,7 @@ export const Tablet: Story = {
   },
 };
 
-export const ViewCredits: Story = {
+export const ViewCreditsOpen: Story = {
   render: (args) => <Footer {...args} />,
   args: {
     height: DEFAULT_HEIGHT,
@@ -95,6 +95,49 @@ export const ViewCredits: Story = {
 
     await waitFor(() => {
       expect(screen.getByRole("heading", { name: /credits/i })).toBeVisible();
+    });
+
+    const closeButton = screen.getByRole("button", {
+      name: /close/i,
+    });
+
+    await waitFor(() => {
+      expect(closeButton).toHaveFocus();
+    });
+  },
+};
+
+export const ViewCreditsClose: Story = {
+  render: (args) => <Footer {...args} />,
+  args: {
+    height: DEFAULT_HEIGHT,
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement as HTMLElement);
+
+    const viewCreditsButton = canvas.getByRole("button", {
+      name: /view credits/i,
+    });
+
+    await userEvent.click(viewCreditsButton);
+
+    await waitFor(() => {
+      expect(screen.getByRole("heading", { name: /credits/i })).toBeVisible();
+    });
+
+    const closeButton = screen.getByRole("button", {
+      name: /close/i,
+    });
+    await userEvent.click(closeButton);
+    await waitFor(() => {
+      expect(
+        screen.queryByRole("heading", { name: /credits/i }),
+        "Credits heading should not be in the document after closing"
+      ).not.toBeInTheDocument();
+    });
+
+    await waitFor(() => {
+      expect(viewCreditsButton).toHaveFocus();
     });
   },
 };
