@@ -118,6 +118,7 @@ export const MobileNavigationClose: Story = {
     await waitFor(() => {
       expect(getDialog(), "Mobile navigation dialog").not.toBeInTheDocument();
     });
+    await waitFor(() => expect(openButton).toHaveFocus());
     expect(openButton).toHaveAttribute("aria-expanded", "false");
   },
 };

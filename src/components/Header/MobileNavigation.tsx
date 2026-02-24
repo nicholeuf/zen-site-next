@@ -108,11 +108,15 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
           transition: {
             onEntered: () => {
               // When the dialog opens and the transition finishes, focus the close button
-              if (closeButtonRef.current) closeButtonRef.current.focus();
+              if (closeButtonRef.current) {
+                closeButtonRef.current.focus();
+              }
             },
             onExited: () => {
               // When the dialog has fully closed, return focus to the open button
-              if (openButtonRef.current) openButtonRef.current.focus();
+              if (openButtonRef.current) {
+                openButtonRef.current.focus();
+              }
             },
           },
         }}
