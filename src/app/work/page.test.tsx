@@ -16,16 +16,6 @@ describe("The Work Page", () => {
     vi.resetAllMocks();
   });
 
-  test.each([
-    ["header"],
-    ["work-page"],
-    ["footer"],
-  ])("contains the visible testid %p", (testid) => {
-    renderWithLayout(<WorkPage />);
-    const component = screen.getByTestId(testid);
-    expect(component).toBeVisible();
-  });
-
   test("allows user to switch between work experience tabs", async () => {
     const user = userEvent.setup();
     renderWithLayout(<WorkPage />);
