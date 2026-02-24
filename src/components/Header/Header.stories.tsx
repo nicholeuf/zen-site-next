@@ -1,13 +1,13 @@
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import React from "react";
 import { expect, screen, userEvent, waitFor, within } from "storybook/test";
+import routes from "../../app/lib/routes";
 import {
   DEFAULT_ACTIVE_COLOR,
   DEFAULT_COLOR,
   DEFAULT_HEIGHT,
 } from "./constants";
 import Header from "./index";
-import routes from "../../app/lib/routes";
 
 const meta: Meta<typeof Header> = {
   title: "Components/Header/Header",
