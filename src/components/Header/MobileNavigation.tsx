@@ -17,8 +17,8 @@ import { CldImage } from "next-cloudinary";
 import {
   ForwardedRef,
   Fragment,
-  RefObject,
   forwardRef,
+  RefObject,
   useEffect,
   useRef,
   useState,
