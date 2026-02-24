@@ -27,7 +27,10 @@ export default defineConfig({
     // Inject globals like `describe`, `it`, `expect` so setup files and tests don't need to import them
     globals: true,
     mockReset: true,
-    reporters: ["default", "jest-junit", "hanging-process"],
+    reporters: ["default", "junit"],
+    outputFile: {
+      junit: "./coverage/junit.xml",
+    },
 
     // Exclude Storybook files and stories from coverage collection
     coverage: {
@@ -41,6 +44,7 @@ export default defineConfig({
         "**/__mocks__/**",
         "types/**",
       ],
+      reporter: ["text", "lcovonly"],
     },
     // Default project: run unit/test files in the src folder
     projects: [

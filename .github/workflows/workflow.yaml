@@ -33,9 +33,19 @@ jobs:
           NEXT_PUBLIC_SENTRY_DSN: ${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
         run: pnpm run test:ci
 
-      - name: Upload coverage reports to Codecov
+      - name: Upload coverage + JUnit XML to Codecov
+        # NOTE: We explicitly upload junit.xml here because Codecov's PR comment was reporting
+        # "Junit XML file not found" when it wasn't included in the upload payload.
         uses: codecov/codecov-action@v5
         with:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }} # required
-          
+          files: ./coverage/lcov.info,./coverage/junit.xml
+
+      - name: Upload test results to Codecov
+        if: ${{ !cancelled() }}
+        uses: codecov/codecov-action@v5
+        with:
+          report_type: test_results
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}

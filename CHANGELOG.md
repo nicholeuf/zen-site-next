@@ -1,3 +1,10 @@
+### 2026-02-24 [*](https://github.com/nicholeuf/zen-site-next/pull/225)
+
+#### Changed
+
+- Added Codecov configuration (codecov.yml) and tuned PR comment/status behavior
+- Updated Vitest to emit JUnit XML test results (coverage/junit.xml) and ensured CI uploads both coverage (lcov.info) and JUnit results to Codecov
+
 ### 2026-02-23 [*](https://github.com/nicholeuf/zen-site-next/pull/221)
 
 #### Changed
