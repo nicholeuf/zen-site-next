@@ -20,4 +20,10 @@ describe("SmallChat Enabled", () => {
   it("should be enabled when value is 'TRUE' (case-insensitive)", () => {
     expect(isChatEnabled("TRUE")).toBe(true);
   });
+
+  it("should match process.env.NEXT_PUBLIC_SMALLCHAT_ENABLED by default", () => {
+    expect(isChatEnabled()).toBe(
+      /true/i.test(process.env.NEXT_PUBLIC_SMALLCHAT_ENABLED || "false")
+    );
+  });
 });
