@@ -44,6 +44,7 @@ export default defineConfig({
         "**/__mocks__/**",
         "types/**",
       ],
+      reporter: ["text", "lcovonly"],
     },
     // Default project: run unit/test files in the src folder
     projects: [
