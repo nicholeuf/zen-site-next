@@ -17,6 +17,7 @@ import { CldImage } from "next-cloudinary";
 import {
   ForwardedRef,
   Fragment,
+  RefObject,
   forwardRef,
   useEffect,
   useRef,
@@ -40,34 +41,32 @@ interface MobileNavigationProps {
   activeColor: string;
 }
 
+const focusRef = (ref: RefObject<HTMLButtonElement | null>) => {
+  if (ref.current) {
+    ref.current.focus();
+  }
+};
+
 const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const openButtonRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+  const handleClickOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  // Instead of a timeout, use the transition lifecycle. We'll pass handlers
-  // to the transition via Dialog's `slotProps` so focus happens when the
-  // Slide transition finishes (onEntered/onExited). This is more reliable
-  // than setTimeout and maps cleanly for coverage/source-maps.
+  const focusCloseButton = (ref = closeButtonRef) => focusRef(ref);
+  const focusOpenButton = (ref = openButtonRef) => focusRef(ref);
 
   useEffect(() => {
     // Ensure the open button is focused on initial mount for keyboard users.
     // Previously we used a timeout to return focus after transitions; the
     // transition lifecycle now handles focus on open/close, but on initial
     // render we still want the trigger to be focusable and focused.
-    if (openButtonRef.current) {
-      openButtonRef.current.focus();
-    }
+    focusRef(openButtonRef);
   }, []);
+
   return (
     <Fragment>
       <Box
@@ -106,18 +105,10 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
         slots={{ transition: Transition }}
         slotProps={{
           transition: {
-            onEntered: () => {
-              // When the dialog opens and the transition finishes, focus the close button
-              if (closeButtonRef.current) {
-                closeButtonRef.current.focus();
-              }
-            },
-            onExited: () => {
-              // When the dialog has fully closed, return focus to the open button
-              if (openButtonRef.current) {
-                openButtonRef.current.focus();
-              }
-            },
+            // When the dialog opens and the transition finishes, focus the close button
+            onEntered: () => focusCloseButton(),
+            // When the dialog has fully closed, return focus to the open button
+            onExited: () => focusOpenButton(),
           },
         }}
         sx={{
