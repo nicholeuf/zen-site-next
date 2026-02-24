@@ -14,7 +14,7 @@
     "format": "biome format --write && biome check --fix",
     "tsc": "tsc --project  ./tsconfig.json",
     "test": "vitest",
-    "test:ci": "vitest run --coverage",
+    "test:ci": "vitest run",
     "test:watch": "vitest watch",
     "test:update": "vitest -u",
     "act": "act --secret-file .env.local",
