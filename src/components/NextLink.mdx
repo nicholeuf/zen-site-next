@@ -31,3 +31,8 @@ Use the `Hover` story (pseudo state) to preview hover styles in isolation.
 
 <Canvas of={NextLinkStories.Hover} />
 <Controls of={NextLinkStories.Hover} />
+
+<Subheading>Undefined path</Subheading>
+Use the `UndefinedPath` story to see how the component renders when given an `href` that is not included in the application's `URLS` list. In this case, the component falls back to rendering a standard `<a>` tag with the provided `href`.
+<Canvas of={NextLinkStories.UndefinedPath} />
+<Controls of={NextLinkStories.UndefinedPath} />

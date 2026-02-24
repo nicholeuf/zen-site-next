@@ -18,7 +18,12 @@ const NextLink = React.forwardRef<HTMLAnchorElement, NextLinkProps>(
     const isDefinedPath = props.href ? URLS.includes(props.href) : false;
 
     return (
-      <Link component={isDefinedPath ? NLink : "a"} {...props} ref={ref}>
+      <Link
+        component={isDefinedPath ? NLink : "a"}
+        {...props}
+        ref={ref}
+        data-test-id={isDefinedPath ? "next-link" : "a-link"}
+      >
         {children}
       </Link>
     );
