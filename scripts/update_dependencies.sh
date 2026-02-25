@@ -21,6 +21,12 @@ fi
 
 echo "Target @types/node version: ${NODE_TYPES_VERSION}"
 
+echo "Upgrade next"
+pnpm next upgrade
+
+echo "Upgrade storybook"
+npx storybook@latest upgrade
+
 echo "Updating all dependencies to latest..."
 pnpm update --latest
 
@@ -30,3 +36,7 @@ if [ -n "$NODE_MAJOR" ]; then
 else
   echo "Warning: .nvmrc did not contain a valid Node major version. Skipping @types/node restore."
 fi
+
+echo "All dependencies updated. Please review the changes and test your application."
+
+pnpm run test:update
