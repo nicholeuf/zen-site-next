@@ -17,6 +17,13 @@ describe("The getDeviceType function", () => {
     expect(deviceType).toBe("mobile");
   });
 
+  test("returns desktop for gibberish user agent", async () => {
+    // mock next/headers response to return a gibberish user agent
+    headerMocks.get.mockReturnValue("gibberish");
+    const deviceType = await getDeviceType();
+    expect(deviceType).toBe("desktop");
+  });
+
   test("returns desktop for null user agent", async () => {
     // mock next/headers response to return a null user agent
     headerMocks.get.mockReturnValue(null);

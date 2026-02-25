@@ -13,4 +13,11 @@ describe("getServerPath", () => {
     const serverPath = await getServerPath();
     expect(serverPath).toBe("/work");
   });
+
+  test("returns no path", async () => {
+    // mock next/headers response to return null
+    headerMocks.get.mockReturnValue(null);
+    const serverPath = await getServerPath();
+    expect(serverPath).toBe("/");
+  });
 });

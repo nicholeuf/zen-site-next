@@ -47,8 +47,14 @@ export const Playground: Story = {
   args: {
     children: "Go to About (NextLink wrapper)",
     href: "/about",
-    underline: "always",
     sx: {},
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement as HTMLElement);
+    const link = canvas.getByRole("link");
+    await expect(link).toHaveAttribute("href", "/about");
+    expect(link.tagName).toBe("A");
+    expect(link).toHaveAttribute("data-test-id", "next-link");
   },
 };
 
@@ -68,5 +74,20 @@ export const Hover: Story = {
   args: Playground.args,
   parameters: {
     pseudo: { hover: true },
+  },
+};
+
+export const UndefinedPath: Story = {
+  ...Playground,
+  args: {
+    children: "Go to undefined path (renders as <a> tag)",
+    href: "/undefined-path",
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement as HTMLElement);
+    const link = canvas.getByRole("link");
+    await expect(link).toHaveAttribute("href", "/undefined-path");
+    expect(link.tagName).toBe("A");
+    expect(link).toHaveAttribute("data-test-id", "a-link");
   },
 };
