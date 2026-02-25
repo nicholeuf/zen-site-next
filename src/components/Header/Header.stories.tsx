@@ -149,7 +149,7 @@ export const Tablet: Story = {
       "aria-current",
       "page"
     );
-    expect(homeLinks[0], "Header Logo 'Home' link").toHaveAttribute(
+    expect(homeLinks[1], "Navigation 'Home' Link").toHaveAttribute(
       "href",
       routes.home.href
     );
