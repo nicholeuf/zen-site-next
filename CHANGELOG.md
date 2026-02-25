@@ -1,3 +1,15 @@
+### 2026-02-25 [*](https://github.com/nicholeuf/zen-site-next/pull/227)
+
+#### Added
+
+- Added unit tests for SmallChat env parsing and SSR helpers (getServerPath, getDeviceType) to close coverage gaps
+- Added Storybook interaction coverage for NextLink undefined paths (fallback `<a>`) and for Header/Footer UI flows
+
+#### Changed
+
+- Updated NextLink to default `href` to `/` and emit a `data-test-id` to distinguish Next.js links vs plain anchors
+- Refined MobileNavigation focus behavior to rely on transition lifecycle callbacks for deterministic accessibility + tests
+
 ### 2026-02-25 [*](https://github.com/nicholeuf/zen-site-next/pull/228)
 
 #### Changed
