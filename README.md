@@ -57,6 +57,9 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Updating Dependencies
+
+To update project dependencies, see [docs/UPDATE_DEPENDENCIES.md](docs/UPDATE_DEPENDENCIES.md) for instructions. The recommended method is to run the `scripts/update_dependencies.sh` script from the project root.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 

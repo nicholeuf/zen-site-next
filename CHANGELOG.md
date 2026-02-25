@@ -1,3 +1,12 @@
+### 2026-02-25 [*](https://github.com/nicholeuf/zen-site-next/pull/228)
+
+#### Changed
+
+- Updated project dependencies (package.json) and refreshed pnpm lockfile
+- Migrated Storybook config to ESM-compatible path resolution (.storybook/main.ts)
+- Added dependency update documentation (docs/UPDATE_DEPENDENCIES.md) and linked it from README
+- Removed the manual dependency update GitHub Actions workflow (update-deps.yaml)
+
 ### 2026-02-24 [*](https://github.com/nicholeuf/zen-site-next/pull/225)
 
 #### Changed
