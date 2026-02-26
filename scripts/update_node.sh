@@ -41,12 +41,12 @@ echo "$NEW_NODE_MAJOR" > .node-version
 echo "Updating engines.node in package.json to ${NEW_NODE_TYPES_VERSION}..."
 jq --arg new_version "$NEW_NODE_TYPES_VERSION" '.engines.node = $new_version' package.json > package.tmp.json && mv package.tmp.json package.json
 
-echo "Adding and using new Node version ${NEW_NODE_MAJOR} with pnpm..."
-pnpm env add --global "$NEW_NODE_MAJOR"
-pnpm env use --global "$NEW_NODE_MAJOR"
+echo "Installing Node version ${NEW_NODE_MAJOR} with Volta ..."
+volta install node@"$NEW_NODE_MAJOR"
 
 echo "Ensuring pnpm is up to date with the new Node version..."
 corepack use pnpm@latest
+corepack enable
 
 echo "Removing node_modules and pnpm-lock.yaml..."
 rm -rf node_modules pnpm-lock.yaml
