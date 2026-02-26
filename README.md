@@ -28,15 +28,16 @@ Qodo is used for code review on this project. See [docs/QODO.md](docs/QODO.md) f
 
 ### Prerequisites
 
+
 This project requires:
-- **Node.js**: See `.nvmrc` for the required version
+- **Node.js**: See `.node-version` for the required version
 - **pnpm**: Version managed via Corepack (see `packageManager` field in `package.json`)
 
-The Node.js version is specified in `.nvmrc` and referenced by all CI workflows. If you use [nvm](https://github.com/nvm-sh/nvm), simply run:
+The Node.js version is specified in `.node-version` and referenced by all CI workflows. If you use [pnpm](https://pnpm.io/) and Corepack, version management is automatic.
 
-```bash
-nvm use
-```
+## Debugging with Docker
+
+This project supports debugging Next.js in Docker using the Node.js inspector. See [docs/DOCKER_DEBUGGING.md](docs/DOCKER_DEBUGGING.md) for setup and usage instructions.
 
 The pnpm version is pinned via the `packageManager` field in `package.json` and will be automatically used when Corepack is enabled. To enable Corepack:
 
