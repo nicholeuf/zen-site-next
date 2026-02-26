@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 echo "Enabling Corepack to ensure pnpm is available..."
 corepack enable
 
@@ -36,7 +38,7 @@ fi
 NEW_NODE_TYPES_VERSION="${NEW_NODE_MAJOR}.x"
 
 echo "Updating Node version to ${NEW_NODE_MAJOR} in .nvmrc ..."
-echo "$NEW_NODE_MAJOR" > .nvmrc
+echo -n "$NEW_NODE_MAJOR" > .nvmrc
 
 echo "Updating engines.node in package.json to ${NEW_NODE_TYPES_VERSION}..."
 jq --arg new_version "$NEW_NODE_TYPES_VERSION" '.engines.node = $new_version' package.json > package.tmp.json && mv package.tmp.json package.json
