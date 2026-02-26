@@ -2,21 +2,21 @@
 set -euo pipefail
 
 
-# Read the Node version from .node-version and align @types/node with it.
-NODE_VERSION_RAW=$(tr -d '[:space:]' < .node-version)
+ # Read the Node version from .nvmrc and align @types/node with it.
+NODE_VERSION_RAW=$(tr -d '[:space:]' < .nvmrc)
 NODE_MAJOR=$(echo "$NODE_VERSION_RAW" | cut -d. -f1)
 
 if [[ ! "$NODE_MAJOR" =~ ^[0-9]+$ ]]; then
-  echo "Error: .node-version does not contain a numeric Node major version (got: '${NODE_VERSION_RAW}')."
+  echo "Error: .nvmrc does not contain a numeric Node major version (got: '${NODE_VERSION_RAW}')."
   exit 1
 fi
 
 if [[ "$NODE_VERSION_RAW" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
   NODE_TYPES_VERSION="${NODE_VERSION_RAW}"
-  echo "Using Node version from .node-version: ${NODE_VERSION_RAW}"
+  echo "Using Node version from .nvmrc: ${NODE_VERSION_RAW}"
 else
   NODE_TYPES_VERSION="${NODE_MAJOR}.x"
-  echo "Using Node major version from .node-version: ${NODE_MAJOR}"
+  echo "Using Node major version from .nvmrc: ${NODE_MAJOR}"
 fi
 
 echo "Target @types/node version: ${NODE_TYPES_VERSION}"
@@ -34,7 +34,7 @@ if [ -n "$NODE_MAJOR" ]; then
   echo "Restoring @types/node to ${NODE_TYPES_VERSION}..."
   pnpm add -D @types/node@"$NODE_TYPES_VERSION"
 else
-  echo "Warning: .node-version did not contain a valid Node major version. Skipping @types/node restore."
+  echo "Warning: .nvmrc did not contain a valid Node major version. Skipping @types/node restore."
 fi
 
 echo "All dependencies updated. Please review the changes and test your application."

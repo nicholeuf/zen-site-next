@@ -29,11 +29,11 @@ Qodo is used for code review on this project. See [docs/QODO.md](docs/QODO.md) f
 ### Prerequisites
 
 This project requires:
-- **Node.js**: See `.node-version` for the required version
+- **Node.js**: See `.nvmrc` for the required version
 - **pnpm**: Version managed via Corepack (see `packageManager` field in `package.json`)
 
-Node.js version management and update instructions are documented in [docs/VOLTA.md](docs/VOLTA.md).
-This project recommends [Volta](https://volta.sh/) for per-project Node.js and package manager switching. See docs/VOLTA.md for setup and usage.
+Node.js version management and update instructions are documented in [docs/NODE_VERSION.md](docs/NODE_VERSION.md).
+This project uses [nvm](https://github.com/nvm-sh/nvm) for Node.js version management. See docs/NODE_VERSION.md for setup and usage.
 
 ## Debugging with Docker
 

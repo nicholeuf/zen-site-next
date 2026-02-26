@@ -1,7 +1,7 @@
 #!/bin/sh
-# Build Docker image using Node version from .node-version and docker-compose
+ # Build Docker image using Node version from .nvmrc and docker-compose
 
-NODE_VERSION=$(cat .node-version | tr -d '[:space:]')
+NODE_VERSION=$(cat .nvmrc | tr -d '[:space:]')
 echo "Building with Node version: $NODE_VERSION using docker-compose"
 docker compose build --build-arg NODE_VERSION=$NODE_VERSION
 

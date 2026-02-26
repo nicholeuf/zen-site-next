@@ -1,20 +1,22 @@
-# Node Version Management with pnpm
 
-This project uses pnpm as both the package manager and Node.js version manager, leveraging Corepack for consistency and reliability.
+# Node Version Management with nvm
 
-## Using pnpm as Node Manager
+This project uses [nvm](https://github.com/nvm-sh/nvm) for Node.js version management. nvm allows you to easily switch between Node versions and pin a project to a major version using a `.nvmrc` file.
 
-- **Corepack** is included with Node.js 16.13+ and manages pnpm for you.
-- **pnpm env add <version>** installs the specified Node.js version for your project.
-- **pnpm env use <version>** activates the specified Node.js version for your shell or project.
-- **pnpm env use --global <version>** sets the Node.js version globally for your user.
+## Using nvm
+
+- **.nvmrc**: The file `.nvmrc` in the project root specifies the Node.js major version to use (e.g., `24`).
+- **nvm install**: Installs the version specified in `.nvmrc`.
+- **nvm use**: Switches your shell to use the version specified in `.nvmrc`.
 
 ### Setting up your shell
-To ensure pnpm-managed Node is used, add this to your shell profile:
+To ensure nvm is loaded, add this to your shell profile (if not already present):
 
 ```sh
-export PATH="$HOME/Library/pnpm/node:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 ```
+
 
 ## Updating Node Version
 
@@ -25,56 +27,26 @@ To update the Node.js version for your project:
    ./scripts/update_node.sh
    ```
    - You will be prompted for the new Node major version.
-   - The script updates `.node-version`, `package.json` (engines.node), installs the new Node version with pnpm, and updates dependencies.
+   - The script updates `.nvmrc`, `package.json` (engines.node), installs the new Node version with nvm, and updates dependencies.
 
-2. Open a new terminal to ensure your PATH is updated and the new Node version is active.
+2. Open a new terminal or run `nvm use` to ensure your shell is using the new Node version.
 
-## Important: Global Node Activation
 
-To activate the Node.js version globally for your user (so node -v matches everywhere), use:
+## Important: Node Activation
+
+To activate the Node.js version specified in `.nvmrc` for your shell, use:
 
 ```sh
-pnpm env use --global <version>
+nvm use
 ```
 
-This ensures your shell and all processes use the specified Node.js version. If you only use pnpm env use <version>, it may only affect the current shell or project.
+This ensures your shell and all processes use the specified Node.js version. You can also add `nvm use` to your shell profile.
+
 
 ## Troubleshooting
-- If `node -v` does not match the expected version after running the script, check your PATH and ensure no other Node managers (nvm, asdf, brew) are overriding it.
-- Always run `corepack enable` before using pnpm in scripts.
+- If `node -v` does not match the expected version after running the script, check your PATH and ensure no other Node managers (asdf, brew, Volta, etc.) are overriding it.
+
 
 ---
 
-## pnpm env use Limitation
-
-As of now, pnpm env use <version> can only be used with the --global option:
-
-> ERR_PNPM_NOT_IMPLEMENTED_YET  "pnpm env use <version>" can only be used with the "--global" option currently
-
-This means you must use:
-
-```sh
-pnpm env use --global <version>
-```
-
-Project-only activation is not yet supported. Always use --global to ensure Node.js is switched for your user.
-
----
-
-## pnpm env add Limitation
-
-Similarly, pnpm env add <version> can only be used with the --global option:
-
-> ERR_PNPM_NOT_IMPLEMENTED_YET  "pnpm env add <version>" can only be used with the "--global" option currently
-
-You must use:
-
-```sh
-pnpm env add --global <version>
-```
-
-Project-only activation is not yet supported. Always use --global to install Node.js for your user.
-
----
-
-For more details, see [pnpm Node.js management docs](https://pnpm.io/nodejs-management) and [Corepack docs](https://nodejs.org/docs/latest-v16.x/api/corepack.html).
+For more details, see [nvm docs](https://github.com/nvm-sh/nvm#usage).

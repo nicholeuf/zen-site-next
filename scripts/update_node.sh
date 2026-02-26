@@ -4,21 +4,21 @@ set -euo pipefail
 echo "Enabling Corepack to ensure pnpm is available..."
 corepack enable
 
-# Read the Node version from .node-version and align @types/node with it.
-NODE_VERSION_RAW=$(tr -d '[:space:]' < .node-version)
+# Read the Node version from .nvmrc and align @types/node with it.
+NODE_VERSION_RAW=$(tr -d '[:space:]' < .nvmrc)
 NODE_MAJOR=$(echo "$NODE_VERSION_RAW" | cut -d. -f1)
 
 if [[ ! "$NODE_MAJOR" =~ ^[0-9]+$ ]]; then
-  echo "Error: .node-version does not contain a numeric Node major version (got: '${NODE_VERSION_RAW}')."
+  echo "Error: .nvmrc does not contain a numeric Node major version (got: '${NODE_VERSION_RAW}')."
   exit 1
 fi
 
 if [[ "$NODE_VERSION_RAW" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
   NODE_TYPES_VERSION="${NODE_VERSION_RAW}"
-  echo "Using Node version from .node-version: ${NODE_VERSION_RAW}"
+  echo "Using Node version from .nvmrc: ${NODE_VERSION_RAW}"
 else
   NODE_TYPES_VERSION="${NODE_MAJOR}.x"
-  echo "Using Node major version from .node-version: ${NODE_MAJOR}"
+  echo "Using Node major version from .nvmrc: ${NODE_MAJOR}"
 fi
 
 echo -n "Enter new Node version as a <major> (eg 24, 25): "
@@ -35,14 +35,15 @@ if [[ "$NEW_NODE_MAJOR" == "$NODE_MAJOR" ]]; then
 fi
 NEW_NODE_TYPES_VERSION="${NEW_NODE_MAJOR}.x"
 
-echo "Updating Node version to ${NEW_NODE_MAJOR} in .node-version ..."
-echo "$NEW_NODE_MAJOR" > .node-version
+echo "Updating Node version to ${NEW_NODE_MAJOR} in .nvmrc ..."
+echo "$NEW_NODE_MAJOR" > .nvmrc
 
 echo "Updating engines.node in package.json to ${NEW_NODE_TYPES_VERSION}..."
 jq --arg new_version "$NEW_NODE_TYPES_VERSION" '.engines.node = $new_version' package.json > package.tmp.json && mv package.tmp.json package.json
 
-echo "Installing Node version ${NEW_NODE_MAJOR} with Volta ..."
-volta install node@"$NEW_NODE_MAJOR"
+echo "Installing Node version ${NEW_NODE_MAJOR} with nvm ..."
+nvm install
+nvm use
 
 echo "Ensuring pnpm is up to date with the new Node version..."
 corepack use pnpm@latest
