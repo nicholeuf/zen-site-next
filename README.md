@@ -29,10 +29,12 @@ Qodo is used for code review on this project. See [docs/QODO.md](docs/QODO.md) f
 ### Prerequisites
 
 
+
 This project requires:
 - **Node.js**: See `.node-version` for the required version
 - **pnpm**: Version managed via Corepack (see `packageManager` field in `package.json`)
 
+Node.js version management and update instructions are documented in [docs/NODE_VERSION.md](docs/NODE_VERSION.md).
 The Node.js version is specified in `.node-version` and referenced by all CI workflows. If you use [pnpm](https://pnpm.io/) and Corepack, version management is automatic.
 
 ## Debugging with Docker
