@@ -1,3 +1,16 @@
+### 2026-02-26 [*](https://github.com/nicholeuf/zen-site-next/pull/230)
+
+#### Added
+
+- Added a script to automate Node.js major version upgrades (updates .nvmrc and package.json engines, then refreshes deps/lockfile)
+
+#### Changed
+
+- Updated Docker debug configuration to use a fixed Node inspector port (9229) and documented the workflow
+- Updated README to point to the new Node version and Docker debugging docs
+- Bumped pnpm and refreshed dependency patch versions (storybook, @types/node) and pnpm lockfile
+- Removed deprecated docker-compose `version:` field
+
 ### 2026-02-25 [*](https://github.com/nicholeuf/zen-site-next/pull/227)
 
 #### Added

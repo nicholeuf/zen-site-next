@@ -1,4 +1,6 @@
-FROM node:24-alpine
+
+ARG NODE_VERSION=24
+FROM node:${NODE_VERSION}-alpine
 
 ENV NODE_ENV=development
 
@@ -6,9 +8,8 @@ WORKDIR /app
 
 EXPOSE 3000
 
-# debugging ports
+# Debugger port for Node.js inspector
 EXPOSE 9229
-EXPOSE 9230
 
 COPY package.json ./
 COPY pnpm-lock.yaml ./
@@ -18,4 +19,6 @@ RUN pnpm install
 
 COPY . .
 
+# Allow remote debugging from outside the container (see: https://nextjs.org/docs/pages/guides/debugging)
+# https://github.com/vercel/next.js/discussions/78434
 CMD ["pnpm", "run", "dev:debug"]

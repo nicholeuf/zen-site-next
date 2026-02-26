@@ -32,11 +32,12 @@ This project requires:
 - **Node.js**: See `.nvmrc` for the required version
 - **pnpm**: Version managed via Corepack (see `packageManager` field in `package.json`)
 
-The Node.js version is specified in `.nvmrc` and referenced by all CI workflows. If you use [nvm](https://github.com/nvm-sh/nvm), simply run:
+Node.js version management and update instructions are documented in [docs/NODE_VERSION.md](docs/NODE_VERSION.md).
+This project uses [nvm](https://github.com/nvm-sh/nvm) for Node.js version management. See docs/NODE_VERSION.md for setup and usage.
 
-```bash
-nvm use
-```
+## Debugging with Docker
+
+This project supports debugging Next.js in Docker using the Node.js inspector. See [docs/DOCKER_DEBUGGING.md](docs/DOCKER_DEBUGGING.md) for setup and usage instructions.
 
 The pnpm version is pinned via the `packageManager` field in `package.json` and will be automatically used when Corepack is enabled. To enable Corepack:
 
