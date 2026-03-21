@@ -29,24 +29,24 @@
     "@mui/icons-material": "^7.3.9",
     "@mui/material": "^7.3.9",
     "@mui/material-nextjs": "^7.3.9",
-    "@sentry/nextjs": "^10.43.0",
+    "@sentry/nextjs": "^10.45.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "bowser": "^2.14.1",
-    "next": "^16.1.6",
+    "next": "16.2.1",
     "next-cloudinary": "^6.17.5",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.6",
-    "@chromatic-com/storybook": "^5.0.1",
+    "@biomejs/biome": "2.4.8",
+    "@chromatic-com/storybook": "^5.0.2",
     "@emotion/jest": "^11.14.2",
-    "@storybook/addon-a11y": "^10.2.19",
-    "@storybook/addon-docs": "^10.2.19",
-    "@storybook/addon-themes": "^10.2.19",
-    "@storybook/addon-vitest": "^10.2.19",
-    "@storybook/nextjs-vite": "^10.2.19",
+    "@storybook/addon-a11y": "^10.3.1",
+    "@storybook/addon-docs": "^10.3.1",
+    "@storybook/addon-themes": "^10.3.1",
+    "@storybook/addon-vitest": "^10.3.1",
+    "@storybook/nextjs-vite": "^10.3.1",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
@@ -58,18 +58,24 @@
     "@types/react-dom": "19.2.3",
     "@vitest/browser-playwright": "^4.1.0",
     "@vitest/coverage-v8": "^4.1.0",
-    "chromatic": "^15.2.0",
+    "chromatic": "^15.3.0",
     "cross-fetch": "^4.1.0",
     "css-mediaquery": "^0.1.2",
     "jest-environment-jsdom": "^30.3.0",
     "jest-junit": "^16.0.0",
     "next-router-mock": "^1.0.5",
     "playwright": "^1.58.2",
-    "storybook": "^10.2.19",
-    "storybook-addon-pseudo-states": "^10.2.19",
+    "storybook": "^10.3.1",
+    "storybook-addon-pseudo-states": "^10.3.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.2.14",
+      "@types/react-dom": "19.2.3"
+    }
   }
 }
