@@ -1,3 +1,10 @@
+### 2026-03-21 [*](https://github.com/nicholeuf/zen-site-next/pull/233)
+
+#### Changed
+
+- Updated and refreshed project dependencies, including pinning Next.js/React versions and adding pnpm overrides for React type definitions
+- Fixed minor spacing in the NotFound page copy
+
 ### 2026-02-26 [*](https://github.com/nicholeuf/zen-site-next/pull/230)
 
 #### Added

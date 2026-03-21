@@ -13,8 +13,8 @@ const NotFound = () => {
         Sorry
       </Typography>
       <Typography data-testid="not-found-copy">
-        The page <strong>{pathname}</strong> could not be found. Would you like
-        to go to the&nbsp;
+        The page <strong>{pathname}</strong>&nbsp;could not be found. Would you
+        like to go to the&nbsp;
         <NextLink href="/">Home Page</NextLink>?
       </Typography>
     </ImageContainer>
