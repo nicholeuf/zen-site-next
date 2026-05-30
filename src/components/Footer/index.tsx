@@ -1,12 +1,12 @@
 "use client";
 
 import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import constants from "@/app/styles/constants";
 import CreditsModal from "@/components/CreditsModal";
 import ExternalLink from "@/components/ExternalLink";
 import Navigation from "./Navigation";
-import Container from "@mui/material/Container";
 
 const smallGridTemplateAreas = `
 "nav"
