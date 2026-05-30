@@ -6,6 +6,7 @@ import constants from "@/app/styles/constants";
 import CreditsModal from "@/components/CreditsModal";
 import ExternalLink from "@/components/ExternalLink";
 import Navigation from "./Navigation";
+import Container from "@mui/material/Container";
 
 const smallGridTemplateAreas = `
 "nav"
@@ -41,8 +42,9 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
         alignItems: "center",
       }}
     >
-      <Box
+      <Container
         maxWidth="sm"
+        disableGutters
         sx={{
           display: "grid",
           gap: 0.5,
@@ -156,7 +158,7 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
             <CreditsModal />
           </Typography>
         </Box>
-      </Box>
+      </Container>
     </Box>
   );
 };
