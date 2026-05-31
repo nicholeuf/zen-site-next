@@ -3,10 +3,10 @@ import type { ButtonProps } from "@mui/material/Button";
 import type { IconButtonProps } from "@mui/material/IconButton";
 import type { LinkProps } from "@mui/material/Link";
 import {
+  alpha,
   createTheme,
   responsiveFontSizes,
   Theme,
-  alpha,
 } from "@mui/material/styles";
 import { Inter, Sacramento } from "next/font/google";
 

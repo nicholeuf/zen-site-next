@@ -9,7 +9,7 @@ const constants = {
     guava: "#fa2742",
     carob: "#373833",
     cream: "#f8faf3",
-    sundew: "#f0e6d2"
+    sundew: "#f0e6d2",
   },
   fontWeights: {
     light: 300,
