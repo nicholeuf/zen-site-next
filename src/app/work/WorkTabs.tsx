@@ -36,6 +36,7 @@ const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
           variant="scrollable"
           scrollButtons
           allowScrollButtonsMobile
+          // Tabs where selection follows focus
           // https://mui.com/base-ui/react-tabs/#keyboard-navigation
           selectionFollowsFocus
         >

@@ -2,7 +2,12 @@
 import type { ButtonProps } from "@mui/material/Button";
 import type { IconButtonProps } from "@mui/material/IconButton";
 import type { LinkProps } from "@mui/material/Link";
-import { createTheme, responsiveFontSizes, Theme } from "@mui/material/styles";
+import {
+  alpha,
+  createTheme,
+  responsiveFontSizes,
+  Theme,
+} from "@mui/material/styles";
 import { Inter, Sacramento } from "next/font/google";
 
 // Helper for typing styleOverride callbacks: MUI passes an object containing
@@ -17,6 +22,8 @@ import mediaQuery from "css-mediaquery";
 import DeviceType from "types/DeviceType";
 import getWidthByDeviceType from "../ssrMediaQueries/getWidthByDeviceType";
 import constants from "./constants";
+
+const { colors, fontWeights } = constants;
 
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts#using-multiple-fonts
 export const inter = Inter({
@@ -75,22 +82,37 @@ const theme = (deviceType: DeviceType) => {
 
   const mainTheme = createTheme({
     spacing: 8,
-    palette: {
-      mode: "light",
-      primary: {
-        main: constants.colors.guava,
+    colorSchemes: {
+      light: {
+        palette: {
+          mode: "light",
+          primary: { main: colors.guava },
+          secondary: { main: colors.carob },
+          background: {
+            default: colors.cream,
+            paper: "#ffffff",
+          },
+          text: {
+            primary: colors.carob,
+            secondary: alpha(colors.carob, 0.7),
+          },
+          // divider, action, etc.
+        },
       },
-      secondary: {
-        main: constants.colors.carob,
-        contrastText: constants.colors.cream,
-      },
-      // ensure text uses the project's carob color by default
-      text: {
-        primary: constants.colors.carob,
-      },
-      background: {
-        default: constants.colors.cream,
-        paper: "#fff",
+      dark: {
+        palette: {
+          mode: "dark",
+          primary: { main: colors.guava },
+          secondary: { main: colors.cream },
+          background: {
+            default: colors.carob, // ← Carob becomes dark bg
+            paper: alpha(colors.carob, 0.95), // slightly lighter carob for cards
+          },
+          text: {
+            primary: colors.sundew, // warm light beige for good contrast
+            secondary: alpha(colors.sundew, 0.75),
+          },
+        },
       },
     },
     typography: {
@@ -132,7 +154,7 @@ const theme = (deviceType: DeviceType) => {
               // their color matches body text. Hover uses guava as the accent.
               color: "inherit",
               textDecoration: "underline",
-              fontWeight: constants.fontWeights.semiBold,
+              fontWeight: fontWeights.semiBold,
               "&:hover": {
                 color: themeParam.palette.primary.main,
               },
@@ -162,7 +184,7 @@ const theme = (deviceType: DeviceType) => {
             const parts = buildInteractiveParts(props.theme);
             return {
               transition: parts.transitionRule.transition,
-              fontWeight: constants.fontWeights.semiBold,
+              fontWeight: fontWeights.semiBold,
               "&:hover": parts.hoverRule,
               "&:focus-visible, &.Mui-focusVisible": parts.focusRule,
             };

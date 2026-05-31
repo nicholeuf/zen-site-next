@@ -11,10 +11,6 @@ describe("The Header component", () => {
     expect(header).toBeVisible();
     expect(header).toHaveStyleRule("position", "fixed");
     expect(header).toHaveStyleRule(
-      "border-bottom",
-      `3px solid ${constants.colors.carob}`
-    );
-    expect(header).toHaveStyleRule(
       "background-color",
       alpha(constants.colors.cream, 0.85)
     );

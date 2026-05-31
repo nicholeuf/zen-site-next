@@ -1,3 +1,10 @@
+### 2026-05-31 [*](https://github.com/nicholeuf/zen-site-next/pull/236)
+
+#### Changed
+
+- Implemented theme-aware light/dark color schemes using MUI `colorSchemes`
+- Replaced hardcoded color usage with theme palette references and set the default mode to light
+
 ### 2026-05-31 [*](https://github.com/nicholeuf/zen-site-next/pull/235)
 
 #### Changed
