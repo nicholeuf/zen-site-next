@@ -98,9 +98,8 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
           >
             Made with{" "}
             <Typography
-              display={"inline"}
               component="span"
-              sx={{ color: "primary.main" }}
+              sx={{ color: "primary.main", display: "inline" }}
             >
               &#9829;
             </Typography>{" "}
