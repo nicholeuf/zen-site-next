@@ -1,6 +1,7 @@
 "use client";
 
 import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import constants from "@/app/styles/constants";
 import CreditsModal from "@/components/CreditsModal";
@@ -41,8 +42,9 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
         alignItems: "center",
       }}
     >
-      <Box
+      <Container
         maxWidth="sm"
+        disableGutters
         sx={{
           display: "grid",
           gap: 0.5,
@@ -96,9 +98,8 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
           >
             Made with{" "}
             <Typography
-              display={"inline"}
               component="span"
-              sx={{ color: "primary.main" }}
+              sx={{ color: "primary.main", display: "inline" }}
             >
               &#9829;
             </Typography>{" "}
@@ -156,7 +157,7 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
             <CreditsModal />
           </Typography>
         </Box>
-      </Box>
+      </Container>
     </Box>
   );
 };

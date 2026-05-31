@@ -77,8 +77,8 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
               sm: "1.5rem",
             },
             color: "grey.800",
+            maxWidth: "md",
           }}
-          maxWidth="md"
         >
           Based in Orlando, Florida, my passion lies in crafting intuitive,
           well-built experiences for the customer. I have assumed roles such as

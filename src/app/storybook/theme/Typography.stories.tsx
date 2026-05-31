@@ -55,13 +55,8 @@ const meta: Meta<typeof Typography> = {
         "text.secondary",
       ],
     },
-    display: {
-      control: { type: "select" },
-      options: ["initial", "block", "inline"],
-    },
     gutterBottom: { control: "boolean" },
     noWrap: { control: "boolean" },
-    paragraph: { control: "boolean" },
     sx: { control: "object" },
   },
 };
@@ -83,10 +78,8 @@ export const Playground: Story = {
     variant: "body1",
     align: "inherit",
     color: "initial",
-    display: "initial",
     gutterBottom: false,
     noWrap: false,
-    paragraph: false,
     sx: {},
   },
 };

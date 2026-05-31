@@ -225,13 +225,13 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
               alt=""
             />
             <Typography
-              color="background.default"
               variant="h5"
               component="p"
               sx={{
                 mr: 3,
                 ml: 1,
                 my: 3,
+                color: "background.default",
               }}
             >
               thecodingyogi.me
