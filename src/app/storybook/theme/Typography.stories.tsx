@@ -78,10 +78,8 @@ export const Playground: Story = {
     variant: "body1",
     align: "inherit",
     color: "initial",
-    display: "initial",
     gutterBottom: false,
     noWrap: false,
-    paragraph: false,
     sx: {},
   },
 };
