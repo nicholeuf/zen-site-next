@@ -27,8 +27,6 @@ import constants from "@/app/styles/constants";
 import VisuallyHidden from "../VisuallyHidden";
 import { mobileNavigationItems } from "./constants";
 import MobileNavigationItem from "./MobileNavigationItem";
-import theme from "../../app/styles/theme";
-import { Theme } from "@mui/material";
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & {
@@ -229,12 +227,12 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ activeColor }) => {
             <Typography
               variant="h5"
               component="p"
-              sx={(theme) => ({
+              sx={{
                 mr: 3,
                 ml: 1,
                 my: 3,
-                color: theme.palette.background.default,
-              })}
+                color: "background.default",
+              }}
             >
               thecodingyogi.me
             </Typography>
