@@ -31,7 +31,7 @@ const GlobalStyles: React.FC<GlobalStylesProps> = ({
     : baseTheme;
 
   return (
-    <ThemeProvider theme={appliedTheme}>
+    <ThemeProvider theme={appliedTheme} defaultMode="light">
       {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
       <CssBaseline />
       {children}
