@@ -39,13 +39,6 @@ const WorkTabs: React.FC<WorkTabsProps> = ({ items }) => {
           // Tabs where selection follows focus
           // https://mui.com/base-ui/react-tabs/#keyboard-navigation
           selectionFollowsFocus
-          sx={{
-            // Make buttons always visible, by setting opacity
-            // https://mui.com/material-ui/react-tabs/#forced-scroll-buttons
-            "& .MuiTabs-scrollButtons.Mui-disabled": {
-              opacity: 0.3,
-            },
-          }}
         >
           {items.map((item, index) => {
             return (
