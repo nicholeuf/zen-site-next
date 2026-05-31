@@ -1,6 +1,5 @@
+"use client";
 import AppBar from "@mui/material/AppBar";
-import { alpha } from "@mui/material/styles";
-import constants from "@/app/styles/constants";
 
 interface HeaderAppBarProps {
   color: string;
@@ -20,8 +19,9 @@ const HeaderAppBar = ({
       data-testid="header"
       position="fixed"
       color="transparent"
-      sx={{
-        backgroundColor: alpha(constants.colors.cream, 0.85),
+      sx={(theme) => ({
+        // 85% opacity background, robust to rgb/variable palette values
+        backgroundColor: theme.alpha(theme.palette.background.default, 0.85),
         backdropFilter: "blur(8px)",
         minHeight: height,
         height,
@@ -31,8 +31,12 @@ const HeaderAppBar = ({
         justifyContent: "space-between",
         alignItems: "center",
         boxShadow: "none",
-        borderBottom: !!hasBottomBorder ? `3px solid ${color}` : "none",
-      }}
+        ...(hasBottomBorder && {
+          borderBottomColor: color,
+          borderBottomWidth: "3px",
+          borderBottomStyle: "solid",
+        }),
+      })}
     >
       {children}
     </AppBar>

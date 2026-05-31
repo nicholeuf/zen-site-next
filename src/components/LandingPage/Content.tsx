@@ -76,7 +76,6 @@ const Content: React.FC<ContentProps> = ({ profileImageProps }) => {
               xs: "1.25rem",
               sm: "1.5rem",
             },
-            color: "grey.800",
             maxWidth: "md",
           }}
         >
