@@ -1,3 +1,11 @@
+### 2026-05-31 [*](https://github.com/nicholeuf/zen-site-next/pull/235)
+
+#### Changed
+
+- Upgraded MUI, Next.js/React, and related tooling dependencies
+- Refactored component layout/styling to align with updated MUI patterns and consolidate styles in `sx`
+- Updated Biome configuration/schema and applied formatting migrations
+
 ### 2026-03-21 [*](https://github.com/nicholeuf/zen-site-next/pull/233)
 
 #### Changed
