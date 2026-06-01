@@ -82,6 +82,9 @@ const theme = (deviceType: DeviceType) => {
 
   const mainTheme = createTheme({
     spacing: 8,
+    cssVariables: {
+      colorSchemeSelector: "class",
+    },
     colorSchemes: {
       light: {
         palette: {
