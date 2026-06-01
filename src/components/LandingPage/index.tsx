@@ -1,3 +1,4 @@
+"use client";
 import { CldImageProps } from "next-cloudinary";
 import BackgroundImage from "@/components/BackgroundImage";
 import Content from "./Content";
@@ -17,6 +18,11 @@ const LandingPage: React.FC<LandingPageProps> = ({
       wrapperTestId="landing"
       imageTestId="landing-background-image"
       imageProps={backgroundImageProps}
+      darkImageProps={{
+        brightness: "35",
+        tint: "equalize:65:rgb:f0e6d2", // Warm cream tint – adjust as needed
+        contrast: "20",
+      }}
       centerContent
     >
       <Content profileImageProps={profileImageProps} />
