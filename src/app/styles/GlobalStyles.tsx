@@ -31,6 +31,8 @@ const GlobalStyles: React.FC<GlobalStylesProps> = ({
     : baseTheme;
 
   return (
+    // https://mui.com/material-ui/customization/css-theme-variables/configuration/#force-theme-recalculation-between-modes
+    // @ts-ignore -- forceThemeRerender is not yet in the @mui/material typings as of v5.13, but it is needed to ensure theme updates correctly when toggling color schemes
     <ThemeProvider theme={appliedTheme} defaultMode="light" forceThemeRerender>
       {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
       <CssBaseline />
