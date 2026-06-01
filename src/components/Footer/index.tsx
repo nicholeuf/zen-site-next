@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import constants from "@/app/styles/constants";
 import CreditsModal from "@/components/CreditsModal";
 import ExternalLink from "@/components/ExternalLink";
+import ThemeSpeedDial from "@/components/ThemeSpeedDial";
 import Navigation from "./Navigation";
 
 const smallGridTemplateAreas = `
@@ -157,6 +158,7 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
             <CreditsModal />
           </Typography>
         </Box>
+        <ThemeSpeedDial />
       </Container>
     </Box>
   );
