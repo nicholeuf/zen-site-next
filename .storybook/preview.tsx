@@ -2,7 +2,7 @@ import type { Preview } from "@storybook/nextjs-vite";
 import { sb } from "storybook/test";
 
 import "../src/app/styles/mobileFix.css";
-import MuiThemeProvider from "../src/app/styles/providers/MUIThemeProvider.tsx";
+import MUIThemeProvider from "../src/app/styles/providers/MUIThemeProvider.tsx";
 import MuiCacheDecorator from "../utils/MuiCacheDecorator.tsx";
 import NextRouterDecorator from "../utils/NextRouterDecorator.tsx";
 import StorybookTheme from "../utils/StorybookTheme.tsx";
@@ -49,6 +49,8 @@ const preview: Preview = {
       // 'off' - skip a11y checks entirely
       test: "todo",
     },
+
+    backgrounds: { disable: true },
   },
 
   initialGlobals: {
@@ -61,11 +63,11 @@ const preview: Preview = {
       const { muiMode } = context.globals;
 
       return (
-        <MuiThemeProvider>
+        <MUIThemeProvider>
           <StorybookTheme muiMode={muiMode}>
             <Story />
           </StorybookTheme>
-        </MuiThemeProvider>
+        </MUIThemeProvider>
       );
     },
     // ensure Next.js router mocks are applied after theme
