@@ -66,6 +66,7 @@
     "next-router-mock": "^1.0.5",
     "playwright": "^1.60.0",
     "storybook": "^10.4.1",
+    "storybook-addon-mui-mode": "^0.0.14",
     "storybook-addon-pseudo-states": "^10.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",

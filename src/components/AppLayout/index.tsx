@@ -2,6 +2,7 @@ import DeviceType from "types/DeviceType";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MainContainer from "@/components/MainContainer";
+import ConnectedThemeSpeedDial from "@/components/ThemeSpeedDial/ConnectedThemeSpeedDial";
 import AppThemeRegistry from "../../app/styles/providers/AppThemeRegistry";
 
 interface AppLayoutProps {
@@ -21,6 +22,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({
       <Header />
       <MainContainer>{children}</MainContainer>
       <Footer />
+      <ConnectedThemeSpeedDial />
     </AppThemeRegistry>
   );
 };

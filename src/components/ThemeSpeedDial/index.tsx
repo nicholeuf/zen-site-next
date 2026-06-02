@@ -7,8 +7,14 @@ import Box from "@mui/material/Box";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
-import { useColorScheme } from "@mui/material/styles";
+// @ts-ignore - MUI's Mode is exported but is not in the type definitions for some reason
+import type { Mode } from "@mui/material/useColorScheme";
 import { useState } from "react";
+
+interface ThemeSpeedDialProps {
+  mode: Mode;
+  setMode: (mode: Mode) => void;
+}
 
 const actions = [
   { icon: <LightModeIcon />, name: "Light", mode: "light" as const },
@@ -16,8 +22,7 @@ const actions = [
   { icon: <SettingsBrightnessIcon />, name: "System", mode: "system" as const },
 ];
 
-const ThemeSpeedDial: React.FC = () => {
-  const { mode, setMode } = useColorScheme();
+const ThemeSpeedDial: React.FC<ThemeSpeedDialProps> = ({ mode, setMode }) => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);

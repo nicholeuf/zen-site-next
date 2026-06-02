@@ -1,12 +1,11 @@
 import type { Preview } from "@storybook/nextjs-vite";
 import { sb } from "storybook/test";
-import constants from "../src/app/styles/constants.tsx";
 
 import "../src/app/styles/mobileFix.css";
-import MuiThemeProvider from "../src/app/styles/providers/MuiThemeProvider";
-
+import MuiThemeProvider from "../src/app/styles/providers/MUIThemeProvider.tsx";
 import MuiCacheDecorator from "../utils/MuiCacheDecorator.tsx";
 import NextRouterDecorator from "../utils/NextRouterDecorator.tsx";
+import StorybookTheme from "../utils/StorybookTheme.tsx";
 
 // Ensure the mock is registered before any stories load, so hooks like
 // `usePathname` are consistently mocked across local and CI/Chromatic runs.
@@ -17,6 +16,22 @@ await sb.mock(import("../src/app/lib/getPlaceholderImage.ts"));
 const preview: Preview = {
   //👇 Enables auto-generated documentation for all stories
   tags: ["autodocs"],
+  globalTypes: {
+    muiMode: {
+      name: "MUI Mode",
+      description: "Light / Dark mode",
+
+      toolbar: {
+        icon: "mirror",
+        items: [
+          { value: "light", title: "Light" },
+          { value: "dark", title: "Dark" },
+          { value: "system", title: "System" },
+        ],
+        dynamicTitle: true,
+      },
+    },
+  },
   parameters: {
     nextjs: {
       appDirectory: true,
@@ -28,33 +43,31 @@ const preview: Preview = {
       },
     },
 
-    backgrounds: {
-      options: {
-        cream: { name: "cream", value: constants.colors.cream },
-        carob: { name: "carob", value: constants.colors.carob },
-      },
-    },
-
     a11y: {
       // 'todo' - show a11y violations in the test UI only
       // 'error' - fail CI on a11y violations
       // 'off' - skip a11y checks entirely
       test: "todo",
     },
+  },
 
-    initialGlobals: {
-      // 👇 Set the initial background color
-      backgrounds: { value: "cream" },
-    },
+  initialGlobals: {
+    muiMode: "light",
   },
 
   decorators: [
     MuiCacheDecorator,
-    (Story) => (
-      <MuiThemeProvider>
-        <Story />
-      </MuiThemeProvider>
-    ),
+    (Story, context) => {
+      const { muiMode } = context.globals;
+
+      return (
+        <MuiThemeProvider>
+          <StorybookTheme muiMode={muiMode}>
+            <Story />
+          </StorybookTheme>
+        </MuiThemeProvider>
+      );
+    },
     // ensure Next.js router mocks are applied after theme
     // TODO: https://github.com/nicholeuf/zen-site-next/issues/149
     NextRouterDecorator,
