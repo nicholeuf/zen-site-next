@@ -1,7 +1,7 @@
 import { RenderOptions, render } from "@testing-library/react";
 import mediaQuery from "css-mediaquery";
 import React, { ReactElement } from "react";
-import GlobalStyles from "@/app/styles/GlobalStyles";
+import MUIThemeProvider from "@/app/styles/providers/MUIThemeProvider";
 import AppLayout from "@/components/AppLayout";
 
 interface Props {
@@ -21,9 +21,9 @@ const MockLayout: React.FC<Props> = ({ children }) => {
 // TouchRipple async state updates that cause act(...) warnings.
 const MockStyles: React.FC<Props> = ({ children }) => {
   return (
-    <GlobalStyles deviceType="desktop" disableRipple>
+    <MUIThemeProvider deviceType="desktop" disableRipple>
       {children}
-    </GlobalStyles>
+    </MUIThemeProvider>
   );
 };
 

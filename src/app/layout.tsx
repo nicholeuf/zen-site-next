@@ -1,6 +1,5 @@
 /* v8 ignore file -- @preserve */
 
-import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
 import * as Sentry from "@sentry/nextjs";
 import { Analytics } from "@vercel/analytics/react";
@@ -89,11 +88,6 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children }) => {
         )}
       </head>
       <body>
-        {/* Must be placed as high as possible, before any content */}
-        <InitColorSchemeScript
-          attribute="class" // important: matches your colorSchemeSelector
-          defaultMode="light" // or 'light' if you prefer
-        />
         <AppRouterCacheProvider>
           <AppLayout deviceType={deviceType}>{children}</AppLayout>
         </AppRouterCacheProvider>

@@ -1,14 +1,12 @@
-import { ThemeProvider } from "@mui/material";
-import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 import type { Preview } from "@storybook/nextjs-vite";
 import { sb } from "storybook/test";
-import constants from "../src/app/styles/constants";
-import GlobalStyles from "../src/app/styles/GlobalStyles";
-import "../src/app/styles/mobileFix.css";
+import constants from "../src/app/styles/constants.tsx";
 
-import theme from "../src/app/styles/theme";
-import MuiCacheDecorator from "../utils/MuiCacheDecorator";
-import NextRouterDecorator from "../utils/NextRouterDecorator";
+import "../src/app/styles/mobileFix.css";
+import MuiThemeProvider from "../src/app/styles/providers/MuiThemeProvider";
+
+import MuiCacheDecorator from "../utils/MuiCacheDecorator.tsx";
+import NextRouterDecorator from "../utils/NextRouterDecorator.tsx";
 
 // Ensure the mock is registered before any stories load, so hooks like
 // `usePathname` are consistently mocked across local and CI/Chromatic runs.
@@ -52,14 +50,11 @@ const preview: Preview = {
 
   decorators: [
     MuiCacheDecorator,
-    withThemeFromJSXProvider({
-      GlobalStyles,
-      Provider: ThemeProvider,
-      themes: {
-        desktop: theme("desktop"),
-      },
-      defaultTheme: "desktop",
-    }),
+    (Story) => (
+      <MuiThemeProvider>
+        <Story />
+      </MuiThemeProvider>
+    ),
     // ensure Next.js router mocks are applied after theme
     // TODO: https://github.com/nicholeuf/zen-site-next/issues/149
     NextRouterDecorator,
