@@ -36,6 +36,8 @@ const SwissPlantImage = () => {
           top: "0",
           right: "0",
           zIndex: -1,
+          // We use opacity to fade between the light and dark images when switching modes.
+          // The non-active image will be fully transparent, while the active one will be fully opaque.
           transition: "opacity 700ms ease-in-out",
           opacity: dark ? (isDark ? 1 : 0) : isDark ? 0 : 1,
         }}
