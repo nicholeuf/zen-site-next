@@ -37,6 +37,29 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
   // The opacity is handled via CSS to allow for smooth transitions between modes.
   const currentMode = useCurrentMode();
   const isDark = currentMode === "dark";
+
+  const getCdlImage = (dark = false) => {
+    return (
+      <CldImage
+        data-testid={`${imageTestId}${dark ? "-dark" : ""}`}
+        sizes="100vw"
+        fill
+        {...imageProps}
+        {...(dark && isDark ? darkImageProps : {})}
+        style={{
+          ...imageProps.style,
+          ...(dark && isDark && darkImageProps.style),
+          objectFit: "cover",
+          zIndex: -1,
+          // We use opacity to fade between the light and dark images when switching modes.
+          // The non-active image will be fully transparent, while the active one will be fully opaque.
+          transition: "opacity 700ms ease-in-out",
+          opacity: dark ? (isDark ? 1 : 0) : isDark ? 0 : 1,
+        }}
+      />
+    );
+  };
+
   return (
     <Box
       data-testid={wrapperTestId}
@@ -47,36 +70,11 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
       }}
     >
       {/* Light version */}
-      <CldImage
-        data-testid={imageTestId}
-        sizes="100vw"
-        fill
-        {...imageProps}
-        style={{
-          ...imageProps.style,
-          objectFit: "cover",
-          zIndex: -1,
-          transition: "opacity 700ms ease-in-out",
-          opacity: isDark ? 0 : 1,
-        }}
-      />
+      {getCdlImage()}
 
       {/* Dark version */}
-      <CldImage
-        data-testid={`${imageTestId}-dark`}
-        sizes="100vw"
-        fill
-        {...imageProps}
-        {...darkImageProps}
-        style={{
-          ...imageProps.style,
-          ...darkImageProps.style,
-          objectFit: "cover",
-          zIndex: -1,
-          transition: "opacity 700ms ease-in-out",
-          opacity: isDark ? 1 : 0,
-        }}
-      />
+      {getCdlImage(true)}
+
       {children}
     </Box>
   );
