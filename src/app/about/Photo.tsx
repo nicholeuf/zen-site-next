@@ -22,6 +22,7 @@ const Photo: React.FC<ItemDataPlaceholder> = (props) => {
           crop="thumb"
           zoom="0.1"
           gravity="faces"
+          preload
           alt={`${props.title} in ${props.location}`}
           style={{
             borderRadius: "20px",

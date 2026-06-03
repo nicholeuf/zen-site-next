@@ -7,22 +7,20 @@ import { ProfileImageProps } from "./ProfileImage";
 export interface LandingPageProps {
   profileImageProps: ProfileImageProps;
   backgroundImageProps: CldImageProps;
+  backgroundDarkImageProps?: CldImageProps;
 }
 
 const LandingPage: React.FC<LandingPageProps> = ({
   profileImageProps,
   backgroundImageProps,
+  backgroundDarkImageProps,
 }) => {
   return (
     <BackgroundImage
       wrapperTestId="landing"
       imageTestId="landing-background-image"
-      imageProps={backgroundImageProps}
-      darkImageProps={{
-        brightness: "35",
-        tint: "equalize:65:rgb:f0e6d2", // Warm cream tint – adjust as needed
-        contrast: "20",
-      }}
+      lightImageProps={backgroundImageProps}
+      darkImageProps={backgroundDarkImageProps}
       centerContent
     >
       <Content profileImageProps={profileImageProps} />

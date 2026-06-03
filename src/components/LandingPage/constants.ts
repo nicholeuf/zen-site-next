@@ -1,30 +1,12 @@
 import { CldImageProps } from "next-cloudinary";
+import * as MonsteraAsset from "../../app/assets/MonsteraImage";
+import * as ProfileImageAsset from "../../app/assets/ProfileImage";
 import getPlaceholderImage from "../../app/lib/getPlaceholderImage";
 import { LandingPageProps } from ".";
 import { ProfileImageProps } from "./ProfileImage";
 
-const profileImageProps: ProfileImageProps = {
-  width: 200,
-  height: 200,
-  crop: "thumb",
-  gravity: "face",
-  zoom: "0.6",
-  src: "zensite/Nichole-Pink-BG",
-  alt: "Photo of website author",
-  style: {
-    borderRadius: "50%",
-  },
-};
-
-const backgroundImageProps: CldImageProps = {
-  opacity: 8,
-  src: "zensite/lucila-naves-fMEFsbfHWw4-unsplash",
-  quality: 5,
-  alt: "",
-  style: {
-    objectPosition: "center bottom",
-  },
-};
+const profileImageProps: ProfileImageProps = ProfileImageAsset.lightImageProps;
+const backgroundImageProps: CldImageProps = MonsteraAsset.lightImageProps;
 
 export const getLandingPageProps = async (): Promise<LandingPageProps> => {
   const getProfileBlurDataUrl = getPlaceholderImage({
@@ -51,6 +33,7 @@ export const getLandingPageProps = async (): Promise<LandingPageProps> => {
         blurDataURL: backgroundBlurDataUrl,
       }),
     },
+    backgroundDarkImageProps: MonsteraAsset.darkImageProps, // No blur for dark image to save processing time
     profileImageProps: {
       ...profileImageProps,
       ...(!!profileBlurDataURL && {

@@ -1,5 +1,3 @@
-"use client";
-
 import Box from "@mui/material/Box";
 import { CldImage, CldImageProps } from "next-cloudinary";
 
@@ -9,8 +7,8 @@ import { useCurrentMode } from "../app/hooks/useCurrentMode";
 // https://next.cloudinary.dev/cldimage/examples#fill-parent
 
 interface BackgroundImageProps {
-  imageProps: CldImageProps;
-  darkImageProps?: Partial<CldImageProps>;
+  lightImageProps: CldImageProps;
+  darkImageProps?: CldImageProps;
   wrapperTestId: string;
   imageTestId: string;
   centerContent: boolean;
@@ -18,8 +16,8 @@ interface BackgroundImageProps {
 }
 
 const BackgroundImage: React.FC<BackgroundImageProps> = ({
-  imageProps,
-  darkImageProps = {},
+  lightImageProps,
+  darkImageProps,
   wrapperTestId,
   imageTestId,
   centerContent,
@@ -38,22 +36,17 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
   const currentMode = useCurrentMode();
   const isDark = currentMode === "dark";
 
-  const getCdlImage = (dark = false) => {
+  const getCldImage = (cldImageProps: CldImageProps, dark = false) => {
     return (
       <CldImage
         data-testid={`${imageTestId}${dark ? "-dark" : ""}`}
-        sizes="100vw"
-        fill
-        {...imageProps}
-        {...(dark ? darkImageProps : {})}
+        preload
+        {...cldImageProps}
         style={{
-          ...imageProps.style,
-          ...(dark ? darkImageProps.style : {}),
-          objectFit: "cover",
-          zIndex: -1,
+          ...cldImageProps.style,
           // We use opacity to fade between the light and dark images when switching modes.
           // The non-active image will be fully transparent, while the active one will be fully opaque.
-          transition: "opacity 400ms ease-in-out", // was 700ms
+          transition: "opacity 400ms ease-in-out",
           willChange: "opacity",
           opacity: dark ? (isDark ? 1 : 0) : isDark ? 0 : 1,
         }}
@@ -72,10 +65,10 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
       }}
     >
       {/* Light version */}
-      {getCdlImage()}
+      {getCldImage(lightImageProps)}
 
       {/* Dark version */}
-      {getCdlImage(true)}
+      {darkImageProps && getCldImage(darkImageProps, true)}
 
       {children}
     </Box>

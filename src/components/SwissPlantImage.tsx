@@ -4,7 +4,8 @@
 "use client";
 import { css } from "@mui/material";
 import Box from "@mui/material/Box";
-import { CldImage } from "next-cloudinary";
+import { CldImage, CldImageProps } from "next-cloudinary";
+import * as SwissPlantAsset from "../app/assets/SwissPlantImage";
 import { useCurrentMode } from "../app/hooks/useCurrentMode";
 
 const SwissPlantImage = () => {
@@ -18,24 +19,14 @@ const SwissPlantImage = () => {
     opacity: "100",
   };
 
-  const getCdlImage = (dark = false) => {
+  const getCdlImage = (cldImageProps: CldImageProps, dark = false) => {
     return (
       <CldImage
         data-testid={`${dark ? "bg-image-dark" : "bg-image"}`}
-        src="zensite/lucila-naves-swiss-guava"
-        alt=""
-        fill={true}
-        aspectRatio="0.77"
-        sizes="50vw"
-        crop="scale"
-        opacity="60"
-        {...(dark ? darkImageProps : {})}
+        {...cldImageProps}
+        preload
         style={{
-          objectFit: "contain",
-          position: "absolute",
-          top: "0",
-          right: "0",
-          zIndex: -1,
+          ...cldImageProps.style,
           // We use opacity to fade between the light and dark images when switching modes.
           // The non-active image will be fully transparent, while the active one will be fully opaque.
           transition: "opacity 400ms ease-in-out", // was 700ms
@@ -67,10 +58,10 @@ const SwissPlantImage = () => {
       `}
     >
       {/* Light version */}
-      {getCdlImage()}
+      {getCdlImage(SwissPlantAsset.lightImageProps)}
 
       {/* Dark version */}
-      {getCdlImage(true)}
+      {getCdlImage(SwissPlantAsset.darkImageProps, true)}
     </Box>
   );
 };
