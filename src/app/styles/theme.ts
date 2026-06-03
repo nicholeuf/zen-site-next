@@ -105,7 +105,11 @@ const theme = (deviceType: DeviceType) => {
       dark: {
         palette: {
           mode: "dark",
-          primary: { main: colors.guava },
+          primary: {
+            main: colors.guava,
+            dark: alpha(colors.guava, 0.85),
+            contrastText: colors.sundew, // your warm light color
+          },
           secondary: { main: colors.cream },
           background: {
             default: colors.carob, // ← Carob becomes dark bg
@@ -197,8 +201,24 @@ const theme = (deviceType: DeviceType) => {
       },
       MuiButton: {
         styleOverrides: {
-          root: (props: OverrideProps<ButtonProps>) =>
-            buildInteractiveParts(props.theme).root,
+          root: (props: OverrideProps<ButtonProps>) => {
+            const parts = buildInteractiveParts(props.theme);
+            return parts.root;
+          },
+
+          // Target all contained buttons (primary, secondary, etc.)
+          contained: (props: OverrideProps<ButtonProps>) => {
+            // Only apply darker Guava when it's a primary contained button in dark mode
+            if (
+              props.ownerState?.color !== "primary" ||
+              props.theme.palette.mode !== "dark"
+            ) {
+              return {};
+            }
+            return props.theme.applyStyles("dark", {
+              backgroundColor: props.theme.palette.primary.dark, // darker guava for better contrast
+            });
+          },
         },
       },
       MuiIconButton: {
