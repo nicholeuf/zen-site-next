@@ -62,8 +62,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({
             // Add padding so the content is not flush with the box border
             py: 2,
             pr: 1,
-            // 90% opacity background, robust to rgb/variable palette values
-            backgroundColor: theme.alpha(theme.palette.background.default, 0.9),
+            backgroundColor: (theme.vars || theme).palette.background.paper,
             borderRadius: "20px",
           })}
         >
