@@ -1,5 +1,4 @@
 import { Box } from "@mui/material";
-import { alpha } from "@mui/material/styles";
 import { getMainHeight } from "@/app/styles/styleUtils";
 import PageContainer, { PageContainerProps } from "./PageContainer";
 import SwissPlantImage from "./SwissPlantImage";
@@ -64,7 +63,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({
             py: 2,
             pr: 1,
             // 90% opacity background, robust to rgb/variable palette values
-            backgroundColor: alpha(theme.palette.background.default, 0.9),
+            backgroundColor: theme.alpha(theme.palette.background.default, 0.9),
             borderRadius: "20px",
           })}
         >
