@@ -62,7 +62,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({
             // Add padding so the content is not flush with the box border
             py: 2,
             pr: 1,
-            backgroundColor: (theme.vars || theme).palette.background.paper,
+            backgroundColor: "background.paper",
             borderRadius: "20px",
           })}
         >
