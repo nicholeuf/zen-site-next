@@ -68,6 +68,13 @@ export const Default: Story = {
   },
 };
 
+export const DarkMode: Story = {
+  ...Default,
+  globals: {
+    muiMode: "dark",
+  },
+};
+
 export const ChatEnabled: Story = {
   ...Default,
   args: {
