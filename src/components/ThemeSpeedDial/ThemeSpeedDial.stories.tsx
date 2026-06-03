@@ -23,6 +23,29 @@ export const Playground: Story = {
   },
 };
 
+export const HoverState: Story = {
+  render: (args) => <ThemeSpeedDial {...args} />,
+  args: {
+    mode: "light",
+    setMode: setModeMock,
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    // 1. Hover/click the main SpeedDial button to open it
+    const mainButton = canvas.getByRole("button", {
+      name: /theme switcher/i,
+    });
+
+    await userEvent.hover(mainButton); // or click if hover doesn't trigger in test
+
+    // Small wait to let the actions appear
+    await waitFor(() => {
+      expect(canvas.getByLabelText(/dark mode/i)).toBeInTheDocument();
+    });
+  },
+};
+
 export const SelectDark: Story = {
   render: (args) => <ThemeSpeedDial {...args} />,
   args: {
