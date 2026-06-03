@@ -19,6 +19,8 @@ const MainContainer: React.FC<MainContainerProps> = ({ children }) => {
         minHeight: getMainHeight(),
         p: "0 !important",
         maxWidth: "100% !important",
+        backgroundColor: "background.default",
+        color: "text.primary",
       }}
     >
       {children}

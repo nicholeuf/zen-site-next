@@ -146,6 +146,7 @@ const theme = (deviceType: DeviceType) => {
               maxWidth: "100vw",
               color: themeParam.palette.text.primary,
             },
+
             // transitions for native interactive elements (use the same transition string)
             'a, button, [role="button"], [role="link"]': {
               transition: parts.transitionRule.transition,
