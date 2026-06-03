@@ -11,6 +11,38 @@ const SwissPlantImage = () => {
   const currentMode = useCurrentMode();
   const isDark = currentMode === "dark";
 
+  const darkImageProps = {
+    brightness: "45",
+    contrast: "20",
+    tint: "equalize:55:rgb:f0e6d2",
+    opacity: "100",
+  };
+
+  const getCdlImage = (dark = false) => {
+    return (
+      <CldImage
+        data-testid={`${dark ? "bg-image-dark" : "bg-image"}`}
+        src="zensite/lucila-naves-swiss-guava"
+        alt=""
+        fill={true}
+        aspectRatio="0.77"
+        sizes="50vw"
+        crop="scale"
+        opacity="60"
+        {...(dark && isDark ? darkImageProps : {})}
+        style={{
+          objectFit: "contain",
+          position: "absolute",
+          top: "0",
+          right: "0",
+          zIndex: -1,
+          transition: "opacity 700ms ease-in-out",
+          opacity: dark ? (isDark ? 1 : 0) : isDark ? 0 : 1,
+        }}
+      />
+    );
+  };
+
   return (
     <Box
       data-testid="swiss-plant-image"
@@ -32,48 +64,10 @@ const SwissPlantImage = () => {
       `}
     >
       {/* Light version */}
-      <CldImage
-        src="zensite/lucila-naves-swiss-guava"
-        opacity="60"
-        alt=""
-        fill={true}
-        aspectRatio="0.77"
-        sizes="50vw"
-        data-testid="bg-image"
-        crop="scale"
-        style={{
-          objectFit: "contain",
-          position: "absolute",
-          top: "0",
-          right: "0",
-          zIndex: -1,
-          transition: "opacity 700ms ease-in-out",
-          opacity: isDark ? 0 : 1,
-        }}
-      />
+      {getCdlImage()}
 
       {/* Dark version */}
-      <CldImage
-        src="zensite/lucila-naves-swiss-guava"
-        alt=""
-        fill={true}
-        aspectRatio="0.77"
-        sizes="50vw"
-        data-testid="bg-image-dark"
-        crop="scale"
-        brightness="45"
-        contrast="20"
-        tint="equalize:55:rgb:f0e6d2"
-        style={{
-          objectFit: "contain",
-          position: "absolute",
-          top: "0",
-          right: "0",
-          zIndex: -1,
-          transition: "opacity 700ms ease-in-out",
-          opacity: isDark ? 1 : 0,
-        }}
-      />
+      {getCdlImage(true)}
     </Box>
   );
 };
