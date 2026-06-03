@@ -2,6 +2,7 @@ import type { Preview } from "@storybook/nextjs-vite";
 import { sb } from "storybook/test";
 
 import "../src/app/styles/mobileFix.css";
+import "./preview.css";
 import MUIThemeProvider from "../src/app/styles/providers/MUIThemeProvider.tsx";
 import MuiCacheDecorator from "../utils/MuiCacheDecorator.tsx";
 import NextRouterDecorator from "../utils/NextRouterDecorator.tsx";
