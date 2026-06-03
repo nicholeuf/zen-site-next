@@ -93,7 +93,7 @@ const theme = (deviceType: DeviceType) => {
           secondary: { main: colors.carob },
           background: {
             default: colors.cream,
-            paper: "#ffffff",
+            paper: alpha(colors.cream, 0.95), // slightly lighter cream for cards
           },
           text: {
             primary: colors.carob,
