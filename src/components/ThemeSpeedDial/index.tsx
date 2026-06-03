@@ -43,7 +43,7 @@ const ThemeSpeedDial: React.FC<ThemeSpeedDialProps> = ({ mode, setMode }) => {
   return (
     <Box sx={{ position: "fixed", bottom: 24, right: 24, zIndex: 100 }}>
       <SpeedDial
-        ariaLabel="Theme options"
+        ariaLabel="Theme Switcher"
         icon={<SpeedDialIcon icon={getMainIcon()} />}
         open={open}
         onOpen={handleOpen}
@@ -61,6 +61,8 @@ const ThemeSpeedDial: React.FC<ThemeSpeedDialProps> = ({ mode, setMode }) => {
               },
               fab: {
                 size: "small",
+                // Improve accessibility
+                "aria-label": `${action.name} Mode`,
               },
             }}
             onClick={() => {
