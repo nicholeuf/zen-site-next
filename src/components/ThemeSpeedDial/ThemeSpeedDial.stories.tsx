@@ -5,7 +5,7 @@ import { expect, fn, screen, userEvent, waitFor, within } from "storybook/test";
 import ThemeSpeedDial from "./index";
 
 const meta: Meta<typeof ThemeSpeedDial> = {
-  title: "Components/ThemeSpeedDial/ThemeSpeedDial",
+  title: "Components/ThemeSpeedDial",
   component: ThemeSpeedDial,
   parameters: { layout: "fullscreen" },
 };
