@@ -45,15 +45,16 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
         sizes="100vw"
         fill
         {...imageProps}
-        {...(dark && isDark ? darkImageProps : {})}
+        {...(dark ? darkImageProps : {})}
         style={{
           ...imageProps.style,
-          ...(dark && isDark && darkImageProps.style),
+          ...(dark ? darkImageProps.style : {}),
           objectFit: "cover",
           zIndex: -1,
           // We use opacity to fade between the light and dark images when switching modes.
           // The non-active image will be fully transparent, while the active one will be fully opaque.
-          transition: "opacity 700ms ease-in-out",
+          transition: "opacity 400ms ease-in-out", // was 700ms
+          willChange: "opacity",
           opacity: dark ? (isDark ? 1 : 0) : isDark ? 0 : 1,
         }}
       />

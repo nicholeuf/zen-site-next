@@ -29,7 +29,7 @@ const SwissPlantImage = () => {
         sizes="50vw"
         crop="scale"
         opacity="60"
-        {...(dark && isDark ? darkImageProps : {})}
+        {...(dark ? darkImageProps : {})}
         style={{
           objectFit: "contain",
           position: "absolute",
@@ -38,7 +38,8 @@ const SwissPlantImage = () => {
           zIndex: -1,
           // We use opacity to fade between the light and dark images when switching modes.
           // The non-active image will be fully transparent, while the active one will be fully opaque.
-          transition: "opacity 700ms ease-in-out",
+          transition: "opacity 400ms ease-in-out", // was 700ms
+          willChange: "opacity",
           opacity: dark ? (isDark ? 1 : 0) : isDark ? 0 : 1,
         }}
       />
