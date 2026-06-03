@@ -67,6 +67,7 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({
         ...(centerContent && centerSx),
         minHeight: getMainHeight(),
         position: "relative",
+        zIndex: 1,
       }}
     >
       {/* Light version */}
