@@ -8,6 +8,7 @@ import { ItemDataPlaceholder } from "./constants";
 const Photo: React.FC<ItemDataPlaceholder> = (props) => {
   return (
     <Box
+      component="li"
       sx={{
         display: "flex",
         justifyContent: "center",
