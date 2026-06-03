@@ -7,7 +7,7 @@ const imageProps: CldImageProps = {
   gravity: "face",
   zoom: "0.6",
   src: "zensite/Nichole-Pink-BG",
-  alt: "Photo of website author",
+  alt: "Portrait of Nichole Frey smiling, wearing black sunglasses",
   style: {
     borderRadius: "50%",
   },
