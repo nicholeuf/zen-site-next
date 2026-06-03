@@ -145,7 +145,24 @@ const theme = (deviceType: DeviceType) => {
               overflowX: "hidden",
               maxWidth: "100vw",
               color: themeParam.palette.text.primary,
+              backgroundColor: themeParam.palette.background.default,
             },
+
+            // Target main containers that often render first
+            main: {
+              backgroundColor: themeParam.palette.background.default,
+            },
+
+            // Common MUI layout containers
+            ".MuiContainer-root": {
+              backgroundColor: themeParam.palette.background.default,
+            },
+
+            // Make sure paper elements also get proper background quickly
+            ".MuiPaper-root": {
+              backgroundColor: themeParam.palette.background.paper,
+            },
+
             // transitions for native interactive elements (use the same transition string)
             'a, button, [role="button"], [role="link"]': {
               transition: parts.transitionRule.transition,

@@ -47,6 +47,7 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
         maxWidth="sm"
         disableGutters
         sx={{
+          backgroundColor: "secondary.main",
           display: "grid",
           gap: 0.5,
           textAlign: "center",
