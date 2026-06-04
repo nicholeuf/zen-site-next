@@ -4,7 +4,6 @@ import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { within } from "@testing-library/dom";
 import React from "react";
 import { expect } from "storybook/test";
-import constants from "../../app/styles/constants";
 import { footerLinks } from "../Footer/constants";
 import NavigationItem from "./NavigationItem";
 import NavigationList from "./NavigationList";
@@ -41,6 +40,9 @@ export const Playground: Story = {
   args: {
     href: footerLink.href,
     ariaLabel: footerLink.ariaLabel,
+  },
+  globals: {
+    muiMode: "dark",
   },
 };
 
