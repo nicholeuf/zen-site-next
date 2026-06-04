@@ -7,6 +7,7 @@ import { useCurrentMode } from "./useCurrentMode"; // adjust path
 vi.mock("@mui/material/styles", async (importOriginal) => {
   const actual = await importOriginal();
   return {
+    // @ts-ignore
     ...actual,
     useColorScheme: vi.fn(),
   };
