@@ -1,3 +1,16 @@
+### 2026-06-03 [*](https://github.com/nicholeuf/zen-site-next/pull/238)
+
+#### Changed
+
+- Major theming overhaul: migrated to MUI `colorSchemes` with CSS variables for robust light/dark mode support
+- Added floating `ThemeSpeedDial` component with Light / Dark / System options and improved accessibility
+- Implemented smooth crossfade transitions for hero image and decorative plant illustrations in dark mode
+- Fixed color contrast violations on primary contained and outlined buttons in dark mode
+- Reduced page load and mode-switching flicker through better baseline styles and early color scheme handling
+- Enhanced Storybook theming support (including MDX/Autodocs) with custom provider and visual testing setup
+- Restructured theming architecture (`MUIThemeProvider`, `AppThemeRegistry`) for better maintainability and separation of concerns
+- Updated global styles, component overrides, and image handling for consistent dark mode behavior
+
 ### 2026-05-31 [*](https://github.com/nicholeuf/zen-site-next/pull/236)
 
 #### Changed
