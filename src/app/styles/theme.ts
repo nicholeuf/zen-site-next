@@ -219,6 +219,24 @@ const theme = (deviceType: DeviceType) => {
               backgroundColor: props.theme.palette.primary.dark, // darker guava for better contrast
             });
           },
+          outlined: (props: OverrideProps<ButtonProps>) => {
+            if (
+              props.ownerState?.color !== "primary" ||
+              props.theme.palette.mode !== "dark"
+            ) {
+              return {};
+            }
+
+            return {
+              color: props.theme.palette.text.primary, // sundew/warm light color
+              borderColor: props.theme.palette.text.primary,
+              "&:hover": {
+                backgroundColor: "rgba(240, 230, 210, 0.08)",
+                color: "#ffffff",
+                borderColor: "#ffffff",
+              },
+            };
+          },
         },
       },
       MuiIconButton: {
