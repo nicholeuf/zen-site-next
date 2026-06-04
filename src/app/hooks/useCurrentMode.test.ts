@@ -1,6 +1,6 @@
-import { renderHook, waitFor } from "@testing-library/react";
-import { describe, it, expect, vi, beforeEach } from "vitest";
 import { useColorScheme } from "@mui/material/styles";
+import { renderHook, waitFor } from "@testing-library/react";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { useCurrentMode } from "./useCurrentMode"; // adjust path
 
 // Mock the entire module
