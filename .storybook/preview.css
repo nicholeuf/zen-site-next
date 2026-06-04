@@ -1,0 +1,6 @@
+/* Make sure Storybook MDX/Autodocs containers follow the MUI theme */
+.innerZoomElementWrapper,
+.innerZoomElementWrapper > div {
+  background-color: var(--mui-palette-background-default) !important;
+  color: var(--mui-palette-text-primary) !important;
+}

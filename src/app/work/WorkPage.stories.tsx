@@ -48,6 +48,13 @@ export const Default: Story = {
   },
 };
 
+export const DarkMode: Story = {
+  ...Default,
+  globals: {
+    muiMode: "dark",
+  },
+};
+
 export const ImperfectFoodsTab: Story = {
   ...WithWorkRoute,
   play: async ({ canvasElement }) => {

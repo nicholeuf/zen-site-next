@@ -8,6 +8,7 @@ import { ItemDataPlaceholder } from "./constants";
 const Photo: React.FC<ItemDataPlaceholder> = (props) => {
   return (
     <Box
+      component="li"
       sx={{
         display: "flex",
         justifyContent: "center",
@@ -22,6 +23,7 @@ const Photo: React.FC<ItemDataPlaceholder> = (props) => {
           crop="thumb"
           zoom="0.1"
           gravity="faces"
+          preload
           alt={`${props.title} in ${props.location}`}
           style={{
             borderRadius: "20px",

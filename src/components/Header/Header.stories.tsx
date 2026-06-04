@@ -80,6 +80,14 @@ export const MobileNavigationOpen: Story = {
   },
 };
 
+export const DarkModeMobileNavigationOpen: Story = {
+  ...MobileNavigationOpen,
+  globals: {
+    ...MobileNavigationOpen.globals,
+    muiMode: "dark",
+  },
+};
+
 export const MobileNavigationClose: Story = {
   ...Playground,
   globals: {

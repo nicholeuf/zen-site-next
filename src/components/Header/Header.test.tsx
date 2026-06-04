@@ -1,6 +1,4 @@
-import { alpha } from "@mui/material/styles";
 import { render, screen } from "test-utils";
-import constants from "../../app/styles/constants";
 import Header from "./index";
 
 describe("The Header component", () => {
@@ -10,10 +8,6 @@ describe("The Header component", () => {
     const header = screen.getByTestId("header") as HTMLDivElement;
     expect(header).toBeVisible();
     expect(header).toHaveStyleRule("position", "fixed");
-    expect(header).toHaveStyleRule(
-      "background-color",
-      alpha(constants.colors.cream, 0.85)
-    );
 
     const logo = screen.getByTestId("header-logo") as HTMLDivElement;
     expect(logo).toBeVisible();

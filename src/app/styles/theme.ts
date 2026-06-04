@@ -82,6 +82,9 @@ const theme = (deviceType: DeviceType) => {
 
   const mainTheme = createTheme({
     spacing: 8,
+    cssVariables: {
+      colorSchemeSelector: "class",
+    },
     colorSchemes: {
       light: {
         palette: {
@@ -90,7 +93,7 @@ const theme = (deviceType: DeviceType) => {
           secondary: { main: colors.carob },
           background: {
             default: colors.cream,
-            paper: "#ffffff",
+            paper: alpha(colors.cream, 0.95), // slightly lighter cream for cards
           },
           text: {
             primary: colors.carob,
@@ -102,7 +105,11 @@ const theme = (deviceType: DeviceType) => {
       dark: {
         palette: {
           mode: "dark",
-          primary: { main: colors.guava },
+          primary: {
+            main: colors.guava,
+            dark: alpha(colors.guava, 0.85),
+            contrastText: colors.sundew, // your warm light color
+          },
           secondary: { main: colors.cream },
           background: {
             default: colors.carob, // ← Carob becomes dark bg
@@ -143,6 +150,7 @@ const theme = (deviceType: DeviceType) => {
               maxWidth: "100vw",
               color: themeParam.palette.text.primary,
             },
+
             // transitions for native interactive elements (use the same transition string)
             'a, button, [role="button"], [role="link"]': {
               transition: parts.transitionRule.transition,
@@ -193,8 +201,42 @@ const theme = (deviceType: DeviceType) => {
       },
       MuiButton: {
         styleOverrides: {
-          root: (props: OverrideProps<ButtonProps>) =>
-            buildInteractiveParts(props.theme).root,
+          root: (props: OverrideProps<ButtonProps>) => {
+            const parts = buildInteractiveParts(props.theme);
+            return parts.root;
+          },
+
+          // Target all contained buttons (primary, secondary, etc.)
+          contained: (props: OverrideProps<ButtonProps>) => {
+            // Only apply darker Guava when it's a primary contained button in dark mode
+            if (
+              props.ownerState?.color !== "primary" ||
+              props.theme.palette.mode !== "dark"
+            ) {
+              return {};
+            }
+            return props.theme.applyStyles("dark", {
+              backgroundColor: props.theme.palette.primary.dark, // darker guava for better contrast
+            });
+          },
+          outlined: (props: OverrideProps<ButtonProps>) => {
+            if (
+              props.ownerState?.color !== "primary" ||
+              props.theme.palette.mode !== "dark"
+            ) {
+              return {};
+            }
+
+            return {
+              color: props.theme.palette.text.primary, // sundew/warm light color
+              borderColor: props.theme.palette.text.primary,
+              "&:hover": {
+                backgroundColor: "rgba(240, 230, 210, 0.08)",
+                color: "#ffffff",
+                borderColor: "#ffffff",
+              },
+            };
+          },
         },
       },
       MuiIconButton: {

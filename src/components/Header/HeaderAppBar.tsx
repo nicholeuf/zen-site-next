@@ -19,9 +19,8 @@ const HeaderAppBar = ({
       data-testid="header"
       position="fixed"
       color="transparent"
-      sx={(theme) => ({
-        // 85% opacity background, robust to rgb/variable palette values
-        backgroundColor: theme.alpha(theme.palette.background.default, 0.85),
+      sx={{
+        backgroundColor: "background.paper",
         backdropFilter: "blur(8px)",
         minHeight: height,
         height,
@@ -36,7 +35,7 @@ const HeaderAppBar = ({
           borderBottomWidth: "3px",
           borderBottomStyle: "solid",
         }),
-      })}
+      }}
     >
       {children}
     </AppBar>

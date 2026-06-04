@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import constants from "@/app/styles/constants";
 import CreditsModal from "@/components/CreditsModal";
 import ExternalLink from "@/components/ExternalLink";
+
 import Navigation from "./Navigation";
 
 const smallGridTemplateAreas = `
@@ -46,6 +47,7 @@ const Footer: React.FC<FooterProps> = ({ height = DEFAULT_HEIGHT }) => {
         maxWidth="sm"
         disableGutters
         sx={{
+          backgroundColor: "secondary.main",
           display: "grid",
           gap: 0.5,
           textAlign: "center",

@@ -1,8 +1,9 @@
 import DeviceType from "types/DeviceType";
-import GlobalStyles from "@/app/styles/GlobalStyles";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MainContainer from "@/components/MainContainer";
+import ConnectedThemeSpeedDial from "@/components/ThemeSpeedDial/ConnectedThemeSpeedDial";
+import AppThemeRegistry from "../../app/styles/providers/AppThemeRegistry";
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -17,11 +18,12 @@ const AppLayout: React.FC<AppLayoutProps> = ({
   disableRipple = false,
 }) => {
   return (
-    <GlobalStyles deviceType={deviceType} disableRipple={disableRipple}>
+    <AppThemeRegistry deviceType={deviceType} disableRipple={disableRipple}>
       <Header />
       <MainContainer>{children}</MainContainer>
       <Footer />
-    </GlobalStyles>
+      <ConnectedThemeSpeedDial />
+    </AppThemeRegistry>
   );
 };
 

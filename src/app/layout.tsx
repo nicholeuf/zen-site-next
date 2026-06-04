@@ -71,7 +71,7 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children }) => {
   const deviceType = await getDeviceType();
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta
           name="google-site-verification"

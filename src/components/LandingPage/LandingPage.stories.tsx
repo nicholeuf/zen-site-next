@@ -66,6 +66,13 @@ export const Default: Story = {
   },
 };
 
+export const DarkMode: Story = {
+  ...Default,
+  globals: {
+    muiMode: "dark",
+  },
+};
+
 export const Mobile: Story = {
   ...Default,
   globals: {

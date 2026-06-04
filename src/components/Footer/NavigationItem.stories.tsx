@@ -4,7 +4,6 @@ import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { within } from "@testing-library/dom";
 import React from "react";
 import { expect } from "storybook/test";
-import constants from "../../app/styles/constants";
 import { footerLinks } from "../Footer/constants";
 import NavigationItem from "./NavigationItem";
 import NavigationList from "./NavigationList";
@@ -14,9 +13,6 @@ const footerLink = footerLinks[0];
 const meta: Meta<typeof NavigationItem> = {
   title: "Components/Footer/NavigationItem",
   component: NavigationItem,
-  globals: {
-    backgrounds: { value: "carob" },
-  },
   decorators: [
     (Story) => (
       <Box
@@ -38,12 +34,15 @@ type Story = StoryObj<React.ComponentProps<typeof NavigationItem>>;
 export const Playground: Story = {
   render: (args) => (
     <NavigationItem {...args}>
-      <LinkedInIcon sx={{ color: constants.colors.cream }} />
+      <LinkedInIcon sx={{ color: "secondary.main" }} />
     </NavigationItem>
   ),
   args: {
     href: footerLink.href,
     ariaLabel: footerLink.ariaLabel,
+  },
+  globals: {
+    muiMode: "dark",
   },
 };
 
