@@ -12,14 +12,7 @@ const SwissPlantImage = () => {
   const currentMode = useCurrentMode();
   const isDark = currentMode === "dark";
 
-  const darkImageProps = {
-    brightness: "45",
-    contrast: "20",
-    tint: "equalize:55:rgb:f0e6d2",
-    opacity: "100",
-  };
-
-  const getCdlImage = (cldImageProps: CldImageProps, dark = false) => {
+  const getCldImage = (cldImageProps: CldImageProps, dark = false) => {
     return (
       <CldImage
         data-testid={`${dark ? "bg-image-dark" : "bg-image"}`}
@@ -58,10 +51,10 @@ const SwissPlantImage = () => {
       `}
     >
       {/* Light version */}
-      {getCdlImage(SwissPlantAsset.lightImageProps)}
+      {getCldImage(SwissPlantAsset.lightImageProps)}
 
       {/* Dark version */}
-      {getCdlImage(SwissPlantAsset.darkImageProps, true)}
+      {getCldImage(SwissPlantAsset.darkImageProps, true)}
     </Box>
   );
 };
