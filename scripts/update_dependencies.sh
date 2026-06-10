@@ -25,7 +25,7 @@ echo "Upgrade next"
 pnpm next upgrade
 
 echo "Upgrade storybook"
-npx storybook@latest upgrade
+pnpm dlx storybook@latest upgrade
 
 echo "Updating all dependencies to latest..."
 pnpm update --latest
@@ -39,4 +39,4 @@ fi
 
 echo "All dependencies updated. Please review the changes and test your application."
 
-pnpm run test:update
+corepack up
