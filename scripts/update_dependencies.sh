@@ -39,4 +39,5 @@ fi
 
 echo "All dependencies updated. Please review the changes and test your application."
 
+npx biome migrate --write
 corepack up
