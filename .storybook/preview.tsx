@@ -51,7 +51,7 @@ const preview: Preview = {
       test: "todo",
     },
 
-    backgrounds: { disable: true },
+    backgrounds: { disabled: true },
   },
 
   initialGlobals: {
