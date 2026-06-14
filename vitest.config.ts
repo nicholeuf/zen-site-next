@@ -31,6 +31,11 @@ export default defineConfig({
     outputFile: {
       junit: "./coverage/junit.xml",
     },
+    server: {
+      deps: {
+        inline: ["@mui/material", "react-transition-group"],
+      },
+    },
 
     // Exclude Storybook files and stories from coverage collection
     coverage: {
