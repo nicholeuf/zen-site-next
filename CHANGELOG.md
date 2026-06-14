@@ -1,3 +1,12 @@
+### 2026-06-14 [*](https://github.com/nicholeuf/zen-site-next/pull/240)
+
+#### Changed
+
+- Updated core dependencies including `@mui/material`, `@mui/icons-material`, `@mui/material-nextjs` → `^9.1.1`, along with Next.js, Storybook, Vitest, Playwright, and related packages
+- Added `server.deps.inline` configuration for `@mui/material` and `react-transition-group` in `vitest.config.ts` to resolve ESM directory import errors in tests
+- Pinned `vite`, `esbuild`, and `postcss` via `pnpm.overrides` for build stability
+- Improved the `scripts/update_dependencies.sh` automation script
+
 ### 2026-06-03 [*](https://github.com/nicholeuf/zen-site-next/pull/238)
 
 #### Changed
