@@ -1,0 +1,33 @@
+reviews:
+  # Auto-generate PR title
+  auto_title_placeholder: "@coderabbitai"   # Default — you can change this
+  auto_title_instructions: |
+    Generate a concise, professional PR title in conventional commit style that matches the style used in previous PRs on this repo.
+
+    Preferred format:
+    category: Short description (e.g. chore(deps), fix(vitest), feat(ui), docs(changelog))
+
+    Examples from this repo:
+    - chore(deps): update dependencies (MUI v9.1.1 + Vitest/MUI ESM fixes)
+    - docs: update changelog for PR #240
+
+    Keep it under 80 characters, start with a clear category, and make it informative.
+  high_level_summary: true
+  high_level_summary_in_walkthrough: true
+  high_level_summary_placeholder: "@coderabbitai changelog"   # ← Use this exact phrase in PR desc
+  high_level_summary_instructions: |
+    Generate a changelog entry **exactly** matching the style and structure of CHANGELOG.md (top of the file).
+
+    Use this precise format (replace YYYY-MM-DD and PR number/link):
+
+    ### YYYY-MM-DD [PR #XXX](https://github.com/nicholeuf/zen-site-next/pull/XXX)
+
+    #### Changed
+    - Bullet point 1
+    - Bullet point 2
+
+    Only include relevant sections (Changed / Added / Fixed). Keep it concise, professional, and consistent with previous entries like the MUI/Vitest one. Use today's date.
+  tools:
+    github-checks:
+      enabled: true
+      timeout_ms: 90000
