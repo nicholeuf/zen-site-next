@@ -1,3 +1,11 @@
+### 2026-07-02 [*](https://github.com/nicholeuf/zen-site-next/pull/242)
+
+#### Changed
+
+- Updated core and tooling dependencies, including Next.js, Sentry, Biome, Storybook, Vitest, Playwright, and pnpm
+- Improved the dependency update automation to run Biome migration as part of the script
+- Added configuration for automated PR review/title and changelog guidance tooling
+
 ### 2026-06-14 [*](https://github.com/nicholeuf/zen-site-next/pull/240)
 
 #### Changed
