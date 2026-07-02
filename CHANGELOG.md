@@ -1,10 +1,3 @@
-### 2026-06-16 [PR `#242`](https://github.com/nicholeuf/zen-site-next/pull/242)
-
-#### Changed
-- Updated `biome.json` to Biome schema `2.5.0` and switched linter configuration from `recommended: false` to `preset: "none"`
-- Added `npx biome migrate --write` to `scripts/update_dependencies.sh` to automatically write the migrated Biome config after dependency updates
-- Introduced `.coderabbit.yaml` to enable automated PR title/summary generation and `github-checks` with a 90,000ms timeout
-
 ### 2026-06-14 [*](https://github.com/nicholeuf/zen-site-next/pull/240)
 
 #### Changed
