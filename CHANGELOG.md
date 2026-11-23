@@ -1,3 +1,10 @@
+### 2026-11-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/245)
+
+#### Changed
+
+- Bumped the `vite` pnpm override from `7.3.2` to `7.3.7` to resolve Dependabot security alerts
+- Removed the `esbuild` and `postcss` pnpm overrides added in [#240](https://github.com/nicholeuf/zen-site-next/pull/240); `postcss` now uses Next.js's own `8.5.23` alongside Vite's `8.5.10`
+
 ### 2026-11-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/243)
 
 #### Changed
