@@ -1,4 +1,4 @@
-### 2026-06-14 [*](https://github.com/nicholeuf/zen-site-next/pull/240)
+### 2026-06-14 [\*](https://github.com/nicholeuf/zen-site-next/pull/240)
 
 #### Changed
 
@@ -7,7 +7,7 @@
 - Pinned `vite`, `esbuild`, and `postcss` via `pnpm.overrides` for build stability
 - Improved the `scripts/update_dependencies.sh` automation script
 
-### 2026-06-03 [*](https://github.com/nicholeuf/zen-site-next/pull/238)
+### 2026-06-03 [\*](https://github.com/nicholeuf/zen-site-next/pull/238)
 
 #### Changed
 
@@ -20,14 +20,14 @@
 - Restructured theming architecture (`MUIThemeProvider`, `AppThemeRegistry`) for better maintainability and separation of concerns
 - Updated global styles, component overrides, and image handling for consistent dark mode behavior
 
-### 2026-05-31 [*](https://github.com/nicholeuf/zen-site-next/pull/236)
+### 2026-05-31 [\*](https://github.com/nicholeuf/zen-site-next/pull/236)
 
 #### Changed
 
 - Implemented theme-aware light/dark color schemes using MUI `colorSchemes`
 - Replaced hardcoded color usage with theme palette references and set the default mode to light
 
-### 2026-05-31 [*](https://github.com/nicholeuf/zen-site-next/pull/235)
+### 2026-05-31 [\*](https://github.com/nicholeuf/zen-site-next/pull/235)
 
 #### Changed
 
@@ -35,14 +35,14 @@
 - Refactored component layout/styling to align with updated MUI patterns and consolidate styles in `sx`
 - Updated Biome configuration/schema and applied formatting migrations
 
-### 2026-03-21 [*](https://github.com/nicholeuf/zen-site-next/pull/233)
+### 2026-03-21 [\*](https://github.com/nicholeuf/zen-site-next/pull/233)
 
 #### Changed
 
 - Updated and refreshed project dependencies, including pinning Next.js/React versions and adding pnpm overrides for React type definitions
 - Fixed minor spacing in the NotFound page copy
 
-### 2026-02-26 [*](https://github.com/nicholeuf/zen-site-next/pull/230)
+### 2026-02-26 [\*](https://github.com/nicholeuf/zen-site-next/pull/230)
 
 #### Added
 
@@ -55,7 +55,7 @@
 - Bumped pnpm and refreshed dependency patch versions (storybook, @types/node) and pnpm lockfile
 - Removed deprecated docker-compose `version:` field
 
-### 2026-02-25 [*](https://github.com/nicholeuf/zen-site-next/pull/227)
+### 2026-02-25 [\*](https://github.com/nicholeuf/zen-site-next/pull/227)
 
 #### Added
 
@@ -67,7 +67,7 @@
 - Updated NextLink to default `href` to `/` and emit a `data-test-id` to distinguish Next.js links vs plain anchors
 - Refined MobileNavigation focus behavior to rely on transition lifecycle callbacks for deterministic accessibility + tests
 
-### 2026-02-25 [*](https://github.com/nicholeuf/zen-site-next/pull/228)
+### 2026-02-25 [\*](https://github.com/nicholeuf/zen-site-next/pull/228)
 
 #### Changed
 
@@ -76,14 +76,14 @@
 - Added dependency update documentation (docs/UPDATE_DEPENDENCIES.md) and linked it from README
 - Removed the manual dependency update GitHub Actions workflow (update-deps.yaml)
 
-### 2026-02-24 [*](https://github.com/nicholeuf/zen-site-next/pull/225)
+### 2026-02-24 [\*](https://github.com/nicholeuf/zen-site-next/pull/225)
 
 #### Changed
 
 - Added Codecov configuration (codecov.yml) and tuned PR comment/status behavior
 - Updated Vitest to emit JUnit XML test results (coverage/junit.xml) and ensured CI uploads both coverage (lcov.info) and JUnit results to Codecov
 
-### 2026-02-23 [*](https://github.com/nicholeuf/zen-site-next/pull/221)
+### 2026-02-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/221)
 
 #### Changed
 
@@ -91,19 +91,19 @@
 - Enabled code coverage reporting in CI (run tests with coverage)
 - Improved workflow step naming/formatting and removed deprecated Codecov test-results action
 
-### 2026-02-15 [*](https://github.com/nicholeuf/zen-site-next/pull/215)
+### 2026-02-15 [\*](https://github.com/nicholeuf/zen-site-next/pull/215)
 
 #### Changed
 
 - Added Qodo documentation and updated contributor guidance to clarify the manual changelog workflow
 
-### 2026-02-14 [*](https://github.com/nicholeuf/zen-site-next/pull/211)
+### 2026-02-14 [\*](https://github.com/nicholeuf/zen-site-next/pull/211)
 
 #### Changed
 
 - Reorganized Storybook preview configuration to improve clarity while preserving autodocs behavior
 
-### 2026-02-14 [*](https://github.com/nicholeuf/zen-site-next/pull/208)
+### 2026-02-14 [\*](https://github.com/nicholeuf/zen-site-next/pull/208)
 
 #### Fixed
 
@@ -114,59 +114,59 @@
 - Optimized metadata and sitemap generation by reusing computed values
 - Added comprehensive test coverage for base URL resolution logic
 
-### 2026-02-12 [*](https://github.com/nicholeuf/zen-site-next/pull/206)
+### 2026-02-12 [\*](https://github.com/nicholeuf/zen-site-next/pull/206)
 
 #### Changed
 
 - Added email as a primary contact option across the site and footer
 - Centralized contact/social link values into shared constants and expanded related test coverage
 
-### 2026-02-10 [*](https://github.com/nicholeuf/zen-site-next/pull/203)
+### 2026-02-10 [\*](https://github.com/nicholeuf/zen-site-next/pull/203)
 
 #### Changed
 
 - Improved Storybook/Vitest mocking and test coverage configuration
 - Refreshed CI and documentation to better reflect Chromatic/Storybook publishing setup
 
-### 2026-02-10 [*](https://github.com/nicholeuf/zen-site-next/pull/202)
+### 2026-02-10 [\*](https://github.com/nicholeuf/zen-site-next/pull/202)
 
 #### Changed
 
 - Added Chromatic visual testing integration in CI
 - Migrated page-level UI tests to Storybook interaction tests and streamlined unit tests
 
-### 2026-02-08 [*](https://github.com/nicholeuf/zen-site-next/pull/201)
+### 2026-02-08 [\*](https://github.com/nicholeuf/zen-site-next/pull/201)
 
 #### Fixed
 
 - Updated webpack and related dependencies to address reported security vulnerabilities
 
-### 2026-02-07 [*](https://github.com/nicholeuf/zen-site-next/pull/199)
+### 2026-02-07 [\*](https://github.com/nicholeuf/zen-site-next/pull/199)
 
 #### Changed
 
 - Replaced the user agent parsing library to improve license compliance and maintainability
 
-### 2026-02-07 [*](https://github.com/nicholeuf/zen-site-next/pull/198)
+### 2026-02-07 [\*](https://github.com/nicholeuf/zen-site-next/pull/198)
 
 #### Changed
 
 - Updated production and development dependencies to latest versions and refreshed test snapshots
 
-### 2026-02-05 [*](https://github.com/nicholeuf/zen-site-next/pull/197)
+### 2026-02-05 [\*](https://github.com/nicholeuf/zen-site-next/pull/197)
 
 #### Changed
 
 - Updated the dependency update workflow to keep @types/node aligned with the Node version in .nvmrc
 
-### 2025-12-22 [*](https://github.com/nicholeuf/zen-site-next/pull/195)
+### 2025-12-22 [\*](https://github.com/nicholeuf/zen-site-next/pull/195)
 
 #### Changed
 
 - Updated production and development dependencies to latest versions and refreshed test snapshots
 - Regenerated the lockfile to reflect resolved dependency updates
 
-### 2025-12-12 [*](https://github.com/nicholeuf/zen-site-next/pull/194)
+### 2025-12-12 [\*](https://github.com/nicholeuf/zen-site-next/pull/194)
 
 #### Changed
 
@@ -174,20 +174,20 @@
 - Migrated Sentry configuration to new webpack-based option structure
 - Added Sentry CLI to built dependencies to support release tooling
 
-### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/191)
+### 2025-12-04 [\*](https://github.com/nicholeuf/zen-site-next/pull/191)
 
 #### Changed
 
 - Updated dependencies across the project, including Next.js, React, MUI, Storybook, and testing tools
 - Regenerated lockfile and refreshed Vitest snapshots for compatibility
 
-### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/190)
+### 2025-12-04 [\*](https://github.com/nicholeuf/zen-site-next/pull/190)
 
 #### Fixed
 
 - CI update-deps workflow now installs Playwright browsers before tests to prevent snapshot failures
 
-### 2025-12-04 [*](https://github.com/nicholeuf/zen-site-next/pull/187)
+### 2025-12-04 [\*](https://github.com/nicholeuf/zen-site-next/pull/187)
 
 #### Changed
 
@@ -196,7 +196,7 @@
 - Bumped pnpm version and enforced engine constraints
 - Refreshed documentation and Docker base image to align with new runtime
 
-### 2025-11-26 [*](https://github.com/nicholeuf/zen-site-next/pull/183)
+### 2025-11-26 [\*](https://github.com/nicholeuf/zen-site-next/pull/183)
 
 #### Changed
 
@@ -205,26 +205,26 @@
 - Updated MUI Next.js integration for compatibility with Next.js 16
 - Removed pinned type overrides and applied project-wide formatting
 
-### 2025-11-26 [*](https://github.com/nicholeuf/zen-site-next/pull/180)
+### 2025-11-26 [\*](https://github.com/nicholeuf/zen-site-next/pull/180)
 
 #### Changed
 
 - Restricted Sentry Replay to production only; disabled replays in development to conserve quota
 
-### 2025-11-25 [*](https://github.com/nicholeuf/zen-site-next/pull/181)
+### 2025-11-25 [\*](https://github.com/nicholeuf/zen-site-next/pull/181)
 
 #### Changed
 
 - Streamlined CI workflows: use project Biome via pnpm, simplified Playwright install, and enforced frozen lockfile for consistency
 
-### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/179)
+### 2025-11-14 [\*](https://github.com/nicholeuf/zen-site-next/pull/179)
 
 #### Changed
 
 - Upgraded Storybook and associated addons to latest patch release
 - Updated lockfile to reflect new dependency resolutions
 
-### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/177)
+### 2025-11-14 [\*](https://github.com/nicholeuf/zen-site-next/pull/177)
 
 #### Added
 
@@ -232,7 +232,7 @@
 - MDX docs for Header, Footer, NextLink, and ExternalLink with mobile/tablet viewport stories
 - Changelog page in Storybook rendering project CHANGELOG.md
 
-### 2025-11-14 [*](https://github.com/nicholeuf/zen-site-next/pull/175)
+### 2025-11-14 [\*](https://github.com/nicholeuf/zen-site-next/pull/175)
 
 #### Changed
 
@@ -240,20 +240,20 @@
 - Standardized code style (double quotes) and organized imports project-wide
 - Removed legacy ESLint/Prettier configs and added Biome configuration
 
-### 2025-11-13 [*](https://github.com/nicholeuf/zen-site-next/pull/173)
+### 2025-11-13 [\*](https://github.com/nicholeuf/zen-site-next/pull/173)
 
 #### Changed
 
 - Improved test reliability by resetting mocks between runs and restructuring about page tests for clarity
 - Added verification that navigation marks the current page correctly
 
-### 2025-11-12 [*](https://github.com/nicholeuf/zen-site-next/pull/171)
+### 2025-11-12 [\*](https://github.com/nicholeuf/zen-site-next/pull/171)
 
 #### Changed
 
 - Fixed Storybook deployment by setting required Cloudinary environment variable during build in the workflow
 
-### 2025-11-12 [*](https://github.com/nicholeuf/zen-site-next/pull/169)
+### 2025-11-12 [\*](https://github.com/nicholeuf/zen-site-next/pull/169)
 
 #### Changed
 
@@ -262,26 +262,26 @@
 - Updated theme text color defaults and refreshed skills/tools lists
 - Added Storybook stories for color palette and external link
 
-### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/166)
+### 2025-11-10 [\*](https://github.com/nicholeuf/zen-site-next/pull/166)
 
 #### Changed
 
 - Prevent Storybook from being indexed by search engines using a noindex directive
 
-### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/165)
+### 2025-11-10 [\*](https://github.com/nicholeuf/zen-site-next/pull/165)
 
 #### Changed
 
 - Made the GitHub Actions workflow badge in README clickable, linking to the workflow page
 
-### 2025-11-10 [*](https://github.com/nicholeuf/zen-site-next/pull/163)
+### 2025-11-10 [\*](https://github.com/nicholeuf/zen-site-next/pull/163)
 
 #### Added
 
 - Automated CI workflow to build and deploy Storybook to GitHub Pages, with deployment badge and published link
 - Documentation covering Storybook deployment process and troubleshooting
 
-### 2025-11-09 [*](https://github.com/nicholeuf/zen-site-next/pull/146)
+### 2025-11-09 [\*](https://github.com/nicholeuf/zen-site-next/pull/146)
 
 #### Added
 
@@ -292,7 +292,7 @@
 - Upgrade Storybook to v10.0.5 and configure theme, MUI cache, backgrounds, and actions
 - Refactor header/footer into reusable subcomponents and improve Storybook documentation
 
-### 2025-11-09 [*](https://github.com/nicholeuf/zen-site-next/pull/160)
+### 2025-11-09 [\*](https://github.com/nicholeuf/zen-site-next/pull/160)
 
 #### Changed
 
@@ -300,7 +300,7 @@
 - Improve header spacing and alignment; refine navigation active indicator with animated underline
 - Simplify link and button styling via shared helper and adjust Storybook a11y checks to todo
 
-### 2025-11-06 [*](https://github.com/nicholeuf/zen-site-next/pull/157)
+### 2025-11-06 [\*](https://github.com/nicholeuf/zen-site-next/pull/157)
 
 #### Changed
 
@@ -308,14 +308,14 @@
 - Configure Next.js and CI to use strict build config; add dual typecheck workflow and update path aliases
 - Consolidate dev-only types under a dedicated directory and add documentation and editor settings
 
-### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/155)
+### 2025-11-03 [\*](https://github.com/nicholeuf/zen-site-next/pull/155)
 
 #### Added
 
 - Mock Next.js router in Storybook with a decorator and provider to enable navigation hooks in stories
 - Configure Storybook/Vite aliases and add dependency to support router mocking
 
-### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/152)
+### 2025-11-03 [\*](https://github.com/nicholeuf/zen-site-next/pull/152)
 
 #### Changed
 
@@ -323,7 +323,7 @@
 - Apply global link styles and refactor link components for consistent styling and better control
 - Add option to disable ripple effects in tests to reduce async warnings
 
-### 2025-11-03 [*](https://github.com/nicholeuf/zen-site-next/pull/150)
+### 2025-11-03 [\*](https://github.com/nicholeuf/zen-site-next/pull/150)
 
 #### Changed
 
@@ -333,13 +333,13 @@
 
 - Add tests to verify focus restoration behavior and maintain coverage
 
-### 2025-11-01 [*](https://github.com/nicholeuf/zen-site-next/pull/147)
+### 2025-11-01 [\*](https://github.com/nicholeuf/zen-site-next/pull/147)
 
 #### Changed
 
 - Migrate coverage ignore comments to v8 and refine Vitest coverage configuration for improved accuracy and src-focused patterns
 
-### 2025-10-30 [*](https://github.com/nicholeuf/zen-site-next/pull/144)
+### 2025-10-30 [\*](https://github.com/nicholeuf/zen-site-next/pull/144)
 
 #### Added
 
@@ -349,13 +349,13 @@
 
 - Migrate test framework from Jest to Vitest, update configs and mocks, and adjust CI to run Vitest and Playwright browser tests
 
-### 2025-10-23 [*](https://github.com/nicholeuf/zen-site-next/pull/139)
+### 2025-10-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/139)
 
 #### Changed
 
 - Update portfolio work item to use website URL, simplify title, clarify launch details, and add automation tools; adjust tests accordingly
 
-### 2025-10-23 [*](https://github.com/nicholeuf/zen-site-next/pull/136)
+### 2025-10-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/136)
 
 #### Added
 

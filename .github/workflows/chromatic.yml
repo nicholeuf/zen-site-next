@@ -2,7 +2,7 @@ name: Chromatic
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
 
 jobs:
@@ -24,7 +24,6 @@ jobs:
         with:
           node-version-file: ".nvmrc"
           cache: "pnpm"
-
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
