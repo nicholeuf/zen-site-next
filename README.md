@@ -1,23 +1,23 @@
 <!-- Badge rows: tech / tools / CI -->
 <!-- Tech badges -->
-[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) 
-[![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)](https://reactjs.org/) 
-[![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=flat&logo=mui&logoColor=white)](https://mui.com/) 
-[![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/) 
-[![Storybook](https://img.shields.io/badge/Storybook-%23FF4785?style=flat&logo=storybook&logoColor=white)](https://nicholeuf.github.io/zen-site-next) 
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
+[![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=flat&logo=mui&logoColor=white)](https://mui.com/)
+[![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Storybook](https://img.shields.io/badge/Storybook-%23FF4785?style=flat&logo=storybook&logoColor=white)](https://nicholeuf.github.io/zen-site-next)
 [![Chromatic](https://img.shields.io/badge/Chromatic-%23F14C4C?style=flat&logo=chromatic&logoColor=white)](https://www.chromatic.com/library?appId=69890fe4cbad40f185523f5e)
-[![Vitest](https://img.shields.io/badge/-vitest-%2349C5B6?style=flat&logo=vitest&logoColor=white)](https://vitest.dev/) 
+[![Vitest](https://img.shields.io/badge/-vitest-%2349C5B6?style=flat&logo=vitest&logoColor=white)](https://vitest.dev/)
 [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white)](https://vercel.com/)
 
 <!-- Tools / formatting badges -->
-[![Formatted with Biome](https://img.shields.io/badge/Formatted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/) 
-[![Linted with Biome](https://img.shields.io/badge/Linted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/) 
-[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/) 
-[![Qodo](https://img.shields.io/badge/Qodo-Code%20Review-6b5bff?style=flat)](docs/QODO.md) 
+[![Formatted with Biome](https://img.shields.io/badge/Formatted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/)
+[![Linted with Biome](https://img.shields.io/badge/Linted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/)
+[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/)
+[![Qodo](https://img.shields.io/badge/Qodo-Code%20Review-6b5bff?style=flat)](docs/QODO.md)
 
 <!-- CI / status badges -->
-[![tests (coverage)](https://img.shields.io/github/actions/workflow/status/nicholeuf/zen-site-next/workflow.yaml?style=flat&label=tests%20%28coverage%29)](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml) 
-[![deploy storybook](https://img.shields.io/github/actions/workflow/status/nicholeuf/zen-site-next/deploy-storybook.yml?style=flat&label=deploy%20storybook)](https://github.com/nicholeuf/zen-site-next/actions/workflows/deploy-storybook.yml) 
+[![tests (coverage)](https://img.shields.io/github/actions/workflow/status/nicholeuf/zen-site-next/workflow.yaml?style=flat&label=tests%20%28coverage%29)](https://github.com/nicholeuf/zen-site-next/actions/workflows/workflow.yaml)
+[![deploy storybook](https://img.shields.io/github/actions/workflow/status/nicholeuf/zen-site-next/deploy-storybook.yml?style=flat&label=deploy%20storybook)](https://github.com/nicholeuf/zen-site-next/actions/workflows/deploy-storybook.yml)
 [![codecov](https://img.shields.io/codecov/c/github/nicholeuf/zen-site-next?style=flat)](https://codecov.io/gh/nicholeuf/zen-site-next)
 
 This is a personal portfolio website for Nichole Frey, a Full-Stack Developer. Built with [Next.js](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -29,6 +29,7 @@ Qodo is used for code review on this project. See [docs/QODO.md](docs/QODO.md) f
 ### Prerequisites
 
 This project requires:
+
 - **Node.js**: See `.nvmrc` for the required version
 - **pnpm**: Version managed via Corepack (see `packageManager` field in `package.json`)
 
@@ -58,6 +59,7 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 ## Updating Dependencies
 
 To update project dependencies, see [docs/UPDATE_DEPENDENCIES.md](docs/UPDATE_DEPENDENCIES.md) for instructions. The recommended method is to run the `scripts/update_dependencies.sh` script from the project root.

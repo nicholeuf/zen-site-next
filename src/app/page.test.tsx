@@ -16,14 +16,13 @@ describe("The Home Page", () => {
   afterEach(() => {
     vi.resetAllMocks();
   });
-  test.each([
-    ["header"],
-    ["landing"],
-    ["footer"],
-  ])("contains the visible testid %p", async (testid) => {
-    const HomeResolved = await resolvedComponent(HomePage);
-    renderWithLayout(<HomeResolved />);
-    const component = screen.getByTestId(testid);
-    expect(component).toBeVisible();
-  });
+  test.each([["header"], ["landing"], ["footer"]])(
+    "contains the visible testid %p",
+    async (testid) => {
+      const HomeResolved = await resolvedComponent(HomePage);
+      renderWithLayout(<HomeResolved />);
+      const component = screen.getByTestId(testid);
+      expect(component).toBeVisible();
+    }
+  );
 });

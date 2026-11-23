@@ -2,7 +2,7 @@ name: zen-site-next CI
 permissions:
   contents: read
 
-on: [push]
+on: [ push ]
 
 jobs:
   build:
@@ -15,8 +15,8 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v6
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          node-version-file: ".nvmrc"
+          cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile

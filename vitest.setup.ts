@@ -19,7 +19,7 @@ vi.mock("next/font/google", async () => {
   };
 });
 
-import "@testing-library/jest-dom";
+import "@testing-library/jest-dom/vitest";
 import "cross-fetch/polyfill";
 import { matchers } from "@emotion/jest";
 

@@ -25,7 +25,8 @@
     "tests/**/*",
     "**/*.test.*",
     "**/*.spec.*",
-    "types/**/*"
+    "types/**/*",
+    "vitest.setup.ts"
   ],
   "exclude": ["node_modules", ".next"]
 }
