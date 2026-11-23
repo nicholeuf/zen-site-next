@@ -1,3 +1,14 @@
+### 2026-11-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/243)
+
+#### Changed
+
+- Updated core dependencies including Next.js `16.4.6`, React `19.3.1`, MUI `^9.6.0`, `next-cloudinary` `^7.1.1`, along with Storybook, Vitest `^5.1.1`, TypeScript `^7.0.2`, Playwright, Biome, and related packages
+- Migrated Sentry from v10 to v11 (`@sentry/nextjs` `^11.17.0`): updated config imports and replaced `sendDefaultPii` with explicit `dataCollection` settings
+- Removed the `instant = false` route exports added by the Next.js upgrade codemod to keep existing rendering behavior (Cache Components remains disabled)
+- Upgraded `chromatic` to `^18.15.2` and the Chromatic GitHub Action to `chromaui/action@v18`
+- Switched to the `@testing-library/jest-dom/vitest` import so test type-checking passes with jest-dom v8
+- Added a temporary Storybook build workaround that loads the preview runtime first in static builds, tracked in [#244](https://github.com/nicholeuf/zen-site-next/issues/244)
+
 ### 2026-06-14 [\*](https://github.com/nicholeuf/zen-site-next/pull/240)
 
 #### Changed
