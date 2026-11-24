@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: en-US
+reviews:
+  profile: chill
+  high_level_summary: true
+  high_level_summary_in_walkthrough: true
+  high_level_summary_instructions: |
+    Also include a suggested CHANGELOG.md entry, ready to paste, in this exact format:
+
+    ### YYYY-MM-DD [\*](https://github.com/nicholeuf/zen-site-next/pull/NUMBER)
+
+    #### Changed
+
+    - One or more concise bullets for notable changes
+
+    Use the current date in America/New_York and this PR's number.
+    Use #### Added or #### Fixed only when that heading fits better than Changed.
+    Skip the changelog suggestion if the PR only updates CHANGELOG.md.
+  auto_review:
+    enabled: true
+    drafts: false
+    auto_incremental_review: false
