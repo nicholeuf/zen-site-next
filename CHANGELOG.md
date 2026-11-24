@@ -1,3 +1,9 @@
+### 2026-11-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/246)
+
+#### Changed
+
+- Refreshed the transitive `postcss` versions in the lockfile so Vite uses `8.5.33` alongside Next.js's `8.5.23`, resolving Dependabot security alerts
+
 ### 2026-11-23 [\*](https://github.com/nicholeuf/zen-site-next/pull/245)
 
 #### Changed
